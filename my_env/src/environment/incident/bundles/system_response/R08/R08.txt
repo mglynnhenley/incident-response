@@ -1,0 +1,88 @@
+DOCUMENT R08 — Operational call record between control rooms, 9 August 2019
+Owner/originator: National Grid ESO (diagram of calls between the ESO control room, NGET, DNO and
+Scottish control rooms, published as Appendix J to the ESO technical report dated 6 September 2019)
+Record type: row-by-row transcription of a published call diagram, with its printed summary notes
+STATUS: RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT.
+Rows are transcribed from a diagram published by ESO; layout and wording are reconstructions.
+Clock reference: hh:mm as printed on the diagram, which labels no clock; read as BST (UTC+01:00)
+because ESO dates the event at 4:52pm. Rows sharing a printed minute keep the diagram's order.
+Value-status legend: [reported] time or text as printed by ESO; [measured], [estimated],
+[modelled], [digitised] and [illustrative] not used.
+Lanes as printed: NGESO = ESO control room; NGET = NGET control room (TNCC); DNO areas as labelled;
+Scotland (SP) and Scotland (SHETL). Arrows are listed from the end without an arrowhead to the end
+with one; the diagram does not say who placed each call. Annotation text is quoted as printed.
+
+PART 1 — SUMMARY NOTES PRINTED WITH THE DIAGRAM (Appendix J, page text)
+N1   By 17:04 [reported], demand disconnection on individual DNO areas were all communicated to the ESO
+     control room.
+N2   At 17:05 [reported], demand restoration instruction commenced from ESO control room to DNOs.
+N3   By 17:16 [reported], demand restoration instructions were all initiated to DNOs.
+N4   Since 17:34 [reported], communications commenced to check restoration status and collate initial numbers.
+
+PART 2 — CALLS AS DRAWN (label, printed time, arrow from -> to, annotation box as printed)
+C01  16:54 [reported]  NGET -> NGESO; box: "Confirmation of trip and DAR of Eaton Socon - Wymondley"
+C02  16:57 [reported]  WPD East Midland -> NGESO; box: "WPD East Midlands reports loss of demand on low
+     frequency relays. Similar losses in the West Midlands"
+C03  16:57 [reported]  NGESO -> Scotland (SHETL); box: "Call to SHETL. Discussion of system event."
+C04  16:57 [reported]  NGET -> NGESO; box: "First of a number of calls from TNCC reporting that DNOs have lost
+     supply."
+C05  16:58 [reported]  UKPN LPN -> NGESO; box: "UPKN LPN reports loss of supply on low frequency relays.
+     Instructed to start restoration."
+C06  16:58 [reported]  NGET -> NGESO; box: "Multiple simultaneous calls to the ENCC from TNCC (different
+     desks). SSE and ENW are off supplies. LF losses at SPED, ENW, NPGN, NPGY. PSM provides brief to TNCC."
+C07  17:00 [reported]  NGET -> NGESO; inside the box printed for C06
+C08  17:01 [reported]  NGET -> NGESO; inside the box printed for C06
+C09  17:01 [reported]  SSE -> NGESO; box: "SSE reports loss of demand on LF."
+C10  17:02 [reported]  WPD West Midland -> NGESO; no box of its own
+C11  17:03 [reported]  NGESO -> Scotland (SP); box: "SP reports loss at Cockenzie."
+C12  17:04 [reported]  NGET -> NGESO; no box of its own
+C13  17:05 [reported]  NGESO -> WPD West Midland; no box of its own
+C14  17:06 [reported]  NGESO -> SSE; no box of its own
+C15  17:08 [reported]  NGESO -> WPD South West; WPD South Wales; one arrow with arrowheads in each lane named;
+     no box of its own
+C16  17:08 [reported]  NGESO -> NPG North East; no box of its own
+C17  17:10 [reported]  ENW -> NGESO; no box of its own
+C18  17:10 [reported]  NGESO -> NPG Yorkshire; no box of its own
+C19  17:13 [reported]  NGESO -> UKPN SPN; no box of its own
+C20  17:13 [reported]  NGESO -> SPED; no box of its own
+C21  17:14 [reported]  NGESO -> UKPN EPN; no box of its own
+C22  17:15 [reported]  NGESO -> WPD West Midland; no box of its own
+C23  17:16 [reported]  NGESO -> WPD East Midland; no box of its own
+C24  17:20 [reported]  NGESO -> WPD East Midland; no box of its own
+C25  17:21 [reported]  SSE -> NGESO; no box of its own
+C26  17:24 [reported]  NGESO -> UKPN LPN; no box of its own
+C27  17:24 [reported]  NGESO -> WPD South West; WPD South Wales; one arrow with arrowheads in each lane named;
+     no box of its own
+C28  17:32 [reported]  NGESO -> NGET; box: "TNCC informed that all DNOs are restoring."
+C29  17:34 [reported]  WPD South Wales -> NGESO; no box of its own
+C30  17:36 [reported]  WPD South Wales -> NGESO; no box of its own
+C31  17:39 [reported]  NGESO -> NGET; box: "Briefing to TNCC."
+C32  18:17 [reported]  NGESO -> NPG North East; no box of its own
+C33  18:19 [reported]  NGESO -> WPD West Midland; no box of its own
+C34  18:21 [reported]  NGESO -> NPG Yorkshire; no box of its own
+C35  18:29 [reported]  NGESO -> UKPN LPN; no box of its own
+C36  18:30 [reported]  NGESO -> ENW; no box of its own
+C37  18:31 [reported]  WPD South Wales -> NGESO; no box of its own
+C38  18:32 [reported]  NGESO -> SPED; no box of its own
+C39  18:32 [reported]  NGESO -> WPD South West; WPD South Wales; WPD West Midland; WPD East Midland; one arrow
+     with arrowheads in each lane named; no box of its own
+C40  18:34 [reported]  NGESO -> UKPN SPN; no box of its own
+C41  18:42 [reported]  NGESO -> NGET; box: "TNCC informed that all demand has been restored."
+C42  18:48 [reported]  NGESO -> UKPN EPN; no box of its own
+C43  18:49 [reported]  NGESO -> UKPN SPN; UKPN EPN; UKPN LPN; one arrow with arrowheads in each lane named; no
+     box of its own
+
+PART 3 — BOXES NOT ATTACHED TO A SINGLE ARROW
+X1   Box printed between rows C09 and C10, with no arrow of its own: "WPD phones PSM. Call ended as ESO desk
+     is calling on another line."
+X2   Box printed beside rows C13 to C27: "Instruction to restore all demand."
+X3   Box printed beside rows C29 to C40: "Checking all DNOs have restored. Collection of initial numbers."
+X4   Box printed beside rows C42 and C43: "Checking for demand lost figures."
+
+Compiler's notes (added for this reconstruction; not diagram content)
+(a)  C05: 'UPKN' is printed as shown. C11: the arrow is drawn from NGESO to Scotland (SP) while its box reads
+    'SP reports loss at Cockenzie.'
+(b)  The lane at the arrow end is read with less certainty for C02, C10, C29, C30 and C37 (the arrow ends near
+    a lane boundary or the reading rests on box position).
+(c)  C02: the box text is printed between rows C01 and C02, on the right of the diagram, and is listed with
+    C02, the arrow from that lane.

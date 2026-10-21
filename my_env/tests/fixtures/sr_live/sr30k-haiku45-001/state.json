@@ -1,0 +1,23 @@
+{
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 18,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-018",
+  "invalid_submission_attempts": 1,
+  "python_calls": 4,
+  "retrieved": [
+    "R01",
+    "R03",
+    "S01",
+    "S03",
+    "R07",
+    "R02",
+    "R06",
+    "R10"
+  ],
+  "schema": 1,
+  "seq": 18,
+  "submission_sha256": "c405c2f193810a95c778a289c95db6ee302d936665e4902c77170b8aa5b1f2e6"
+}

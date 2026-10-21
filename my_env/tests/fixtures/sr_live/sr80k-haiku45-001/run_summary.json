@@ -1,0 +1,71 @@
+{
+ "assistant_turns": 10,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 80000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "Perfect! The investigation has been successfully completed and submitted. The submission has been accepted and frozen.\n\n## Summary\n\nI have completed a comprehensive investigation of the electrical disturbance on 9 August 2019, analyzing:\n\n1. **Initiating Event**: A lightning strike caused a single-phase to earth fault on the 400 kV Eaton Socon–Wymondley Main circuit, cleared by transmission protection in 70-74 ms (within Grid Code requirements) and restored by delayed auto-reclose after 20 seconds.\n\n2. **Generation Losses**: \n   - Hornsea One: 737 MW lost through wind turbine de-loading in 107 ms due to control system instability from voltage oscillations\n   - Little Barford: 641 MW lost through sequential tripping of steam and gas turbines\n\n3. **Frequency Excursion**: \n   - Minimum frequency: 48.787 Hz at 16:53:49+01:00\n   - Time below 49 Hz: 32 seconds\n   - Recovery to 50 Hz: 2019-08-09T16:57:15+01:00 (282 seconds after fault)\n\n4. **Demand Disconnection**: \n   - 892–973 MW disconnected (variations due to different accounting bases)\n   - 1.15 million customers affected\n   - Triggered by LFDD relays at 48.8 Hz threshold\n\n5. **Demand Restoration**: \n   - First restoration at 17:07+01:00\n   - Complete restoration at 17:37+01:00\n\nThe report includes 43 findings with detailed citations to evidence, covering supported explanations, unexplained causes, and an uncertainty register distinguishing measurement limitations from unresolved causes.",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 106575,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 17,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-017",
+  "invalid_submission_attempts": 1,
+  "python_calls": 2,
+  "retrieved": [
+   "R01",
+   "R03",
+   "S01",
+   "R02",
+   "S03",
+   "R07",
+   "S04",
+   "R10",
+   "S07"
+  ],
+  "schema": 1,
+  "seq": 17,
+  "submission_sha256": "2b04f340184712708140e1558ad858315fc9e818c38c089c80c97b29b7c5a15e"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 17,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 17
+ },
+ "max_input_tokens": 106575,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 25948,
+ "output_tokens_total": 26359,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 10,
+ "tool_calls_by_tool": {
+  "list_documents": 1,
+  "query_asset_log": 2,
+  "query_frequency": 1,
+  "request_document": 9,
+  "run_python": 2,
+  "submit_findings": 2
+ },
+ "tool_calls_episode_tools": 17,
+ "tool_calls_total": 17,
+ "transcript_available": true
+}

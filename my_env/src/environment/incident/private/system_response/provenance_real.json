@@ -1,0 +1,2829 @@
+{
+  "schema": "gb-2019-system-response/provenance-real/1",
+  "generated_by": "builder/system_response/real/build_real.py",
+  "documents_covered": [
+    "R02",
+    "R04",
+    "R06",
+    "R07"
+  ],
+  "quote_normalisation": "NFKC; casefold; unify dashes, double quotes and apostrophes; drop soft hyphens; collapse whitespace (builder/verify_provenance.normalise). Report quotes are matched within the stated 1-based PDF page of GB_TEXT_DIR/<source>.txt; table cells are matched on the page with whitespace removed.",
+  "page_numbering": "pdf_page is the 1-based PDF page index; printed_page is the number printed on that page where known (ESO = pdf_page + 1; OFG = pdf_page; APP, E3C-I null).",
+  "value_statuses": "measured, reported, estimated, modelled, digitised, illustrative, framing",
+  "sources": {
+    "ESO": {
+      "kind": "pdf",
+      "title": "National Grid ESO, Technical Report on the events of 9 August 2019",
+      "published": "2019-09-06",
+      "licence": "National Grid ESO document hosted by Ofgem; not an open licence (builder-only)",
+      "file": "builder_only/sources/ESO_technical_report_2019.pdf",
+      "sha256": "4ceee8ac7f32fbd16c712e7eed4942880f0f0a477424ae026b757a85d76da81e",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_final.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/ESO.txt"
+    },
+    "APP": {
+      "kind": "pdf",
+      "title": "Appendices to the ESO Technical Report on the events of 9 August 2019",
+      "published": "2019-09-06",
+      "licence": "National Grid ESO document hosted by Ofgem, includes third-party material; not an open licence (builder-only)",
+      "file": "builder_only/sources/ESO_appendices_2019.pdf",
+      "sha256": "33d5dab5fa9b8de42ec72d2453037aa897192ba58e1790f3f37ce57f480492a3",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_appendices_-_final.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/APP.txt"
+    },
+    "OFG": {
+      "kind": "pdf",
+      "title": "Ofgem, 9 August 2019 power outage report",
+      "published": "2020-01-03",
+      "licence": "Open Government Licence v3.0 with exclusions (builder-only copy)",
+      "file": "builder_only/sources/Ofgem_outage_report_2020.pdf",
+      "sha256": "4a6def3f7a80e9686742921270e626d745942491082729983de9407ec15af2cb",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2020/01/9_august_2019_power_outage_report.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/OFG.txt"
+    },
+    "E3C-I": {
+      "kind": "pdf",
+      "title": "Energy Emergencies Executive Committee, GB power system disruption - 9 August 2019, interim report",
+      "published": "cover dated September 2019; publisher file name dated 2019-10-03",
+      "licence": "Open Government Licence v3.0 with exclusions (builder-only copy)",
+      "file": "builder_only/sources/E3C_interim_report_2019.pdf",
+      "sha256": "5a857cb1437a31c0d3096fa89573ac1e92854c4b18b6c9f96b066033d52ca5f7",
+      "url": "https://assets.publishing.service.gov.uk/media/5d96100340f0b61743bd4cc3/20191003_E3C_Interim_Report_into_GB_Power_Disruption.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/E3C-I.txt"
+    },
+    "CATALOGUE": {
+      "kind": "catalogue",
+      "title": "Builder-only source artifact catalogue (tables extracted from the report PDFs)",
+      "file": "catalogue.json",
+      "sha256": "e63f47cdeceed60b8a233241f86c376015bca97a5719c2d709a1d106e74cad07",
+      "root": "GB_CATALOGUE_DIR"
+    },
+    "consequences_comms_timeline": {
+      "dataset_id": "comms_timeline_uk_local",
+      "publisher": "Derived by the real-data pass from archived public posts (Internet Archive captures), GOV.UK and Ofgem pages",
+      "title": "Communications timeline 9-10 August 2019 (UK local time)",
+      "url": "derived file; each row names its archived source URL",
+      "retrieved_utc": "2026-10-20",
+      "licence": "derived; inherits source licences per row (post text: account holders' copyright under platform terms, not an open licence)",
+      "licence_text": "Tweet content (c) account holders under X/Twitter terms; Wayback captures for research access - not an open licence (real-data manifest record archived_official_tweets_9_10_aug_2019)",
+      "attribution": "",
+      "sha256": "0cebef87387a5112e65a6f81e7ce6c35a457feb49ea0c892bdce1a032a7de8f4",
+      "mirror": "none",
+      "kind": "dataset",
+      "file": "consequences/derived/comms_timeline_uk_local.csv",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_api_docs": {
+      "dataset_id": "elexon_api_openapi_document",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Elexon Insights API OpenAPI document (title 'Insights.Api', version 1.0; server https://data.elexon.co.uk/bmrs/api/v1); endpoint descriptions",
+      "url": "not recorded in the real-data manifest (OpenAPI document of the server above)",
+      "retrieved_utc": "2026-10-20 (file written by the real-data verification pass; time not recorded)",
+      "licence": "Elexon API documentation; publisher's terms (no separate open licence stated for the document; used only to check quotations)",
+      "licence_text": "The BMRS open data licence covers BMRS data; no licence statement for the OpenAPI document itself was recorded, so it is not mirrored.",
+      "attribution": "",
+      "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+      "mirror": "none",
+      "kind": "dataset",
+      "file": "verification/elexon_swagger_v1.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_b1610_T_HOWAO-1": {
+      "dataset_id": "elexon_B1610",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Actual generation output per generation unit (B1610) stream, T_HOWAO-1",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/B1610/stream?from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&bmUnit=T_HOWAO-1",
+      "retrieved_utc": "2026-10-20T06:49:37Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "044a6133a678efc7619a1d01b60cc7320c14a0489ca3ee374f5a3849823c10b2",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/B1610_stream_T_HOWAO-1_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_b1610_T_HOWAO-2": {
+      "dataset_id": "elexon_B1610",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Actual generation output per generation unit (B1610) stream, T_HOWAO-2",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/B1610/stream?from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&bmUnit=T_HOWAO-2",
+      "retrieved_utc": "2026-10-20T06:49:41Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "ffbcd6a754133875a3badd89a4c8d9440b4aceab1e3ae95e2c30b0c628c3b28c",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/B1610_stream_T_HOWAO-2_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_b1610_T_HOWAO-3": {
+      "dataset_id": "elexon_B1610",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Actual generation output per generation unit (B1610) stream, T_HOWAO-3",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/B1610/stream?from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&bmUnit=T_HOWAO-3",
+      "retrieved_utc": "2026-10-20T06:49:42Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "076a1d7073b9062a55766e1a9565b90cb7a4f1bc13ab8bfe5fc0a2e03c339414",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/B1610_stream_T_HOWAO-3_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_b1610_T_LBAR-1": {
+      "dataset_id": "elexon_B1610",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Actual generation output per generation unit (B1610) stream, T_LBAR-1",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/B1610/stream?from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&bmUnit=T_LBAR-1",
+      "retrieved_utc": "2026-10-20T06:49:43Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "5c7dd74e693949453a9f28ae11b4062ac8857ed6b7744978dd6eacb5311c8da7",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/B1610_stream_T_LBAR-1_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp32": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 32",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=32&format=json",
+      "retrieved_utc": "2026-10-20T06:41:20Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "313e28775a956f863bd27e8b7f6ec17ebaa27e5583d7066bbfe19cd0b273ec9f",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP32.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp33": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 33",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=33&format=json",
+      "retrieved_utc": "2026-10-20T06:41:22Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "96aa5db5445bc957df9d1742925f7625125a4bc32087c6842c08f8b50e0da01c",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP33.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp34": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 34",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=34&format=json",
+      "retrieved_utc": "2026-10-20T06:41:25Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "261c3c9a6438f0efc698d6edf5dcaacaff7c17649e5045c2d44cdba55072cc93",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP34.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp35": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 35",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=35&format=json",
+      "retrieved_utc": "2026-10-20T06:41:27Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "57c713b1dc8b8fc1c3bdf5ec1532e2551ea8b25933e6c312c9ae16673cd4d6d2",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP35.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp36": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 36",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=36&format=json",
+      "retrieved_utc": "2026-10-20T06:41:27Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "c0149de56dd97d6038b03fb1457df9213cc2957864bab48b12aadbc03fee690c",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP36.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp37": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 37",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=37&format=json",
+      "retrieved_utc": "2026-10-20T06:41:30Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "67ae03025af218fedc11dc1a5f8a5e754fc7bb4a39b5413f45b244ce67bed2bf",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP37.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_boalf_sp38": {
+      "dataset_id": "elexon_BOALF",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Market-wide bid-offer acceptances (BOALF), settlement date 2019-08-09, period 38",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/acceptances/all?settlementDate=2019-08-09&settlementPeriod=38&format=json",
+      "retrieved_utc": "2026-10-20T06:41:31Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "e49b70915da6237770653d90fb83ffcef1cd8faab5e6b5a5961c3a733f32ebba",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/BOALF_all_2019-08-09_SP38.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_dci": {
+      "dataset_id": "elexon_DCI",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Demand control instructions (DCI), August 2019",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/system/demand-control-instructions?from=2019-08-01T00%3A00%3A00Z&to=2019-08-31T00%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:49:14Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "6551ef66f2ca42205a7b1195524ed61ad76d077c5571131a9ff5fa3ac681ebf2",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/DCI_201908.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_demand_summary": {
+      "dataset_id": "elexon_demand_outturn_summary_5min",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "System demand summary (FUELINST), 5-minute resolution",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/demand/outturn/summary?resolution=minute&from=2019-08-09T14%3A00%3A00Z&to=2019-08-09T19%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:40:39Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "578e4756b5b6b2479f7b042eb2d22a040c5f3d37d730ecb0f70e7f41021573cc",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/demand_outturn_summary_20190809.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_disebsp": {
+      "dataset_id": "elexon_DISEBSP_NIV",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Settlement system prices and net imbalance volume (DISEBSP), 9 August 2019",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/settlement/system-prices/2019-08-09?format=json",
+      "retrieved_utc": "2026-10-20T06:42:20Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "b7f15bd6773c35455beb57b3182fb83573988d805b3717f0f584c93289b82587",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/DISEBSP_system_prices_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_fuelhh": {
+      "dataset_id": "elexon_FUELHH",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Half-hourly generation outturn by fuel type (FUELHH)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH?settlementDateFrom=2019-08-09&settlementDateTo=2019-08-09&format=json",
+      "retrieved_utc": "2026-10-20T06:40:36Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "3974b5d1191ba321801f8df2e0f8581bc8fbf4ae6f1a2e8c1e83935b4ab4041d",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/FUELHH_20190809.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_fuelinst": {
+      "dataset_id": "elexon_FUELINST",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Instantaneous generation outturn by fuel type (FUELINST), 5-minute MW",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELINST?publishDateTimeFrom=2019-08-09T14%3A00%3A00Z&publishDateTimeTo=2019-08-09T19%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:40:34Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "25aaa5e8f48a8a676d32c09e172dd62014b8ad1898b95f47d057ed90f7492d69",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/FUELINST_20190809_1400_1900Z.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_indo_itsdo": {
+      "dataset_id": "elexon_INDO_ITSDO",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Initial National Demand Outturn (INDO) and Initial Transmission System Demand Outturn (ITSDO)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/demand/outturn?settlementDateFrom=2019-08-09&settlementDateTo=2019-08-09&format=json",
+      "retrieved_utc": "2026-10-20T06:41:03Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "cbd9555f6c0c9d03e8bd1a7c5305283cfda51c1e0c2f9013e7546112e3e131b0",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/demand_outturn_INDO_ITSDO_20190809.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_lolpdrm": {
+      "dataset_id": "elexon_LOLPDRM_MID",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Loss of load probability and de-rated margin forecast (LOLPDRM)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/forecast/system/loss-of-load?from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:43:01Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "9a6ab29cab3543a43239d59b12a5d177e937803b0151a4dd60da1cfd163be043",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/LOLPDRM_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_physical_T_HOWAO-1": {
+      "dataset_id": "elexon_PHYSICAL_MELS_MILS",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Physical data per BM unit (PN, QPN, MILS, MELS), T_HOWAO-1",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/physical?bmUnit=T_HOWAO-1&from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:41:34Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "f9a82958bd87dc86968a3a48d9cd0e7a1ec117641bc423980302b395296818be",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/PHYSICAL_T_HOWAO-1_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_physical_T_HOWAO-2": {
+      "dataset_id": "elexon_PHYSICAL_MELS_MILS",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Physical data per BM unit (PN, QPN, MILS, MELS), T_HOWAO-2",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/physical?bmUnit=T_HOWAO-2&from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:41:41Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "4d88ab4e3b557fb5feb22101d4f4f40956ace6db40ccdf2d402d4f2ea77cbe4c",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/PHYSICAL_T_HOWAO-2_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_physical_T_HOWAO-3": {
+      "dataset_id": "elexon_PHYSICAL_MELS_MILS",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Physical data per BM unit (PN, QPN, MILS, MELS), T_HOWAO-3",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/physical?bmUnit=T_HOWAO-3&from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:41:48Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "6d9d9b6ce81538bd9dac9ae875064422c48a77e6879e0d60c3b96773d4accfc3",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/PHYSICAL_T_HOWAO-3_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_physical_T_LBAR-1": {
+      "dataset_id": "elexon_PHYSICAL_MELS_MILS",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Physical data per BM unit (PN, QPN, MILS, MELS), T_LBAR-1",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/physical?bmUnit=T_LBAR-1&from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:41:53Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "8409618a392d05e8530c814c88ccf916a1003d4d7324a25c5bf34ba613c53cb8",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/PHYSICAL_T_LBAR-1_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_physical_T_LBAR-1G": {
+      "dataset_id": "elexon_PHYSICAL_MELS_MILS",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Physical data per BM unit (PN, QPN, MILS, MELS), T_LBAR-1G",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/balancing/physical?bmUnit=T_LBAR-1G&from=2019-08-08T23%3A00%3A00Z&to=2019-08-09T23%3A00%3A00Z&format=json",
+      "retrieved_utc": "2026-10-20T06:42:02Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "2671fc8210d52df4dd0cb7079f468c949c1d9dc9654f541857ca0208e8dfe7b5",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "elexon/raw/PHYSICAL_T_LBAR-1G_2019-08-09.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_qas": {
+      "dataset_id": "elexon_QAS_balancing_services_volume",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "Balancing Services Volume (QAS) per BM unit per settlement period, 9 August 2019",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/QAS?from=2019-08-09&to=2019-08-09&settlementPeriodFrom=1&settlementPeriodTo=50&format=json",
+      "retrieved_utc": "2026-10-20T07:40:26Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "a97f69eaad2c4ee0d8660a096b35acca3ff9de7e5d2492d0a1d462a66b8c1a18",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "verifier_additions/raw/elexon_QAS_2019-08-09_SP1-50.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "elexon_ref_bmunits": {
+      "dataset_id": "elexon_ref_bmunits",
+      "publisher": "Elexon Limited (BMRS / Insights API)",
+      "title": "BM Unit reference list (all BM units; current registration data)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/reference/bmunits/all",
+      "retrieved_utc": "2026-10-20T06:40:26Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "sha256": "9ebb42fcd3496c2bd5963ee867ef3885bff9d1e3c2299dc0262b962eb999fabc",
+      "body_sha256": "65b690aeed0cf844ff4b321926ed665dd3810e5f101b6e5f50da009b15a7d4dc",
+      "mirror": "slice",
+      "slice_rule": "JSON list filtered to elexonBmUnit in T_HOWAO-1, T_HOWAO-2, T_HOWAO-3, T_LBAR-1, T_LBAR-1G (original order and fields kept); gzip level 9, mtime 0",
+      "kind": "dataset",
+      "file": "elexon/raw/ref_bmunits_all.json.gz",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "iem_metar": {
+      "dataset_id": "iem_metar_se_england_20190809",
+      "publisher": "Iowa Environmental Mesonet, Iowa State University (ASOS/METAR archive); reports originate from UK aerodromes",
+      "title": "METAR reports for south-east England aerodromes, 2019-08-09 12:00-20:00 UTC",
+      "url": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?station=EGGW&station=EGSC&station=EGSS&station=EGTC&station=EGUY&station=EGLL&station=EGLC&station=EGWU&station=EGVN&data=metar&data=wxcodes&data=tmpc&data=sknt&data=gust&data=p01m&year1=2019&month1=8&day1=9&hour1=12&minute1=0&year2=2019&month2=8&day2=9&hour2=20&minute2=0&tz=Etc%2FUTC&format=onlycomma&latlon=yes&elev=no&missing=M&trace=T&direct=no&report_type=3&report_type=4",
+      "retrieved_utc": "2026-10-20T06:45:09Z",
+      "licence": "public domain (Iowa Environmental Mesonet); attribution appreciated",
+      "licence_text": "Iowa Environmental Mesonet: 'The materials found on this website are in the public domain and may be used freely by anyone for any lawful purpose.' (https://mesonet.agron.iastate.edu/disclaimer.php, checked 2026-10-20)",
+      "attribution": "Data from the Iowa Environmental Mesonet, Iowa State University.",
+      "sha256": "18d92b7e4d1a593a39d8cb9e82a7ad6b486e4b576e1934812d9eceb7eca51ef0",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "research_pmu_lightning/IEM_METAR_SE_England_airports_20190809_1200-2000UTC.csv",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "metoffice_warnings_text": {
+      "dataset_id": "metoffice_uk_warnings_wayback_20190809",
+      "publisher": "Met Office (UK weather warnings page), archived by the Internet Archive",
+      "title": "Text extracted from the Met Office UK weather warnings page, Internet Archive capture 2019-08-09T16:02:23Z",
+      "url": "https://web.archive.org/web/20190809160223id_/https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
+      "retrieved_utc": "2026-10-20T06:48:15Z",
+      "licence": "Open Government Licence v3.0 (Crown copyright, Met Office)",
+      "licence_text": "Met Office website material is Crown copyright, licensed under the Open Government Licence v3.0 unless stated otherwise (https://www.metoffice.gov.uk/policies/legal, checked 2026-10-20); page read from an Internet Archive capture.",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+      "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+      "mirror": "copy",
+      "derived_from": {
+        "rel": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z.html",
+        "sha256": "9db9d96804f0e858261019d816219134edc82f3b71f33640fe094c164577e703",
+        "note": "page HTML as captured; the text file is the real-data pass's text extraction of this HTML"
+      },
+      "kind": "dataset",
+      "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_demand_faq_docx": {
+      "dataset_id": "neso_historic_demand_2019",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "Historic Demand Data: Frequently Asked Questions (faq-neso.docx)",
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/243ca76a-eefe-419d-a4b5-397073deb100/download/faq-neso.docx",
+      "retrieved_utc": "2026-10-20T06:41:46Z",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "39ecfdf2774712a5317c7c5de995bee26ac653cc44bd008a82dcf234e0b4935a",
+      "mirror": "none",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_historic_demand_2019/doc_faq-neso.docx",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_demand_resource": {
+      "dataset_id": "neso_historic_demand_2019",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "Portal resource record (resource_show) of Historic Demand Data 2019",
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=dd9de980-d724-415a-b344-d8ae11321432",
+      "retrieved_utc": "2026-10-20 (fetched with the dataset; exact time not recorded)",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "d599f6d4563c80f697020b36ff134e36def4edd59324bc4ebab0b3fda282e21c",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_historic_demand_2019/resource_show.json",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_embedded_definition_docx": {
+      "dataset_id": "neso_embedded_wind_solar_forecast_archive_2019",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "Definition of embedded (definition-of-embedded.docx)",
+      "url": "https://api.neso.energy/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/3808c680-b5c0-4eab-aac4-7abb6345e65b/download/definition-of-embedded.docx",
+      "retrieved_utc": "2026-10-20T06:41:51Z",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "e8d4b974d5e3b32415eb66d2306108e56e44c4eb2521fcaadcbc5c647a37bdf7",
+      "mirror": "none",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_embedded_wind_solar_forecast_archive_2019/doc_definition-of-embedded.docx",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_historic_demand": {
+      "dataset_id": "neso_historic_demand_2019",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "Historic Demand Data 2019 (demanddata_2019.csv)",
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/dd9de980-d724-415a-b344-d8ae11321432/download/demanddata_2019.csv",
+      "retrieved_utc": "2026-10-20T06:33:21Z",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "0084d546dcdba0af21b7414f1a1b0ab308a9de8460884aa8e550fd0e858b38da",
+      "mirror": "slice",
+      "slice_rule": "header line plus the lines whose SETTLEMENT_DATE is 08-AUG-2019, 09-AUG-2019 or 10-AUG-2019, copied byte for byte (CRLF kept)",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_historic_demand_2019/demanddata_2019.csv",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_inertia": {
+      "dataset_id": "neso_system_inertia_2019_2020",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "GB System Inertia 2019-2020 (inertia.csv)",
+      "url": "https://api.neso.energy/dataset/8f3cd0ce-6636-469e-b582-55eadfeaa1d9/resource/2f2dbaa1-3047-4e48-85f2-ec24e669678f/download/inertia.csv",
+      "retrieved_utc": "2026-10-20T06:34:38Z",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "e87f9dba11e7feb9ae9c7af64a18c9a909ffde1006b6d3b1224999d2b8704c45",
+      "mirror": "slice",
+      "slice_rule": "header line plus the lines whose Settlement Date is 2019-08-08, 2019-08-09 or 2019-08-10, copied byte for byte (CRLF kept)",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_system_inertia_2019_2020/inertia.csv",
+      "root": "GB_REAL_DATA_DIR"
+    },
+    "neso_inertia_resource": {
+      "dataset_id": "neso_system_inertia_2019_2020",
+      "publisher": "National Energy System Operator (NESO) open data portal",
+      "title": "Portal resource record (resource_show) of GB System Inertia - 2019-2020",
+      "url": "https://api.neso.energy/api/3/action/resource_show?id=2f2dbaa1-3047-4e48-85f2-ec24e669678f",
+      "retrieved_utc": "2026-10-20 (fetched with the dataset; exact time not recorded)",
+      "licence": "NESO Open Data Licence v1.0 (attribution required)",
+      "licence_text": "NESO Open Data Licence v1.0: 'The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below'; attribution 'Supported by National Energy SO Open Data'; licensed 'as is' (https://www.neso.energy/data-portal/neso-open-licence, checked 2026-10-20)",
+      "attribution": "Supported by National Energy SO Open Data.",
+      "sha256": "4dbac9efa1b5debdf8f3dc9171d7e47f28f84d5d32367b916476462774dd4a5b",
+      "mirror": "copy",
+      "kind": "dataset",
+      "file": "neso/datasets/neso_system_inertia_2019_2020/resource_show.json",
+      "root": "GB_REAL_DATA_DIR"
+    }
+  },
+  "documents": {
+    "R02": {
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R02/R02.txt",
+      "text_sha256": "f67a8317480ac8c770a394cdd91e36f733baf61cc068f2b2f943c9f6895633f5",
+      "line_count": 207,
+      "construction": "Real public datasets copied by builder/system_response/real/build_real.py from GB_REAL_DATA_DIR (hash-checked); JSON records written to CSV without changing values; NESO CSV lines copied byte for byte. Part D transcribes ESO Table 4 and the first two rows of Appendix M Q42 from the source catalogue extracts, every printed cell checked on the stated PDF page. No value is synthesised. Asset rows: B1610 per unit per settlement period and MELS records, written to builder/system_response/rows/real_r02_asset.jsonl.",
+      "segments": [
+        {
+          "lines": "L1-L16",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L18-L28",
+          "content": "Part A: how to use the record (files, citation)",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L30-L30",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L31-L47",
+          "content": "B1 FUELINST file description, selection, columns, clock, caveats",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": "API rows (one per fuel type and startTime) pivoted to one row per startTime; values unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_fuelinst",
+              "file": "elexon/raw/FUELINST_20190809_1400_1900Z.json",
+              "sha256": "25aaa5e8f48a8a676d32c09e172dd62014b8ad1898b95f47d057ed90f7492d69",
+              "detail": "all 61 publishTime rows 14:00Z-19:00Z, pivoted by fuelType",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/datasets/FUELINST description",
+              "quote": "average MW values over 5 minutes for each category"
+            }
+          ]
+        },
+        {
+          "lines": "L48-L58",
+          "content": "B2 FUELHH file description and averaging caveat",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": "Pivoted as B1. The caveat is the builder's check of FUELHH against FUELINST.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_fuelhh",
+              "file": "elexon/raw/FUELHH_20190809.json",
+              "sha256": "3974b5d1191ba321801f8df2e0f8581bc8fbf4ae6f1a2e8c1e83935b4ab4041d",
+              "detail": "all 48 settlement periods of 2019-08-09, pivoted by fuelType",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_fuelinst",
+              "file": "elexon/raw/FUELINST_20190809_1400_1900Z.json",
+              "sha256": "25aaa5e8f48a8a676d32c09e172dd62014b8ad1898b95f47d057ed90f7492d69",
+              "detail": "averaging check: FUELHH WIND equals the mean of the first five FUELINST rows in settlement periods [31, 32, 34, 36, 38, 40] and the mean of all six in others",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/datasets/FUELHH description",
+              "quote": "average MW values over 30 minutes for each category"
+            }
+          ]
+        },
+        {
+          "lines": "L59-L68",
+          "content": "B3 INDO/ITSDO file description",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_indo_itsdo",
+              "file": "elexon/raw/demand_outturn_INDO_ITSDO_20190809.json",
+              "sha256": "cbd9555f6c0c9d03e8bd1a7c5305283cfda51c1e0c2f9013e7546112e3e131b0",
+              "detail": "48 settlement periods of 2019-08-09, fields as published",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/demand/outturn description",
+              "quote": "measures the half-hour average MW demand metered by the Transmission Company based on its operational metering"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/demand/outturn description",
+              "quote": "takes into account transmission losses but does not include station transformer load, pumped storage demand or interconnector demand"
+            }
+          ]
+        },
+        {
+          "lines": "L69-L86",
+          "content": "B4 NESO historic demand file description incl. modelled embedded generation",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": "Rows selected by date; no value changed.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_historic_demand",
+              "file": "neso/datasets/neso_historic_demand_2019/demanddata_2019.csv",
+              "sha256": "0084d546dcdba0af21b7414f1a1b0ab308a9de8460884aa8e550fd0e858b38da",
+              "detail": "header and the 144 lines dated 08/09/10-AUG-2019, copied byte for byte",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "neso_demand_resource",
+              "file": "neso/datasets/neso_historic_demand_2019/resource_show.json",
+              "sha256": "d599f6d4563c80f697020b36ff134e36def4edd59324bc4ebab0b3fda282e21c",
+              "detail": "fields created and last_modified",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "neso_demand_faq_docx",
+              "file": "neso/datasets/neso_historic_demand_2019/doc_faq-neso.docx",
+              "sha256": "39ecfdf2774712a5317c7c5de995bee26ac653cc44bd008a82dcf234e0b4935a",
+              "detail": "FAQ answer on averaging",
+              "quote": "All values are an average over the half hour."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "neso_demand_faq_docx",
+              "file": "neso/datasets/neso_historic_demand_2019/doc_faq-neso.docx",
+              "sha256": "39ecfdf2774712a5317c7c5de995bee26ac653cc44bd008a82dcf234e0b4935a",
+              "detail": "FAQ answer on time basis",
+              "quote": "All times are UK time and for the half hour beginning."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "neso_embedded_definition_docx",
+              "file": "neso/datasets/neso_embedded_wind_solar_forecast_archive_2019/doc_definition-of-embedded.docx",
+              "sha256": "e8d4b974d5e3b32415eb66d2306108e56e44c4eb2521fcaadcbc5c647a37bdf7",
+              "detail": "definition of embedded",
+              "quote": "The true output of these generators is not known so an estimate is provided based on NESO's best model."
+            }
+          ]
+        },
+        {
+          "lines": "L87-L95",
+          "content": "B5 NESO inertia file description (model estimate)",
+          "value_status": "modelled",
+          "extraction_method": "script",
+          "transformation": "Rows selected by date; no value changed.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_inertia",
+              "file": "neso/datasets/neso_system_inertia_2019_2020/inertia.csv",
+              "sha256": "e87f9dba11e7feb9ae9c7af64a18c9a909ffde1006b6d3b1224999d2b8704c45",
+              "detail": "header and the 144 lines dated 2019-08-08/09/10, copied byte for byte",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "neso_inertia_resource",
+              "file": "neso/datasets/neso_system_inertia_2019_2020/resource_show.json",
+              "sha256": "4dbac9efa1b5debdf8f3dc9171d7e47f28f84d5d32367b916476462774dd4a5b",
+              "detail": "fields description and created",
+              "quote": "Estimate of the market provided and outturn inertia for the GB Transmission System per settlement period."
+            }
+          ]
+        },
+        {
+          "lines": "L96-L105",
+          "content": "B6 LOLPDRM file description",
+          "value_status": "modelled",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_lolpdrm",
+              "file": "elexon/raw/LOLPDRM_2019-08-09.json",
+              "sha256": "9a6ab29cab3543a43239d59b12a5d177e937803b0151a4dd60da1cfd163be043",
+              "detail": "240 rows with settlementDate 2019-08-09 (5 horizons x 48 periods)",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/forecast/system/loss-of-load description",
+              "quote": "the returned value is the forecast received that number of hours before the start of the settlement period"
+            }
+          ]
+        },
+        {
+          "lines": "L106-L111",
+          "content": "B7 BM unit reference file description (2026 registration snapshot)",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_ref_bmunits",
+              "file": "elexon/raw/ref_bmunits_all.json.gz",
+              "sha256": "9ebb42fcd3496c2bd5963ee867ef3885bff9d1e3c2299dc0262b962eb999fabc",
+              "detail": "records with elexonBmUnit in T_HOWAO-1/2/3, T_LBAR-1, T_LBAR-1G",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L112-L123",
+          "content": "B8 B1610 file description",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_b1610_T_HOWAO-1",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-1_2019-08-09.json",
+              "sha256": "044a6133a678efc7619a1d01b60cc7320c14a0489ca3ee374f5a3849823c10b2",
+              "detail": "48 records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_b1610_T_HOWAO-2",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-2_2019-08-09.json",
+              "sha256": "ffbcd6a754133875a3badd89a4c8d9440b4aceab1e3ae95e2c30b0c628c3b28c",
+              "detail": "48 records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_b1610_T_HOWAO-3",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-3_2019-08-09.json",
+              "sha256": "076a1d7073b9062a55766e1a9565b90cb7a4f1bc13ab8bfe5fc0a2e03c339414",
+              "detail": "48 records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_b1610_T_LBAR-1",
+              "file": "elexon/raw/B1610_stream_T_LBAR-1_2019-08-09.json",
+              "sha256": "5c7dd74e693949453a9f28ae11b4062ac8857ed6b7744978dd6eacb5311c8da7",
+              "detail": "48 records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/datasets/B1610/stream description",
+              "quote": "The generation output returned by this endpoint is the metered volume and not the instantaneous power output"
+            }
+          ]
+        },
+        {
+          "lines": "L124-L134",
+          "content": "B9 MELS file description; note on PN availability",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_physical_T_HOWAO-1",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-1_2019-08-09.json",
+              "sha256": "f9a82958bd87dc86968a3a48d9cd0e7a1ec117641bc423980302b395296818be",
+              "detail": "MELS records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_physical_T_HOWAO-2",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-2_2019-08-09.json",
+              "sha256": "4d88ab4e3b557fb5feb22101d4f4f40956ace6db40ccdf2d402d4f2ea77cbe4c",
+              "detail": "MELS records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_physical_T_HOWAO-3",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-3_2019-08-09.json",
+              "sha256": "6d9d9b6ce81538bd9dac9ae875064422c48a77e6879e0d60c3b96773d4accfc3",
+              "detail": "MELS records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_physical_T_LBAR-1",
+              "file": "elexon/raw/PHYSICAL_T_LBAR-1_2019-08-09.json",
+              "sha256": "8409618a392d05e8530c814c88ccf916a1003d4d7324a25c5bf34ba613c53cb8",
+              "detail": "MELS records with settlementDate 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_physical_T_LBAR-1G",
+              "file": "elexon/raw/PHYSICAL_T_LBAR-1G_2019-08-09.json",
+              "sha256": "2671fc8210d52df4dd0cb7079f468c949c1d9dc9654f541857ca0208e8dfe7b5",
+              "detail": "MELS records with settlementDate 2019-08-09",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L136-L136",
+          "content": "Part C heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L137-L149",
+          "content": "C1 INDO/ITSDO verbatim lines, settlement periods 30-40",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_indo_itsdo",
+              "file": "elexon/raw/demand_outturn_INDO_ITSDO_20190809.json",
+              "sha256": "cbd9555f6c0c9d03e8bd1a7c5305283cfda51c1e0c2f9013e7546112e3e131b0",
+              "detail": "settlement periods 30-40 of 2019-08-09",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L150-L163",
+          "content": "C2 NESO demand verbatim lines, 9 Aug settlement periods 30-40",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_historic_demand",
+              "file": "neso/datasets/neso_historic_demand_2019/demanddata_2019.csv",
+              "sha256": "0084d546dcdba0af21b7414f1a1b0ab308a9de8460884aa8e550fd0e858b38da",
+              "detail": "09-AUG-2019 settlement periods 30-40",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L164-L176",
+          "content": "C3 NESO inertia verbatim lines, 9 Aug settlement periods 30-40",
+          "value_status": "modelled",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_inertia",
+              "file": "neso/datasets/neso_system_inertia_2019_2020/inertia.csv",
+              "sha256": "e87f9dba11e7feb9ae9c7af64a18c9a909ffde1006b6d3b1224999d2b8704c45",
+              "detail": "2019-08-09 settlement periods 30-40",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L177-L183",
+          "content": "C4 Reference fields of the five BM units",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_ref_bmunits",
+              "file": "elexon/raw/ref_bmunits_all.json.gz",
+              "sha256": "9ebb42fcd3496c2bd5963ee867ef3885bff9d1e3c2299dc0262b962eb999fabc",
+              "detail": "fields elexonBmUnit, bmUnitName, fuelType, leadPartyName, generationCapacity",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L185-L187",
+          "content": "Part D heading and clock note",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L188-L197",
+          "content": "D1 ESO Table 4 (comparison of system conditions, 1 July vs 9 August) with context",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 23,
+              "printed_page": 24,
+              "section": "4.4 Frequency Response, 3. Comparison with historical days, Table 4",
+              "quote": null,
+              "catalogue_artifact": "ESO-p23-tab4",
+              "catalogue_extract": "extracted/ESO-p23-tab4.csv",
+              "catalogue_extract_sha256": "170e94aa54e58cb65051a9d78d20649d9f9ea543c5155a26388c27699fad101f",
+              "cells_checked_on_page": 14
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 23,
+              "printed_page": 24,
+              "section": "4.4 Frequency Response, 3. Comparison with historical days",
+              "quote": "On 1st July at 08:27 the NEMO interconnector tripped while importing 1,000MW from Belgium to GB resulting in an instantaneous loss of 1,000MW on the system."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 23,
+              "printed_page": 24,
+              "section": "Table 4 caption",
+              "quote": "Table 4 – Comparison of system conditions between 1st July and 9th August"
+            }
+          ]
+        },
+        {
+          "lines": "L198-L207",
+          "content": "D2 Appendix M Q42 inertia estimate: method sentences and the two pre-event rows",
+          "value_status": "estimated",
+          "extraction_method": "transcription",
+          "transformation": "Rows 1-2 of the 8-row table; the remaining rows are not reproduced in R02.",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "APP",
+              "pdf_page": 90,
+              "printed_page": null,
+              "section": "Appendix M, question 42, table (first two of eight rows)",
+              "quote": null,
+              "catalogue_artifact": "APP-p90-tbl-q42-inertia",
+              "catalogue_extract": "extracted/APP-p90-tbl-q42-inertia.csv",
+              "catalogue_extract_sha256": "444021bc242f5af16bafd96e0153466c65dd8e7d6a7c4c69f3b1e6a757abd183",
+              "cells_checked_on_page": 6
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 90,
+              "printed_page": null,
+              "section": "Appendix M, question 42",
+              "quote": "What was the level of system inertia (in VAs) six hour period prior to, during and after the event?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 90,
+              "printed_page": null,
+              "section": "Appendix M, answer 42",
+              "quote": "The ESO does not currently measure system inertia directly but instead estimates it using a model."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 90,
+              "printed_page": null,
+              "section": "Appendix M, answer 42",
+              "quote": "The inertia estimate is derived from the forecasted demand level, embedded solar and wind to continuously estimate the system inertia and the largest loss that needs to be secured in real-time operations."
+            }
+          ]
+        }
+      ],
+      "artifacts": {
+        "R02/R02_elexon_fuelinst_5min_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_fuelinst",
+              "file": "elexon/raw/FUELINST_20190809_1400_1900Z.json",
+              "sha256": "25aaa5e8f48a8a676d32c09e172dd62014b8ad1898b95f47d057ed90f7492d69"
+            }
+          ],
+          "transformation": "pivot fuelType rows to columns; sort by startTime",
+          "sha256": "4c330f34f4117aec5a945d160bb76a76443805518485eb16624b541058f39052",
+          "bytes": 7211
+        },
+        "R02/R02_elexon_fuelhh_halfhour_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_fuelhh",
+              "file": "elexon/raw/FUELHH_20190809.json",
+              "sha256": "3974b5d1191ba321801f8df2e0f8581bc8fbf4ae6f1a2e8c1e83935b4ab4041d"
+            }
+          ],
+          "transformation": "pivot fuelType rows to columns; sort by startTime",
+          "sha256": "a38c130eb207bdd8c8213833774466c5e7b1303713eac6fb840da605eef5b07d",
+          "bytes": 5669
+        },
+        "R02/R02_elexon_indo_itsdo_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_indo_itsdo",
+              "file": "elexon/raw/demand_outturn_INDO_ITSDO_20190809.json",
+              "sha256": "cbd9555f6c0c9d03e8bd1a7c5305283cfda51c1e0c2f9013e7546112e3e131b0"
+            }
+          ],
+          "transformation": "fields as published; sort by settlementPeriod",
+          "sha256": "c8a188ed7f0ac0a7f9578314b9b76240bc11fa21d0dcd850b588e99dd8308eca",
+          "bytes": 3369
+        },
+        "R02/R02_neso_historic_demand_20190808-10.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "neso_historic_demand",
+              "file": "neso/datasets/neso_historic_demand_2019/demanddata_2019.csv",
+              "sha256": "0084d546dcdba0af21b7414f1a1b0ab308a9de8460884aa8e550fd0e858b38da"
+            }
+          ],
+          "transformation": "header plus lines dated 08/09/10-AUG-2019, byte for byte",
+          "sha256": "781999959c7cafd51738924801f310f87db5ae9d6241223bef9e1a234f24c942",
+          "bytes": 13118
+        },
+        "R02/R02_neso_inertia_20190808-10.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "neso_inertia",
+              "file": "neso/datasets/neso_system_inertia_2019_2020/inertia.csv",
+              "sha256": "e87f9dba11e7feb9ae9c7af64a18c9a909ffde1006b6d3b1224999d2b8704c45"
+            }
+          ],
+          "transformation": "header plus lines dated 2019-08-08/09/10, byte for byte",
+          "sha256": "266f00aebb3f33af55845a955a10909c7892e8b4bd071f2a3b8fb70493057083",
+          "bytes": 3368
+        },
+        "R02/R02_elexon_lolpdrm_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_lolpdrm",
+              "file": "elexon/raw/LOLPDRM_2019-08-09.json",
+              "sha256": "9a6ab29cab3543a43239d59b12a5d177e937803b0151a4dd60da1cfd163be043"
+            }
+          ],
+          "transformation": "rows with settlementDate 2019-08-09; sort by settlementPeriod, forecastHorizon",
+          "sha256": "8bf423b7f583a0fd6abdbb31fe4568b407a106899bf0ca7b90c094d2ab8a0269",
+          "bytes": 22409
+        },
+        "R02/R02_elexon_bm_unit_reference.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_ref_bmunits",
+              "file": "elexon/raw/ref_bmunits_all.json.gz",
+              "sha256": "9ebb42fcd3496c2bd5963ee867ef3885bff9d1e3c2299dc0262b962eb999fabc"
+            }
+          ],
+          "transformation": "filter five units; all fields in API order; sort by elexonBmUnit",
+          "sha256": "3ebfc42923c94dc0ac4624aa0ba7cfcce720a13c1bc3526a481769afc72f0e49",
+          "bytes": 1257
+        },
+        "R02/R02_elexon_b1610_selected_units_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_b1610_T_HOWAO-1",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-1_2019-08-09.json",
+              "sha256": "044a6133a678efc7619a1d01b60cc7320c14a0489ca3ee374f5a3849823c10b2"
+            },
+            {
+              "source_id": "elexon_b1610_T_HOWAO-2",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-2_2019-08-09.json",
+              "sha256": "ffbcd6a754133875a3badd89a4c8d9440b4aceab1e3ae95e2c30b0c628c3b28c"
+            },
+            {
+              "source_id": "elexon_b1610_T_HOWAO-3",
+              "file": "elexon/raw/B1610_stream_T_HOWAO-3_2019-08-09.json",
+              "sha256": "076a1d7073b9062a55766e1a9565b90cb7a4f1bc13ab8bfe5fc0a2e03c339414"
+            },
+            {
+              "source_id": "elexon_b1610_T_LBAR-1",
+              "file": "elexon/raw/B1610_stream_T_LBAR-1_2019-08-09.json",
+              "sha256": "5c7dd74e693949453a9f28ae11b4062ac8857ed6b7744978dd6eacb5311c8da7"
+            }
+          ],
+          "transformation": "settlementDate 2019-08-09 records; sort by unit, settlementPeriod",
+          "sha256": "29316b5c8f9270609e021e91f5ce108b1a2cabcc76c2e6b6d7c7c548637d0c9a",
+          "bytes": 15197
+        },
+        "R02/R02_elexon_mels_selected_units_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_physical_T_HOWAO-1",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-1_2019-08-09.json",
+              "sha256": "f9a82958bd87dc86968a3a48d9cd0e7a1ec117641bc423980302b395296818be"
+            },
+            {
+              "source_id": "elexon_physical_T_HOWAO-2",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-2_2019-08-09.json",
+              "sha256": "4d88ab4e3b557fb5feb22101d4f4f40956ace6db40ccdf2d402d4f2ea77cbe4c"
+            },
+            {
+              "source_id": "elexon_physical_T_HOWAO-3",
+              "file": "elexon/raw/PHYSICAL_T_HOWAO-3_2019-08-09.json",
+              "sha256": "6d9d9b6ce81538bd9dac9ae875064422c48a77e6879e0d60c3b96773d4accfc3"
+            },
+            {
+              "source_id": "elexon_physical_T_LBAR-1",
+              "file": "elexon/raw/PHYSICAL_T_LBAR-1_2019-08-09.json",
+              "sha256": "8409618a392d05e8530c814c88ccf916a1003d4d7324a25c5bf34ba613c53cb8"
+            },
+            {
+              "source_id": "elexon_physical_T_LBAR-1G",
+              "file": "elexon/raw/PHYSICAL_T_LBAR-1G_2019-08-09.json",
+              "sha256": "2671fc8210d52df4dd0cb7079f468c949c1d9dc9654f541857ca0208e8dfe7b5"
+            }
+          ],
+          "transformation": "dataset MELS, settlementDate 2019-08-09; sort by unit, timeFrom, timeTo",
+          "sha256": "bf411d72809dcba33ba46e667504757b72a918bcc8d81bfdf6afb2e8f6e94cb6",
+          "bytes": 22983
+        },
+        "R02/R02_eso_inertia_and_conditions_tables.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/ESO-p23-tab4.csv"
+            },
+            {
+              "catalogue_extract": "extracted/APP-p90-tbl-q42-inertia.csv"
+            }
+          ],
+          "transformation": "cells as printed; Q42 values given the printed column unit",
+          "sha256": "6d498115a48aa7b52a195ab82b322d21402f51767d1d5460034301e01debd078",
+          "bytes": 687
+        }
+      }
+    },
+    "R04": {
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R04/R04.txt",
+      "text_sha256": "291f69e262010f79828a73a9c779ac986bd7572cdca0c11c17493a580802e823",
+      "line_count": 178,
+      "construction": "Part A copies IEM METAR lines (public domain) byte for byte; Part B parses the text the real-data pass extracted from the Internet Archive capture of the Met Office warnings page (OGL) and reproduces fields as printed; Parts C-D quote and transcribe ESO Appendix M Q32 and the Appendix A lightning-risk table (verified on the PDF page text); Part E transcribes values displayed in two published MeteoGroup screenshots (catalogue figure transcriptions). No value is synthesised.",
+      "segments": [
+        {
+          "lines": "L1-L16",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L18-L18",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L19-L31",
+          "content": "A1 METAR file description: source, licence, selection, columns",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": "Lines selected by station and time; copied byte for byte with the header line.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "iem_metar",
+              "file": "research_pmu_lightning/IEM_METAR_SE_England_airports_20190809_1200-2000UTC.csv",
+              "sha256": "18d92b7e4d1a593a39d8cb9e82a7ad6b486e4b576e1934812d9eceb7eca51ef0",
+              "detail": "lines for EGGW, EGSC, EGTC with valid 14:50-17:20 UTC",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L32-L51",
+          "content": "A2 METAR report texts, verbatim",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": "metar column of each selected line, unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "iem_metar",
+              "file": "research_pmu_lightning/IEM_METAR_SE_England_airports_20190809_1200-2000UTC.csv",
+              "sha256": "18d92b7e4d1a593a39d8cb9e82a7ad6b486e4b576e1934812d9eceb7eca51ef0",
+              "detail": "metar column of the selected lines",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L52-L59",
+          "content": "A3 METAR code legend (standard report format)",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L61-L61",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L62-L71",
+          "content": "B1 Warnings page capture: source, licence, banner, clock",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "page banner and day tabs",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "page banner",
+              "quote": "We are experiencing issues. These warnings may be out of date."
+            }
+          ]
+        },
+        {
+          "lines": "L72-L82",
+          "content": "B2 Warning overview as printed",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Overview lines: warning heading and its region list, as printed.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning overview",
+              "quote": "London & South East England, South West England, Wales"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning overview",
+              "quote": "East Midlands, East of England, London & South East England, North West England, South West England, Wales, West Midlands, Yorkshire & Humber"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning overview",
+              "quote": "Central, Tayside & Fife, East Midlands, East of England, Grampian, Highlands & Eilean Siar, London & South East England, North East England, North West England, Northern Ireland, Orkney & Shetland, SW Scotland, Lothian Borders, South West England, Strathclyde, Wales, West Midlands, Yorkshire & Humber"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning overview",
+              "quote": "Central, Tayside & Fife, Grampian, Highlands & Eilean Siar, North East England, North West England, Northern Ireland, Orkney & Shetland, SW Scotland, Lothian Borders, Strathclyde, Yorkshire & Humber"
+            }
+          ]
+        },
+        {
+          "lines": "L83-L88",
+          "content": "B3.1 Warning detail block: Wind 15:00 Today to 23:59 Today",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Fields of one warning detail block as printed; local authorities are listed for the East of England region only.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 1 detail",
+              "quote": "Strong winds are expected to cause some disruption during Friday afternoon and evening."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 1 detail",
+              "quote": "10:29 (UTC+1) on Thu 8 Aug 2019"
+            }
+          ]
+        },
+        {
+          "lines": "L89-L97",
+          "content": "B3.2 Warning detail block: Wind 00:00 Tomorrow to 23:59 Tomorrow",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Fields of one warning detail block as printed; local authorities are listed for the East of England region only.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 2 detail",
+              "quote": "Strong winds are expected to cause some disruption, particularly during Saturday daytime."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 2 detail",
+              "quote": "10:32 (UTC+1) on Thu 8 Aug 2019"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 2 detail",
+              "quote": "Update to likelihood on impact matrix"
+            }
+          ]
+        },
+        {
+          "lines": "L98-L110",
+          "content": "B3.3 Warning detail block: Rain 00:00 Today to 23:59 Today",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Fields of one warning detail block as printed; local authorities are listed for the East of England region only.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 3 detail",
+              "quote": "A band of heavy rain followed by heavy showers or thunderstorms has the potential to bring disruption."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 3 detail",
+              "quote": "09:57 (UTC+1) on Fri 9 Aug 2019"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 3 detail",
+              "quote": "Changes to the warning area and further details as rain has now cleared much of England, Wales and Northern Ireland and while the heaviest rain has cleared, further heavy showers are expected through the day."
+            }
+          ]
+        },
+        {
+          "lines": "L111-L120",
+          "content": "B3.4 Warning detail block: Thunderstorm 00:00 Tomorrow to 06:00 Sun 11",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Fields of one warning detail block as printed; local authorities are listed for the East of England region only.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 4 detail",
+              "quote": "Slow-moving thundery showers on Saturday may produce some torrential downpours which could cause local flooding and disruption to travel."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 4 detail",
+              "quote": "10:00 (UTC+1) on Fri 9 Aug 2019"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "warning 4 detail",
+              "quote": "Change to warning area and addition of longer duration rainfall accumulations."
+            }
+          ]
+        },
+        {
+          "lines": "L121-L123",
+          "content": "B4 Further details of the rain warning (showers and thunderstorms sentence)",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c",
+              "detail": "rain warning further details",
+              "quote": "Once the rain has cleared scattered heavy showers and thunderstorms are expected to develop.  Many places will miss these, but where they do occur 10-20 mm is possible in one hour, with perhaps 30 mm in a few hours."
+            }
+          ]
+        },
+        {
+          "lines": "L125-L125",
+          "content": "Part C heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L126-L135",
+          "content": "C1 Appendix M Q32 question and answer sentences",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, question 32",
+              "quote": "What is ESO policy on bad weather risk mitigations? Was the weather such on the day that actions were being considered or had been taken?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, answer 32",
+              "quote": "Weather conditions on 9th August were anticipated and were not unusual."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, answer 32",
+              "quote": "The Met Office had issued yellow warnings of wind for the South West England and South Wales, and yellow warnings of rain for all of England and Wales."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, answer 32",
+              "quote": "Lightning Risk 1 was in place in NW England, NE England and Midlands/Lincs."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, answer 32",
+              "quote": "The Yellow Warning is the lowest of the 3 Met Office warnings."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 86,
+              "printed_page": null,
+              "section": "Appendix M, answer 32",
+              "quote": "NGESO's policy for severe weather, which was not required on the day,"
+            }
+          ]
+        },
+        {
+          "lines": "L137-L137",
+          "content": "Part D heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L138-L157",
+          "content": "D1 Appendix A lightning-risk table, its introduction and the day's forecast text",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, Lightning Forecasts from Meteogroup on 9 August 2019 (Table 1)",
+              "quote": null,
+              "catalogue_artifact": "APP-p10-tbl-lightning-forecast",
+              "catalogue_extract": "extracted/APP-p10-tbl-lightning-forecast.csv",
+              "catalogue_extract_sha256": "5a36e7abec06e767a63506c9e64334bc6f04efe49d62056277a0b480d454ecb0",
+              "cells_checked_on_page": 27
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, lightning forecasts",
+              "quote": "Lightning risk is provided on a scale of 1-5, with 5 referring to the least risk of lightning (due to the absence of the required weather conditions), and 1 the highest risk."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, lightning forecasts",
+              "quote": "On 9 August from 05:49hrs onwards ESO received email updates on the lightning risk from Meteogroup."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, lightning forecasts",
+              "quote": "East Anglia was updated to Risk 1 in the update just prior to the incident."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, weather forecast",
+              "quote": "Rain, heavy at times, clearing northwards, but persisting in northern and eastern Scotland. A mix of sunny spells, but also some heavy and possibly thundery showers will follow on behind. Feeling warm and humid for many, but increasingly windy."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 10,
+              "printed_page": null,
+              "section": "Appendix A, table heading",
+              "quote": "Regions Forecasted with Level 1 lightning risk for the next 24 hours"
+            }
+          ]
+        },
+        {
+          "lines": "L159-L162",
+          "content": "Part E heading and not-held statement",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L163-L169",
+          "content": "E1 ESO Figure 4 caption and the three strike popups (figure transcription)",
+          "value_status": "reported",
+          "extraction_method": "figure_transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 16,
+              "printed_page": 17,
+              "section": "4.1 Transmission System, Figure 4 caption",
+              "quote": "Figure 4 - Three simultaneous lightning strikes close to Willian Arboretum at 15:52hrs – Data Source: Meteogroup"
+            },
+            {
+              "kind": "report_figure",
+              "source_id": "ESO",
+              "pdf_page": 16,
+              "printed_page": 17,
+              "section": "4.1 Transmission System, Figure 4",
+              "catalogue_artifact": "ESO-p16-fig4",
+              "catalogue_files": [
+                "figures/ESO-p16-fig4.png",
+                "figures/ESO-p16-fig4_native.jpeg",
+                "extracted/ESO-p16-fig4.csv"
+              ],
+              "note": "Popup values read from the raster image by the catalogue; the lower-left popup is hard to read at this resolution and was confirmed against the same strike in APP p25 Figure 3.1.1.",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L170-L178",
+          "content": "E2 NGET Figure 3.1.1 caption, viewer settings and strike popup (figure transcription)",
+          "value_status": "reported",
+          "extraction_method": "figure_transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 25,
+              "printed_page": null,
+              "section": "Appendix C, 3.1.1 MeteoGroup lightning activity",
+              "quote": "Figure 3.1.1 MeteoGroup Lightning Activity Recordings in the vicinity of Letchworth Garden City."
+            },
+            {
+              "kind": "report_figure",
+              "source_id": "APP",
+              "pdf_page": 25,
+              "printed_page": null,
+              "section": "Appendix C (NGET report), Figure 3.1.1",
+              "catalogue_artifact": "APP-p25-map-lightning-meteogroup",
+              "catalogue_files": [
+                "figures/APP-p25-map-lightning-meteogroup.png",
+                "extracted/APP-p25-map-lightning-meteogroup.csv"
+              ],
+              "note": "Viewer panel and popup fields read from the raster screenshot at native resolution by the catalogue.",
+              "quote": null
+            }
+          ]
+        }
+      ],
+      "artifacts": {
+        "R04/R04_iem_metar_EGGW_EGSC_EGTC_20190809_1450-1720Z.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "iem_metar",
+              "file": "research_pmu_lightning/IEM_METAR_SE_England_airports_20190809_1200-2000UTC.csv",
+              "sha256": "18d92b7e4d1a593a39d8cb9e82a7ad6b486e4b576e1934812d9eceb7eca51ef0"
+            }
+          ],
+          "transformation": "header plus lines for three stations, valid 14:50-17:20 UTC",
+          "sha256": "cc7c5658df663f23fa5a7cb30bbdc503b4c25611b67cd2af84ef7a6302227df2",
+          "bytes": 1986
+        },
+        "R04/R04_metoffice_warnings_capture_20190809T160223Z.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "metoffice_warnings_text",
+              "file": "research_pmu_lightning/MetOffice_uk-warnings_wayback_20190809T160223Z_extracted_text.txt",
+              "sha256": "276a18a17066ed36537573209f29c6b88f0be800edcc82e820042ddfa47ea22c"
+            }
+          ],
+          "transformation": "warning detail blocks parsed into one row each; text as printed",
+          "sha256": "2be868228af05abafbe4fda9c66994f3d571418d427d84666e79e37e738c5753",
+          "bytes": 1848
+        },
+        "R04/R04_lightning_information_as_published.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/APP-p10-tbl-lightning-forecast.csv"
+            },
+            {
+              "catalogue_extract": "extracted/ESO-p16-fig4.csv"
+            },
+            {
+              "catalogue_extract": "extracted/APP-p25-map-lightning-meteogroup.csv"
+            }
+          ],
+          "transformation": "as printed; figure values are catalogue transcriptions of raster screenshots",
+          "sha256": "9f9fe457b0a0fb094182776800123485b87217a643e3e4710d3e959d0d70e060",
+          "bytes": 2726
+        }
+      }
+    },
+    "R06": {
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R06/R06.txt",
+      "text_sha256": "0368a84b740f9d7d9b33a9c702233215f10c5af6bed5c5686a87c8462837726a",
+      "line_count": 173,
+      "construction": "Part A transcribes ESO Table 3, ESO Table 5 (with the section 4.4 text), Appendix M Q16 and Q17 and Appendix I Table 1 from the source catalogue extracts; every printed cell and every quotation is checked on the stated PDF page. Part B copies Elexon BOALF (deduplicated across seven per-period queries, acceptanceTime 15:40-16:45Z), QAS (whole day) and DISEBSP (whole day) records without changing values. Control rows: one ESO-ENCC entry per acceptance in builder/system_response/rows/real_r06_control.jsonl.",
+      "segments": [
+        {
+          "lines": "L1-L15",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L17-L17",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L18-L31",
+          "content": "A1 ESO Table 3 (frequency response holding) with the sentences printed before it",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 21,
+              "printed_page": 22,
+              "section": "4.4 Frequency Response, Table 3 - Frequency response holding",
+              "quote": null,
+              "catalogue_artifact": "ESO-p21-tab3",
+              "catalogue_extract": "extracted/ESO-p21-tab3.csv",
+              "catalogue_extract_sha256": "0c10b44f07d46061aacb7430d7f1bbf9b972b3bb3c24b1fd96b2afc0e7f2e44e",
+              "cells_checked_on_page": 27
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 21,
+              "printed_page": 22,
+              "section": "4.4 Frequency Response, Response Holding on August 9th 2019",
+              "quote": "The largest secured loss on the event day was 1,000 MW. In order to keep the frequency above 49.5Hz for this level of infeed loss, the response holding was calculated and planned as below."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 21,
+              "printed_page": 22,
+              "section": "Table 3 caption",
+              "quote": "Table 3 - Frequency response holding"
+            }
+          ]
+        },
+        {
+          "lines": "L32-L53",
+          "content": "A2 ESO Table 5 (validated frequency response performance) with the text before it",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 25,
+              "printed_page": 26,
+              "section": "4.4 Frequency Response, Table 5 – Validated Frequency Response Performance",
+              "quote": null,
+              "catalogue_artifact": "ESO-p25-tab5",
+              "catalogue_extract": "extracted/ESO-p25-tab5.csv",
+              "catalogue_extract_sha256": "98d7bf9846b8e9209fa2eb6fb198df2f8042592da867b0da391bab2a1fa5871b",
+              "cells_checked_on_page": 27
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 24,
+              "printed_page": 25,
+              "section": "4.4 Frequency Response, Delivery of Frequency Response",
+              "quote": "At the time of the event the amount of low frequency response being held was 1,022MW primary and 1,314MW secondary."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 24,
+              "printed_page": 25,
+              "section": "4.4 Frequency Response, Delivery of Frequency Response",
+              "quote": "To date, of the 1,022MW and 1,314MW of response holding, the ESO has worked with providers and used internal data to validate the performance of 91% of all primary and secondary that was being held at the time (i.e. 945MW and 1,202MW respectively)."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 24,
+              "printed_page": 25,
+              "section": "4.4 Frequency Response, Delivery of Frequency Response",
+              "quote": "Of the validated response holding the ESO can confirm that 89% of primary (841MW) and 88% of secondary (1055MW) response performed as expected and in line with its contractual obligations."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 24,
+              "printed_page": 25,
+              "section": "4.4 Frequency Response, Delivery of Frequency Response",
+              "quote": "Nevertheless, there was some under-performance and this is being followed-up with the specific providers."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 25,
+              "printed_page": 26,
+              "section": "Table 5 caption and column heading",
+              "quote": "% validated low frequency response delivered at 30 seconds versus Total MW response held"
+            }
+          ]
+        },
+        {
+          "lines": "L54-L77",
+          "content": "A3 Appendix M Q16 table (low-frequency response holding at 15:52, 16:52, 17:00)",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Table layout turned into one line per time point and response type; cells as printed.",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "APP",
+              "pdf_page": 81,
+              "printed_page": null,
+              "section": "Appendix M, question 16, table",
+              "quote": null,
+              "catalogue_artifact": "APP-p81-tbl-q16-response-holding",
+              "catalogue_extract": "extracted/APP-p81-tbl-q16-response-holding.csv",
+              "catalogue_extract_sha256": "c06261e44e4f91026c8d21102a7ab7af52d0dda3b5c5d526bea41ea09dd84d1d",
+              "cells_checked_on_page": 21
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 81,
+              "printed_page": null,
+              "section": "Appendix M, question 16",
+              "quote": "What was the total capacity of all Primary and Secondary frequency response available; an hour prior to as well as during and after the time of the event; for activation by the ESO?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 81,
+              "printed_page": null,
+              "section": "Appendix M, answer 16",
+              "quote": "Below is a table detailing the volumes of frequency response which was instructed by the ENCC at three time points around the event."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 81,
+              "printed_page": null,
+              "section": "Appendix M, answer 16",
+              "quote": "Source of data: NED system"
+            }
+          ]
+        },
+        {
+          "lines": "L78-L97",
+          "content": "A4 Appendix M Q17 table (holding vs delivered within 30 s) with its footnote",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Table layout turned into one line per row; cells as printed ('-' where printed).",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, question 17, table",
+              "quote": null,
+              "catalogue_artifact": "APP-p82-tbl-q17-response-delivered",
+              "catalogue_extract": "extracted/APP-p82-tbl-q17-response-delivered.csv",
+              "catalogue_extract_sha256": "39c9444a21c4ed86dcb9766e043ad2ee71d9008a492d6575c3c235f14fa9dde7",
+              "cells_checked_on_page": 23
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, question 17",
+              "quote": "Was all the Primary and Secondary frequency response activated by the ESO, and when (in a timeline, prior to, during and after the event) was this done?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, answer 17",
+              "quote": "The table below highlights the frequency response holding and the current best view of the low frequency response performance, this is subject to change."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, answer 17, table footnote",
+              "quote": "*Demand varies due to frequency, as some devices such as synchronous motors use slightly less power when frequency is slightly low, and vice versa when frequency is slightly high."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, answer 17, table footnote",
+              "quote": "For 29 GW demand, this effect is approximately 350MW at 49.5 Hz."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, answer 17, table footnote",
+              "quote": "This effect is unrelated to LFDD."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 82,
+              "printed_page": null,
+              "section": "Appendix M, answer 17, total row",
+              "quote": "Total (Excluding demand effect*)"
+            }
+          ]
+        },
+        {
+          "lines": "L98-L114",
+          "content": "A5 Appendix I Table 1 (modelled imbalance time series): inputs of the ESO simulation",
+          "value_status": "modelled",
+          "extraction_method": "transcription",
+          "transformation": "Event names, times and MW as printed; '*' kept as printed.",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "APP",
+              "pdf_page": 62,
+              "printed_page": null,
+              "section": "Appendix I, Table 1 – Modelled Imbalance Time Series",
+              "quote": null,
+              "catalogue_artifact": "APP-p62-tbl1-modelled-imbalance",
+              "catalogue_extract": "extracted/APP-p62-tbl1-modelled-imbalance.csv",
+              "catalogue_extract_sha256": "da6057ab264cf6d133e68ae197188acb62fb77b2f0675106c883a89cb58abb3a",
+              "cells_checked_on_page": 18
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 61,
+              "printed_page": null,
+              "section": "Appendix I, Simulation of Frequency Trace",
+              "quote": "The Frequency Simulation Engine (FSE) is used by ESO to calculate the frequency response holding required to keep frequency within limits for a given loss and set of system conditions."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 62,
+              "printed_page": null,
+              "section": "Appendix I, text before Table 1",
+              "quote": "This gives the following inputs for a time series of imbalance"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 62,
+              "printed_page": null,
+              "section": "Appendix I, Table 1 caption",
+              "quote": "Table 1 – Modelled Imbalance Time Series"
+            }
+          ]
+        },
+        {
+          "lines": "L116-L116",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L117-L135",
+          "content": "B1 BOALF file description: queries, deduplication, window, columns, caveats",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "1016 records returned by the seven queries; 843 unique; 363 with acceptanceTime in the window.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp32",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP32.json",
+              "sha256": "313e28775a956f863bd27e8b7f6ec17ebaa27e5583d7066bbfe19cd0b273ec9f",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp33",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP33.json",
+              "sha256": "96aa5db5445bc957df9d1742925f7625125a4bc32087c6842c08f8b50e0da01c",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp34",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP34.json",
+              "sha256": "261c3c9a6438f0efc698d6edf5dcaacaff7c17649e5045c2d44cdba55072cc93",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp35",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP35.json",
+              "sha256": "57c713b1dc8b8fc1c3bdf5ec1532e2551ea8b25933e6c312c9ae16673cd4d6d2",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp36",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP36.json",
+              "sha256": "c0149de56dd97d6038b03fb1457df9213cc2957864bab48b12aadbc03fee690c",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp37",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP37.json",
+              "sha256": "67ae03025af218fedc11dc1a5f8a5e754fc7bb4a39b5413f45b244ce67bed2bf",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_boalf_sp38",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP38.json",
+              "sha256": "e49b70915da6237770653d90fb83ffcef1cd8faab5e6b5a5961c3a733f32ebba",
+              "detail": "all records; deduplicated across the seven queries",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/balancing/acceptances/all description",
+              "quote": "It returns the data valid for a single settlement period."
+            }
+          ]
+        },
+        {
+          "lines": "L136-L145",
+          "content": "B2 QAS file description",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_qas",
+              "file": "verifier_additions/raw/elexon_QAS_2019-08-09_SP1-50.json",
+              "sha256": "a97f69eaad2c4ee0d8660a096b35acca3ff9de7e5d2492d0a1d462a66b8c1a18",
+              "detail": "all 596 records for 2019-08-09",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/datasets/QAS description",
+              "quote": "represents the volume of energy (MWh) associated with the provision of Applicable Balancing Services for each relevant BM Unit and Settlement Period"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/datasets/QAS description",
+              "quote": "QAS can be positive or negative and is normally only provided where there is a non-zero volume."
+            }
+          ]
+        },
+        {
+          "lines": "L146-L159",
+          "content": "B3 DISEBSP file description",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_disebsp",
+              "file": "elexon/raw/DISEBSP_system_prices_2019-08-09.json",
+              "sha256": "b7f15bd6773c35455beb57b3182fb83573988d805b3717f0f584c93289b82587",
+              "detail": "48 settlement periods of 2019-08-09, all fields",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/balancing/settlement/system-prices/{settlementDate} description",
+              "quote": "only messages generated for the latest settlement run are returned"
+            }
+          ]
+        },
+        {
+          "lines": "L160-L173",
+          "content": "B4 DISEBSP selected columns, settlement periods 30-40 (values verbatim)",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_disebsp",
+              "file": "elexon/raw/DISEBSP_system_prices_2019-08-09.json",
+              "sha256": "b7f15bd6773c35455beb57b3182fb83573988d805b3717f0f584c93289b82587",
+              "detail": "periods 30-40, seven columns",
+              "quote": null
+            }
+          ]
+        }
+      ],
+      "artifacts": {
+        "R06/R06_report_tables_response_holding_delivery.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/ESO-p21-tab3.csv"
+            },
+            {
+              "catalogue_extract": "extracted/ESO-p25-tab5.csv"
+            },
+            {
+              "catalogue_extract": "extracted/APP-p81-tbl-q16-response-holding.csv"
+            },
+            {
+              "catalogue_extract": "extracted/APP-p82-tbl-q17-response-delivered.csv"
+            }
+          ],
+          "transformation": "cells as printed; empty cell where the source prints none",
+          "sha256": "ef7f07c7243e4bc56158ce3434ba7c3b6f89a20c2934b447a35070376cac605f",
+          "bytes": 7399
+        },
+        "R06/R06_appendix_i_table1_modelled_imbalance.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/APP-p62-tbl1-modelled-imbalance.csv"
+            }
+          ],
+          "transformation": "three printed columns only; the catalogue's assumed-ISO time and basis notes are not reproduced",
+          "sha256": "ac4b4c71d814701afb612cacc7e9f2b0439b0cd7119cc332040f3cc693f67c38",
+          "bytes": 425
+        },
+        "R06/R06_elexon_boalf_acceptances_20190809_1540-1645Z.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_boalf_sp32",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP32.json",
+              "sha256": "313e28775a956f863bd27e8b7f6ec17ebaa27e5583d7066bbfe19cd0b273ec9f"
+            },
+            {
+              "source_id": "elexon_boalf_sp33",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP33.json",
+              "sha256": "96aa5db5445bc957df9d1742925f7625125a4bc32087c6842c08f8b50e0da01c"
+            },
+            {
+              "source_id": "elexon_boalf_sp34",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP34.json",
+              "sha256": "261c3c9a6438f0efc698d6edf5dcaacaff7c17649e5045c2d44cdba55072cc93"
+            },
+            {
+              "source_id": "elexon_boalf_sp35",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP35.json",
+              "sha256": "57c713b1dc8b8fc1c3bdf5ec1532e2551ea8b25933e6c312c9ae16673cd4d6d2"
+            },
+            {
+              "source_id": "elexon_boalf_sp36",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP36.json",
+              "sha256": "c0149de56dd97d6038b03fb1457df9213cc2957864bab48b12aadbc03fee690c"
+            },
+            {
+              "source_id": "elexon_boalf_sp37",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP37.json",
+              "sha256": "67ae03025af218fedc11dc1a5f8a5e754fc7bb4a39b5413f45b244ce67bed2bf"
+            },
+            {
+              "source_id": "elexon_boalf_sp38",
+              "file": "elexon/raw/BOALF_all_2019-08-09_SP38.json",
+              "sha256": "e49b70915da6237770653d90fb83ffcef1cd8faab5e6b5a5961c3a733f32ebba"
+            }
+          ],
+          "transformation": "deduplicate identical records; keep acceptanceTime 15:40:00Z-16:45:00Z inclusive; sort by acceptanceTime, bmUnit, acceptanceNumber, timeFrom",
+          "counts": {
+            "raw_records": 1016,
+            "unique_records": 843,
+            "window_records": 363,
+            "acceptances": 139,
+            "bm_units": 49
+          },
+          "sha256": "c3c1116475c24e266cdf407101dc19afebc4249bc6dcd4136c2542727b854b08",
+          "bytes": 47078
+        },
+        "R06/R06_elexon_qas_balancing_services_volume_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_qas",
+              "file": "verifier_additions/raw/elexon_QAS_2019-08-09_SP1-50.json",
+              "sha256": "a97f69eaad2c4ee0d8660a096b35acca3ff9de7e5d2492d0a1d462a66b8c1a18"
+            }
+          ],
+          "transformation": "all records; sort by settlementPeriod, bmUnit",
+          "sha256": "994c89f31f2c9cf272d1fb503ae0918f00373e784f42dc86cc9d16725ab1f362",
+          "bytes": 24760
+        },
+        "R06/R06_elexon_disebsp_system_prices_niv_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_disebsp",
+              "file": "elexon/raw/DISEBSP_system_prices_2019-08-09.json",
+              "sha256": "b7f15bd6773c35455beb57b3182fb83573988d805b3717f0f584c93289b82587"
+            }
+          ],
+          "transformation": "all fields in API order; sort by settlementPeriod",
+          "sha256": "90954035189c1c406b4417c8a5870b0d42fde9e804dfba342a73359ba8b45f03",
+          "bytes": 8219
+        }
+      }
+    },
+    "R07": {
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R07/R07.txt",
+      "text_sha256": "10b05fbe2f018b5ac7d1a31fedb3721cbbf429a478ca6841a53d837cea715bf9",
+      "line_count": 141,
+      "construction": "Parts A-B copy Elexon DCI and 5-minute demand summary records (hash-checked) without changing values. Part C transcribes ESO Table 6, the E3C interim Table 1 and quotes ESO sections 4.3/5.1 and Ofgem 2.4.12/2.5, every cell and quotation checked on the stated PDF page; customer counts are printed with the reports' thousands separators. Part D gives, for six top-level DNO posts in the consequences communications timeline, the time decoded from the post identifier and a short gist written for this exercise (post text neither reproduced nor closely paraphrased: no gist shares more than 3 consecutive words with its post; not openly licensed). The STATUS line scopes 'nothing synthesised' to Parts A-C. No value is synthesised.",
+      "segments": [
+        {
+          "lines": "L1-L19",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L21-L21",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L22-L42",
+          "content": "A1 DCI query and record, field by field",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "JSON fields listed one per line, values unchanged (null shown as null).",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_dci",
+              "file": "elexon/raw/DCI_201908.json",
+              "sha256": "6551ef66f2ca42205a7b1195524ed61ad76d077c5571131a9ff5fa3ac681ebf2",
+              "detail": "the single record returned for August 2019, all fields",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/system/demand-control-instructions description",
+              "quote": "This endpoint provides demand control instruction data, filtered by the time range of the instruction."
+            }
+          ]
+        },
+        {
+          "lines": "L44-L44",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L45-L57",
+          "content": "B1 Demand summary file description with the publisher's caveat",
+          "value_status": "measured",
+          "extraction_method": "script",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_demand_summary",
+              "file": "elexon/raw/demand_outturn_summary_20190809.json",
+              "sha256": "578e4756b5b6b2479f7b042eb2d22a040c5f3d37d730ecb0f70e7f41021573cc",
+              "detail": "all 61 records 14:00Z-19:00Z",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/demand/outturn/summary summary",
+              "quote": "System demand summary (FUELINST)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_api_docs",
+              "file": "verification/elexon_swagger_v1.json",
+              "sha256": "7710bb452e47e448dad8b978a0313d9bf127a6faa0c2b623891ff281f807101a",
+              "detail": "/demand/outturn/summary description",
+              "quote": "This endpoint provides a down-sampled data summary intended for visualisation purposes."
+            }
+          ]
+        },
+        {
+          "lines": "L59-L61",
+          "content": "Part C heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L62-L85",
+          "content": "C1 ESO Table 6 (DNO customers affected by LFDD relays) with the section 5.1 text",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Customer counts printed with thousands separators as in the report.",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 26,
+              "printed_page": 27,
+              "section": "5.1 Distribution Demand, Table 6 - DNO customers affected by LFDD relays",
+              "quote": null,
+              "catalogue_artifact": "ESO-p26-tab6",
+              "catalogue_extract": "extracted/ESO-p26-tab6.csv",
+              "catalogue_extract_sha256": "822b72ad00c4591d0ae522e46b2c393fbcd09a31ff03137480ef1bfebf12de6e",
+              "cells_checked_on_page": 66
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 26,
+              "printed_page": 27,
+              "section": "5.1 Distribution Demand",
+              "quote": "Table 7 summarises the customer impact in terms of total demand lost, customers affected and final restoration time."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 26,
+              "printed_page": 27,
+              "section": "5.1 Distribution Demand",
+              "quote": "The information is based on DNO reported data as of 13 August 2019 at 12:00."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 26,
+              "printed_page": 27,
+              "section": "5.1 Distribution Demand",
+              "quote": "The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which represents 3.2% of national transmission demand at the time of the event (29GW)."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 26,
+              "printed_page": 27,
+              "section": "Table 6 caption",
+              "quote": "Table 6 - DNO customers affected by LFDD relays"
+            }
+          ]
+        },
+        {
+          "lines": "L86-L88",
+          "content": "C2 ESO section 4.3 sentence on the LFDD volume",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 21,
+              "printed_page": 22,
+              "section": "4.3 Demand disconnection and restoration",
+              "quote": "The DNO’s have indicated that 931MW (3.2%) of demand was automatically disconnected by the operation of the LFDD scheme."
+            }
+          ]
+        },
+        {
+          "lines": "L89-L107",
+          "content": "C3 E3C interim report Table 1 (LFDD reported by DNO area)",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Customer counts printed with thousands separators as in the report.",
+          "sources": [
+            {
+              "kind": "report_table",
+              "source_id": "E3C-I",
+              "pdf_page": 11,
+              "printed_page": null,
+              "section": "Table 1 Low Frequency Demand Disconnection reported by DNO area",
+              "quote": null,
+              "catalogue_artifact": "E3C-I-p11-tab1",
+              "catalogue_extract": "extracted/E3C-I-p11-tab1.csv",
+              "catalogue_extract_sha256": "1d34caf2c3698516eb6af39495a9d09af1ae96decf2389af36a5186a41e0decf",
+              "cells_checked_on_page": 73
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 11,
+              "printed_page": null,
+              "section": "Table 1 caption",
+              "quote": "Table 1 Low Frequency Demand Disconnection reported by DNO area."
+            }
+          ]
+        },
+        {
+          "lines": "L108-L113",
+          "content": "C4 Ofgem report paragraphs 2.4.12 and 2.5 (892 MW net demand)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 19,
+              "printed_page": 19,
+              "section": "paragraph 2.4.12",
+              "quote": "892MW of net demand was disconnected in total from the local distribution networks."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 19,
+              "printed_page": 19,
+              "section": "paragraph 2.5",
+              "quote": "In total, 892MW of net demand was disconnected from the local distribution networks as a result of LFDD, representing approximately 4% of national demand and affecting 1.15 million customers."
+            }
+          ]
+        },
+        {
+          "lines": "L115-L123",
+          "content": "Part D heading and method (post identifiers decoded to UTC; builder-written gists)",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L124-L126",
+          "content": "D1 DNO post gist, UK Power Networks (UKPN)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159858936037748736",
+              "decoded_utc": "2019-08-09T16:08:14.145000Z",
+              "archive_url": "https://web.archive.org/web/20190809171937/https://twitter.com/UKPowerNetworks/status/1159858936037748736",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L127-L128",
+          "content": "D2 DNO post gist, Western Power Distribution (WPD)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159860575188508672",
+              "decoded_utc": "2019-08-09T16:14:44.949000Z",
+              "archive_url": "https://web.archive.org/web/20201104081128/https://twitter.com/wpduk/status/1159860575188508672?ref_src=twsrc%5Etfw",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L129-L130",
+          "content": "D3 DNO post gist, Electricity North West (ENWL)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159868068614553600",
+              "decoded_utc": "2019-08-09T16:44:31.521000Z",
+              "archive_url": "https://web.archive.org/web/20220120093007/https://twitter.com/ElectricityNW/status/1159868068614553600",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L131-L132",
+          "content": "D4 DNO post gist, Western Power Distribution (WPD)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159868588607639552",
+              "decoded_utc": "2019-08-09T16:46:35.497000Z",
+              "archive_url": "https://web.archive.org/web/20250825063922/https://twitter.com/wpduk/status/1159868588607639552",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L133-L134",
+          "content": "D5 DNO post gist, Western Power Distribution (WPD)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159877477533138945",
+              "decoded_utc": "2019-08-09T17:21:54.782000Z",
+              "archive_url": "https://web.archive.org/web/20210926182026/https://twitter.com/wpduk/status/1159877477533138945",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L135-L137",
+          "content": "D6 DNO post gist, UK Power Networks (UKPN)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "public_post",
+              "source_id": "consequences_comms_timeline",
+              "post_id": "1159882018148278274",
+              "decoded_utc": "2019-08-09T17:39:57.349000Z",
+              "archive_url": "https://web.archive.org/web/20220205235758/https://twitter.com/UKPowerNetworks/status/1159882018148278274",
+              "quote": null,
+              "note": "time decoded from the post identifier; gist written for this exercise from the archived post (text neither reproduced nor closely paraphrased: not openly licensed)"
+            }
+          ]
+        },
+        {
+          "lines": "L139-L141",
+          "content": "Part E: what the record does not contain",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        }
+      ],
+      "artifacts": {
+        "R07/R07_elexon_dci_201908.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_dci",
+              "file": "elexon/raw/DCI_201908.json",
+              "sha256": "6551ef66f2ca42205a7b1195524ed61ad76d077c5571131a9ff5fa3ac681ebf2"
+            }
+          ],
+          "transformation": "single JSON record to one CSV row; values unchanged",
+          "sha256": "6fc839c1a7cdef26787bf41591bc2cb95c384b3bce9215d83608fc3807f41a28",
+          "bytes": 333
+        },
+        "R07/R07_elexon_demand_outturn_summary_5min_20190809.csv": {
+          "extraction_method": "script",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_demand_summary",
+              "file": "elexon/raw/demand_outturn_summary_20190809.json",
+              "sha256": "578e4756b5b6b2479f7b042eb2d22a040c5f3d37d730ecb0f70e7f41021573cc"
+            }
+          ],
+          "transformation": "records to CSV rows sorted by startTime; values unchanged",
+          "sha256": "d25402b047857b02095304c8899995dc55550b39cf18a493f4ed29fd7d188150",
+          "bytes": 1858
+        },
+        "R07/R07_reported_lfdd_by_dno.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/ESO-p26-tab6.csv"
+            },
+            {
+              "catalogue_extract": "extracted/E3C-I-p11-tab1.csv"
+            }
+          ],
+          "transformation": "cells as printed (customer counts with thousands separators); empty cell where the report prints none",
+          "sha256": "750be8972dd47cb44fe268f9508904ff48f235b6c40f5b1c4017474f24730d78",
+          "bytes": 2560
+        },
+        "R07/R07_dno_public_posts_summaries.csv": {
+          "extraction_method": "paraphrase",
+          "builder": "builder/system_response/real/build_real.py",
+          "inputs": [
+            {
+              "source_id": "consequences_comms_timeline",
+              "post_ids": [
+                "1159858936037748736",
+                "1159860575188508672",
+                "1159868068614553600",
+                "1159868588607639552",
+                "1159877477533138945",
+                "1159882018148278274"
+              ]
+            }
+          ],
+          "transformation": "time from post identifier; gists written for this exercise; no post text",
+          "sha256": "c10dbc7e396e6a84bc0b1564f7b8ad59d05f5b1c79791d5d64652bb3e22981db",
+          "bytes": 1052
+        }
+      }
+    }
+  },
+  "rows": {
+    "real_r02_asset.jsonl": {
+      "sha256": "8663426b8143c936ee7a914c27e955d1b86c46adb858d18b96a2402eb8808c31",
+      "count": 459,
+      "by_signal": {
+        "T_HOWAO-1 B1610 MWh": 48,
+        "T_HOWAO-1 MEL MW": 48,
+        "T_HOWAO-2 B1610 MWh": 48,
+        "T_HOWAO-2 MEL MW": 48,
+        "T_HOWAO-3 B1610 MWh": 48,
+        "T_HOWAO-3 MEL MW": 48,
+        "T_LBAR-1 B1610 MWh": 48,
+        "T_LBAR-1 MEL MW": 75,
+        "T_LBAR-1G MEL MW": 48
+      }
+    },
+    "real_r06_control.jsonl": {
+      "sha256": "09ec749d4d34b0c53be58d76d315a47985ba5cb0df6a8eb5dfc2bd63e35c8798",
+      "count": 139,
+      "by_room_id": {
+        "ESO-ENCC": 139
+      }
+    }
+  },
+  "excluded": [
+    {
+      "item": "Text of archived DNO social-media posts (consequences dataset)",
+      "reason": "Post text is the account holders' copyright under platform terms (not an open licence). R07 Part D gives the post time decoded from the post identifier and a short summary written for this exercise; no post text, handles or personal names are reproduced."
+    },
+    {
+      "item": "MeteoGroup / DTN, Met Office ATDnet and Blitzortung lightning stroke records",
+      "reason": "Not publicly available (blocked or proprietary). R04 Part E reproduces only what the published ESO and NGET figures display."
+    },
+    {
+      "item": "Elexon physical notifications (PN) for 9 August 2019 after settlement period 4",
+      "reason": "Absent from the publisher's API (ingestion gap); stated in R02 B9."
+    },
+    {
+      "item": "Report PDFs and NESO website documents",
+      "reason": "Not open-licensed; never copied into the environment. Report tables are transcribed cell by cell with page references."
+    }
+  ]
+}

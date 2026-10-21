@@ -1,0 +1,268 @@
+{
+  "_note": "BUILDER FIXTURE for automated tests of the decisions merge. It is NOT a domain review and must never be used to describe results as validated.",
+  "decisions_schema": "gb2019-grading-decisions/1",
+  "decisions_version": "1",
+  "builder_fixture": true,
+  "reviewer": "grading builder (fixture; not a domain reviewer)",
+  "date": "2026-10-19",
+  "binding": {
+    "submission_sha256": "68e24dc46d4821958c7b263d6854ef5d659a5baed196daf587a08639b0f89ff6",
+    "key_version": "0.3.1",
+    "key_sha256": "6d7dff6382fbb5c83415516d039d3de86ed679173f00dc75a2d7579a6197fb8b",
+    "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2"
+  },
+  "criteria": {
+    "D1.1": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F01",
+        "F02"
+      ],
+      "notes": "fixture"
+    },
+    "D1.2": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F02"
+      ],
+      "notes": "fixture"
+    },
+    "D1.3": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "notes": "fixture"
+    },
+    "D1.4": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "notes": "fixture"
+    },
+    "D1.N": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F02",
+        "F08"
+      ],
+      "notes": "fixture"
+    },
+    "D2.1": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F10"
+      ],
+      "notes": "fixture"
+    },
+    "D2.2": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F11"
+      ],
+      "notes": "fixture"
+    },
+    "D2.3": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F12"
+      ],
+      "notes": "fixture"
+    },
+    "D2.4": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F13"
+      ],
+      "notes": "fixture"
+    },
+    "D2.5": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F15",
+        "F16"
+      ],
+      "notes": "fixture"
+    },
+    "D3.5": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F23",
+        "F24",
+        "F25"
+      ],
+      "notes": "fixture"
+    },
+    "D4.1": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F30",
+        "F31",
+        "F32",
+        "F33"
+      ],
+      "notes": "fixture"
+    },
+    "D4.2": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F34"
+      ],
+      "notes": "fixture"
+    },
+    "D4.3": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F35",
+        "F36"
+      ],
+      "notes": "fixture"
+    },
+    "D4.4": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F37",
+        "F38",
+        "F39",
+        "F40"
+      ],
+      "notes": "fixture"
+    }
+  },
+  "assertions": {
+    "F01": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F02": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F03": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F04": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F05": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F06": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F07": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F08": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F10": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F11": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F12": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F13": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F14": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F15": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F20": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F21": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F22": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F23": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F24": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F30": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F31": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F32": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F33": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F34": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F35": {
+      "verdict": "supported",
+      "notes": "fixture"
+    },
+    "F36": {
+      "verdict": "supported",
+      "notes": "fixture"
+    }
+  },
+  "severe_flags": [],
+  "explanation_quality": {
+    "notes": "fixture: clear, cited account",
+    "by_dimension": {
+      "D1": "fixture",
+      "D2": "fixture",
+      "D3": "fixture",
+      "D4": "fixture"
+    }
+  }
+}

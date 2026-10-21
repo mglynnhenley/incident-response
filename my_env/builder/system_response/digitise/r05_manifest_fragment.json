@@ -1,0 +1,49 @@
+{
+ "artifacts": [
+  {
+   "description": "Method note: series, method, calibration, uncertainty, clock basis, exclusions",
+   "file": "R05/R05.txt",
+   "media_type": "text/plain"
+  },
+  {
+   "description": "Values digitised from APP p40 Figure 3 (long format: one row per series and sample, with uncertainty)",
+   "file": "R05/app_p40_fig3_onshore.csv",
+   "media_type": "text/csv"
+  },
+  {
+   "description": "Values digitised from APP p41 Figure 4 (long format: one row per series and sample, with uncertainty)",
+   "file": "R05/app_p41_fig4_offshore_1b.csv",
+   "media_type": "text/csv"
+  },
+  {
+   "description": "Values digitised from ESO p19 Figure 7 (long format: one row per series and sample, with uncertainty)",
+   "file": "R05/eso_p19_fig7_voltage_active_power.csv",
+   "media_type": "text/csv"
+  },
+  {
+   "description": "Values digitised from ESO p19 Figure 8 (long format: one row per series and sample, with uncertainty)",
+   "file": "R05/eso_p19_fig8_reactive_power.csv",
+   "media_type": "text/csv"
+  },
+  {
+   "description": "Axis calibration, series colours and stroke widths, uncertainty model",
+   "file": "R05/calibration.json",
+   "media_type": "application/json"
+  }
+ ],
+ "category": "measurement_data",
+ "date": "2019-08-09",
+ "doc_id": "R05",
+ "note": "No 'timeseries' descriptor: the CSVs are long-format (several series, repeated times) and APP Figure 3 has no absolute per-sample time.",
+ "owner": "National Grid ESO (published report charts; Appendix D charts supplied by Ørsted)",
+ "sha256": {
+  "R05/R05.txt": "8e01c17717c8468f9edf4458394498f09e2392b7dc9ce51a11fabadc7ea99b8a",
+  "R05/app_p40_fig3_onshore.csv": "df47ed059e036b015201fd59479f2411f687ee8ae256f9338922cdc84c38f568",
+  "R05/app_p41_fig4_offshore_1b.csv": "4bded5f5eeaf9ed4ebd757f56ec9ffc294a79ad18652a7d4861c7b0211d13557",
+  "R05/calibration.json": "53b2490b1dac7922b4b2fed6b857ceb1d39dc33d2a9c865ad296d7835bd74595",
+  "R05/eso_p19_fig7_voltage_active_power.csv": "e08569cfb18da7b392b72b18189139ca8da6dc2e3808fab3a6ce1f60dda2f700",
+  "R05/eso_p19_fig8_reactive_power.csv": "9245ff97cc6e95e98a9c8149ba23fe232330657664e791fa094be7244b077bbc"
+ },
+ "text_file": "R05/R05.txt",
+ "title": "Hornsea One voltage and power traces digitised from published charts, 9 August 2019"
+}

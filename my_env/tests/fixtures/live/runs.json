@@ -1,0 +1,115 @@
+{
+  "_note": "Real live-run submissions copied byte for byte from out/ (see README.md). trace_info is what grading.trace_info_from_episode read from each run's ledger.",
+  "runs": [
+    {
+      "run_id": "gb2019-v2-opus55-002",
+      "model": "Claude Opus 5.5",
+      "file": "gb2019-v2-opus55-002.submission.json",
+      "source": "out/panel/opus55-002/gb2019-v2-opus55-002_artifacts/episode/submission.json",
+      "file_sha256": "3586a2655a2e4d28262b031ac9647b99a1437157e3f38673b81ab325e1da8500",
+      "submission_sha256": "3586a2655a2e4d28262b031ac9647b99a1437157e3f38673b81ab325e1da8500",
+      "bundle_version": "1.1.0",
+      "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2",
+      "bundle_dir": null,
+      "trace_info": {
+        "available": true,
+        "retrieved": [
+          "R01",
+          "R03",
+          "S01",
+          "S03",
+          "S04"
+        ],
+        "r01_analysed_with_python": true
+      }
+    },
+    {
+      "run_id": "gb2019-v2-opus55-003",
+      "model": "Claude Opus 5.5",
+      "file": "gb2019-v2-opus55-003.submission.json",
+      "source": "out/panel/opus55-003/gb2019-v2-opus55-003_artifacts/episode/submission.json",
+      "file_sha256": "92067a44db7013b381c71d497c98c452402d05f06893b41a264b7097fa180916",
+      "submission_sha256": "92067a44db7013b381c71d497c98c452402d05f06893b41a264b7097fa180916",
+      "bundle_version": "1.1.0",
+      "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2",
+      "bundle_dir": null,
+      "trace_info": {
+        "available": true,
+        "retrieved": [
+          "R01",
+          "R03",
+          "S01",
+          "S03",
+          "S04"
+        ],
+        "r01_analysed_with_python": true
+      }
+    },
+    {
+      "run_id": "gb2019-v2-sonnet55-001",
+      "model": "Claude Sonnet 5.5",
+      "file": "gb2019-v2-sonnet55-001.submission.json",
+      "source": "out/panel/sonnet55-001/gb2019-v2-sonnet55-001_artifacts/episode/submission.json",
+      "file_sha256": "b8db3437aa409a84d6ff1be9c229cb988768b2cecf50dc4d2b66f1def87cab05",
+      "submission_sha256": "b8db3437aa409a84d6ff1be9c229cb988768b2cecf50dc4d2b66f1def87cab05",
+      "bundle_version": "1.1.0",
+      "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2",
+      "bundle_dir": null,
+      "trace_info": {
+        "available": true,
+        "retrieved": [
+          "R01",
+          "R03",
+          "S01",
+          "S03",
+          "S04"
+        ],
+        "r01_analysed_with_python": true
+      }
+    },
+    {
+      "run_id": "gb2019-v2-haiku45-001",
+      "model": "Claude Haiku 4.5",
+      "file": "gb2019-v2-haiku45-001.submission.json",
+      "source": "out/panel/haiku45-001/gb2019-v2-haiku45-001_artifacts/episode/submission.json",
+      "file_sha256": "dc340edca027366b36e9bae147f468674c8755452307ae113045847f4de19672",
+      "submission_sha256": "dc340edca027366b36e9bae147f468674c8755452307ae113045847f4de19672",
+      "bundle_version": "1.1.0",
+      "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2",
+      "bundle_dir": null,
+      "trace_info": {
+        "available": true,
+        "retrieved": [
+          "R01",
+          "R03",
+          "S01",
+          "S03",
+          "S04"
+        ],
+        "r01_analysed_with_python": true
+      }
+    },
+    {
+      "run_id": "gb2019-live-opus55-001",
+      "model": "Claude Opus 5.5",
+      "file": "gb2019-live-opus55-001.submission.json",
+      "source": "out/live/gb2019-live-opus55-001_artifacts/episode/submission.json",
+      "file_sha256": "da30113de4825904d412277103372053cd47696b104cbd7f40f6482ea36dddb7",
+      "submission_sha256": "da30113de4825904d412277103372053cd47696b104cbd7f40f6482ea36dddb7",
+      "bundle_version": "1.0.0",
+      "bundle_sha256": "56f3a5a5465aab72ad91bea79756320ae606b07f74c4301991fcfe6543305253",
+      "bundle_dir": "bundle-1.0.0",
+      "trace_info": {
+        "available": true,
+        "retrieved": [
+          "R01",
+          "R03",
+          "S01",
+          "S03",
+          "S04"
+        ],
+        "r01_analysed_with_python": true
+      }
+    }
+  ]
+}

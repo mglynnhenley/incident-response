@@ -1,0 +1,66 @@
+DOCUMENT S04 — Little Barford power station shift account, 9 August 2019
+Owner/originator: RWE Generation, Little Barford station operating staff (roles only; no individuals)
+Record type: reconstructed shift narrative and attributed post-event statements (operator, regulator)
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: BST (UTC+01:00). This account adds no clock readings; it gives only the approximate
+intervals stated in the published sources, and each interval names the event it is measured from.
+Value-status legend: [reported] value as stated in published material; [illustrative] texture only,
+never a time, MW value or cause (not used in this account); [measured] and [estimated] not used.
+Roles: "plant operators" and "operating staff" refer to the station's operational staff on shift.
+
+PART 1 — SHIFT NARRATIVE (reconstructed from published accounts)
+Plant state before the disturbance
+N1  The station (740 MW [reported] CCGT, connected at Eaton Socon 400 kV [reported] substation) had
+    all three units operating: gas turbines GT1A and GT1B and steam turbine ST1C.
+Steam turbine trip
+N2  At the start of the station's event sequence the 110 V AC UPS -B- and then UPS -A- raised general
+    fault alarms (station sequence-of-events record).
+N3  Within 1 second [reported] of the lightning strike and the resulting transmission system disturbance,
+    steam turbine ST1C tripped while generating 244 MW [reported].
+Steam bypass operation
+N4  With the steam turbine lost, the plant went into steam bypass mode: steam generated from the gas
+    turbines is fed directly into the condenser. This is the normal operation following loss of the
+    steam turbine, intended to allow sustained operation of the gas turbines.
+N5  Following the steam turbine trip, the pressure in the steam system rose.
+First gas turbine trip
+N6  Around a minute [reported] after the transmission system fault, gas turbine GT1A (generating
+    210 MW [reported]) tripped automatically due to a high-pressure excursion in the steam bypass system.
+Second gas turbine trip
+N7  The steam system pressure continued to rise after the GT1A trip, and the plant operators made the
+    decision to manually trip the other operational gas turbine due to safety risks.
+N8  Around 30 seconds [reported] after the GT1A trip, GT1B (187 MW [reported]) was manually tripped by
+    the operating staff in response to high steam pressures. Total station loss: 641 MW [reported].
+
+PART 2 — POST-EVENT ANNOTATIONS (attributed, in each source's order; not part of the shift record)
+Annotation A — operator report "RWE Preliminary Findings Regarding the Event on 9th August 2019",
+dated 30 August 2019:
+A1  UPS: "The investigation to date has found that all UPS' at Site have functioned correctly to enable
+    continuity of supply to plant equipment." "Therefore, we do not now believe the UPS' were related
+    to the subsequent trip."
+A2  UPS: "RWE's hypothesis is that the UPS' have initiated a changeover to battery back-up supplies as a
+    consequence of the system disturbance. The exact characteristic of the power supply to the UPS
+    causing it to switch to battery operation is still to be determined and subject to further
+    investigation."
+A3  UPS: OEM resilience testing requested during the outage commencing 6 September 2019 [reported].
+A4  Steam turbine: "Our investigations have confirmed that the Steam Turbine tripped due to a
+    discrepancy in the speed signals after the point of the Transmission System fault clearance."
+    A comprehensive investigation of hardware, software, fault handling and diagnostic coverage for
+    the conditions the steam turbine was subjected to during this rare system disturbance is ongoing.
+A5  Gas turbines: "For reasons presently unknown a high-pressure excursion occurred on GT1A resulting in
+    an automated trip. Given the prevailing conditions all systems functioned as expected. GT1B was
+    manually tripped shortly after as a result of excessive steam pressure."
+A6  Gas turbines: "A physical inspection of the bypass system is now planned during the forthcoming
+    outage in September 2019 to help determine the root cause of the pressure excursions."
+Annotation B — regulator report, Ofgem "9 August 2019 power outage report", dated 3 January 2020:
+B1  3.28: "We have established that the steam turbine tripped initially because of a discrepancy in the
+    three [reported] independent speed sensors on the turbine. This discrepancy exceeded the tolerance
+    of the control system, causing the generator to automatically shut down. The root cause of the
+    discrepancy in the speed sensors has not been established."
+B2  3.29: following the steam turbine trip the steam system pressure rose; safety systems automatically
+    shut down one of the gas turbines due to excessive pressure in the steam bypass; as the pressure kept
+    rising, the plant operators manually tripped the other gas turbine due to safety risks. "The root
+    cause of these high pressure conditions has not been established."
+B3  3.29: "Given the sequence of events and in absence of an established root cause, it is our
+    preliminary view that the steam turbine's anomalous speed readings and the resulting trip were due
+    to the transmission network fault following the lightning strike."

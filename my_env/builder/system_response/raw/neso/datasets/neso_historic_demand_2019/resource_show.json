@@ -1,0 +1,23 @@
+{
+ "mimetype": "text/csv",
+ "cache_url": null,
+ "name": "Historic Demand Data 2019",
+ "hash": "",
+ "description": "Historic electricity demand, interconnector, wind and solar outturn data for 2019. ",
+ "metadata_modified": "2025-04-08T19:45:40.293439",
+ "cache_last_updated": null,
+ "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/dd9de980-d724-415a-b344-d8ae11321432/download/demanddata_2019.csv",
+ "datastore_active": true,
+ "format": "CSV",
+ "package_id": "8f2fe0af-871c-488d-8bad-960426f24601",
+ "created": "2020-05-04T08:59:55.797532",
+ "state": "active",
+ "mimetype_inner": null,
+ "last_modified": "2025-04-08T19:45:40.926204",
+ "position": 11,
+ "revision_id": "9cabb0a8-4dc8-4199-b89d-0e4bedb928bc",
+ "url_type": "upload",
+ "id": "dd9de980-d724-415a-b344-d8ae11321432",
+ "resource_type": null,
+ "size": null
+}

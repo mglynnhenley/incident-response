@@ -1,0 +1,141 @@
+DOCUMENT R07 — Demand disconnection and restoration records, 9 August 2019
+Owner/originator: Elexon Limited (BMRS / Insights API; demand control data from the system
+operator); National Grid ESO (technical report of 6 September 2019); Energy Emergencies Executive
+Committee (E3C interim report); Ofgem (report of 3 January 2020); public posts by distribution
+network operators (DNOs)
+Record type: real Elexon extracts (demand control instruction record, 5-minute demand summary)
+with transcribed report tables of demand disconnected by DNO area and short builder-written gists
+of public DNO posts
+STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES — dataset values are unchanged from the
+publishers' files (only rows and columns were selected); report tables, captions and quotations
+are reproduced as printed. Nothing in Parts A-C is synthesised. Part D is not a transcription: it
+gives, for each public DNO post, the decoded post time and a short gist written for this record;
+the post text is not reproduced.
+Clock reference: Elexon timestamps are UTC (ISO-8601 with Z). Report tables print times without a
+zone; the reports give event times in local time (BST, UTC+01:00). Post times in Part D are UTC,
+decoded from the post identifiers.
+Value-status legend: [measured] metered or observed value as published; [reported] value stated by
+its publisher or by a report; [estimated] value its source describes as an estimate; [modelled]
+value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — ELEXON DEMAND CONTROL INSTRUCTION RECORD (real extract)
+A1  Source: Elexon endpoint /system/demand-control-instructions queried for 2019-08-01T00:00:00Z
+    to 2019-08-31T00:00:00Z; retrieved 2026-10-20. Licence: Elexon BMRS open data licence.
+    Contains BMRS data (c) Elexon Limited copyright and database right 2026. Publisher's
+    description: "This endpoint provides demand control instruction data, filtered by the time
+    range of the instruction."
+    The query returned exactly one record. Its fields, as published (times UTC) [reported]:
+    mRID: DCI_201908140853_00000021 [reported]
+    revisionNumber: 1 [reported]
+    publishTime: 2019-08-14T08:53:30Z [reported]
+    publishingPeriodCommencingTime: 2019-08-14T08:53:30Z [reported]
+    affectedDso: null [reported]
+    demandControlId: 00201 [reported]
+    instructionSequence: 1 [reported]
+    demandControlEventFlag: L [reported]
+    timeFrom: 2019-08-09T15:54:00Z [reported]
+    timeTo: 2019-08-09T16:40:00Z [reported]
+    volume: 931.0 [reported]
+    systemManagementActionFlag: T [reported]
+    amendmentFlag: ORI [reported]
+    The response defines neither the flag codes nor the unit of volume. The same record is in file
+    R07_elexon_dci_201908.csv.
+
+PART B — ELEXON 5-MINUTE SYSTEM DEMAND SUMMARY (real extract)
+B1  File R07_elexon_demand_outturn_summary_5min_20190809.csv [measured] — 5-minute system demand
+    summary, 14:00 to 19:00 UTC on 9 August 2019.
+    Source: Elexon endpoint /demand/outturn/summary with resolution=minute, from
+    2019-08-09T14:00:00Z to 2019-08-09T19:00:00Z; retrieved 2026-10-20. Licence as A1.
+    Rows: 61 (every record returned), one per startTime from 2019-08-09T14:00:00Z to
+    2019-08-09T19:00:00Z at 5-minute steps. Columns: recordType (VD in every row; not defined in
+    the response), startTime (UTC), demand (MW).
+    The publisher titles the endpoint "System demand summary (FUELINST)" and warns: "This endpoint
+    provides a down-sampled data summary intended for visualisation purposes." The calculation is
+    not documented in the response; the series is not a metered measurement of disconnected
+    demand.
+    This file is the time series of R07: cite rows as row:<n> or times as time:<ISO-8601> (UTC),
+    within 2019-08-09T14:00:00Z to 2019-08-09T19:00:00Z.
+
+PART C — DEMAND DISCONNECTED BY LFDD, AS REPORTED (transcribed as printed)
+LFDD is low frequency demand disconnection. Times in these tables are printed without a zone; the
+reports give event times in local time (BST, UTC+01:00). A blank printed cell is shown as (blank).
+C1  National Grid ESO, Technical Report on the events of 9 August 2019 (published 6 September
+    2019), section 5.1 "Distribution Demand". Text printed with the table, quoted:
+    "Table 7 summarises the customer impact in terms of total demand lost, customers affected and
+    final restoration time." [reported]
+    "The information is based on DNO reported data as of 13 August 2019 at 12:00." [reported]
+    "The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which [reported]
+    represents 3.2% of national transmission demand at the time of the event (29GW)." [reported]
+    "Table 6 - DNO customers affected by LFDD relays" (Reporting DNO | area | MW of disconnected demand by
+    LFDD | Customers Affected | Final Restoration Time of Demand), as printed:
+    Scottish Hydro Electric Power Distribution (SHEPD) | (blank) | 0 | (blank) | (blank) [reported]
+    Scottish Power (SP) | (blank) | 22 | 23,117 | 16:59 [reported]
+    Northern Power Grid (NPG) | North East | 76 | 93,081 | 17:18 [reported]
+    Northern Power Grid (NPG) | Yorkshire | 14 | 10,571 | 17:12 [reported]
+    Electricity North Limited (ENW) | (blank) | 52 | 56,613 | 17:17 [reported]
+    SP Manweb | (blank) | 130 | 74,938 | 17:15 [reported]
+    Western Power Distribution (WPD) | East Midlands | 122 | 150,445 | 17:25 [reported]
+    Western Power Distribution (WPD) | West Midlands | 160 | 187,427 | 17:37 [reported]
+    Western Power Distribution (WPD) | South Wales | 36 | 29,060 | 17:11 [reported]
+    Western Power Distribution (WPD) | South West | (blank) | 110,273 | 17:22 [reported]
+    UK Power Networks (UKPN) | Eastern | 69 | 79,390 | 16:56 [reported]
+    UK Power Networks (UKPN) | London | 174 | 239,861 | 17:37 [reported]
+    UK Power Networks (UKPN) | Southern | 69 | 81,358 | 17:15 [reported]
+    Scottish Electric Power Distribution (SEPD) | (blank) | 7 | 16,744 | 17:07 [reported]
+    Totals | (blank) | 931 | 1,152,878 | 17:37 [reported]
+C2  Same report, section 4.3 "Demand disconnection and restoration", quoted:
+    "The DNO's have indicated that 931MW (3.2%) of demand was automatically disconnected by the [reported]
+    operation of the LFDD scheme." [reported]
+C3  Energy Emergencies Executive Committee (E3C), GB power system disruption - 9 August 2019,
+    interim report (cover dated September 2019), "Table 1 Low Frequency Demand Disconnection
+    reported by DNO area." (Reporting DNO | License Area | MW of disconnected demand by LFDD |
+    Customers Affected | Final Restoration Time of Demand), as printed:
+    Scottish Hydro Electric Power Distribution (SHEPD) | - | 0 | 0 | - [reported]
+    Scottish Power (SP) | (blank) | 22 | 23,117 | 16:59 [reported]
+    Northern PowerGrid (NPG) | North East | 76 | 93,081 | 17:18 [reported]
+    Northern PowerGrid (NPG) | Yorkshire | 14 | 10,571 | 17:12 [reported]
+    Electricity North Limited (ENW) | - | 52 | 56,613 | 17:17 [reported]
+    SP Manweb | - | 130 | 74,938 | 17:15 [reported]
+    Western Power Distribution (WPD) | East Midlands | 122 | 150,445 | 17:25 [reported]
+    Western Power Distribution (WPD) | West Midlands | 190 | 187,427 | 17:37 [reported]
+    Western Power Distribution (WPD) | South Wales | 36 | 29,060 | 17:11 [reported]
+    Western Power Distribution (WPD) | South West | 12 | 110,273 | 17:22 [reported]
+    UK Power Networks (UKPN) | Eastern | 69 | 79,390 | 16:56 [reported]
+    UK Power Networks (UKPN) | London | 174 | 239,861 | 17:37 [reported]
+    UK Power Networks (UKPN) | Southern | 69 | 81,358 | 17:15 [reported]
+    Southern Electric Power Distribution (SEPD) | - | 7 | 16,744 | 17:07 [reported]
+    Total | (blank) | 973 | 1,152,878 | 17:37 [reported]
+C4  Ofgem, 9 August 2019 power outage report (published 3 January 2020), quoted:
+    paragraph 2.4.12: "892MW of net demand was disconnected in total from the local distribution [reported]
+    networks." [reported]
+    paragraph 2.5: "In total, 892MW of net demand was disconnected from the local distribution [reported]
+    networks as a result of LFDD, representing approximately 4% of national demand and affecting [reported]
+    1.15 million customers." [reported]
+
+PART D — PUBLIC POSTS BY DNOs ABOUT SUPPLY RESTORATION (post times decoded; gists written for
+this record, not post text)
+Organisational posts on a public social-media platform, located in Internet Archive captures. The
+post time is decoded from each post identifier (milliseconds since 1970-01-01T00:00:00Z =
+(identifier >> 22) + 1288834974657) and shown in UTC to the second. The post text is the account
+holder's copyright (not an open licence) and is neither reproduced nor closely paraphrased: each
+entry gives only the organisation, the decoded time and a short gist written for this record,
+whose [reported] tag marks what the organisation reported, not its words. No account handles or
+personal names are given.
+D1  2019-08-09T16:08:14Z | UK Power Networks (UKPN) | gist: power cut over a wide part of the [reported]
+    South East, including London; cause placed, as its belief at the time, on a failure in
+    National Grid's system. [reported]
+D2  2019-08-09T16:14:44Z | Western Power Distribution (WPD) | gist: serious national-level [reported]
+    electricity incident; restoration of affected customers had begun. [reported]
+D3  2019-08-09T16:44:31Z | Electricity North West (ENWL) | gist: several outages in its region, [reported]
+    attributed to a National Grid fault; supplies expected to be back on. [reported]
+D4  2019-08-09T16:46:35Z | Western Power Distribution (WPD) | gist: progress figure, 90% of [reported]
+    affected customers back on supply; restoration of the remainder continuing. [reported]
+D5  2019-08-09T17:21:54Z | Western Power Distribution (WPD) | gist: restoration complete for every [reported]
+    customer it had lost in the national incident. [reported]
+D6  2019-08-09T17:39:57Z | UK Power Networks (UKPN) | gist: follow-up; cause attributed to a [reported]
+    national transmission network issue; all supplies in its London and South East area believed
+    back on. [reported]
+
+PART E — NOTES
+E1  This record holds no DNO operational logs, feeder-level disconnection or reconnection times,
+    or distributed-generation data.

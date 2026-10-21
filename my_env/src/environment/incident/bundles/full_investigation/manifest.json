@@ -1,0 +1,1219 @@
+{
+  "manifest_version": 2,
+  "bundle_id": "gb-2019-08-09-full-investigation",
+  "bundle_version": "0.1.0",
+  "categories": [
+    "measurement_data",
+    "network_records",
+    "generator_records",
+    "personnel_accounts",
+    "system_operator_records",
+    "distribution_records",
+    "requirements",
+    "analysis_records",
+    "transport_records",
+    "essential_services",
+    "communications_records",
+    "compliance_records"
+  ],
+  "documents": [
+    {
+      "doc_id": "R01",
+      "title": "System frequency record, 9 August 2019, 16:40-17:45 BST",
+      "owner": "National Grid ESO (NESO published dataset)",
+      "date": "2019-08-09",
+      "category": "measurement_data",
+      "label": "REAL MEASURED DATA EXTRACT",
+      "text_file": "R01/R01.txt",
+      "artifacts": [
+        {
+          "file": "R01/R01.txt",
+          "media_type": "text/plain",
+          "description": "Metadata note for the frequency extract: source dataset, slice, units, sampling interval, time basis, file format and citation help."
+        },
+        {
+          "file": "R01/frequency_2019-08-09_1640-1745_BST.csv",
+          "media_type": "text/csv",
+          "description": "One-second system frequency samples; columns timestamp (ISO-8601 with explicit +01:00 offset) and frequency_hz (Hz).",
+          "timeseries": {
+            "first": "2019-08-09T16:40:00+01:00",
+            "interval_s": 1,
+            "last": "2019-08-09T17:44:59+01:00",
+            "rows": 3900,
+            "time_column": "timestamp",
+            "unit": "Hz",
+            "value_column": "frequency_hz"
+          }
+        }
+      ],
+      "sha256": {
+        "R01/R01.txt": "81429a38502d81d9bf2aaa9f4b476342b1050fb1e0183076b46cbf04bbe48bad",
+        "R01/frequency_2019-08-09_1640-1745_BST.csv": "78ab22c42fe8c7442263c71b84178f72f2a631f172d56a276b08000704a539dd"
+      },
+      "party_aliases": [
+        "system operator"
+      ]
+    },
+    {
+      "doc_id": "R02",
+      "title": "System conditions data, 9 August 2019",
+      "owner": "Elexon (BMRS data) and NESO (open data portal); National Grid ESO (report tables)",
+      "date": "2019-08-09",
+      "category": "measurement_data",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R02/R02.txt",
+      "artifacts": [
+        {
+          "file": "R02/R02.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R02/R02_elexon_fuelinst_5min_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon FUELINST generation by fuel type, 5-minute MW, publishTime 14:00Z-19:00Z on 9 August 2019; one column per fuel type."
+        },
+        {
+          "file": "R02/R02_elexon_fuelhh_halfhour_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon FUELHH generation by fuel type, half-hourly MW, settlement date 9 August 2019."
+        },
+        {
+          "file": "R02/R02_elexon_indo_itsdo_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon initial demand outturn (INDO) and transmission system demand outturn (ITSDO), half-hourly MW, settlement date 9 August 2019."
+        },
+        {
+          "file": "R02/R02_neso_historic_demand_20190808-10.csv",
+          "media_type": "text/csv",
+          "description": "NESO historic demand data (ND, TSD, embedded wind and solar estimates and other columns), half-hourly, 8-10 August 2019; publisher's lines unchanged."
+        },
+        {
+          "file": "R02/R02_neso_inertia_20190808-10.csv",
+          "media_type": "text/csv",
+          "description": "NESO system inertia estimates (outturn and market-provided; the file states no unit), half-hourly, 8-10 August 2019; publisher's lines unchanged."
+        },
+        {
+          "file": "R02/R02_elexon_lolpdrm_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon LOLPDRM loss-of-load probability and de-rated margin forecasts by horizon, settlement date 9 August 2019."
+        },
+        {
+          "file": "R02/R02_elexon_bm_unit_reference.csv",
+          "media_type": "text/csv",
+          "description": "Elexon BM unit reference data (2026 registration snapshot) for T_HOWAO-1, T_HOWAO-2, T_HOWAO-3, T_LBAR-1 and T_LBAR-1G."
+        },
+        {
+          "file": "R02/R02_elexon_b1610_selected_units_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon B1610 metered volumes (MWh per settlement period) for T_HOWAO-1, T_HOWAO-2, T_HOWAO-3 and T_LBAR-1, settlement date 9 August 2019."
+        },
+        {
+          "file": "R02/R02_elexon_mels_selected_units_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon Maximum Export Limit (MELS) records for T_HOWAO-1, T_HOWAO-2, T_HOWAO-3, T_LBAR-1 and T_LBAR-1G, settlement date 9 August 2019."
+        },
+        {
+          "file": "R02/R02_eso_inertia_and_conditions_tables.csv",
+          "media_type": "text/csv",
+          "description": "Report tables of Part D as printed (ESO Table 4; first two rows of Appendix M Q42), one printed cell per row."
+        }
+      ],
+      "sha256": {
+        "R02/R02.txt": "f67a8317480ac8c770a394cdd91e36f733baf61cc068f2b2f943c9f6895633f5",
+        "R02/R02_elexon_b1610_selected_units_20190809.csv": "29316b5c8f9270609e021e91f5ce108b1a2cabcc76c2e6b6d7c7c548637d0c9a",
+        "R02/R02_elexon_bm_unit_reference.csv": "3ebfc42923c94dc0ac4624aa0ba7cfcce720a13c1bc3526a481769afc72f0e49",
+        "R02/R02_elexon_fuelhh_halfhour_20190809.csv": "a38c130eb207bdd8c8213833774466c5e7b1303713eac6fb840da605eef5b07d",
+        "R02/R02_elexon_fuelinst_5min_20190809.csv": "4c330f34f4117aec5a945d160bb76a76443805518485eb16624b541058f39052",
+        "R02/R02_elexon_indo_itsdo_20190809.csv": "c8a188ed7f0ac0a7f9578314b9b76240bc11fa21d0dcd850b588e99dd8308eca",
+        "R02/R02_elexon_lolpdrm_20190809.csv": "8bf423b7f583a0fd6abdbb31fe4568b407a106899bf0ca7b90c094d2ab8a0269",
+        "R02/R02_elexon_mels_selected_units_20190809.csv": "bf411d72809dcba33ba46e667504757b72a918bcc8d81bfdf6afb2e8f6e94cb6",
+        "R02/R02_eso_inertia_and_conditions_tables.csv": "6d498115a48aa7b52a195ab82b322d21402f51767d1d5460034301e01debd078",
+        "R02/R02_neso_historic_demand_20190808-10.csv": "781999959c7cafd51738924801f310f87db5ae9d6241223bef9e1a234f24c942",
+        "R02/R02_neso_inertia_20190808-10.csv": "266f00aebb3f33af55845a955a10909c7892e8b4bd071f2a3b8fb70493057083"
+      },
+      "party_aliases": [
+        "system operator",
+        "National Grid ESO"
+      ]
+    },
+    {
+      "doc_id": "R03",
+      "title": "Transmission fault and protection records, 9 August 2019",
+      "owner": "National Grid Electricity Transmission (NGET); lightning data MeteoGroup",
+      "date": "2019-08-09",
+      "category": "network_records",
+      "label": "RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT",
+      "text_file": "R03/R03.txt",
+      "artifacts": [
+        {
+          "file": "R03/R03.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "R03/R03.txt": "6c95b41f130713ca119d53a16c64a9d41b845a27a684f05485f6b9268a7d4658"
+      },
+      "party_aliases": [
+        "transmission owner"
+      ]
+    },
+    {
+      "doc_id": "R04",
+      "title": "Weather observations, warnings and lightning records, 9 August 2019",
+      "owner": "Iowa Environmental Mesonet (METAR archive); Met Office (warnings page); National Grid ESO and NGET (reported MeteoGroup lightning information)",
+      "date": "2019-08-09",
+      "category": "measurement_data",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R04/R04.txt",
+      "artifacts": [
+        {
+          "file": "R04/R04.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R04/R04_iem_metar_EGGW_EGSC_EGTC_20190809_1450-1720Z.csv",
+          "media_type": "text/csv",
+          "description": "IEM METAR reports for EGGW, EGSC and EGTC, 14:50-17:20 UTC on 9 August 2019; lines of the downloaded file unchanged."
+        },
+        {
+          "file": "R04/R04_metoffice_warnings_capture_20190809T160223Z.csv",
+          "media_type": "text/csv",
+          "description": "The four warning detail blocks of the Met Office UK warnings page captured 2019-08-09T16:02:23Z, fields as printed."
+        },
+        {
+          "file": "R04/R04_lightning_information_as_published.csv",
+          "media_type": "text/csv",
+          "description": "Lightning information as published: the Appendix A lightning-risk table and the values displayed in ESO Figure 4 and NGET Figure 3.1.1 (Parts D and E)."
+        }
+      ],
+      "sha256": {
+        "R04/R04.txt": "291f69e262010f79828a73a9c779ac986bd7572cdca0c11c17493a580802e823",
+        "R04/R04_iem_metar_EGGW_EGSC_EGTC_20190809_1450-1720Z.csv": "cc7c5658df663f23fa5a7cb30bbdc503b4c25611b67cd2af84ef7a6302227df2",
+        "R04/R04_lightning_information_as_published.csv": "9f9fe457b0a0fb094182776800123485b87217a643e3e4710d3e959d0d70e060",
+        "R04/R04_metoffice_warnings_capture_20190809T160223Z.csv": "2be868228af05abafbe4fda9c66994f3d571418d427d84666e79e37e738c5753"
+      }
+    },
+    {
+      "doc_id": "R05",
+      "title": "Hornsea One voltage and power traces digitised from published charts, 9 August 2019",
+      "owner": "National Grid ESO (published report charts; Appendix D charts supplied by Ørsted)",
+      "date": "2019-08-09",
+      "category": "measurement_data",
+      "label": "DIGITISED FROM PUBLISHED CHARTS — NOT ORIGINAL MEASUREMENT DATA",
+      "text_file": "R05/R05.txt",
+      "artifacts": [
+        {
+          "file": "R05/R05.txt",
+          "media_type": "text/plain",
+          "description": "Method note: series, method, calibration, uncertainty, clock basis, exclusions"
+        },
+        {
+          "file": "R05/app_p40_fig3_onshore.csv",
+          "media_type": "text/csv",
+          "description": "Values digitised from APP p40 Figure 3 (long format: one row per series and sample, with uncertainty)"
+        },
+        {
+          "file": "R05/app_p41_fig4_offshore_1b.csv",
+          "media_type": "text/csv",
+          "description": "Values digitised from APP p41 Figure 4 (long format: one row per series and sample, with uncertainty)"
+        },
+        {
+          "file": "R05/eso_p19_fig7_voltage_active_power.csv",
+          "media_type": "text/csv",
+          "description": "Values digitised from ESO p19 Figure 7 (long format: one row per series and sample, with uncertainty)"
+        },
+        {
+          "file": "R05/eso_p19_fig8_reactive_power.csv",
+          "media_type": "text/csv",
+          "description": "Values digitised from ESO p19 Figure 8 (long format: one row per series and sample, with uncertainty)"
+        },
+        {
+          "file": "R05/calibration.json",
+          "media_type": "application/json",
+          "description": "Axis calibration, series colours and stroke widths, uncertainty model"
+        }
+      ],
+      "sha256": {
+        "R05/R05.txt": "8e01c17717c8468f9edf4458394498f09e2392b7dc9ce51a11fabadc7ea99b8a",
+        "R05/app_p40_fig3_onshore.csv": "df47ed059e036b015201fd59479f2411f687ee8ae256f9338922cdc84c38f568",
+        "R05/app_p41_fig4_offshore_1b.csv": "4bded5f5eeaf9ed4ebd757f56ec9ffc294a79ad18652a7d4861c7b0211d13557",
+        "R05/calibration.json": "53b2490b1dac7922b4b2fed6b857ceb1d39dc33d2a9c865ad296d7835bd74595",
+        "R05/eso_p19_fig7_voltage_active_power.csv": "e08569cfb18da7b392b72b18189139ca8da6dc2e3808fab3a6ce1f60dda2f700",
+        "R05/eso_p19_fig8_reactive_power.csv": "9245ff97cc6e95e98a9c8149ba23fe232330657664e791fa094be7244b077bbc"
+      },
+      "party_aliases": [
+        "system operator",
+        "Hornsea One operator"
+      ]
+    },
+    {
+      "doc_id": "R06",
+      "title": "Frequency response holding, delivery and balancing actions, 9 August 2019",
+      "owner": "National Grid ESO (report tables); Elexon (BMRS balancing data)",
+      "date": "2019-08-09",
+      "category": "system_operator_records",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R06/R06.txt",
+      "artifacts": [
+        {
+          "file": "R06/R06.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R06/R06_report_tables_response_holding_delivery.csv",
+          "media_type": "text/csv",
+          "description": "ESO Table 3, ESO Table 5 and Appendix M Q16/Q17 tables as printed, one printed cell per row (Part A1-A4)."
+        },
+        {
+          "file": "R06/R06_appendix_i_table1_modelled_imbalance.csv",
+          "media_type": "text/csv",
+          "description": "Appendix I Table 1, Modelled Imbalance Time Series, as printed (event, time, imbalance change MW)."
+        },
+        {
+          "file": "R06/R06_elexon_boalf_acceptances_20190809_1540-1645Z.csv",
+          "media_type": "text/csv",
+          "description": "Elexon BOALF bid-offer acceptance level records with acceptanceTime 15:40-16:45 UTC on 9 August 2019 (unique records of the SP32-38 queries)."
+        },
+        {
+          "file": "R06/R06_elexon_qas_balancing_services_volume_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon QAS balancing services volume per BM unit per settlement period, 9 August 2019 (every record returned; 596 rows)."
+        },
+        {
+          "file": "R06/R06_elexon_disebsp_system_prices_niv_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon DISEBSP settlement system prices and net imbalance volume, settlement date 9 August 2019, all fields."
+        }
+      ],
+      "sha256": {
+        "R06/R06.txt": "0368a84b740f9d7d9b33a9c702233215f10c5af6bed5c5686a87c8462837726a",
+        "R06/R06_appendix_i_table1_modelled_imbalance.csv": "ac4b4c71d814701afb612cacc7e9f2b0439b0cd7119cc332040f3cc693f67c38",
+        "R06/R06_elexon_boalf_acceptances_20190809_1540-1645Z.csv": "c3c1116475c24e266cdf407101dc19afebc4249bc6dcd4136c2542727b854b08",
+        "R06/R06_elexon_disebsp_system_prices_niv_20190809.csv": "90954035189c1c406b4417c8a5870b0d42fde9e804dfba342a73359ba8b45f03",
+        "R06/R06_elexon_qas_balancing_services_volume_20190809.csv": "994c89f31f2c9cf272d1fb503ae0918f00373e784f42dc86cc9d16725ab1f362",
+        "R06/R06_report_tables_response_holding_delivery.csv": "ef7f07c7243e4bc56158ce3434ba7c3b6f89a20c2934b447a35070376cac605f"
+      },
+      "party_aliases": [
+        "system operator"
+      ]
+    },
+    {
+      "doc_id": "R07",
+      "title": "Demand disconnection and restoration records, 9 August 2019",
+      "owner": "Elexon (BMRS data); National Grid ESO, E3C and Ofgem (report tables); DNO public posts (short gists written for this record)",
+      "date": "2019-08-09",
+      "category": "distribution_records",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R07/R07.txt",
+      "artifacts": [
+        {
+          "file": "R07/R07.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R07/R07_elexon_dci_201908.csv",
+          "media_type": "text/csv",
+          "description": "Elexon demand control instruction (DCI) record for August 2019 (one record), all fields."
+        },
+        {
+          "file": "R07/R07_elexon_demand_outturn_summary_5min_20190809.csv",
+          "media_type": "text/csv",
+          "description": "Elexon 5-minute system demand summary (MW), 14:00-19:00 UTC on 9 August 2019; columns recordType, startTime (UTC), demand (MW).",
+          "timeseries": {
+            "time_column": "startTime",
+            "value_column": "demand",
+            "unit": "MW",
+            "first": "2019-08-09T14:00:00Z",
+            "last": "2019-08-09T19:00:00Z",
+            "rows": 61,
+            "interval_s": 300
+          }
+        },
+        {
+          "file": "R07/R07_reported_lfdd_by_dno.csv",
+          "media_type": "text/csv",
+          "description": "Per-DNO LFDD tables as printed: ESO technical report Table 6 and E3C interim report Table 1 (Part C)."
+        },
+        {
+          "file": "R07/R07_dno_public_posts_summaries.csv",
+          "media_type": "text/csv",
+          "description": "Public DNO posts about restoration (Part D): post time in UTC decoded from the post identifier, organisation, and a short gist written for this record (not the post text)."
+        }
+      ],
+      "sha256": {
+        "R07/R07.txt": "10b05fbe2f018b5ac7d1a31fedb3721cbbf429a478ca6841a53d837cea715bf9",
+        "R07/R07_dno_public_posts_summaries.csv": "c10dbc7e396e6a84bc0b1564f7b8ad59d05f5b1c79791d5d64652bb3e22981db",
+        "R07/R07_elexon_dci_201908.csv": "6fc839c1a7cdef26787bf41591bc2cb95c384b3bce9215d83608fc3807f41a28",
+        "R07/R07_elexon_demand_outturn_summary_5min_20190809.csv": "d25402b047857b02095304c8899995dc55550b39cf18a493f4ed29fd7d188150",
+        "R07/R07_reported_lfdd_by_dno.csv": "750be8972dd47cb44fe268f9508904ff48f235b6c40f5b1c4017474f24730d78"
+      },
+      "party_aliases": [
+        "system operator",
+        "DNO",
+        "DNOs"
+      ]
+    },
+    {
+      "doc_id": "R08",
+      "title": "Operational call record between control rooms, 9 August 2019",
+      "owner": "National Grid ESO (call diagram, Appendix J to the ESO technical report)",
+      "date": "2019-08-09",
+      "category": "system_operator_records",
+      "label": "RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT",
+      "text_file": "R08/R08.txt",
+      "artifacts": [
+        {
+          "file": "R08/R08.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "R08/R08.txt": "66c39cc90db20f71899549fb727fb7c6eb012a281a5c12317812321e9057d713"
+      },
+      "party_aliases": [
+        "system operator"
+      ]
+    },
+    {
+      "doc_id": "R09",
+      "title": "External communications records, 9-20 August 2019",
+      "owner": "National Grid ESO (technical report, appendices and public statements); Energy Emergencies Executive Committee (interim and final reports); Ofgem (report and press releases); BEIS (GOV.UK); Elexon (REMIT data); DNOs, train operators and National Rail Enquiries (public posts and pages; gists written for this record)",
+      "date": "2019-08-09",
+      "category": "communications_records",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R09/R09.txt",
+      "artifacts": [
+        {
+          "file": "R09/R09.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R09/R09_elexon_remit_messages_hornsea_one_little_barford.csv",
+          "media_type": "text/csv",
+          "description": "Elexon REMIT message revisions for T_HOWAO-1/2/3 and T_LBAR-1 (Part D), all fields as published (outageProfile as compact JSON)."
+        },
+        {
+          "file": "R09/R09_eso_table8_external_communications.csv",
+          "media_type": "text/csv",
+          "description": "ESO technical report Table 8 (timeline of external communications) as printed; personal names replaced by roles in square brackets."
+        },
+        {
+          "file": "R09/R09_eso_table9_calls_to_dnos.csv",
+          "media_type": "text/csv",
+          "description": "ESO technical report Table 9 (calls received by the six largest DNOs, 4pm to 7pm on 9 August) as printed."
+        },
+        {
+          "file": "R09/R09_public_posts_and_statements_gists.csv",
+          "media_type": "text/csv",
+          "description": "Part E: organisational public posts and web statements — label, time (decoded UTC, displayed or titled), the basis of that time, the decoded UTC instant of posts (empty for web pages, whose times are local or dates only), organisation, channel and a gist written for this record (no post or page text)."
+        }
+      ],
+      "sha256": {
+        "R09/R09.txt": "a3cacd7f29948bc2e04b313e4d1f5807e4e2d20dae2153fc07d6b59c3a549f3d",
+        "R09/R09_elexon_remit_messages_hornsea_one_little_barford.csv": "1792df465d5abbf7780cdccaf092bdc785a53659d3dee5615a3b5fffcddc35bc",
+        "R09/R09_eso_table8_external_communications.csv": "e1a908e3ef3fb73e5f0bc50b0e9dd68ac96531467ffbb2d714c37a90cc8623ec",
+        "R09/R09_eso_table9_calls_to_dnos.csv": "e8784dc20ca9adb11ebcc65b2ffc324a715b7badd6193cc592a8cb22f3e7767a",
+        "R09/R09_public_posts_and_statements_gists.csv": "e491a3245a8e85f78db44879ed099313f066f4deda5c465fe5080d0c18ea2232"
+      },
+      "party_aliases": [
+        "system operator",
+        "National Grid ESO",
+        "Elexon",
+        "DNO",
+        "regulator"
+      ]
+    },
+    {
+      "doc_id": "R10",
+      "title": "Operating requirements as described in the published reports (selection)",
+      "owner": "Compiled from National Grid ESO, Ofgem, E3C and ORR reports",
+      "date": "2019-08-09",
+      "category": "requirements",
+      "label": "RECONSTRUCTION OF REQUIREMENTS DESCRIBED IN PUBLISHED REPORTS — NOT CODE OR STANDARD TEXT",
+      "text_file": "R10/R10.txt",
+      "artifacts": [
+        {
+          "file": "R10/R10.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "R10/R10.txt": "6900e401778bb605e45d7f0ddd07c28807e20991e3b0d398c9eb41dd3d786a8d"
+      },
+      "party_aliases": [
+        "system operator",
+        "regulator"
+      ]
+    },
+    {
+      "doc_id": "R11",
+      "title": "Rail performance records, 9 August 2019: delay attribution and periodic statistics",
+      "owner": "Network Rail (delay attribution records and glossary); Office of Rail and Road (periodic statistics)",
+      "date": "2019-08-09",
+      "category": "transport_records",
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R11/R11.txt",
+      "artifacts": [
+        {
+          "file": "R11/R11.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R11/R11_networkrail_delay_records_selected_incidents.csv",
+          "media_type": "text/csv",
+          "description": "Network Rail delay-attribution records of the selected incidents (one row per train per delay or cancellation event; publisher's column names and values)."
+        },
+        {
+          "file": "R11/R11_networkrail_incidents_selected.csv",
+          "media_type": "text/csv",
+          "description": "One row per selected Network Rail incident with its incident-level columns as published."
+        },
+        {
+          "file": "R11/R11_networkrail_glossary_codes_used.csv",
+          "media_type": "text/csv",
+          "description": "Glossary entries (Network Rail, August 2021 edition) of every code in the selected records: event types, incident and reactionary reasons, responsible managers, operators and STANOX locations."
+        },
+        {
+          "file": "R11/R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv",
+          "media_type": "text/csv",
+          "description": "Table 3124 - Trains planned and cancellations by operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        },
+        {
+          "file": "R11/R11_orr_table3157a_severely_disrupted_days_great_britain.csv",
+          "media_type": "text/csv",
+          "description": "Table 3157a - Days of severe disruption, Great Britain (periodic), periods 04-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        },
+        {
+          "file": "R11/R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv",
+          "media_type": "text/csv",
+          "description": "Table 3157b - Days of severe disruption by sub-operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        }
+      ],
+      "sha256": {
+        "R11/R11.txt": "d61ee361330115de1ccce98b0c99483406d4861f18b95fcf82f63d94234b14cd",
+        "R11/R11_networkrail_delay_records_selected_incidents.csv": "9bd261332ebac0c9e7ed6ae602202a20c20b744b9f86445ec1e394ab597e8ef6",
+        "R11/R11_networkrail_glossary_codes_used.csv": "6724be4afcabba4ca38090955278f35d2d20e09e792c0fcdf9c7a73ad856c2c8",
+        "R11/R11_networkrail_incidents_selected.csv": "bc89db6ab39d75767b46a9511b2f78e5541912ef77feb0590b915651d79d019b",
+        "R11/R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02",
+        "R11/R11_orr_table3157a_severely_disrupted_days_great_britain.csv": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16",
+        "R11/R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb"
+      },
+      "party_aliases": [
+        "Network Rail",
+        "rail",
+        "ORR",
+        "Office of Rail and Road",
+        "train operator"
+      ]
+    },
+    {
+      "doc_id": "R12",
+      "title": "Essential-service public statements, 9-10 August 2019",
+      "owner": "East Suffolk and North Essex NHS Foundation Trust (Ipswich Hospital); Newcastle International Airport (public posts)",
+      "date": "2019-08-09",
+      "category": "essential_services",
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R12/R12.txt",
+      "artifacts": [
+        {
+          "file": "R12/R12.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R12/R12_essential_service_public_statements.csv",
+          "media_type": "text/csv",
+          "description": "Essential-service public statements (Parts A-B): time as published or decoded (UTC) and its basis, the post identifier of decoded posts, organisation, channel and a summary written for this record (no statement text)."
+        }
+      ],
+      "sha256": {
+        "R12/R12.txt": "8d23589e117ca2d4616a560c902f6838034946acacfb90084328d70eedaa71d6",
+        "R12/R12_essential_service_public_statements.csv": "6da993cf2567ca7420d89ae58e7b377caeef0bbbd5f9915ba141992501a06811"
+      },
+      "party_aliases": [
+        "hospital",
+        "airport",
+        "essential services",
+        "NHS trust"
+      ]
+    },
+    {
+      "doc_id": "S01",
+      "title": "Hornsea One offshore wind farm event log, 9 August 2019",
+      "owner": "Ørsted (Hornsea One operator)",
+      "date": "2019-08-09",
+      "category": "generator_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S01/S01.txt",
+      "artifacts": [
+        {
+          "file": "S01/S01.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S01/S01.txt": "9f94668dff61ceb8feead9af48dfda9575a9bf1c8b53cee64e70ca3b49cb85f4"
+      },
+      "party_aliases": [
+        "wind farm operator"
+      ]
+    },
+    {
+      "doc_id": "S03",
+      "title": "Little Barford power station alarm and sequence-of-events records, 9 August 2019",
+      "owner": "RWE Generation (Little Barford power station)",
+      "date": "2019-08-09",
+      "category": "generator_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S03/S03.txt",
+      "artifacts": [
+        {
+          "file": "S03/S03.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S03/S03.txt": "ffbe2dc0006a0ab19cdf8115f184c2d4c236ca0a4543451d2aa48400b4c9f88e"
+      },
+      "party_aliases": [
+        "power station operator"
+      ]
+    },
+    {
+      "doc_id": "S04",
+      "title": "Little Barford power station shift account, 9 August 2019",
+      "owner": "RWE Generation (Little Barford station operating staff)",
+      "date": "2019-08-09",
+      "category": "personnel_accounts",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S04/S04.txt",
+      "artifacts": [
+        {
+          "file": "S04/S04.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S04/S04.txt": "ec3aa2a02d7ead742b83c74cd08af1e9e960e25c92ad9fe0ea85be96a931da4c"
+      },
+      "party_aliases": [
+        "power station operator"
+      ]
+    },
+    {
+      "doc_id": "S05",
+      "title": "Distribution network operator demand disconnection and restoration returns, 9 August 2019",
+      "owner": "Distribution Network Operators (returns as tabulated by National Grid ESO and the E3C)",
+      "date": "2019-08-09",
+      "category": "distribution_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S05/S05.txt",
+      "artifacts": [
+        {
+          "file": "S05/S05.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S05/S05.txt": "be9fac6ee9493d32c105a12f64384ed93485752183e7442f4aedf8a0904fd266"
+      },
+      "access": "data_return"
+    },
+    {
+      "doc_id": "S06",
+      "title": "Embedded generation returns and published loss estimates, 9 August 2019",
+      "owner": "Distribution Network Operators; National Grid ESO, Ofgem and E3C estimates",
+      "date": "2019-08-09",
+      "category": "distribution_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S06/S06.txt",
+      "artifacts": [
+        {
+          "file": "S06/S06.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S06/S06.txt": "317b4f2bb12bbcad744eab10eebed660c46ebb62e621755ad9a8a183842c1142"
+      },
+      "access": "data_return"
+    },
+    {
+      "doc_id": "S07",
+      "title": "ESO control room log, 9 August 2019",
+      "owner": "National Grid ESO (Electricity National Control Centre)",
+      "date": "2019-08-09",
+      "category": "system_operator_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S07/S07.txt",
+      "artifacts": [
+        {
+          "file": "S07/S07.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S07/S07.txt": "078d9db3c64d254c316f8a1415a0200fee538078831780d87a3f8f385020bd40"
+      },
+      "party_aliases": [
+        "system operator"
+      ]
+    },
+    {
+      "doc_id": "S08",
+      "title": "Rail fleet and service records, 9 August 2019",
+      "owner": "Govia Thameslink Railway (fleet technical review); rail accounts published by ORR, National Grid ESO, Ofgem and the E3C",
+      "date": "2019-08-09",
+      "category": "transport_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S08/S08.txt",
+      "artifacts": [
+        {
+          "file": "S08/S08.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S08/S08.txt": "b5a8753ff27a2abf5d00f9a0f7a4eb0d9ab0a5e4fbfb5065092bbbf8b462a123"
+      },
+      "party_aliases": [
+        "train operator",
+        "GTR",
+        "rail regulator"
+      ]
+    },
+    {
+      "doc_id": "S10",
+      "title": "Generator and network compliance-process records, 9 August 2019",
+      "owner": "National Grid ESO (compliance process records); Ofgem and E3C statements",
+      "date": "2019-08-09",
+      "category": "compliance_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S10/S10.txt",
+      "artifacts": [
+        {
+          "file": "S10/S10.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S10/S10.txt": "8aaa8984dc67801b2d20c307ea0f6100a129071639bc6c9132302bb3dad72460"
+      },
+      "party_aliases": [
+        "system operator",
+        "regulator"
+      ]
+    },
+    {
+      "doc_id": "S11",
+      "title": "Essential services and infrastructure supply impact records, 9 August 2019",
+      "owner": "Compiled from National Grid ESO, Ofgem, E3C and ORR published accounts",
+      "date": "2019-08-09",
+      "category": "essential_services",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S11/S11.txt",
+      "artifacts": [
+        {
+          "file": "S11/S11.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S11/S11.txt": "ebe4e01353192cea6122f8ba8c609498384d922a4a7d1d3040b75a45532dcd70"
+      },
+      "party_aliases": [
+        "system operator",
+        "regulator",
+        "E3C"
+      ]
+    },
+    {
+      "doc_id": "S12",
+      "title": "Engineering analysis records, 9 August 2019",
+      "owner": "National Grid ESO, with Ofgem and E3C analysis as attributed",
+      "date": "2019-08-09",
+      "category": "analysis_records",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "text_file": "S12/S12.txt",
+      "artifacts": [
+        {
+          "file": "S12/S12.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S12/S12.txt": "db1eabddd5f9e15030dda275e594ad7e923e8a7b62066e6bb7ba4a8d6aff69b8"
+      },
+      "party_aliases": [
+        "system operator",
+        "regulator"
+      ]
+    }
+  ],
+  "asset_logs": [
+    {
+      "asset_id": "ESW-400",
+      "title": "Eaton Socon - Wymondley Main 400 kV circuit: record entries",
+      "owner": "National Grid Electricity Transmission (NGET)",
+      "signals": [
+        "event",
+        "current (Wymondley Main end, RMS)",
+        "current (Eaton Socon end, RMS)",
+        "voltage change",
+        "protection timing (Wymondley Main end)",
+        "protection timing (Eaton Socon end)"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R03 rows — times as written in R03 (BST, UTC+01:00; the source does not label its clock).",
+      "evidence_ids": [
+        "R03"
+      ],
+      "status": "STATUS: RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT (rows of R03).",
+      "source_note": "R03: rows restate entries of the reconstructed transmission record R03.",
+      "file": "logs/assets/ESW-400.jsonl",
+      "sha256": "2ab8d6cc40753c7dde4b4865f3ef331129615cf8a8854388741b73b15fac4985"
+    },
+    {
+      "asset_id": "HORNSEA-ONE",
+      "title": "Hornsea One offshore wind farm: event log entries, BM unit data, REMIT messages and chart readings",
+      "owner": "Ørsted (event log); Elexon (BM unit data; publication of the participant's REMIT messages); National Grid ESO (published report charts)",
+      "signals": [
+        "T_HOWAO-1 B1610 MWh",
+        "T_HOWAO-2 B1610 MWh",
+        "T_HOWAO-3 B1610 MWh",
+        "T_HOWAO-1 MEL MW",
+        "T_HOWAO-2 MEL MW",
+        "T_HOWAO-3 MEL MW",
+        "reactive power",
+        "NETS 400 kV substation voltage",
+        "total reactive power, ESO p19 Fig 8 (digitised)",
+        "active power, APP p40 Fig 3 (digitised)",
+        "reactive power, APP p40 Fig 3 (digitised)",
+        "offshore active power MW_OFS, APP p41 Fig 4 (digitised)",
+        "voltage, ESO p19 Fig 7 (digitised)",
+        "TIP voltage",
+        "NETS and Hornsea One system voltage",
+        "active power",
+        "reactive power (absorbing)",
+        "offshore 34 kV collection-system voltage, APP p41 Fig 4 (digitised)",
+        "34 kV collection system voltage",
+        "event",
+        "active power (site)",
+        "reactive power (injecting)",
+        "T_HOWAO-1 REMIT declared available capacity for event window MW",
+        "T_HOWAO-2 REMIT declared available capacity for event window MW",
+        "T_HOWAO-3 REMIT declared available capacity for event window MW"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R02 rows — B1610 rows: Elexon settlement period (UK local clock; BST on 9 August 2019), indexed at the middle of the period +/- 900 s. MEL rows: UTC timeFrom, minute resolution. R05 rows — chart times as printed (no time zone printed); the index reads them as BST, with the uncertainty stated per row. R09 rows — recorded_time is the Elexon REMIT publishTime (UTC); the index is the publication time, not the event time. The value is the available capacity the message declares for its event window, given only for an active revision published inside that window; it is null for a Dismissed or Inactive revision and for a message published before or after its event window (the declared figures stay in the row text). S01 rows — times rendered in UTC (Z) by the reconstructed event log; the operator's published timeline uses local time.",
+      "evidence_ids": [
+        "R02",
+        "R05",
+        "R09",
+        "S01"
+      ],
+      "status": "STATUS: MIXED RECORD TYPES — each row keeps the status of its evidence record. R02, R09: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES; R05: DIGITISED FROM PUBLISHED CHARTS — NOT ORIGINAL MEASUREMENT DATA; S01: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE.",
+      "source_note": "R02: Elexon BMRS B1610 and MELS data (real extracts; see R02). Rows are real public data extracts; licence: Elexon BMRS open data licence (attribution required). Contains BMRS data (c) Elexon Limited copyright and database right 2026. R05: rows restate values read from published chart images (see R05 for method and uncertainty); not original records. R09: Elexon REMIT unavailability messages, every revision held (real extracts; see R09); message content is written by the market participant. Rows are real public data extracts; licence: Elexon BMRS open data licence (attribution required). Contains BMRS data (c) Elexon Limited copyright and database right 2026. S01: rows restate entries of the reconstructed event log S01.",
+      "file": "logs/assets/HORNSEA-ONE.jsonl",
+      "sha256": "7ad9a88e562162eaab52ecd5b5c47d096e74082eb790276c0311a202b4fbcfea"
+    },
+    {
+      "asset_id": "LITTLE-BARFORD",
+      "title": "Little Barford power station: sequence-of-events entries, BM unit data and REMIT messages",
+      "owner": "RWE Generation (sequence of events); Elexon (BM unit data; publication of the participant's REMIT messages)",
+      "signals": [
+        "T_LBAR-1 B1610 MWh",
+        "T_LBAR-1 MEL MW",
+        "T_LBAR-1G MEL MW",
+        "sequence-of-events entry",
+        "T_LBAR-1 REMIT declared available capacity for event window MW"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R02 rows — B1610 rows: Elexon settlement period (UK local clock; BST on 9 August 2019), indexed at the middle of the period +/- 900 s. MEL rows: UTC timeFrom, minute resolution. R09 rows — recorded_time is the Elexon REMIT publishTime (UTC); the index is the publication time, not the event time. The value is the available capacity the message declares for its event window, given only for an active revision published inside that window; it is null for a Dismissed or Inactive revision and for a message published before or after its event window (the declared figures stay in the row text). S03 rows — offsets from the station's sequence-of-events datum T as recorded; the datum and its clock are stated in S03 and in each row's clock_basis.",
+      "evidence_ids": [
+        "R02",
+        "R09",
+        "S03"
+      ],
+      "status": "STATUS: MIXED RECORD TYPES — each row keeps the status of its evidence record. R02, R09: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES; S03: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE.",
+      "source_note": "R02: Elexon BMRS B1610 and MELS data (real extracts; see R02). Rows are real public data extracts; licence: Elexon BMRS open data licence (attribution required). Contains BMRS data (c) Elexon Limited copyright and database right 2026. R09: Elexon REMIT unavailability messages, every revision held (real extracts; see R09); message content is written by the market participant. Rows are real public data extracts; licence: Elexon BMRS open data licence (attribution required). Contains BMRS data (c) Elexon Limited copyright and database right 2026. S03: rows restate entries of the reconstructed sequence-of-events record S03.",
+      "file": "logs/assets/LITTLE-BARFORD.jsonl",
+      "sha256": "81a27ba86b530eb62c15cf7e5996136de4f3155a7b7ef9bf04da1f0c4f062552"
+    }
+  ],
+  "control_logs": [
+    {
+      "room_id": "ESO-COMMS",
+      "title": "ESO communications: contacts with government and the regulator, media statements and public posts (published accounts and public records)",
+      "owner": "National Grid ESO (published reports and public statements); E3C (reports)",
+      "evidence_ids": [
+        "R09"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R09 rows — times as printed in the reports (no clock labelled; read as BST, UTC+01:00), as titled or dated on ESO web statements (UK local time), or decoded in UTC from post identifiers; each row states its basis.",
+      "status": "STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES (rows of R09).",
+      "source_note": "R09: rows restate R09's timed ESO communications: contacts and statements in the published accounts (ESO technical report and appendices, E3C reports) and ESO public posts and web statements (gists written for this record; no post or statement text).",
+      "file": "logs/control/ESO-COMMS.jsonl",
+      "sha256": "35f38d5680b51e2d91fc8160e5e916bb8da98ba6a6edbf326f2dd72d2b1929ac"
+    },
+    {
+      "room_id": "ESO-ENCC",
+      "title": "ESO Electricity National Control Centre (ENCC): timeline entries, operational calls and balancing acceptances",
+      "owner": "National Grid ESO (published timelines and call diagram); Elexon (BOALF data)",
+      "evidence_ids": [
+        "R06",
+        "R08",
+        "S07"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R06 rows — recorded_time is the Elexon acceptanceTime (UTC, minute resolution); index uncertainty 60 s. R08 rows — hh:mm as printed on ESO's call diagram (no clock labelled; read as BST, UTC+01:00). S07 rows — hh:mm[:ss] as printed in ESO's timelines (no clock labelled; read as BST, UTC+01:00).",
+      "status": "STATUS: MIXED RECORD TYPES — each row keeps the status of its evidence record. R06: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES; R08: RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT; S07: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE.",
+      "source_note": "R06: Elexon BMRS BOALF bid-offer acceptances (real extracts; see R06), one entry per acceptance with acceptanceTime 15:40-16:45 UTC on 9 August 2019. Rows are real public data extracts; licence: Elexon BMRS open data licence (attribution required). Contains BMRS data (c) Elexon Limited copyright and database right 2026. R08: rows restate the calls of the reconstructed call record R08. S07: rows restate entries of the reconstructed control-room log S07.",
+      "file": "logs/control/ESO-ENCC.jsonl",
+      "sha256": "8821f0859cf84558165215d68baa00c9b36d74325aea7fd7c4a054f909928fbf"
+    },
+    {
+      "room_id": "GTR-FLEET-CONTROL",
+      "title": "GTR fleet control: technical-review entries with a printed clock time",
+      "owner": "Govia Thameslink Railway (technical review dated 3 September 2019)",
+      "evidence_ids": [
+        "S08"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. S08 rows — hhmm as printed in GTR's technical review (event summary); no clock labelled, read as BST (UTC+01:00).",
+      "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE (rows of S08).",
+      "source_note": "S08: rows restate entries of the reconstructed rail fleet record S08.",
+      "file": "logs/control/GTR-FLEET-CONTROL.jsonl",
+      "sha256": "bb6ea2257168a259b51e9c27034d92fd431c69a16a64c5222338c4775b1fdc35"
+    },
+    {
+      "room_id": "NETWORK-RAIL-CONTROL",
+      "title": "Network Rail: delay-attribution incident records (TRUST), 9 August 2019",
+      "owner": "Network Rail (historic delay attribution data)",
+      "evidence_ids": [
+        "R11"
+      ],
+      "clock_note": "Each row gives the time as recorded and its clock basis; index_time_utc is a UTC conversion made by the bundle builder and used only to select rows, with the uncertainty in index_uncertainty_s. R11 rows — incident_start_datetime as held in Network Rail's PSS extract (dd/mm/yyyy HH:MM, no zone stated by the publisher; read as BST, UTC+01:00, for the index).",
+      "status": "STATUS: REAL DATA EXTRACTS (rows of R11).",
+      "source_note": "R11: one entry per selected Network Rail incident, with its incident-level columns as published (real extracts; see R11). Rows are real public data extracts; licence: Open Government Licence v3.0. Contains public sector information licensed under the Open Government Licence v3.0 (Network Rail).",
+      "file": "logs/control/NETWORK-RAIL-CONTROL.jsonl",
+      "sha256": "902f8ad2fea7e3691ad8a6b2292fc2a804329151279a3ab5de700d23c1d2a4b0"
+    }
+  ],
+  "witnesses": [
+    {
+      "persona_id": "dno-control-engineer",
+      "role": "Control engineer, distribution network operator (collective account of the DNO returns)",
+      "organisation": "Distribution Network Operators",
+      "evidence_id": "S09",
+      "file": "witnesses/dno-control-engineer.json",
+      "sha256": "bcb8d3437e78dfd81f2c6e4c30e1d1a1664a052345a7f2745421b37c19478437"
+    },
+    {
+      "persona_id": "eso-communications-lead",
+      "role": "Communications lead, National Grid ESO (stakeholder and media communications)",
+      "organisation": "National Grid ESO",
+      "evidence_id": "S09",
+      "file": "witnesses/eso-communications-lead.json",
+      "sha256": "a0a3c12aa4d6c292d911c083693cf5cfb64adf8a35169a4ce810085d2431ffbb"
+    },
+    {
+      "persona_id": "eso-control-engineer",
+      "role": "Control engineer, ESO Electricity National Control Centre (ENCC)",
+      "organisation": "National Grid ESO",
+      "evidence_id": "S09",
+      "file": "witnesses/eso-control-engineer.json",
+      "sha256": "4b2c9075cc4e10bc1058b0ffc808743c221b46020bdd50d51d154c1d03da612a"
+    },
+    {
+      "persona_id": "gtr-fleet-engineer",
+      "role": "Fleet engineer, Govia Thameslink Railway (GTR) fleet control",
+      "organisation": "Govia Thameslink Railway (GTR)",
+      "evidence_id": "S09",
+      "file": "witnesses/gtr-fleet-engineer.json",
+      "sha256": "5ba453b6174208e89238099b1b92b07118d01966ea195f47fd1770c997f62100"
+    },
+    {
+      "persona_id": "hospital-estates-manager",
+      "role": "Estates manager, Ipswich Hospital",
+      "organisation": "East Suffolk and North Essex NHS Foundation Trust",
+      "evidence_id": "S09",
+      "file": "witnesses/hospital-estates-manager.json",
+      "sha256": "9511d93db88504a45b13bb6fe8e7024cc1079c11a0e3666dd45ec4870effc9ff"
+    },
+    {
+      "persona_id": "network-rail-control-manager",
+      "role": "Control duty manager, Network Rail (railway infrastructure operator)",
+      "organisation": "Network Rail",
+      "evidence_id": "S09",
+      "file": "witnesses/network-rail-control-manager.json",
+      "sha256": "69e404d56033a02f085d96768e77c88616d0fca2f946ad4866beab508f1279e2"
+    },
+    {
+      "persona_id": "nget-protection-engineer",
+      "role": "Protection engineer, transmission owner",
+      "organisation": "National Grid Electricity Transmission (NGET)",
+      "evidence_id": "S09",
+      "file": "witnesses/nget-protection-engineer.json",
+      "sha256": "90d00c5de3a048f9d8f4395ecea0f2cb906a30b6bfb77e3cb97694236fcba09d"
+    },
+    {
+      "persona_id": "orsted-hornsea-operations-engineer",
+      "role": "Operations engineer, Hornsea One offshore wind farm",
+      "organisation": "Ørsted",
+      "evidence_id": "S09",
+      "file": "witnesses/orsted-hornsea-operations-engineer.json",
+      "sha256": "82fe1f102438676b373ca63cf47f4631115d90e8ea5ad498ff93d421cc2ae604"
+    },
+    {
+      "persona_id": "rwe-lb-shift-charge-engineer",
+      "role": "Shift charge engineer, Little Barford power station",
+      "organisation": "RWE Generation",
+      "evidence_id": "S09",
+      "file": "witnesses/rwe-lb-shift-charge-engineer.json",
+      "sha256": "d6c6d4341763802e9bf63709c4af7e34988fcfdfbb0bf2d32dcf932df0ae9412"
+    },
+    {
+      "persona_id": "ukpn-epn-spn-control-engineer",
+      "role": "Control engineer, UK Power Networks (Eastern Power Networks and South Eastern Power Networks licence areas)",
+      "organisation": "UK Power Networks",
+      "evidence_id": "S09",
+      "file": "witnesses/ukpn-epn-spn-control-engineer.json",
+      "sha256": "818e7d56cff5492cd39e64343598e31940169dbe60ca901cda2ac35fb6f6e75f"
+    }
+  ],
+  "data_returns": [
+    {
+      "party": "DNO",
+      "data_type": "embedded_generation_loss_returns",
+      "status": "available",
+      "evidence_id": "S06",
+      "message": "The combined DNO embedded-generation return to ESO, its stated limits, and the published loss estimates listed by source, each in its source's own words."
+    },
+    {
+      "party": "DNO",
+      "data_type": "feeder_level_lfdd_relay_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no published feeder- or relay-level LFDD log was obtained; only the per-area returns tabulated by ESO and the E3C are available."
+    },
+    {
+      "party": "DNO",
+      "data_type": "lfdd_disconnection_and_restoration_returns",
+      "status": "available",
+      "evidence_id": "S05",
+      "message": "Per-area LFDD returns (MW, customers, final restoration time) as tabulated by ESO and the E3C, with DNO-reported relay observations; fields the published tables leave blank stay blank."
+    },
+    {
+      "party": "DNO",
+      "data_type": "real_time_distributed_generation_telemetry",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no real-time output telemetry for distributed generators was obtained. Ofgem states that most DNOs only record generation volumes half-hourly and that DNOs do not monitor distributed generator output in real time."
+    },
+    {
+      "party": "ELEXON",
+      "data_type": "physical_notifications_event_window",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: Physical Notification data for 9 August 2019 after settlement period 4 are missing from the publisher's current dataset (its ingestion status resumes on 11 August 2019)."
+    },
+    {
+      "party": "ELEXON",
+      "data_type": "remit_messages",
+      "status": "available",
+      "evidence_id": "R09",
+      "message": "REMIT unavailability messages for Hornsea One and Little Barford, every revision held, with publication times, inside the external communications record."
+    },
+    {
+      "party": "ESO",
+      "data_type": "control_room_communications_log",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no ESO control-room message log or call recording was obtained; the available records are the published accounts of the ESO's communications."
+    },
+    {
+      "party": "ESO",
+      "data_type": "control_room_log",
+      "status": "available",
+      "evidence_id": "S07",
+      "message": "Reconstructed control-room log from ESO's published timelines and communication tables, including ESO's earlier (28 August 2019) account."
+    },
+    {
+      "party": "ESO",
+      "data_type": "engineering_analysis",
+      "status": "available",
+      "evidence_id": "S12",
+      "message": "Published loss accounting, frequency simulation, response and inertia assumptions, and differences between ESO's earlier and final accounts."
+    },
+    {
+      "party": "ESO",
+      "data_type": "external_communications_record",
+      "status": "available",
+      "evidence_id": "R09",
+      "message": "Published accounts of ESO contacts with government and the regulator, media statements, public posts and web statements, and calls to DNO helplines."
+    },
+    {
+      "party": "ESO",
+      "data_type": "generator_compliance_process_records",
+      "status": "available",
+      "evidence_id": "S10",
+      "message": "Compliance-process records for Hornsea One and Little Barford (dates, tests and outstanding items as published) with the ESO's answers and the regulator's and E3C's statements, attributed."
+    },
+    {
+      "party": "ESO",
+      "data_type": "grid_code_compliance_test_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: the Grid Code compliance test reports and simulation studies themselves were not obtained; the ESO's published compliance appendix lists, for Hornsea One, completed tests with their test, results and approval dates and the outstanding tests and, for Little Barford, only its compliance activities and their dates (2012-2013). The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests."
+    },
+    {
+      "party": "ESO",
+      "data_type": "operational_call_record",
+      "status": "available",
+      "evidence_id": "R08",
+      "message": "Transcription of ESO's published diagram of operational calls between its control room, NGET, DNO and Scottish control rooms."
+    },
+    {
+      "party": "ESO",
+      "data_type": "pmu_wams_traces",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no phasor measurement (PMU/WAMS) recording of the event was obtained; the recordings are not published."
+    },
+    {
+      "party": "GTR",
+      "data_type": "fleet_incident_records",
+      "status": "available",
+      "evidence_id": "S08",
+      "message": "Rail fleet and service records: GTR's technical review of the Class 700/717 shutdowns with the rail accounts published by ORR, the ESO, Ofgem and the E3C, each restated separately."
+    },
+    {
+      "party": "GTR",
+      "data_type": "onboard_tcms_event_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no train-level TCMS or on-board event log was found in the published sources or obtained; GTR's technical review (in the rail fleet records) is the available account."
+    },
+    {
+      "party": "HOSPITAL_TRUST",
+      "data_type": "public_statement",
+      "status": "available",
+      "evidence_id": "R12",
+      "message": "The Ipswich Hospital trust's press release of 10 August 2019 (publication details and a summary written for this record)."
+    },
+    {
+      "party": "HOSPITAL_TRUST",
+      "data_type": "site_electrical_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no hospital switching, protection or generator record was obtained; the trust's public statement of 10 August 2019 gives no times."
+    },
+    {
+      "party": "METEOGROUP",
+      "data_type": "lightning_stroke_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: stroke-level lightning records (time, location, peak current) are commercial data and were not obtained; only the figures reported by ESO and NGET are available."
+    },
+    {
+      "party": "NETWORK_RAIL",
+      "data_type": "delay_attribution_records",
+      "status": "available",
+      "evidence_id": "R11",
+      "message": "Network Rail delay-attribution records for incidents of 9 August 2019 with reason XK or responsible manager METR, with the code glossary, and ORR periodic tables."
+    },
+    {
+      "party": "NETWORK_RAIL",
+      "data_type": "train_running_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: train-level running records for 9 August 2019 (Darwin Historic Service Performance) were not obtained; the service redirected the request to a login."
+    },
+    {
+      "party": "NEWCASTLE_AIRPORT",
+      "data_type": "airport_power_and_incident_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no airport incident or power log was obtained; the text of the airport's own public messages of the day could not be recovered, and historical flight data were not accessible."
+    },
+    {
+      "party": "NGET",
+      "data_type": "pmu_wams_traces",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no phasor measurement (PMU/WAMS) recording of the event was obtained; the recordings are not published."
+    },
+    {
+      "party": "NGET",
+      "data_type": "protection_and_fault_records",
+      "status": "available",
+      "evidence_id": "R03",
+      "message": "Reconstructed fault, protection, switching and power quality records for the Eaton Socon - Wymondley Main circuit."
+    },
+    {
+      "party": "ORSTED",
+      "data_type": "event_log",
+      "status": "available",
+      "evidence_id": "S01",
+      "message": "Reconstructed Hornsea One event log with attributed post-event annotations."
+    },
+    {
+      "party": "ORSTED",
+      "data_type": "grid_code_compliance_test_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: Hornsea One's Grid Code compliance test reports and simulation studies themselves were not obtained; the ESO's published compliance appendix lists only Hornsea One's completed tests with their test, results and approval dates, and its outstanding tests. The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests."
+    },
+    {
+      "party": "ORSTED",
+      "data_type": "turbine_controller_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no turbine-controller or internal control-system log was found in the published sources; the operator's published report is the available account."
+    },
+    {
+      "party": "REFINERY_OPERATOR",
+      "data_type": "site_trip_and_shutdown_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no refinery site log was obtained; the published reports do not name the refinery."
+    },
+    {
+      "party": "RWE",
+      "data_type": "grid_code_compliance_test_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no Little Barford compliance test report or simulation study was obtained; the ESO's published compliance appendix lists only Little Barford's compliance activities and their dates (2012-2013). The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests."
+    },
+    {
+      "party": "RWE",
+      "data_type": "plant_instrumentation_and_control_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no station instrumentation or control-system record was found in the published sources; the operator's preliminary findings are the available account."
+    },
+    {
+      "party": "RWE",
+      "data_type": "sequence_of_events",
+      "status": "available",
+      "evidence_id": "S03",
+      "message": "Reconstructed Little Barford sequence-of-events extract (offsets from datum T) with attributed annotations."
+    },
+    {
+      "party": "RWE",
+      "data_type": "shift_account",
+      "status": "available",
+      "evidence_id": "S04",
+      "message": "Reconstructed Little Barford shift account with attributed operator and regulator statements."
+    },
+    {
+      "party": "UKPN",
+      "data_type": "reconnection_switching_records",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no UK Power Networks switching or operational-system record for 9 August 2019 was obtained (its open data portal refused access)."
+    },
+    {
+      "party": "WATER_COMPANY",
+      "data_type": "pumping_station_and_treatment_works_logs",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no water company statement or site log was located; the published reports give anonymised figures only."
+    }
+  ]
+}

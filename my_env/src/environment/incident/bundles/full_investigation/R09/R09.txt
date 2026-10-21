@@ -1,0 +1,469 @@
+DOCUMENT R09 — External communications records, 9-20 August 2019
+Owner/originator: National Grid ESO; Energy Emergencies Executive Committee (E3C); Ofgem;
+Department for Business, Energy and Industrial Strategy (BEIS, GOV.UK); Elexon Limited (BMRS /
+Insights REMIT data written by market participants); distribution network operators, train
+operators and National Rail Enquiries (public posts and web pages)
+Record type: report transcriptions and quotations on communications with government, the
+regulator, the media and the public; real Elexon REMIT messages; times and short builder-written
+gists of organisational public posts and web statements; Ofgem and GOV.UK publications quoted
+STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES — dataset values are unchanged from the
+publishers' files (only rows and columns were selected); report tables, captions and quotations
+are reproduced as printed. Nothing in Parts A-D and F is synthesised. Part E is not a
+transcription: for each organisational post or web statement it gives the time (decoded, displayed
+or titled) and a short gist written for this record; the text is not reproduced. Personal names
+are replaced by roles in square brackets.
+Clock reference: report times are printed without a zone; the reports give event times in local
+time (BST, UTC+01:00). Elexon REMIT times are UTC (Z); the participants' free text may state BST.
+Post times in Part E are UTC, decoded from the post identifiers; web statements carry a date and,
+for some, a time in the page title (UK local time); archived web pages show times without a zone.
+GOV.UK times carry explicit offsets.
+Value-status legend: [measured] metered or observed value as published; [reported] value, time or
+statement given by its publisher or by a report; [estimated] value its source describes as an
+estimate; [modelled] value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — ESO ACCOUNTS OF ITS CONTACTS WITH GOVERNMENT AND THE REGULATOR (quoted as printed)
+A1   National Grid ESO, Technical Report on the events of 9 August 2019 (6 September 2019),
+    section 6.2 'Engagement with government and the regulator', quoted:
+    "The first communication between the ESO control room and BEIS was at 17:41hrs." [reported]
+    "At this point the event was generally understood, demand restoration was in progress and
+      further disturbances were considered unlikely." [reported]
+    "The first communication with Ofgem was made at 17:51hrs with further communication at [reported]
+      18:17hrs and 18:45hrs and then throughout the weekend." [reported]
+    "Further updates to BEIS from the ESO control room were made at 18:09hrs, 19:29hrs and [reported]
+      19:38hrs respectively." [reported]
+A2   Same report, section 7 'Report Findings', the bullet on communications, quoted:
+    "The ESO contacted BEIS at 17:40 and Ofgem at 18:00." [reported]
+    "The initial media statement by the ESO issued at 18:27 with a subsequent statement at 20:06 [reported]
+      and a video from the Head of National Control being posted at 20:11." [reported]
+A3   Appendices to the ESO technical report, Appendix M 'ESO E3C Questions and Answers'. Its
+    introduction states: "These answers are all based on the data available to the ESO on 28
+    August 2019." Question 34 (asked by the E3C) and the ESO's answer, quoted:
+    "There appeared to be delays in escalations to Ofgem & BEIS after LFDD was initiated? Are
+      there any lessons to be learnt?" [reported]
+    "At 17:10hrs, the ENCC Power System Manager (PSM) reported the incident to the Head of [reported]
+      National Control, ESO." [reported]
+    "The 1st communication between ENCC PSM and BEIS was at 17:41hrs." [reported]
+    "The 1st communication with Ofgem was made just after 18:00hrs with the Director of [reported]
+      Operations, ESO." [reported]
+    "Further updates to BEIS from the PSM were made at 18:09hrs, 19:29hrs and 19:38hrs [reported]
+      respectively." [reported]
+    "Current ESO procedure outlines that following an event of loss of supply, a clear
+      communication to Ofgem & BEIS is essential." [reported]
+    "The communication is recommended to be initiated as soon as possible, and this procedure is
+      in line with the ‘Energy Incident Reporting’ requirement set by Ofgem dated in December
+      2017." [reported]
+    "It is important in all cases that resolution of the incident remains the primary objective." [reported]
+
+PART B — ACCOUNTS OF EXTERNAL COMMUNICATIONS BY THE ESO AND OTHERS (quoted or transcribed as printed)
+B1   ESO technical report, section 6.3 'External Communications with Media and Wider Industry',
+    quoted:
+    "The first ESO external communication was issued at 18:27hrs on 9 August." [reported]
+    "Table 8 provides the timeline of external communication with media and wider industry." [reported]
+    "Table 8 – Timeline of external communications" (day heading | time | event | distribution),
+    as printed; personal names replaced by the role in square brackets:
+    FRIDAY | 18:27 | First Statement – Confirmed that whilst 2 generators had disconnected the [reported]
+      system was now functioning properly. | Published on twitter @NG_ESO and sent to all national
+      energy correspondents, and national print, TV and Radio newsdesks. Shared with BEIS and
+      Ofgem. [reported]
+    FRIDAY | 20:06 | Second statement – Explained why there had been a power cut and confirmed [reported]
+      again that the system had been restored at an NTS and DNO level. | Published on twitter
+      @NG_ESO and sent to all national energy correspondents, and national print, TV and Radio
+      newsdesks. Shared with BEIS and Ofgem. [reported]
+    FRIDAY | 20:11 | A video from [the Head of National Control] offering further explanation [reported]
+      issued on Twitter. | (blank) [reported]
+    SATURDAY | 08:00 – 13:00 | Broadcast interviews – Radio 4 Today Programme, Five Live, ITV, BBC [reported]
+      Breakfast and Sky. | (blank) [reported]
+    SATURDAY | 08:33 | Third Statement – Further explanation of events and clarification that [reported]
+      National Grid does not generate electricity. | Published on Twitter @NG_ESO and to all
+      national energy correspondents, and national print, TV and Radio news desks. Shared with
+      BEIS and Ofgem. [reported]
+    SATURDAY | 12:22 | Update to senior BEIS officials. | (blank) [reported]
+    SATURDAY | 19:31 | Fourth Statement – Expressed support for Energy Emergency Executive [reported]
+      Committee investigation and highlighted that ESO was in process of internal investigation. |
+      Published on Twitter @NG_ESO and to all national energy correspondents, and national print,
+      TV and Radio news desks. Shared with BEIS and Ofgem. [reported]
+    SATURDAY | 20:00 | Emails sent to Secretary of State for BEIS and Department for Transport and [reported]
+      Minister of State [name omitted] at BEIS providing update on situation. | (blank) [reported]
+    SATURDAY | 20:30 | Emails forwarded to Senior Officials and Special Advisors at BEIS, [reported]
+      Transport and Number 10. | (blank) [reported]
+    SUNDAY | 11:00 | Phone Call between ESO senior team and BEIS Minister of State [name omitted]. [reported]
+      | (blank) [reported]
+    W/C 12 AUG | (no time) | ESO Media team direct engagement with ENA and relevant members.
+      Setting out preliminary technical findings related to the networks and discussing the
+      planned approach to media and communications ahead of publication of the Interim Report. |
+      Materials published on the ESO website to aid understanding of the role of the ESO and the
+      incident on 9 August. [reported]
+B2   ESO technical report, section 6.4 'Communications by industry and consumers', 'Media
+    statements by others', quoted:
+    "In the ~90 minutes immediately following the initial fault on the network (starting at [reported]
+      17.09hrs) statements were issued by some DNOs and rail companies stating that the loss of
+      power and subsequent disruption was the result of a National Grid fault." [reported]
+    "These statements were issued ahead of any communication by the ESO and without engagement or
+      coordination with the ESO communications team." [reported]
+    "These public-facing communications did not impact the speed with which the incident was
+      resolved but did drive a large volume of media queries to the ESO." [reported]
+B3   ESO appendices, Appendix M, question 35 and the ESO's answer, quoted:
+    "What issues did you encounter with the public-facing communications by industry, notably in
+      terms of the content and timelines for the messaging?" [reported]
+    "The initial communications from some DNOs and rail companies said that the incident had been
+      caused by a National Grid fault." [reported]
+    "These communications were issued very shortly after the event (from 5.09pm onwards)." [reported]
+    "The ESO prepared an external communication seeking to give reassurance to the public which
+      was issued at 18:27 once it was established that the DNOs had reconnected all customers." [reported]
+    "The initial statements from some parts of the industry were issued before our statement and
+      without any co-ordination with our comms team." [reported]
+B4   Energy Emergencies Executive Committee, GB power system disruption - 9 August 2019, interim
+    report (cover dated September 2019), quoted:
+    "DNOs led local public communications during the event and the ESO did not publish public
+      statements until after the disruption, meaning that energy partners (such as generators)
+      were not directly informed." [reported]
+    "In parallel with social media, DNOs reached out to customers via text message alert services
+      and telephone services between 17:02 and 18:30." [reported]
+    "Updates from the ESO followed the first set of restorations and were not publicly released
+      until 18:27 via Twitter." [reported]
+    "The Secretary of State for Business, Energy and Industrial Strategy later announced via
+      Twitter (10th August) and GOV.UK (14th August) that the government was to commission the
+      Energy Emergencies Executive Committee to provide an interim and extended report into the
+      power disruptions." [reported]
+B5   Energy Emergencies Executive Committee, GB power system disruption on 9 August 2019: Final
+    report (January 2020), section 5 'Communication channels', quoted:
+    "The first public announcement from ESO was issued at 18:27, which was following the event and [reported]
+      once the system had stabilised." [reported]
+    "By this time, many DNOs had used twitter to provide area updates that were widely
+      circulated." [reported]
+    "However, electricity generators received no communication during the events of 9 August that
+      would have made them aware of the system condition." [reported]
+B6   Ofgem, 9 August 2019 power outage report (3 January 2020), paragraph 3.23, quoted:
+    "We have also found issues with Hornsea 1’s communication with the ESO. Hornsea 1 did not
+      notify the ESO directly when the wind farm deloaded by 737MW. The wind farm then began its [reported]
+      process of starting up two of its modules (temporarily) without any coordination with the
+      ESO whilst the ESO was attempting to respond to the generation losses it was aware of." [reported]
+
+PART C — CALLS TO THE DNOs' 105 HELPLINE (as printed)
+C1   ESO technical report, section 6.4, 'Call volumes to DNO's', quoted:
+    "Electricity customers across GB can dial the ‘105’ customer helpline to get emergency help
+      and advice, free of charge on mobile and landline phones." [reported]
+    "Analysis of the volume of calls to the 105 helpline provides a useful indicator of the scale
+      of customer impact across the DNOs and the timeframe for disruption to power supplies with
+      calls dropping off dramatically post 6pm." [reported]
+    "Table 9 - Calls received by the 6 largest DNOs, during the period 4pm to 7pm on 9th August",
+    as printed (row label TIME, columns by DNO):
+    TIME | SSEPD | ENW | SPEN | NPG | UKPN | WPD | TOTAL
+    16:00 | 265 | 473 | 632 | 1,008 | 1,030 | 2,074 | 5,482 [reported]
+    17:00 | 1,140 | 2,643 | 2,699 | 5,292 | 6,341 | 15,151 | 33,266 [reported]
+    18:00 | 81 | 64 | 75 | 238 | 200 | 162 | 820 [reported]
+C2   E3C interim report, quoted:
+    "Between 16:00 and 18:00 on 9th August, the ESO Technical Report states that 39,568 calls were [reported]
+      made to the 105 Single Emergency Number, a facility introduced since the Christmas 2013
+      event and managed by the ENA on behalf of members." [reported]
+
+PART D — ELEXON REMIT MESSAGES FOR HORNSEA ONE AND LITTLE BARFORD (real extract)
+D1   Source: Elexon Insights REMIT messages (endpoint /remit, retrieved by message ID on
+    2026-10-20). Licence: Elexon BMRS open data licence. Contains BMRS data (c) Elexon Limited
+    copyright and database right 2026. Message content is written by the market participant.
+    Selection: every message revision held for BM units T_HOWAO-1, T_HOWAO-2, T_HOWAO-3 (Hornsea
+    One) and T_LBAR-1 (Little Barford main unit); this selection has 46 revisions. A gap in a
+    message's revision numbers means that revision was not retrieved, not that it does not exist.
+    Times are UTC; capacities in MW.
+    Every field of every revision is in file
+    R09_elexon_remit_messages_hornsea_one_little_barford.csv (participant, message heading,
+    unavailability and event type, status, event start and end, normal, available and unavailable
+    capacity, cause, the participant's free text and the outage profile) and in the asset logs of
+    HORNSEA-ONE and LITTLE-BARFORD (query_asset_log), where each revision is one row citing R09
+    with the event ID given below (line breaks in the free text are shown there as ' / '). Index
+    of revisions, per unit in order of publishTime: event ID | publishTime | unavailability type
+    (every revision has event type 'Production unavailability') | status | event start to end |
+    available capacity.
+    T_HOWAO-1 (4 revisions):
+      R09-REMIT-00000594-r1 | publishTime 2019-01-30T08:21:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-08-20T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000746-r1 | publishTime 2019-08-21T14:54:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-10-15T18:00:00Z | available 100.0 MW [reported]
+      R09-REMIT-00000746-r2 | publishTime 2019-08-21T15:19:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-10-15T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000746-r3 | publishTime 2019-08-22T12:35:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-10-15T18:00:00Z | available 161.0 MW [reported]
+    T_HOWAO-2 (8 revisions):
+      R09-REMIT-00000596-r1 | publishTime 2019-01-30T08:27:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-08-20T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000596-r2 | publishTime 2019-03-23T18:37:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-08-20T18:00:00Z | available 105.0 MW [reported]
+      R09-REMIT-00000596-r3 | publishTime 2019-03-24T06:31:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-08-20T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000596-r4 | publishTime 2019-03-24T16:36:00Z | Planned | status Active | event
+        2019-03-24T16:00:00Z to 2019-08-20T18:00:00Z | available 100.0 MW [reported]
+      R09-REMIT-00000596-r5 | publishTime 2019-04-09T16:05:00Z | Planned | status Active | event
+        2019-04-09T15:30:00Z to 2019-08-20T18:00:00Z | available 203.0 MW [reported]
+      R09-REMIT-00000741-r1 | publishTime 2019-08-09T16:18:00Z | Unplanned | status Active | event
+        2019-08-09T16:00:00Z to 2019-08-09T22:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000741-r2 | publishTime 2019-08-09T17:16:00Z | Unplanned | status Active | event
+        2019-08-09T16:00:00Z to 2019-09-09T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000741-r3 | publishTime 2019-08-22T13:23:00Z | Unplanned | status Active | event
+        2019-08-09T16:00:00Z to 2019-08-22T13:30:00Z | available 0.0 MW [reported]
+    T_HOWAO-3 (13 revisions):
+      R09-REMIT-00000598-r1 | publishTime 2019-01-30T08:29:00Z | Planned | status Active | event
+        2019-02-07T09:00:00Z to 2019-08-20T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000598-r2 | publishTime 2019-05-27T10:37:00Z | Planned | status Active | event
+        2019-05-27T10:30:00Z to 2019-08-20T18:00:00Z | available 100.0 MW [reported]
+      R09-REMIT-00000598-r3 | publishTime 2019-06-15T11:14:00Z | Planned | status Active | event
+        2019-06-15T11:30:00Z to 2019-08-20T18:00:00Z | available 203.0 MW [reported]
+      R09-REMIT-00000598-r5 | publishTime 2019-07-08T11:20:00Z | Planned | status Active | event
+        2019-07-08T11:00:00Z to 2019-08-20T18:00:00Z | available 306.0 MW [reported]
+      R09-REMIT-00000598-r6 | publishTime 2019-08-03T14:03:00Z | Planned | status Active | event
+        2019-07-08T11:00:00Z to 2019-08-08T05:30:00Z | available 306.0 MW [reported]
+      R09-REMIT-00000731-r1 | publishTime 2019-08-03T14:05:00Z | Planned | status Active | event
+        2019-08-08T05:30:00Z to 2019-08-09T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000733-r1 | publishTime 2019-08-03T14:09:00Z | Planned | status Active | event
+        2019-08-09T18:00:00Z to 2019-08-20T18:00:00Z | available 306.0 MW [reported]
+      R09-REMIT-00000733-r2 | publishTime 2019-08-07T06:27:00Z | Planned | status Dismissed |
+        event 2019-08-09T18:00:00Z to 2019-08-20T18:00:00Z | available 306.0 MW [reported]
+      R09-REMIT-00000598-r7 | publishTime 2019-08-07T13:57:00Z | Planned | status Active | event
+        2019-07-08T11:00:00Z to 2019-08-07T15:00:00Z | available 306.0 MW [reported]
+      R09-REMIT-00000731-r2 | publishTime 2019-08-07T13:58:00Z | Planned | status Active | event
+        2019-08-07T15:00:00Z to 2019-08-09T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000731-r3 | publishTime 2019-08-08T12:57:00Z | Planned | status Active | event
+        2019-08-07T15:00:00Z to 2019-08-08T18:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000743-r1 | publishTime 2019-08-09T16:20:00Z | Unplanned | status Active | event
+        2019-08-09T16:00:00Z to 2019-08-09T22:00:00Z | available 0.0 MW [reported]
+      R09-REMIT-00000743-r2 | publishTime 2019-08-09T17:17:00Z | Unplanned | status Active | event
+        2019-08-09T16:00:00Z to 2019-08-09T18:00:00Z | available 0.0 MW [reported]
+    T_LBAR-1 (21 revisions):
+      R09-REMIT-00056749-r1 | publishTime 2019-08-08T15:44:17Z | Unplanned | status Active | event
+        2019-08-09T22:01:07Z to 2019-08-10T14:13:29Z | available 350.0 MW [reported]
+      R09-REMIT-00056749-r2 | publishTime 2019-08-09T07:33:18Z | Unplanned | status Dismissed |
+        event 2019-08-09T22:01:07Z to 2019-08-10T14:13:29Z | available 350.0 MW [reported]
+      R09-REMIT-00056768-r1 | publishTime 2019-08-09T07:47:52Z | Unplanned | status Active | event
+        2019-08-09T22:00:00Z to 2019-08-10T13:43:31Z | available 340.0 MW [reported]
+      R09-REMIT-00056773-r1 | publishTime 2019-08-09T16:54:44Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-09T20:41:35Z | available 0.0 MW [reported]
+      R09-REMIT-00056773-r2 | publishTime 2019-08-09T16:57:44Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-09T20:41:35Z | available 0.0 MW [reported]
+      R09-REMIT-00056773-r3 | publishTime 2019-08-09T17:30:44Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-09T20:41:35Z | available 0.0 MW [reported]
+      R09-REMIT-00056773-r4 | publishTime 2019-08-09T19:00:23Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-09T20:48:19Z | available 0.0 MW [reported]
+      R09-REMIT-00056773-r5 | publishTime 2019-08-09T21:22:24Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-10T13:43:31Z | available 340.0 MW [reported]
+      R09-REMIT-00056768-r2 | publishTime 2019-08-09T21:22:25Z | Unplanned | status Dismissed |
+        event 2019-08-09T22:00:00Z to 2019-08-10T13:43:31Z | available 340.0 MW [reported]
+      R09-REMIT-00056773-r6 | publishTime 2019-08-10T11:55:42Z | Unplanned | status Active | event
+        2019-08-09T15:57:40Z to 2019-08-10T11:43:31Z | available 340.0 MW [reported]
+      R09-REMIT-00056773-r7 | publishTime 2019-08-10T12:43:43Z | Unplanned | status Inactive |
+        event 2019-08-09T15:57:40Z to 2019-08-10T11:43:31Z | available 340.0 MW [reported]
+      R09-REMIT-00056809-r1 | publishTime 2019-08-10T19:44:27Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T19:47:26Z | available 130.0 MW [reported]
+      R09-REMIT-00056809-r2 | publishTime 2019-08-10T19:47:38Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T19:47:26Z | available 130.0 MW [reported]
+      R09-REMIT-00056809-r3 | publishTime 2019-08-10T20:00:01Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:23:02Z | available 150.0 MW [reported]
+      R09-REMIT-00056809-r4 | publishTime 2019-08-10T20:09:33Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:51:19Z | available 130.0 MW [reported]
+      R09-REMIT-00056809-r5 | publishTime 2019-08-10T20:30:30Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:51:19Z | available 63.0 MW [reported]
+      R09-REMIT-00056809-r6 | publishTime 2019-08-10T20:46:25Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:51:19Z | available 160.0 MW [reported]
+      R09-REMIT-00056809-r7 | publishTime 2019-08-10T21:00:39Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:51:19Z | available 160.0 MW [reported]
+      R09-REMIT-00056809-r8 | publishTime 2019-08-10T21:07:41Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:46:57Z | available 160.0 MW [reported]
+      R09-REMIT-00056809-r9 | publishTime 2019-08-10T21:20:25Z | Unplanned | status Active | event
+        2019-08-10T18:47:20Z to 2019-08-10T20:40:39Z | available 160.0 MW [reported]
+      R09-REMIT-00056809-r10 | publishTime 2019-08-10T21:40:59Z | Unplanned | status Inactive |
+        event 2019-08-10T18:47:20Z to 2019-08-10T20:40:39Z | available 160.0 MW [reported]
+
+PART E — ORGANISATIONAL PUBLIC POSTS AND WEB STATEMENTS, 9-19 AUGUST 2019 (times real;
+gists written for this record, not the text)
+Organisational posts on a public social-media platform and organisations' web pages, located in
+Internet Archive captures or on the publishers' sites. A post time is decoded from the post
+identifier (milliseconds since 1970-01-01T00:00:00Z = (identifier >> 22) + 1288834974657) and
+shown in UTC to the second; a web statement is dated as the page shows, with the time in its title
+where it has one; an archived page shows its own displayed times. The text is the publisher's
+copyright (not an open licence) and is neither reproduced nor closely paraphrased: each entry
+gives the time, the organisation, the channel and a short gist written for this record, whose
+[reported] tag marks what the organisation said, not its words. Replies to members of the public,
+personal accounts, handles and personal names are not included.
+E1   page displays 'Incident created 09/08/2019 16:50' and 'Last updated 09/08/2019 18:49' [reported]
+    (Internet Archive capture 2019-08-09T17:56:38Z) | National Rail Enquiries | service disruption [reported]
+    web page (incident 228430) | gist: disruption notice for all Thameslink and Great Northern
+    routes, with knock-on effects for East Midlands Trains at St Pancras and LNER at King's Cross;
+    attributes the stoppage to a 'UK Power Network' failure across much of London and south-east
+    England, which left trains unable to draw power, most of them stationary; Thameslink trains
+    running only on the Brighton-Blackfriars/London Bridge section; services liable to
+    cancellation, delay or revision for the rest of the day. [reported]
+E2   2019-08-09T16:08:14Z | UK Power Networks (UKPN) | public social-media post | gist: power cut [reported]
+    over a wide part of the South East, including London; cause placed, as its belief at the time,
+    on a failure in National Grid's system. [reported]
+E3   2019-08-09T16:10:10Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: cites an electricity supply failure: services anywhere on its network might be delayed
+    or cancelled; more information promised. [reported]
+E4   2019-08-09T16:14:44Z | Western Power Distribution (WPD) | public social-media post | gist: [reported]
+    serious national-level electricity incident; restoration of affected customers had begun. [reported]
+E5   2019-08-09T16:24:32Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: trains standing still between Farringdon and Bedford, with knock-on effects for services
+    across its network. [reported]
+E6   2019-08-09T16:38:46Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: attributes the stoppage to a failure of the power network over much of London and
+    south-east England, which stopped its Farringdon-Bedford trains drawing power, leaving most at
+    a standstill; the post links to a DNO's post. [reported]
+E7   2019-08-09T16:44:31Z | Electricity North West (ENWL) | public social-media post | gist: [reported]
+    several outages in its region, attributed to a National Grid fault; supplies expected to be
+    back on. [reported]
+E8   2019-08-09T16:46:35Z | Western Power Distribution (WPD) | public social-media post | gist: [reported]
+    progress figure, 90% of affected customers back on supply; restoration of the remainder [reported]
+    continuing. [reported]
+E9   2019-08-09T16:51:25Z | National Rail Enquiries | public social-media post | gist: power [reported]
+    supply problems disrupting many train services; some station information screens also
+    affected. [reported]
+E10  2019-08-09T16:59:43Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: services only running on the Brighton-Blackfriars/London Bridge section; gathering
+    information and working to get every service moving. [reported]
+E11  2019-08-09T17:15:54Z | London North Eastern Railway (LNER) | public social-media post | gist: [reported]
+    citing a major electricity supply failure, King's Cross services in both directions suspended;
+    customers told not to travel; Friday tickets valid on Saturday. [reported]
+E12  2019-08-09T17:21:54Z | Western Power Distribution (WPD) | public social-media post | gist: [reported]
+    restoration complete for every customer it had lost in the national incident. [reported]
+E13  2019-08-09T17:27:46Z | National Grid ESO | public social-media post | gist: two generators [reported]
+    had a problem that cut power in some parts of the UK; resolved, with the system back to
+    normal; anyone still affected should get in touch with their local network operator. [reported]
+E14  page titled 'Power Cut Statement - 9 August, 6.30pm', dated 9 Aug 2019 | National Grid ESO |
+    website statement | gist: a spokesperson says two generators had a problem that cut power in
+    some parts of the UK; resolved, with the system back to normal; anyone still affected should
+    get in touch with their local network operator. [reported]
+E15  2019-08-09T17:39:57Z | UK Power Networks (UKPN) | public social-media post | gist: follow-up; [reported]
+    cause attributed to a national transmission network issue; all supplies in its London and
+    South East area believed back on. [reported]
+E16  2019-08-09T17:50:41Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: advises against travel: no service can be run and there is no estimate yet of when
+    services will return. [reported]
+E17  2019-08-09T17:50:47Z | London North Eastern Railway (LNER) | public social-media post | gist: [reported]
+    King's Cross closed, with no services running to or from London; customers advised to put off
+    travel until the next day. [reported]
+E18  2019-08-09T17:54:42Z | National Rail Enquiries | public social-media post | gist: London [reported]
+    King's Cross station closed to the public to prevent overcrowding; LNER and Hull Trains Friday
+    tickets valid on Saturday. [reported]
+E19  2019-08-09T18:06:08Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: passengers on stopped trains told to stay on board while trains are restarted; if that
+    takes too long, specialist staff will come to the train to help. [reported]
+E20  2019-08-09T18:18:49Z | National Rail Enquiries | public social-media post | gist: Grand [reported]
+    Central advising against journeys to or from King's Cross that evening; warns of knock-on
+    disruption to services the next day. [reported]
+E21  2019-08-09T18:55:00Z to 2019-08-09T18:55:01Z | National Grid ESO | public social-media posts [reported]
+    (thread of three) | gist: updated statement in three posts (the third post's text is not
+    recoverable from the archive): in an unexpected, unusual event two generators connected to the
+    transmission system were lost and system frequency fell; the ESO says its plans worked as
+    designed, cutting off a limited part of demand. [reported]
+E22  page titled 'Power Cut Statement - 9 August, 8pm', dated 9 Aug 2019 | National Grid ESO |
+    website statement | gist: an unexpected, unusual event in which two generators connected to
+    the transmission system were lost and frequency fell; the ESO's plans worked as designed by
+    cutting off a limited part of demand, which lets the system protect itself and allows quick
+    restoration; reports that DNOs had restored all demand by 18:30 and that the system was [reported]
+    operating normally. [reported]
+E23  2019-08-09T19:11:13Z | National Grid ESO | public social-media post | gist: a video in which [reported]
+    the ESO manager in charge of national control explains further (video not held). [reported]
+E24  2019-08-09T19:34:57Z | London North Eastern Railway (LNER) | public social-media post | gist: [reported]
+    expects a rescue engine to clear a failed train from the main line so that King's Cross
+    services can resume; station still closed; travel advice unchanged. [reported]
+E25  2019-08-09T19:41:38Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: stranded passengers without other options may take taxis, with reasonable costs refunded
+    on receipt. [reported]
+E26  2019-08-09T20:17:18Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: no service north of London for the remainder of the day after the electricity supply
+    failure; advice not to travel stands. [reported]
+E27  2019-08-09T20:39:51Z | London North Eastern Railway (LNER) | public social-media post | gist: [reported]
+    the failed train has been moved and the southbound lines reopened; London-bound services
+    departing, with congestion slowing recovery. [reported]
+E28  2019-08-09T21:19:35Z | London North Eastern Railway (LNER) | public social-media post | gist: [reported]
+    the failed train has failed again; its passengers will be moved to another train before the
+    London-bound line can reopen. [reported]
+E29  2019-08-09T22:20:01Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: no more services that day; disruption expected to last until about noon the next day. [reported]
+E30  2019-08-10T04:35:47Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: services would stay disrupted that day because trains and crews had been left out of
+    position; passengers advised to allow extra time and plan ahead. [reported]
+E31  page titled 'Power Cut Statement - 10 August, 8.30am', dated 10 Aug 2019 | National Grid ESO
+    | website statement | gist: third statement: the ESO does not itself generate electricity, and
+    the root cause did not lie with the ESO's system; it describes a rare event in which two big
+    generating units, a gas plant and an offshore wind farm, were lost almost at the same moment
+    (time given as 16.54); other generators raised output, but not enough, so a backup protection
+    scheme disconnected selected demand; the DNOs were given the all clear within 15 minutes; [reported]
+    reports that DNOs had reconnected all demand by 17.40. [reported]
+E32  2019-08-10T07:33:10Z to 2019-08-10T07:33:12Z | National Grid ESO | public social-media posts [reported]
+    (thread of six) | gist: third statement, in six posts: the ESO does not itself generate
+    electricity, and the root cause did not lie with the ESO's system; it describes a rare event
+    in which two big generating units, a gas plant and an offshore wind farm, were lost almost at
+    the same moment (time given as 16.54); other generators raised output, but not enough, so a
+    backup protection scheme disconnected selected demand; the DNOs were given the all clear
+    within 15 minutes; reports that DNOs had reconnected all demand by 17.40. [reported]
+E33  2019-08-10T08:10:39Z | Thameslink (Govia Thameslink Railway) | public social-media post | [reported]
+    gist: services getting back to normal after the previous day's electricity supply failure;
+    passengers advised to allow extra time. [reported]
+E34  page displays 'Incident created 09/08/2019 16:50' and 'Last updated 10/08/2019 16:51' [reported]
+    (Internet Archive capture 2019-08-10T19:05:51Z) | National Rail Enquiries | service disruption [reported]
+    web page ('today') | gist: next-day notice: after Friday's disruption, trains and crews ended
+    the day out of position, so more cancellations were expected from crew shortages, mainly on
+    routes from Moorgate and King's Cross; Thameslink no longer affected by Friday's power
+    problems; again attributes the cause to a 'UK Power Network' failure across London and
+    south-east England, which it says also affected airports. [reported]
+E35  page titled 'Power Cut Statement - 10 August, 7.30pm', dated 10 Aug 2019 | National Grid ESO
+    | website statement | gist: fourth statement: says the industry must understand both the cause
+    and why the power cut disrupted services so widely, especially transport; welcomes the
+    government's commissioning of the E3C review and promises to work with it; says the ESO had
+    begun reviewing its own response internally and was working with Ofgem, local networks and the
+    generators involved. [reported]
+E36  page dated 13 Aug 2019 | National Grid ESO | website statement | gist: statement on
+    frequency: rejects media reports of earlier near misses or early warnings of similar
+    incidents; calls the event highly unusual and unprecedented in ten years; says that until that
+    Friday the system had stayed within the safe frequency limits agreed with Ofgem; interim
+    findings to be reported to Ofgem that week. [reported]
+E37  page dated 16 Aug 2019 | National Grid ESO | website statement | gist: confirms that the ESO
+    had delivered its interim report on the event to Ofgem before 6pm that day, the regulator's
+    deadline; the final report would follow by 6 September; describes the government's E3C inquiry
+    as a separate, parallel process. [reported]
+E38  page dated 19 Aug 2019 | National Grid ESO | website statement | gist: announces publication
+    of the ESO's interim technical report; the final report to Ofgem is due on Friday 6 September. [reported]
+
+PART F — REGULATOR AND GOVERNMENT PUBLICATIONS, 12-20 AUGUST 2019 (quoted; Open Government Licence)
+F1   Ofgem press release 'Ofgem sets timeline for National Grid ESO report following UK power
+    failures', publication date 12 August 2019, quoted:
+    "Ofgem has written to the National Grid Electricity System Operator requesting an urgent
+      interim report into the incident on 9 August 2019 to be provided to Ofgem by Friday 16
+      August." [reported]
+    "A final, detailed technical report must be provided to Ofgem by Friday 6 September." [reported]
+F2   BEIS press release on GOV.UK 'Business Secretary sets out scope of investigation into power
+    cuts', first published 2019-08-14T11:15:35+01:00, quoted: [reported]
+    "National Grid has said power cuts had “nothing to do with changes in wind speed or the
+      variability of wind”" [reported]
+    "The government today (14 August 2019) set out the scope of its review into the actions of the
+      National Grid Electricity System Operator after Friday’s power cuts." [reported]
+    "The committee met for the first time on Monday (12 August) and will provide a report on
+      initial findings within 5 weeks to the Secretary of State for Business, Energy and
+      Industrial Strategy." [reported]
+    "It will then submit a comprehensive report within 12 weeks." [reported]
+    "This review will complement the investigation being undertaken by energy regulator Ofgem into
+      how the electricity operator responded in line with its licence conditions and system
+      security standards." [reported]
+F3   GOV.UK publication page 'Great Britain power system disruption review', first published
+    2019-08-14T11:15:00+01:00; the page's history records updates on 2019-10-04 (interim report [reported]
+    published) and 2020-01-03 (final review report published), and the record does not show which
+    update introduced which sentence. Page text as retrieved on 2026-10-20, quoted:
+    "On Friday 9 August 2019 a power disruption resulted from the operation of Low Frequency
+      Demand Disconnection relays on the Great Britain power system at about 4:54 pm." [reported]
+    "Though demand was fully restored within 90 minutes, the secondary impacts continued to be [reported]
+      felt for much of the day." [reported]
+F4   Ofgem press release 'Ofgem launches investigation into power cuts', publication date 20
+    August 2019, quoted:
+    "Ofgem has launched an investigation into the power cuts of Friday 9 August, following an
+      initial report from National Grid Electricity System Operator (NGESO)." [reported]
+    "It will also seek to establish whether any of the parties involved – National Grid ESO,
+      National Grid Electricity Transmission, 12* distribution network operators in England and
+      Wales, as well as generators RWE Generation (Little Barford Power station) and Orsted
+      (Hornsea) - breached their licence conditions." [reported]
+    "Ofgem is liaising with the rail regulator (Office of Rail and Road) and will be engaging with
+      the rail authorities to understand better why the drop in frequency on the energy network
+      led to disruption for passengers." [reported]
+    "The opening of this investigation does not imply that Ofgem has made any findings about
+      non-compliance for any of the companies mentioned at this early stage of the investigation." [reported]
+
+PART G — NOTES
+G1   This record holds no ESO control-room communication log or call recordings, and no text of
+    the public posts or web statements in Part E.

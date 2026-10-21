@@ -1,0 +1,246 @@
+DOCUMENT S08 — Rail fleet and service records, 9 August 2019
+Owner/originator: Govia Thameslink Railway (GTR) fleet technical review; rail accounts as published by the
+Office of Rail and Road (ORR), National Grid ESO, Ofgem and the E3C; roles only, no individuals
+Record type: reconstructed fleet and service-impact records, each part restating one published account
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: clock times are as printed, with no clock labelled (GTR prints "1653", ORR "around
+4:52pm"); read as BST (UTC+01:00) because ESO dates the event at 4:52pm. Durations are as each source states.
+Value-status legend: [reported] value as stated by the named source; [estimated] value the source gives as
+approximate ("circa", "approximately", "around", "c."); [measured], [modelled], [digitised] and
+[illustrative] not used. Each part restates one published account in its own terms.
+
+PART 1 — GTR TECHNICAL REVIEW ("Power Surge Disruption on 9th August 2019: Technical Review", dated 3
+September 2019; provided by GTR to the ESO and appended to the ESO technical report as Appendix F)
+G01  Event summary 1: from information supplied by the National Grid at 1653 [reported] on Friday 9 August,
+     the frequency of the OLE AC voltage supply dropped below 49 Hz [reported] for 16 seconds [reported]; it
+     dropped below 48.89 Hz [reported] to a minimum of 48.8 Hz [reported] for milliseconds.
+G02  Event summary 2: there was no identified OLE AC voltage supply interruption.
+G03  Event summary 3: all Desiro City Class 700 and 717 units operating on AC voltage suffered a Protective
+     Shutdown, in which the converter known as the 4QC (4 Quadrant Controller) shut down. No other AC trains
+     in the GTR fleet suffered power-related issues from the event (e.g. Class 387, Class 365, Class 313).
+G04  Event summary 4: in passenger service this involved circa 60 [estimated] units, Class 700 FLU/RLUs and
+     Class 717, suffering a 4QC lock out.
+G05  Event summary 5: with the 4QC shut down the train switches to battery power: loss of HVAC (fan-only fresh
+     air supply), standby reduced lighting (emergency lighting activates when battery voltage drops), no
+     at-seat power, no PIS displays (audio only from the cab) and no traction power. The GSM-R radio remains
+     active.
+G06  Event summary 6: after failed attempts to repower the trains, the established first response for a train
+     failing with these symptoms is for the driver to reboot the train, known as a Battery Reset, which takes
+     approximately 10 minutes [estimated].
+G07  Event summary 7: Fleet Control diagnosed the issue quickly and a global GSM-R call was broadcast
+     instructing drivers to carry out the Battery Reset process.
+G08  Event summary 8: after this, 27 [reported] of the affected units were recovered.
+G09  Event summary 9: the remaining circa 30 [estimated] units required the Protective Shutdown to be unlocked
+     by a technician with a laptop attending each unit.
+G10  Event summary 10: 17 [reported] technicians were available at the time of the event; they were sent
+     immediately to stranded units with laptops, and a further 24 [reported] technicians were mobilised within
+     the next hour. The affected trains were widely spread geographically and some were not easily accessible.
+G11  Event summary 11: the process took some time and resulted in 23 [reported] train evacuations and severe
+     levels of service disruption.
+G12  Cause 1: the Desiro City from Siemens Mobility is a software-enabled commuter train and requires
+     protection against power supply frequency excursions, for safety reasons and to protect low power
+     electronics.
+G13  Cause 2: the Siemens technical specification for the train states that it will continue to operate with
+     supply frequency drops down to 48.5 Hz [reported] for short periods of time.
+G14  Cause 3: the NR Electrification System Compatibility document NR/GN/ELP/27010 ("Guidance for
+     compatibility between electric trains and electrification systems"), a Manufacturing and Supply Agreement
+     compliance requirement, identifies that the supply frequency can fall to 48.5 Hz [reported] in extreme
+     conditions.
+G15  Cause 4: a review of the Class 700 NoBo design submission (Siemens document A6Z00036309602 item
+     4.2.8.2.2) shows that compliance with both NR/GN/ELP 27010 and EN 50163 would be demonstrated.
+G16  Cause 5: Siemens advised that the train's supply frequency response was designed to comply with EN 50163
+     Clause 4.2 Note 2, which permits train drives to disconnect at 49 Hz [reported]; using this value in the
+     design led the train to shut down its drives protectively when the supply frequency fell below
+     49 Hz [reported].
+G17  Cause 6: Siemens also clarified that there should not have been a Permanent Lockout following a
+     protective shutdown caused by a supply frequency drop; all trains should have been recoverable by Battery
+     Reset, whereas 30 [reported] trains were not recoverable. This was not the intended behaviour of the
+     train.
+G18  Cause 7: the affected Class 700 and 717 sets therefore did not react according to their design intent in
+     these circumstances; the risk of this happening was not known before the power event on Friday 9 August.
+G19  Cause 8: separately, the new TCMS (Train Control Management System) software version 3.27 removed the
+     driver's ability to recover from a Permanent Lockout by using the Battery Reset process.
+G20  Cause 9: on 9 August all units that required a technician to recover power were at software level 3.27 or
+     above; the 28 [reported] units recovered by the driver performing a Battery Reset were at the previous
+     TCMS software level of 3.25 or below.
+G21  Conclusion 1: all Class 700 and Class 717 trains operating on AC suffered a Protective Shutdown of the
+     4QC controller because of a drop in the supply frequency below 49 Hz [reported] for
+     16 seconds [reported].
+G22  Conclusion 2 to 4: this was not how the train system had been specified to operate, and the event should
+     not have caused a Permanent Lockout fault. The effects were exacerbated because the fleet was undergoing
+     a software change that removed the Battery Reset remedy for Permanent Lockout events, so the driver could
+     not recover failed trains operating on the new software and a technician was required to attend.
+G23  Planned mitigation 1: Siemens are developing a software patch to allow units that protectively shut down
+     below 49 Hz [reported] supply frequency to recover themselves, without a reboot or laptop, when the
+     frequency rises above 49.5 Hz [reported].
+G24  Planned mitigation 2: neither Siemens nor GTR proposes to revert units to previous software versions,
+     because of concerns about unit availability; based on discussions with the National Grid Head of
+     Networks, the risk of a frequency excursion below 49 Hz [reported] before the patch is fully introduced
+     is considered extremely unlikely.
+G25  Planned mitigation 3: Siemens will also investigate how the train could be made to operate for a short
+     time with the supply frequency falling to 48.5 Hz [reported].
+
+PART 2 — ESO TECHNICAL REPORT (dated 6 September 2019): rail passages of section 5.2, the executive summary
+and section 7
+E01  ESO 5.2: Class 700 and 717 trains shut down north of Farringdon and Kings Cross stations because their
+     internal protection systems were triggered; the Network Rail overhead line power supply operated
+     continually. The shutdown delayed all other trains behind them, requiring the temporary closure of London
+     St Pancras and Kings Cross stations, which led to Friday rush-hour overcrowding.
+E02  ESO 5.2, summarising GTR's report: all Desiro City Class 700 and Class 717 trains operating on AC power
+     suffered a protective shutdown when the frequency deviation fell below 49 Hz [reported]. Of the
+     approximately 60 [estimated] trains that shut down, half were restarted by the driver on site performing
+     a reboot, which takes c. 10 minutes [estimated]; the remaining 30 [reported] trains required a technician
+     to attend each train with a laptop to reset it.
+E03  ESO 5.2: GTR stated that this was not how the train system had been specified to operate and that the
+     event should not have caused a permanent lockout fault; the trains' technical specification states that
+     they will continue to operate with supply frequency drops down to 48.5 Hz [reported] for short periods.
+     All other GTR classes of train were unaffected.
+E04  ESO 5.2: the effects were exacerbated because the fleet was undergoing a software change, which meant
+     drivers could not recover trains operating on the new software. Siemens are developing a patch to let
+     drivers recover the trains themselves without a reboot or a technician attending, and will investigate
+     how the train could operate for a short time with a supply frequency of 48.5 Hz [reported].
+E05  ESO 5.2: the impact on the rail network was 23 [reported] train evacuations, and thousands of passengers
+     had their journeys delayed, with 371 [reported] trains cancelled, 220 [reported] part cancelled and
+     873 [reported] trains delayed. London St Pancras and King's Cross stations had to close for several hours
+     due to overcrowding, and London Euston went exit only for a period of time.
+E06  Executive summary: a major contributor to the rail disruption was a particular class of train operating
+     in the South-East: approximately 60 [estimated] trains unexpectedly shut down when the frequency dropped
+     below 49 Hz [reported], half of which required a visit from a technician to restart.
+E07  ESO section 7 (report findings): disruption to rail services extended through Friday evening and into
+     Saturday morning because approximately 30 [estimated] trains stopped operating and could not be restarted
+     following the original frequency drop to 49 Hz [reported]; restarting them required a technician with a
+     laptop to attend each train, which took some time.
+
+PART 3 — ORR REPORT ("Report following railway power disruption on 9th August 2019", dated 3 January 2020)
+O01  ORR 1.0: on Friday 9 August 2019 around 4:52pm [reported] a number of generators tripped off the power
+     grid at approximately the same time. The frequency of the power supply to the rail network dropped from
+     its nominal 50.0 Hz [reported] to below 49.0 Hz [reported] for approximately 33 seconds [estimated],
+     falling to a low of 48.8 Hz [reported]. The majority of rolling stock operated without any issues.
+O02  ORR 1.0: 31 [reported] trains were stranded as a result of the temporary drop in frequency. On the Class
+     700 and Class 717 rolling stock, protection systems operated within 200 ms [reported] of the frequency
+     falling to 49.0 Hz [reported], causing a lock-out of 29 [reported] trains: 22 [reported] trains were
+     permanently locked out and could not be reset without a technician attending on site, while 7 [reported]
+     trains were restored through driver reset. Two Class 387 trains were also trapped as a result of the
+     lock-out of the Class 700 and Class 717 trains. Passengers had to be evacuated (detrained) from
+     30 [reported] trains to a place of safety, and there were substantial knock-on delays following recovery
+     of the vehicles.
+O03  ORR 2.1: the supplied power frequency dropped from a nominal 50.0 Hz [reported] to a low of
+     48.8 Hz [reported] after 16 seconds [reported]; it remained below 49.0 Hz [reported] for approximately
+     33 seconds [estimated] and was restored to its nominal 50 Hz [reported] 3 minutes and
+     36 seconds [reported] later. ORR's Figure 1 (not reproduced here) is a frequency trace captioned as
+     extracted from the National Grid technical report "published 06/08/2019".
+O04  ORR 2.1: the majority of rolling stock operated without notable issues, but a fleet of Class 700 and
+     Class 717 trains operated by GTR shut down within 200 ms [reported] of the frequency dropping below
+     49.0 Hz [reported].
+O05  ORR 2.2: within 200 ms [reported] of the supply frequency dropping below 49.0 Hz [reported],
+     29 [reported] trains comprising Class 700 and Class 717, operated by GTR, shut down and were locked out
+     by on-board safety systems. Initial attempts by drivers to bring the trains back into operation proved
+     abortive, and Fleet Control had to advise drivers on the next action.
+O06  ORR 2.2: ORR quotes GTR's technical review that all Desiro City Class 700 and 717 units operating on AC
+     voltage suffered a Protective Shutdown in which the converter, known as the 4QC (expanded by ORR as Four
+     Quadrant Chopper), shut down. When the 4QC shuts down the train is isolated from the traction power
+     supply; only the limited on-board battery supply remains, which powers certain key systems but not
+     traction.
+O07  ORR 2.2: after Fleet Control diagnosed the shutdown, a GSM-R call was broadcast instructing drivers of
+     affected trains to carry out the Battery Reset Process, which recovered 7 [reported] of the affected
+     units; 22 [reported] trains could not be reset and required a technician to attend to recover them.
+O08  ORR 2.2: at the time of the event too few technicians were available for the number of stranded trains;
+     18 [reported] technicians with laptops were sent to restore the trains immediately, and more technicians
+     were mobilised within the next hour.
+O09  ORR 2.3: some trains were in locations that were not easily accessible, which made recovery
+     time-consuming. Passengers were safely detrained at stations and on track from 30 [reported] stranded
+     trains. There were significant delays, cancellations and part-cancellations of train journeys; full
+     service was restored within 24 hours [reported].
+O10  ORR 2.3, Table 1 "Affected routes, cancellations and delays" (source printed by ORR: Network Rail's
+     National Daily Report 09/08/2019). Columns: route | cancelled | part-cancelled | delay minutes
+T1   Sussex | 38 [reported] | 22 [reported] | 2051 [reported]
+T2   Wessex | 0 [reported] | 2 [reported] | 716 [reported]
+T3   Kent | 36 [reported] | 43 [reported] | 1727 [reported]
+T4   Western | 0 [reported] | 0 [reported] | 658 [reported]
+T5   LNE-York | 86 [reported] | 44 [reported] | 5569 [reported]
+T6   LNE-EM | 197 [reported] | 79 [reported] | 2780 [reported]
+T7   LNW-N | 14 [reported] | 24 [reported] | 428 [reported]
+T8   Wales | 0 [reported] | 6 [reported] | 499 [reported]
+T9   TOTAL | 371 [reported] | 220 [reported] | 14428 [reported]
+O11  ORR 2.5: delay compensation claims received by train operators in period 5 (21 July to 18 August) rose to
+     the highest level since the May 2018 timetable disruption, with a particular peak for GTR; ORR states
+     this cannot be directly attributed to the power disruption but is likely to have been a factor. There was
+     no corresponding peak in complaints.
+O12  ORR 3.0: ORR engaged with Network Rail, GTR and Siemens to understand why the power disruption
+     significantly affected railway services despite traction power not being lost. Network Rail owns and
+     manages the infrastructure; GTR operates the affected trains and carries out some of the maintenance;
+     Siemens, the manufacturer, designed the software on the affected trains and also maintains some of the
+     trains.
+O13  ORR 3.1: ORR uses "lock-out" for a situation where a component's operation has been stopped by a
+     software-based protection system. Permanent lock-outs protect against high-severity on-board risks such
+     as fire and electrocution, and need a technician with a laptop to connect physically to the train to
+     reset them. Temporary lock-outs protect against low-severity risks after a short-lived fault or
+     mal-operation: the train resets itself once the fault clears, or the driver resets the software using a
+     Battery Reset Process.
+O14  ORR 3.1: all Class 700 and 717 trains had been programmed by Siemens to operate from a nominal
+     50.0 Hz [reported] supply with a minimum frequency of 49.0 Hz [reported]. When the software detected that
+     the frequency had dropped below this level it operated as designed, disconnecting the traction drive
+     within 200 ms [reported].
+O15  ORR 3.1: individual trains had different software levels installed, as a software change was being
+     implemented progressively across the fleets. On detecting the frequency drop, the units with software
+     version 3.25.x went into a temporary lock-out while the units with version 3.27.x went into permanent
+     lock-out; drivers could reset the temporary lock-outs with a battery reset, while the permanent lock-outs
+     required a technician to attend.
+O16  ORR 3.2: version 3.27.x was intended to address a safety risk identified with 3.25.x: the TCMS could lock
+     out a train system in response to a serious fault or out-of-specification condition, only for the driver
+     to clear it with a battery reset and restore power to the fault. Siemens therefore implemented in 3.27.x
+     a permanent lock-out that a battery reset could not clear, needing a technician to analyse its cause
+     before clearing it; among the trigger conditions selected was the detection of a low power supply
+     frequency.
+O17  ORR 3.3: the lock-out on out-of-limit supply frequency is understood to protect against electromagnetic
+     interference from the 4QC in a range that can affect signalling circuits. ORR states that such protection
+     is only required while the supply is outside the specified frequency range, so the lock-out could be
+     permitted to reset automatically when the frequency returns to nominal, and that the service-disrupting
+     implications of a lock-out needing a driver or technician reset appear not to have been given weight when
+     the protection parameters for the on-train software were developed.
+O18  ORR 3.3: variations in supply frequency affect many trains at once, with the same response from all
+     trains on the same software. ORR states that the collective response of the Class 700 and 717 trains was
+     in accordance with the software design but was not an explicit intention, and that Siemens accepts the
+     temporary reduction in frequency should not have been considered a situation requiring a permanent
+     lock-out.
+O19  ORR 3.4: ORR quotes an interim Siemens email: in the original Class 700 design the 4QCs stop pulsing when
+     the line frequency is out of range and restart automatically, without driver action, when it comes back
+     in range; with the hysteresis implemented, the 4QCs lock when the line frequency drops below
+     49 Hz [reported] and restart when it rises above 49.5 Hz [reported].
+O20  ORR 4.0 (conclusion): 23 [reported] trains were evacuated without incident. The significant delays could
+     be attributed to the permanent lock-out of some of the Class 700 and Class 717 trains; findings so far
+     show that the TCMS software classed the frequency reduction as a scenario requiring a permanent lock-out.
+O21  ORR 4.0 (conclusion): the permanent lock-out resulted in 30 [reported] trains running the upgraded
+     software being effectively stranded on the network and requiring a technician reset, with significant
+     knock-on effects beyond the initial incident; full service was restored within 24 hours [reported].
+O22  ORR 4.0 (conclusion): so far ORR has not been able to establish any non-compliance with the Railways
+     (Interoperability) Regulations 2011, as amended, that could warrant enforcement action; the findings are
+     lessons learned to be fed back for awareness and improvement.
+
+PART 4 — RAIL FIGURES IN OTHER PUBLISHED REPORTS
+X01  Ofgem report (dated 3 January 2020), 2.6: 29 [reported] GTR Class 700 and 717 trains shut down and became
+     stranded when the system frequency fell below 49 Hz [reported], due to their own on-board automatic
+     frequency protection systems; two Class 387 trains were also trapped by the stranded units, and
+     altogether passengers had to be safely evacuated from 30 [reported] trains.
+X02  Ofgem 2.7: some protection settings were reset by the driver, but 22 [reported] permanently locked out
+     and had to be reset by a technician, which was the main cause of disruption to rail lines into St Pancras
+     International and King's Cross. A software update is being introduced so that these trains can be reset
+     automatically if the frequency drops below 49 Hz [reported] in future.
+X03  Ofgem 2.9: there was significant disruption to the rail network, with 371 [reported] services cancelled
+     and 220 [reported] part cancelled. Ofgem executive summary: rail services were particularly affected,
+     with more than 500 [reported] services disrupted.
+X04  E3C interim report: the Department for Transport confirmed that a safety mechanism built into all
+     operational Class 700 and Class 717 Desiro City trains detected the frequency drop and triggered
+     60 [reported] trains to shut down; around half were restarted by their drivers and the rest required
+     engineers to be dispatched, blocking tracks into St Pancras International and King's Cross.
+     371 [reported] services were cancelled and 873 [reported] delayed, and St Pancras International, King's
+     Cross and Euston had to limit passenger numbers entering the stations at various times.
+X05  E3C interim report: a number of trains did not end up in their correct location at the end of the day,
+     which disrupted some early morning services on Saturday 10 August; the executive summary states that rail
+     delays extended into Sunday 11 August. The Class 700 and 717 trains had been introduced over the last
+     three years.
+X06  E3C final report (January 2020), section 4: Thameslink Class 700 and 717 train systems were
+     overprotective to frequency drops and shut down; a number of trains required manual engineer intervention
+     to restart, and the complexity of the restart process caused significant disruption: 371 [reported]
+     cancelled services, 220 [reported] part cancelled services and 873 [reported] delayed services.

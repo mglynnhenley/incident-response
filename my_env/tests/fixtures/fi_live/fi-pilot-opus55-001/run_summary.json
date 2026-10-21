@@ -1,0 +1,80 @@
+{
+ "assistant_turns": 24,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 80000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "I submitted the investigation and it was accepted: 47 findings, each labelled with its status and citing its evidence. The first attempt was rejected only because the executive summary was 651 words against the 600 limit; I shortened it and resubmitted. All times below are BST (UTC+01:00). Where a record used UTC, I added one hour.\n\n**What happened**\n- **Initiating event:** at 16:52:33.490 lightning caused a single-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit, about 4.5 km from Wymondley.\n  - Protection cleared it in 70–74 ms, inside the 80 ms Grid Code limit.\n  - The circuit was switched back in automatically about 20 s later (delayed auto-reclose).\n  - NGET's records and Ofgem show the transmission protection performed as required.\n- **Losses in the first second:**\n  - Hornsea One de-loaded 737 MW.\n  - Little Barford's steam turbine tripped (244 MW).\n  - The ESO estimates about 150 MW of distributed generation tripped on vector-shift protection and about 350 MW on rate-of-change-of-frequency protection (430 MW in its model). These embedded-generation figures are estimates, not measurements.\n  - That makes 1,481 MW on the ESO's basis, against 1,000 MW secured.\n- **Later losses:** Little Barford's two gas turbines followed (210 MW and 187 MW), giving the ESO's cumulative total of 1,878 MW. Other bases give other totals:\n  - ESO Appendix H: 1,528 MW of losses on its secured-event basis.\n  - Ofgem: at least 1,990 MW.\n  - E3C: about 2,100 MW (interim report) and at least 2,000 MW (final).\n  - Ofgem and the E3C put total distributed-generation loss at 1,300–1,500 MW.\n- **Frequency, from the 1-second measured record:**\n  - First minimum 49.083 Hz at 16:52:59.\n  - Lowest point 48.787 Hz at 16:53:49.\n  - Below 49 Hz for 33 consecutive samples (about 33 s). This matches ORR and contradicts GTR's 16 s.\n  - First back at 50 Hz at 16:57:16.\n  - One-second sampling cannot resolve faster dips or the true rate of change.\n- **Response held and delivered:**",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 175269,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 31,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-031",
+  "invalid_submission_attempts": 1,
+  "python_calls": 4,
+  "retrieved": [
+   "R03",
+   "R02",
+   "S12",
+   "R07",
+   "R06",
+   "R01",
+   "R10",
+   "S01",
+   "S03",
+   "S08",
+   "S11",
+   "S10",
+   "R09",
+   "R08",
+   "S07",
+   "S06",
+   "R11"
+  ],
+  "schema": 1,
+  "seq": 31,
+  "submission_sha256": "27f727cbcba2a934d052bcd3bc86ba62ee07047876d7b043492c903b9a7c00cc"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 31,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 31
+ },
+ "max_input_tokens": 175269,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 35379,
+ "output_tokens_total": 37307,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 24,
+ "tool_calls_by_tool": {
+  "interview_witness": 4,
+  "list_documents": 1,
+  "query_frequency": 1,
+  "request_data_return": 4,
+  "request_document": 15,
+  "run_python": 4,
+  "submit_findings": 2
+ },
+ "tool_calls_episode_tools": 31,
+ "tool_calls_total": 31,
+ "transcript_available": true
+}

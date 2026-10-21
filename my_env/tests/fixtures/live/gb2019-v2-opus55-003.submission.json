@@ -1,0 +1,475 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L38"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.490+01:00",
+      "finding_id": "F01",
+      "statement": "Fault inception at 16:52:33.490 BST: single blue-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit, about 4.5 km from Wymondley Main.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L30"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L89-L90"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L102-L104"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33+01:00",
+      "finding_id": "F02",
+      "quantity": {
+        "basis": "reported",
+        "unit": "kA",
+        "value": 33.7
+      },
+      "statement": "Three almost simultaneous lightning strikes (largest 33.7 kA) were recorded adjacent to the circuit at the Wymondley end at 16:52:33 BST; NGET and ESO conclude lightning caused the fault (this conclusion is reported, not independently verified).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L48"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.564+01:00",
+      "finding_id": "F03",
+      "statement": "Fault was cleared by Wymondley Main (70 ms) and Eaton Socon (74 ms) ends, within the 80 ms Grid Code requirement for 400 kV.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L53"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "F04",
+      "statement": "The circuit was re-energised by delayed auto-reclose at 16:52:53 BST, about 20 s after the fault, restoring the pre-event configuration.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L80-L83"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L99-L101"
+        }
+      ],
+      "finding_id": "F05",
+      "statement": "NGET found no defects at the substations or on the line (inspected 10 August), and the voltage dip was consistent with a normal fault and within fault-ride-through limits.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L33-L43"
+        }
+      ],
+      "derivation": "799-62=737 MW",
+      "event_time": "2019-08-09T15:52:33.835Z",
+      "finding_id": "F06",
+      "quantity": {
+        "basis": "799 MW minus 62 MW, both reported",
+        "unit": "MW",
+        "value": 737
+      },
+      "statement": "Hornsea One lost 737 MW: output went from 799 MW to 62 MW as modules 1B and 1C de-loaded to 0 MW between 15:52:33.728Z and 15:52:33.835Z (16:52:33.728–.835 BST).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L55-L63"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L79-L83"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L85-L87"
+        }
+      ],
+      "finding_id": "F07",
+      "statement": "Ofgem reports that the Hornsea de-load was caused by the offshore turbine controllers reacting incorrectly to the post-fault voltage fluctuations, due to an insufficiently damped sub-synchronous electrical resonance; this caused 1B/1C voltage collapse to ~20 kV, turbine overcurrent and protective shutdown. The operator reports that the weak internal configuration (one SGT and one OTSUA circuit on outage) contributed.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L6-L9"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L23-L25"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L34"
+        }
+      ],
+      "derivation": "T (16:52:34) + 1.185 s; T uncertain ±0.5 s, clock basis read as BST",
+      "event_time": "2019-08-09T16:52:35.185+01:00",
+      "finding_id": "F08",
+      "quantity": {
+        "basis": "reported",
+        "unit": "MW",
+        "value": 244
+      },
+      "statement": "The Little Barford steam turbine ST1C (244 MW) breaker opened about 1.185 s after the station datum T = 16:52:34 ±0.5 s, i.e. about 16:52:35.2 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L27"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L35"
+        }
+      ],
+      "derivation": "16:52:34 + 57.620 s (±0.5 s)",
+      "event_time": "2019-08-09T16:53:31.620+01:00",
+      "finding_id": "F09",
+      "quantity": {
+        "basis": "reported",
+        "unit": "MW",
+        "value": 210
+      },
+      "statement": "Little Barford GT1A (210 MW) tripped automatically; its breaker opened at T+57.620 s, about 16:53:31.6 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L28-L29"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L36"
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L30-L33"
+        }
+      ],
+      "derivation": "16:52:34 + 84.613 s (±0.5 s)",
+      "event_time": "2019-08-09T16:53:58.613+01:00",
+      "finding_id": "F10",
+      "quantity": {
+        "basis": "reported",
+        "unit": "MW",
+        "value": 187
+      },
+      "statement": "Little Barford GT1B (187 MW) was tripped manually; its breaker opened at T+84.613 s, about 16:53:58.6 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L33-L43"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L34-L37"
+        }
+      ],
+      "derivation": "737+244+210+187=1378",
+      "finding_id": "F11",
+      "quantity": {
+        "basis": "sum of reported losses",
+        "unit": "MW",
+        "value": 1378
+      },
+      "statement": "Total recorded transmission-connected generation loss was 1378 MW (Hornsea 737 MW plus Little Barford 641 MW).",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L41-L43"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L23-L25"
+        }
+      ],
+      "derivation": "737+244",
+      "finding_id": "F12",
+      "quantity": {
+        "basis": "sum of reported losses",
+        "unit": "MW",
+        "value": 981
+      },
+      "statement": "About 981 MW (Hornsea 737 MW plus ST1C 244 MW) was lost within roughly 2 s of the fault.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T16:53:10+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:59+01:00",
+      "finding_id": "F13",
+      "quantity": {
+        "basis": "minimum 1-s sample, rows 754-800",
+        "unit": "Hz",
+        "value": 49.083
+      },
+      "statement": "The first frequency minimum was 49.083 Hz at 16:52:59 BST (49.085 Hz at 16:52:55), falling from 49.995 Hz at 16:52:33.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "row:830"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F14",
+      "quantity": {
+        "basis": "minimum 1-s sample 16:52:20-17:00",
+        "unit": "Hz",
+        "value": 48.787
+      },
+      "statement": "The second and overall minimum was 48.787 Hz at 16:53:49 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:15+01:00/2019-08-09T16:54:05+01:00"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L29"
+        }
+      ],
+      "finding_id": "F15",
+      "statement": "Frequency, which had recovered to about 49.2–49.27 Hz, began falling again around 16:53:27–16:53:31, consistent in timing with the GT1A trip (~16:53:31.6) and then the GT1B trip (~16:53:58.6).",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "rows:821-855"
+        }
+      ],
+      "derivation": "count of rows with f<49.0 (rows 822-854)",
+      "event_time": "2019-08-09T16:53:41+01:00",
+      "finding_id": "F16",
+      "quantity": {
+        "basis": "count of samples <49.000 Hz",
+        "unit": "s",
+        "value": 33
+      },
+      "statement": "Frequency was strictly below 49 Hz from 16:53:41 to 16:54:13 BST: 33 consecutive 1-s samples, about 33 s (±~1 s given the sampling). It was exactly 49.000 at 16:53:40 and 49.001 at 16:54:14.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "row:1037"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T17:00:42+01:00"
+        }
+      ],
+      "derivation": "first sample >=50.000 after the minimum at row 830",
+      "event_time": "2019-08-09T16:57:16+01:00",
+      "finding_id": "F17",
+      "statement": "Frequency first returned to 50 Hz or above at 16:57:16 BST (50.0 Hz or higher), about 4 min 43 s after the fault; it then overshot to 50.248 Hz at 17:00:42.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "L14-L16"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "L28-L29"
+        }
+      ],
+      "finding_id": "F18",
+      "statement": "The record has one value per second and no information on the measurement method or on behaviour between samples, so the true minima, the rate of change of frequency and the threshold crossing times are uncertain to within about ±1 s. The data are the version corrected on 14 Feb 2020.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L67-L70"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L88-L89"
+        }
+      ],
+      "finding_id": "F19",
+      "statement": "A damped oscillatory reactive-power response at Hornsea occurred about 10 minutes before the event (~15:42Z; exact time unpublished) without de-loading.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L42-L43"
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L59"
+        }
+      ],
+      "finding_id": "F20",
+      "statement": "ST1C tripped because of a discrepancy between its three independent speed sensors that exceeded the control-system tolerance after the fault was cleared.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L58-L59"
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L64-L66"
+        }
+      ],
+      "finding_id": "F21",
+      "statement": "The root cause of the ST1C speed-signal discrepancy is not established. Ofgem's preliminary view links it to the network fault.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L22-L33"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L47-L52"
+        }
+      ],
+      "finding_id": "F22",
+      "statement": "After the ST trip the plant went into steam bypass mode. GT1A tripped automatically on a high-pressure excursion in the bypass system, and GT1B was tripped by hand by operators because steam pressure kept rising.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L60-L63"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L53-L54"
+        }
+      ],
+      "finding_id": "F23",
+      "statement": "The root cause of the high steam-pressure conditions behind the GT1A/GT1B trips is not established; a physical inspection of the bypass system was planned for September 2019.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L55-L60"
+        }
+      ],
+      "finding_id": "F24",
+      "statement": "RWE's hypothesis is that the UPS alarms at T came from changeover to battery caused by the system disturbance. RWE believes the UPS were not related to the trip, but the triggering supply characteristic is undetermined.",
+      "status": "hypothesis"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "row:830"
+        }
+      ],
+      "finding_id": "F25",
+      "statement": "The evidence has no records of embedded or distribution-connected generation losses or of low-frequency demand disconnection. Whether demand was disconnected when frequency reached 48.787 Hz cannot be determined from these records.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L6"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L6-L9"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L7-L9"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L73-L77"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:43:20+01:00/2019-08-09T16:43:34+01:00"
+        }
+      ],
+      "finding_id": "F26",
+      "statement": "The clock bases are partly inferred: the Hornsea log is read as UTC, the R03 times and the Little Barford datum are read as BST, and T is ±0.5 s and not aligned to the ESO datum. The cross-source sub-second ordering is therefore uncertain. R03 also gives inconsistent times (16:50:44 vs 16:43:25) for a separate Blyth–Eccles–Stella West trip, and the frequency record shows no disturbance at either time.",
+      "status": "inferred"
+    }
+  ],
+  "report": {
+    "executive_summary": "Clock basis: all times are BST (UTC+01:00) unless marked Z (UTC). The disturbance started at 16:52:33.490+01:00 on 9 August 2019. A single-phase (blue) to earth fault occurred on the Eaton Socon–Wymondley Main 400 kV circuit about 4.5 km from Wymondley [F01]. A 33.7 kA lightning strike was recorded beside the line at the same second [F02]. The fault was cleared in 70–74 ms, inside the 80 ms Grid Code limit, and the circuit reclosed automatically (delayed auto-reclose) at 16:52:53 [F03, F04]. Lightning as the cause is a conclusion NGET reports, and it is consistent with the timing. No damage was found on the line [F05].\n\nGeneration losses:\n- Hornsea One: output fell from 799 MW to 62 MW (a 737 MW loss), complete by 15:52:33.835Z (16:52:33.835 BST) [F06].\n- Little Barford steam turbine: 244 MW, about 1.2 s after the station's reference time T = 16:52:34 ±0.5 s [F08].\n- Little Barford gas turbine GT1A: 210 MW, at about 16:53:31.6 [F09].\n- Little Barford gas turbine GT1B: 187 MW, tripped by hand at about 16:53:58.6 [F10].\n\nThese four losses total 1,378 MW [F11]. Within about 2 s, 981 MW was lost [F12].\n\nThe 1-second measured frequency record shows two minima. The first was 49.083 Hz at 16:52:59 [F13]. The second, lower minimum was 48.787 Hz at 16:53:49 [F14]. It followed a renewed fall that started around 16:53:29–31, which lines up with the GT1A trip [F15]. Frequency was below 49 Hz for 33 consecutive samples (16:53:41–16:54:13), meaning roughly 33 s, give or take about 1 s [F16]. It first got back to 50 Hz at 16:57:16, about 4 min 43 s after the fault [F17]. With one sample per second, the true lowest points may have been missed [F18].\n\nWhat is established and what is not:\n- Hornsea: the operator and Ofgem report a control-system instability (a poorly damped sub-synchronous resonance) set off by the voltage dip. Ofgem reports this is what made turbines de-load and shut down on modules 1B and 1C [F07]. The same oscillation had appeared about 10 minutes earlier without a de-load [F19].\n- Steam turbine: it tripped because its speed signals disagreed [F20]. Why they disagreed has not been established [F21].\n- Gas turbines: GT1A and GT1B tripped on high steam pressure in the bypass system [F22]. The root cause of that high pressure is not established [F23].\n- The link between the UPS alarms and the trip is still only a hypothesis [F24].\n\nThe records do not cover embedded (distribution-connected) generation losses or low-frequency demand disconnection. The 48.787 Hz minimum is below the commonly used 48.8 Hz first stage of low-frequency demand disconnection, but whether any demand was disconnected cannot be determined from this evidence [F25]. Several of the clock bases are inferred rather than stated, so cross-source timing is uncertain to within about a second [F26].",
+    "sections": [
+      {
+        "body": "- 16:52:33.490: the blue phase faulted to earth on Eaton Socon–Wymondley [F01]. Lightning strikes were recorded beside the circuit at 16:52:33 [F02].\n- 16:52:33.560 and 16:52:33.564: the two circuit ends opened [F03].\n- 16:52:33.728–.835 (recorded as 15:52:33Z in UTC): Hornsea 1B and 1C de-loaded to 0 MW. Site output dropped to 62 MW [F06].\n- About 16:52:35.2: Little Barford steam turbine breaker opened [F08].\n- 16:52:53: the circuit reclosed automatically (delayed auto-reclose) [F04].\n- 16:52:59: first frequency minimum [F13].\n- About 16:53:31.6: GT1A tripped [F09, F15].\n- 16:53:41: frequency fell below 49 Hz [F16].\n- 16:53:49: lowest frequency, the second minimum [F14].\n- About 16:53:58.6: GT1B tripped by hand [F10].\n- 16:54:14: frequency back at 49 Hz or above [F16].\n- 16:57:16: frequency back at 50 Hz [F17].",
+        "heading": "Chronology (BST, UTC+01:00)"
+      },
+      {
+        "body": "I read the CSV with pandas. The minima are the lowest samples in each dip. Time below 49 Hz is the count of consecutive samples strictly below 49.000. Recovery is the first sample at or above 50.000 after the minimum. Because the data are 1 Hz samples, the limits are roughly ±1 s on durations and nothing can be said about values between samples [F13, F14, F16, F17, F18].",
+        "heading": "Frequency method"
+      },
+      {
+        "body": "- Transmission fault: lightning as the cause is reported; the protection operated normally [F02, F03, F05].\n- Hornsea: the reported cause is control-system instability, with a weak internal network as a contributing factor [F07, F19].\n- Little Barford: the immediate causes are reported, but the root causes are not established [F20, F21, F22, F23, F24].\n- Data gaps: embedded generation and demand disconnection are not covered [F25]. Clock alignment between sources is uncertain [F26].",
+        "heading": "Mechanisms and open questions"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

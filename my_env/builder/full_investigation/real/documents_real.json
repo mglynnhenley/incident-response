@@ -1,0 +1,243 @@
+{
+  "schema": "gb-2019-full-investigation/documents-fragment/1",
+  "generated_by": "builder/full_investigation/real/fi_build_real.py",
+  "note": "Manifest-v2 fragment for the integration step. 'category', 'party_aliases_proposal', 'keywords_proposal' and the log '*_proposal' fields are proposals; 'label' is the STATUS label of the text note. Rows extend increment A's HORNSEA-ONE and LITTLE-BARFORD asset logs (evidence ID R09) and add two control rooms.",
+  "evidence_id_choice": "R09 keeps its handoff number. R11 (rail performance records) and R12 (essential-service public statements) are new IDs for the real parts of the handoff's S08 and S11; no handoff R/S number is reused. Increment A's documents are copied unchanged by the integration step with their own provenance.",
+  "documents": [
+    {
+      "doc_id": "R09",
+      "title": "External communications records, 9-20 August 2019",
+      "owner": "National Grid ESO (technical report, appendices and public statements); Energy Emergencies Executive Committee (interim and final reports); Ofgem (report and press releases); BEIS (GOV.UK); Elexon (REMIT data); DNOs, train operators and National Rail Enquiries (public posts and pages; gists written for this record)",
+      "date": "2019-08-09",
+      "category": "communications_records",
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R09/R09.txt",
+      "artifacts": [
+        {
+          "file": "R09/R09.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R09/R09_elexon_remit_messages_hornsea_one_little_barford.csv",
+          "media_type": "text/csv",
+          "description": "Elexon REMIT message revisions for T_HOWAO-1/2/3 and T_LBAR-1 (Part D), all fields as published (outageProfile as compact JSON)."
+        },
+        {
+          "file": "R09/R09_eso_table8_external_communications.csv",
+          "media_type": "text/csv",
+          "description": "ESO technical report Table 8 (timeline of external communications) as printed; personal names replaced by roles in square brackets."
+        },
+        {
+          "file": "R09/R09_eso_table9_calls_to_dnos.csv",
+          "media_type": "text/csv",
+          "description": "ESO technical report Table 9 (calls received by the six largest DNOs, 4pm to 7pm on 9 August) as printed."
+        },
+        {
+          "file": "R09/R09_public_posts_and_statements_gists.csv",
+          "media_type": "text/csv",
+          "description": "Part E: organisational public posts and web statements — label, time (decoded UTC, displayed or titled), the basis of that time, the decoded UTC instant of posts (empty for web pages, whose times are local or dates only), organisation, channel and a gist written for this record (no post or page text)."
+        }
+      ],
+      "sha256": {
+        "R09/R09.txt": "a3cacd7f29948bc2e04b313e4d1f5807e4e2d20dae2153fc07d6b59c3a549f3d",
+        "R09/R09_elexon_remit_messages_hornsea_one_little_barford.csv": "1792df465d5abbf7780cdccaf092bdc785a53659d3dee5615a3b5fffcddc35bc",
+        "R09/R09_eso_table8_external_communications.csv": "e1a908e3ef3fb73e5f0bc50b0e9dd68ac96531467ffbb2d714c37a90cc8623ec",
+        "R09/R09_eso_table9_calls_to_dnos.csv": "e8784dc20ca9adb11ebcc65b2ffc324a715b7badd6193cc592a8cb22f3e7767a",
+        "R09/R09_public_posts_and_statements_gists.csv": "e491a3245a8e85f78db44879ed099313f066f4deda5c465fe5080d0c18ea2232"
+      },
+      "party_aliases_proposal": [
+        "system operator",
+        "National Grid ESO",
+        "Elexon",
+        "DNO",
+        "regulator"
+      ],
+      "keywords_proposal": []
+    },
+    {
+      "doc_id": "R11",
+      "title": "Rail performance records, 9 August 2019: delay attribution and periodic statistics",
+      "owner": "Network Rail (delay attribution records and glossary); Office of Rail and Road (periodic statistics)",
+      "date": "2019-08-09",
+      "category": "transport_records",
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R11/R11.txt",
+      "artifacts": [
+        {
+          "file": "R11/R11.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R11/R11_networkrail_delay_records_selected_incidents.csv",
+          "media_type": "text/csv",
+          "description": "Network Rail delay-attribution records of the selected incidents (one row per train per delay or cancellation event; publisher's column names and values)."
+        },
+        {
+          "file": "R11/R11_networkrail_incidents_selected.csv",
+          "media_type": "text/csv",
+          "description": "One row per selected Network Rail incident with its incident-level columns as published."
+        },
+        {
+          "file": "R11/R11_networkrail_glossary_codes_used.csv",
+          "media_type": "text/csv",
+          "description": "Glossary entries (Network Rail, August 2021 edition) of every code in the selected records: event types, incident and reactionary reasons, responsible managers, operators and STANOX locations."
+        },
+        {
+          "file": "R11/R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv",
+          "media_type": "text/csv",
+          "description": "Table 3124 - Trains planned and cancellations by operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        },
+        {
+          "file": "R11/R11_orr_table3157a_severely_disrupted_days_great_britain.csv",
+          "media_type": "text/csv",
+          "description": "Table 3157a - Days of severe disruption, Great Britain (periodic), periods 04-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        },
+        {
+          "file": "R11/R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv",
+          "media_type": "text/csv",
+          "description": "Table 3157b - Days of severe disruption by sub-operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21: all rows as retrieved."
+        }
+      ],
+      "sha256": {
+        "R11/R11.txt": "d61ee361330115de1ccce98b0c99483406d4861f18b95fcf82f63d94234b14cd",
+        "R11/R11_networkrail_delay_records_selected_incidents.csv": "9bd261332ebac0c9e7ed6ae602202a20c20b744b9f86445ec1e394ab597e8ef6",
+        "R11/R11_networkrail_incidents_selected.csv": "bc89db6ab39d75767b46a9511b2f78e5541912ef77feb0590b915651d79d019b",
+        "R11/R11_networkrail_glossary_codes_used.csv": "6724be4afcabba4ca38090955278f35d2d20e09e792c0fcdf9c7a73ad856c2c8",
+        "R11/R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02",
+        "R11/R11_orr_table3157a_severely_disrupted_days_great_britain.csv": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16",
+        "R11/R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb"
+      },
+      "party_aliases_proposal": [
+        "Network Rail",
+        "rail",
+        "ORR",
+        "Office of Rail and Road",
+        "train operator"
+      ],
+      "keywords_proposal": []
+    },
+    {
+      "doc_id": "R12",
+      "title": "Essential-service public statements, 9-10 August 2019",
+      "owner": "East Suffolk and North Essex NHS Foundation Trust (Ipswich Hospital); Newcastle International Airport (public posts)",
+      "date": "2019-08-09",
+      "category": "essential_service_records",
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R12/R12.txt",
+      "artifacts": [
+        {
+          "file": "R12/R12.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        },
+        {
+          "file": "R12/R12_essential_service_public_statements.csv",
+          "media_type": "text/csv",
+          "description": "Essential-service public statements (Parts A-B): time as published or decoded (UTC) and its basis, the post identifier of decoded posts, organisation, channel and a summary written for this record (no statement text)."
+        }
+      ],
+      "sha256": {
+        "R12/R12.txt": "8d23589e117ca2d4616a560c902f6838034946acacfb90084328d70eedaa71d6",
+        "R12/R12_essential_service_public_statements.csv": "6da993cf2567ca7420d89ae58e7b377caeef0bbbd5f9915ba141992501a06811"
+      },
+      "party_aliases_proposal": [
+        "hospital",
+        "airport",
+        "essential services",
+        "NHS trust"
+      ],
+      "keywords_proposal": []
+    }
+  ],
+  "asset_logs": [
+    {
+      "asset_id": "HORNSEA-ONE",
+      "signals": [
+        "T_HOWAO-1 REMIT declared available capacity for event window MW",
+        "T_HOWAO-2 REMIT declared available capacity for event window MW",
+        "T_HOWAO-3 REMIT declared available capacity for event window MW"
+      ],
+      "evidence_ids": [
+        "R09"
+      ],
+      "clock_note_proposal": "R09 rows — recorded_time is the Elexon REMIT publishTime (UTC); the index is the publication time, not the event time. The value is the available capacity the message declares for its event window, given only for an active revision published inside that window; it is null for a Dismissed or Inactive revision and for a message published before or after its event window (the declared figures stay in the row text).",
+      "source_note_proposal": "R09: Elexon REMIT messages (real extracts; Elexon BMRS open data licence, attribution required; message content written by the market participant)."
+    },
+    {
+      "asset_id": "LITTLE-BARFORD",
+      "signals": [
+        "T_LBAR-1 REMIT declared available capacity for event window MW"
+      ],
+      "evidence_ids": [
+        "R09"
+      ],
+      "clock_note_proposal": "R09 rows — recorded_time is the Elexon REMIT publishTime (UTC); the index is the publication time, not the event time. The value is the available capacity the message declares for its event window, given only for an active revision published inside that window; it is null for a Dismissed or Inactive revision and for a message published before or after its event window (the declared figures stay in the row text).",
+      "source_note_proposal": "R09: Elexon REMIT messages (real extracts; Elexon BMRS open data licence, attribution required; message content written by the market participant)."
+    }
+  ],
+  "control_logs": [
+    {
+      "room_id": "ESO-COMMS",
+      "title_proposal": "ESO communications: contacts with government and the regulator, media statements and public posts (published accounts and public records)",
+      "owner_proposal": "National Grid ESO (published reports and public statements); E3C (reports)",
+      "evidence_ids": [
+        "R09"
+      ],
+      "clock_note_proposal": "R09 rows — times as printed in the reports (no clock labelled; read as BST, UTC+01:00), as titled or dated on ESO web statements (UK local time), or decoded in UTC from post identifiers; each row states its basis.",
+      "source_note_proposal": "R09: one entry per timed ESO communication in the published accounts (ESO report sections 6.2, 6.3/Table 8 and 7; Appendix M; E3C reports) and per ESO public post or web statement (gists written for this record)."
+    },
+    {
+      "room_id": "NETWORK-RAIL-CONTROL",
+      "title_proposal": "Network Rail: TRUST delay-attribution incident records, 9 August 2019",
+      "owner_proposal": "Network Rail (historic delay attribution data)",
+      "evidence_ids": [
+        "R11"
+      ],
+      "clock_note_proposal": "R11 rows — incident_start_datetime as held in Network Rail's PSS extract (dd/mm/yyyy HH:MM, no zone stated by the publisher; read as BST, UTC+01:00, for the index).",
+      "source_note_proposal": "R11: one entry per selected Network Rail incident (real extract; Open Government Licence)."
+    }
+  ],
+  "row_files": {
+    "real_r09_asset.jsonl": "builder/full_investigation/rows/real_r09_asset.jsonl",
+    "real_r09_control.jsonl": "builder/full_investigation/rows/real_r09_control.jsonl",
+    "real_r11_control.jsonl": "builder/full_investigation/rows/real_r11_control.jsonl"
+  },
+  "data_returns_proposal": [
+    {
+      "party": "NETWORK_RAIL",
+      "data_type": "delay_attribution_records",
+      "status": "available",
+      "evidence_id": "R11",
+      "message": "Network Rail delay-attribution records for incidents of 9 August 2019 with reason XK or responsible manager METR, with the code glossary, and ORR periodic tables."
+    },
+    {
+      "party": "ELEXON",
+      "data_type": "remit_messages",
+      "status": "available",
+      "evidence_id": "R09",
+      "message": "REMIT unavailability messages for Hornsea One and Little Barford, every revision held, with publication times, inside the external communications record."
+    },
+    {
+      "party": "ESO",
+      "data_type": "external_communications_record",
+      "status": "available",
+      "evidence_id": "R09",
+      "message": "Published accounts of ESO contacts with government and the regulator, media statements, public posts and web statements, and calls to DNO helplines."
+    },
+    {
+      "party": "ESO",
+      "data_type": "control_room_communications_log",
+      "status": "not_held",
+      "message": "Not held in this evidence pack: no ESO control-room communication log or call recording is published; the available records are the published accounts."
+    },
+    {
+      "party": "HOSPITAL_TRUST",
+      "data_type": "public_statement",
+      "status": "available",
+      "evidence_id": "R12",
+      "message": "The Ipswich Hospital trust's press release of 10 August 2019 (publication details and a summary written for this record)."
+    }
+  ]
+}

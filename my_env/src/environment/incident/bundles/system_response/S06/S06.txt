@@ -1,0 +1,120 @@
+DOCUMENT S06 — Embedded generation returns and published loss estimates, 9 August 2019
+Owner/originator: Distribution Network Operators (returns to ESO); estimates by National Grid ESO, Ofgem
+and the E3C as attributed below
+Record type: reconstructed summary of the DNO embedded-generation return, its stated limits, and
+published loss estimates listed by source, each with the source's own timing or stage words
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: times are hh:mm:ss as printed by ESO, with no clock labelled; read as BST (UTC+01:00)
+because ESO dates the event at 4:52pm.
+Value-status legend: [reported] value as stated in a return or report; [estimated] value the source
+calls an estimate or approximation; [modelled] value the source derives from frequency simulation or
+modelling; [measured], [digitised] and [illustrative] not used.
+No estimate below is a direct measurement of embedded generation output; each states its own basis.
+
+PART 1 — DNO RETURNS TO THE ESO DATA REQUEST (as described in the ESO technical report dated
+6 September 2019, section 4.2)
+R1   After the event ESO contacted all DNOs and requested data on the volume of embedded generation that
+     was disconnected or changed output during the event, and asked them to indicate the reason for the
+     change of output, for example RoCoF, Vector Shift or Active Network Management (ANM) operation.
+R2   All DNOs responded and indicated a combined total of 462 MW [reported] of embedded generation lost
+     during the event.
+R3   Some DNOs noted challenges in obtaining the data due to the way it is collected or stored. Without
+     confirmation from generators, DNOs were unable to determine whether a specific generator tripped due
+     to RoCoF or Vector Shift.
+R4   A number of embedded generators and demand customers advised that their protection operated when
+     the frequency reached 49 Hz [reported] and as such they were disconnected from the system.
+
+PART 2 — LIMITS OF THE AVAILABLE DATA (as stated in the reports)
+L1   ESO answers to E3C questions (Appendix M, data available on 28 August 2019): the majority of
+     distribution connected generation provides no indication of proposed output, and no actual output
+     data to the ESO.
+L2   Ofgem 3.45: most DNOs only record information on generation volumes on their networks on a
+     half-hourly basis, obscuring shorter-term events; the data DNOs provided gives only a partial view of
+     which distributed generators tripped off or reduced output, so volumes lost at different locations
+     and their causes cannot be ascertained with confidence from it.
+L3   Ofgem 3.37: the information DNOs collect and record on distributed generation is variable or
+     severely limited; the exact causes and timeline of the incident cannot be fully established.
+L4   Ofgem, footnote 19: it has not been possible to fully validate the ESO estimate with the DNOs, as
+     they also do not monitor output from distributed generators in real-time.
+L5   Ofgem, footnote 31: Ofgem ascertained the distributed generation losses in section 2 of its report
+     based on its validation of the frequency event modelling carried out by the ESO.
+
+PART 3 — PUBLISHED ESTIMATES BY SOURCE (in each source's own words for timing, stage and basis; not
+summed, grouped or reconciled)
+ESO technical report dated 6 September 2019
+E1   Table 1 (timeline): 16:52:33 [reported] approximately 150 MW [estimated] of embedded generation trips
+     on vector-shift protection.
+E2   Table 1 (timeline): 16:52:34 [reported] approximately 350 MW [estimated] of embedded generation trips
+     on RoCoF protection [1,481MW cumulative infeed loss] [reported] (bracket as printed).
+E3   Figure 2 annotation: increase in transformer loadings (Loss Of Mains) ~500 MW [estimated], labelled
+     [16:52:34] [reported].
+E4   Figure 2 annotation: embedded gen. loss 200 MW [modelled] @49Hz.
+E5   section 4.2: post-event power system studies by ESO indicate that, for an event such as this, a loss
+     of embedded generation on vector shift protection of approximately 150 MW [estimated] would be
+     expected.
+E6   section 4.2: based on the 150 MW [estimated] vector shift figure plus the data provided by the DNOs,
+     approximately 350 MW [estimated] was lost due to RoCoF.
+E7   section 4.2: a number of embedded generators and demand customers advised that their protection
+     operated when the frequency reached 49 Hz [reported]; the net effect of this disconnection has been
+     modelled as a 200 MW [modelled] loss of generation; protection operating at this frequency was not
+     expected and has not previously been observed.
+E8   footnote 2: ESO simulation data indicates that the overall total embedded generation loss could be
+     slightly higher (580 MW [modelled] v 500 MW [estimated]).
+E9   section 7: levels of embedded generation tripping due to RoCoF and vector shift were broadly in line
+     with what was expected.
+E10  section 8: during the event, approximately 500 MW [estimated] of embedded generation tripped on Loss
+     of Mains protection (vector shift and Rate of Change of Frequency).
+E11  Appendix I: the vector shift loss of 150 MW [estimated] is estimated to have occurred at the time of
+     the circuit trip.
+E12  Appendix I: based on the DNO data the RoCoF volume was 350 MW [estimated]; analysis of the simulation
+     data indicates it may be slightly higher at 430 MW [modelled].
+E13  Appendix I: modelling indicates that an additional 581 MW [modelled] of embedded generation was also
+     disconnected, either part of the LFDD scheme or via another mechanism, resulting in a net reduction
+     in demand of 350 MW [modelled].
+ESO answers to E3C questions (Appendix M; data available on 28 August 2019)
+E14  Answer 7: approximately 500 MW [estimated] of embedded generation was lost in the incident, estimated
+     from the change in flows between the transmission and distribution networks in metered data from the
+     ESO's IEMS system, corrected for the frequency characteristics of demand and for frequency response
+     services in the distribution network; further analysis was to determine whether a split between RoCoF
+     and vector shift could be made.
+E3C interim report (October 2019)
+E15  The ESO technical report states that approximately 600 MW [estimated] of embedded generation was also
+     disconnected at this point, either as part of the LFDD scheme or via another mechanism, resulting in
+     a net reduction in demand of 350 MW [reported].
+Ofgem report dated 3 January 2020
+E16  2.4.6: the frequency fell at a rate of change of frequency (RoCoF) above 0.125 Hz/s [reported]; some
+     distributed generators have loss of mains protection triggered by RoCoF set at this rate; as a
+     result, an estimated 350-430 MW [estimated] of distributed generation tripped off unnecessarily,
+     based on information provided by the ESO.
+E17  footnote 19 (to 2.4.6): this has been inferred by the ESO from a 500 MW [estimated] increase in
+     transformer loadings at the interface with the distribution network; the ESO estimated
+     150 MW [estimated] of vector shift and attributed the remainder to RoCoF; further ESO modelling
+     suggests the total from vector shift and RoCoF could have been up to 580 MW [modelled].
+E18  2.4.11 and footnote 20: there was a further net reduction in generation of 200 MW [reported] at
+     49 Hz [reported]; some distributed generators tripped due to protection set to activate when the
+     frequency falls to 49 Hz [reported], which could be the cause; the figure is net of demand
+     disconnection, such as trains and large industrial customers.
+E19  2.4.12-2.4.13: after system frequency dropped below 48.8 Hz [reported], triggering Stage 1 of LFDD,
+     the ESO reported that the net demand reduction seen by the transmission system was only
+     350 MW [reported]; this indicates that approximately 550 MW [estimated] of additional distributed
+     generation was lost at this point.
+E20  3.30: lower bound for total estimated distributed generation lost across the event is
+     1,300 MW [estimated], and the loss could be as high as 1,500 MW [estimated].
+E21  3.31: at least 500 MW [estimated] of distributed generation is estimated to have been lost due to
+     loss of mains protection settings (RoCoF and vector shift) in the first second after the fault; some
+     generators with capacities greater than 5 MW [reported] were reported to have de-loaded during the
+     event and the cause is still to be determined precisely.
+E22  3.32 and footnote 27: in excess of 200 MW [reported] of distributed generation tripped off when
+     system frequency reached 49 Hz [reported]; significantly more may have tripped at this point, as the
+     modelling is net of demand that was simultaneously disconnected such as the trains.
+E3C final report (January 2020)
+E23  section 1: five significant modes of embedded generator loss: vector shift, which disconnected
+     approximately 150 MW [estimated]; RoCoF protection, which disconnected between 350-430 MW [reported];
+     embedded generation shutting down at a frequency of 49 Hz [reported], not expected, resulting in a
+     further net reduction of 200 MW [reported]; an unexpected increase in electricity demand in parallel
+     with the loss of generation, attributed to the de-loading or tripping of 100 MW [reported] of
+     embedded generation, the cause unknown at present; and the final loss, as reported in the ESO
+     technical report, of 550 MW [reported], when the LFDD scheme was triggered. In total across the
+     event, the loss of embedded generation is estimated to be in the range of
+     1300 MW to 1500 MW [estimated].

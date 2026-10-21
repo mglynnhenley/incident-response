@@ -1,0 +1,1593 @@
+{
+ "builder_version": "1.0.0",
+ "bundle": "system_response",
+ "documents": {
+  "R05": {
+   "artifacts": {
+    "R05/app_p40_fig3_onshore.csv": {
+     "category_labels": {
+      "file": "source_catalogue/extracted/APP-p40-fig3_timebase.csv",
+      "sha256": "250064dfbbf38d728165f33f45f06c1a65da6a1a429db572960480ae10b8f62d"
+     },
+     "extraction_method": "script",
+     "fit": {
+      "sweeps": 6,
+      "vertices_flagged": {
+       "APP-p40-fig3/HOW_V1": {
+        "ambiguous_overlap": 5
+       },
+       "APP-p40-fig3/HOW_V2": {
+        "ambiguous_overlap": 3
+       },
+       "APP-p40-fig3/HOW_V3": {},
+       "APP-p40-fig3/HOW_active_MW": {},
+       "APP-p40-fig3/HOW_reactive_MVAr": {
+        "occluded": 15
+       }
+      },
+      "x_offset_check": {
+       "best_offset_px": 0.13,
+       "offsets_px": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+       ],
+       "relative_loss": [
+        4.6555,
+        2.0916,
+        1.0,
+        1.1379,
+        3.1785
+       ]
+      }
+     },
+     "image": {
+      "decoded_pixels_sha256": "88d14497420d08c25779a1ea35a0cdddb7cc43118d97d1ba28902c3920051a6f",
+      "native_dpi": 195.8,
+      "native_px": [
+       1233,
+       743
+      ],
+      "page_bbox_pt": [
+       59.6,
+       223.69,
+       513.1,
+       496.99
+      ],
+      "pdf_page": 40,
+      "render_check": {
+       "fraction_pixels_diff_gt_96": 0.01728,
+       "mean_abs_diff": 4.58,
+       "method": "page region rendered by MuPDF at the raster's native resolution and compared with the decoded raster",
+       "rendered_px": [
+        1234,
+        744
+       ]
+      },
+      "xref": 142
+     },
+     "rows": 335,
+     "script": "builder/system_response/digitise/build_r05.py",
+     "series": [
+      "APP-p40-fig3/HOW_V1",
+      "APP-p40-fig3/HOW_V2",
+      "APP-p40-fig3/HOW_V3",
+      "APP-p40-fig3/HOW_active_MW",
+      "APP-p40-fig3/HOW_reactive_MVAr"
+     ],
+     "sha256": "df47ed059e036b015201fd59479f2411f687ee8ae256f9338922cdc84c38f568",
+     "sources": [
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": "Figure 3 – Showing Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      }
+     ],
+     "transformation": "native raster -> axis calibration from printed ticks -> analysis-by-synthesis polyline fit -> per-sample value and uncertainty",
+     "value_status": "digitised"
+    },
+    "R05/app_p41_fig4_offshore_1b.csv": {
+     "category_labels": {
+      "file": "source_catalogue/extracted/APP-p41-fig4_timebase.csv",
+      "sha256": "c9758d2922f6aa8914eca86e77a9f1090351033ffddf3ce724e919c072668f79"
+     },
+     "extraction_method": "script",
+     "fit": {
+      "sweeps": 6,
+      "vertices_flagged": {
+       "APP-p41-fig4/MVAr_PPM1": {
+        "ambiguous_overlap": 17
+       },
+       "APP-p41-fig4/MVAr_PPM2": {
+        "ambiguous_overlap": 5
+       },
+       "APP-p41-fig4/MVAr_PPM3": {
+        "ambiguous_overlap": 21
+       },
+       "APP-p41-fig4/MVAr_PPM4": {
+        "ambiguous_overlap": 11
+       },
+       "APP-p41-fig4/MW_OFS": {},
+       "APP-p41-fig4/kV_PPM1_AVE": {
+        "ambiguous_overlap": 12
+       },
+       "APP-p41-fig4/kV_PPM2_AVE": {
+        "ambiguous_overlap": 13
+       },
+       "APP-p41-fig4/kV_PPM3_AVE": {
+        "ambiguous_overlap": 1
+       },
+       "APP-p41-fig4/kV_PPM4_AVE": {
+        "ambiguous_overlap": 1
+       }
+      },
+      "x_offset_check": {
+       "best_offset_px": 0.26,
+       "offsets_px": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+       ],
+       "relative_loss": [
+        4.8014,
+        2.4743,
+        1.3214,
+        1.0,
+        2.4201
+       ]
+      }
+     },
+     "image": {
+      "decoded_pixels_sha256": "ea6853502dad6c04462f318189086a66a454d298e3b6c13bc3669e5783964aac",
+      "native_dpi": 222.6,
+      "native_px": [
+       1402,
+       797
+      ],
+      "page_bbox_pt": [
+       53.6,
+       306.1,
+       507.1,
+       563.9
+      ],
+      "pdf_page": 41,
+      "render_check": {
+       "fraction_pixels_diff_gt_96": 0.014,
+       "mean_abs_diff": 4.65,
+       "method": "page region rendered by MuPDF at the raster's native resolution and compared with the decoded raster",
+       "rendered_px": [
+        1403,
+        798
+       ]
+      },
+      "xref": 145
+     },
+     "rows": 395,
+     "script": "builder/system_response/digitise/build_r05.py",
+     "series": [
+      "APP-p41-fig4/MW_OFS",
+      "APP-p41-fig4/kV_PPM1_AVE",
+      "APP-p41-fig4/kV_PPM2_AVE",
+      "APP-p41-fig4/kV_PPM3_AVE",
+      "APP-p41-fig4/kV_PPM4_AVE"
+     ],
+     "sha256": "4bded5f5eeaf9ed4ebd757f56ec9ffc294a79ad18652a7d4861c7b0211d13557",
+     "sources": [
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": "Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      }
+     ],
+     "transformation": "native raster -> axis calibration from printed ticks -> analysis-by-synthesis polyline fit -> per-sample value and uncertainty",
+     "value_status": "digitised"
+    },
+    "R05/calibration.json": {
+     "extraction_method": "script",
+     "script": "builder/system_response/digitise/build_r05.py",
+     "sha256": "53b2490b1dac7922b4b2fed6b857ceb1d39dc33d2a9c865ad296d7835bd74595",
+     "sources": [
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": "Figure 3 – Showing Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": "Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 7 – Voltage and Active Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 8 – Voltage and Reactive Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      }
+     ],
+     "value_status": "digitised"
+    },
+    "R05/eso_p19_fig7_voltage_active_power.csv": {
+     "category_labels": null,
+     "extraction_method": "script",
+     "fit": {
+      "sweeps": 6,
+      "vertices_flagged": {
+       "ESO-p19-fig7/Hornsea_Voltage": {},
+       "ESO-p19-fig7/Total_Active_Power": {
+        "ambiguous_overlap": 5,
+        "at_axis_top": 2
+       }
+      },
+      "x_offset_check": null
+     },
+     "image": {
+      "decoded_pixels_sha256": "846f9b566309197ed83a847de959f589fb58afe6906712b8d86cdc9e4ddbe135",
+      "native_dpi": 150.0,
+      "native_px": [
+       1007,
+       565
+      ],
+      "page_bbox_pt": [
+       72.0,
+       72.0,
+       555.4,
+       343.2
+      ],
+      "pdf_page": 19,
+      "render_check": {
+       "fraction_pixels_diff_gt_96": 0.01615,
+       "mean_abs_diff": 5.08,
+       "method": "page region rendered by MuPDF at the raster's native resolution and compared with the decoded raster",
+       "rendered_px": [
+        1008,
+        565
+       ]
+      },
+      "xref": 55
+     },
+     "rows": 594,
+     "script": "builder/system_response/digitise/build_r05.py",
+     "series": [
+      "ESO-p19-fig7/Hornsea_Voltage",
+      "ESO-p19-fig7/Total_Active_Power"
+     ],
+     "sha256": "e08569cfb18da7b392b72b18189139ca8da6dc2e3808fab3a6ce1f60dda2f700",
+     "sources": [
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 7 – Voltage and Active Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      }
+     ],
+     "transformation": "native raster -> axis calibration from printed ticks -> analysis-by-synthesis polyline fit -> per-sample value and uncertainty -> resampled every 5 ms",
+     "value_status": "digitised"
+    },
+    "R05/eso_p19_fig8_reactive_power.csv": {
+     "category_labels": null,
+     "extraction_method": "script",
+     "fit": {
+      "sweeps": 6,
+      "vertices_flagged": {
+       "ESO-p19-fig8/Hornsea_Voltage": {},
+       "ESO-p19-fig8/Total_Reactive_Power": {
+        "ambiguous_overlap": 1
+       }
+      },
+      "x_offset_check": null
+     },
+     "image": {
+      "decoded_pixels_sha256": "f98b5199fabb246644de55cc3e72bb634a75adc99ddeb6fd05b7b37d2ba7fb37",
+      "native_dpi": 96.0,
+      "native_px": [
+       641,
+       362
+      ],
+      "page_bbox_pt": [
+       72.0,
+       384.5,
+       552.55,
+       655.75
+      ],
+      "pdf_page": 19,
+      "render_check": {
+       "fraction_pixels_diff_gt_96": 0.00884,
+       "mean_abs_diff": 5.77,
+       "method": "page region rendered by MuPDF at the raster's native resolution and compared with the decoded raster",
+       "rendered_px": [
+        642,
+        363
+       ]
+      },
+      "xref": 57
+     },
+     "rows": 296,
+     "script": "builder/system_response/digitise/build_r05.py",
+     "series": [
+      "ESO-p19-fig8/Total_Reactive_Power"
+     ],
+     "sha256": "9245ff97cc6e95e98a9c8149ba23fe232330657664e791fa094be7244b077bbc",
+     "sources": [
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 8 – Voltage and Reactive Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      }
+     ],
+     "transformation": "native raster -> axis calibration from printed ticks -> analysis-by-synthesis polyline fit -> per-sample value and uncertainty -> resampled every 5 ms",
+     "value_status": "digitised"
+    }
+   },
+   "construction": "Generated by the builder from the digitisation results. Values in the CSVs are read from four raster charts in the ESO report and its Appendix D (Ørsted); nothing is reconstructed or invented. The note describes the series, the method, calibration, uncertainty, clock basis as printed and exclusions. Comparisons of the digitised values with values and times stated in report text (validation.landmark_checks) are kept in this provenance only: the agent compares the records itself (decision 9; decision 20 conflicts stay discoverable from R05 against S01, R03 and S07).",
+   "label": "DIGITISED FROM PUBLISHED CHARTS — NOT ORIGINAL MEASUREMENT DATA",
+   "line_count": 130,
+   "segments": [
+    {
+     "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+     "extraction_method": "framing",
+     "lines": "L1-L10",
+     "sources": [],
+     "transformation": null,
+     "value_status": "framing"
+    },
+    {
+     "content": "Source documents, figures and pages; licence status",
+     "extraction_method": "paraphrase",
+     "lines": "L12-L19",
+     "sources": [
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": "Figure 3 – Showing Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": "Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 7 – Voltage and Active Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 8 – Voltage and Reactive Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      }
+     ],
+     "transformation": null,
+     "value_status": "reported"
+    },
+    {
+     "content": "Artifact list with row and series counts",
+     "extraction_method": "script",
+     "lines": "L21-L27",
+     "sources": [
+      {
+       "pdf_page": null,
+       "printed_page": null,
+       "quote": null,
+       "script": "builder/system_response/digitise/build_r05.py",
+       "section": "CSV row counts",
+       "source_id": "BUILDER"
+      }
+     ],
+     "transformation": null,
+     "value_status": "digitised"
+    },
+    {
+     "content": "Column definitions",
+     "extraction_method": "framing",
+     "lines": "L29-L40",
+     "sources": [],
+     "transformation": null,
+     "value_status": "framing"
+    },
+    {
+     "content": "APP Figure 3: what the series are (titles, legends, axis titles transcribed from the chart image)",
+     "extraction_method": "transcription",
+     "lines": "L42-L48",
+     "sources": [
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": "Figure 3 – Showing Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": "Figure 3 (above) shows NETS voltage in the 400kV substation",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": null,
+       "section": "APP p40 Figure 3 chart image (raster, PDF xref 142)",
+       "source_id": "APP",
+       "transcribed_from_image": "title 'Hornsea - 16:52, 9th August 2019'; legends HOW V1/V2/V3, HOW active MW, HOW reactive MVAr; axes 'Voltage (kV)', 'Reactive power (MVArs)', 'Time (mm:ss:milli)'"
+      }
+     ],
+     "transformation": null,
+     "value_status": "reported"
+    },
+    {
+     "content": "APP Figure 4: what the series are",
+     "extraction_method": "transcription",
+     "lines": "L49-L54",
+     "sources": [
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": "Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": "Figure 4 (below) depicts the offshore conditions at Hornsea 1B (circuit Z12)",
+       "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019)",
+       "source_id": "APP"
+      },
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": null,
+       "section": "APP p41 Figure 4 chart image (raster, PDF xref 145)",
+       "source_id": "APP",
+       "transcribed_from_image": "title 'Hornsea 1B - De-load event, voltage vs MW vs MVAr'; legends kV_PPM1_AVE..kV_PPM4_AVE, MW_OFS, MVAr_PPM1..MVAr_PPM4; axes 'Voltage (kV)', 'Active and Reactive Power (MW/MVAr)', 'Time (hh:mm:ss:msms)'"
+      }
+     ],
+     "transformation": null,
+     "value_status": "reported"
+    },
+    {
+     "content": "ESO Figures 7 and 8: what the series are",
+     "extraction_method": "transcription",
+     "lines": "L55-L61",
+     "sources": [
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 7 – Voltage and Active Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": "Figure 8 – Voltage and Reactive Power at Hornsea",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      },
+      {
+       "pdf_page": 18,
+       "printed_page": 19,
+       "quote": "the reaction of Hornsea wind farm as seen at the onshore connection point",
+       "section": "4.2 Generation Performance – Hornsea",
+       "source_id": "ESO"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": null,
+       "section": "ESO p19 Figure 7 chart image (raster, PDF xref 55)",
+       "source_id": "ESO",
+       "transcribed_from_image": "legends 'Hornsea Voltage', 'Total Active Power'; axes 'Voltage (kV)', 'Active Power (MW)', 'Time'; tick labels 16:52:33.25 ... 16:52:34.25"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": null,
+       "section": "ESO p19 Figure 8 chart image (raster, PDF xref 57)",
+       "source_id": "ESO",
+       "transcribed_from_image": "legends 'Hornsea Voltage', 'Total Reactive Power'; right axis 'Rective Power (MVAr)'"
+      }
+     ],
+     "transformation": null,
+     "value_status": "reported"
+    },
+    {
+     "content": "Digitisation method",
+     "extraction_method": "script",
+     "lines": "L63-L80",
+     "sources": [
+      {
+       "pdf_page": null,
+       "printed_page": null,
+       "quote": null,
+       "script": "builder/system_response/digitise/build_r05.py",
+       "section": "extraction, calibration, analysis-by-synthesis fit, QA",
+       "source_id": "BUILDER"
+      }
+     ],
+     "transformation": null,
+     "value_status": "digitised"
+    },
+    {
+     "content": "Calibration fit summary per chart",
+     "extraction_method": "script",
+     "lines": "L82-L90",
+     "sources": [
+      {
+       "pdf_page": null,
+       "printed_page": null,
+       "quote": null,
+       "script": "builder/system_response/digitise/build_r05.py",
+       "section": "axis calibration",
+       "source_id": "BUILDER"
+      }
+     ],
+     "transformation": null,
+     "value_status": "digitised"
+    },
+    {
+     "content": "Uncertainty model and its range per chart",
+     "extraction_method": "script",
+     "lines": "L92-L102",
+     "sources": [
+      {
+       "pdf_page": null,
+       "printed_page": null,
+       "quote": null,
+       "script": "builder/system_response/digitise/build_r05.py",
+       "section": "uncertainty terms",
+       "source_id": "BUILDER"
+      }
+     ],
+     "transformation": null,
+     "value_status": "digitised"
+    },
+    {
+     "content": "Clock basis of each chart as printed and the BST reading used in time_bst_iso",
+     "extraction_method": "transcription",
+     "lines": "L104-L114",
+     "sources": [
+      {
+       "pdf_page": 40,
+       "printed_page": null,
+       "quote": null,
+       "section": "APP p40 Figure 3 chart image (raster, PDF xref 142)",
+       "source_id": "APP",
+       "transcribed_from_image": "title 'Hornsea - 16:52, 9th August 2019'; x labels '52:33.0' ... '52:34.3' (5 each)"
+      },
+      {
+       "pdf_page": 41,
+       "printed_page": null,
+       "quote": null,
+       "section": "APP p41 Figure 4 chart image (raster, PDF xref 145)",
+       "source_id": "APP",
+       "transcribed_from_image": "x labels '16:52:33.211' ... '16:52:33.999'"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": null,
+       "section": "ESO p19 Figure 7 chart image (raster, PDF xref 55)",
+       "source_id": "ESO",
+       "transcribed_from_image": "tick labels 16:52:33.25, 16:52:33.50, 16:52:33.75, 16:52:34.00, 16:52:34.25"
+      },
+      {
+       "pdf_page": 19,
+       "printed_page": 20,
+       "quote": null,
+       "section": "ESO p19 Figure 8 chart image (raster, PDF xref 57)",
+       "source_id": "ESO",
+       "transcribed_from_image": "tick labels 16:52:33.25, 16:52:33.50, 16:52:33.75, 16:52:34.00, 16:52:34.25"
+      }
+     ],
+     "transformation": "Catalogue transcription of the category labels (extracted/*_timebase.csv) re-read visually against the native rasters for this build. Only what each chart prints is stated; comparisons with times written in report text are left to the reader (decision 9).",
+     "value_status": "digitised"
+    },
+    {
+     "content": "Series and samples deliberately not digitised, with reasons",
+     "extraction_method": "script",
+     "lines": "L116-L124",
+     "sources": [
+      {
+       "pdf_page": null,
+       "printed_page": null,
+       "quote": null,
+       "script": "builder/system_response/digitise/build_r05.py",
+       "section": "occlusion and exclusion decisions",
+       "source_id": "BUILDER"
+      }
+     ],
+     "transformation": null,
+     "value_status": "digitised"
+    },
+    {
+     "content": "Citation help",
+     "extraction_method": "framing",
+     "lines": "L126-L130",
+     "sources": [],
+     "transformation": null,
+     "value_status": "framing"
+    }
+   ],
+   "text_file": "R05/R05.txt",
+   "text_sha256": "8e01c17717c8468f9edf4458394498f09e2392b7dc9ce51a11fabadc7ea99b8a"
+  }
+ },
+ "evidence_id": "R05",
+ "generated_by": "builder/system_response/digitise/build_r05.py",
+ "label": "DIGITISED FROM PUBLISHED CHARTS — NOT ORIGINAL MEASUREMENT DATA",
+ "rows_fragment": {
+  "file": "builder/system_response/rows/r05_hornsea_traces.jsonl",
+  "rows": 10,
+  "sha256": "bd1f4cc460abb1aa96d05bb6b0adb3d4387369e869f968104c1ec6399acf09e5"
+ },
+ "sources": {
+  "APP": {
+   "file": "builder_only/sources/ESO_appendices_2019.pdf",
+   "licence": "No open licence stated in the document; PDF and chart images are not redistributed in the environment, only values read from the charts, with attribution.",
+   "published": "2019-09-06",
+   "retrieved_date_utc": "2026-10-20",
+   "sha256": "33d5dab5fa9b8de42ec72d2453037aa897192ba58e1790f3f37ce57f480492a3",
+   "title": "Appendices to the Technical Report on the events of 9 August 2019 (Appendix D: Ørsted Technical Report for National Grid ESO, dated 5 September 2019)",
+   "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_appendices_-_final.pdf"
+  },
+  "BUILDER": {
+   "builder_version": "1.0.0",
+   "file": "builder/system_response/digitise/build_r05.py",
+   "kind": "script",
+   "title": "R05 digitisation builder (with r05_core.py, r05_figures.py, r05_checks.py, r05_text.py)"
+  },
+  "ESO": {
+   "file": "builder_only/sources/ESO_technical_report_2019.pdf",
+   "licence": "No open licence stated in the document; PDF and chart images are not redistributed in the environment, only values read from the charts, with attribution.",
+   "published": "2019-09-06",
+   "retrieved_date_utc": "2026-10-20",
+   "sha256": "4ceee8ac7f32fbd16c712e7eed4942880f0f0a477424ae026b757a85d76da81e",
+   "title": "National Grid ESO, Technical Report on the events of 9 August 2019",
+   "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_final.pdf"
+  },
+  "SOURCE-CATALOGUE": {
+   "files": {
+    "source_catalogue/extracted/APP-p40-fig3_timebase.csv": "250064dfbbf38d728165f33f45f06c1a65da6a1a429db572960480ae10b8f62d",
+    "source_catalogue/extracted/APP-p41-fig4_timebase.csv": "c9758d2922f6aa8914eca86e77a9f1090351033ffddf3ce724e919c072668f79"
+   },
+   "kind": "builder_input",
+   "title": "Source catalogue transcription of the category-axis labels (re-read visually against the native rasters)"
+  }
+ },
+ "validation": {
+  "eso_fig7_vs_fig8_voltage": {
+   "best_lag_ms": 0,
+   "max_abs_difference_kV_at_zero_lag": 1.268,
+   "rms_difference_kV_at_best_lag": 0.158,
+   "rms_difference_kV_at_zero_lag": 0.158,
+   "samples_compared": 296
+  },
+  "excluded": [
+   {
+    "figure_id": "APP-p41-fig4",
+    "reason": "The four per-PPM reactive-power traces lie within a few pixels of each other for most of the event, MVAr_PPM1 and MVAr_PPM4 are drawn in the same colour, and repeated fits did not assign the overlapping strokes to the same series consistently (QA overlays showed strokes swapped between series after the de-load). They are not digitised rather than guessed.",
+    "series": [
+     "MVAr_PPM1",
+     "MVAr_PPM2",
+     "MVAr_PPM3",
+     "MVAr_PPM4"
+    ]
+   },
+   {
+    "figure_id": "ESO-p19-fig8",
+    "reason": "Same quantity as the voltage in ESO p19 Figure 7, drawn at lower resolution; digitised only to cross-check the two charts' axes, not written out.",
+    "series": [
+     "Hornsea Voltage"
+    ]
+   }
+  ],
+  "landmark_checks": [
+   {
+    "check_id": "F3-MW-pre",
+    "difference": -5.1,
+    "digitised_uncertainty": 5.8,
+    "digitised_value": 793.9,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea reduces active power from 799MW to 400MW before returning to 799MW",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea reduces active power from 799MW to 400MW before returning to 799MW",
+    "reference_value": 799.0,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "series_id": "APP-p40-fig3/HOW_active_MW",
+    "status": "consistent",
+    "times_as_printed": [
+     "52:33.0",
+     "52:33.4"
+    ],
+    "tolerance": 10.0,
+    "unit": "MW",
+    "what": "Fig 3 active power, level before the disturbance (samples 0-22)"
+   },
+   {
+    "check_id": "F3-MW-dip",
+    "difference": -15.0,
+    "digitised_uncertainty": 5.8,
+    "digitised_value": 385.0,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea reduces active power from 799MW to 400MW before returning to 799MW",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea reduces active power from 799MW to 400MW before returning to 799MW",
+    "reference_value": 400.0,
+    "samples": [
+     32
+    ],
+    "series_id": "APP-p40-fig3/HOW_active_MW",
+    "status": "consistent",
+    "times_as_printed": [
+     "52:33.6",
+     "52:33.6"
+    ],
+    "tolerance": 30.0,
+    "unit": "MW",
+    "what": "Fig 3 active power, lowest value during the oscillation (samples 23-35)"
+   },
+   {
+    "check_id": "F3-MW-post",
+    "difference": 1.0,
+    "digitised_uncertainty": 5.8,
+    "digitised_value": 63.0,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea 1A remained in operation at 62MW active power output",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea 1A remained in operation at 62MW active power output",
+    "reference_value": 62.0,
+    "samples": [
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69
+    ],
+    "series_id": "APP-p40-fig3/HOW_active_MW",
+    "status": "consistent",
+    "times_as_printed": [
+     "52:33.9",
+     "52:34.3"
+    ],
+    "tolerance": 8.0,
+    "unit": "MW",
+    "what": "Fig 3 active power, level after the de-load (samples 45-69)"
+   },
+   {
+    "check_id": "F3-Q-pre",
+    "difference": -34.7,
+    "digitised_uncertainty": 5.8,
+    "digitised_value": -34.3,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+     "source_id": "ESO"
+    },
+    "reference_text": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+    "reference_value": 0.4,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     19,
+     20,
+     21,
+     22
+    ],
+    "series_id": "APP-p40-fig3/HOW_reactive_MVAr",
+    "status": "differs (kept as a source conflict)",
+    "times_as_printed": [
+     "52:33.0",
+     "52:33.4"
+    ],
+    "tolerance": 10.0,
+    "unit": "MVAr",
+    "what": "Fig 3 reactive power before the disturbance (visible samples 0-22)"
+   },
+   {
+    "check_id": "F3-Q-min",
+    "difference": 51.8,
+    "digitised_uncertainty": 10.2,
+    "digitised_value": -508.2,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea now absorbs ~560MVAr",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea now absorbs ~560MVAr",
+    "reference_value": -560.0,
+    "samples": [
+     36
+    ],
+    "series_id": "APP-p40-fig3/HOW_reactive_MVAr",
+    "status": "differs (kept as a source conflict)",
+    "times_as_printed": [
+     "52:33.7",
+     "52:33.7"
+    ],
+    "tolerance": 40.0,
+    "unit": "MVAr",
+    "what": "Fig 3 reactive power, most negative value (samples 23-45)"
+   },
+   {
+    "check_id": "F3-V-pre",
+    "difference": 2.29,
+    "digitised_uncertainty": 0.19,
+    "digitised_value": 402.29,
+    "reference_source": {
+     "pdf_page": 40,
+     "quote": "Figure 3 (above) shows NETS voltage in the 400kV substation initially steady at ~400kV",
+     "source_id": "APP"
+    },
+    "reference_text": "Figure 3 (above) shows NETS voltage in the 400kV substation initially steady at ~400kV",
+    "reference_value": 400.0,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "series_id": "APP-p40-fig3/HOW_V1..V3",
+    "status": "consistent",
+    "times_as_printed": [
+     "52:33.0",
+     "52:33.4"
+    ],
+    "tolerance": 5.0,
+    "unit": "kV",
+    "what": "Fig 3 onshore voltage before the disturbance (mean of the three traces' medians)"
+   },
+   {
+    "check_id": "F3-V-394",
+    "difference": -2.02,
+    "digitised_uncertainty": 0.46,
+    "digitised_value": 391.98,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "voltage to ~394kV) and then injecting MVArs again",
+     "source_id": "APP"
+    },
+    "reference_text": "voltage to ~394kV) and then injecting MVArs again",
+    "reference_value": 394.0,
+    "samples": [
+     36
+    ],
+    "series_id": "APP-p40-fig3/HOW_V1",
+    "status": "consistent",
+    "times_as_printed": [
+     "52:33.7",
+     "52:33.7"
+    ],
+    "tolerance": 3.0,
+    "unit": "kV",
+    "what": "Fig 3 lowest onshore voltage while reactive power is most negative (samples 35-38)"
+   },
+   {
+    "check_id": "F4-MW-pre",
+    "difference": -0.35,
+    "digitised_uncertainty": 1.6,
+    "digitised_value": 399.65,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Prior to the event, Hornsea 1B is operating at 400MW",
+     "source_id": "APP"
+    },
+    "reference_text": "Prior to the event, Hornsea 1B is operating at 400MW",
+    "reference_value": 400.0,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "series_id": "APP-p41-fig4/MW_OFS",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:33.211",
+     "16:52:33.463"
+    ],
+    "tolerance": 5.0,
+    "unit": "MW",
+    "what": "Fig 4 MW_OFS before the disturbance (samples 0-25)"
+   },
+   {
+    "check_id": "F4-MW-post",
+    "difference": -4.8,
+    "digitised_uncertainty": 1.5,
+    "digitised_value": -4.8,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "all WTGs on Hornsea 1B and Hornsea 1C reduce to 0MW",
+     "source_id": "APP"
+    },
+    "reference_text": "all WTGs on Hornsea 1B and Hornsea 1C reduce to 0MW",
+    "reference_value": 0.0,
+    "samples": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ],
+    "series_id": "APP-p41-fig4/MW_OFS",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:33.868",
+     "16:52:33.999"
+    ],
+    "tolerance": 8.0,
+    "unit": "MW",
+    "what": "Fig 4 MW_OFS after the de-load (samples 65-78)"
+   },
+   {
+    "check_id": "F4-kV-min",
+    "difference": 1.18,
+    "digitised_uncertainty": 0.25,
+    "digitised_value": 21.18,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea 1B system voltage falls to ~20kV",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea 1B system voltage falls to ~20kV",
+    "reference_value": 20.0,
+    "samples": [
+     42
+    ],
+    "series_id": "APP-p41-fig4/kV_PPM4_AVE",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:33.636",
+     "16:52:33.636"
+    ],
+    "tolerance": 2.5,
+    "unit": "kV",
+    "what": "Fig 4 lowest 34 kV collection-system voltage over the four PPMs"
+   },
+   {
+    "check_id": "F4-kV-pre",
+    "difference": 0.26,
+    "digitised_uncertainty": 0.17,
+    "digitised_value": 34.26,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "target voltage 34kV",
+     "source_id": "APP"
+    },
+    "reference_text": "target voltage 34kV",
+    "reference_value": 34.0,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "series_id": "APP-p41-fig4/kV_PPM1..4_AVE",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:33.211",
+     "16:52:33.463"
+    ],
+    "tolerance": 0.6,
+    "unit": "kV",
+    "what": "Fig 4 collection-system voltage before the disturbance (mean of PPM medians)"
+   },
+   {
+    "check_id": "E7-P-pre",
+    "difference": -3.7,
+    "digitised_uncertainty": 4.6,
+    "digitised_value": 795.3,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+     "source_id": "ESO"
+    },
+    "reference_text": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+    "reference_value": 799.0,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ],
+    "series_id": "ESO-p19-fig7/Total_Active_Power",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:33.005",
+     "16:52:33.395"
+    ],
+    "tolerance": 10.0,
+    "unit": "MW",
+    "what": "ESO Fig 7 active power before 16:52:33.40 (axis reading)"
+   },
+   {
+    "check_id": "E7-P-post",
+    "difference": -2.0,
+    "digitised_uncertainty": 4.6,
+    "digitised_value": 60.0,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "Hornsea stabilised at 62MW and injecting 21 MVAR",
+     "source_id": "ESO"
+    },
+    "reference_text": "Hornsea stabilised at 62MW and injecting 21 MVAR",
+    "reference_value": 62.0,
+    "samples": [
+     199,
+     200,
+     201,
+     202,
+     203,
+     204,
+     205,
+     206,
+     207,
+     208,
+     209,
+     210,
+     211,
+     212,
+     213,
+     214,
+     215,
+     216,
+     217,
+     218,
+     219,
+     220,
+     221,
+     222,
+     223,
+     224,
+     225,
+     226,
+     227,
+     228,
+     229,
+     230,
+     231,
+     232,
+     233,
+     234,
+     235,
+     236,
+     237,
+     238,
+     239,
+     240,
+     241,
+     242,
+     243,
+     244,
+     245,
+     246,
+     247,
+     248,
+     249,
+     250,
+     251,
+     252,
+     253,
+     254,
+     255,
+     256,
+     257,
+     258,
+     259,
+     260,
+     261,
+     262,
+     263,
+     264,
+     265,
+     266,
+     267,
+     268,
+     269,
+     270,
+     271,
+     272,
+     273,
+     274,
+     275,
+     276,
+     277,
+     278,
+     279,
+     280,
+     281,
+     282,
+     283,
+     284,
+     285,
+     286,
+     287,
+     288,
+     289,
+     290,
+     291,
+     292,
+     293,
+     294,
+     295,
+     296
+    ],
+    "series_id": "ESO-p19-fig7/Total_Active_Power",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:34.000",
+     "16:52:34.485"
+    ],
+    "tolerance": 8.0,
+    "unit": "MW",
+    "what": "ESO Fig 7 active power after 16:52:34.00 (axis reading)"
+   },
+   {
+    "check_id": "E7-V-onset",
+    "difference": -0.018,
+    "digitised_value": 33.472,
+    "digitised_value_as_printed": "16:52:33.472",
+    "pre_event_level_kV": 403.35,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "A single (blue) Phase to Earth fault on Eaton Socon",
+     "source_id": "ESO"
+    },
+    "reference_text": "16:52:33.490 single (blue) phase to earth fault (ESO Table 1, source NGET)",
+    "reference_value": 33.49,
+    "series_id": "ESO-p19-fig7/Hornsea_Voltage",
+    "status": "differs (kept as a source conflict): the chart's voltage falls before the fault inception time in the ESO timeline",
+    "threshold_kV": 402.35,
+    "tolerance": null,
+    "unit": "s after 16:52:00 (as printed)",
+    "what": "ESO Fig 7 voltage: first departure of more than 1 kV below its pre-event level"
+   },
+   {
+    "check_id": "E8-Q-pre",
+    "difference": -35.0,
+    "digitised_uncertainty": 10.3,
+    "digitised_value": -34.6,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+     "source_id": "ESO"
+    },
+    "reference_text": "Hornsea was generating 799MW and absorbing 0.4MVAR",
+    "reference_value": 0.4,
+    "samples": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77
+    ],
+    "series_id": "ESO-p19-fig8/Total_Reactive_Power",
+    "status": "differs (kept as a source conflict)",
+    "times_as_printed": [
+     "16:52:33.010",
+     "16:52:33.395"
+    ],
+    "tolerance": 10.0,
+    "unit": "MVAr",
+    "what": "ESO Fig 8 reactive power before 16:52:33.40 (axis reading)"
+   },
+   {
+    "check_id": "E8-Q-min",
+    "difference": -196.1,
+    "digitised_uncertainty": 18.6,
+    "digitised_value": -756.1,
+    "reference_source": {
+     "pdf_page": 41,
+     "quote": "Hornsea now absorbs ~560MVAr",
+     "source_id": "APP"
+    },
+    "reference_text": "Hornsea now absorbs ~560MVAr",
+    "reference_value": -560.0,
+    "samples": [
+     120
+    ],
+    "series_id": "ESO-p19-fig8/Total_Reactive_Power",
+    "status": "differs (kept as a source conflict)",
+    "times_as_printed": [
+     "16:52:33.610",
+     "16:52:33.610"
+    ],
+    "tolerance": 40.0,
+    "unit": "MVAr",
+    "what": "ESO Fig 8 reactive power, most negative value"
+   },
+   {
+    "check_id": "E8-Q-post",
+    "difference": 8.5,
+    "digitised_uncertainty": 10.3,
+    "digitised_value": 29.5,
+    "reference_source": {
+     "pdf_page": 12,
+     "quote": "Hornsea stabilised at 62MW and injecting 21 MVAR",
+     "source_id": "ESO"
+    },
+    "reference_text": "Hornsea stabilised at 62MW and injecting 21 MVAR",
+    "reference_value": 21.0,
+    "samples": [
+     238,
+     239,
+     240,
+     241,
+     242,
+     243,
+     244,
+     245,
+     246,
+     247,
+     248,
+     249,
+     250,
+     251,
+     252,
+     253,
+     254,
+     255,
+     256,
+     257,
+     258,
+     259,
+     260,
+     261,
+     262,
+     263,
+     264,
+     265,
+     266,
+     267,
+     268,
+     269,
+     270,
+     271,
+     272,
+     273,
+     274,
+     275,
+     276,
+     277,
+     278,
+     279,
+     280,
+     281,
+     282,
+     283,
+     284,
+     285,
+     286,
+     287,
+     288,
+     289,
+     290,
+     291,
+     292,
+     293,
+     294,
+     295
+    ],
+    "series_id": "ESO-p19-fig8/Total_Reactive_Power",
+    "status": "consistent",
+    "times_as_printed": [
+     "16:52:34.200",
+     "16:52:34.485"
+    ],
+    "tolerance": 10.0,
+    "unit": "MVAr",
+    "what": "ESO Fig 8 reactive power after 16:52:34.20 (axis reading)"
+   }
+  ],
+  "qa_overlays": "written to GB_DIGITISE_QA_DIR (default <workspace>/.context/digitise_qa); inspected visually",
+  "voltage_onset_threshold_sensitivity_s_after_1652": {
+   "drop_0.5_kV": 33.471,
+   "drop_1.0_kV": 33.472,
+   "drop_2.0_kV": 33.4741
+  }
+ }
+}

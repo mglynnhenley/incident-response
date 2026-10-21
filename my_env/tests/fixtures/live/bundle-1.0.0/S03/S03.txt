@@ -1,0 +1,66 @@
+DOCUMENT S03 — Little Barford power station alarm and sequence-of-events records, 9 August 2019
+Owner/originator: RWE Generation (Little Barford power station)
+Record type: station sequence-of-events (SOE) extract, unit output record and attributed annotations
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: SOE entries are offsets from a datum T recorded by the station's Sequence of Events
+system. The operator gives T = 16:52:34 +/- 0.5 s [reported] without stating a clock basis; it is read
+here as BST (UTC+01:00). The operator states that further work is needed to align T with the datum
+used by the system operator (ESO).
+Value-status legend: [reported] value as stated in the operator's or the system operator's published
+material, including arithmetic on such values (intervals, totals); [estimated] absolute BST time computed
+for this record as T + offset, carrying the +/- 0.5 s uncertainty of T and the inferred BST reading of T;
+[measured] and [illustrative] not used.
+
+PART 1 — STATION
+S1  Little Barford: 740 MW [reported] combined cycle gas turbine (CCGT) station in Bedfordshire,
+    connected to the transmission system at the Eaton Socon 400 kV [reported] substation.
+S2  Units: two gas turbines (GT1A, GT1B) and one steam turbine (ST1C); all three were operating on
+    9 August 2019.
+
+PART 2 — SEQUENCE OF EVENTS (station SOE system; offsets from datum T)
+Seq  Event                                     Offset from T          Derived BST = T + offset (+/- 0.5 s)
+E1   110 V AC UPS -B- general fault alarm      T = 0 ms [reported]    16:52:34.000+01:00 [estimated]
+E2   110 V AC UPS -A- general fault alarm      +3 ms [reported]       16:52:34.003+01:00 [estimated]
+E3   Initiation of ST control system shutdown  +253 ms [reported]     16:52:34.253+01:00 [estimated]
+E4   ST generator breaker open command         +1.16 s [reported]     16:52:35.16+01:00 [estimated]
+E5   ST generator breaker open feedback        +1.185 s [reported]    16:52:35.185+01:00 [estimated]
+E6   GT1A auto shutdown command                +56.583 s [reported]   16:53:30.583+01:00 [estimated]
+E7   GT1A breaker open feedback                +57.620 s [reported]   16:53:31.620+01:00 [estimated]
+E8   GT1B manual shutdown command              +83.897 s [reported]   16:53:57.897+01:00 [estimated]
+E9   GT1B breaker open feedback                +84.613 s [reported]   16:53:58.613+01:00 [estimated]
+SOE note (operator): times are recorded in the station's Sequence of Events system; the operator has
+confidence in the chronology of the events.
+Intervals computed from the offsets above (they do not depend on the datum T): E5 - E1 = 1.185 s [reported];
+E7 - E5 = 56.435 s [reported]; E9 - E7 = 26.993 s [reported]; E8 - E6 = 27.314 s [reported].
+
+PART 3 — UNIT OUTPUT AT TRIP (as published by the system operator, ESO technical report, Table 2)
+U1  ST1C steam turbine: 244 MW [reported]
+U2  GT1A gas turbine: 210 MW [reported]
+U3  GT1B gas turbine: 187 MW [reported]
+U4  Total loss at the station: 641 MW [reported] (arithmetic check: 244 + 210 + 187 = 641 MW).
+
+PART 4 — POST-EVENT ANNOTATIONS (attributed; added after the event, not SOE content)
+Annotation A — operator report "RWE Preliminary Findings Regarding the Event on 9th August 2019",
+dated 30 August 2019:
+A1  Steam turbine: "Our investigations have confirmed that the Steam Turbine tripped due to a
+    discrepancy in the speed signals after the point of the Transmission System fault clearance."
+A2  Steam turbine: a comprehensive investigation of hardware, software, fault handling and diagnostic
+    coverage for the conditions the ST was subjected to during this rare system disturbance is ongoing;
+    additional high-resolution frequency data relevant to Eaton Socon has been received from NGESO.
+A3  Gas turbines: upon initiation of the steam turbine trip the gas turbines went into bypass mode of
+    operation, which is the normal response to allow sustained operation.
+A4  GT1A: "For reasons presently unknown a high-pressure excursion occurred on GT1A resulting in an
+    automated trip." The operator adds that given the prevailing conditions all systems functioned as
+    expected.
+A5  GT1B: "GT1B was manually tripped shortly after as a result of excessive steam pressure."
+A6  Planned: a physical inspection of the bypass system during the forthcoming outage in September 2019
+    to help determine the root cause of the pressure excursions.
+A7  UPS: all UPS units at site functioned correctly to enable continuity of supply to plant equipment;
+    the relevant OEMs confirmed this; the operator does not now believe the UPS were related to the
+    subsequent trip.
+A8  UPS (operator's hypothesis, not an established finding): the UPS initiated a changeover to battery
+    back-up supplies as a consequence of the system disturbance; the exact characteristic of the power
+    supply that caused the switch to battery operation is still to be determined.
+A9  Planned: OEM resilience testing of the UPS during the outage commencing 6 September 2019 [reported],
+    cross-referenced to manufacturing tests (9 November 2017) and commissioning tests (January 2018).

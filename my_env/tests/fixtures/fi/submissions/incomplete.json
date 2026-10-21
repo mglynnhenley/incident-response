@@ -1,0 +1,356 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L38"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.490+01:00",
+      "finding_id": "F01",
+      "statement": "The initiating event was a single-phase (blue phase) to earth fault on one Eaton Socon–Wymondley 400 kV circuit at 16:52:33.490 BST, about 4.5 km from the Wymondley Main end: the middle conductor faulted to the earthed tower (NGET record; R03 times are read as BST, UTC+01:00).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L27"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L30"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L31-L33"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L89-L90"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33+01:00",
+      "finding_id": "F02",
+      "statement": "NGET attributes the fault to a lightning strike: MeteoGroup recorded three almost simultaneous cloud-to-ground strikes at 15:52:33 UTC (16:52:33 BST) close to Willian Arboretum at the Wymondley end of the circuit (largest 33.7 kA), one of them timed with the fault; NGET finds that this activity aligns with its protection data, which place the fault 4.5 km from Wymondley Main.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L48"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L86-L88"
+        }
+      ],
+      "finding_id": "F03",
+      "statement": "Main protection cleared the fault in 70 ms at Wymondley Main (open at 16:52:33.560 BST) and 74 ms at Eaton Socon (open at 16:52:33.564 BST), both within the 80 ms primary-protection clearance time that NGET cites for 400 kV (Grid Code CC.6.2.3.1.1).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L53"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "F04",
+      "statement": "Delayed auto-reclose re-energised the Eaton Socon–Wymondley circuit at 16:52:53 BST, about 20 s after the fault, returning the network to its pre-event configuration; the reclose was the circuit's return to service, not a second initiating fault.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:45+01:00/2019-08-09T16:53:10+01:00"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "row:780"
+        }
+      ],
+      "derivation": "minimum of the R01 samples with 16:52:45 <= t < 16:53:10 BST, computed with pandas in run_python",
+      "event_time": "2019-08-09T16:52:59+01:00",
+      "finding_id": "F20",
+      "quantity": {
+        "basis": "measured, R01 1-s sample",
+        "unit": "Hz",
+        "value": 49.083
+      },
+      "statement": "The first post-fault frequency minimum in R01 is 49.083 Hz at 16:52:59 BST (lowest 1-s sample in 16:52:45-16:53:10 BST).",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:20+01:00/2019-08-09T16:54:30+01:00"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "row:830"
+        }
+      ],
+      "derivation": "minimum of the R01 samples with 16:53:20 <= t < 16:54:30 BST, computed with pandas in run_python",
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F21",
+      "quantity": {
+        "basis": "measured, R01 1-s sample",
+        "unit": "Hz",
+        "value": 48.787
+      },
+      "statement": "The event minimum in R01 is 48.787 Hz at 16:53:49 BST (lowest 1-s sample in 16:53:20-16:54:30 BST).",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:57:10+01:00/2019-08-09T16:57:20+01:00"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "row:1037"
+        }
+      ],
+      "derivation": "first R01 sample after 16:53:49 BST with frequency >= 50.000 Hz, computed in run_python",
+      "event_time": "2019-08-09T16:57:16+01:00",
+      "finding_id": "F22",
+      "quantity": {
+        "basis": "measured, R01 1-s sample",
+        "unit": "Hz",
+        "value": 50.001
+      },
+      "statement": "The first R01 sample at or above 50 Hz after the event minimum is 50.001 Hz at 16:57:16 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:40+01:00/2019-08-09T16:54:14+01:00"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "rows:821-856"
+        }
+      ],
+      "derivation": "count of R01 samples with f < 49.000 Hz in 16:52:30-16:58:00 BST, each held 1 s (no gaps), computed in run_python",
+      "finding_id": "F23",
+      "quantity": {
+        "basis": "zero-order hold of 1-s R01 samples strictly below 49 Hz",
+        "unit": "s",
+        "value": 33
+      },
+      "statement": "Frequency was strictly below 49 Hz for 33 s: the 33 one-second samples from 16:53:41 to 16:54:13 BST inclusive, each held for 1 s (zero-order hold), with no missing samples in 16:52:30-16:58:00 BST. The sample at 16:53:40 is exactly 49.000 Hz, so counting samples at or below 49 Hz gives 34 s, and linear interpolation between samples gives about 33.96 s.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "L22-L23"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "L26-L29"
+        },
+        {
+          "evidence_id": "S05",
+          "locator": "L61-L63"
+        }
+      ],
+      "finding_id": "F24",
+      "statement": "R01 holds one measured value per second with explicit +01:00 offsets and values to 0.001 Hz, so the landmark times are known only to the sample, and threshold crossings between samples (for example the ESO timeline's 16:53:49.398 LFDD trigger) cannot be resolved from it.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L133-L135"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L181-L184"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L52-L55"
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-GTR-10"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "rows:821-822"
+        }
+      ],
+      "finding_id": "F100",
+      "statement": "The rail accounts report the Class 700 and 717 (Desiro City) protection as a design setting: Siemens programmed the trains to operate down to a minimum supply frequency of 49.0 Hz (GTR: designed to EN 50163 clause 4.2 note 2, which permits the drives to disconnect at 49 Hz), and ORR reports that the protection disconnected the traction drives within 200 ms of the frequency falling below 49.0 Hz. Both are reported design facts, not measurements: R01's 1-s samples place the first fall below 49 Hz between 16:53:40 and 16:53:41 BST and cannot resolve a 200 ms response.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L18"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L19-L21"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L67-L69"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L86-L89"
+        },
+        {
+          "evidence_id": "S11",
+          "locator": "L19-L23"
+        }
+      ],
+      "finding_id": "F101",
+      "statement": "The Class 700 and 717 trains stopped because of their own on-board protection: GTR reports that all Desiro City Class 700 and 717 units operating on AC suffered a protective shutdown of the 4QC converter when the supply frequency fell below 49 Hz, while the overhead-line traction supply was maintained (GTR identified no OLE supply interruption; the ESO reports that the overhead line power supply operated continually, and that traction power was maintained to the vast majority of the railway).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L120-L127"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L136-L139"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L145-L147"
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-GTR-10"
+        }
+      ],
+      "finding_id": "F102",
+      "statement": "ORR reports that 29 Class 700 and 717 trains were locked out by their on-board protection: 22 were permanently locked out and needed a technician to attend on site, while 7 were restored through driver resets (the Battery Reset Process).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L120-L127"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L19-L21"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L222-L225"
+        }
+      ],
+      "derivation": "29 + 2 = 31 (added in run_python from S08 L120-L127)",
+      "finding_id": "F103",
+      "statement": "ORR counts 31 trains stranded by the drop in frequency, which matches its 29 locked-out trains plus two Class 387 trains that were trapped as a result of the lock-out and did not shut down themselves (GTR: no other AC class, Class 387 included, had power-related issues).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L185-L189"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L62-L66"
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-GTR-05"
+        }
+      ],
+      "finding_id": "F104",
+      "statement": "ORR explains the recovery by software version: units on TCMS software 3.25.x went into a temporary lock-out that drivers could clear with a Battery Reset, while units on 3.27.x went into a permanent lock-out that needed a technician with a laptop. GTR adds that 3.27 removed the driver's ability to recover a Permanent Lockout and that every unit needing a technician was at 3.27 or above.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L155-L156"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L165"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L103-L106"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L230-L232"
+        }
+      ],
+      "derivation": "The eight route rows of ORR Table 1 sum to 371 cancelled and 220 part-cancelled, the printed TOTAL (summed in run_python from S08 L157-L165)",
+      "finding_id": "F107",
+      "statement": "Network Rail's National Daily Report, as tabulated by ORR (Table 1), totals 371 trains cancelled and 220 part-cancelled across eight routes, the same figures the ESO, Ofgem and the E3C give.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L103-L106"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L155-L156"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L165"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L233-L238"
+        }
+      ],
+      "derivation": "The eight route rows of ORR Table 1 sum to 14,428 delay minutes, the printed TOTAL (summed in run_python from S08 L157-L165)",
+      "finding_id": "F108",
+      "statement": "Delays are given on two measures that must not be mixed: 873 trains delayed (ESO; E3C) is a count of trains, while ORR's Table 1 totals 14,428 delay minutes across the eight routes.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "Partial investigation: the initiating event, the measured frequency and the rail impact only. A lightning strike caused a single-phase (blue) to earth fault on one Eaton Socon–Wymondley 400 kV circuit at 16:52:33.490 BST, cleared in 70 ms and 74 ms and reclosed at 16:52:53 [F01, F02, F03, F04]. From the R01 1-s series: first minimum 49.083 Hz at 16:52:59 BST, event minimum 48.787 Hz at 16:53:49, first sample at or above 50 Hz at 16:57:16, and 33 s strictly below 49 Hz [F20, F21, F22, F23, F24]. ORR reports 29 Class 700/717 trains locked out by their own protection, 22 needing a technician, 7 restored by drivers and 31 stranded; 371 trains were cancelled and 220 part-cancelled [F100, F101, F102, F103, F104, F107, F108]. Generation losses, LFDD, restoration, other services, communications, compliance and causes were not examined.",
+    "sections": [
+      {
+        "body": "See [F01, F02, F03, F04].",
+        "heading": "Initiating event"
+      },
+      {
+        "body": "See [F20, F21, F22, F23, F24].",
+        "heading": "Frequency"
+      },
+      {
+        "body": "See [F100, F101, F102, F103, F104, F107, F108].",
+        "heading": "Rail"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

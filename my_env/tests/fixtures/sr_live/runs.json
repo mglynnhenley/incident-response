@@ -1,0 +1,154 @@
+{
+  "_note": "Real system-response runs copied byte for byte from out/ (see README.md). judge_binding is the key the judge output was produced with; the tests re-merge it under the installed key (rebound).",
+  "graded_with": {
+    "key_version": "0.1.1",
+    "key_sha256": "e1c97c76c2f347240a20307c842335fd409ad06a93e8a1f640a49765a3627ef2",
+    "grader_version": "0.1.1"
+  },
+  "runs": [
+    {
+      "run_id": "sr80k-opus55-001",
+      "model": "openrouter/anthropic/claude-opus-5.5",
+      "panel": "panel_sr80k",
+      "output_token_budget": 80000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": true,
+      "source": "out/panel_sr80k/opus55-001/gb2019-sr80k-opus55-001_artifacts/episode",
+      "files": {
+        "submission.json": "6c87cf05551b0a295850d39b1f5d5bb4048be5d6f482f05737bd502074912d72",
+        "state.json": "fa85ae717bea2d3df0529bcd218c90161b591b62089bed55b00b1f2b2720bfa9",
+        "trace.jsonl": "f4a86ca1edf2a21ed7a5ab420ae3822d242c4dfa290d98c23da3c4cc60f4ef2d",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "judge_output.json": "37420441c2626c8149bef61f39a25e6d539db79a0f586454855e1848a003cb1b",
+        "run_summary.json": "46c2360b99a47e107c8e75ad0666f4813eb9ec4245cc060459d607f0373fa356"
+      },
+      "submission_sha256": "6c87cf05551b0a295850d39b1f5d5bb4048be5d6f482f05737bd502074912d72",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": {
+        "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+        "key_sha256": "e1a1f824a8459717870ff20804b56abc63daeb97424eba6c887f5c7efd83a09b",
+        "key_version": "0.1.0",
+        "submission_sha256": "6c87cf05551b0a295850d39b1f5d5bb4048be5d6f482f05737bd502074912d72"
+      }
+    },
+    {
+      "run_id": "sr80k-sonnet55-001",
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "panel": "panel_sr80k",
+      "output_token_budget": 80000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": true,
+      "source": "out/panel_sr80k/sonnet55-001/gb2019-sr80k-sonnet55-001_artifacts/episode",
+      "files": {
+        "submission.json": "2e8de77b773978d7ba5c57ba610c33fac3c3ebe8d155329a27b196be7bced254",
+        "state.json": "dbae8d9133a9418fbd278e8882c00efd383e958e97b527f9c71c8bb303b9aaa5",
+        "trace.jsonl": "e58bfd76149ff723be1afed1f01a4dc61964ce3264c4a607a52375d5b33b7ea4",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "judge_output.json": "786b9d99ca2c456566845dc5ee5ddc5fb94ee7416551d903cd001b1b6cc261e2",
+        "run_summary.json": "b1caa6e0b570911c9a08471d6fb86f907555bfcf52e4d5936286954a2acdd07e"
+      },
+      "submission_sha256": "2e8de77b773978d7ba5c57ba610c33fac3c3ebe8d155329a27b196be7bced254",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": {
+        "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+        "key_sha256": "e1a1f824a8459717870ff20804b56abc63daeb97424eba6c887f5c7efd83a09b",
+        "key_version": "0.1.0",
+        "submission_sha256": "2e8de77b773978d7ba5c57ba610c33fac3c3ebe8d155329a27b196be7bced254"
+      }
+    },
+    {
+      "run_id": "sr80k-haiku45-001",
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "panel": "panel_sr80k",
+      "output_token_budget": 80000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": true,
+      "source": "out/panel_sr80k/haiku45-001/gb2019-sr80k-haiku45-001_artifacts/episode",
+      "files": {
+        "submission.json": "2b04f340184712708140e1558ad858315fc9e818c38c089c80c97b29b7c5a15e",
+        "state.json": "1db9ef4182b40c1fb390461363da3e8fee0c661c11502b64014dd880270233e2",
+        "trace.jsonl": "c6f4d2ef24068f3e269ee19d096c1ab128404716c062df4a557a6020c69d28bf",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "judge_output.json": "0d9962b021b9b4911154f52e874fce228cb2e013a5a8066631e14443eb0fc788",
+        "run_summary.json": "1874274fd6871d1495e3c009e999ea87449a59861b6155baf7bb7e9f0eea134a"
+      },
+      "submission_sha256": "2b04f340184712708140e1558ad858315fc9e818c38c089c80c97b29b7c5a15e",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": {
+        "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+        "key_sha256": "e1a1f824a8459717870ff20804b56abc63daeb97424eba6c887f5c7efd83a09b",
+        "key_version": "0.1.0",
+        "submission_sha256": "2b04f340184712708140e1558ad858315fc9e818c38c089c80c97b29b7c5a15e"
+      }
+    },
+    {
+      "run_id": "sr30k-opus55-001",
+      "model": "openrouter/anthropic/claude-opus-5.5",
+      "panel": "panel_sr_30k",
+      "output_token_budget": 30000,
+      "outcome": "incomplete_submission",
+      "incomplete_reason": "output_token_budget_exhausted",
+      "judged": false,
+      "source": "out/panel_sr_30k/opus55-001/gb2019-sr-opus55-001_artifacts/episode",
+      "files": {
+        "submission.json": "9409056018f82b3e5860afda526df57f5a9bcf170711859efc3651e33f6dfdfe",
+        "state.json": "8752df5a03669cc19838a13ac4bd8c6207a783b299f3fe44924549a97ed3d97c",
+        "trace.jsonl": "e5bd4d13abe26d1d8b99998cd2a83dba0ef9a0554ee5f6e7c1c51f07140aaaa2",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "run_summary.json": "15f003ea7113045a278bbbf7e6ee62aa9c88d90d61e10386bc0fb3a38ddc17e2"
+      },
+      "submission_sha256": "9409056018f82b3e5860afda526df57f5a9bcf170711859efc3651e33f6dfdfe",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": null
+    },
+    {
+      "run_id": "sr30k-sonnet55-001",
+      "model": "openrouter/anthropic/claude-sonnet-5.5",
+      "panel": "panel_sr_30k",
+      "output_token_budget": 30000,
+      "outcome": "incomplete_submission",
+      "incomplete_reason": "output_token_budget_exhausted",
+      "judged": false,
+      "source": "out/panel_sr_30k/sonnet55-001/gb2019-sr-sonnet55-001_artifacts/episode",
+      "files": {
+        "submission.json": "c81969e2586af28cdc04b7005c654c3e9687fbe922ba1b6db314b17653fb14c4",
+        "state.json": "6f226ec3e3ca7a824c43eff5baee025a53cf9d1ff0b90599d662a44b0abd995d",
+        "trace.jsonl": "c2b81f6e867e13a40219d0dbeeac46528082c9070085f3e8f05482a44483bc01",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "run_summary.json": "5868431b565beceadf402f3ce16ba33d16309277bcffd40b8df5ab64f85f14ad"
+      },
+      "submission_sha256": "c81969e2586af28cdc04b7005c654c3e9687fbe922ba1b6db314b17653fb14c4",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": null
+    },
+    {
+      "run_id": "sr30k-haiku45-001",
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "panel": "panel_sr_30k",
+      "output_token_budget": 30000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": false,
+      "source": "out/panel_sr_30k/haiku45-001/gb2019-sr-haiku45-001_artifacts/episode",
+      "files": {
+        "submission.json": "c405c2f193810a95c778a289c95db6ee302d936665e4902c77170b8aa5b1f2e6",
+        "state.json": "4b587f8b1a4b594a6a684dfaef70dd831db59aa64efb0bbb45e2341054f67783",
+        "trace.jsonl": "9c8b5ad718fedc6f35a54997ad876d6733b69ada860184b5d312072bab7c197e",
+        "episode_config.json": "eea6c71958f6f25cc641cf453695032d12bb498f8251e3f9d609e90447b8f377",
+        "run_summary.json": "9394ee1fc93479a89c5a4add5adf18785221a6b2cbcac63ed78dde3cedd70582"
+      },
+      "submission_sha256": "c405c2f193810a95c778a289c95db6ee302d936665e4902c77170b8aa5b1f2e6",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+      "judge_binding": null
+    }
+  ]
+}

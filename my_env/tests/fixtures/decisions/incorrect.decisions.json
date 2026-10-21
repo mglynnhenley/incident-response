@@ -1,0 +1,222 @@
+{
+  "_note": "BUILDER FIXTURE for automated tests of the decisions merge. It is NOT a domain review and must never be used to describe results as validated.",
+  "decisions_schema": "gb2019-grading-decisions/1",
+  "decisions_version": "1",
+  "builder_fixture": true,
+  "reviewer": "grading builder (fixture; not a domain reviewer)",
+  "date": "2026-10-19",
+  "binding": {
+    "submission_sha256": "a03f5fac2992972212a1b52a9050e985921dd3b0c729934afea35216a6de8d07",
+    "key_version": "0.3.1",
+    "key_sha256": "6d7dff6382fbb5c83415516d039d3de86ed679173f00dc75a2d7579a6197fb8b",
+    "bundle_sha256": "ffcbd31c292c13756936947b50909b2d85c555abbc2220bd116df2602e024dd2"
+  },
+  "criteria": {
+    "D1.1": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I01"
+      ],
+      "notes": "wrong initiator"
+    },
+    "D1.2": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [],
+      "notes": "fault time absent"
+    },
+    "D1.3": {
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "I03"
+      ],
+      "notes": "Ofgem summary only"
+    },
+    "D1.4": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I02"
+      ],
+      "notes": "reclose called a second fault"
+    },
+    "D1.N": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I01"
+      ],
+      "notes": "other trip as initiator"
+    },
+    "D2.1": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I10"
+      ],
+      "notes": "400 MW, UTC time as BST"
+    },
+    "D2.2": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "I11"
+      ],
+      "notes": ""
+    },
+    "D2.3": {
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "I12"
+      ],
+      "notes": ""
+    },
+    "D2.4": {
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "I13"
+      ],
+      "notes": "called automatic"
+    },
+    "D2.5": {
+      "content": 0.5,
+      "evidence_support": 0,
+      "finding_ids": [
+        "I11",
+        "I12",
+        "I13"
+      ],
+      "notes": "Hornsea time wrong"
+    },
+    "D3.5": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [],
+      "notes": "absent"
+    },
+    "D4.1": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I32"
+      ],
+      "notes": "DRC asserted"
+    },
+    "D4.2": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I30"
+      ],
+      "notes": "root cause, not mechanism"
+    },
+    "D4.3": {
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "I13",
+        "I31"
+      ],
+      "notes": "GT1B automatic"
+    },
+    "D4.4": {
+      "content": 0,
+      "evidence_support": null,
+      "finding_ids": [
+        "I30",
+        "I31"
+      ],
+      "notes": "SF1 confirmed"
+    }
+  },
+  "assertions": {
+    "I01": {
+      "verdict": "contradicted",
+      "notes": "R03 E2: no power losses"
+    },
+    "I02": {
+      "verdict": "contradicted",
+      "notes": "R03 C8-C9: designed reclose"
+    },
+    "I03": {
+      "verdict": "supported",
+      "notes": "R03 G7"
+    },
+    "I10": {
+      "verdict": "contradicted",
+      "notes": "S01: 799 - 62 = 737 MW reduction"
+    },
+    "I11": {
+      "verdict": "supported"
+    },
+    "I12": {
+      "verdict": "supported"
+    },
+    "I13": {
+      "verdict": "contradicted",
+      "notes": "manual trip"
+    },
+    "I20": {
+      "verdict": "contradicted",
+      "notes": "R01: 49.083 Hz at 16:52:59"
+    },
+    "I21": {
+      "verdict": "contradicted",
+      "notes": "R01: 48.787 Hz"
+    },
+    "I22": {
+      "verdict": "contradicted",
+      "notes": "R01: 16:57:16"
+    },
+    "I23": {
+      "verdict": "contradicted",
+      "notes": "R01: 33 s"
+    },
+    "I30": {
+      "verdict": "unsupported",
+      "notes": "SF1"
+    },
+    "I31": {
+      "verdict": "unsupported",
+      "notes": "SF1"
+    },
+    "I32": {
+      "verdict": "contradicted",
+      "notes": "S01 B1"
+    }
+  },
+  "severe_flags": [
+    {
+      "flag_id": "SF1",
+      "finding_ids": [
+        "I30"
+      ],
+      "confirmed": true,
+      "notes": "fixture"
+    },
+    {
+      "flag_id": "SF1",
+      "finding_ids": [
+        "I31"
+      ],
+      "confirmed": true,
+      "notes": "fixture"
+    },
+    {
+      "flag_id": "SF1",
+      "locations": [
+        "report.executive_summary"
+      ],
+      "confirmed": true,
+      "notes": "fixture"
+    }
+  ],
+  "explanation_quality": {
+    "notes": "fixture: confident but wrong account",
+    "by_dimension": {}
+  }
+}

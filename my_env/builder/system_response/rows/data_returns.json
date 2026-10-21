@@ -1,0 +1,113 @@
+[
+  {
+    "data_type": "embedded_generation_loss_returns",
+    "evidence_id": "S06",
+    "message": "The combined DNO embedded-generation return to ESO, its stated limits, and the published loss estimates listed by source, each in its source's own words.",
+    "party": "DNO",
+    "status": "available"
+  },
+  {
+    "data_type": "feeder_level_lfdd_relay_logs",
+    "message": "Not held in this evidence pack: no published feeder- or relay-level LFDD log was obtained; only the per-area returns tabulated by ESO and the E3C are available.",
+    "party": "DNO",
+    "status": "not_held"
+  },
+  {
+    "data_type": "lfdd_disconnection_and_restoration_returns",
+    "evidence_id": "S05",
+    "message": "Per-area LFDD returns (MW, customers, final restoration time) as tabulated by ESO and the E3C, with DNO-reported relay observations; fields the published tables leave blank stay blank.",
+    "party": "DNO",
+    "status": "available"
+  },
+  {
+    "data_type": "real_time_distributed_generation_telemetry",
+    "message": "Not held in this evidence pack: no real-time output telemetry for distributed generators was obtained. Ofgem states that most DNOs only record generation volumes half-hourly and that DNOs do not monitor distributed generator output in real time.",
+    "party": "DNO",
+    "status": "not_held"
+  },
+  {
+    "data_type": "physical_notifications_event_window",
+    "message": "Not held in this evidence pack: Physical Notification data for 9 August 2019 after settlement period 4 are missing from the publisher's current dataset (its ingestion status resumes on 11 August 2019).",
+    "party": "ELEXON",
+    "status": "not_held"
+  },
+  {
+    "data_type": "control_room_log",
+    "evidence_id": "S07",
+    "message": "Reconstructed control-room log from ESO's published timelines and communication tables, including ESO's earlier (28 August 2019) account.",
+    "party": "ESO",
+    "status": "available"
+  },
+  {
+    "data_type": "engineering_analysis",
+    "evidence_id": "S12",
+    "message": "Published loss accounting, frequency simulation, response and inertia assumptions, and differences between ESO's earlier and final accounts.",
+    "party": "ESO",
+    "status": "available"
+  },
+  {
+    "data_type": "operational_call_record",
+    "evidence_id": "R08",
+    "message": "Transcription of ESO's published diagram of operational calls between its control room, NGET, DNO and Scottish control rooms.",
+    "party": "ESO",
+    "status": "available"
+  },
+  {
+    "data_type": "pmu_wams_traces",
+    "message": "Not held in this evidence pack: no phasor measurement (PMU/WAMS) recording of the event was obtained; the recordings are not published.",
+    "party": "ESO",
+    "status": "not_held"
+  },
+  {
+    "data_type": "lightning_stroke_records",
+    "message": "Not held in this evidence pack: stroke-level lightning records (time, location, peak current) are commercial data and were not obtained; only the figures reported by ESO and NGET are available.",
+    "party": "METEOGROUP",
+    "status": "not_held"
+  },
+  {
+    "data_type": "pmu_wams_traces",
+    "message": "Not held in this evidence pack: no phasor measurement (PMU/WAMS) recording of the event was obtained; the recordings are not published.",
+    "party": "NGET",
+    "status": "not_held"
+  },
+  {
+    "data_type": "protection_and_fault_records",
+    "evidence_id": "R03",
+    "message": "Reconstructed fault, protection, switching and power quality records for the Eaton Socon - Wymondley Main circuit.",
+    "party": "NGET",
+    "status": "available"
+  },
+  {
+    "data_type": "event_log",
+    "evidence_id": "S01",
+    "message": "Reconstructed Hornsea One event log with attributed post-event annotations.",
+    "party": "ORSTED",
+    "status": "available"
+  },
+  {
+    "data_type": "turbine_controller_logs",
+    "message": "Not held in this evidence pack: no turbine-controller or internal control-system log was found in the published sources; the operator's published report is the available account.",
+    "party": "ORSTED",
+    "status": "not_held"
+  },
+  {
+    "data_type": "plant_instrumentation_and_control_records",
+    "message": "Not held in this evidence pack: no station instrumentation or control-system record was found in the published sources; the operator's preliminary findings are the available account.",
+    "party": "RWE",
+    "status": "not_held"
+  },
+  {
+    "data_type": "sequence_of_events",
+    "evidence_id": "S03",
+    "message": "Reconstructed Little Barford sequence-of-events extract (offsets from datum T) with attributed annotations.",
+    "party": "RWE",
+    "status": "available"
+  },
+  {
+    "data_type": "shift_account",
+    "evidence_id": "S04",
+    "message": "Reconstructed Little Barford shift account with attributed operator and regulator statements.",
+    "party": "RWE",
+    "status": "available"
+  }
+]

@@ -1,0 +1,319 @@
+{
+  "blocks": [
+    {
+      "provenance": [
+        {
+          "pdf_page": 29,
+          "printed_page": 29,
+          "quote": "two of its modules were fully installed and the third was partially installed; it therefore had declared a total 800MW power export capability.",
+          "section": "Ofgem section 3, Hornsea 1, 3.19",
+          "source_id": "OFG"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "Prior to the event, Hornsea 1B is operating at 400MW (maximum capacity for that unit)",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "Hornsea One de-loaded from 799MW to 62MW",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-01",
+      "response_text": "Hornsea One was under construction offshore: two modules were fully installed and the third partially, giving a declared export capability of 800 MW [reported]. Before the event Hornsea 1B was operating at 400 MW [reported], its maximum, and the site was generating 799 MW [reported].",
+      "topics": [
+        "pre-event output",
+        "declared capability",
+        "plant configuration"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "Figure 3 (above) shows NETS voltage in the 400kV substation initially steady at ~400kV (16:52:33:000 to 16:52:33:490).",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "the Hornsea One reactive compensation control systems initially inject reactive power (leading MVArs) to boost NETS voltage, before a significant oscillation occurs, absorbing reactive power (>300MVAr which depresses NETS and Hornsea One systems",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "voltage to ~394kV) and then injecting MVArs again. As a consequence, Hornsea reduces active power from 799MW to 400MW before returning to 799MW.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "so the reactive power output reaches ~0MVAr as it rapidly switches from injection and absorption again (16:52:33:700). Hornsea now absorbs ~560MVAr.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-02",
+      "response_text": "The 400 kV voltage was steady at about 400 kV [reported] until 16:52:33:490 [reported]. Our reactive compensation control first injected reactive power to support the voltage, then a significant oscillation followed: we absorbed more than 300 MVAr [reported], depressing the voltage to about 394 kV [reported], and active power fell from 799 MW [reported] to 400 MW [reported] before returning to 799 MW. At 16:52:33:700 [reported] reactive power passed about 0 MVAr and the site then absorbed about 560 MVAr [reported].",
+      "topics": [
+        "sequence",
+        "what happened",
+        "voltage and reactive power",
+        "onshore response"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "In the wind farm 34kV collection cable system the result of this is that the voltage rapidly reduces to 20kV (target voltage 34kV) and all WTGs on Hornsea 1B and Hornsea 1C reduce to 0MW as a result of overcurrent protection in the generators (16:52:33:728 to 16:52:33:835).",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "Hornsea 1B system voltage falls to ~20kV while attempting to maintain full active power which leads to an overcurrent of each WTG connected to Hornsea 1B and Hornsea 1C at the time.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "the WTGs de-load as part of the industry standard protection system to avoid permanent damage to the generators.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "completed the de-load at 15.52.33.835, 107ms later. Following the de-load of Hornsea 1B and Hornsea 1C, Hornsea 1A remained in operation at 62MW active power output.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-03",
+      "response_text": "In the 34 kV [reported] collection system the voltage fell rapidly to 20 kV [reported]. Trying to hold full active power at that voltage overloaded each turbine on Hornsea 1B and 1C, and their overcurrent protection de-loaded them, as the industry standard protection does to avoid permanent damage. The de-load ran from 16:52:33:728 to 16:52:33:835 [reported], 107 ms [reported]; Hornsea 1A stayed in operation at 62 MW [reported].",
+      "topics": [
+        "turbine protection",
+        "offshore turbines",
+        "wind turbines",
+        "offshore response"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 43,
+          "printed_page": null,
+          "quote": "The de-load was caused by an unexpected wind farm control system response, due to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was triggered by the initial event.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Conclusion",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-04",
+      "response_text": "Our report concludes that the de-load was caused by an unexpected wind farm control system response, due to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was triggered by the initial event.",
+      "topics": [
+        "cause",
+        "investigation findings",
+        "explanation"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 20,
+          "printed_page": 21,
+          "quote": "Initially, Orsted understood that the Dynamic Reactive Compensator (DRC) was responsible for the rapid de-load of Hornsea-1. Orsted have since concluded that the DRC worked as designed and was not the cause of the de-load.",
+          "section": "4.2 Generation Performance – Hornsea",
+          "source_id": "ESO"
+        }
+      ],
+      "response_id": "S09-ORS-05",
+      "response_text": "At first we understood the Dynamic Reactive Compensator to be responsible for the rapid de-load. We have since concluded that the DRC worked as designed and was not the cause.",
+      "topics": [
+        "DRC",
+        "dynamic reactive compensator"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 20,
+          "printed_page": 21,
+          "quote": "The configuration of the Hornsea network, with one SGT and one offshore transmission system user asset (OTSUA Circuit) on outage, was a contributory factor as it created a weak internal network environment. Subsequently Orsted have reviewed and reconfigured their network.",
+          "section": "4.2 Generation Performance – Hornsea",
+          "source_id": "ESO"
+        },
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "Hornsea One’s systems identified a weak grid and then detected an unusual voltage disturbance",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-06",
+      "response_text": "Our internal network had one SGT and one OTSUA circuit on outage. That configuration was a contributory factor because it created a weak internal network environment; we have since reviewed and reconfigured it. Our systems identified a weak grid before detecting the voltage disturbance.",
+      "topics": [
+        "network strength",
+        "outage configuration",
+        "SGT",
+        "OTSUA"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "Subsequent to the event in question and as part of this investigation, electrical oscillations at Hornsea One were identified occurring prior to the event (and without causing any de-loading). 10 minutes before",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 42,
+          "printed_page": null,
+          "quote": "Figure 5 – Showing the reactive power output from Hornsea 10 minutes prior to the event in response to a 2% voltage step change",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 42,
+          "printed_page": null,
+          "quote": "In this case the response from Hornsea shows a damped oscillatory response from the overall voltage control systems.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-07",
+      "response_text": "After the event we identified electrical oscillations before it that caused no de-loading: 10 minutes [reported] before, the reactive power response to a 2% [reported] voltage step change was a damped oscillatory response from the overall voltage control systems.",
+      "topics": [
+        "earlier in the day",
+        "before the fault",
+        "plant behaviour before the event"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 42,
+          "printed_page": null,
+          "quote": "The software update performed on the 10 August 2019 was previously agreed with the manufacturer",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 42,
+          "printed_page": null,
+          "quote": "This software update mitigates the observed behaviour of Hornsea One",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 29,
+          "quote": "which Ørsted informed us it had planned to carry out on 13 August but implemented on 10 August immediately following the event.",
+          "section": "Ofgem section 3, Hornsea 1, 3.22",
+          "source_id": "OFG"
+        }
+      ],
+      "response_id": "S09-ORS-08",
+      "response_text": "A control system software update performed on 10 August 2019 [reported], previously agreed with the manufacturer, mitigates the observed behaviour. Ofgem records, from information we gave it, that the update had been planned for 13 August [reported].",
+      "topics": [
+        "mitigation",
+        "changes after the event",
+        "remedial action"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 42,
+          "printed_page": null,
+          "quote": "Prior to the event, each stage of Hornsea One had been successfully modelled and physically tested in line with all grid code requirements. While the potential for oscillations had been considered",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 29,
+          "quote": "modelling it carried out with its equipment manufacturer prior to 9 August suggested that there were performance issues with the voltage control system with Hornsea 1 operating at its full planned 1,200MW capacity. These issues were not discussed with the ESO.",
+          "section": "Ofgem section 3, Hornsea 1, 3.22",
+          "source_id": "OFG"
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 29,
+          "quote": "The issue on 9 August occurred when the wind farm reached generation of 799MW. Prior simulations and discussions had not foreseen such issues would occur at this capacity",
+          "section": "Ofgem section 3, Hornsea 1, 3.22",
+          "source_id": "OFG"
+        }
+      ],
+      "response_id": "S09-ORS-09",
+      "response_text": "Each stage had been modelled and physically tested in line with grid code requirements, and the potential for oscillations had been considered. Ofgem reports, from information we provided, that modelling with our equipment manufacturer before 9 August suggested voltage control performance issues at the full planned 1,200 MW [reported], that these were not discussed with the ESO, and that prior simulations had not foreseen such issues at 799 MW [reported].",
+      "topics": [
+        "prior modelling",
+        "testing",
+        "manufacturer modelling",
+        "compliance studies"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "At the time of publishing Ørsted is unaware of the exact time of the lightning strike",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events, footnote 1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 40,
+          "printed_page": null,
+          "quote": "The lightning strike results in a phase to Earth short circuit at exactly 16:52:33:490.",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "(16:52:33:728 to 16:52:33:835)",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": null,
+          "quote": "began de-loading turbines at 15.52.33.728 and completed the de-load at 15.52.33.835",
+          "section": "Appendix D – Hornsea Technical Report submitted by Ørsted (dated 5 September 2019), Description of events",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-ORS-10",
+      "response_text": "We do not know the exact time of the lightning strike. Our report times the short circuit at 16:52:33:490 [reported] and the de-load at 16:52:33:728 to 16:52:33:835 [reported]; one passage writes the de-load as 15.52.33.728 to 15.52.33.835 [reported].",
+      "topics": [
+        "lightning time",
+        "timestamps",
+        "event times"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "Ørsted",
+  "persona_id": "orsted-hornsea-operations-engineer",
+  "role": "Operations engineer, Hornsea One offshore wind farm",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not covered by the Hornsea One records I can speak to."
+}

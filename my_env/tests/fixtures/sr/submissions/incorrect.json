@@ -1,0 +1,213 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L73-L77"
+        }
+      ],
+      "finding_id": "X01",
+      "statement": "The initiating event was the lightning trip of the Blyth–Eccles–Stella West 400 kV circuit at 16:50:44 BST, which started the loss of generation.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L24"
+        }
+      ],
+      "finding_id": "X02",
+      "quantity": {
+        "basis": "ESO Table 2",
+        "unit": "MW",
+        "value": 1990
+      },
+      "statement": "The ESO's technical report (Table 2) gives the total generation lost as 1,990 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S05",
+          "locator": "L83-L87"
+        }
+      ],
+      "finding_id": "X03",
+      "statement": "Ofgem reports that LFDD disconnected 931 MW of demand.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S05",
+          "locator": "L35"
+        }
+      ],
+      "finding_id": "X04",
+      "statement": "The DNOs reported 892 MW of demand disconnected by LFDD relays.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S06",
+          "locator": "L46-L49"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L20-L21"
+        }
+      ],
+      "derivation": "150 + 350 + 500 + 462 = 1,462 MW",
+      "finding_id": "X05",
+      "statement": "In total 1,462 MW of distributed generation was lost on loss-of-mains protection: 150 MW + 350 MW + 500 MW + 462 MW = 1,462 MW.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L24"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L94-L101"
+        }
+      ],
+      "derivation": "1,878 + 200 + 550 = 2,628 MW",
+      "finding_id": "X06",
+      "statement": "Adding the ESO's 1,878 MW, the further 200 MW at 49 Hz and the 550 MW lost with LFDD gives 1,878 MW + 200 MW + 550 MW = 2,628 MW of generation lost.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L31"
+        }
+      ],
+      "finding_id": "X07",
+      "statement": "The ESO's technical report (Table 3) gives 1,338 MW of secondary response held.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R02",
+          "locator": "L192"
+        }
+      ],
+      "finding_id": "X08",
+      "statement": "ESO Table 4 gives system inertia of 219,632 MVA.s on 9 August.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L59"
+        }
+      ],
+      "finding_id": "X09",
+      "statement": "The root cause of the ST1C trip was a faulty speed sensor, and GT1A tripped because a bypass valve failed to open.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L52"
+        }
+      ],
+      "finding_id": "X10",
+      "statement": "GT1B tripped automatically on high steam pressure, as recorded in the ESO control log entry S07-E14.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L78-L79"
+        }
+      ],
+      "finding_id": "X11",
+      "statement": "The Dynamic Reactive Compensator failed and caused the Hornsea One de-load.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:20+01:00/2019-08-09T16:54:30+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "X12",
+      "quantity": {
+        "basis": "R01",
+        "unit": "Hz",
+        "value": 48.8
+      },
+      "statement": "The frequency minimum was 48.8 Hz at 16:53:49 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:45+01:00/2019-08-09T16:53:10+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:58+01:00",
+      "finding_id": "X13",
+      "quantity": {
+        "basis": "ESO timeline",
+        "unit": "Hz",
+        "value": 49.1
+      },
+      "statement": "The first post-fault minimum was 49.1 Hz at 16:52:58 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:40+01:00/2019-08-09T16:54:14+01:00"
+        }
+      ],
+      "finding_id": "X14",
+      "quantity": {
+        "basis": "estimate from the chart",
+        "unit": "s",
+        "value": 40
+      },
+      "statement": "Frequency was below 49 Hz for 40 s.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L52-L53"
+        }
+      ],
+      "event_time": "2019-08-09T18:34:00+01:00",
+      "finding_id": "X15",
+      "statement": "All demand was restored at 18:34 BST.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "The Blyth–Eccles–Stella West trip at 16:50:44 started the event [X01]. The ESO's Table 2 total is 1,990 MW [X02]; Ofgem reports 931 MW of LFDD disconnection and the DNOs 892 MW [X03, X04]. Distributed generation lost on loss-of-mains protection totalled 1,462 MW, and overall 2,628 MW of generation was lost [X05, X06]. Secondary response held was 1,338 MW per Table 3 and inertia 219,632 MVA.s per Table 4 [X07, X08]. A faulty speed sensor and a failed bypass valve caused the Little Barford trips; GT1B tripped automatically (S07-E14) [X09, X10]. The DRC caused the Hornsea de-load [X11]. Frequency fell to 49.1 Hz and then 48.8 Hz and was below 49 Hz for 40 s [X12, X13, X14]. Demand was restored at 18:34 [X15].",
+    "sections": [
+      {
+        "body": "[X01, X02, X03, X04, X05, X06, X07, X08, X09, X10, X11, X12, X13, X14, X15]",
+        "heading": "Findings"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

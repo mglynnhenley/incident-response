@@ -1,0 +1,1116 @@
+{
+ "charts": [
+  {
+   "annotation_boxes_masked_px": [
+    [
+     146,
+     469,
+     372,
+     598
+    ],
+    [
+     148,
+     44,
+     343,
+     126
+    ],
+    [
+     148,
+     471,
+     370,
+     596
+    ],
+    [
+     752,
+     59,
+     1036,
+     142
+    ],
+    [
+     895,
+     490,
+     1119,
+     554
+    ],
+    [
+     897,
+     492,
+     1117,
+     552
+    ]
+   ],
+   "axes": {
+    "left": {
+     "display_unit_as_printed": "Thousands",
+     "intercept": 426.175454,
+     "max_abs_residual": 0.045351,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 8,
+     "rms_residual": 0.025431,
+     "rms_residual_px": 0.2088,
+     "slope_per_px": -0.121787,
+     "tick_positions": "gridlines",
+     "ticks": [
+      {
+       "pixel": 50.59,
+       "residual": 0.014303,
+       "value": 420.0
+      },
+      {
+       "pixel": 133.0,
+       "residual": -0.022158,
+       "value": 410.0
+      },
+      {
+       "pixel": 214.787,
+       "residual": 0.017231,
+       "value": 400.0
+      },
+      {
+       "pixel": 297.256,
+       "residual": -0.026383,
+       "value": 390.0
+      },
+      {
+       "pixel": 379.0,
+       "residual": 0.018347,
+       "value": 380.0
+      },
+      {
+       "pixel": 461.461,
+       "residual": -0.024352,
+       "value": 370.0
+      },
+      {
+       "pixel": 543.0,
+       "residual": 0.045351,
+       "value": 360.0
+      },
+      {
+       "pixel": 625.667,
+       "residual": -0.022338,
+       "value": 350.0
+      }
+     ],
+     "title_as_printed": "Voltage (kV)"
+    },
+    "right": {
+     "check_value_at_top_and_bottom_gridline": [
+      1501.34,
+      -600.96
+     ],
+     "display_unit_as_printed": "Millions",
+     "intercept": 1686.278853,
+     "max_abs_residual": 2.603839,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 22,
+     "rms_residual": 1.236915,
+     "rms_residual_px": 0.3384,
+     "slope_per_px": -3.655678,
+     "tick_positions": "label centres shifted by the left axis's label-to-gridline offset (0.91 px)",
+     "ticks": [
+      {
+       "pixel": 50.908,
+       "residual": 0.176625,
+       "value": 1500.0
+      },
+      {
+       "pixel": 78.408,
+       "residual": -0.354523,
+       "value": 1400.0
+      },
+      {
+       "pixel": 105.908,
+       "residual": -0.885672,
+       "value": 1300.0
+      },
+      {
+       "pixel": 132.408,
+       "residual": 2.238858,
+       "value": 1200.0
+      },
+      {
+       "pixel": 160.408,
+       "residual": -0.120129,
+       "value": 1100.0
+      },
+      {
+       "pixel": 187.408,
+       "residual": 1.176561,
+       "value": 1000.0
+      },
+      {
+       "pixel": 215.408,
+       "residual": -1.182426,
+       "value": 900.0
+      },
+      {
+       "pixel": 242.408,
+       "residual": 0.114264,
+       "value": 800.0
+      },
+      {
+       "pixel": 270.408,
+       "residual": -2.244723,
+       "value": 700.0
+      },
+      {
+       "pixel": 296.908,
+       "residual": 0.879806,
+       "value": 600.0
+      },
+      {
+       "pixel": 324.408,
+       "residual": 0.348658,
+       "value": 500.0
+      },
+      {
+       "pixel": 351.908,
+       "residual": -0.182491,
+       "value": 400.0
+      },
+      {
+       "pixel": 379.408,
+       "residual": -0.713639,
+       "value": 300.0
+      },
+      {
+       "pixel": 406.908,
+       "residual": -1.244788,
+       "value": 200.0
+      },
+      {
+       "pixel": 433.408,
+       "residual": 1.879742,
+       "value": 100.0
+      },
+      {
+       "pixel": 461.408,
+       "residual": -0.479245,
+       "value": 0.0
+      },
+      {
+       "pixel": 488.408,
+       "residual": 0.817445,
+       "value": -100.0
+      },
+      {
+       "pixel": 515.908,
+       "residual": 0.286297,
+       "value": -200.0
+      },
+      {
+       "pixel": 543.408,
+       "residual": -0.244852,
+       "value": -300.0
+      },
+      {
+       "pixel": 571.408,
+       "residual": -2.603839,
+       "value": -400.0
+      },
+      {
+       "pixel": 597.408,
+       "residual": 2.348529,
+       "value": -500.0
+      },
+      {
+       "pixel": 625.408,
+       "residual": -0.010458,
+       "value": -600.0
+      }
+     ],
+     "title_as_printed": "Reactive power (MVArs)"
+    },
+    "x": {
+     "data_implied_offset_check_px": 0.13,
+     "first_and_last_label_as_printed": [
+      "52:33.0",
+      "52:34.3"
+     ],
+     "intercept": -6.165738,
+     "model": "sample_index = intercept + slope * pixel",
+     "n_ticks": 70,
+     "rms_residual_px": 0.0936,
+     "rms_residual_samples": 0.006202,
+     "slope_per_px": 0.066235,
+     "tick_positions": "centres of the rotated category labels",
+     "title_as_printed": "Time (mm:ss:milli)",
+     "type": "category (samples drawn equally spaced; timestamps are labels only)"
+    }
+   },
+   "caption_as_printed": "Figure 3 – Showing Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load",
+   "chart_id": "APP-p40-fig3",
+   "csv": "app_p40_fig3_onshore.csv",
+   "native_raster_dpi_on_page": 195.8,
+   "native_raster_px": [
+    1233,
+    743
+   ],
+   "series": [
+    {
+     "axis": "left",
+     "colour_rgb": [
+      185,
+      212,
+      237
+     ],
+     "legend_as_printed": "HOW V1",
+     "quantity": "onshore 400 kV substation voltage, trace 'HOW V1' (phase or line not stated)",
+     "series_id": "APP-p40-fig3/HOW_V1",
+     "stroke_width_px": 2.67,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "left",
+     "colour_rgb": [
+      150,
+      191,
+      228
+     ],
+     "legend_as_printed": "HOW V2",
+     "quantity": "onshore 400 kV substation voltage, trace 'HOW V2' (phase or line not stated)",
+     "series_id": "APP-p40-fig3/HOW_V2",
+     "stroke_width_px": 2.66,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "left",
+     "colour_rgb": [
+      32,
+      108,
+      177
+     ],
+     "legend_as_printed": "HOW V3",
+     "quantity": "onshore 400 kV substation voltage, trace 'HOW V3' (phase or line not stated)",
+     "series_id": "APP-p40-fig3/HOW_V3",
+     "stroke_width_px": 2.66,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      255,
+      0,
+      0
+     ],
+     "legend_as_printed": "HOW active MW",
+     "quantity": "Hornsea One active power (plotted against the right axis titled 'Reactive power (MVArs)')",
+     "series_id": "APP-p40-fig3/HOW_active_MW",
+     "stroke_width_px": 2.71,
+     "unit": "MW",
+     "written_to_csv": true
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      0,
+      171,
+      68
+     ],
+     "legend_as_printed": "HOW reactive MVAr",
+     "quantity": "Hornsea One reactive power (sign convention not printed on the chart)",
+     "series_id": "APP-p40-fig3/HOW_reactive_MVAr",
+     "stroke_width_px": 2.69,
+     "unit": "MVAr",
+     "written_to_csv": true
+    }
+   ],
+   "source": "APP PDF page 40",
+   "title_as_printed": "Hornsea - 16:52, 9th August 2019"
+  },
+  {
+   "annotation_boxes_masked_px": [
+    [
+     1075,
+     36,
+     1325,
+     133
+    ]
+   ],
+   "axes": {
+    "left": {
+     "intercept": 42.762788,
+     "max_abs_residual": 0.043953,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 9,
+     "rms_residual": 0.024626,
+     "rms_residual_px": 0.3819,
+     "slope_per_px": -0.064481,
+     "tick_positions": "gridlines",
+     "ticks": [
+      {
+       "pixel": 42.425,
+       "residual": 0.02717,
+       "value": 40.0
+      },
+      {
+       "pixel": 120.154,
+       "residual": 0.01512,
+       "value": 35.0
+      },
+      {
+       "pixel": 198.0,
+       "residual": -0.004502,
+       "value": 30.0
+      },
+      {
+       "pixel": 275.725,
+       "residual": -0.016308,
+       "value": 25.0
+      },
+      {
+       "pixel": 353.425,
+       "residual": -0.026502,
+       "value": 20.0
+      },
+      {
+       "pixel": 431.154,
+       "residual": -0.038554,
+       "value": 15.0
+      },
+      {
+       "pixel": 508.0,
+       "residual": 0.006307,
+       "value": 10.0
+      },
+      {
+       "pixel": 585.743,
+       "residual": -0.006684,
+       "value": 5.0
+      },
+      {
+       "pixel": 662.5,
+       "residual": 0.043953,
+       "value": 0.0
+      }
+     ],
+     "title_as_printed": "Voltage (kV)"
+    },
+    "right": {
+     "check_value_at_top_and_bottom_gridline": [
+      449.53,
+      -100.23
+     ],
+     "intercept": 487.143998,
+     "max_abs_residual": 0.804089,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 12,
+     "rms_residual": 0.377593,
+     "rms_residual_px": 0.4259,
+     "slope_per_px": -0.886598,
+     "tick_positions": "label centres shifted by the left axis's label-to-gridline offset (0.07 px)",
+     "ticks": [
+      {
+       "pixel": 42.07,
+       "residual": -0.154766,
+       "value": 450.0
+      },
+      {
+       "pixel": 98.07,
+       "residual": 0.195773,
+       "value": 400.0
+      },
+      {
+       "pixel": 154.57,
+       "residual": 0.103012,
+       "value": 350.0
+      },
+      {
+       "pixel": 210.57,
+       "residual": 0.453551,
+       "value": 300.0
+      },
+      {
+       "pixel": 267.57,
+       "residual": -0.082509,
+       "value": 250.0
+      },
+      {
+       "pixel": 324.07,
+       "residual": -0.175269,
+       "value": 200.0
+      },
+      {
+       "pixel": 380.07,
+       "residual": 0.175269,
+       "value": 150.0
+      },
+      {
+       "pixel": 437.57,
+       "residual": -0.804089,
+       "value": 100.0
+      },
+      {
+       "pixel": 493.57,
+       "residual": -0.453551,
+       "value": 50.0
+      },
+      {
+       "pixel": 549.57,
+       "residual": -0.103012,
+       "value": 0.0
+      },
+      {
+       "pixel": 605.07,
+       "residual": 0.690825,
+       "value": -50.0
+      },
+      {
+       "pixel": 662.07,
+       "residual": 0.154766,
+       "value": -100.0
+      }
+     ],
+     "title_as_printed": "Active and Reactive Power (MW/MVAr)"
+    },
+    "x": {
+     "data_implied_offset_check_px": 0.26,
+     "first_and_last_label_as_printed": [
+      "16:52:33.211",
+      "16:52:33.999"
+     ],
+     "intercept": -3.57844,
+     "model": "sample_index = intercept + slope * pixel",
+     "n_ticks": 79,
+     "rms_residual_px": 0.2664,
+     "rms_residual_samples": 0.016353,
+     "slope_per_px": 0.061383,
+     "tick_positions": "centres of the rotated category labels",
+     "title_as_printed": "Time (hh:mm:ss:msms)",
+     "type": "category (samples drawn equally spaced; timestamps are labels only)"
+    }
+   },
+   "caption_as_printed": "Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs",
+   "chart_id": "APP-p41-fig4",
+   "csv": "app_p41_fig4_offshore_1b.csv",
+   "native_raster_dpi_on_page": 222.6,
+   "native_raster_px": [
+    1402,
+    797
+   ],
+   "series": [
+    {
+     "axis": "left",
+     "colour_rgb": [
+      48,
+      99,
+      255
+     ],
+     "legend_as_printed": "kV_PPM1_AVE",
+     "quantity": "Hornsea 1B offshore 34 kV collection-system voltage, PPM1 ('_AVE' as printed; averaging not stated)",
+     "series_id": "APP-p41-fig4/kV_PPM1_AVE",
+     "stroke_width_px": 2.81,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "left",
+     "colour_rgb": [
+      88,
+      153,
+      212
+     ],
+     "legend_as_printed": "kV_PPM2_AVE",
+     "quantity": "Hornsea 1B offshore 34 kV collection-system voltage, PPM2 ('_AVE' as printed; averaging not stated)",
+     "series_id": "APP-p41-fig4/kV_PPM2_AVE",
+     "stroke_width_px": 2.81,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "left",
+     "colour_rgb": [
+      155,
+      194,
+      230
+     ],
+     "legend_as_printed": "kV_PPM3_AVE",
+     "quantity": "Hornsea 1B offshore 34 kV collection-system voltage, PPM3 ('_AVE' as printed; averaging not stated)",
+     "series_id": "APP-p41-fig4/kV_PPM3_AVE",
+     "stroke_width_px": 2.81,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "left",
+     "colour_rgb": [
+      0,
+      175,
+      240
+     ],
+     "legend_as_printed": "kV_PPM4_AVE",
+     "quantity": "Hornsea 1B offshore 34 kV collection-system voltage, PPM4 ('_AVE' as printed; averaging not stated)",
+     "series_id": "APP-p41-fig4/kV_PPM4_AVE",
+     "stroke_width_px": 2.85,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      255,
+      0,
+      0
+     ],
+     "legend_as_printed": "MW_OFS",
+     "quantity": "Hornsea 1B active power 'MW_OFS' (abbreviation not defined in the report)",
+     "series_id": "APP-p41-fig4/MW_OFS",
+     "stroke_width_px": 2.85,
+     "unit": "MW",
+     "written_to_csv": true
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      110,
+      172,
+      68
+     ],
+     "legend_as_printed": "MVAr_PPM1",
+     "quantity": "Hornsea 1B reactive power, PPM1 (sign convention not printed)",
+     "series_id": "APP-p41-fig4/MVAr_PPM1",
+     "stroke_width_px": 2.82,
+     "unit": "MVAr",
+     "written_to_csv": false
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      81,
+      128,
+      50
+     ],
+     "legend_as_printed": "MVAr_PPM2",
+     "quantity": "Hornsea 1B reactive power, PPM2 (sign convention not printed)",
+     "series_id": "APP-p41-fig4/MVAr_PPM2",
+     "stroke_width_px": 2.82,
+     "unit": "MVAr",
+     "written_to_csv": false
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      168,
+      208,
+      140
+     ],
+     "legend_as_printed": "MVAr_PPM3",
+     "quantity": "Hornsea 1B reactive power, PPM3 (sign convention not printed)",
+     "series_id": "APP-p41-fig4/MVAr_PPM3",
+     "stroke_width_px": 2.82,
+     "unit": "MVAr",
+     "written_to_csv": false
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      110,
+      172,
+      68
+     ],
+     "legend_as_printed": "MVAr_PPM4",
+     "quantity": "Hornsea 1B reactive power, PPM4 (sign convention not printed)",
+     "series_id": "APP-p41-fig4/MVAr_PPM4",
+     "stroke_width_px": 2.82,
+     "unit": "MVAr",
+     "written_to_csv": false
+    }
+   ],
+   "source": "APP PDF page 41",
+   "title_as_printed": "Hornsea 1B - De-load event, voltage vs MW vs MVAr"
+  },
+  {
+   "annotation_boxes_masked_px": [
+    [
+     157,
+     55,
+     322,
+     123
+    ],
+    [
+     190,
+     289,
+     351,
+     372
+    ],
+    [
+     541,
+     60,
+     701,
+     143
+    ],
+    [
+     587,
+     276,
+     748,
+     360
+    ]
+   ],
+   "axes": {
+    "left": {
+     "intercept": 453.473762,
+     "max_abs_residual": 0.070401,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 9,
+     "rms_residual": 0.062849,
+     "rms_residual_px": 0.2483,
+     "slope_per_px": -0.253163,
+     "tick_positions": "gridlines",
+     "ticks": [
+      {
+       "pixel": 92.501,
+       "residual": 0.055803,
+       "value": 430.0
+      },
+      {
+       "pixel": 132.5,
+       "residual": -0.070401,
+       "value": 420.0
+      },
+      {
+       "pixel": 171.5,
+       "residual": 0.05612,
+       "value": 410.0
+      },
+      {
+       "pixel": 211.5,
+       "residual": -0.07024,
+       "value": 400.0
+      },
+      {
+       "pixel": 250.5,
+       "residual": 0.056429,
+       "value": 390.0
+      },
+      {
+       "pixel": 290.5,
+       "residual": -0.07023,
+       "value": 380.0
+      },
+      {
+       "pixel": 329.501,
+       "residual": 0.056244,
+       "value": 370.0
+      },
+      {
+       "pixel": 369.5,
+       "residual": -0.070196,
+       "value": 360.0
+      },
+      {
+       "pixel": 408.5,
+       "residual": 0.056473,
+       "value": 350.0
+      }
+     ],
+     "title_as_printed": "Voltage (kV)"
+    },
+    "right": {
+     "check_value_at_top_and_bottom_gridline": [
+      900.85,
+      -0.6
+     ],
+     "intercept": 1164.723328,
+     "max_abs_residual": 1.864302,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 10,
+     "rms_residual": 0.729834,
+     "rms_residual_px": 0.2558,
+     "slope_per_px": -2.852679,
+     "tick_positions": "label centres shifted by the left axis's label-to-gridline offset (0.44 px)",
+     "ticks": [
+      {
+       "pixel": 92.945,
+       "residual": -0.41784,
+       "value": 900.0
+      },
+      {
+       "pixel": 127.945,
+       "residual": -0.261594,
+       "value": 800.0
+      },
+      {
+       "pixel": 162.945,
+       "residual": -0.105348,
+       "value": 700.0
+      },
+      {
+       "pixel": 197.945,
+       "residual": 0.050898,
+       "value": 600.0
+      },
+      {
+       "pixel": 232.945,
+       "residual": 0.207145,
+       "value": 500.0
+      },
+      {
+       "pixel": 267.945,
+       "residual": 0.363391,
+       "value": 400.0
+      },
+      {
+       "pixel": 302.945,
+       "residual": 0.519637,
+       "value": 300.0
+      },
+      {
+       "pixel": 337.945,
+       "residual": 0.675884,
+       "value": 200.0
+      },
+      {
+       "pixel": 372.945,
+       "residual": 0.83213,
+       "value": 100.0
+      },
+      {
+       "pixel": 408.945,
+       "residual": -1.864302,
+       "value": 0.0
+      }
+     ],
+     "title_as_printed": "Active Power (MW)"
+    },
+    "x": {
+     "intercept": 32.809366,
+     "label_rounding_s": 0.005,
+     "max_abs_residual": 0.000566,
+     "model": "seconds after 16:52:00 (as printed) = intercept + slope * pixel",
+     "n_ticks": 5,
+     "resampling_step_s": 0.005,
+     "rms_residual": 0.000461,
+     "rms_residual_px": 0.246,
+     "slope_per_px": 0.001873,
+     "tick_positions": "vertical gridlines under the printed labels",
+     "ticks": [
+      {
+       "pixel": 235.5,
+       "residual": 0.000377,
+       "value": 33.25
+      },
+      {
+       "pixel": 368.499,
+       "residual": -0.000562,
+       "value": 33.5
+      },
+      {
+       "pixel": 502.499,
+       "residual": 0.000375,
+       "value": 33.75
+      },
+      {
+       "pixel": 635.496,
+       "residual": -0.000566,
+       "value": 34.0
+      },
+      {
+       "pixel": 769.5,
+       "residual": 0.000377,
+       "value": 34.25
+      }
+     ],
+     "ticks_as_printed": [
+      "16:52:33.25",
+      "16:52:33.50",
+      "16:52:33.75",
+      "16:52:34.00",
+      "16:52:34.25"
+     ],
+     "title_as_printed": "Time",
+     "type": "time scale"
+    }
+   },
+   "caption_as_printed": "Figure 7 – Voltage and Active Power at Hornsea",
+   "chart_id": "ESO-p19-fig7",
+   "csv": "eso_p19_fig7_voltage_active_power.csv",
+   "native_raster_dpi_on_page": 150.0,
+   "native_raster_px": [
+    1007,
+    565
+   ],
+   "series": [
+    {
+     "axis": "left",
+     "colour_rgb": [
+      68,
+      114,
+      196
+     ],
+     "legend_as_printed": "Hornsea Voltage",
+     "quantity": "Hornsea voltage (measurement point and phase not stated on the chart)",
+     "series_id": "ESO-p19-fig7/Hornsea_Voltage",
+     "stroke_width_px": 3.0,
+     "unit": "kV",
+     "written_to_csv": true
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      237,
+      125,
+      49
+     ],
+     "legend_as_printed": "Total Active Power",
+     "quantity": "Hornsea total active power",
+     "series_id": "ESO-p19-fig7/Total_Active_Power",
+     "stroke_width_px": 3.0,
+     "unit": "MW",
+     "written_to_csv": true
+    }
+   ],
+   "source": "ESO PDF page 19",
+   "title_as_printed": "Hornsea Voltage and Active Power"
+  },
+  {
+   "annotation_boxes_masked_px": [
+    [
+     100,
+     35,
+     204,
+     78
+    ],
+    [
+     117,
+     201,
+     219,
+     253
+    ],
+    [
+     270,
+     38,
+     372,
+     90
+    ],
+    [
+     374,
+     177,
+     475,
+     230
+    ]
+   ],
+   "axes": {
+    "left": {
+     "intercept": 453.433703,
+     "max_abs_residual": 0.103572,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 9,
+     "rms_residual": 0.065186,
+     "rms_residual_px": 0.1649,
+     "slope_per_px": -0.395392,
+     "tick_positions": "gridlines",
+     "ticks": [
+      {
+       "pixel": 59.239,
+       "residual": 0.010928,
+       "value": 430.0
+      },
+      {
+       "pixel": 84.653,
+       "residual": -0.037498,
+       "value": 420.0
+      },
+      {
+       "pixel": 109.639,
+       "residual": 0.083513,
+       "value": 410.0
+      },
+      {
+       "pixel": 135.379,
+       "residual": -0.094152,
+       "value": 400.0
+      },
+      {
+       "pixel": 160.36,
+       "residual": 0.028717,
+       "value": 390.0
+      },
+      {
+       "pixel": 185.802,
+       "residual": -0.03095,
+       "value": 380.0
+      },
+      {
+       "pixel": 210.753,
+       "residual": 0.103572,
+       "value": 370.0
+      },
+      {
+       "pixel": 236.53,
+       "residual": -0.088244,
+       "value": 360.0
+      },
+      {
+       "pixel": 261.537,
+       "residual": 0.024113,
+       "value": 350.0
+      }
+     ],
+     "title_as_printed": "Voltage (kV)"
+    },
+    "right": {
+     "check_value_at_top_and_bottom_gridline": [
+      898.9,
+      -901.17
+     ],
+     "intercept": 1426.018995,
+     "max_abs_residual": 7.165904,
+     "model": "value = intercept + slope * pixel",
+     "n_ticks": 10,
+     "rms_residual": 3.50498,
+     "rms_residual_px": 0.3939,
+     "slope_per_px": -8.898145,
+     "tick_positions": "label centres shifted by the left axis's label-to-gridline offset (0.21 px)",
+     "ticks": [
+      {
+       "pixel": 59.21,
+       "residual": -0.842427,
+       "value": 900.0
+      },
+      {
+       "pixel": 81.71,
+       "residual": -1.050694,
+       "value": 700.0
+      },
+      {
+       "pixel": 104.21,
+       "residual": -1.258961,
+       "value": 500.0
+      },
+      {
+       "pixel": 126.21,
+       "residual": 2.981844,
+       "value": 300.0
+      },
+      {
+       "pixel": 149.21,
+       "residual": -1.675495,
+       "value": 100.0
+      },
+      {
+       "pixel": 171.21,
+       "residual": 2.56531,
+       "value": -100.0
+      },
+      {
+       "pixel": 194.21,
+       "residual": -2.09203,
+       "value": -300.0
+      },
+      {
+       "pixel": 216.21,
+       "residual": 2.148776,
+       "value": -500.0
+      },
+      {
+       "pixel": 238.21,
+       "residual": 6.389581,
+       "value": -700.0
+      },
+      {
+       "pixel": 262.21,
+       "residual": -7.165904,
+       "value": -900.0
+      }
+     ],
+     "title_as_printed": "Rective Power (MVAr)"
+    },
+    "x": {
+     "intercept": 32.81115,
+     "label_rounding_s": 0.005,
+     "max_abs_residual": 6.6e-05,
+     "model": "seconds after 16:52:00 (as printed) = intercept + slope * pixel",
+     "n_ticks": 5,
+     "resampling_step_s": 0.005,
+     "rms_residual": 3.4e-05,
+     "rms_residual_px": 0.0117,
+     "slope_per_px": 0.002939,
+     "tick_positions": "vertical gridlines under the printed labels",
+     "ticks": [
+      {
+       "pixel": 149.301,
+       "residual": -7e-06,
+       "value": 33.25
+      },
+      {
+       "pixel": 234.349,
+       "residual": -2.5e-05,
+       "value": 33.5
+      },
+      {
+       "pixel": 319.434,
+       "residual": 6.6e-05,
+       "value": 33.75
+      },
+      {
+       "pixel": 404.455,
+       "residual": -2.9e-05,
+       "value": 34.0
+      },
+      {
+       "pixel": 489.517,
+       "residual": -5e-06,
+       "value": 34.25
+      }
+     ],
+     "ticks_as_printed": [
+      "16:52:33.25",
+      "16:52:33.50",
+      "16:52:33.75",
+      "16:52:34.00",
+      "16:52:34.25"
+     ],
+     "title_as_printed": "Time",
+     "type": "time scale"
+    }
+   },
+   "caption_as_printed": "Figure 8 – Voltage and Reactive Power at Hornsea",
+   "chart_id": "ESO-p19-fig8",
+   "csv": "eso_p19_fig8_reactive_power.csv",
+   "native_raster_dpi_on_page": 96.0,
+   "native_raster_px": [
+    641,
+    362
+   ],
+   "series": [
+    {
+     "axis": "left",
+     "colour_rgb": [
+      55,
+      105,
+      192
+     ],
+     "legend_as_printed": "Hornsea Voltage",
+     "quantity": "Hornsea voltage (same quantity as Figure 7; used for the cross-check only, not written to the CSV)",
+     "series_id": "ESO-p19-fig8/Hornsea_Voltage",
+     "stroke_width_px": 1.89,
+     "unit": "kV",
+     "written_to_csv": false
+    },
+    {
+     "axis": "right",
+     "colour_rgb": [
+      255,
+      188,
+      0
+     ],
+     "legend_as_printed": "Total Reactive Power",
+     "quantity": "Hornsea total reactive power (sign convention not printed on the chart)",
+     "series_id": "ESO-p19-fig8/Total_Reactive_Power",
+     "stroke_width_px": 1.95,
+     "unit": "MVAr",
+     "written_to_csv": true
+    }
+   ],
+   "source": "ESO PDF page 19",
+   "title_as_printed": "Hornsea Voltage and Reactive Power"
+  }
+ ],
+ "evidence_id": "R05",
+ "note": "Pixel coordinates refer to each chart's native embedded raster (origin top-left, y down).",
+ "uncertainty_model": "uncertainty = |axis slope| * sqrt(axis_rms_px^2 + (stroke_width/2)^2 + colour_ambiguity_px^2 + (local_slope * time_axis_rms_px)^2)"
+}

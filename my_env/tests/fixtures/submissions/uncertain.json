@@ -1,0 +1,70 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L27"
+        }
+      ],
+      "finding_id": "U01",
+      "statement": "A lightning strike on the Eaton Socon–Wymondley circuit may have initiated the disturbance.",
+      "status": "hypothesis"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L20-L29"
+        }
+      ],
+      "finding_id": "U02",
+      "statement": "The order and timing of the generator trips could not be established from the work completed.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "L18-L24"
+        }
+      ],
+      "finding_id": "U03",
+      "statement": "The frequency minima and the time below 49 Hz were not computed; R01 was retrieved but not analysed.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L63"
+        }
+      ],
+      "finding_id": "U04",
+      "statement": "Why the ST1C speed signals disagreed and why the steam bypass pressure rose are not established.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L55-L57"
+        }
+      ],
+      "finding_id": "U05",
+      "statement": "The Hornsea de-load may relate to its control system.",
+      "status": "hypothesis"
+    }
+  ],
+  "report": {
+    "executive_summary": "Inconclusive. I could not establish the initiating event, the generation-trip sequence or the frequency landmarks with confidence from the work I completed. A lightning strike on the Eaton Socon–Wymondley circuit may have started the event [U01]. The trip sequence and the frequency figures were not determined [U02, U03]. The Little Barford root causes are recorded as not established [U04], and the Hornsea de-load may relate to its control system [U05].",
+    "sections": [
+      {
+        "body": "Explicitly inconclusive: see [U01, U02, U03, U04, U05].",
+        "heading": "Status"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

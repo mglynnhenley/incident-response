@@ -1,0 +1,173 @@
+DOCUMENT R06 — Frequency response holding, delivery and balancing actions, 9 August 2019
+Owner/originator: National Grid ESO (technical report of 6 September 2019 and its appendices);
+Elexon Limited (BMRS / Insights API balancing data submitted by the system operator)
+Record type: published tables of frequency response holding, delivery and modelled imbalance
+(transcribed) with real Elexon balancing-data extracts (CSV files)
+STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES — dataset values are unchanged from the
+publishers' files (only rows and columns were selected); report tables, captions and quotations
+are reproduced as printed. Nothing in this record is synthesised.
+Clock reference: report tables print times without a zone; the reports give event times in local
+time (BST, UTC+01:00). Elexon timestamps are UTC (ISO-8601 with Z); Elexon settlement periods are
+numbered on the UK local clock (period 1 starts at 00:00 local time; 30-minute periods; BST on 9
+August 2019).
+Value-status legend: [measured] metered or observed value as published; [reported] value stated by
+its publisher or by a report; [estimated] value its source describes as an estimate; [modelled]
+value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — PUBLISHED TABLES: RESPONSE HOLDING AND DELIVERY (transcribed as printed)
+A1  National Grid ESO, Technical Report on the events of 9 August 2019 (published 6 September
+    2019), section 4.4 "Response Holding on August 9th 2019". Printed before the table (quoted):
+    "The largest secured loss on the event day was 1,000 MW." [reported]
+    "In order to keep the frequency above 49.5Hz for this level of infeed loss, the response [reported]
+    holding was calculated and planned as below." [reported]
+    "Table 3 - Frequency response holding" (Service | Provider type | Lower Frequency response held (MW):
+    Primary response | Secondary response), as printed:
+    Dynamic – Generation (Mandatory response) | BM | 284 | 325 [reported]
+    Dynamic – Firm Frequency Response | BM & Non-BM | 259 | 270 [reported]
+    Dynamic – Enhanced Frequency Response | BM & Non-BM | 227 | 227 [reported]
+    Static – Firm Frequency Response | Non-BM | 21 | 261 [reported]
+    Static – Low Frequency Response through auction | Non-BM | 31 | 31 [reported]
+    Static - Interconnectors | BM | 200 | 200 [reported]
+    Total | - | 1022 | 1314 [reported]
+A2  Same report, section 4.4 "Delivery of Frequency Response". Text printed before Table 5, quoted
+    sentence by sentence:
+    "At the time of the event the amount of low frequency response being held was 1,022MW primary [reported]
+    and 1,314MW secondary." [reported]
+    "To date, of the 1,022MW and 1,314MW of response holding, the ESO has worked with providers [reported]
+    and used internal data to validate the performance of 91% of all primary and secondary that [reported]
+    was being held at the time (i.e. 945MW and 1,202MW respectively)." [reported]
+    "Of the validated response holding the ESO can confirm that 89% of primary (841MW) and 88% of [reported]
+    secondary (1055MW) response performed as expected and in line with its contractual [reported]
+    obligations." [reported]
+    "Nevertheless, there was some under-performance and this is being followed-up with the
+    specific providers." [reported]
+    "Table 5 – Validated Frequency Response Performance" (Service | Provider type | % validated
+    low frequency response delivered at 30 seconds versus Total MW response held: Validated [reported]
+    Primary response | Validated Secondary response), as printed:
+    Dynamic – Generation (Mandatory response) | BM | 103% of 284 MW | 102% 325 MW [reported]
+    Dynamic – Firm Frequency Response | BM & Non-BM | 74% of 259 MW | 81% of 270 MW [reported]
+    Dynamic – Enhanced Frequency Response | BM & Non-BM | 94% of 227 MW | 94% of 227 MW [reported]
+    Static – Firm Frequency Response | Non-BM | 0% of 21 MW | 67% of 261 MW [reported]
+    Static – Low Frequency Response through auction | Non-BM | 71% of 31 MW | 71% of 31 MW [reported]
+    Static - Interconnectors | BM | 100% of 200 MW | 100% of 200 MW [reported]
+    Total | - | 89% | 88% [reported]
+A3  Appendices to the ESO technical report, Appendix M (ESO answers to questions from the Energy
+    Emergencies Executive Committee), question 16 as printed: "What was the total capacity of all
+    Primary and Secondary frequency response available; an hour prior to as well as during and
+    after the time of the event; for activation by the ESO?"
+    Answer (quoted): "Below is a table detailing the volumes of frequency response which was
+    instructed by the ENCC at three time points around the event." The table notes "Source of
+    data: NED system".
+    Table as printed, one line per time point and response type (Low Frequency Holding (MW), Primary
+    [Secondary]):
+    One hour prior to event | Time 15:52 | Largest gen loss 950 [reported]
+      Dynamic Primary [Secondary]: 618[751] [reported]
+      Dynamic Enhanced Frequency Response: 227 [227] [reported]
+      Static Primary [Secondary]: 231 [231+285] [reported]
+      Total: 1076[1494] [reported]
+    Event time | Time 16:52 | Largest gen loss 1000 [reported]
+      Dynamic Primary [Secondary]: 564 [595] [reported]
+      Dynamic Enhanced Frequency Response: 227 [227] [reported]
+      Static Primary [Secondary]: 231 [231+285] [reported]
+      Total: 1022 [1338] [reported]
+    Time after event | Time 17:00 | Largest gen loss 1000 [reported]
+      Dynamic Primary [Secondary]: 823[1018] [reported]
+      Dynamic Enhanced Frequency Response: 227 [227] [reported]
+      Static Primary [Secondary]: 231 [231+285] [reported]
+      Total: 1281[1761] [reported]
+A4  Same appendix, question 17 as printed: "Was all the Primary and Secondary frequency response
+    activated by the ESO, and when (in a timeline, prior to, during and after the event) was this
+    done?"
+    Answer (quoted): "The table below highlights the frequency response holding and the current
+    best view of the low frequency response performance, this is subject to change."
+    Table as printed (Frequency Response Type | Number of Units | Low Frequency Holding Primary [Secondary] |
+    Low Frequency Delivered within 30 seconds of event): [reported]
+    Dynamic Primary [Secondary] BM | 8 | 284 [325] | 266 [reported]
+    Dynamic Primary [Secondary] NBM | 36 | 280 [270] | 231 [reported]
+    Dynamic Enhanced Frequency Response NBM | 10 | 227 [227] | 165 [reported]
+    Static Triggered at 49.7 Hz, delivered within 30 seconds BM | - | - | - [reported]
+    Static Triggered at 49.7 Hz, delivered within 30 seconds NBM | 19 | [285] | 198 [reported]
+    Static Triggered at 49.6 Hz, delivered within 1 second BM | 2 | 200 [200] | 200 [reported]
+    Static Triggered at 49.6 Hz, delivered within 1 second NBM | 7 | 31 [31] | 30 [reported]
+    Total (Excluding demand effect*) | (blank) | 1022 [1338] | 1090 [reported]
+    Footnote as printed:
+    "*Demand varies due to frequency, as some devices such as synchronous motors use slightly less
+    power when frequency is slightly low, and vice versa when frequency is slightly high."
+    "For 29 GW demand, this effect is approximately 350MW at 49.5 Hz." [reported]
+    "This effect is unrelated to LFDD."
+A5  Appendices to the ESO technical report, Appendix I (simulation of the 9 August event). Quoted:
+    "The Frequency Simulation Engine (FSE) is used by ESO to calculate the frequency response
+    holding required to keep frequency within limits for a given loss and set of system
+    conditions."
+    "This gives the following inputs for a time series of imbalance"
+    "Table 1 – Modelled Imbalance Time Series" (Event | Time | Imbalance Change (MW)), as printed; the table
+    lists the imbalance inputs of the simulation [modelled]:
+    Hornsea One | 16:52:33.728 | -737 [modelled]
+    Little Barford ST1C | 16:52:34 | -244 [modelled]
+    Loss of Mains – Vector Shift | 16:52:34 | -150 [modelled]
+    Loss of Mains - RoCoF | 16:52:34 | -430 [modelled]
+    Reduction in generator output over 30 seconds | 16:53:10 | -100 [modelled]
+    Little Barford GT1A | 16:53:30 | -210 [modelled]
+    Net Change due to protection at 49.0 Hz | 16:53:40* | -200 [modelled]
+    Net demand change at 48.8 Hz | 16:53:48* | +350 [modelled]
+    Little Barford GT1B | 16:53:58 | -187 [modelled]
+    The source marks two times with "*" and does not define the mark in the table.
+
+PART B — BALANCING MECHANISM DATA (real extracts, Elexon)
+B1  File R06_elexon_boalf_acceptances_20190809_1540-1645Z.csv [reported] — bid-offer acceptance
+    level records (BOALF) with acceptance times 15:40 to 16:45 UTC inclusive.
+    Source: Elexon endpoint /balancing/acceptances/all, one query per settlement period 32 to 38
+    of 2019-08-09 (each query returns the records valid for that period); retrieved 2026-10-20.
+    Licence: Elexon BMRS open data licence. Contains BMRS data (c) Elexon Limited copyright and
+    database right 2026.
+    Selection: the 1016 records returned include repeats of records spanning several periods; 843
+    are unique, and the 363 whose acceptanceTime is 2019-08-09T15:40:00Z to 16:45:00Z are kept.
+    They belong to 139 acceptances of 49 BM units. An acceptance in that window whose accepted
+    levels lie wholly outside settlement periods 32-38 would not be in these queries.
+    Columns: acceptanceNumber, acceptanceTime, bmUnit, nationalGridBmUnit, settlementDate,
+    settlementPeriodFrom, settlementPeriodTo, timeFrom, levelFrom, timeTo, levelTo, soFlag,
+    storFlag, deemedBoFlag, rrFlag. Each record is one segment of an accepted level profile:
+    levelFrom (MW) at timeFrom to levelTo (MW) at timeTo. acceptanceTime, timeFrom and timeTo are
+    UTC at minute resolution. soFlag, storFlag, deemedBoFlag and rrFlag are the publisher's flags
+    (system operator, STOR, deemed bid-offer and replacement reserve flags). An acceptance is an
+    instruction, not a measurement of what the unit delivered.
+    Each acceptance is also an entry in the control log of room ESO-ENCC (query_control_log);
+    entry IDs have the form R06-BOALF-<bmUnit>-<acceptanceNumber>.
+B2  File R06_elexon_qas_balancing_services_volume_20190809.csv [reported] — balancing services
+    volume (QAS) per BM unit.
+    Source: Elexon endpoint /datasets/QAS for settlement date 2019-08-09, periods 1-50; retrieved
+    2026-10-20. Licence as B1.
+    Rows: 596 (every record returned), sorted by settlementPeriod and bmUnit. Columns: dataset,
+    settlementDate, settlementPeriod, bmUnit, nationalGridBmUnit,
+    bmUnitApplicableBalancingServicesVolume. Publisher's description: the volume "represents the
+    volume of energy (MWh) associated with the provision of Applicable Balancing Services for each
+    relevant BM Unit and Settlement Period"; "QAS can be positive or negative and is normally only
+    provided where there is a non-zero volume." The data do not name the balancing service.
+B3  File R06_elexon_disebsp_system_prices_niv_20190809.csv [reported] — settlement system prices
+    and net imbalance volume (DISEBSP).
+    Source: Elexon endpoint /balancing/settlement/system-prices/2019-08-09; retrieved 2026-10-20.
+    Licence as B1. Publisher: "only messages generated for the latest settlement run are
+    returned".
+    Rows: 48 (settlement periods 1-48). Columns, in the publisher's order: settlementDate,
+    settlementPeriod, startTime, createdDateTime, systemSellPrice, systemBuyPrice, bsadDefaulted,
+    priceDerivationCode, reserveScarcityPrice, netImbalanceVolume, sellPriceAdjustment,
+    buyPriceAdjustment, replacementPrice, replacementPriceReferenceVolume,
+    totalAcceptedOfferVolume, totalAcceptedBidVolume, totalAdjustmentSellVolume,
+    totalAdjustmentBuyVolume, totalSystemTaggedAcceptedOfferVolume,
+    totalSystemTaggedAcceptedBidVolume, totalSystemTaggedAdjustmentSellVolume,
+    totalSystemTaggedAdjustmentBuyVolume. startTime and createdDateTime are UTC; prices GBP/MWh;
+    volumes MWh.
+B4  R06_elexon_disebsp_system_prices_niv_20190809.csv, settlement periods 30-40, columns
+    settlementPeriod, startTime, netImbalanceVolume, systemSellPrice, systemBuyPrice,
+    totalAcceptedOfferVolume, totalAcceptedBidVolume (values as in the file) [reported]:
+    30,2019-08-09T13:30:00Z,-1.6902,28.11,28.11,779.2251,-305.8736
+    31,2019-08-09T14:00:00Z,-107.5878,31.66,31.66,835.8011,-468.3889
+    32,2019-08-09T14:30:00Z,-63.5697,31.66,31.66,955.6897,-544.2465
+    33,2019-08-09T15:00:00Z,172.3123,59.0,59.0,1032.7897,-335.5607
+    34,2019-08-09T15:30:00Z,393.1822,64.5,64.5,1253.5715,-335.3893
+    35,2019-08-09T16:00:00Z,817.0655,64.75,64.75,1634.2651,-450.3588
+    36,2019-08-09T16:30:00Z,897.3993,64.75,64.75,1551.5652,-307.3009
+    37,2019-08-09T17:00:00Z,689.7388,64.5,64.5,1418.3538,-356.64
+    38,2019-08-09T17:30:00Z,204.26364,60.0,60.0,1231.4517,-571.5191
+    39,2019-08-09T18:00:00Z,556.0245,64.5,64.5,1409.1196,-83.1368
+    40,2019-08-09T18:30:00Z,452.5544,64.5,64.5,1306.2626,-83.7291

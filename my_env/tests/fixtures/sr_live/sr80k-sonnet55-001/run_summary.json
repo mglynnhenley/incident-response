@@ -1,0 +1,80 @@
+{
+ "assistant_turns": 16,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 80000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "The investigation is submitted and frozen: 35 findings, all citing evidence. I did not re-read the report text after submitting.\n\n- **Initiating event:** a single-phase-to-earth fault on the Eaton Socon–Wymondley Main 400 kV line began at 16:52:33.490 BST (15:52:33.490 UTC), 4.5 km from Wymondley Main. Protection opened both ends in 70 ms and 74 ms, inside the 80 ms Grid Code figure NGET cites. The circuit was auto-reclosed at 16:52:53, and no defects were found afterwards. Lightning is the accepted cause, but three strikes were recorded at the same second, so the record cannot say which one hit the line.\n- **Generation lost:**\n  - Hornsea One lost 737 MW at about 16:52:33.7 (799 MW down to 62 MW). Ørsted attributes this to a sub-synchronous control resonance. Why the controllers were insufficiently damped is unresolved.\n  - Little Barford lost 641 MW in three steps, ST1C (244 MW) at about 16:52:35, GT1A (210 MW) at about 16:53:30 and GT1B (187 MW) at about 16:53:58. The root causes of the steam-turbine speed-signal discrepancy and the later steam-pressure rise are not established.\n  - Embedded generation losses are estimates only, because DNOs hold no real-time data. They include about 500 MW on loss-of-mains protection and a net 200 MW at 49 Hz. A further 550–581 MW was inferred around LFDD operation, and the 100 MW source is unexplained.\n  - Total generation lost depends on the basis used. ESO Appendix H gives 1,528 MW initially, and ESO's cumulative table reaches 1,878 MW. Ofgem gives at least 1,990 MW, and E3C interim gives about 2,100 MW.\n- **Frequency:** the first minimum was 49.083 Hz at 16:52:59, and the overall minimum was 48.787 Hz at 16:53:49. Frequency was below 49.5 Hz for 142 s, so the 60 s expectation was missed, and below 49.0 Hz for about 33 s. It first reached 50.0 Hz at 16:57:16. All of this comes from 1 s samples, so timings are good to about ±1 s.\n- **Containment:** ESO was securing for a 1,000 MW loss with 1,022 MW primary and 1,314 MW seconda",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 162039,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 30,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-030",
+  "invalid_submission_attempts": 0,
+  "python_calls": 4,
+  "retrieved": [
+   "R03",
+   "R02",
+   "S01",
+   "S03",
+   "S04",
+   "R06",
+   "R07",
+   "R10",
+   "S12",
+   "R04",
+   "R08",
+   "S07",
+   "R01",
+   "S05",
+   "S06"
+  ],
+  "schema": 1,
+  "seq": 30,
+  "submission_sha256": "2e8de77b773978d7ba5c57ba610c33fac3c3ebe8d155329a27b196be7bced254"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 30,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 30
+ },
+ "max_input_tokens": 162039,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 29980,
+ "output_tokens_total": 31166,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 16,
+ "tool_calls_by_tool": {
+  "interview_witness": 5,
+  "list_documents": 1,
+  "query_asset_log": 1,
+  "query_control_log": 1,
+  "query_frequency": 1,
+  "request_data_return": 4,
+  "request_document": 12,
+  "run_python": 4,
+  "submit_findings": 1
+ },
+ "tool_calls_episode_tools": 30,
+ "tool_calls_total": 30,
+ "transcript_available": true
+}

@@ -1,0 +1,416 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.490+01:00",
+      "finding_id": "F01",
+      "statement": "A lightning strike initiated the electrical disturbance on 9 August 2019.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L27"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33+01:00",
+      "finding_id": "F02",
+      "statement": "Three almost simultaneous lightning strikes were recorded adjacent to the Eaton Socon–Wymondley Main circuit near Willian Arboretum at the Wymondley end of the circuit at 2019-08-09T16:52:33+01:00.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L30"
+        }
+      ],
+      "finding_id": "F03",
+      "statement": "The largest of the three lightning strikes had a current amplitude of 33.7 kA.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L37"
+        }
+      ],
+      "finding_id": "F04",
+      "statement": "The fault was a single blue-phase-to-earth fault on one Eaton Socon–Wymondley circuit.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L38"
+        }
+      ],
+      "finding_id": "F05",
+      "statement": "The fault location was approximately 4.5 km along the circuit from the Wymondley Main end.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L44-L46"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.560+01:00",
+      "finding_id": "F06",
+      "statement": "The Wymondley Main main protection operated 70 milliseconds after fault inception at 2019-08-09T16:52:33.560+01:00, and the Eaton Socon main protection operated 74 milliseconds after fault inception at 2019-08-09T16:52:33.564+01:00, both within the 80 ms Grid Code requirement.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L50"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "F07",
+      "statement": "The Eaton Socon–Wymondley Main circuit was energised on Delayed Auto-Reclose (DAR) at approximately 2019-08-09T16:52:53+01:00, approximately 20 seconds after the fault.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:40:00+01:00/2019-08-09T16:52:32+01:00"
+        }
+      ],
+      "finding_id": "F08",
+      "quantity": {
+        "basis": "mean of 753 one-second samples from 16:40:00 to 16:52:32 BST",
+        "unit": "Hz",
+        "value": 50.0058
+      },
+      "statement": "Pre-disturbance system frequency was normal, averaging 50.0058 Hz with a range of 49.9170 to 50.0770 Hz.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T16:53:49+01:00"
+        }
+      ],
+      "derivation": "Minimum frequency value extracted from the measured time series",
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F09",
+      "quantity": {
+        "basis": "difference between frequency at 16:52:33 (49.995 Hz) and minimum at 16:53:49 (48.787 Hz)",
+        "unit": "Hz",
+        "value": 1.208
+      },
+      "statement": "System frequency fell from 49.995 Hz at 2019-08-09T16:52:33+01:00 to a minimum of 48.787 Hz at 2019-08-09T16:53:49+01:00, a drop of 1.208 Hz over 76 seconds at an average rate of −0.0159 Hz/second.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:41+01:00/2019-08-09T16:54:13+01:00"
+        }
+      ],
+      "derivation": "Count of 33 one-second samples at or below 49.0 Hz threshold",
+      "finding_id": "F10",
+      "quantity": {
+        "basis": "duration from first sample below 49.0 Hz to last sample below 49.0 Hz",
+        "unit": "seconds",
+        "value": 33
+      },
+      "statement": "System frequency fell below 49.0 Hz at 2019-08-09T16:53:41+01:00 and remained below 49.0 Hz until 2019-08-09T16:54:13+01:00, a duration of 33 seconds.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:49+01:00/2019-08-09T16:57:16+01:00"
+        }
+      ],
+      "derivation": "Difference between 16:57:16 and 16:53:49",
+      "event_time": "2019-08-09T16:57:16+01:00",
+      "finding_id": "F11",
+      "quantity": {
+        "basis": "time difference from minimum frequency at 16:53:49 to first sample at or above 50.0 Hz at 16:57:16",
+        "unit": "seconds",
+        "value": 207
+      },
+      "statement": "System frequency recovered to 50.0 Hz at 2019-08-09T16:57:16+01:00, 207 seconds (3 minutes 27 seconds) after reaching its minimum.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "L22-L29"
+        }
+      ],
+      "finding_id": "F12",
+      "statement": "The frequency data have a 1-second sampling interval; the exact time of the voltage dip onset and the precise time and value of the minimum frequency may have occurred between samples and cannot be determined from the available data.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L12-L18"
+        }
+      ],
+      "finding_id": "F13",
+      "statement": "Hornsea One is an offshore wind farm 120 km from the Yorkshire coast, under construction with two modules fully installed and a third partially installed, with declared export capability of 800 MW (174 turbines rated 7 MW each when complete).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L25-L26"
+        }
+      ],
+      "event_time": "2019-08-09T15:42:00Z",
+      "finding_id": "F14",
+      "statement": "Approximately 10 minutes before the transmission fault, Hornsea One's control system exhibited oscillations in reactive power output in response to a 2% voltage step change, occurring without causing de-loading at that time.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L28-L34"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.490+01:00",
+      "finding_id": "F15",
+      "statement": "When the transmission fault occurred at 16:52:33.490+01:00, Hornsea One's reactive compensation control initially injected reactive power to boost network voltage but then underwent significant oscillation, with reactive power absorption exceeding 300 MVAr while network voltage fell to approximately 394 kV, and active power initially reduced from 799 MW to 400 MW, then returned.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L38-L42"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.835+01:00",
+      "finding_id": "F16",
+      "quantity": {
+        "basis": "loss from approximately 800 MW declared capability minus 62 MW remaining on Hornsea 1A",
+        "unit": "MW",
+        "value": 738
+      },
+      "statement": "The Hornsea One 34 kV collection cable system voltage rapidly reduced to 20 kV (from a target of 34 kV); Hornsea 1B and 1C began de-loading at 16:52:33.728+01:00 and completed de-load at 16:52:33.835+01:00 (107 milliseconds after beginning), with all WTGs on these modules reaching 0 MW; Hornsea 1A remained in operation at 62 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L55-L57"
+        }
+      ],
+      "finding_id": "F17",
+      "statement": "The operator's investigation identified the Hornsea One de-load as caused by an unexpected control system response due to an insufficiently damped electrical resonance in the sub-synchronous frequency range, triggered by the initial voltage disturbance.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L85-L87"
+        }
+      ],
+      "finding_id": "F18",
+      "statement": "Hornsea One's turbine controllers reacted incorrectly to the voltage fluctuations on the offshore network, with local voltage dropping and triggering automatic protection systems to disconnect the majority of turbines.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L72-L73"
+        }
+      ],
+      "finding_id": "F19",
+      "statement": "This is the first known instance of such electrical oscillations leading to de-loading of a wind farm under these conditions.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L14-L17"
+        }
+      ],
+      "finding_id": "F20",
+      "statement": "Little Barford is a 740 MW combined-cycle gas turbine (CCGT) power station in Bedfordshire, connected to the transmission system at Eaton Socon 400 kV substation, with all three units (two gas turbines GT1A and GT1B, and one steam turbine ST1C) operating before the disturbance.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L21-L22"
+        }
+      ],
+      "finding_id": "F21",
+      "statement": "The Little Barford station's 110 V AC UPS -B- raised a general fault alarm at the datum time T (16:52:34 ± 0.5 s BST) and UPS -A- raised a general fault alarm at T + 3 ms.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L38-L44"
+        }
+      ],
+      "finding_id": "F22",
+      "statement": "The UPS likely initiated changeover to battery backup in response to the power quality disturbance, although the exact characteristic of the power supply causing the switch remains under investigation and was not the direct cause of turbine trips.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L23-L25"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:35.185+01:00",
+      "finding_id": "F23",
+      "quantity": {
+        "basis": "unit output at trip as published by ESO",
+        "unit": "MW",
+        "value": 244
+      },
+      "statement": "Little Barford steam turbine ST1C initiated shutdown at T + 253 ms, with generator breaker opening feedback at T + 1.185 seconds (approximately 16:52:35.2+01:00), having generated 244 MW at the time of trip.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L46-L48"
+        }
+      ],
+      "finding_id": "F24",
+      "statement": "The operator's investigation confirmed that ST1C tripped due to a discrepancy in the speed signals after transmission fault clearance.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L59"
+        }
+      ],
+      "finding_id": "F25",
+      "statement": "The three independent speed sensors on ST1C exceeded the control system's tolerance, causing automatic shutdown; however, the root cause of the discrepancy in the speed sensors has not been established.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L27"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:31.620+01:00",
+      "finding_id": "F26",
+      "quantity": {
+        "basis": "unit output at trip as published by ESO",
+        "unit": "MW",
+        "value": 210
+      },
+      "statement": "Little Barford gas turbine GT1A received an automatic shutdown command at T + 56.583 seconds (approximately 16:53:30.6+01:00) with breaker open feedback at T + 57.620 seconds (approximately 16:53:31.6+01:00), having generated 210 MW at the time of trip.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L50-L51"
+        }
+      ],
+      "finding_id": "F27",
+      "statement": "A high-pressure excursion occurred on GT1A resulting in an automated trip; however, the root cause of the pressure excursion remains unknown.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L28-L29"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:58.613+01:00",
+      "finding_id": "F28",
+      "quantity": {
+        "basis": "unit output at trip as published by ESO",
+        "unit": "MW",
+        "value": 187
+      },
+      "statement": "Little Barford gas turbine GT1B received a manual shutdown command at T + 83.897 seconds (approximately 16:53:57.9+01:00) with breaker open feedback at T + 84.613 seconds (approximately 16:53:58.6+01:00), having generated 187 MW at the time of trip.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L61-L62"
+        }
+      ],
+      "finding_id": "F29",
+      "statement": "GT1B was manually tripped by operating staff at T + 83.897 seconds in response to excessive steam pressure creating a safety risk.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L53-L54"
+        }
+      ],
+      "finding_id": "F30",
+      "statement": "The root cause of the high-pressure conditions in the Little Barford steam bypass system has not been established; a physical inspection of the bypass system was planned for September 2019.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "On 9 August 2019, a lightning strike initiated a significant electrical disturbance affecting the Great Britain transmission system. Three near-simultaneous lightning strikes struck the Eaton Socon–Wymondley Main 400 kV circuit at 16:52:33.490+01:00 (BST, UTC+01:00), causing a blue-phase-to-earth fault. The fault was cleared by protective relays within 74 milliseconds at both circuit ends and successfully restored via automatic reclose after approximately 20 seconds. However, the voltage disturbance triggered a cascade of generation losses totalling approximately 1,379 MW. Hornsea One offshore wind farm de-loaded 738 MW when its turbine controllers responded incorrectly to voltage fluctuations, shutting down Hornsea 1B and 1C modules. At Little Barford power station, all three units tripped sequentially: steam turbine ST1C (244 MW) due to speed signal discrepancies, gas turbine GT1A (210 MW) due to an unexplained high-pressure excursion in the bypass system, and GT1B (187 MW) manually shut down due to excessive steam pressure. System frequency fell rapidly by 1.208 Hz over 76 seconds, reaching a minimum of 48.787 Hz. The frequency remained below 49 Hz for 33 seconds and took 207 seconds to recover to 50.0 Hz. The initiating event and transmission system protection operation are established; however, the root causes of turbine protection trips and high-pressure excursions remain unresolved [F01, F02, F03, F04, F05, F06, F07, F08, F09, F10, F11, F12, F13, F14].",
+    "sections": [
+      {
+        "body": "The disturbance was initiated by a lightning strike on the Eaton Socon–Wymondley Main 400 kV transmission circuit [F01]. Three almost simultaneous lightning strikes were recorded adjacent to the circuit near Willian Arboretum, close to the Wymondley end, at 2019-08-09T16:52:33+01:00 (BST, UTC+01:00) [F02]. The largest strike had a current amplitude of 33.7 kA [F03]. One of the strikes caused a single blue-phase-to-earth fault on the circuit approximately 4.5 km from Wymondley Main substation [F04, F05]. The protective relays operated correctly and rapidly: Wymondley Main main protection opened 70 milliseconds after fault inception at 16:52:33.560+01:00, and Eaton Socon main protection opened 74 milliseconds later at 16:52:33.564+01:00 [F06]. Both protection operating times were within Grid Code requirements (80 ms at 400 kV). The circuit was successfully returned to service via Delayed Auto-Reclose (DAR) at approximately 16:52:53+01:00, about 20 seconds after the fault [F07].",
+        "heading": "Initiating Event"
+      },
+      {
+        "body": "System frequency was measured continuously at 1-second intervals throughout the disturbance. Pre-disturbance frequency was normal, averaging 50.0058 Hz with a range of 49.9170 to 50.0770 Hz [F08]. The voltage disturbance caused frequency to fall rapidly. The first measured sample showing deviation (below 50.0 Hz) was recorded at 16:52:33+01:00 at 49.995 Hz. Frequency declined steadily over the next 76 seconds until reaching its minimum of 48.787 Hz at 16:53:49+01:00, a drop of 1.208 Hz at an average rate of −0.0159 Hz/second [F09]. Frequency fell below 49.0 Hz at 16:53:41+01:00 and remained below 49.0 Hz until 16:54:13+01:00, a duration of 33 seconds [F10]. Recovery was gradual: frequency recovered to 50.0 Hz at 16:57:16+01:00, 207 seconds (3 minutes 27 seconds) after reaching its minimum [F11]. The sampling interval is 1 second; the exact time of the voltage dip and the precise minimum may have occurred between samples, but cannot be determined from the available data resolution [F12].",
+        "heading": "System Frequency Excursion"
+      },
+      {
+        "body": "Hornsea One is an offshore wind farm 120 km from the Yorkshire coast, under construction with two phases fully installed and a third partially installed, with a declared export capability of 800 MW [F13]. Before the disturbance, Hornsea 1B was operating at 400 MW (its maximum for that unit) and Hornsea 1C at approximately 400 MW, with Hornsea 1A at 62 MW, for a total of approximately 862 MW. However, approximately 10 minutes before the transmission fault (at approximately 15:42+01:00 UTC), the wind farm's control system exhibited oscillations in reactive power output in response to a 2% voltage step change. This oscillatory response occurred without causing de-loading at that time [F14]. When the transmission fault occurred at 16:52:33.490+01:00, an unbalanced voltage dip occurred at the wind farm's Transmission Interface Point. The reactive compensation control initially injected reactive power to boost network voltage, but then underwent significant oscillation, with reactive power absorption exceeding 300 MVAr while the network voltage fell to approximately 394 kV. Active power initially reduced from 799 MW to 400 MW, then returned [F15]. The wind farm's 34 kV collection cable system voltage rapidly reduced to 20 kV (from a target of 34 kV). Hornsea 1B and 1C began de-loading at 16:52:33.728+01:00 and completed de-load at 16:52:33.835+01:00 (107 milliseconds after beginning), with all wind turbine generators (WTGs) on these two modules reaching 0 MW [F16]. Hornsea 1A remained in operation at 62 MW. The wind farm was left generating 62 MW; the loss was 738 MW (from approximately 800 MW declared capability). The operator's investigation identified the de-load as caused by an unexpected control system response due to an insufficiently damped electrical resonance in the sub-synchronous frequency range, triggered by the initial voltage disturbance [F17]. The turbine controllers reacted incorrectly to the voltage fluctuations, with local voltage dropping and triggering automatic protection systems to disconnect the majority of turbines [F18]. This was the first known instance of such oscillations leading to wind farm de-loading [F19].",
+        "heading": "Generation Loss: Hornsea One Offshore Wind Farm"
+      },
+      {
+        "body": "Little Barford is a 740 MW combined-cycle gas turbine (CCGT) power station in Bedfordshire, connected to the transmission system at Eaton Socon 400 kV substation. All three units (two gas turbines GT1A and GT1B, and one steam turbine ST1C) were operating before the disturbance [F20]. The station's sequence-of-events (SOE) system recorded events relative to a datum T, stated as 16:52:34 ± 0.5 s BST. At T + 0 ms and T + 3 ms, the station's 110 V AC UPS (uninterruptible power supplies) -B- and -A- raised general fault alarms [F21]. The UPS likely responded to the power quality disturbance by initiating changeover to battery backup, although the exact triggering characteristic remains under investigation and was not the direct cause of the turbine trips [F22]. At T + 253 ms (approximately 16:52:34.3+01:00), the steam turbine ST1C control system initiated shutdown. At T + 1.185 seconds (approximately 16:52:35.2+01:00), ST1C's generator breaker opened and remained open, with the unit having generated 244 MW [F23]. The operator's investigation confirmed that ST1C tripped due to a discrepancy in the speed signals after transmission fault clearance [F24]. The three independent speed sensors exceeded the control system's tolerance, but the root cause of this discrepancy has not been established [F25]. With ST1C lost, the plant entered steam bypass mode, feeding steam from the gas turbines directly to the condenser. At T + 56.583 seconds (approximately 16:53:30.6+01:00), GT1A received an automatic shutdown command, and at T + 57.620 seconds (approximately 16:53:31.6+01:00), its breaker opened, having generated 210 MW [F26]. The operator states that a high-pressure excursion occurred on GT1A resulting in an automated trip, but the root cause of the pressure excursion remains unknown [F27]. Following the GT1A trip, steam system pressure continued to rise. At T + 83.897 seconds (approximately 16:53:57.9+01:00), GT1B received a manual shutdown command from operating staff, and at T + 84.613 seconds (approximately 16:53:58.6+01:00), its breaker opened, having generated 187 MW [F28]. GT1B was manually tripped in response to excessive steam pressure, creating a safety risk [F29]. The total generation loss at Little Barford was 641 MW (244 + 210 + 187 MW). The root causes of the high-pressure excursions in the steam bypass system remain unresolved [F30].",
+        "heading": "Generation Loss: Little Barford Power Station"
+      },
+      {
+        "body": "The lightning strike that initiated the disturbance is established with confidence [F01, F02]. The transmission protection operation is established: both circuit breakers opened within 74 milliseconds, complying with Grid Code requirements, and DAR successfully restored the circuit [F06, F07]. At Hornsea One, the de-loading mechanism is identified: the turbine control system responded to the voltage disturbance with sub-synchronous oscillations that were insufficiently damped, triggering automatic protection disconnection of WTGs on Hornsea 1B and 1C [F17, F18]. However, why the control system exhibited this specific response, and why the pre-event oscillations occurred 10 minutes earlier without causing de-loading, remain incompletely understood [F19]. At Little Barford, the immediate cause of ST1C's trip is identified as a discrepancy in the three independent speed signals exceeding the tolerance of the control system [F24, F25]; however, why this discrepancy occurred following the transmission fault clearance is not established [F25]. For GT1A, the immediate cause (high-pressure excursion) is noted but its root cause is unknown [F27]. For GT1B, manual shutdown was a safety response to excessive steam pressure [F29], but the root cause of the high-pressure condition is not established [F30]. A physical inspection of the Little Barford bypass system was planned for September 2019 to determine the root cause of the pressure excursions.",
+        "heading": "Mechanisms: Established and Unresolved"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

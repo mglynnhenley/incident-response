@@ -1,0 +1,184 @@
+DOCUMENT S10 — Generator and network compliance-process records, 9 August 2019
+Owner/originator: National Grid ESO (compliance testing records, Appendix G, and answers to E3C questions);
+Ofgem and E3C statements as attributed; roles only, no individuals
+Record type: reconstructed compliance-process records with attributed regulator and E3C statements
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: no clock times are recorded; dates are UK calendar dates exactly as printed (dd/mm/yyyy or
+dd.mm.yyyy in ESO's tables).
+Value-status legend: [reported] value as stated in the named source; [estimated] value the source gives as
+approximate ("around"); [measured], [modelled], [digitised] and [illustrative] not used.
+Dates, test names and code references are kept exactly as printed.
+
+PART 1 — HORNSEA ONE COMPLIANCE RECORD (ESO technical report dated 6 September 2019, Appendix G "Compliance
+Testing for Hornsea and Little Barford")
+H01  NG ESO and Ørsted held 14 [reported] face to face operational notification connections compliance
+     meetings between 21/03/2017 and 05/04/2019 to ensure that Ørsted fully understood the Grid Code
+     requirements for a Hornsea offshore wind farm to demonstrate.
+H02  Ørsted provided Grid Code requirement compliance data to NG ESO from 04/08/2017 to 21/06/2019; the first
+     version of the fault ride through report was submitted on 30/04/2018. Following all the compliance data
+     submissions, which included the simulation studies relating to Fault Ride Through, Voltage Control,
+     Frequency Control and Reactive Capability demonstrating that Hornsea complies with the Grid Code through
+     the design of the plant, NG ESO confirmed that the compliance data were satisfactory.
+H03  Energisation of assets and synchronisation to the NETS (activity | date as printed):
+C1   Energization of circuit 1 | 31/10/2018
+C2   Energization of circuit 2 | 28/11/2018
+C3   Synchronization of Reactive Compensators | 06/11/2018
+C4   Synchronization of Module 1 | 15/07/2019
+C5   Synchronization of Module 2 | 01/02/2019
+C6   Synchronization of Module 3 | 30/04/2019
+H04  Completed Grid Code compliance tests at 20% [reported] capacity, voltage tests (test | date of test |
+     results sent to NG ESO | approval by ESO, as printed):
+V1   Hornsea M1_20% Voltage test on Dynamic Reactive Compensator DRC10 | 15.01.2019 | 17.012019 | 17.012019
+V2   Hornsea M2_20% Voltage test on Dynamic Reactive Compensator DRC20 | 15.01.2019 | 17.012019 | 17.012019
+V3   Hornsea M3_20% Voltage test on Dynamic Reactive Compensator DRC30 | 15.01.2019 | 17.012019 | 17.012019
+V4   Hornsea M1/2 20% [reported] Voltage test on Dynamic Reactive Compensators DRC10/20 together | 15.01.2019
+     | 17.012019 | 17.012019
+H05  Completed tests at 70% [reported] capacity, Limited Frequency sensitive Mode Tests OC5.A.3.3 (test | date
+     of test | approval by ESO, as printed):
+L1   Hornsea M2 70% [reported] Frequency test on High Performance Park Pilot (HPPP) 2 | 25.03.2019 |
+     26.03.2019
+L2   Hornsea M3 70% [reported] Frequency test on High Performance Park Pilot (HPPP) 2 | 07.06.2019 |
+     13.06.2019
+L3   Hornsea M1 70% [reported] Frequency test on High Performance Park Pilot (HPPP) 2 | 09.08.2019 |
+     23.08.2019
+H06  Completed Preliminary Frequency Response Tests OC5.A.3.6.4 (test | date of test | approval by ESO, as
+     printed):
+F1   Hornsea M2 Frequency tests on High Performance Park Pilot (HPPP) 2 | 25.03.2019 | 26.03.2019
+F2   Hornsea M3 Frequency tests on High Performance Park Pilot (HPPP) 2 | 07.06.2019 | 13.06.2019
+H07  List of outstanding tests: 70% [reported] capacity, Preliminary Frequency Response Tests on wind farm M1;
+     100% [reported] capacity, Reactive Capability Testing on the 2 Transmission Interface Points CP.7.2.2(a),
+     OC5.A.3.4; 100% [reported] capacity, Voltage Control Testing on the two connections CP.7.2.2(b),
+     OC5.A.3.5; 100% [reported] capacity, Frequency Response Testing on the 3 Offshore Wind Farms CP.7.2.2(c)
+     OC5.A.3.6.6.
+H08  Further requirements outstanding before issuing the Final Operational Notification (FON): updates to
+     documentation under CP.7.3, the most significant being model verification to demonstrate that the models
+     and parameters reflect the test results (CP.7.3.1(c), CP.A.3.7), updated planning code data with the
+     final commissioned status (CP.7.3.1(a)) and updated Compliance Statements (CP.7.3.1(e)).
+H09  Ofgem report (dated 3 January 2020), 3.19: on 9 August two of Hornsea 1's modules were fully installed
+     and the third was partially installed, so it had declared a total power export capability of
+     800 MW [reported]. Hornsea 1 was progressing through the Grid Code compliance process and had fulfilled
+     the necessary requirements to export on an interim basis.
+H10  E3C final report (January 2020), chapter 1: at the time of the incident the windfarm was in the process
+     of demonstrating compliance with the Grid Code before being allowed to export at maximum capacity; two of
+     the units had passed the compliance tests, with the remaining unit permitted to export up to
+     20% [reported] whilst awaiting further testing. These limits were granted by the ESO based on the testing
+     and studies submitted at the time.
+
+PART 2 — LITTLE BARFORD COMPLIANCE RECORD (ESO Appendix G)
+B01  Little Barford connected to the transmission network in 1996, before the compliance process was included
+     in the Grid Code; the compliance process applied to the replacement of the gas turbines and associated
+     control systems.
+B02  Compliance activities (activity | date as printed):
+M1   ESO issued LON for Gas Turbine replacement | 06/01/2012
+M2   Automatic Voltage Regulator & Power System Stabilizer Tests on GT1A | 07/01/2013
+M3   Automatic Voltage Regulator & Power System Stabilizer Tests on GT1B | 17/01/2013
+M4   Automatic Voltage Regulator & Power System Stabilizer Tests on ST10 | 01/10/2012
+M5   Governor Tests | 15-19/03/2013
+M6   ESO Issued FON | 26/04/2013
+B03  Ofgem 3.25: Little Barford is a 740 MW [reported] combined cycle gas turbine power station owned and
+     operated by RWE Generation and connected at the Eaton Socon 400 kV [reported] substation; its two gas
+     turbines and one steam turbine were all operating on 9 August. It was commissioned in 1995 and went
+     through a major upgrade in 2011/12.
+
+PART 3 — ESO ANSWERS TO E3C QUESTIONS ON COMPLIANCE (Appendix M; based on the data available to the ESO on 28
+August 2019)
+Q01  Answer 43 (areas of concern about compliance testing with generators or OFTOs): after describing the
+     compliance process, the ESO states: "We are not aware of concerns regarding the compliance testing
+     process."
+Q02  Answer 44: there have been no issues highlighted in the generation compliance process at Hornsea 1 or
+     Little Barford in the past.
+Q03  Answer 45: there are no direct tests of generator ride-through for faults and large or rapid frequency
+     changes, which would require applying an intentional fault to the transmission system and could
+     compromise its integrity. The asset owner performs simulation studies to demonstrate ride-through
+     capability, and the ESO will not issue an Interim Operational Notice until it has reviewed these studies
+     and determined that they are in line with Grid Code requirements.
+
+PART 4 — OFGEM FINDINGS ON THE ESO'S COMPLIANCE CHECKS (Ofgem report, section 3 and executive summary)
+G01  3.13: Ofgem has not found any evidence that the ESO failed to meet its requirements under the Grid Code
+     in this area, and the ESO was not aware of any potential compliance issues with Hornsea 1 or Little
+     Barford ahead of the event. However, the processes the ESO used to check their compliance do not appear
+     sufficiently robust: the ESO relied significantly on self-certification by Hornsea 1 for the
+     commissioning process as demonstration of its Grid Code compliance, despite the complexity of the
+     connection, and after Little Barford's major refurbishment in 2011/12 relied on RWE's confirmation that
+     the modifications had not affected compliance with the Grid Code requirements for generators to remain
+     stable following network faults. No independent compliance testing or verification was carried out.
+G02  3.14: Ofgem found limitations in the ESO's understanding of Hornsea 1's control system and of the
+     interaction between its onshore and offshore arrangements, which impaired the ESO's view of Hornsea 1's
+     performance after it was affected by the fault.
+G03  3.15: the ESO allowed both Hornsea 1 and Little Barford to reconnect to the transmission system without
+     taking adequate steps to determine the root cause of each failure. Hornsea 1 was reconnected and returned
+     to service after the generator confirmed that the faulted equipment had been removed from service, but
+     before the full root cause analysis had been completed, while it was still going through Grid Code
+     compliance processes for commissioning generators.
+G04  3.16: the Grid Code procedures the ESO is required to follow for checking generators' compliance may need
+     to be clarified and strengthened; Ofgem expects the ESO to review the adequacy of the procedures it
+     carries out and to flag potential compliance concerns to Ofgem.
+G05  Executive summary: some licensees do not appear to have met their licence and code requirements, and the
+     event highlights the importance of robust industry compliance processes. Ofgem has not identified any
+     failures by the ESO to meet its requirements which contributed to the outage.
+
+PART 5 — OFGEM FINDINGS ON PERFORMANCE AGAINST REQUIREMENTS (Ofgem report, section 3 and executive summary)
+P01  Hornsea 1, 3.20: Hornsea 1's two fully operational modules deloaded automatically from around
+     737 MW [estimated] to zero after the lightning strike, whilst its remaining module continued to generate
+     at 62 MW [reported]; this occurred after the network fault on the Eaton Socon - Wymondley circuits had
+     been rectified.
+P02  Hornsea 1, 3.22: modelling that Ørsted carried out with its equipment manufacturer before 9 August
+     suggested performance issues with the voltage control system with Hornsea 1 operating at its full planned
+     1,200 MW [reported] capacity; these issues were not discussed with the ESO. The manufacturer proposed a
+     software update, which Ørsted told Ofgem it had planned to carry out on 13 August but implemented on 10
+     August, immediately after the event. The issue on 9 August occurred when the wind farm reached
+     799 MW [reported]; prior simulations and discussions had not foreseen such issues at this capacity, nor
+     that the wind farm would become unstable and de-load even at full load.
+P03  Hornsea 1, 3.23: Hornsea 1 did not notify the ESO directly when the wind farm deloaded by
+     737 MW [reported]. It then began starting up two of its modules (temporarily) without any coordination
+     with the ESO, while the ESO was attempting to respond to the generation losses it was aware of.
+P04  Hornsea 1, 3.24: the Grid Code requirements on generators' responses to network faults, known as Fault
+     Ride Through requirements, require that generators remain connected and transiently stable following a
+     fault on the transmission system, with power output recovering to at least 90% [reported] within
+     0.5 seconds [reported] (Ofgem cites Connection Condition CC.6.3.15.1). Hornsea 1 has acknowledged that it
+     did not meet this requirement, having deloaded following the fault. Hornsea 1 has also accepted that it
+     did not meet the Grid Code requirement to have an overall voltage control system which appropriately
+     dampens or limits swings (Ofgem cites CC.A.7.2.5.2, Voltage Control (Oscillations)).
+P05  Little Barford, 3.26: Fault Ride Through requirements are fundamental to the security and resilience of
+     the power system; Little Barford's generators did not continue providing power to the system following
+     the lightning strike, and this contributed to the power outage.
+P06  Little Barford, 3.28 to 3.29: the steam turbine tripped initially because of a discrepancy between its
+     three independent speed sensors that exceeded the tolerance of the control system; the root cause of the
+     discrepancy has not been established. One gas turbine was shut down automatically on excessive pressure
+     in the steam bypass and the other was tripped manually by plant operators; the root cause of these high
+     pressure conditions has not been established. Given the sequence of events and in the absence of an
+     established root cause, Ofgem's preliminary view is that the steam turbine's anomalous speed readings and
+     the resulting trip were due to the transmission network fault. RWE Generation has acknowledged the role
+     it played in contributing to the power outage by not continuing to provide power to the system following
+     the fault.
+P07  DNOs, 3.36: most DNOs would appear to have met the Grid Code requirements regarding LFDD, but Ofgem found
+     issues with essential services being disconnected, areas for improvement in the LFDD arrangements, and
+     concerning evidence that some DNOs disconnected distributed generation via LFDD that was providing
+     frequency response or reserve services. Most DNOs reconnected customers as required, but Ofgem found
+     issues with two DNOs which could potentially have jeopardised the recovery of the system.
+P08  DNOs, 3.43: DNOs' reconnection of demand following Stage 1 of LFDD generally performed as expected.
+     However, Eastern Power Networks plc and South Eastern Power Networks plc (both owned by UK Power
+     Networks) reconnected sites without being told to do so by the ESO, and acknowledge that they do not
+     appear to have technically met the requirements of the Grid Code (Ofgem cites Grid Code Operation Code
+     6.6.4). These instances were caused by the configuration of the DNOs' operational systems. The system
+     frequency was successfully restored to 50 Hz [reported] following the LFDD activation; the premature
+     demand reconnection could potentially have jeopardised this outcome.
+P09  Executive summary: two DNOs (Eastern Power Networks plc and South Eastern Power Networks plc, owned by UK
+     Power Networks) reconnected customers in England before the required instructions from the ESO, and this
+     could have jeopardised recovery of the system.
+P10  DNOs, 3.44: SP Distribution erroneously disconnected 22 MW [reported] in Scotland when system frequency
+     fell below 48.8 Hz [reported] and reconnected customers without informing the ESO. As part of the SP
+     Transmission network area it is not required by the Grid Code to disconnect demand until frequency
+     reaches 48.5 Hz [reported]; the disconnection was due to an incorrect setting in its LFDD equipment.
+     Since it was not responding to an LFDD event, Ofgem states that it does not appear to have contravened
+     the Grid Code in its disconnection or prompt reconnection of demand without informing the ESO.
+P11  NGET, 3.17 to 3.18: NGET's evidence shows fault clearance times for the two circuit breakers under
+     75 ms [reported] and voltage remaining within a range of 390 kV [reported] to 410 kV [reported] following
+     the fault; the evidence suggests that NGET's transmission assets performed as expected based on its Grid
+     Code and SQSS requirements.
+P12  Distributed generation, 3.31 to 3.32: some generators with capacities greater than 5 MW [reported] were
+     reported to have de-loaded during the event, for reasons still to be determined precisely; their RoCoF
+     protection settings should have been changed following Distribution Code modifications made in 2014. It
+     is possible that the frequency protection settings on some generators were not changed in line with
+     Distribution Code requirements.

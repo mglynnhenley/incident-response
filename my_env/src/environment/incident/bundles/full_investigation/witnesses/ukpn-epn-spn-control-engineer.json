@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-UKPN-01",
+      "response_text": "The ESO's Table 6, based on DNO-reported data as of 13 August 2019 at 12:00, lists for UK Power Networks: Eastern 69 MW [reported], 79,390 [reported] customers, final restoration time 16:56 [reported]; London 174 MW [reported], 239,861 [reported] customers, 17:37 [reported]; Southern 69 MW [reported], 81,358 [reported] customers, 17:15 [reported].",
+      "topics": [
+        "LFDD in our areas",
+        "UKPN returns",
+        "demand disconnected"
+      ]
+    },
+    {
+      "response_id": "S09-UKPN-02",
+      "response_text": "The ESO's Table 7 gives, for UKPN SPN, 17:04 [reported] for when the ESO was informed of the demand loss and 17:13 [reported] for when it instructed restoration; for UKPN EPN, 17:04 [reported] and 17:14 [reported]; for UKPN LPN, 16:58 [reported] and 16:58 [reported]. Restoration complete is printed once across the three UKPN columns, 17:37 [reported]. The ESO's earlier answers to the E3C (data at 28 August 2019) give 17:12 [reported] for the SPN instruction, 17:14 [reported] for EPN and 'Approx. 17:40' [reported] for restoration complete.",
+      "topics": [
+        "communication times",
+        "calls with the ESO",
+        "restoration instructions"
+      ]
+    },
+    {
+      "response_id": "S09-UKPN-03",
+      "response_text": "Ofgem reports that Eastern Power Networks plc and South Eastern Power Networks plc reconnected sites without being told to do so by the ESO, and that we acknowledge we do not appear to have technically met the requirements of the Grid Code. Ofgem says these instances were caused by the configuration of our operational systems, and that the premature reconnection could potentially have jeopardised the restoration of system frequency.",
+      "topics": [
+        "reconnection",
+        "reconnection timing",
+        "Grid Code requirements"
+      ]
+    },
+    {
+      "response_id": "S09-UKPN-04",
+      "response_text": "As the ESO's report describes Grid Code OC6.6, after the LFDD scheme operates the DNOs must notify the ESO of its operation and are not permitted to restore automatically disconnected demand without instruction from National Grid ESO.",
+      "topics": [
+        "restoration rule",
+        "instruction requirement",
+        "restoring disconnected demand"
+      ]
+    },
+    {
+      "response_id": "S09-UKPN-05",
+      "response_text": "We confirmed to the ESO that Ipswich Hospital was not part of our LFDD protection zone and that LFDD did not affect the substations supplying it. Our time-stamped data show the hospital's load reducing by half in a period of 14 seconds [reported].",
+      "topics": [
+        "Ipswich Hospital",
+        "hospital supply",
+        "LFDD protection zone"
+      ]
+    },
+    {
+      "response_id": "S09-UKPN-06",
+      "response_text": "We confirmed that LFDD did not affect the Victoria line. Our control room contacted London Underground, which confirmed that it had not lost power supplies at any stations but had an internal traction issue.",
+      "topics": [
+        "Victoria line",
+        "London Underground",
+        "LUL contact"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "UK Power Networks",
+  "persona_id": "ukpn-epn-spn-control-engineer",
+  "role": "Control engineer, UK Power Networks (Eastern Power Networks and South Eastern Power Networks licence areas)",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not in the UK Power Networks records I can speak to."
+}

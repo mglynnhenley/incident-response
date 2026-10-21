@@ -1,0 +1,115 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-ESO-01",
+      "response_text": "Before the event we were securing for a loss of power infeed of 1000 MW [reported], with frequency at 50.0 Hz [reported] at 16:52:26 [reported]. The largest single infeed loss on the day was 1,000 MW [reported], the loss of a single interconnector.",
+      "topics": [
+        "securing",
+        "largest infeed loss",
+        "pre-event conditions",
+        "secured loss"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-02",
+      "response_text": "Frequency response initiated at 16:52:34 [reported]. Response is provided automatically once the control room has armed it. The automatic services included static low frequency Firm Frequency Response designed to trigger at 49.7 Hz [reported], the EWIC and Moyle interconnectors initiated at 49.6 Hz [reported], and a service contracted with gas turbines initiated at 49.6 Hz [reported] and 49.5 Hz [reported] depending on the agreement with each provider.",
+      "topics": [
+        "automatic response",
+        "frequency response",
+        "trigger settings",
+        "static response"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-03",
+      "response_text": "At 16:54:20 [reported] the control room initiated instructions to generation to restore the system frequency and response levels. In total 1,240 MW [reported] of actions were taken, using Short Term Operating Reserve, Rapid Start, Balancing Mechanism actions and Fast Reserve. They included rapid start of one Dinorwig unit, instructions to another Dinorwig unit and two Ffestiniog units from a synchronising position to generating, an additional distribution-connected diesel generator and 400 MW [reported] of short term operating reserve. Coryton South and Carrington were instructed to cover the enduring loss of generation.",
+      "topics": [
+        "manual actions",
+        "reserve",
+        "STOR",
+        "balancing actions",
+        "control room instructions"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-04",
+      "response_text": "The first report of demand disconnection from a DNO reached the control room at 16:56 [reported]. Reports kept arriving with numbers of customers and load lost, and DNOs asked when restoration could begin. Some DNOs called the NGET control room instead; it referred them to us, with no impact on restoration.",
+      "topics": [
+        "demand disconnection reports",
+        "first report",
+        "DNO calls",
+        "load lost"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-05",
+      "response_text": "We instructed the DNOs to restore demand progressively from 16:58 to 17:16 [reported]. The DNOs did ask our specific permission to restore. Our verbal instructions did not follow the agreed phraseology, but they were clear and understood. All DNOs had confirmed that restoration was complete at 17:37 [reported].",
+      "topics": [
+        "restoration instructions",
+        "restore demand",
+        "permission",
+        "phraseology"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-06",
+      "response_text": "Our technical report records that we told the NGET control room at 17:32 [reported] that DNOs had started restoration. Our earlier answers to the E3C, based on the data we had on 28 August 2019, gave 17:22 [reported] for that message.",
+      "topics": [
+        "NGET control room",
+        "TNCC",
+        "calls with NGET"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-07",
+      "response_text": "Our timeline records frequency returning to 50 Hz [reported] at 16:57:15 [reported], following over 1,000 MW [reported] of response and a further 1240 MW [reported] of control room actions. The power system was confirmed to be stable within 15 minutes [reported].",
+      "topics": [
+        "frequency recovery",
+        "nominal frequency",
+        "system stability"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-08",
+      "response_text": "Most distribution-connected generation gives us no indication of its proposed output and no actual output data. Our estimate of approximately 500 MW [estimated] of embedded generation lost came from the change in metered flows between the transmission and distribution networks in our IEMS system, corrected for the frequency characteristics of demand and for frequency response services in the distribution network.",
+      "topics": [
+        "embedded generation visibility",
+        "distributed generation data",
+        "IEMS estimate"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-09",
+      "response_text": "We secure the system to within a RoCoF limit of 0.125 Hz/s [reported] for the largest credible loss. Approximately 2 GW [reported] of small generators are on relays that disconnect above 0.125 Hz/s [reported], and approximately 8.5 GW [reported] on relays that disconnect for a vector shift angle greater than 6 degrees [reported]. We also consider the impact of vector shift protection on embedded generation where appropriate.",
+      "topics": [
+        "embedded generation protection",
+        "protection settings",
+        "islanding protection",
+        "distributed generation trips"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-10",
+      "response_text": "We do not currently measure system inertia directly; we estimate it with a model, derived from the forecast demand level and embedded solar and wind.",
+      "topics": [
+        "inertia",
+        "inertia estimate"
+      ]
+    },
+    {
+      "response_id": "S09-ESO-11",
+      "response_text": "Where a large infeed loss is more likely to come with significant vector shift protection losses, we manage for that event too, even though this is strictly not within the requirements of the security standards. We secure for the potential cumulative effect of vector shift and infeed loss where we consider it appropriate.",
+      "topics": [
+        "security standard",
+        "securing distributed generation losses",
+        "SQSS"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "National Grid ESO",
+  "persona_id": "eso-control-engineer",
+  "role": "Control engineer, ESO Electricity National Control Centre (ENCC)",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not something I know or hold records on."
+}

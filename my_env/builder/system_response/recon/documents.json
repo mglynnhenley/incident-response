@@ -1,0 +1,265 @@
+{
+  "data_returns": "builder/system_response/rows/data_returns.json",
+  "documents": [
+    {
+      "artifacts": [
+        {
+          "description": "Metadata note for the frequency extract: source dataset, slice, units, sampling interval, time basis, file format and citation help.",
+          "file": "R01/R01.txt",
+          "media_type": "text/plain",
+          "sha256": "81429a38502d81d9bf2aaa9f4b476342b1050fb1e0183076b46cbf04bbe48bad"
+        },
+        {
+          "description": "One-second system frequency samples; columns timestamp (ISO-8601 with explicit +01:00 offset) and frequency_hz (Hz).",
+          "file": "R01/frequency_2019-08-09_1640-1745_BST.csv",
+          "media_type": "text/csv",
+          "sha256": "78ab22c42fe8c7442263c71b84178f72f2a631f172d56a276b08000704a539dd",
+          "timeseries": {
+            "first": "2019-08-09T16:40:00+01:00",
+            "interval_s": 1,
+            "last": "2019-08-09T17:44:59+01:00",
+            "rows": 3900,
+            "time_column": "timestamp",
+            "unit": "Hz",
+            "value_column": "frequency_hz"
+          }
+        }
+      ],
+      "category": "measurement_data",
+      "date": "2019-08-09",
+      "doc_id": "R01",
+      "label": "REAL MEASURED DATA EXTRACT",
+      "owner": "National Grid ESO (NESO published dataset)",
+      "text_file": "R01/R01.txt",
+      "title": "System frequency record, 9 August 2019, 16:40-17:45 BST"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "R03/R03.txt",
+          "media_type": "text/plain",
+          "sha256": "6c95b41f130713ca119d53a16c64a9d41b845a27a684f05485f6b9268a7d4658"
+        }
+      ],
+      "category": "network_records",
+      "date": "2019-08-09",
+      "doc_id": "R03",
+      "label": "RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT",
+      "owner": "National Grid Electricity Transmission (NGET); lightning data MeteoGroup",
+      "text_file": "R03/R03.txt",
+      "title": "Transmission fault and protection records, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "R08/R08.txt",
+          "media_type": "text/plain",
+          "sha256": "66c39cc90db20f71899549fb727fb7c6eb012a281a5c12317812321e9057d713"
+        }
+      ],
+      "category": "operational_records",
+      "date": "2019-08-09",
+      "doc_id": "R08",
+      "label": "RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT",
+      "owner": "National Grid ESO (call diagram, Appendix J to the ESO technical report)",
+      "text_file": "R08/R08.txt",
+      "title": "Operational call record between control rooms, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "R10/R10.txt",
+          "media_type": "text/plain",
+          "sha256": "f5fdfb27096e593d29be15374928b7e2811b29894f086b3d11e67a92a6a50195"
+        }
+      ],
+      "category": "requirements",
+      "date": "2019-08-09",
+      "doc_id": "R10",
+      "label": "RECONSTRUCTION OF REQUIREMENTS DESCRIBED IN PUBLISHED REPORTS — NOT CODE OR STANDARD TEXT",
+      "owner": "Compiled from National Grid ESO, Ofgem and E3C reports",
+      "text_file": "R10/R10.txt",
+      "title": "Operating requirements as described in the published reports (selection)"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S01/S01.txt",
+          "media_type": "text/plain",
+          "sha256": "9f94668dff61ceb8feead9af48dfda9575a9bf1c8b53cee64e70ca3b49cb85f4"
+        }
+      ],
+      "category": "generator_records",
+      "date": "2019-08-09",
+      "doc_id": "S01",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "Ørsted (Hornsea One operator)",
+      "text_file": "S01/S01.txt",
+      "title": "Hornsea One offshore wind farm event log, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S03/S03.txt",
+          "media_type": "text/plain",
+          "sha256": "ffbe2dc0006a0ab19cdf8115f184c2d4c236ca0a4543451d2aa48400b4c9f88e"
+        }
+      ],
+      "category": "generator_records",
+      "date": "2019-08-09",
+      "doc_id": "S03",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "RWE Generation (Little Barford power station)",
+      "text_file": "S03/S03.txt",
+      "title": "Little Barford power station alarm and sequence-of-events records, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S04/S04.txt",
+          "media_type": "text/plain",
+          "sha256": "ec3aa2a02d7ead742b83c74cd08af1e9e960e25c92ad9fe0ea85be96a931da4c"
+        }
+      ],
+      "category": "personnel_accounts",
+      "date": "2019-08-09",
+      "doc_id": "S04",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "RWE Generation (Little Barford station operating staff)",
+      "text_file": "S04/S04.txt",
+      "title": "Little Barford power station shift account, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S05/S05.txt",
+          "media_type": "text/plain",
+          "sha256": "be9fac6ee9493d32c105a12f64384ed93485752183e7442f4aedf8a0904fd266"
+        }
+      ],
+      "category": "distribution_returns",
+      "date": "2019-08-09",
+      "doc_id": "S05",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "Distribution Network Operators (returns as tabulated by National Grid ESO and the E3C)",
+      "text_file": "S05/S05.txt",
+      "title": "Distribution network operator demand disconnection and restoration returns, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S06/S06.txt",
+          "media_type": "text/plain",
+          "sha256": "317b4f2bb12bbcad744eab10eebed660c46ebb62e621755ad9a8a183842c1142"
+        }
+      ],
+      "category": "distribution_returns",
+      "date": "2019-08-09",
+      "doc_id": "S06",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "Distribution Network Operators; National Grid ESO, Ofgem and E3C estimates",
+      "text_file": "S06/S06.txt",
+      "title": "Embedded generation returns and published loss estimates, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S07/S07.txt",
+          "media_type": "text/plain",
+          "sha256": "078d9db3c64d254c316f8a1415a0200fee538078831780d87a3f8f385020bd40"
+        }
+      ],
+      "category": "operational_records",
+      "date": "2019-08-09",
+      "doc_id": "S07",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "National Grid ESO (Electricity National Control Centre)",
+      "text_file": "S07/S07.txt",
+      "title": "ESO control room log, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S12/S12.txt",
+          "media_type": "text/plain",
+          "sha256": "db1eabddd5f9e15030dda275e594ad7e923e8a7b62066e6bb7ba4a8d6aff69b8"
+        }
+      ],
+      "category": "analysis_records",
+      "date": "2019-08-09",
+      "doc_id": "S12",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "National Grid ESO, with Ofgem and E3C analysis as attributed",
+      "text_file": "S12/S12.txt",
+      "title": "Engineering analysis records, 9 August 2019"
+    }
+  ],
+  "generated_by": "builder/system_response/recon/build_recon.py",
+  "note": "Proposed manifest-v2 entries for this track's documents and witness cards. Categories R08/S07 operational_records, R10 requirements, S05/S06 distribution_returns, S12 analysis_records are proposals for the integration step. Witness cards here still carry block provenance; strip it before hashing the agent-visible copy.",
+  "row_fragments": [
+    "recon_r03.jsonl",
+    "recon_r08.jsonl",
+    "recon_s01.jsonl",
+    "recon_s03.jsonl",
+    "recon_s07.jsonl"
+  ],
+  "track": "recon",
+  "witness_evidence_id": "S09",
+  "witnesses": [
+    {
+      "blocks": 9,
+      "evidence_id": "S09",
+      "file": "witnesses/dno-control-engineer.json",
+      "organisation": "Distribution Network Operators",
+      "persona_id": "dno-control-engineer",
+      "role": "Control engineer, distribution network operator (collective account of the DNO returns)",
+      "source_sha256_with_provenance": "448867dd4b376c7308da273e551ba1ffc8004ffeb193afd11abfa468c2274939"
+    },
+    {
+      "blocks": 11,
+      "evidence_id": "S09",
+      "file": "witnesses/eso-control-engineer.json",
+      "organisation": "National Grid ESO",
+      "persona_id": "eso-control-engineer",
+      "role": "Control engineer, ESO Electricity National Control Centre (ENCC)",
+      "source_sha256_with_provenance": "e92d2480385d9eee3f0542730570279bf8f94e2b94b40f0183a999242cbc54ac"
+    },
+    {
+      "blocks": 9,
+      "evidence_id": "S09",
+      "file": "witnesses/nget-protection-engineer.json",
+      "organisation": "National Grid Electricity Transmission (NGET)",
+      "persona_id": "nget-protection-engineer",
+      "role": "Protection engineer, transmission owner",
+      "source_sha256_with_provenance": "6e068505cf47275f5c779b37873bd2618a5985139083fe33846a0f785511b227"
+    },
+    {
+      "blocks": 10,
+      "evidence_id": "S09",
+      "file": "witnesses/orsted-hornsea-operations-engineer.json",
+      "organisation": "Ørsted",
+      "persona_id": "orsted-hornsea-operations-engineer",
+      "role": "Operations engineer, Hornsea One offshore wind farm",
+      "source_sha256_with_provenance": "326fa0632272c1b6dc96d89d52fa9bd82327fd10ec6a25cd11fb1dfdbe9d87b2"
+    },
+    {
+      "blocks": 9,
+      "evidence_id": "S09",
+      "file": "witnesses/rwe-lb-shift-charge-engineer.json",
+      "organisation": "RWE Generation",
+      "persona_id": "rwe-lb-shift-charge-engineer",
+      "role": "Shift charge engineer, Little Barford power station",
+      "source_sha256_with_provenance": "27c7063725d446b6d753edc26af8c0934dc43d4c05c42af93b6ff32d12608cd1"
+    }
+  ]
+}

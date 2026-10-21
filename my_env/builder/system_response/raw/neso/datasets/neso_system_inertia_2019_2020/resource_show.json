@@ -1,0 +1,23 @@
+{
+ "mimetype": "text/csv",
+ "cache_url": null,
+ "name": "GB System Inertia - 2019-2020",
+ "hash": "",
+ "description": "Estimate of the market provided and outturn inertia for the GB Transmission System per settlement period.",
+ "metadata_modified": "2023-02-09T03:27:34.282040",
+ "cache_last_updated": null,
+ "url": "https://api.neso.energy/dataset/8f3cd0ce-6636-469e-b582-55eadfeaa1d9/resource/2f2dbaa1-3047-4e48-85f2-ec24e669678f/download/inertia.csv",
+ "datastore_active": true,
+ "format": "CSV",
+ "package_id": "8f3cd0ce-6636-469e-b582-55eadfeaa1d9",
+ "created": "2021-07-01T09:32:17.508271",
+ "state": "active",
+ "mimetype_inner": null,
+ "last_modified": "2021-07-01T10:58:44.742152",
+ "position": 2,
+ "revision_id": "686bb904-635e-4a81-9404-c3524a456653",
+ "url_type": "upload",
+ "id": "2f2dbaa1-3047-4e48-85f2-ec24e669678f",
+ "resource_type": null,
+ "size": null
+}

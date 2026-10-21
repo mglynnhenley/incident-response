@@ -1,0 +1,45 @@
+DOCUMENT R12 — Essential-service public statements, 9-10 August 2019
+Owner/originator: East Suffolk and North Essex NHS Foundation Trust (press release page);
+Newcastle International Airport (public social-media posts located in Internet Archive captures)
+Record type: public statements by essential-service operators: publication details and a short
+summary written for this record (statement text not reproduced), and the identifiers and decoded
+times of posts whose text is not recoverable
+STATUS: REAL DATA EXTRACTS — dataset values, identifiers and publication dates are unchanged from
+the publishers' files (only rows and columns were selected). Part A is not a transcription: it
+gives the statement's publication details and a short summary written for this record; the
+statement text is not reproduced. Nothing in this record is synthesised.
+Clock reference: the trust's page displays a date only; the page's embedded metadata gives
+publication and modification times in UTC (+00:00). Post times in Part B are UTC, decoded from the
+post identifiers.
+Value-status legend: [measured] metered or observed value as published; [reported] value, time or
+statement given by its publisher or by a report; [estimated] value its source describes as an
+estimate; [modelled] value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — HOSPITAL TRUST STATEMENT (publication details real; summary written for this record)
+A1   East Suffolk and North Essex NHS Foundation Trust (the trust that runs Ipswich Hospital),
+    press release 'Major power cut across parts of England and Wales'. Page date displayed:
+    10/08/2019. Page metadata: published 2019-08-10T10:09:37+00:00, modified [reported]
+    2024-10-15T08:22:50+00:00 (the page was edited after publication; the record does not show [reported]
+    what changed). Source:
+    https://www.esneft.nhs.uk/major-power-cut-across-parts-of-england-and-wales/ ; retrieved
+    2026-10-20. The page text is the trust's copyright (no open licence stated); it is not
+    reproduced.
+    Summary written for this record — statement attributed to the trust's managing director, the
+    day after the event: the national power cut caused a small electrical problem at Ipswich
+    Hospital; its emergency generators all operated, but one circuit breaker serving outpatients
+    failed to, so the X-ray department and outpatients briefly lost supply; business continuity
+    arrangements were invoked and the problem was soon resolved; no other part of the hospital was
+    affected. [reported]
+
+PART B — AIRPORT POSTS WITHOUT RECOVERABLE TEXT (identifiers and decoded times)
+B1   Newcastle International Airport: two public posts of 9 August 2019 located in Internet
+    Archive captures. Times decoded from the post identifiers (milliseconds since
+    1970-01-01T00:00:00Z = (identifier >> 22) + 1288834974657), to the second:
+    2019-08-09T16:49:50Z | post 1 of 2 | identifier 1159869406102425601 | content not known [reported]
+    2019-08-09T16:56:45Z | post 2 of 2 | identifier 1159871147980328960 | content not known [reported]
+    The archived captures hold no recoverable text for either post (script-only page captures), so
+    what they said is not known.
+
+PART C — NOTES
+C1   This record holds no statement by a water company or a refinery operator, no airport
+    operations log and no hospital engineering record.

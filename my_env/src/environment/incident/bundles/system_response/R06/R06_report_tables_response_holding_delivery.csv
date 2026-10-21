@@ -1,0 +1,68 @@
+table,row_label,row_detail,column_label,value_as_printed
+ESO technical report Table 3,Dynamic – Generation (Mandatory response),BM,Primary response held (MW),284
+ESO technical report Table 3,Dynamic – Generation (Mandatory response),BM,Secondary response held (MW),325
+ESO technical report Table 3,Dynamic – Firm Frequency Response,BM & Non-BM,Primary response held (MW),259
+ESO technical report Table 3,Dynamic – Firm Frequency Response,BM & Non-BM,Secondary response held (MW),270
+ESO technical report Table 3,Dynamic – Enhanced Frequency Response,BM & Non-BM,Primary response held (MW),227
+ESO technical report Table 3,Dynamic – Enhanced Frequency Response,BM & Non-BM,Secondary response held (MW),227
+ESO technical report Table 3,Static – Firm Frequency Response,Non-BM,Primary response held (MW),21
+ESO technical report Table 3,Static – Firm Frequency Response,Non-BM,Secondary response held (MW),261
+ESO technical report Table 3,Static – Low Frequency Response through auction,Non-BM,Primary response held (MW),31
+ESO technical report Table 3,Static – Low Frequency Response through auction,Non-BM,Secondary response held (MW),31
+ESO technical report Table 3,Static - Interconnectors,BM,Primary response held (MW),200
+ESO technical report Table 3,Static - Interconnectors,BM,Secondary response held (MW),200
+ESO technical report Table 3,Total,,Primary response held (MW),1022
+ESO technical report Table 3,Total,,Secondary response held (MW),1314
+ESO technical report Table 5,Dynamic – Generation (Mandatory response),BM,Validated Primary response,103% of 284 MW
+ESO technical report Table 5,Dynamic – Generation (Mandatory response),BM,Validated Secondary response,102% 325 MW
+ESO technical report Table 5,Dynamic – Firm Frequency Response,BM & Non-BM,Validated Primary response,74% of 259 MW
+ESO technical report Table 5,Dynamic – Firm Frequency Response,BM & Non-BM,Validated Secondary response,81% of 270 MW
+ESO technical report Table 5,Dynamic – Enhanced Frequency Response,BM & Non-BM,Validated Primary response,94% of 227 MW
+ESO technical report Table 5,Dynamic – Enhanced Frequency Response,BM & Non-BM,Validated Secondary response,94% of 227 MW
+ESO technical report Table 5,Static – Firm Frequency Response,Non-BM,Validated Primary response,0% of 21 MW
+ESO technical report Table 5,Static – Firm Frequency Response,Non-BM,Validated Secondary response,67% of 261 MW
+ESO technical report Table 5,Static – Low Frequency Response through auction,Non-BM,Validated Primary response,71% of 31 MW
+ESO technical report Table 5,Static – Low Frequency Response through auction,Non-BM,Validated Secondary response,71% of 31 MW
+ESO technical report Table 5,Static - Interconnectors,BM,Validated Primary response,100% of 200 MW
+ESO technical report Table 5,Static - Interconnectors,BM,Validated Secondary response,100% of 200 MW
+ESO technical report Table 5,Total,,Validated Primary response,89%
+ESO technical report Table 5,Total,,Validated Secondary response,88%
+Appendix M Q16 table,One hour prior to event (15:52),,Largest gen loss,950
+Appendix M Q16 table,Event time (16:52),,Largest gen loss,1000
+Appendix M Q16 table,Time after event (17:00),,Largest gen loss,1000
+Appendix M Q16 table,One hour prior to event (15:52),Dynamic Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],618[751]
+Appendix M Q16 table,One hour prior to event (15:52),Dynamic Enhanced Frequency Response,Low Frequency Holding (MW) Primary [Secondary],227 [227]
+Appendix M Q16 table,One hour prior to event (15:52),Static Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],231 [231+285]
+Appendix M Q16 table,One hour prior to event (15:52),Total,Low Frequency Holding (MW) Primary [Secondary],1076[1494]
+Appendix M Q16 table,Event time (16:52),Dynamic Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],564 [595]
+Appendix M Q16 table,Event time (16:52),Dynamic Enhanced Frequency Response,Low Frequency Holding (MW) Primary [Secondary],227 [227]
+Appendix M Q16 table,Event time (16:52),Static Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],231 [231+285]
+Appendix M Q16 table,Event time (16:52),Total,Low Frequency Holding (MW) Primary [Secondary],1022 [1338]
+Appendix M Q16 table,Time after event (17:00),Dynamic Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],823[1018]
+Appendix M Q16 table,Time after event (17:00),Dynamic Enhanced Frequency Response,Low Frequency Holding (MW) Primary [Secondary],227 [227]
+Appendix M Q16 table,Time after event (17:00),Static Primary [Secondary],Low Frequency Holding (MW) Primary [Secondary],231 [231+285]
+Appendix M Q16 table,Time after event (17:00),Total,Low Frequency Holding (MW) Primary [Secondary],1281[1761]
+Appendix M Q17 table,Dynamic Primary [Secondary],BM,Number of Units,8
+Appendix M Q17 table,Dynamic Primary [Secondary],BM,Low Frequency Holding Primary [Secondary],284 [325]
+Appendix M Q17 table,Dynamic Primary [Secondary],BM,Low Frequency Delivered within 30 seconds of event,266
+Appendix M Q17 table,Dynamic Primary [Secondary],NBM,Number of Units,36
+Appendix M Q17 table,Dynamic Primary [Secondary],NBM,Low Frequency Holding Primary [Secondary],280 [270]
+Appendix M Q17 table,Dynamic Primary [Secondary],NBM,Low Frequency Delivered within 30 seconds of event,231
+Appendix M Q17 table,Dynamic Enhanced Frequency Response,NBM,Number of Units,10
+Appendix M Q17 table,Dynamic Enhanced Frequency Response,NBM,Low Frequency Holding Primary [Secondary],227 [227]
+Appendix M Q17 table,Dynamic Enhanced Frequency Response,NBM,Low Frequency Delivered within 30 seconds of event,165
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",BM,Number of Units,-
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",BM,Low Frequency Holding Primary [Secondary],-
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",BM,Low Frequency Delivered within 30 seconds of event,-
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",NBM,Number of Units,19
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",NBM,Low Frequency Holding Primary [Secondary],[285]
+Appendix M Q17 table,"Static Triggered at 49.7 Hz, delivered within 30 seconds",NBM,Low Frequency Delivered within 30 seconds of event,198
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",BM,Number of Units,2
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",BM,Low Frequency Holding Primary [Secondary],200 [200]
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",BM,Low Frequency Delivered within 30 seconds of event,200
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",NBM,Number of Units,7
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",NBM,Low Frequency Holding Primary [Secondary],31 [31]
+Appendix M Q17 table,"Static Triggered at 49.6 Hz, delivered within 1 second",NBM,Low Frequency Delivered within 30 seconds of event,30
+Appendix M Q17 table,Total (Excluding demand effect*),,Number of Units,
+Appendix M Q17 table,Total (Excluding demand effect*),,Low Frequency Holding Primary [Secondary],1022 [1338]
+Appendix M Q17 table,Total (Excluding demand effect*),,Low Frequency Delivered within 30 seconds of event,1090

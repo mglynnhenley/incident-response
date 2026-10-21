@@ -1,0 +1,76 @@
+[
+  {
+    "data_type": "generator_compliance_process_records",
+    "evidence_id": "S10",
+    "message": "Compliance-process records for Hornsea One and Little Barford (dates, tests and outstanding items as published) with the ESO's answers and the regulator's and E3C's statements, attributed.",
+    "party": "ESO",
+    "status": "available"
+  },
+  {
+    "data_type": "grid_code_compliance_test_records",
+    "message": "Not held in this evidence pack: the Grid Code compliance test reports and simulation studies themselves were not obtained; the ESO's published compliance appendix lists, for Hornsea One, completed tests with their test, results and approval dates and the outstanding tests and, for Little Barford, only its compliance activities and their dates (2012-2013). The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests.",
+    "party": "ESO",
+    "status": "not_held"
+  },
+  {
+    "data_type": "fleet_incident_records",
+    "evidence_id": "S08",
+    "message": "Rail fleet and service records: GTR's technical review of the Class 700/717 shutdowns with the rail accounts published by ORR, the ESO, Ofgem and the E3C, each restated separately.",
+    "party": "GTR",
+    "status": "available"
+  },
+  {
+    "data_type": "onboard_tcms_event_logs",
+    "message": "Not held in this evidence pack: no train-level TCMS or on-board event log was found in the published sources or obtained; GTR's technical review (in the rail fleet records) is the available account.",
+    "party": "GTR",
+    "status": "not_held"
+  },
+  {
+    "data_type": "site_electrical_records",
+    "message": "Not held in this evidence pack: no hospital switching, protection or generator record was obtained; the trust's public statement of 10 August 2019 gives no times.",
+    "party": "HOSPITAL_TRUST",
+    "status": "not_held"
+  },
+  {
+    "data_type": "train_running_records",
+    "message": "Not held in this evidence pack: train-level running records for 9 August 2019 (Darwin Historic Service Performance) were not obtained; the service redirected the request to a login.",
+    "party": "NETWORK_RAIL",
+    "status": "not_held"
+  },
+  {
+    "data_type": "airport_power_and_incident_logs",
+    "message": "Not held in this evidence pack: no airport incident or power log was obtained; the text of the airport's own public messages of the day could not be recovered, and historical flight data were not accessible.",
+    "party": "NEWCASTLE_AIRPORT",
+    "status": "not_held"
+  },
+  {
+    "data_type": "grid_code_compliance_test_records",
+    "message": "Not held in this evidence pack: Hornsea One's Grid Code compliance test reports and simulation studies themselves were not obtained; the ESO's published compliance appendix lists only Hornsea One's completed tests with their test, results and approval dates, and its outstanding tests. The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests.",
+    "party": "ORSTED",
+    "status": "not_held"
+  },
+  {
+    "data_type": "site_trip_and_shutdown_logs",
+    "message": "Not held in this evidence pack: no refinery site log was obtained; the published reports do not name the refinery.",
+    "party": "REFINERY_OPERATOR",
+    "status": "not_held"
+  },
+  {
+    "data_type": "grid_code_compliance_test_records",
+    "message": "Not held in this evidence pack: no Little Barford compliance test report or simulation study was obtained; the ESO's published compliance appendix lists only Little Barford's compliance activities and their dates (2012-2013). The ESO states that fault ride-through is demonstrated by the asset owner's simulation studies, not by direct tests.",
+    "party": "RWE",
+    "status": "not_held"
+  },
+  {
+    "data_type": "reconnection_switching_records",
+    "message": "Not held in this evidence pack: no UK Power Networks switching or operational-system record of the Eastern and South Eastern reconnections was obtained (its open data portal refused access). Ofgem's report states only that the reconnections were caused by the configuration of the DNOs' operational systems.",
+    "party": "UKPN",
+    "status": "not_held"
+  },
+  {
+    "data_type": "pumping_station_and_treatment_works_logs",
+    "message": "Not held in this evidence pack: no water company statement or site log was located; the published reports give anonymised figures only.",
+    "party": "WATER_COMPANY",
+    "status": "not_held"
+  }
+]

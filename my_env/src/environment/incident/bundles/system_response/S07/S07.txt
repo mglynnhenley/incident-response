@@ -1,0 +1,127 @@
+DOCUMENT S07 — ESO control room log, 9 August 2019
+Owner/originator: National Grid ESO, Electricity National Control Centre (ENCC); roles only, no individuals
+Record type: reconstructed control-room timeline, per-area communication times and attributed annotations
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: times as printed by ESO, which labels no clock; read as BST (UTC+01:00) because ESO
+dates the event at 4:52pm. Entries keep the precision the source prints (seconds, minutes or "Approx").
+Value-status legend: [reported] value or time as stated in ESO's published material; [measured],
+[estimated], [modelled], [digitised] and [illustrative] not used.
+Balancing Mechanism acceptances issued by the room are not transcribed in this record; the published
+acceptance data (Elexon BOALF, evidence R06) and the calls drawn on ESO's Appendix J call diagram
+(evidence R08) are listed as separate entries of this room's control log.
+
+PART 1 — TIMELINE ENTRIES COMPILED BY ESO AFTER THE EVENT (technical report dated 6 September 2019,
+Table 1; operational rows whose source column reads ESO, and the closing row sourced to the DNOs)
+E01  16:52:26 [reported]  Frequency at 50.0 Hz [reported]; ESO securing for a loss of power infeed of
+     1000 MW [reported].
+E02  16:52:34 [reported]  Frequency response initiates.
+E03  16:52:44 [reported]  Frequency response has delivered at least 650 MW [reported] of power to
+     stabilise the frequency.
+E04  16:52:58 [reported]  Frequency drop is arrested at 49.1 Hz [reported] due to the delivery of
+     frequency response products.
+E05  16:52 [reported]  Contracted response service from Low Frequency Gas Turbines initiated.
+E06  16:53:04 [reported]  Frequency response has delivered 900 MW [reported] of power to stabilise the
+     frequency.
+E07  Since 16:53 [reported]  Short Term Operating Reserve (STOR) units were instructed; overall amount
+     400 MW [reported].
+E08  16:53:18 [reported]  Frequency recovers to 49.2 Hz [reported], due to the continued delivery of
+     frequency response.
+E09  16:53:31 [reported]  All frequency response is being delivered at this point attempting to restore
+     the frequency to operational limits.
+E10  16:54:20 [reported]  Control room initiate instructions to generation to restore the system
+     frequency and response levels to stabilise the system.
+E11  16:57:15 [reported]  Frequency returns to 50 Hz [reported] following over 1,000 MW [reported] of
+     response and a further 1240 MW [reported] of control room actions to restore frequency and
+     stabilise the situation.
+E12  16:58 – 17:16 [reported]  ESO progressively instructs the DNOs that they can commence demand
+     restoration.
+E13  17:37 [reported]  All DNOs have confirmed that demand restoration has been completed (source
+     column: DNO's).
+
+PART 2 — KEY OPERATIONAL COMMUNICATIONS (technical report dated 6 September 2019, section 6.1)
+K1   16:56 [reported]  First report of demand disconnection from a DNO received by the ESO control room.
+     Reports continued to arrive with number of customers and load lost; enquiries were received about
+     when demand restoration could begin.
+K2   16:58 to 17:16 [reported]  Demand restoration instruction to DNOs initiated by the ESO control
+     room; the demand was instructed to restore in a progressive manner.
+K3   17:23 [reported]  First Significant Incident Report (SIR) request (Grid Code OC7 and OC10)
+     received from DNOs, requesting information about the event.
+K4   17:32 [reported]  ESO control room informed NGET control room that DNOs had started restoration.
+K5   17:34 [reported]  First DNO report received that its demand had been fully restored.
+K6   18:34 and beyond [reported]  Last report from a DNO informing its demand restoration was received;
+     demand and lost-customer figures continued to be supplied by DNOs.
+
+PART 3 — TIMES BY DNO AREA (technical report dated 6 September 2019, Table 7 "DNO Areas Communication
+times"; columns: when ESO was informed of demand loss | when ESO instructed restoration | when
+restoration completed; "shared cell" = one value printed across the areas named)
+T01  SSE: 17:01 [reported] | 17:06 [reported] | 17:07 [reported]
+T02  SPED: 17:01 [reported] | 17:13 [reported] | 17:17 [reported]
+T03  ENW: 17:01 [reported] | 17:10 [reported] | 17:17 [reported]
+T04  NPG North East: 17:01 [reported] | 17:08 [reported] | 17:18 [reported]
+T05  NPG Yorkshire: 17:01 [reported] | 17:10 [reported] | 17:12 [reported]
+T06  UKPN SPN: 17:04 [reported] | 17:13 [reported] | 17:37 [reported] (shared cell: UKPN SPN, EPN, LPN)
+T07  UKPN EPN: 17:04 [reported] | 17:14 [reported] | shared cell (see T06)
+T08  UKPN LPN: 16:58 [reported] | 16:58 [reported] | shared cell (see T06)
+T09  WPD South West: 16:56 [reported] (shared cell: WPD South West, WPD South Wales) | 17:08 [reported]
+     (shared cell: WPD South West, WPD South Wales) | 17:30 [reported] (shared cell: all four WPD areas)
+T10  WPD South Wales: shared cell (see T09) | shared cell (see T09) | shared cell (see T09)
+T11  WPD West Midland: 17:02 [reported] | 17:05 [reported] | shared cell (see T09)
+T12  WPD East Midland: 16:57 [reported] | 17:16 [reported] | shared cell (see T09)
+
+PART 4 — EARLIER ESO ACCOUNT: ANSWERS TO E3C QUESTIONS (technical report Appendix M; ESO states that
+these answers are based on the data available to it on 28 August 2019)
+M1   16:56 [reported]  First report of demand disconnection from DNO received by ENCC.
+M2   17:00 [reported]  First demand restoration instruction initiated; the demand was instructed back in a
+     progressive manner.
+M3   17:19 [reported]  Last restoration instruction sent to WPD East Midland.
+M4   17:22 [reported]  ENCC informed TNCC that all DNOs had started demand restoration.
+M5   17:36 [reported]  First DNO reported its demand restoration was completed.
+M6   18:34 [reported]  Last demand restoration report received by ENCC.
+Answer 33 table (columns: ESO informed of LFDD | ESO instructed restoration | restoration complete | ESO
+informed restoration complete; "shared cell" as in Part 3; "blank" = cell left empty in the source)
+Q01  SSE: 17:00 [reported] | 17:06 [reported] | 17:07 [reported] | 18:30 [reported]
+Q02  SPED: 17:01 [reported] | 17:13 [reported] | 17:17 [reported] | 17:36 [reported]
+Q03  ENW: 17:01 [reported] | 17:11 [reported] | 17:17 [reported] | 18:30 [reported]
+Q04  NPG North East: 17:01 [reported] | 17:08 [reported] | 17:18 [reported] | 18:18 [reported]
+Q05  NPG Yorkshire: 17:01 [reported] | 17:11 [reported] | 17:12 [reported] | 18:22 [reported]
+Q06  UKPN SPN: 17:04 [reported] | 17:12 [reported] | Approx. 17:40 [reported] (shared cell: UKPN SPN, EPN,
+     LPN) | 18:34 [reported]
+Q07  UKPN EPN: 17:04 [reported] | 17:14 [reported] | shared cell (see Q06) | 18:33 [reported]
+Q08  UKPN LPN: Approx 17:00 [reported] | Approx 17:00 [reported] | shared cell (see Q06) | 18:34 [reported]
+Q09  WPD SW: 16:56 [reported] (shared cell: WPD SW, WPD South Wales) | 17:07 [reported] (shared cell: WPD
+     SW, WPD South Wales) | 17:30 [reported] (shared cell: all four WPD areas) | 18:30 [reported]
+     (shared cell: all four WPD areas)
+Q10  WPD South Wales: shared cell (see Q09) | shared cell (see Q09) | shared cell (see Q09) | shared cell
+     (see Q09)
+Q11  WPD West Midland: blank | 17:18 [reported] | shared cell (see Q09) | shared cell (see Q09)
+Q12  WPD East Midland: 17:05 [reported] | 17.19 [reported] (printed with a full stop) | shared cell (see
+     Q09) | shared cell (see Q09)
+Answer 20 (untimed): actions taken to restore frequency to operational limits
+R1   1,240 MW [reported] of actions taken by the ESO, using Short Term Operating Reserve, Rapid Start,
+     Balancing Mechanism actions and Fast Reserve (from BM and non-BM providers).
+R2   Automatic services: static Low Frequency initiated Firm Frequency Responses designed to be triggered
+     at 49.7 Hz [reported]; EWIC and Moyle interconnectors initiated at 49.6 Hz [reported]; a service
+     contracted with Gas Turbines initiated at 49.6 Hz [reported] and 49.5 Hz [reported] respectively,
+     depending on the agreement between NGESO and the providers.
+R3   Manual actions by the NGESO control room: rapid start service instructed to one Dinorwig unit;
+     instructions to another Dinorwig unit and two Ffestiniog units from a synchronising position to
+     generating; an additional distribution connected diesel generator; 400 MW [reported] of short term
+     operational reserve instructed.
+R4   To cover the enduring loss of generation at Little Barford and Hornsea One, Coryton South and
+     Carrington were both instructed by NGESO.
+
+PART 5 — POST-EVENT ANNOTATIONS (attributed; not log content)
+Annotation A — ESO technical report dated 6 September 2019, section 6.1:
+A1   ESO control room commenced communication with DNOs and NGET control room within
+     2 minutes [reported] of the initial fault.
+A2   Post-event analysis indicated the earliest restoration was completed at 17:07 [reported] and the
+     last customers were reconnected at 17:37 [reported].
+A3   Operational communications were generally efficient and effective during the demand restoration
+     process and in the demand loss and restoration reporting process; the ESO control room experienced
+     no communication issues with customers or with communication systems.
+A4   Some DNOs incorrectly called the NGET control room; NGET control room correctly referred DNOs to the
+     ESO, with no impact on the restoration process.
+A5   Indications are that DNOs did ask specific permission from the ESO control room to restore demand.
+     While verbal instructions to DNOs to restore demand did not follow agreed phraseology, they were
+     clear and understood.

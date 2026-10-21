@@ -1,0 +1,82 @@
+{
+ "assistant_turns": 16,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 30000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "The investigation report is submitted and accepted. It has 29 findings. All times below are BST (UTC+01:00) unless stated.\n\n- **Initiating event:** A single-phase-to-earth fault began at 16:52:33.490 on the Eaton Socon–Wymondley Main 400 kV circuit, 4.5 km from Wymondley Main. NGET attributes it to lightning, but which of the three simultaneous strokes hit the line is not established.\n- **Protection:** The two ends cleared the fault in 70 ms and 74 ms against the 80 ms Grid Code figure, so the protection performed as required on NGET's reported numbers. The circuit was re-energised by delayed auto-reclose at 16:52:53 and no defects were found.\n- **Generation lost:**\n  - **Hornsea One:** it lost 737 MW from 16:52:33.728, through a wind-farm control instability reported by Ørsted and Ofgem.\n  - **Little Barford:** its steam turbine (244 MW) tripped about 1 s after the fault. Its gas turbines followed, GT1A (210 MW) at about 16:53:31 and GT1B (187 MW, manual) at about 16:53:58.\n  - **Embedded generation:** about 150 MW tripped on vector shift and 350 MW on RoCoF at the fault. These are estimates, as are the later losses of about 200 MW at 49 Hz and about 550 MW at LFDD.\n  - **Totals:** ESO's cumulative total is 1,481 MW within about 1 s and 1,878 MW finally. Ofgem gives at least 1,990 MW and E3C about 2,000–2,100 MW. The system was secured for 1,000 MW.\n- **Frequency record:** The first minimum was 49.083 Hz at 16:52:59, and the overall minimum was 48.787 Hz at 16:53:49. Frequency was below 49.5 Hz for about 142 s, which exceeds the 60 s SQSS allowance. It was below 49.0 Hz for about 33 s and first reached 50 Hz at 16:57:16. These come from 1-second samples, so true minima and the initial rate of change are not resolved.\n- **Containment and recovery:**\n  - **Response held:** 1,022 MW primary and 1,314 MW secondary.\n  - **Response delivered:** ESO validated about 89% of primary and 88% of secondary.\n  - **Reserve:** 1,240 MW of control-room actions, including 400 MW of ",
+ "final_message_has_text": true,
+ "incomplete_reason": "output_token_budget_exhausted",
+ "incomplete_reasons": [
+  "output_token_budget_exhausted"
+ ],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 148904,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 34,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-034",
+  "invalid_submission_attempts": 0,
+  "python_calls": 6,
+  "retrieved": [
+   "R03",
+   "R02",
+   "R06",
+   "R07",
+   "R10",
+   "S12",
+   "S01",
+   "S03",
+   "R01",
+   "S07",
+   "S04",
+   "S06",
+   "S05",
+   "R04",
+   "R08"
+  ],
+  "schema": 1,
+  "seq": 34,
+  "submission_sha256": "c81969e2586af28cdc04b7005c654c3e9687fbe922ba1b6db314b17653fb14c4"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 34,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 34
+ },
+ "max_input_tokens": 148904,
+ "outcome": "incomplete_submission",
+ "output_token_budget_exceeded": true,
+ "output_tokens_before_freeze": 30555,
+ "output_tokens_total": 31785,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 16,
+ "tool_calls_by_tool": {
+  "interview_witness": 5,
+  "list_documents": 1,
+  "query_asset_log": 1,
+  "query_control_log": 1,
+  "query_frequency": 1,
+  "request_data_return": 6,
+  "request_document": 12,
+  "run_python": 6,
+  "submit_findings": 1
+ },
+ "tool_calls_episode_tools": 34,
+ "tool_calls_total": 34,
+ "transcript_available": true
+}

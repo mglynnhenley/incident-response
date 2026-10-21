@@ -1,0 +1,445 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L35-L42"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.490+01:00",
+      "finding_id": "F01",
+      "statement": "A lightning strike caused a blue-phase to earth fault on the Eaton Socon–Wymondley Main 400 kV circuit approximately 4.5 km from the Wymondley Main end near Letchworth Garden City at 2019-08-09T16:52:33.490+01:00 (BST).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L21-L33"
+        }
+      ],
+      "finding_id": "F02",
+      "statement": "Three almost simultaneous lightning strikes were detected by MeteoGroup adjacent to the Eaton Socon–Wymondley circuit near Willian Arboretum at the Wymondley end, with the largest strike carrying 33.7 kA.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L39-L42"
+        }
+      ],
+      "finding_id": "F03",
+      "statement": "The fault caused a blue-phase voltage depression of approximately 50% lasting 100 ms, with fault infeed of 21 kA (RMS) from Wymondley Main and 7 kA (RMS) from Eaton Socon.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L48"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.560+01:00",
+      "finding_id": "F04",
+      "quantity": {
+        "basis": "Wymondley Main protection timing from R03",
+        "unit": "ms",
+        "value": 70
+      },
+      "statement": "The Wymondley Main protection opened 70 ms after fault inception and the Eaton Socon protection opened 74 ms after fault inception, both clearing the fault within the 80 ms Grid Code requirement for 400 kV circuits.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L53"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "F05",
+      "statement": "The Delayed Auto-Reclose system automatically re-energised the Eaton Socon–Wymondley circuit at 2019-08-09T16:52:53+01:00, approximately 20 seconds after the fault inception, returning the network to its original configuration.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L38-L43"
+        },
+        {
+          "evidence_id": "R06",
+          "locator": "L105"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.728+01:00",
+      "finding_id": "F06",
+      "quantity": {
+        "basis": "Difference between 799 MW pre-event and 62 MW post de-load from S01",
+        "unit": "MW",
+        "value": 737
+      },
+      "statement": "Hornsea One lost 737 MW of generation when Hornsea 1B and 1C modules reduced from 799 MW combined output to zero, with only Hornsea 1A remaining online at 62 MW, after a 107 ms de-loading sequence initiated at 15:52:33.728Z (16:52:33.728 BST).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L29-L33"
+        }
+      ],
+      "finding_id": "F07",
+      "statement": "Hornsea One's Dynamic Reactive Compensator initially injected reactive power to boost the NETS voltage as expected in response to the transmission voltage dip.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L29-L43"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33.728+01:00",
+      "finding_id": "F08",
+      "statement": "Following the reactive power injection, the Hornsea compensation system entered significant oscillations with reactive power swings exceeding 300 MVAr absorption while the NETS and Hornsea One system voltage fell to approximately 394 kV and the 34 kV offshore collection system voltage reduced to 20 kV, triggering turbine overcurrent protection and causing the 107 ms de-load from 799 MW to 62 MW starting at 15:52:33.728Z.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L56-L93"
+        }
+      ],
+      "finding_id": "F09",
+      "statement": "Hornsea One's operator investigation concluded that the de-load was caused by an unexpected control system response due to insufficiently damped electrical resonance in the sub-synchronous frequency range triggered by the transmission fault, and has since implemented a software update and network reconfiguration.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L14-L37"
+        }
+      ],
+      "finding_id": "F10",
+      "quantity": {
+        "basis": "Sum of three reported unit outputs: 244 + 210 + 187 MW from S03",
+        "unit": "MW",
+        "value": 641
+      },
+      "statement": "Little Barford CCGT lost 641 MW when its three units (ST1C 244 MW, GT1A 210 MW, GT1B 187 MW) tripped in sequence starting with steam turbine shutdown initiated at approximately T+253 ms (where T = 16:52:34±0.5 s BST) and concluding with GT1B manual shutdown at T+83.897 s.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L42-L46"
+        }
+      ],
+      "finding_id": "F11",
+      "statement": "Little Barford's steam turbine trip was attributed by the operator to discrepancy in speed signals after transmission fault clearance; comprehensive investigation of hardware, software, fault handling and diagnostic coverage is stated to be ongoing, and the exact mechanism remains unresolved.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L49-L54"
+        }
+      ],
+      "finding_id": "F12",
+      "statement": "Little Barford GT1A auto-shutdown at T+56.583 s was attributed to high-pressure excursion of unknown cause; GT1B was manually shut down at T+83.897 s due to excessive steam pressure in response to the GT1A trip; physical inspection of the bypass system was planned to investigate.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T17:00:00+01:00"
+        }
+      ],
+      "derivation": "Identified from R01 frequency record minimum between 16:52:33 and 17:00:00 BST",
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F13",
+      "quantity": {
+        "basis": "Minimum value from measured frequency record R01",
+        "unit": "Hz",
+        "value": 48.787
+      },
+      "statement": "The measured system frequency reached a minimum of 48.787 Hz at 2019-08-09T16:53:49+01:00, 76 seconds after fault inception at 16:52:33.490+01:00.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T17:00:00+01:00"
+        }
+      ],
+      "derivation": "Counted samples below 49.0 Hz threshold in the frequency record from 16:52:33 to 17:00:00 BST",
+      "finding_id": "F14",
+      "quantity": {
+        "basis": "Duration of samples with frequency_hz < 49.0 from R01",
+        "unit": "s",
+        "value": 32
+      },
+      "statement": "System frequency remained below 49.0 Hz for 32 seconds, from 2019-08-09T16:53:41+01:00 to 2019-08-09T16:54:13+01:00, during which it oscillated between approximately 48.8 Hz and 49.3 Hz.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:41+01:00/2019-08-09T16:54:13+01:00"
+        }
+      ],
+      "finding_id": "F15",
+      "statement": "During the phase below 49 Hz, frequency exhibited large oscillations with variations exceeding 0.4 Hz per second, indicating a damped response with significant control interactions.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T17:00:00+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:57:16+01:00",
+      "finding_id": "F16",
+      "statement": "System frequency recovered to 50.0 Hz at 2019-08-09T16:57:16+01:00, approximately 2 minutes 43 seconds after fault inception.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L20-L31"
+        }
+      ],
+      "derivation": "1,378 MW actual loss = 737 MW (Hornsea) + 641 MW (Little Barford); 1,000 MW is the stated secured largest loss from R06 L20",
+      "finding_id": "F17",
+      "quantity": {
+        "basis": "Difference between 1,378 MW actual loss and 1,000 MW secured loss",
+        "unit": "MW",
+        "value": 378
+      },
+      "statement": "Total generation loss of 1,378 MW (737 MW from Hornsea One + 641 MW from Little Barford) exceeded the largest credible loss the system was secured against (1,000 MW).",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L32-L53"
+        }
+      ],
+      "finding_id": "F18",
+      "quantity": {
+        "basis": "Validated primary response performance from R06 Table 5",
+        "unit": "%",
+        "value": 89
+      },
+      "statement": "Of frequency response held at 1,022 MW primary and 1,314 MW secondary, validation showed 89% of primary (841 MW) and 88% of secondary (1,055 MW) performed as expected, with lowest performance in static FFR from Non-BM units (0%) and dynamic FFR (74%).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L17-L27"
+        }
+      ],
+      "derivation": "49.5 Hz (normal infeed loss minimum) - 48.787 Hz (observed minimum) = 0.713 Hz below normal limit; 49.2 Hz - 48.787 Hz = 0.413 Hz below infrequent limit",
+      "finding_id": "F19",
+      "quantity": {
+        "basis": "Difference between 49.5 Hz normal limit and 48.787 Hz observed minimum",
+        "unit": "Hz",
+        "value": 1.213
+      },
+      "statement": "The frequency nadir of 48.787 Hz represented a fall of 1.213 Hz below the security standard minimum of 49.5 Hz for normal infeed losses and 0.587 Hz below the 49.2 Hz minimum for infrequent infeed losses.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L84-L99"
+        }
+      ],
+      "finding_id": "F20",
+      "statement": "Low-frequency demand disconnection (LFDD) automatically activated when frequency fell below 48.80 Hz (Stage 1), triggering 5% disconnection from England and Wales transmission area.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L84-L86"
+        }
+      ],
+      "finding_id": "F21",
+      "statement": "The Grid Code requires each DNO to arrange automatic disconnection of demand if transmission system frequency drops below 48.8 Hz, operating in staged blocks of 5%, 7.5% and 10%.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L106-L108"
+        }
+      ],
+      "finding_id": "F22",
+      "statement": "The LFDD scheme is designed to disconnect between 5% and 60% of peak demand through 9 stages as system frequency reaches progressively lower trigger levels.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L62-L88"
+        }
+      ],
+      "finding_id": "F23",
+      "quantity": {
+        "basis": "ESO technical report Table 6, DNO reported data",
+        "unit": "MW",
+        "value": 931
+      },
+      "statement": "The ESO technical report stated that 931 MW of demand was disconnected due to LFDD relay operation, based on DNO reported data as of 13 August 2019.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L89-L107"
+        }
+      ],
+      "finding_id": "F24",
+      "quantity": {
+        "basis": "E3C interim report Table 1",
+        "unit": "MW",
+        "value": 973
+      },
+      "statement": "The E3C interim report stated that 973 MW of demand was disconnected by LFDD, representing 3.2% of the 29 GW system demand.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L108-L113"
+        }
+      ],
+      "finding_id": "F25",
+      "quantity": {
+        "basis": "Ofgem report, 3 January 2020",
+        "unit": "MW",
+        "value": 892
+      },
+      "statement": "Ofgem's report stated that 892 MW of net demand was disconnected from local distribution networks as a result of LFDD.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L67-L107"
+        }
+      ],
+      "finding_id": "F26",
+      "quantity": {
+        "basis": "Reported in ESO, E3C, and Ofgem reports",
+        "unit": "customers",
+        "value": 1152878
+      },
+      "statement": "All sources agree that 1,152,878 customers were affected by LFDD disconnection.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L69-L85"
+        }
+      ],
+      "finding_id": "F27",
+      "statement": "DNO-area demand disconnection varied significantly: London (UK Power Networks) experienced 174 MW affecting 239,861 customers; West Midlands (Western Power Distribution) experienced 160 MW affecting 187,427 customers; and Scotland (Scottish Power 22 MW, Scottish Electric 7 MW) experienced smaller losses of approximately 29 MW affecting 33,000 customers total.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L113-L116"
+        }
+      ],
+      "finding_id": "F28",
+      "statement": "The Grid Code requires DNOs to notify the ESO of LFDD operation and are not permitted to restore automatically disconnected demand without explicit instruction from the ESO.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L69-L85"
+        }
+      ],
+      "event_time": "2019-08-09T17:37:00+01:00",
+      "finding_id": "F29",
+      "statement": "Demand restoration was completed by 2019-08-09T17:37:00+01:00 (1 hour 45 minutes after the event), as the final restoration time recorded in the ESO demand disconnection table.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L115-L137"
+        }
+      ],
+      "finding_id": "F30",
+      "statement": "DNO public posts indicate restoration progressed rapidly: Scottish Power reported completion by 16:59 BST; Western Power Distribution reported 90% completion by 16:46 BST and full completion by 17:21 BST; UK Power Networks (London and South East) reported supplies believed back on by 17:39 BST.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "On 9 August 2019, at 16:52:33 BST (UTC+01:00), a lightning strike caused a blue-phase fault on the Eaton Socon–Wymondley Main 400 kV transmission circuit. Transmission protection cleared the fault within 74 ms, meeting Grid Code requirements, and the circuit was successfully auto-reclosed after 20 seconds. However, the transient caused cascading losses of 737 MW at Hornsea One offshore wind farm and 641 MW at Little Barford, for a total loss of 1,378 MW—exceeding the 1,000 MW largest credible loss the system was secured against. Frequency fell to a minimum of 48.787 Hz at 16:53:49, 76 seconds after the fault inception, spending 32 seconds below 49.0 Hz before recovering to 50 Hz at 16:57:16. Frequency response and static demand disconnection (LFDD) arrested the decline, but not before 892–973 MW of demand was automatically disconnected across the distribution networks, affecting 1,152,878 customers. Full demand restoration was completed by 17:37 BST. The root causes of the generation losses remain partially unexplained: Hornsea's de-load resulted from an insufficiently damped electrical resonance in the sub-synchronous range triggered by the voltage dip, while Little Barford's steam turbine trip was attributed to speed signal discrepancy after fault clearance, and the gas turbine pressure excursions remain under investigation [F01, F02, F03, F04, F05, F06, F07].",
+    "sections": [
+      {
+        "body": "At 2019-08-09T16:52:33.490+01:00 (BST, UTC+01:00), a lightning strike caused a single blue-phase to earth fault on the Eaton Socon–Wymondley Main 400 kV double-circuit overhead line, approximately 4.5 km from the Wymondley Main end near Letchworth Garden City [F01]. Three almost simultaneous lightning strikes were recorded by MeteoGroup near Willian Arboretum at the Wymondley end of the circuit, with the largest strike carrying 33.7 kA [F02]. The fault infeed was approximately 21 kA (RMS) from Wymondley Main and 7 kA (RMS) from Eaton Socon, causing a blue-phase voltage depression of circa 50% lasting 100 ms [F03].\n\nThe transmission protection performed within design limits. The Wymondley Main end protection opened 70 ms after fault inception at 16:52:33.560+01:00, and the Eaton Socon end protection opened 74 ms after fault inception at 16:52:33.564+01:00, both meeting the 80 ms Grid Code requirement for 400 kV circuits [F04]. No defects were found in the protection system or at the substations after the event. The Delayed Auto-Reclose (DAR) system successfully re-energised the circuit at 2019-08-09T16:52:53+01:00, approximately 20 seconds after the fault, returning the network to its original configuration without requiring immediate operational intervention or site attendance [F05].",
+        "heading": "The Initiating Event: Transmission Fault and Clearance"
+      },
+      {
+        "body": "The fault triggered two major generation losses that exceeded the system's security standard.\n\n**Hornsea One offshore wind farm (737 MW loss)**  \nHornsea One was exporting 799 MW (Hornsea 1B and 1C modules) before the event. At 15:52:33.490Z UTC (16:52:33.490+01:00 BST), the site experienced an unbalanced voltage dip at its Transmission Interface Point. The onshore dynamic reactive compensator initially injected reactive power to boost the NETS voltage as expected [F07], but then entered a significant oscillation, absorbing >300 MVAr while the NETS and Hornsea One system voltage fell to approximately 394 kV. The 34 kV offshore collection cable system voltage rapidly reduced to 20 kV (target 34 kV) by 15:52:33.700Z, triggering overcurrent protection in the wind turbine generators on Hornsea 1B and 1C. Hornsea 1B and 1C began de-loading turbines at 15:52:33.728Z and completed the de-load 107 ms later at 15:52:33.835Z, reaching a stable 62 MW from Hornsea 1A alone [F08]. The operator's investigation attributed the de-load to an insufficiently damped electrical resonance in the sub-synchronous frequency range, triggered by the initial voltage disturbance [F09].\n\n**Little Barford CCGT (641 MW loss)**  \nLittle Barford was operating three units: ST1C (steam turbine, 244 MW), GT1A (gas turbine, 210 MW), and GT1B (gas turbine, 187 MW). At the moment of the transmission fault (T = 0, corresponding to approximately 16:52:34±0.5 s BST), the station's 110 V AC UPS units -A- and -B- generated general fault alarms (at T+0 ms and T+3 ms respectively), switching to battery backup supplies. The steam turbine control system initiated shutdown at T+253 ms, with the generator breaker opening feedback at T+1.185 s. The operator's investigation attributed the ST trip to a discrepancy in speed signals after the transmission fault clearance; the exact mechanism remains under investigation [F11]. GT1A auto-shut down at T+56.583 s due to high-pressure excursion, which the operator stated occurred for reasons presently unknown [F12]. GT1B was manually shut down at T+83.897 s as a result of excessive steam pressure. All units were generating at their stated output levels when they tripped, confirming a 641 MW loss [F10].",
+        "heading": "Generation Losses: Scale and Mechanisms"
+      },
+      {
+        "body": "**Frequency minimum and time below 49 Hz**  \nThe measured system frequency record shows a sharp drop beginning at 2019-08-09T16:52:34+01:00 (one second after fault inception), with frequency falling from 49.995 Hz to below 49.5 Hz within 1 second. The minimum frequency of 48.787 Hz was reached at 2019-08-09T16:53:49+01:00, 76 seconds after the fault inception [F13]. Frequency remained below 49.0 Hz for 32 seconds, from 2019-08-09T16:53:41+01:00 to 2019-08-09T16:54:13+01:00 [F14]. During the sub-49 Hz phase, frequency exhibited large oscillations (ranging from 48.8 Hz to 49.3 Hz with variations exceeding 0.4 Hz per second), indicating a damped response with significant control interactions [F15]. Recovery to 50.0 Hz occurred at 2019-08-09T16:57:16+01:00, approximately 2 minutes 43 seconds after the fault inception, indicating an extended recovery process [F16].\n\n**System inertia and frequency response**  \nSystem inertia immediately prior to the event was estimated at 219,632 MVA.s (approximately 215 GVAs in the settlement period), based on a demand level of 29 GW. The system was secured against a largest credible loss of 1,000 MW with 1,022 MW of primary frequency response held and 1,314 MW of secondary response. However, the total generation loss of 1,378 MW (737 MW from Hornsea + 641 MW from Little Barford) exceeded this by 378 MW [F17]. Of the 1,022 MW primary response held, validation showed 89% (841 MW) performed as expected; 74% of dynamic FFR (192 MW of 259 MW), 94% of dynamic EFR (214 MW of 227 MW), 0% of static FFR from non-BM units, 71% of static response from auction (22 MW of 31 MW), and 103% of mandatory generation response (292 MW of 284 MW) were delivered [F18]. The frequency nadir of 48.787 Hz occurred during the phase when frequency response was being delivered and LFDD stages were activating. Frequency support from interconnectors and demand reduction from LFDD halted the decline, but not before frequency had fallen 1.213 Hz below the security standard minimum of 49.5 Hz [F19].",
+        "heading": "Frequency Response and Excursion"
+      },
+      {
+        "body": "**Triggering and stages**  \nAs frequency fell below the LFDD trigger levels, automatic demand disconnection occurred in stages. Stage 1 was triggered at 48.80 Hz, initiating a 5% disconnection from each England and Wales transmission area [F20]. The Grid Code requires each Distribution Network Operator to arrange automatic disconnection of demand if transmission system frequency drops below 48.8 Hz, operating in staged blocks [F21]. The scheme is designed to disconnect between 5% and 60% of peak demand through 9 stages as frequency reaches progressively lower trigger levels [F22].\n\n**Demand disconnected and customer impact**  \nReports show disagreement on the total demand disconnected. The ESO technical report (13 August 2019) stated 931 MW was disconnected, reported by DNOs as of 13 August [F23]. The E3C interim report (September 2019) stated 973 MW was disconnected [F24]. Ofgem's report (3 January 2020) stated 892 MW of net demand was disconnected [F25]. All sources agree that 1,152,878 customers were affected [F26]. The discrepancy appears to relate to how different reporting bases (gross demand disconnected by LFDD relays, measured/estimated quantities, and definitions of 'net' disconnection accounting for demand variation with frequency) are applied. The DNO-by-area breakdown from the ESO report shows significant variation: London (174 MW, 239,861 customers) was the largest single impact; West Midlands was the largest area loss (160 MW, 187,427 customers); and Scotland (22-29 MW, ~33k customers total) experienced smaller losses [F27].\n\n**Restoration**  \nDemand disconnection was not automatic; the Grid Code requires DNOs to notify the ESO of LFDD operation and not to restore automatically disconnected demand without explicit instruction from the ESO [F28]. Public posts by DNOs indicate restoration began shortly after the event was controlled. The final restoration time was 17:37 BST (1 hour 45 minutes after the event), as recorded in the ESO demand disconnection table [F29]. DNO posts indicate wide area restoration was substantially complete by approximately 17:22 BST for the largest providers, with confirmation of full restoration in London and South East areas by 17:39 BST [F30].",
+        "heading": "Low-Frequency Demand Disconnection"
+      },
+      {
+        "body": "Clock basis: BST (UTC+01:00) throughout, unless otherwise stated.\n\n- **16:52:33.490**: Fault inception on Eaton Socon–Wymondley 400 kV circuit; transmission system voltage dip begins [F01]\n- **16:52:33.560**: Wymondley Main protection opens, clearing fault (70 ms after inception) [F04]\n- **16:52:33.564**: Eaton Socon protection opens, clearing fault (74 ms after inception) [F04]\n- **16:52:33.728**: Hornsea 1B and 1C begin de-loading turbines in response to 20 kV collection voltage [F08]\n- **16:52:33.835**: Hornsea de-load complete, 62 MW remains [F08]\n- **16:52:34 (±0.5 s)**: Little Barford UPS alarms trigger; steam turbine control system initiates shutdown [F11]\n- **16:52:35.160** (T+1.16 s): Little Barford ST generator breaker open command [F10]\n- **16:52:35.185** (T+1.185 s): Little Barford ST generator breaker open feedback [F10]\n- **16:52:53**: Eaton Socon–Wymondley circuit re-energised via DAR, returning to pre-fault configuration [F05]\n- **16:53:30.583** (T+56.583 s): Little Barford GT1A auto-shutdown command [F12]\n- **16:53:31.620** (T+57.620 s): Little Barford GT1A breaker open feedback [F12]\n- **16:53:40**: Frequency reaches minimum approach zone; protection actions at estimated 49.0 Hz commence [F13]\n- **16:53:41**: Frequency falls below 49.0 Hz [F14]\n- **16:53:49**: Minimum frequency reached: 48.787 Hz [F13]\n- **16:53:57.897** (T+83.897 s): Little Barford GT1B manual shutdown command [F12]\n- **16:53:58.613** (T+84.613 s): Little Barford GT1B breaker open feedback [F12]\n- **16:54:13**: Frequency returns above 49.0 Hz [F14]\n- **16:57:16**: Frequency recovers to 50.0 Hz [F16]\n- **16:59**: Scottish Power LFDD demand restoration substantially complete (from DNO post) [F30]\n- **17:07**: Scottish Electric demand restoration complete [F30]\n- **17:15**: SP Manweb, ENW demand restoration (from table) [F29]\n- **17:37**: Final restoration time (latest DNO completion); Western Power Distribution final completion confirmed [F29]",
+        "heading": "Chronology from Fault to Demand Restoration"
+      },
+      {
+        "body": "**Established causes (with supporting accounts)**\n\n1. **Transmission fault**: Lightning strike confirmed by NGET analysis overlaying MeteoGroup strike detection data. One of three simultaneous strikes is timed at the same moment as the fault, with the activity aligning with protection data indicating fault location 4.5 km from Wymondley [F02].\n\n2. **Transmission protection clearance**: Operated within design and Grid Code requirements (70 ms and 74 ms, both <80 ms limit) [F04].\n\n3. **Circuit auto-reclose**: Successfully returned the circuit to service 20 seconds after fault, as designed [F05].\n\n4. **Hornsea offshore voltage response**: The initial reactive power injection by the Dynamic Reactive Compensator (DRC) was as expected for voltage control. However, damping of electrical oscillations in the sub-synchronous frequency range was insufficient, leading to > 300 MVAr absorption swings and 34 kV collection voltage drops to 20 kV [F08, F09].\n\n5. **Hornsea turbine de-load mechanism**: Automatic overcurrent protection in wind turbine generators responded to the high currents resulting from the 34 kV voltage depression. The operator has since reconfigured the internal network topology and implemented a software update (10 August) [F08].\n\n6. **LFDD operation**: Activated automatically when frequency fell below stage thresholds (Stage 1 at 48.80 Hz). The scheme operated as designed, disconnecting demand in pre-programmed stages [F20, F21].\n\n7. **Frequency response delivery**: 89% of validated primary response and 88% of validated secondary response performed as contracted, with the largest under-performance in static FFR (0% from Non-BM units) and dynamic FFR (74% delivery) [F18].\n\n**Unresolved or partially explained causes**\n\n1. **Little Barford steam turbine trip (T+253 ms shutdown initiation, T+1.185 s breaker open)**: The operator attributed the trip to discrepancy in speed signals after transmission system fault clearance. A comprehensive investigation of hardware, software, fault handling, and diagnostic coverage is stated to be ongoing, with high-resolution frequency data from Eaton Socon received for further analysis [F11]. The exact nature of the speed signal discrepancy is not established in the available records.\n\n2. **Little Barford GT1A high-pressure excursion and auto-shutdown (T+56.583 s)**: The operator states the cause is \"presently unknown\" and indicates all systems functioned as expected. A physical inspection of the bypass system was planned for September 2019 [F12]. The mechanism triggering the high-pressure condition remains unresolved.\n\n3. **Little Barford GT1B manual shutdown (T+83.897 s)**: Following as a consequence of excessive steam pressure. The operator indicates this was in response to the GT1A trip and the resulting plant transient; no separate malfunction is indicated, but the root cause of the pressure rise in GT1A is not established [F12].\n\n4. **Little Barford UPS switching to battery (T+0 and T+3 ms alarms)**: The operator initially hypothesised that UPS units switched to battery supplies as a consequence of the system disturbance. Subsequent analysis indicated all UPS units functioned correctly, and the operator believes the UPS were not related to the subsequent trip. However, the exact characteristic of the power supply to the UPS causing the switchover is still to be determined and was subject to further investigation [F11].\n\n5. **Frequency nadir timing (76 seconds after fault vs. ~1-5 seconds at most events)**: The extended delay between fault inception and minimum frequency, compared to typical large generation losses, suggests interaction between control system responses, LFDD activation, and frequency support delivery. The exact sequence of events driving this extended response profile is not documented in detail in the records.\n\n**Explanations considered and ruled out or partially ruled out**\n\n- **DRC as cause of Hornsea de-load**: Initially suspected by Hornsea operators; later concluded that the DRC worked as designed and was not the cause [F09]. The underlying cause was the control system response to voltage oscillation.\n\n- **Network configuration weakness**: Identified as a contributory factor (one SGT and one OTSUA circuit on outage created a weak internal network). Hornsea has since reconfigured this [F09].\n\n- **Transmission protection failure**: Ruled out; all protection operated within specification and Grid Code requirements [F04].\n\n- **Multiple simultaneous Secured Events**: The fault was a single event (lightning strike on one circuit). Additional generation losses (Hornsea + Little Barford) were not directly caused by N-1 conditions but by control system responses and transient effects [F01].\n\n- **RoCoF exceeding 0.125 Hz/s distribution generator disconnection limit**: No evidence in records; the system inertia and response were sufficient to contain RoCoF within limits. The 32-second sub-49 Hz phase indicates damped oscillations rather than an uncontrolled RoCoF event.",
+        "heading": "Established Causes and Unresolved Questions"
+      },
+      {
+        "body": "**Disagreements between sources**\n\n1. **Total demand disconnected**: ESO reports 931 MW (as of 13 August), E3C reports 973 MW, Ofgem reports 892 MW [F23, F24, F25]. The discrepancy likely arises from different definitions of 'disconnected demand' (gross disconnection vs. net after demand-frequency variation adjustment) and different reporting dates. All three sources agree on 1,152,878 customers affected.\n\n2. **Little Barford datum time alignment**: RWE's sequence-of-events datum T is recorded as 16:52:34 ±0.5 s without a stated clock basis. The operator notes that further work is needed to align T with the ESO datum. All times derived from T carry this ±0.5 s uncertainty [F10, F11, F12].\n\n3. **Hornsea event times (UTC vs. local)**: Ørsted's published timeline uses local time (e.g., \"16:52:33:490\"); the reconstructed log in S01 renders these as UTC (\"15:52:33.490Z\"). The record clearly states this conversion, but some chart times in published appendices (APP p40 Figure 3, APP p41 Figure 4) use unlabelled axis time scales, indexed with interpretation as BST, carrying per-row uncertainty of up to ±0.34 s [F08, F09].\n\n**Measurement and reporting limits**\n\n1. **Frequency record sampling**: The measured frequency record is sampled at 1 Hz (one sample per second). The true minimum frequency between seconds 16:52:33 and 16:53:49 could be lower by up to 0.5 Hz if a lower frequency occurred between samples. The frequency nadir of 48.787 Hz is therefore a measured value but has an implicit uncertainty of ±0.5 Hz [F13].\n\n2. **Time below 49 Hz calculation**: Based on 1-second samples, the count of 32 seconds may be off by ±1 second if the exact transition times fell between sampling instants. The range 16:53:41 to 16:54:13 is within sampling resolution but reported as exact [F14].\n\n3. **Generation loss at Hornsea**: Active power is reported by Ørsted as digitised from published charts (APP p40 Fig 3, APP p41 Fig 4) with stated uncertainty of ±5.8 MW for most readings. The 737 MW loss is derived from 799 MW (before) minus 62 MW (after) = 737 MW, with an uncertainty of approximately ±12 MW from the chart reading uncertainties [F06, F08].\n\n4. **Little Barford total loss**: Reported by ESO as measured metered volumes (B1610). The three units' outputs (244, 210, 187 MW) sum to 641 MW. No uncertainty range is given in the sources [F10].\n\n5. **System inertia estimate**: Stated as an estimate by the ESO using a model based on demand level and embedded generation forecasts, not a direct measurement. The record notes that \"the ESO does not currently measure system inertia directly\" [F17].\n\n6. **Frequency response validation**: ESO validated only 91% of primary and secondary response (945 MW and 1,202 MW of the 1,022 MW and 1,314 MW held); the performance of the remaining 9% is not reported [F18].\n\n7. **LFDD demand disconnection by DNO**: Reported by DNOs as of 13 August with unspecified measurement methodology. The definition of 'MW disconnected' (gross vs. net, measured vs. estimated at feeder level, accounting for reactive demand, etc.) is not specified in the ESO report [F23, F26].\n\n8. **Distributed generation loss**: Not recorded separately. No DNO feeder-level disconnection times or embedded generation telemetry are provided in the evidence [F30].\n\n**Causes that remain unresolved**\n\n1. **Root cause of Little Barford steam turbine speed signal discrepancy**: Attributed to \"discrepancy in speed signals after fault clearance\" but the exact nature (dual-channel disagreement, filter saturation, transducer error, data link interruption, etc.) is not specified [F11].\n\n2. **Mechanism of Little Barford GT1A high-pressure excursion**: Stated as unknown by the operator; appears to relate to bypass system operation during the plant transient but the specific malfunction is not identified [F12].\n\n3. **Hornsea sub-synchronous resonance damping insufficiency**: Attributed to \"insufficiently damped electrical resonance in the sub-synchronous frequency range.\" The specific frequency range, Q-factor, or coupling mechanism between site controls and network impedance is not detailed in the records [F09].\n\n4. **Frequency nadir delay mechanism**: The 76-second delay between fault (16:52:33.490) and minimum frequency (16:53:49) is longer than typical large generation losses (usually 2–5 seconds). The sequence of events contributing to this extended response profile is not explicitly detailed [F13].\n\n5. **UPS failure mechanism and subsequent restoration**: The UPS units switched to battery supplies in response to an unspecified power supply characteristic; all units later functioned correctly. The exact voltage, frequency, or transient condition that triggered the switchover is not documented [F11].",
+        "heading": "Uncertainty Register"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

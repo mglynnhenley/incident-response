@@ -1,0 +1,76 @@
+{
+  "_note": "Real full-investigation runs copied byte for byte from out/ (see README.md). judge_binding is the key the judge output was produced with; the tests re-bind it to the installed key in memory (no judge-visible key text changed).",
+  "graded_with": {
+    "key_version": "0.1.1",
+    "key_sha256": "9366f9e51e613e3a3df95b6df39347912492b456a56eda388b2994012ffd7ad7",
+    "grader_version": "0.1.1"
+  },
+  "runs": [
+    {
+      "run_id": "fi-pilot-opus55-001",
+      "what": "pilot (decision 64)",
+      "model": "openrouter/anthropic/claude-opus-5.5",
+      "output_token_budget": 80000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": true,
+      "source": "out/fi_pilot/gb2019-fi-pilot-opus55-001_artifacts/episode",
+      "files": {
+        "submission.json": "27f727cbcba2a934d052bcd3bc86ba62ee07047876d7b043492c903b9a7c00cc",
+        "state.json": "0259c5834c0e671f17e547115f678e96d4dacd7163c796262f62a46fff85f4f9",
+        "trace.jsonl": "3de34f1bd66082a10a77bdb422969bb545b92a7a9d7094520ab9155b7776cbaa",
+        "episode_config.json": "6aa8001fb90a8d95043adac89a206117d7c82331e1e3b6ecbde93d45aa7f6dc3",
+        "judge_output.json": "e7fd7eecc3d52da8c4d26906ac3c9ee151085a944da1bdb0cbcf1fff6f440ae1",
+        "judge_run.json": "7bf9bd076a1825f9d652ecfbfb3e49a20476e219caae619ac5d43a4335d22c4f",
+        "run_summary.json": "849a28d6d298506f7a4251a503b01b03ac47a459bc44ed1297a4d56002390347"
+      },
+      "submission_sha256": "27f727cbcba2a934d052bcd3bc86ba62ee07047876d7b043492c903b9a7c00cc",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+      "judge_binding": {
+        "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+        "key_sha256": "1e36ee7eefbd51a0107152b6e427ad66b225e457a2816ba7cf9a1cc54dfe39c1",
+        "key_version": "0.1.0",
+        "submission_sha256": "27f727cbcba2a934d052bcd3bc86ba62ee07047876d7b043492c903b9a7c00cc"
+      },
+      "judge": {
+        "judge_model": "openai/gpt-6.1-sol",
+        "rubric_version": "1.0.0",
+        "scope_mode": "topic"
+      }
+    },
+    {
+      "run_id": "fi-panel-opus55-001",
+      "what": "first panel run (decision 77)",
+      "model": "openrouter/anthropic/claude-opus-5.5",
+      "output_token_budget": 80000,
+      "outcome": "complete",
+      "incomplete_reason": null,
+      "judged": true,
+      "source": "out/panel_fi/opus55-001/gb2019-fi-opus55-001_artifacts/episode",
+      "files": {
+        "submission.json": "f855f10db7785e23570287392f934e7993d71cc4d3e2f6f93bfa045027dd3966",
+        "state.json": "3300ddb2969af147954e9755390d5cdc313562bfc8c6d6c36040040a5f0b47c8",
+        "trace.jsonl": "0cdaafce7c93a004d42eed8d33886f140c9de0e97309f2ba89b02a5c7f973481",
+        "episode_config.json": "6aa8001fb90a8d95043adac89a206117d7c82331e1e3b6ecbde93d45aa7f6dc3",
+        "judge_output.json": "0be0118d59c1da3c701a13029240d53691b8a1c9454e198128a79e37406e1874",
+        "judge_run.json": "f08d953d29e99df7fd1f5b0e50e294014dba2e33db1eba8f28af59d5a0228113",
+        "run_summary.json": "f81f420aa7ceb8c00feff5e159deac2ad49eedb303aab74437329a1b93b039be"
+      },
+      "submission_sha256": "f855f10db7785e23570287392f934e7993d71cc4d3e2f6f93bfa045027dd3966",
+      "bundle_version": "0.1.0",
+      "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+      "judge_binding": {
+        "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+        "key_sha256": "1e36ee7eefbd51a0107152b6e427ad66b225e457a2816ba7cf9a1cc54dfe39c1",
+        "key_version": "0.1.0",
+        "submission_sha256": "f855f10db7785e23570287392f934e7993d71cc4d3e2f6f93bfa045027dd3966"
+      },
+      "judge": {
+        "judge_model": "openai/gpt-6.1-sol",
+        "rubric_version": "1.0.0",
+        "scope_mode": "topic"
+      }
+    }
+  ]
+}

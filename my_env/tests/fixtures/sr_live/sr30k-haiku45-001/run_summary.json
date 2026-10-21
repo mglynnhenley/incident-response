@@ -1,0 +1,70 @@
+{
+ "assistant_turns": 12,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 30000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "Perfect! The investigation has been successfully completed and submitted. Let me provide a summary of what was delivered:\n\n## Investigation Summary\n\nI have completed a comprehensive investigation of the electrical disturbance on 9 August 2019 in the GB transmission system and submitted findings covering:\n\n### Key Findings Established:\n\n1. **Initiating Event**: A lightning strike caused a blue-phase to earth fault on the Eaton Socon–Wymondley Main 400 kV circuit at 16:52:33.490 BST (UTC+01:00). Protection cleared it within 74 ms (meeting Grid Code requirements), and the circuit was successfully auto-reclosed after 20 seconds.\n\n2. **Generation Losses**:\n   - **Hornsea One**: 737 MW loss (799 MW → 62 MW) due to insufficient damping of sub-synchronous resonance\n   - **Little Barford**: 641 MW loss (three CCGT units) due to:\n     - Steam turbine: speed signal discrepancy (mechanism unresolved)\n     - Gas turbines: high-pressure excursions of unknown cause\n\n3. **Frequency Disturbance**:\n   - Minimum: 48.787 Hz at 16:53:49 (76 seconds after fault)\n   - Time below 49 Hz: 32 seconds\n   - Recovery to 50 Hz: 16:57:16\n   - Fall of 1.213 Hz below the 49.5 Hz security standard\n\n4. **Demand Disconnection**:\n   - 892–973 MW disconnected (source disagreement on definitions)\n   - 1,152,878 customers affected\n   - Final restoration at 17:37 BST (1 hour 45 minutes)\n\n5. **Response Quality**:\n   - 89% of primary frequency response performed as expected\n   - 74% of dynamic FFR under-performed\n   - LFDD operated as designed\n\n### Unresolved Causes:\n- Exact mechanism of Little Barford steam turbine speed signal discrepancy\n- GT1A high-pressure excursion trigger mechanism\n- UPS switching to battery characteristic\n- Extended 76-second delay to frequency nadir\n\nThe submission includes 30 detailed findings with proper citations to evidence records, status classifications (observed, reported, inferred, unknown), and uncertainty documentation as required.",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 105071,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 18,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-018",
+  "invalid_submission_attempts": 1,
+  "python_calls": 4,
+  "retrieved": [
+   "R01",
+   "R03",
+   "S01",
+   "S03",
+   "R07",
+   "R02",
+   "R06",
+   "R10"
+  ],
+  "schema": 1,
+  "seq": 18,
+  "submission_sha256": "c405c2f193810a95c778a289c95db6ee302d936665e4902c77170b8aa5b1f2e6"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 18,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 18
+ },
+ "max_input_tokens": 105071,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 26586,
+ "output_tokens_total": 27137,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 12,
+ "tool_calls_by_tool": {
+  "list_documents": 1,
+  "query_asset_log": 3,
+  "query_frequency": 1,
+  "request_document": 7,
+  "run_python": 4,
+  "submit_findings": 2
+ },
+ "tool_calls_episode_tools": 18,
+ "tool_calls_total": 18,
+ "transcript_available": true
+}

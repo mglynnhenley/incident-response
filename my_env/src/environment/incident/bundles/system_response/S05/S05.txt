@@ -1,0 +1,112 @@
+DOCUMENT S05 — Distribution network operator demand disconnection and restoration returns, 9 August 2019
+Owner/originator: Distribution Network Operators (returns as tabulated by National Grid ESO and the E3C)
+Record type: reconstructed per-area LFDD returns, DNO-reported relay observations and attributed annotations
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: restoration times are hh:mm as printed, with no clock labelled; read as BST (UTC+01:00)
+because ESO dates the event at 4:52pm. The one sub-second time is printed by ESO in the same form.
+Value-status legend: [reported] value as stated in the published tables or reports; [estimated] value
+the source describes as an estimate; [measured], [modelled], [digitised] and [illustrative] not used.
+Fields left empty in a published table are written "not given"; a dash printed in a table is kept as "-".
+
+PART 1 — LFDD RETURNS AS TABULATED BY ESO (technical report dated 6 September 2019, Table 6; ESO states
+the information is based on DNO reported data as of 13 August 2019 at 12:00 [reported])
+Columns: reporting DNO | area | MW of disconnected demand by LFDD | customers affected | final
+restoration time of demand
+D01  Scottish Hydro Electric Power Distribution (SHEPD) | not given | 0 MW [reported] | not given |
+     not given
+D02  Scottish Power (SP) | not given | 22 MW [reported] | 23,117 [reported] | 16:59 [reported]
+D03  Northern Power Grid (NPG) | North East | 76 MW [reported] | 93,081 [reported] | 17:18 [reported]
+D04  Northern Power Grid (NPG) | Yorkshire | 14 MW [reported] | 10,571 [reported] | 17:12 [reported]
+D05  Electricity North Limited (ENW) | not given | 52 MW [reported] | 56,613 [reported] | 17:17 [reported]
+D06  SP Manweb | not given | 130 MW [reported] | 74,938 [reported] | 17:15 [reported]
+D07  Western Power Distribution (WPD) | East Midlands | 122 MW [reported] | 150,445 [reported] |
+     17:25 [reported]
+D08  Western Power Distribution (WPD) | West Midlands | 160 MW [reported] | 187,427 [reported] |
+     17:37 [reported]
+D09  Western Power Distribution (WPD) | South Wales | 36 MW [reported] | 29,060 [reported] |
+     17:11 [reported]
+D10  Western Power Distribution (WPD) | South West | not given | 110,273 [reported] | 17:22 [reported]
+D11  UK Power Networks (UKPN) | Eastern | 69 MW [reported] | 79,390 [reported] | 16:56 [reported]
+D12  UK Power Networks (UKPN) | London | 174 MW [reported] | 239,861 [reported] | 17:37 [reported]
+D13  UK Power Networks (UKPN) | Southern | 69 MW [reported] | 81,358 [reported] | 17:15 [reported]
+D14  Scottish Electric Power Distribution (SEPD) | not given | 7 MW [reported] | 16,744 [reported] |
+     17:07 [reported]
+D15  Totals | 931 MW [reported] | 1,152,878 [reported] | 17:37 [reported]
+
+PART 2 — LFDD RETURNS AS TABULATED BY THE E3C (interim report, October 2019, "Table 1 Low Frequency
+Demand Disconnection reported by DNO area"; same columns as Part 1)
+F01  Scottish Hydro Electric Power Distribution (SHEPD) | - | 0 MW [reported] | 0 [reported] | -
+F02  Scottish Power (SP) | not given | 22 MW [reported] | 23,117 [reported] | 16:59 [reported]
+F03  Northern PowerGrid (NPG) | North East | 76 MW [reported] | 93,081 [reported] | 17:18 [reported]
+F04  Northern PowerGrid (NPG) | Yorkshire | 14 MW [reported] | 10,571 [reported] | 17:12 [reported]
+F05  Electricity North Limited (ENW) | - | 52 MW [reported] | 56,613 [reported] | 17:17 [reported]
+F06  SP Manweb | - | 130 MW [reported] | 74,938 [reported] | 17:15 [reported]
+F07  Western Power Distribution (WPD) | East Midlands | 122 MW [reported] | 150,445 [reported] |
+     17:25 [reported]
+F08  Western Power Distribution (WPD) | West Midlands | 190 MW [reported] | 187,427 [reported] |
+     17:37 [reported]
+F09  Western Power Distribution (WPD) | South Wales | 36 MW [reported] | 29,060 [reported] |
+     17:11 [reported]
+F10  Western Power Distribution (WPD) | South West | 12 MW [reported] | 110,273 [reported] |
+     17:22 [reported]
+F11  UK Power Networks (UKPN) | Eastern | 69 MW [reported] | 79,390 [reported] | 16:56 [reported]
+F12  UK Power Networks (UKPN) | London | 174 MW [reported] | 239,861 [reported] | 17:37 [reported]
+F13  UK Power Networks (UKPN) | Southern | 69 MW [reported] | 81,358 [reported] | 17:15 [reported]
+F14  Southern Electric Power Distribution (SEPD) | - | 7 MW [reported] | 16,744 [reported] |
+     17:07 [reported]
+F15  Total | 973 MW [reported] | 1,152,878 [reported] | 17:37 [reported]
+
+PART 3 — DNO STATEMENTS AS PUBLISHED
+G1   ESO technical report, Table 1 (source column: DNOs): 16:53:49.398 [reported] Frequency breaches
+     48.8 Hz [reported] trigger level resulting in LFDD. 931 MW [reported] of demand is automatically
+     disconnected.
+G2   ESO technical report, section 4.3: the DNOs have indicated that 931 MW (3.2%) [reported] of demand
+     was automatically disconnected by the operation of the LFDD scheme.
+G3   E3C interim report: post event, two [reported] DNOs reported that a number of LFDD stage 1 schemes
+     did not trigger, and therefore did not disconnect demand. The report gives two possible reasons:
+     the system frequency did not stay at 48.8 Hz [reported] long enough to trigger the operation of all
+     LFDD schemes; or the +/-0.01 Hz [reported] tolerance setting on the LFDD schemes, which meant that
+     when the system frequency fell to 48.792 Hz [reported], not all schemes were triggered.
+G4   E3C interim report: disconnections were also experienced in Scotland, where LFDD stage 1 schemes are
+     meant to be triggered when the system frequency falls to 48.5 Hz [reported]; this was confirmed to
+     be due to incorrect LFDD settings that have subsequently been corrected.
+G5   E3C final report (January 2020): the DNOs have indicated that 4.0% [reported] of demand was actually
+     disconnected, equating to over 1 million [reported] customers.
+
+PART 4 — POST-EVENT ANNOTATIONS (attributed; added after the event, not return content)
+Annotation A — ESO technical report dated 6 September 2019, section 4.3:
+A1   The LFDD process worked largely as expected. While the process provided slightly lower than
+     5% [reported] of demand, this did not materially impact the function of the LFDD in returning the
+     frequency to normal operational parameters.
+Annotation B — Ofgem report dated 3 January 2020:
+B1   2.4.12: frequency dropping below 48.8 Hz [reported] triggered DNOs to disconnect approximately
+     5% [reported] of demand (Stage 1 of LFDD); 892 MW [reported] of net demand was disconnected in
+     total from the local distribution networks.
+B2   2.5: in total 892 MW [reported] of net demand was disconnected as a result of LFDD, representing
+     approximately 4% [reported] of national demand and affecting 1.15 million [reported] customers.
+B3   3.39: on average, the DNOs disconnected an estimated 4% [estimated] of demand as measured prior to
+     the event, and some disconnected significantly less than 5% [reported].
+B4   3.40: the principal cause of the lower levels of demand disconnection appears to be the technical
+     specification of some LFDD relays which prevented them from activating; these relays would have
+     activated if the frequency had dropped marginally lower, and the Grid Code permits this margin of
+     error. Another cause may have been the disconnection of significant volumes of distributed
+     generation as part of the LFDD operation, which lowered the net demand reduction.
+B5   3.36: some DNOs disconnected distributed generation via LFDD that was providing either frequency
+     response or reserve services.
+B6   3.43: Eastern Power Networks plc and South Eastern Power Networks plc (both owned by UK Power
+     Networks) reconnected sites without being told to do so by the ESO, and acknowledge that they do
+     not appear to have technically met the requirements of the Grid Code (Ofgem cites Grid Code
+     Operation Code 6.6.4); Ofgem states these instances were caused by the configuration of the DNOs'
+     operational systems.
+B7   3.44: SP Distribution erroneously disconnected 22 MW [reported] in Scotland when system frequency
+     fell below 48.8 Hz [reported] and reconnected customers without informing the ESO; the
+     disconnection occurred due to an incorrect setting in the DNO's LFDD equipment.
+Annotation C — E3C final report (January 2020):
+C1   Approximately 900 MW [reported] of demand was disconnected by LFDD stage one, shared out across the
+     different DNOs in England and Wales.
+C2   The E3C writes that stage one should have resulted in around 5% [reported] of national demand
+     being disconnected, while the DNOs indicated 4.0% [reported]. Reasons it gives: the 5% [reported]
+     demand figure is based on forecasted peak demand during an average cold spell; the frequency did
+     not drop below 48.8 Hz [reported] for long enough to trigger the relays to operate; and the growth
+     of embedded generation connected to the distribution network.

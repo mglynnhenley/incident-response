@@ -1,0 +1,913 @@
+code_type,code,name,details
+event_type,A,Automatic,DELAY REPORT
+event_type,C,Cancelled At Origin,CANCELLATION
+event_type,D,Diverted,CANCELLATION
+event_type,F,Failed to Stop,DELAY REPORT
+event_type,M,Manual,DELAY REPORT
+event_type,O,Changed Origin,CHANGE ORIGIN
+event_type,P,Cancelled En Route,CANCELLATION
+event_type,S,Scheduled Cancellation,CANCELLATION
+incident_reason,M8,ABOVE SBAR,Technical Fleet delays | Technical failures above the Solebar
+incident_reason,MD,BELOW SBAR,Technical Fleet delays | Technical failures below the solebar
+incident_reason,XK,NATL GRID,"External other | National Grid Power Failure - local area also affected (inc outage, surges, blips where working standby generator/UPS installed)"
+react_reason,M8,ABOVE SBAR,Technical failures above the Solebar
+react_reason,MD,BELOW SBAR,Technical failures below the solebar
+react_reason,XK,NATL GRID,"National Grid Power Failure - local area also affected (inc outage, surges, blips where working standby generator/UPS installed)"
+react_reason,YA,REG-ONTIME,Lost path - regulated for train running less late
+react_reason,YB,REG-LATE,Lost path - regulated for another later running train
+react_reason,YC,FOL-ONTIME,Lost path - following train running less late
+react_reason,YD,FOL-LATE,Lost path - following another later running train
+react_reason,YE,WTG S/LINE,Waiting path onto/from single line
+react_reason,YG,REG INSTRC,Regulated in accordance with Regulation Policy
+react_reason,YI,INWD STOCK,Late arrival of booked inward stock (inward and outward trains are operated under the same Track Access Contract)
+react_reason,YJ,INWD CREW,Late arrival of booked inward train-crew where inward and outward are worked by that train-crew under same Track Access Contract
+react_reason,YL,AUTHSD CON,"Waiting passenger connections within Connection Policy, contingency plan or otherwise agreed by NR/TOC"
+react_reason,YM,AUTHSD SSO,Special stop orders within the contingency plan or agreed by NR/TOC
+react_reason,YN,FIND CREW,"Service Recovery-booked train crew, not available"
+react_reason,YO,PLATFORM,Waiting platform/station congestion/platform change
+react_reason,YP,DIVERSION,Delays due to diversions from booked route or line
+react_reason,YR,SR CNCL,Tactical cancellation for service recovery not caused by late running
+react_reason,YU,UNIT SWAPS,"Service Recovery-booked rolling stock, not available"
+react_reason,YX,OVER CRWD,Passenger overcrowding caused by delay or cancellation of another train or its own late running
+resp_manager,METR,GTR Class 700 Unit,Govia Thameslink Railway
+resp_manager,XQBV,Sus Sussex External,Sussex
+resp_manager,XQCW,WSX Wessex External,Wessex
+resp_manager,XQDZ,WES External,Western
+resp_manager,XQEB,CTL WEST MIDLANDS EXTERNAL,Central
+resp_manager,XQFM,NWE NTH CENTRAL EXTERNAL,North West
+resp_manager,XQFO,NWE NTH LANCS + CUMBRIA,North West
+resp_manager,XQHM,ANG East Anglia External,Anglia
+resp_manager,XQIA,EAC EAST COAST EXTERNAL,East Coast
+resp_manager,XQMD,KNT Kent External,Kent
+resp_manager,XQWC,CYM External Cardiff DU,Wales
+resp_manager,XQWS,CYM External Shrewsbury DU,Wales
+toc_code,D2,Freightliner HH,
+toc_code,DB,Freightliner Intermodal,
+toc_code,EA,TPE,
+toc_code,EB,Greater Anglia,
+toc_code,EC,Grand Central,
+toc_code,ED,Northern Trains,
+toc_code,EF,GWR,
+toc_code,EH,CrossCountry,
+toc_code,EJ,West Midlands Trains,
+toc_code,EK,London Overground,
+toc_code,EM,EMR,
+toc_code,ET,GTR,
+toc_code,EX,TfL Rail,
+toc_code,HB,LNER,
+toc_code,HE,Merseyrail,
+toc_code,HL,TfW Rail Limited,
+toc_code,HM,HEx,
+toc_code,HO,Chiltern,
+toc_code,HT,c2c,
+toc_code,HU,Southeastern,
+toc_code,HY,South Western Railway,
+toc_code,P1,GB Rail Eng,
+toc_code,PE,GB Railfreight,
+toc_code,PF,Hull Trains,
+toc_code,R2,Colas Infrastucture,
+toc_code,RZ,Balfour RP,
+toc_code,SJ,South Yorkshire Supertram,
+toc_code,W1,DBC Charters,
+toc_code,WA,DB Cargo,
+stanox,09419,CULGAITH CROSSOVER,CRS (blank) | route North West
+stanox,09436,KIRKBY STEPHEN,CRS KSW | route North West
+stanox,11001,WINDERMERE,CRS WDM | route North West
+stanox,12001,BERWICK-UPON-TWEED,CRS BWK | route East Coast
+stanox,12106,BELFORD L.C.,CRS (blank) | route East Coast
+stanox,12112,ALNMOUTH,CRS ALM | route East Coast
+stanox,12132,MORPETH,CRS MPT | route East Coast
+stanox,12710,HEATON STH. JN.,CRS (blank) | route East Coast
+stanox,12714,HEATON T&R.S.M.D.,CRS XHT | route East Coast
+stanox,12931,NEWCASTLE,CRS NCL | route East Coast
+stanox,12932,KING EDWARD BRIDGE SOUTH JN,CRS (blank) | route East Coast
+stanox,13316,HEXHAM,CRS HEX | route North & East
+stanox,13515,METROCENTRE,CRS MCE | route North & East
+stanox,13539,LOW FELL ROYAL MAIL TMNL,CRS (blank) | route North & East
+stanox,13702,DURHAM,CRS DHM | route East Coast
+stanox,14031,SUNDERLAND,CRS SUN | route East Coast
+stanox,15120,FERRYHILL STH. JN.,CRS (blank) | route East Coast
+stanox,15400,TEES N.Y.,CRS (blank) | route North & East
+stanox,15449,MIDDLESBROUGH,CRS MBR | route North & East
+stanox,15501,NUNTHORPE,CRS NNT | route North & East
+stanox,15631,SOUTH BANK TEES DOCK (FLT),CRS (blank) | route North & East
+stanox,15866,DARLINGTON,CRS DAR | route East Coast
+stanox,15883,NORTHALLERTON,CRS NTR | route East Coast
+stanox,16001,THIRSK,CRS THI | route East Coast
+stanox,16005,TOLLERTON JN,CRS (blank) | route East Coast
+stanox,16102,HARROGATE,CRS HGT | route North & East
+stanox,16201,SCARBOROUGH,CRS SCA | route North & East
+stanox,16416,YORK,CRS YRK | route East Coast
+stanox,16421,SKELTON JN. (YORK),CRS (blank) | route East Coast
+stanox,16443,YORK GR SHED,CRS (blank) | route East Coast
+stanox,16460,COLTON JN,CRS (blank) | route East Coast
+stanox,16480,TEMPLE HIRST JN.,CRS (blank) | route East Coast
+stanox,16495,CHURCH FENTON,CRS CHF | route North & East
+stanox,16523,SELBY,CRS SBY | route North & East
+stanox,16602,MICKLEFIELD,CRS MIK | route North & East
+stanox,17011,KEIGHLEY,CRS KEI | route North & East
+stanox,17019,BRADFORD FORSTER SQUARE,CRS BDQ | route North & East
+stanox,17033,SHIPLEY,CRS SHY | route North & East
+stanox,17053,APPERLEY JN,CRS (blank) | route North & East
+stanox,17115,NEVILLE HILL T&R.S.M.D,CRS XNL | route North & East
+stanox,17132,LEEDS,CRS LDS | route North & East
+stanox,17135,WHITEHALL JN,CRS (blank) | route North & East
+stanox,17136,ARMLEY JUNCTION,CRS (blank) | route North & East
+stanox,17184,LEEDS F.L.T.,CRS (blank) | route North & East
+stanox,17197,WAKEFIELD EUROPORT,CRS (blank) | route North & East
+stanox,17998,DRAX AES (GBRF),CRS (blank) | route North & East
+stanox,18022,KNOTTINGLEY,CRS KNO | route North & East
+stanox,18057,WAKEFIELD KIRKGATE S&TE,CRS (blank) | route North & East
+stanox,18067,WAKEFIELD WESTGATE,CRS WKF | route North & East
+stanox,18068,HARE PARK JUNCTION,CRS (blank) | route North & East
+stanox,18076,SOUTH KIRKBY JN,CRS (blank) | route North & East
+stanox,18305,MOORTHORPE,CRS MRP | route North & East
+stanox,18445,MILNER ROYD JN,CRS (blank) | route North & East
+stanox,18449,HEBDEN BRIDGE,CRS HBD | route North & East
+stanox,18450,HEBDEN BRIDGE U R S,CRS (blank) | route North & East
+stanox,18464,HALIFAX,CRS HFX | route North & East
+stanox,18469,BRADLEY WOOD JN,CRS (blank) | route North & East
+stanox,18641,BRADFORD INTERCHANGE,CRS BDI | route North & East
+stanox,19007,BRIDLINGTON,CRS BDT | route North & East
+stanox,19023,BEVERLEY,CRS BEV | route North & East
+stanox,19105,HULL,CRS HUL | route North & East
+stanox,20002,GOOLE,CRS GOO | route North & East
+stanox,2071,(not in the glossary edition held),
+stanox,21001,BARTON-ON-HUMBER,CRS BAU | route North & East
+stanox,21122,GRIMSBY TOWN,CRS GMB | route North & East
+stanox,21141,CLEETHORPES,CRS CLE | route North & East
+stanox,22038,SCUNTHORPE B.S.C.(ENT.C.),CRS (blank) | route North & East
+stanox,22061,SCUNTHORPE,CRS SCU | route North & East
+stanox,23003,CROWLE,CRS CWE | route East Coast
+stanox,23005,THORNE JN,CRS (blank) | route East Coast
+stanox,23118,ADWICK,CRS AWK | route East Coast
+stanox,23120,ADWICK JN,CRS (blank) | route East Coast
+stanox,23150,HECK PLASMOR P S,CRS (blank) | route East Coast
+stanox,23221,SHAFTHOLME JN,CRS (blank) | route East Coast
+stanox,23421,DONCASTER,CRS DON | route East Coast
+stanox,23430,DONCASTER UP DECOY,CRS (blank) | route East Coast
+stanox,23445,DONCASTER EPT (F'LINERS),CRS (blank) | route East Coast
+stanox,23451,DONCASTER DOWN DECOY GBRF,CRS (blank) | route East Coast
+stanox,23464,DONCASTER CARR IEP DEPOT,CRS (blank) | route East Coast
+stanox,23480,LOVERSALL CARR JN,CRS (blank) | route East Coast
+stanox,23491,RETFORD,CRS RET | route East Coast
+stanox,24108,SWINTON (S.YORKS),CRS SWN | route North & East
+stanox,24219,HEXTHORPE JN,CRS (blank) | route East Coast
+stanox,24385,BARNSLEY,CRS BNY | route North & East
+stanox,24799,ROTHERHAM CENTRAL,CRS RMC | route North & East
+stanox,25016,HOLMES JN,CRS (blank) | route North & East
+stanox,25019,MASBOROUGH N&W GBRF,CRS (blank) | route North & East
+stanox,25209,TINSLEY NORTH JN,CRS (blank) | route North & East
+stanox,25210,PARKGATE,CRS PAQ | route North & East
+stanox,25316,MEADOWHALL,CRS MHS | route North & East
+stanox,25317,SHEFFIELD CATHEDRAL,CRS SHQ | route North & East
+stanox,25701,SHEFFIELD,CRS SHF | route North & East
+stanox,25705,DORE STATION JN,CRS (blank) | route North & East
+stanox,25710,TOTLEY TUNNEL EAST,CRS (blank) | route North West
+stanox,27263,CHESTERFIELD,CRS CHD | route North & East
+stanox,29002,HALL ROYD JN,CRS (blank) | route North West
+stanox,29030,COLNE,CRS CNE | route North West
+stanox,29143,CLITHEROE,CRS CLH | route North West
+stanox,29150,BLACKBURN,CRS BBN | route North West
+stanox,29154,BLACKBURN KING STREET,CRS (blank) | route North West
+stanox,30021,BLACKPOOL NORTH,CRS BPN | route North West
+stanox,30022,BLACKPOOL NORTH CAR. M.D.,CRS XNS | route North West
+stanox,30033,BLACKPOOL SOUTH,CRS BPS | route North West
+stanox,30041,POULTON-LE-FYLDE,CRS PFY | route North West
+stanox,30044,KIRKHAM & WESHAM,CRS KKM | route North West
+stanox,30120,PRESTON,CRS #MULTIVALUE | route North West
+stanox,30139,LOSTOCK HALL JN,CRS XLS | route North West
+stanox,30162,LEYLAND,CRS LEY | route North West
+stanox,30164,EUXTON JN,CRS XOU | route North West
+stanox,30201,BUCKSHAW VILLAGE,CRS BSV | route North West
+stanox,30213,CHORLEY,CRS CRL | route North West
+stanox,30221,BLACKROD,CRS BLK | route North West
+stanox,30225,HORWICH PARKWAY,CRS HWI | route North West
+stanox,30321,ADLINGTON (LANCASHIRE),CRS ADL | route North West
+stanox,30330,LOSTOCK,CRS LOT | route North West
+stanox,31033,ROCHDALE,CRS RCD | route North West
+stanox,31510,MANCHESTER VICTORIA,CRS #MULTIVALUE | route North West
+stanox,31521,SALFORD CRESCENT,CRS SLD | route North West
+stanox,31620,BOLTON,CRS BON | route North West
+stanox,32000,MANCHESTER PICCADILLY,CRS MAN | route North West
+stanox,32050,ASHBURYS,CRS ABY | route North West
+stanox,32213,HYDE JN,CRS (blank) | route North West
+stanox,32530,MANCHESTER AIRPORT,CRS MIA | route North West
+stanox,32534,STOCKPORT,CRS SPT | route North West
+stanox,32541,HAZEL GROVE,CRS HAZ | route North West
+stanox,32552,ROMILEY,CRS RML | route North West
+stanox,32555,NEW MILLS CENTRAL,CRS NMC | route North West
+stanox,33033,TRAFFORD PARK EURO TERM,CRS (blank) | route North West
+stanox,33083,TRAFFORD PARK F.L.T.,CRS (blank) | route North West
+stanox,33087,MANCHESTER OXFORD ROAD,CRS MCO | route North West
+stanox,33088,DEANSGATE,CRS DGT | route North West
+stanox,33099,TRAFFORD PARK EURO TML GBRF,CRS (blank) | route North West
+stanox,34002,CHINLEY NORTH JN,CRS (blank) | route North West
+stanox,34004,HOPE (EARLES SIDINGS) FHH,CRS (blank) | route North West
+stanox,34009,EARLES SDGS S.B.,CRS (blank) | route North West
+stanox,34098,PEAK FOREST S.B.,CRS (blank) | route North West
+stanox,34111,TUNSTEAD SDGS,CRS (blank) | route North West
+stanox,34232,DOWLOW BRIGGS SIDINGS,CRS (blank) | route North West
+stanox,35001,SOUTHPORT,CRS SOP | route North West
+stanox,35107,WIGAN WALLGATE UP C.S.,CRS XWG | route North West
+stanox,35111,WIGAN WALLGATE,CRS WGW | route North West
+stanox,35136,WIGAN NORTH WESTERN,CRS WGN | route North West
+stanox,35325,EARLESTOWN,CRS ERL | route North West
+stanox,35405,ST HELENS CENTRAL,CRS SNH | route North West
+stanox,35531,WARRINGTON BANK QUAY,CRS WBQ | route North West
+stanox,36001,ORMSKIRK,CRS OMS | route North West
+stanox,36050,KIRKBY,CRS KIR | route North West
+stanox,36058,KIRKDALE C.S.,CRS XKK | route North West
+stanox,36066,HALL ROAD,CRS HLR | route North West
+stanox,36074,BOOTLE JN,CRS (blank) | route North West
+stanox,36076,SANDHILLS,CRS SDL | route North West
+stanox,36080,LIVERPOOL CENTRAL,CRS LVC | route North West
+stanox,36108,LIVERPOOL BIOMASS TML GBF,CRS (blank) | route North West
+stanox,36151,LIVERPOOL LIME STREET,CRS LIV | route North West
+stanox,36192,L'POOL STH PW HL (ALLERTN),CRS ALE | route North West
+stanox,36600,BOOTLE BRANCH JN,CRS (blank) | route North West
+stanox,36605,HUYTON,CRS HUY | route North West
+stanox,36702,HUNTS CROSS,CRS HNX | route North West
+stanox,36711,WARRINGTON CENTRAL,CRS WAC | route North West
+stanox,36720,GLAZEBROOK EAST JN & SDGS,CRS (blank) | route North West
+stanox,38001,WEST KIRBY,CRS WKI | route North West
+stanox,38008,MORETON (MERSEYSIDE),CRS MRT | route North West
+stanox,38010,NEW BRIGHTON,CRS NBN | route North West
+stanox,38012,BIDSTON,CRS BID | route North West
+stanox,38016,WALLASEY VILLAGE,CRS WLV | route North West
+stanox,38018,WALLASEY GROVE ROAD,CRS WLG | route North West
+stanox,38151,BIRKENHEAD NORTH,CRS BKN | route North West
+stanox,38153,BIRKENHEAD PARK,CRS BKP | route North West
+stanox,38181,MOORFIELDS (WIRRAL),CRS MRF | route North West
+stanox,38182,LIVERPOOL LIME STREET LL,CRS LVL | route North West
+stanox,38183,LIVERPOOL CENTRAL,CRS XLV | route North West
+stanox,38184,JAMES STREET,CRS LVJ | route North West
+stanox,38185,HAMILTON SQUARE,CRS BKQ | route North West
+stanox,38200,BIRKENHEAD CENTRAL,CRS BKC | route North West
+stanox,38201,ROCK FERRY,CRS RFY | route North West
+stanox,38202,GREEN LANE,CRS GNL | route North West
+stanox,38208,BEBINGTON,CRS BEB | route North West
+stanox,38210,PORT SUNLIGHT,CRS PSL | route North West
+stanox,38214,SPITAL,CRS SPI | route North West
+stanox,38216,BROMBOROUGH RAKE,CRS BMR | route North West
+stanox,38218,BROMBOROUGH,CRS BOM | route North West
+stanox,38220,EASTHAM RAKE,CRS ERA | route North West
+stanox,38302,HOOTON,CRS HOO | route North West
+stanox,38317,ELLESMERE PORT,CRS ELP | route North West
+stanox,39001,DEE MARSH JN.,CRS (blank) | route Wales
+stanox,40001,HOLYHEAD,CRS HHD | route Wales
+stanox,40036,BANGOR (GWYNEDD),CRS BNG | route Wales
+stanox,40046,LLANDUDNO,CRS LLD | route Wales
+stanox,40050,LLANDUDNO JUNCTION,CRS LLJ | route Wales
+stanox,40060,NORTH LLANRWST,CRS NLR | route Wales
+stanox,40066,BLAENAU FFESTINIOG,CRS BFF | route Wales
+stanox,40076,RHYL,CRS RHL | route Wales
+stanox,40320,CHESTER,CRS #MULTIVALUE | route North West
+stanox,41016,SHOTTON HIGH LEVEL,CRS (blank) | route Wales
+stanox,41111,WREXHAM CENTRAL,CRS WXC | route Wales
+stanox,41130,WREXHAM GENERAL,CRS WRX | route Wales
+stanox,42140,CREWE,CRS CRE | route North West
+stanox,42231,WEM,CRS WEM | route Wales
+stanox,4303,(not in the glossary edition held),
+stanox,44038,LINCOLN,CRS LCN | route East Midlands
+stanox,44231,SKEGNESS,CRS SKG | route East Midlands
+stanox,44302,NEWARK CASTLE,CRS NCT | route East Midlands
+stanox,44304,NEWARK NORTH GATE,CRS NNG | route East Coast
+stanox,44421,GRANTHAM,CRS GRA | route East Coast
+stanox,44999,STOKE JN.,CRS (blank) | route East Coast
+stanox,45002,TALLINGTON JN.,CRS (blank) | route East Coast
+stanox,45013,HELPSTON JN.,CRS (blank) | route East Coast
+stanox,45018,WERRINGTON JN,CRS (blank) | route East Midlands
+stanox,45020,KETTON WARD SDG GBRF,CRS (blank) | route East Midlands
+stanox,45095,PETERBOROUGH VIRTUAL GBRF,CRS (blank) | route East Coast
+stanox,45098,PETERBOROUGH SPITAL SDGS,CRS (blank) | route East Coast
+stanox,45100,PETERBOROUGH WEST YARD,CRS XPW | route East Coast
+stanox,45106,PETERBOROUGH,CRS PBO | route East Coast
+stanox,45107,PETERBOROUGH L.I.P.,CRS (blank) | route East Coast
+stanox,45112,PETERBORO MAINT SHED GBRF,CRS (blank) | route East Coast
+stanox,45117,PETERBORO NENE C.H.S,CRS XPN | route East Coast
+stanox,45150,HOLME JN.,CRS XHO | route East Coast
+stanox,45201,HUNTINGDON,CRS HUN | route East Coast
+stanox,4521,(not in the glossary edition held),
+stanox,45402,ST NEOTS,CRS SNO | route East Coast
+stanox,45603,SANDY,CRS SDY | route East Coast
+stanox,46200,WHITEMOOR YARD L.D.C GBRF,CRS (blank) | route Anglia
+stanox,46206,MARCH,CRS MCH | route Anglia
+stanox,46220,KINGS LYNN,CRS KLN | route Anglia
+stanox,46255,DOWNHAM MARKET,CRS DOW | route Anglia
+stanox,46261,THETFORD,CRS TTF | route Anglia
+stanox,46272,ELY NORTH JN,CRS XYE | route Anglia
+stanox,46273,ELY,CRS ELY | route Anglia
+stanox,46301,BURY ST EDMUNDS,CRS BSE | route Anglia
+stanox,47214,CAMBRIDGE NORTH,CRS CMB | route Anglia
+stanox,47215,CAMBRIDGE T.&R.S.M.D.,CRS XCA | route Anglia
+stanox,47221,CAMBRIDGE,CRS CBG | route Anglia
+stanox,47245,FOXTON EXHANGE SDGS GBRF,CRS (blank) | route Anglia
+stanox,47250,SHEPRETH BRANCH JN,CRS XSP | route Anglia
+stanox,4730,(not in the glossary edition held),
+stanox,47321,AUDLEY END,CRS AUD | route Anglia
+stanox,47344,STANSTED AIRPORT,CRS SSD | route Anglia
+stanox,47611,HARLOW TOWN,CRS HWN | route Anglia
+stanox,48104,LOWESTOFT,CRS LWT | route Anglia
+stanox,4812,(not in the glossary edition held),
+stanox,4821,(not in the glossary edition held),
+stanox,48231,NORWICH,CRS NRW | route Anglia
+stanox,48501,ATTLEBOROUGH,CRS ATL | route Anglia
+stanox,49014,STOWMARKET,CRS SMK | route Anglia
+stanox,49118,SAXMUNDHAM,CRS SAX | route Anglia
+stanox,49129,FELIXSTOWE SOUTH GBRF,CRS (blank) | route Anglia
+stanox,49136,FELIXSTOWE NORTH F.L.T.,CRS (blank) | route Anglia
+stanox,49139,FELIXSTOWE NORTH GBRF,CRS (blank) | route Anglia
+stanox,49211,IPSWICH,CRS IPS | route Anglia
+stanox,49302,MANNINGTREE,CRS MNG | route Anglia
+stanox,49303,MANNINGTREE DOWN SIDING,CRS (blank) | route Anglia
+stanox,50049,COLCHESTER,CRS COL | route Anglia
+stanox,50105,MARKS TEY,CRS MKT | route Anglia
+stanox,50211,WITHAM,CRS WTM | route Anglia
+stanox,50328,SHENFIELD,CRS SNF | route Anglia
+stanox,50334,GIDEA PARK,CRS GDP | route Anglia
+stanox,50423,ILFORD,CRS IFD | route Anglia
+stanox,50434,FOREST GATE JN,CRS (blank) | route Anglia
+stanox,51001,SHOEBURYNESS,CRS SRY | route Anglia
+stanox,51004,THORPE BAY,CRS TPB | route Anglia
+stanox,51007,SOUTHEND CENTRAL,CRS SOC | route Anglia
+stanox,51013,LEIGH-ON-SEA,CRS LES | route Anglia
+stanox,51016,PITSEA,CRS PSE | route Anglia
+stanox,51017,PITSEA UP SIDING,CRS (blank) | route Anglia
+stanox,51023,STANFORD-LE-HOPE,CRS SFO | route Anglia
+stanox,51120,LONDON GATEWAY GBRF,CRS (blank) | route Anglia
+stanox,51126,LONDON GATEWAY DBSCHENKER,CRS (blank) | route Anglia
+stanox,51127,LONDON GATEWAY FRGHTLINER,CRS (blank) | route Anglia
+stanox,51301,LAINDON,CRS LAI | route Anglia
+stanox,51305,WEST HORNDON,CRS WHR | route Anglia
+stanox,51309,OCKENDON,CRS OCK | route Anglia
+stanox,51311,GRAYS,CRS GRY | route Anglia
+stanox,51313,CHAFFORD HUNDRED,CRS CFH | route Anglia
+stanox,51341,PURFLEET DEEP WTR WF (EWS),CRS (blank) | route Anglia
+stanox,51344,PURFLEET,CRS PFL | route Anglia
+stanox,51347,RAINHAM,CRS RNM | route Anglia
+stanox,51351,UPMINSTER,CRS UPM | route Anglia
+stanox,51402,DAGENHAM DOCK,CRS DDK | route Anglia
+stanox,51406,DAGENHAM DOCK A.R.C.,CRS (blank) | route Anglia
+stanox,51509,RIPPLE LANE WEST S.S.,CRS (blank) | route Anglia
+stanox,51531,BARKING,CRS BKG | route Anglia
+stanox,51541,WOODGRANGE PARK,CRS WGR | route Anglia
+stanox,51558,SOUTH TOTTENHAM,CRS STO | route Anglia
+stanox,51602,EAST HAM E.M.U.D.,CRS XEM | route Anglia
+stanox,51722,BROXBOURNE,CRS BXB | route Anglia
+stanox,51815,CHESHUNT,CRS CHN | route Anglia
+stanox,51914,BRIMSDOWN,CRS BMD | route Anglia
+stanox,51937,COPPERMILL JUNCTION,CRS XMI | route Anglia
+stanox,52045,NAVARINO ROAD JN,CRS (blank) | route Anglia
+stanox,52051,HIGHBURY AND ISLINGTON ELL,CRS XHZ | route Anglia
+stanox,52074,DALSTON JUNCTION (ELL),CRS DLJ | route Private Railway
+stanox,52084,WHITECHAPEL (ELL),CRS ZLW | route Private Railway
+stanox,52226,STRATFORD,CRS SRA | route Anglia
+stanox,52702,WEST HAM,CRS WEH | route Anglia
+stanox,52705,LIMEHOUSE,CRS LHS | route Anglia
+stanox,52711,LONDON FENCHURCH STREET,CRS FST | route Anglia
+stanox,52731,CHINGFORD,CRS CHI | route Anglia
+stanox,52733,WALTHAMSTOW CENTRAL,CRS WHC | route Anglia
+stanox,52736,HACKNEY DOWNS,CRS HAC | route Anglia
+stanox,52741,LONDON LIVERPOOL STREET,CRS LST | route Anglia
+stanox,53004,ROYSTON,CRS RYS | route East Coast
+stanox,53015,BALDOCK,CRS BDK | route East Coast
+stanox,53102,LETCHWORTH C.S.D,CRS XLE | route East Coast
+stanox,53104,LETCHWORTH GARDEN CITY,CRS LET | route East Coast
+stanox,53221,HITCHIN,CRS HIT | route East Coast
+stanox,53223,STEVENAGE,CRS SVG | route East Coast
+stanox,53230,WATTON-AT-STONE,CRS WAS | route East Coast
+stanox,53231,WOOLMER GREEN JN.,CRS XGN | route East Coast
+stanox,53241,HERTFORD NORTH,CRS HFN | route East Coast
+stanox,53242,HERTFORD NTH C.H.S.,CRS XHQ | route East Coast
+stanox,53248,GORDON HILL,CRS GDH | route East Coast
+stanox,53401,WELWYN GARDEN CITY,CRS WGC | route East Coast
+stanox,53403,WELWYN G.C C.S.D.,CRS XYW | route East Coast
+stanox,53405,WELWYN G.C. F.D.,CRS (blank) | route East Coast
+stanox,53501,HATFIELD,CRS HAT | route East Coast
+stanox,53801,WELHAM GREEN,CRS WMG | route East Coast
+stanox,53995,BROOKMANS PARK,CRS BPK | route East Coast
+stanox,54001,POTTERS BAR,CRS PBR | route East Coast
+stanox,54021,OAKLEIGH PARK,CRS OKL | route East Coast
+stanox,54101,BOUNDS GREEN T&R.S.M.D,CRS XGD | route East Coast
+stanox,54103,ALEXANDRA PALACE,CRS AAP | route East Coast
+stanox,54208,HORNSEY E.M.U.D.,CRS XHE | route East Coast
+stanox,54209,FERME PARK RECP.,CRS XFD | route East Coast
+stanox,54213,FERME PARK REC LN GBRF,CRS (blank) | route East Coast
+stanox,54238,FINSBURY PARK,CRS FPK | route East Coast
+stanox,54245,HOLLOWAY STH. JN.,CRS (blank) | route East Coast
+stanox,54297,OLD STREET,CRS OLD | route East Coast
+stanox,54299,MOORGATE EAST,CRS MOG | route East Coast
+stanox,54304,BELLE ISLE,CRS XKB | route East Coast
+stanox,54311,LONDON KINGS CROSS,CRS KGX | route East Coast
+stanox,55221,MANSFIELD JN,CRS (blank) | route East Midlands
+stanox,55247,NOTTINGHAM,CRS NOT | route East Midlands
+stanox,55625,BINGHAM,CRS BIN | route East Midlands
+stanox,56550,TROWELL SOUTH JUNCTION,CRS (blank) | route East Midlands
+stanox,56591,TOTON NORTH YARD,CRS (blank) | route East Midlands
+stanox,56598,SHEET STORES JN,CRS (blank) | route East Midlands
+stanox,56601,TRENT EAST JN,CRS XTR | route East Midlands
+stanox,57004,MATLOCK,CRS MAT | route East Midlands
+stanox,57110,AMBERGATE JN,CRS XAJ | route East Midlands
+stanox,57403,DERBY,CRS DBY | route East Midlands
+stanox,57412,ETCHES PARK SDGS,CRS XEP | route East Midlands
+stanox,59002,LOUGHBOROUGH,CRS LBO | route East Midlands
+stanox,59021,SYSTON EAST JN,CRS (blank) | route East Midlands
+stanox,59022,SYSTON SOUTH JN,CRS (blank) | route East Midlands
+stanox,59125,MELTON MOWBRAY,CRS MMO | route East Midlands
+stanox,59139,MANTON JN,CRS XMJ | route East Midlands
+stanox,59241,LEICESTER,CRS LEI | route East Midlands
+stanox,59321,WIGSTON NORTH JN,CRS (blank) | route East Midlands
+stanox,59401,MARKET HARBOROUGH,CRS MHR | route East Midlands
+stanox,60011,CORBY STATION,CRS COR | route East Midlands
+stanox,61009,KETTERING,CRS KET | route East Midlands
+stanox,61100,WELLINGBOROUGH,CRS WEL | route East Midlands
+stanox,62001,SHARNBROOK JN.,CRS (blank) | route East Midlands
+stanox,62011,BEDFORD,CRS BDM | route East Midlands
+stanox,62014,BEDFORD C S,CRS (blank) | route East Midlands
+stanox,62015,BEDFORD CAULDWELL DEPOT,CRS (blank) | route East Midlands
+stanox,62021,BEDFORD WASH ROAD,CRS (blank) | route East Midlands
+stanox,62022,BEDFORD JOWETT SDGS,CRS (blank) | route East Midlands
+stanox,62196,ELSTOW REDLANDS GBRF,CRS (blank) | route East Midlands
+stanox,62201,FLITWICK,CRS FLT | route East Midlands
+stanox,62203,HARLINGTON,CRS HLN | route East Midlands
+stanox,62209,LEAGRAVE JN,CRS (blank) | route East Midlands
+stanox,62211,LEAGRAVE,CRS LEA | route East Midlands
+stanox,62400,LUTON,CRS LUT | route East Midlands
+stanox,62410,LUTON AIRPORT PARKWAY,CRS LTN | route East Midlands
+stanox,62423,HARPENDEN JN,CRS (blank) | route East Midlands
+stanox,63021,LONDON MARYLEBONE,CRS MYB | route Central
+stanox,63201,ST ALBANS CITY,CRS SAC | route East Midlands
+stanox,63212,ELSTREE & BOREHAMWOOD,CRS ELS | route East Midlands
+stanox,63214,MILL HILL BROADWAY,CRS MIL | route East Midlands
+stanox,63252,HENDON,CRS HEN | route East Midlands
+stanox,63400,CRICKLEWOOD DEPOT,CRS (blank) | route East Midlands
+stanox,63404,CRICKLEWOOD R.T.S.,CRS (blank) | route East Midlands
+stanox,63415,CRICKLEWOOD SOUTH SIDINGS,CRS (blank) | route East Midlands
+stanox,63451,WEST HAMPSTEAD THAMESLINK,CRS WHP | route East Midlands
+stanox,63547,CARLTON ROAD JN,CRS (blank) | route East Midlands
+stanox,63551,KENTISH TOWN,CRS KTN | route East Midlands
+stanox,63624,DOCK JN NORTH,CRS (blank) | route East Midlands
+stanox,63625,CHURCHYARD SDGS TARMAC,CRS (blank) | route East Midlands
+stanox,63629,ST PANCRAS INT PLAT A&B (FCC),CRS SPL | route East Midlands
+stanox,63630,ST PANCRAS INTERNATIONAL (MML),CRS STP | route East Midlands
+stanox,63631,ST PANCRAS INTL (DOMESTIC),CRS SPX | route High Speed
+stanox,63633,FARRINGDON,CRS ZFD | route Kent
+stanox,64111,GOBOWEN,CRS GOB | route Wales
+stanox,64224,SHREWSBURY,CRS SHR | route Wales
+stanox,64231,SUTTON BRIDGE JN,CRS (blank) | route Wales
+stanox,64813,WELLINGTON (SHROPSHIRE),CRS WLN | route Central
+stanox,65315,LICHFIELD TRENT VALLEY HL,CRS LIF | route Central
+stanox,65316,LICHFIELD CITY,CRS LIC | route Central
+stanox,65555,WALSALL FREIGHT TERMINAL,CRS (blank) | route Central
+stanox,65601,FOUR OAKS,CRS FOK | route Central
+stanox,65630,BIRMINGHAM NEW STREET,CRS BHM | route Central
+stanox,65651,ASTON,CRS AST | route Central
+stanox,65823,GALTON JN,CRS XGJ | route Central
+stanox,65935,KIDDERMINSTER,CRS KID | route Central
+stanox,66031,KINGSBURY JN,CRS XKI | route Central
+stanox,66034,BIRCH COPPICE FREIGHTLINER,CRS (blank) | route Central
+stanox,66036,BIRCH COPPICE GBRF,CRS (blank) | route Central
+stanox,66211,WHITACRE JN,CRS XQW | route Central
+stanox,66219,HAMS HALL GBRF,CRS (blank) | route Central
+stanox,66321,LANDOR STREET JN,CRS XLX | route Central
+stanox,66324,BORDESLEY JN,CRS XIR | route Central
+stanox,66402,LAWLEY STREET F.L.T.,CRS (blank) | route Central
+stanox,66409,BIRMINGHAM SNOW HILL,CRS BSW | route Central
+stanox,66411,BIRMINGHAM MOOR STREET,CRS BMO | route Central
+stanox,66424,TYSELEY L.M.D.,CRS XTS | route Central
+stanox,66451,STRATFORD-UPON-AVON,CRS SAV | route Central
+stanox,66460,TYSELEY,CRS TYS | route Central
+stanox,66510,KINGS NORTON,CRS KNN | route Central
+stanox,66519,LONGBRIDGE,CRS LOB | route Central
+stanox,66525,BARNT GREEN,CRS BTG | route Central
+stanox,66529,REDDITCH,CRS RDC | route Central
+stanox,67003,BROMSGROVE,CRS BMV | route Central
+stanox,67116,WORCESTER SHRUB HILL,CRS WOS | route Central
+stanox,67195,WORCESTER FOREGATE STREET,CRS WOF | route Central
+stanox,67214,GREAT MALVERN,CRS GMV | route Central
+stanox,67219,LEDBURY,CRS LED | route Central
+stanox,67371,ABBOTSWOOD JN,CRS XAY | route Central
+stanox,68071,ASHCHURCH FOR TEWKESBURY,CRS ASC | route Western
+stanox,68076,CHELTENHAM SPA,CRS CNM | route Western
+stanox,68082,BARNWOOD JN.,CRS (blank) | route Western
+stanox,68089,GLOUCESTER,CRS GCR | route Western
+stanox,68137,STANDISH JN,CRS (blank) | route Western
+stanox,68140,CAM & DURSLEY,CRS CDU | route Western
+stanox,68151,CHARFIELD,CRS (blank) | route Western
+stanox,69202,COVENTRY,CRS COV | route Central
+stanox,69215,BIRMINGHAM INTERNATIONAL,CRS BHI | route Central
+stanox,69300,LEAMINGTON SPA,CRS LMS | route Central
+stanox,69424,BANBURY,CRS BAN | route Central
+stanox,69440,AYNHO JN,CRS XAN | route Central
+stanox,69502,BICESTER NORTH,CRS BCS | route Central
+stanox,70081,DAVENTRY INT RFT RECEP RFD,CRS (blank) | route West Coast South
+stanox,70100,NORTHAMPTON,CRS NMP | route West Coast South
+stanox,70201,HANSLOPE JN,CRS XHN | route West Coast South
+stanox,70261,MILTON KEYNES CENTRAL,CRS MKC | route West Coast South
+stanox,70331,CALVERT,CRS (blank) | route Central
+stanox,71040,WATFORD JUNCTION,CRS WFJ | route West Coast South
+stanox,72007,HARROW & WEALDSTONE,CRS HRW | route West Coast South
+stanox,72023,WEMBLEY H.S.,CRS (blank) | route West Coast South
+stanox,72225,WILLESDEN S.W.S.,CRS XWS | route West Coast South
+stanox,72232,WILLESDEN PRDC,CRS XRN | route West Coast South
+stanox,72237,MITRE BRIDGE JN,CRS XMB | route West Coast South
+stanox,72241,KENSINGTON OLYMPIA,CRS KPA | route Sussex
+stanox,72242,SHEPHERDS BUSH,CRS SPB | route Sussex
+stanox,72251,ACTON WELLS JN,CRS (blank) | route Anglia
+stanox,72268,WILLESDEN WEST LONDN JN,CRS XWI | route West Coast South
+stanox,72275,WILLESDEN JN. HIGH LEVEL,CRS WJH | route Anglia
+stanox,72410,LONDON EUSTON,CRS EUS | route West Coast South
+stanox,72419,GOSPEL OAK,CRS GPO | route Anglia
+stanox,72421,CAMDEN ROAD,CRS CMD | route Anglia
+stanox,7257,(not in the glossary edition held),
+stanox,73000,LONDON PADDINGTON,CRS PAD | route Western
+stanox,73111,LADBROKE GROVE,CRS (blank) | route Western
+stanox,73250,ACTON T.C.,CRS XAX | route Western
+stanox,73251,ACTON WEST,CRS (blank) | route Western
+stanox,73255,WEST EALING,CRS WEA | route Western
+stanox,73259,WEST EALING EMU SIDINGS,CRS (blank) | route Western
+stanox,73420,SOUTH RUISLIP,CRS SRU | route Central
+stanox,73663,SOUTHALL,CRS STL | route Western
+stanox,73767,LONDON HEATHROW AIRPORT TML 5,CRS HWV | route Private Railway
+stanox,73770,HAYES & HARLINGTON,CRS HAY | route Western
+stanox,73775,HEATHROW AIRPORT JN,CRS (blank) | route Western
+stanox,73790,COLNBROOK BAA LOGISTICS,CRS (blank) | route Western
+stanox,73822,SLOUGH,CRS SLO | route Western
+stanox,7390,(not in the glossary edition held),
+stanox,74003,MAIDENHEAD CARRIAGE SDGS,CRS (blank) | route Western
+stanox,74005,MAIDENHEAD,CRS MAI | route Western
+stanox,74014,BOURNE END,CRS BNE | route Western
+stanox,74023,TWYFORD,CRS TWY | route Western
+stanox,74029,HENLEY-ON-THAMES,CRS HOT | route Western
+stanox,74236,READING,CRS RDZ | route Wessex
+stanox,74237,READING,CRS RDG | route Western
+stanox,74247,READING TRAINCARE DEPOT,CRS (blank) | route Western
+stanox,74265,SOUTHCOTE JN,CRS (blank) | route Western
+stanox,74313,DIDCOT PARKWAY,CRS DID | route Western
+stanox,74322,DIDCOT NORTH JN,CRS (blank) | route Western
+stanox,74329,CHALLOW,CRS (blank) | route Western
+stanox,74433,MORRIS COWLEY M.A.T.,CRS (blank) | route Western
+stanox,74436,OXFORD PARKWAY,CRS OXP | route Central
+stanox,74445,OXFORD UP CARRIAGE SDGS,CRS (blank) | route Western
+stanox,74446,OXFORD,CRS OXF | route Western
+stanox,74703,THEALE PUMA,CRS (blank) | route Western
+stanox,74707,THEALE LAFARGE FHH,CRS (blank) | route Western
+stanox,74803,NEWBURY,CRS NBY | route Western
+stanox,74816,BEDWYN,CRS BDW | route Western
+stanox,74821,WOODBOROUGH,CRS (blank) | route Western
+stanox,74822,LAVINGTON,CRS (blank) | route Western
+stanox,7501,(not in the glossary edition held),
+stanox,75011,SWINDON STORES,CRS (blank) | route Western
+stanox,75012,SWINDON,CRS SWI | route Western
+stanox,75018,KEMBLE,CRS KEM | route Western
+stanox,75242,WOOTTON BASSETT JN,CRS (blank) | route Western
+stanox,75363,BRADFORD JN,CRS (blank) | route Western
+stanox,76072,LYDNEY,CRS LYD | route Wales
+stanox,76076,AWRE,CRS (blank) | route Western
+stanox,76079,CHEPSTOW,CRS CPW | route Wales
+stanox,76090,SEVERN TUNNEL JN,CRS STJ | route Wales
+stanox,76099,LLANWERN WEST JN,CRS (blank) | route Wales
+stanox,76110,LLANWERN EXCHANGE SDGS,CRS (blank) | route Wales
+stanox,76239,CWMBRAN,CRS CWM | route Wales
+stanox,76251,ABERGAVENNY,CRS AGV | route Wales
+stanox,76357,HEREFORD,CRS HFD | route Wales
+stanox,76370,SHELWICK JN,CRS (blank) | route Wales
+stanox,76373,LEOMINSTER,CRS LEO | route Wales
+stanox,76374,WOOFFERTON,CRS (blank) | route Wales
+stanox,76379,CRAVEN ARMS,CRS CRV | route Wales
+stanox,76382,MARSH BROOK LEVEL CROSSING,CRS (blank) | route Wales
+stanox,76400,MAINDEE NORTH JN,CRS (blank) | route Wales
+stanox,76401,NEWPORT (SOUTH WALES),CRS NWP | route Wales
+stanox,76505,PARK JN,CRS (blank) | route Wales
+stanox,76647,EBBW VALE TOWN,CRS EBB | route Wales
+stanox,77086,MARSHFIELD,CRS (blank) | route Wales
+stanox,77301,CARDIFF CENTRAL,CRS CDF | route Wales
+stanox,78514,CARDIFF CANTON SIDINGS,CRS XCC | route Wales
+stanox,78608,PONTYCLUN,CRS PYC | route Wales
+stanox,78705,GRANGETOWN,CRS GTN | route Wales
+stanox,78817,BARRY ISLAND,CRS BYI | route Wales
+stanox,79040,LLANELLI,CRS LLE | route Wales
+stanox,79304,SWANSEA,CRS SWA | route Wales
+stanox,79306,SWANSEA LOOP WEST,CRS (blank) | route Wales
+stanox,79780,MARGAM T.C.,CRS (blank) | route Wales
+stanox,79828,MAESTEG,CRS MST | route Wales
+stanox,80011,FISHGUARD HARBOUR,CRS FGH | route Wales
+stanox,80102,MILFORD HAVEN,CRS MFH | route Wales
+stanox,80105,ROBESTON SDGS,CRS (blank) | route Wales
+stanox,80411,CARMARTHEN JN,CRS XCI | route Wales
+stanox,80419,CARMARTHEN,CRS CMN | route Wales
+stanox,81001,HULLAVINGTON,CRS (blank) | route Western
+stanox,81103,YATE,CRS YAE | route Western
+stanox,81107,WESTERLEIGH JN,CRS (blank) | route Western
+stanox,81109,BRISTOL PARKWAY,CRS BPW | route Western
+stanox,81110,STOKE GIFFORD (FLHH),CRS (blank) | route Western
+stanox,81116,PATCHWAY,CRS PWY | route Western
+stanox,81118,PILNING,CRS PIL | route Wales
+stanox,81119,STOKE GIFFORD,CRS (blank) | route Western
+stanox,81305,FILTON ABBEY WOOD,CRS FIT | route Western
+stanox,81403,STAPLETON ROAD,CRS SRD | route Western
+stanox,81431,DR DAY'S JN,CRS (blank) | route Western
+stanox,81501,BATH SPA,CRS BTH | route Western
+stanox,81700,BRISTOL TEMPLE MEADS,CRS BRI | route Western
+stanox,81813,BEDMINSTER,CRS BMT | route Western
+stanox,81819,PARSON STREET,CRS PSN | route Western
+stanox,81903,NAILSEA & BACKWELL,CRS NLS | route Western
+stanox,81905,YATTON,CRS YAT | route Western
+stanox,81906,WORLE,CRS WOR | route Western
+stanox,81907,WORLE JN,CRS (blank) | route Western
+stanox,81911,WESTON-SUPER-MARE,CRS WSM | route Western
+stanox,81913,UPHILL JUNCTION,CRS (blank) | route Western
+stanox,81924,BRIDGWATER,CRS BWT | route Western
+stanox,82075,BRADFORD-ON-AVON,CRS BOA | route Western
+stanox,82085,TROWBRIDGE,CRS TRO | route Western
+stanox,82092,HEYWOOD ROAD JN,CRS (blank) | route Western
+stanox,82100,WESTBURY DOWN T.C.,CRS (blank) | route Western
+stanox,82101,WESTBURY,CRS WSB | route Western
+stanox,82114,WARMINSTER,CRS WMN | route Western
+stanox,82118,FAIRWOOD JN,CRS (blank) | route Western
+stanox,82124,UPTON LOVELL,CRS (blank) | route Wessex
+stanox,82200,CLINK ROAD JN,CRS (blank) | route Western
+stanox,82202,WHATLEY QUARRY,CRS (blank) | route Western
+stanox,82204,FROME,CRS FRO | route Western
+stanox,82241,EAST SOMERSET JN,CRS (blank) | route Western
+stanox,82243,MEREHEAD QUARRY,CRS (blank) | route Western
+stanox,82301,CASTLE CARY,CRS CLC | route Western
+stanox,82305,SOMERTON GROUND FRAME,CRS (blank) | route Western
+stanox,82307,ATHELNEY CROSSING,CRS (blank) | route Western
+stanox,82311,YEOVIL PEN MILL,CRS YVP | route Wessex
+stanox,82332,GILLINGHAM (DORSET),CRS GIL | route Wessex
+stanox,82341,YEOVIL JUNCTION,CRS #MULTIVALUE | route Wessex
+stanox,83009,TAUNTON,CRS TAU | route Western
+stanox,83010,COGLOAD JN,CRS (blank) | route Western
+stanox,83038,TIVERTON PARKWAY,CRS TVP | route Western
+stanox,83222,BARNSTAPLE,CRS BNP | route Western
+stanox,83321,CREDITON,CRS CDI | route Western
+stanox,83398,COWLEY BRIDGE JN,CRS (blank) | route Western
+stanox,83421,EXETER ST DAVIDS,CRS EXD | route Western
+stanox,83431,EXETER CENTRAL,CRS EXC | route Western
+stanox,83453,PINHOE,CRS PIN | route Western
+stanox,83461,HONITON,CRS HON | route Wessex
+stanox,83468,CHARD JN. S.B,CRS (blank) | route Wessex
+stanox,83475,EXMOUTH,CRS EXM | route Western
+stanox,83603,DAWLISH WARREN,CRS DWW | route Western
+stanox,83624,NEWTON ABBOT,CRS NTA | route Western
+stanox,83631,PAIGNTON,CRS PGN | route Western
+stanox,83702,TOTNES,CRS TOT | route Western
+stanox,84139,PLYMOUTH,CRS PLY | route Western
+stanox,84301,SALTASH,CRS STS | route Western
+stanox,85261,NEWQUAY,CRS NQY | route Western
+stanox,85501,TRURO,CRS TRU | route Western
+stanox,85521,FALMOUTH DOCKS,CRS FAL | route Western
+stanox,85734,PENZANCE,CRS PNZ | route Western
+stanox,86005,WEYBRIDGE,CRS WYB | route Wessex
+stanox,86031,WOKING,CRS WOK | route Wessex
+stanox,86038,WOKING EAST END SDG,CRS XGE | route Wessex
+stanox,86042,FARNBOROUGH (MAIN),CRS FNB | route Wessex
+stanox,86061,BRAMLEY (HANTS),CRS BMY | route Wessex
+stanox,86066,BASINGSTOKE,CRS BSK | route Wessex
+stanox,86069,WORTING JN,CRS (blank) | route Wessex
+stanox,86083,WINCHESTER,CRS WIN | route Wessex
+stanox,86087,EASTLEIGH,CRS ESL | route Wessex
+stanox,86122,SALISBURY,CRS SAL | route Wessex
+stanox,86202,BOTLEY,CRS BOE | route Wessex
+stanox,86241,FAREHAM,CRS FRM | route Wessex
+stanox,86311,PORTSMOUTH HARBOUR,CRS PMH | route Wessex
+stanox,86313,PORTSMOUTH & SOUTHSEA,CRS PMS | route Wessex
+stanox,86321,FRATTON,CRS FTN | route Wessex
+stanox,86333,PORTCREEK JN,CRS (blank) | route Wessex
+stanox,86334,FARLINGTON JN,CRS (blank) | route Wessex
+stanox,86341,HAVANT,CRS HAV | route Wessex
+stanox,86424,CHICHESTER,CRS CCH | route Sussex
+stanox,86441,BOGNOR REGIS,CRS #MULTIVALUE | route Sussex
+stanox,86451,BARNHAM,CRS BAA | route Sussex
+stanox,86471,LITTLEHAMPTON,CRS LIT | route Sussex
+stanox,86499,ST DENYS,CRS SDN | route Wessex
+stanox,86520,SOUTHAMPTON CENTRAL,CRS SOU | route Wessex
+stanox,86531,SOUTHAMPTON M.C.T.,CRS (blank) | route Wessex
+stanox,86604,SOTON W DOCKS SHED 107,CRS (blank) | route Wessex
+stanox,86703,REDBRIDGE,CRS RDB | route Wessex
+stanox,86901,BROCKENHURST,CRS BCU | route Wessex
+stanox,86921,BOURNEMOUTH,CRS BMH | route Wessex
+stanox,86923,BOURNEMOUTH T&R.S.M.D,CRS XBM | route Wessex
+stanox,86927,BRANKSOME,CRS BSM | route Wessex
+stanox,86929,PARKSTONE (DORSET),CRS PKS | route Wessex
+stanox,86935,POOLE,CRS #MULTIVALUE | route Wessex
+stanox,86936,POOLE S. S.,CRS XFT | route Wessex
+stanox,86951,HAMWORTHY,CRS HAM | route Wessex
+stanox,86971,WOOL,CRS WOO | route Wessex
+stanox,86975,MORETON (DORSET),CRS MTN | route Wessex
+stanox,86978,UPWEY,CRS UPW | route Wessex
+stanox,86981,WEYMOUTH,CRS #MULTIVALUE | route Wessex
+stanox,87004,WOKINGHAM,CRS WKM | route Wessex
+stanox,87014,ASH,CRS ASH | route Wessex
+stanox,87021,ALTON,CRS AON | route Wessex
+stanox,87026,FARNHAM,CRS FNH | route Wessex
+stanox,87031,ALDERSHOT,CRS AHT | route Wessex
+stanox,87041,ASH VALE,CRS AHV | route Wessex
+stanox,87052,GUILDFORD,CRS GLD | route Wessex
+stanox,87055,FARNCOMBE,CRS FNC | route Wessex
+stanox,87062,HASLEMERE,CRS HSL | route Wessex
+stanox,87066,PETERSFIELD,CRS PTR | route Wessex
+stanox,87071,EFFINGHAM JUNCTION,CRS EFF | route Wessex
+stanox,87080,SHALFORD JN,CRS (blank) | route Wessex
+stanox,87081,SHALFORD,CRS SFR | route Wessex
+stanox,87089,REIGATE,CRS REI | route Sussex
+stanox,87101,BRACKNELL,CRS BCE | route Wessex
+stanox,87103,ASCOT,CRS ACT | route Wessex
+stanox,87106,VIRGINIA WATER,CRS VIR | route Wessex
+stanox,87114,STAINES,CRS SNS | route Wessex
+stanox,87121,FELTHAM,CRS FEL | route Wessex
+stanox,87132,RICHMOND NLL,CRS (blank) | route Anglia
+stanox,87134,STRAWBERRY HILL,CRS STW | route Wessex
+stanox,87135,RICHMOND,CRS RMD | route Wessex
+stanox,87141,HOUNSLOW,CRS HOU | route Wessex
+stanox,87144,BRENTFORD,CRS BFD | route Wessex
+stanox,87149,BARNES,CRS BNS | route Wessex
+stanox,87151,STRAWBERRY HILL C.S.D.,CRS XSX | route Wessex
+stanox,87155,SHEPPERTON,CRS SHP | route Wessex
+stanox,87159,TEDDINGTON,CRS TED | route Wessex
+stanox,87160,FULWELL,CRS FLW | route Wessex
+stanox,87161,KINGSTON,CRS KNG | route Wessex
+stanox,87163,NORBITON,CRS NBT | route Wessex
+stanox,87169,NEW MALDEN,CRS NEM | route Wessex
+stanox,87171,SURBITON,CRS SUR | route Wessex
+stanox,87181,HAMPTON COURT,CRS HMC | route Wessex
+stanox,87201,LONDON VICTORIA,CRS #MULTIVALUE | route Sussex
+stanox,87203,BATTERSEA PARK,CRS BAK | route Sussex
+stanox,87205,LATCHMERE JN,CRS (blank) | route Sussex
+stanox,87208,VOLTAIRE ROAD JN.,CRS XVJ | route Kent
+stanox,87212,LONDON WATERLOO,CRS WAT | route Wessex
+stanox,87214,VAUXHALL,CRS VXH | route Wessex
+stanox,87215,NINE ELMS JN,CRS (blank) | route Wessex
+stanox,87219,CLAPHAM JUNCTION,CRS #MULTIVALUE | route Wessex
+stanox,87220,WANDSWORTH COMMON,CRS WSW | route Sussex
+stanox,87222,BALHAM,CRS BAL | route Sussex
+stanox,87228,CLAPHAM YARD SDGS,CRS (blank) | route Wessex
+stanox,87238,STEWARTS LANE T&R.S.M.D,CRS XSL | route Kent
+stanox,87239,BATTERSEA LOOP,CRS (blank) | route Sussex
+stanox,87244,CITY THAMESLINK,CRS CTK | route Kent
+stanox,87245,LONDON BLACKFRIARS,CRS BFR | route Kent
+stanox,87246,ELEPHANT & CASTLE,CRS EPH | route Kent
+stanox,87247,LOUGHBOROUGH JN,CRS LGJ | route Kent
+stanox,87248,BRIXTON,CRS BRX | route Kent
+stanox,87249,HERNE HILL,CRS HNH | route Kent
+stanox,87250,EARLSFIELD,CRS EAD | route Wessex
+stanox,87261,WIMBLEDON,CRS #MULTIVALUE | route Wessex
+stanox,87271,RAYNES PARK,CRS RAY | route Wessex
+stanox,87301,MOTSPUR PARK,CRS MOT | route Wessex
+stanox,87411,CHESSINGTON SOUTH,CRS CSS | route Wessex
+stanox,87568,CANADA WATER (ELL),CRS ZCW | route Private Railway
+stanox,87601,LONDON BRIDGE,CRS LBG | route Kent
+stanox,87602,BRICKLAYERS ARMS JN,CRS XLJ | route Kent
+stanox,87603,NEW CROSS GATE,CRS NXG | route Kent
+stanox,87606,DENMARK HILL,CRS DMK | route Kent
+stanox,87609,PECKHAM RYE,CRS PMR | route Kent
+stanox,87611,TULSE HILL,CRS TUH | route Sussex
+stanox,87613,STREATHAM,CRS STE | route Sussex
+stanox,87621,STREATHAM HILL,CRS SRH | route Sussex
+stanox,87625,CRYSTAL PALACE,CRS CYP | route Sussex
+stanox,87626,SYDENHAM,CRS SYD | route Sussex
+stanox,87627,FOREST HILL,CRS FOH | route Sussex
+stanox,87628,HONOR OAK PARK,CRS HPA | route Sussex
+stanox,87629,BROCKLEY,CRS BCY | route Sussex
+stanox,87631,STREATHAM COMMON,CRS SRC | route Sussex
+stanox,87633,NORBURY,CRS NRB | route Sussex
+stanox,87635,THORNTON HEATH,CRS TTH | route Sussex
+stanox,87637,SELHURST,CRS SRS | route Sussex
+stanox,87639,SELHURST T&R.S.M.D,CRS XSH | route Sussex
+stanox,87643,NORWOOD JUNCTION,CRS NWD | route Sussex
+stanox,87644,ANERLEY,CRS ANZ | route Sussex
+stanox,87645,PENGE WEST,CRS PNW | route Sussex
+stanox,87651,WEST CROYDON,CRS WCY | route Sussex
+stanox,87652,WEST CROYDON TURNBACK,CRS (blank) | route Sussex
+stanox,87661,MITCHAM JUNCTION,CRS MIJ | route Sussex
+stanox,87669,CARSHALTON,CRS CSH | route Sussex
+stanox,87671,SUTTON (SURREY),CRS SUO | route Sussex
+stanox,87678,CHEAM,CRS CHE | route Sussex
+stanox,87681,EPSOM,CRS EPS | route Wessex
+stanox,87683,ASHTEAD,CRS AHD | route Wessex
+stanox,87685,LEATHERHEAD,CRS LHD | route Wessex
+stanox,87686,BOX HILL & WESTHUMBLE,CRS BXW | route Wessex
+stanox,87687,DORKING,CRS DKG | route Sussex
+stanox,87692,EPSOM DOWNS,CRS EPD | route Sussex
+stanox,87701,EAST CROYDON,CRS ECR | route Sussex
+stanox,87706,CATERHAM,CRS CAT | route Sussex
+stanox,87707,TATTENHAM CORNER,CRS TAT | route Sussex
+stanox,87713,COULSDON TOWN,CRS CDN | route Sussex
+stanox,87722,REDHILL,CRS RDH | route Sussex
+stanox,87734,GODSTONE,CRS GDN | route Kent
+stanox,87743,SANDERSTEAD,CRS SNR | route Sussex
+stanox,87751,OXTED,CRS OXT | route Sussex
+stanox,87753,HURST GREEN,CRS HUR | route Sussex
+stanox,87759,EAST GRINSTEAD,CRS EGR | route Sussex
+stanox,87766,CROWBOROUGH,CRS COH | route Sussex
+stanox,87769,UCKFIELD,CRS UCK | route Sussex
+stanox,87801,PURLEY,CRS PUR | route Sussex
+stanox,87802,PURLEY FOSTER YEOMAN,CRS (blank) | route Sussex
+stanox,87901,STOATS NEST JN.,CRS XJS | route Sussex
+stanox,87903,EARLSWOOD (SURREY),CRS ELD | route Sussex
+stanox,87908,THREE BRIDGES TL UP DEPOT,CRS (blank) | route Sussex
+stanox,87910,GATWICK AIRPORT C.H.S.,CRS XGT | route Sussex
+stanox,87911,GATWICK AIRPORT,CRS GTW | route Sussex
+stanox,87915,3BDGS DOWN THAMESLINK SDGS,CRS (blank) | route Sussex
+stanox,87920,THREE BRIDGES,CRS TBD | route Sussex
+stanox,87927,BALCOMBE TUNNEL JN,CRS (blank) | route Sussex
+stanox,87931,CRAWLEY,CRS CRW | route Sussex
+stanox,87937,HOLMWOOD,CRS HLM | route Sussex
+stanox,87938,OCKLEY,CRS OLY | route Sussex
+stanox,87939,WARNHAM,CRS WNH | route Sussex
+stanox,87941,HORSHAM,CRS HRH | route Sussex
+stanox,87954,PULBOROUGH,CRS PUL | route Sussex
+stanox,87959,ARUNDEL JN,CRS XXA | route Sussex
+stanox,87963,BALCOMBE,CRS BAB | route Sussex
+stanox,87967,HAYWARDS HEATH,CRS HHE | route Sussex
+stanox,87972,KEYMER JN,CRS XKM | route Sussex
+stanox,87975,PRESTON PARK,CRS PRP | route Sussex
+stanox,87979,LOVERS WALK T&R.S.M.D,CRS XBI | route Sussex
+stanox,87980,BRIGHTON,CRS BTN | route Sussex
+stanox,87981,BRIGHTON DOWN SDG,CRS #MULTIVALUE | route Sussex
+stanox,87991,SHOREHAM-BY-SEA,CRS SSE | route Sussex
+stanox,87995,WORTHING,CRS WRH | route Sussex
+stanox,87996,DURRINGTON-ON-SEA,CRS DUR | route Sussex
+stanox,87997,GORING-BY-SEA,CRS GBS | route Sussex
+stanox,87998,ANGMERING,CRS ANG | route Sussex
+stanox,88103,HOVE,CRS HOV | route Sussex
+stanox,88111,WEST WORTHING,CRS WWO | route Sussex
+stanox,88221,LEWES,CRS LWS | route Sussex
+stanox,88231,NEWHAVEN TOWN,CRS NVN | route Sussex
+stanox,88239,SEAFORD,CRS SEF | route Sussex
+stanox,88248,POLEGATE,CRS PLG | route Sussex
+stanox,88249,WILLINGDON JN,CRS XIL | route Sussex
+stanox,88252,HAMPDEN PARK,CRS HMD | route Sussex
+stanox,88254,EASTBOURNE,CRS EBN | route Sussex
+stanox,88269,COODEN BEACH,CRS COB | route Sussex
+stanox,88271,PEVENSEY & WESTHAM,CRS PEV | route Sussex
+stanox,88272,NORMANS BAY,CRS NSB | route Sussex
+stanox,88274,COLLINGTON,CRS CLL | route Sussex
+stanox,88275,BEXHILL,CRS BEX | route Sussex
+stanox,88283,ST LEONARDS WARRIOR SQ,CRS SLQ | route Kent
+stanox,88284,BOPEEP JN S.B.,CRS XOP | route Kent
+stanox,88285,HASTINGS,CRS HGS | route Kent
+stanox,88288,ORE,CRS ORE | route Kent
+stanox,88291,ORE UP SDG,CRS (blank) | route Kent
+stanox,88315,BECKENHAM JUNCTION,CRS BKJ | route Kent
+stanox,88329,HAYES (KENT),CRS HYS | route Kent
+stanox,88392,NEW CROSS ELL STN,CRS (blank) | route Private Railway
+stanox,88401,LONDON CHARING CROSS,CRS CHX | route Kent
+stanox,88403,LONDON CANNON STREET,CRS CST | route Kent
+stanox,88405,SOUTH BERMONDSEY,CRS SBM | route Kent
+stanox,88409,NORTH KENT EAST JN,CRS XKE | route Kent
+stanox,88413,NUNHEAD,CRS NHD | route Kent
+stanox,88415,LEWISHAM,CRS LEW | route Kent
+stanox,88422,BARNEHURST,CRS BNH | route Kent
+stanox,88424,SLADE GREEN,CRS SGR | route Kent
+stanox,88447,PARKS BRIDGE JN,CRS XPY | route Kent
+stanox,88460,SIDCUP SIDING,CRS (blank) | route Kent
+stanox,88464,CRAYFORD,CRS CRY | route Kent
+stanox,88466,DARTFORD,CRS DFD | route Kent
+stanox,88471,BELLINGHAM,CRS BGM | route Kent
+stanox,88476,SHORTLANDS JN,CRS XOR | route Kent
+stanox,88477,BROMLEY SOUTH,CRS BMS | route Kent
+stanox,88478,BICKLEY,CRS BKL | route Kent
+stanox,88479,BICKLEY JN,CRS XLY | route Kent
+stanox,88483,CHISLEHURST,CRS CIT | route Kent
+stanox,88486,SWANLEY,CRS #MULTIVALUE | route Kent
+stanox,88490,PETTS WOOD JN,CRS XPE | route Kent
+stanox,88491,ORPINGTON,CRS ORP | route Kent
+stanox,88515,CHARLTON,CRS CTN | route Kent
+stanox,88522,PLUMSTEAD,CRS PLU | route Kent
+stanox,88699,GREENHITHE FOR BLUEWATER,CRS GNH | route Kent
+stanox,88711,SPRINGHEAD JN,CRS XSR | route Kent
+stanox,88721,GRAVESEND,CRS GRV | route Kent
+stanox,88730,HOO JUNCTION UP YARD,CRS XHJ | route Kent
+stanox,88756,GRAIN OIL TERMINAL (FLHH),CRS (blank) | route Kent
+stanox,88801,STROOD,CRS SOO | route Kent
+stanox,89004,ROCHESTER,CRS RTR | route Kent
+stanox,89011,GILLINGHAM (KENT),CRS GLM | route Kent
+stanox,89018,RAINHAM (KENT),CRS RAI | route Kent
+stanox,89315,MAIDSTONE WEST,CRS MDW | route Kent
+stanox,89323,HEADCORN,CRS HCN | route Kent
+stanox,89331,PADDOCK WOOD,CRS PDW | route Kent
+stanox,89347,OTFORD JN,CRS XOT | route Kent
+stanox,89351,SEVENOAKS,CRS SEV | route Kent
+stanox,89363,TONBRIDGE,CRS TON | route Kent
+stanox,89375,TUNBRIDGE WELLS,CRS TBW | route Kent
+stanox,89392,WADHURST,CRS WAD | route Kent
+stanox,89403,MAIDSTONE EAST,CRS MDE | route Kent
+stanox,89428,ASHFORD INTERNATIONAL,CRS #MULTIVALUE | route Kent
+stanox,89439,RYE,CRS RYE | route Kent
+stanox,89446,CANTERBURY WEST,CRS CBW | route Kent
+stanox,89451,MINSTER,CRS MSR | route Kent
+stanox,89465,DEAL,CRS DEA | route Kent
+stanox,89473,RAMSGATE,CRS RAM | route Kent
+stanox,89475,MARGATE,CRS MAR | route Kent
+stanox,89501,FAVERSHAM,CRS FAV | route Kent
+stanox,89611,DOVER PRIORY,CRS DVP | route Kent
+stanox,89735,DOLLANDS MOOR SDGS,CRS XLM | route Kent
+stanox,9161,(not in the glossary edition held),
+stanox,9419,(not in the glossary edition held),
+stanox,9436,(not in the glossary edition held),
+stanox,9511,(not in the glossary edition held),
+stanox,9527,(not in the glossary edition held),
+stanox,9531,(not in the glossary edition held),

@@ -1,0 +1,284 @@
+{
+  "blocks": [
+    {
+      "provenance": [
+        {
+          "pdf_page": 30,
+          "printed_page": 30,
+          "quote": "Little Barford is a 740MW combined cycle gas turbine power station, located in Bedfordshire.",
+          "section": "Ofgem section 3, Little Barford, 3.25",
+          "source_id": "OFG"
+        },
+        {
+          "pdf_page": 30,
+          "printed_page": 30,
+          "quote": "It is connected to the national transmission system at the Eaton Socon 400kV substation. The station has two gas turbines and one steam turbine which were all operating on 9 August.",
+          "section": "Ofgem section 3, Little Barford, 3.25",
+          "source_id": "OFG"
+        }
+      ],
+      "response_id": "S09-RWE-01",
+      "response_text": "Little Barford is a 740 MW [reported] combined cycle gas turbine station connected at the Eaton Socon 400 kV [reported] substation. It has two gas turbines and one steam turbine, and all three were operating on 9 August.",
+      "topics": [
+        "station configuration",
+        "units",
+        "plant before the event"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "Time T = 16:52:34 +/- 0.5seconds",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "110v AC UPS –A- general fault alarm +003 mSec • Initiation of ST Control System shutdown +253 mSec",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "ST Generator Breaker Open feedback +1.185 Sec",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "GT1A Auto shutdown command +56.583 Sec • GT1A Breaker Open feedback +57.620 Sec • GT1B Manual shutdown command +83.897 Sec • GT1B Breaker Open feedback +84.613 Sec",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "RWE have confidence in the chronology of the events, further investigation work is required to determine an accurate “T” datum relative to datum used within NGESO report.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-RWE-02",
+      "response_text": "Our Sequence of Events system timed everything from a datum T = 16:52:34 +/- 0.5 seconds [reported]: UPS -B- alarm at T, UPS -A- alarm at +3 ms [reported], steam turbine control system shutdown initiated at +253 ms [reported], ST breaker open feedback at +1.185 s [reported], GT1A auto shutdown command at +56.583 s [reported] and breaker open at +57.620 s [reported], GT1B manual shutdown command at +83.897 s [reported] and breaker open at +84.613 s [reported]. We have confidence in the chronology, but more work is needed to align T with the datum the ESO uses.",
+      "topics": [
+        "sequence of events",
+        "SOE",
+        "datum",
+        "timing"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 12,
+          "printed_page": 13,
+          "quote": "Little Barford Steam Turbine trips 244MW instantaneously. Source: RWE",
+          "section": "3.3 Detailed Timeline, Table 1 – Timeline of Events",
+          "source_id": "ESO"
+        },
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "Our investigations have confirmed that the Steam Turbine tripped due to a discrepancy in the speed signals after the point of the Transmission System fault clearance.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "A comprehensive investigation of hardware, software, fault handling and diagnostic coverage for the conditions, that the ST was subjected to during this rare system disturbance, is ongoing.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-RWE-03",
+      "response_text": "The steam turbine, generating 244 MW [reported], tripped due to a discrepancy in the speed signals after the point of the transmission system fault clearance. A comprehensive investigation of hardware, software, fault handling and diagnostic coverage for the conditions the steam turbine saw is ongoing.",
+      "topics": [
+        "steam turbine trip",
+        "ST1C",
+        "steam turbine"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "Upon initiation of the Steam Turbine Trip the Gas Turbines went into bypass mode of operation, which is the normal response to allow sustained operation.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "For reasons presently unknown a high-pressure excursion occurred on GT1A resulting in an automated trip. Given the prevailing conditions all systems functioned as expected.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 13,
+          "printed_page": 14,
+          "quote": "Little Barford GT1A generator protection settings tripped and 210MW instantaneously disconnected.",
+          "section": "3.3 Detailed Timeline, Table 1 – Timeline of Events",
+          "source_id": "ESO"
+        }
+      ],
+      "response_id": "S09-RWE-04",
+      "response_text": "When the steam turbine tripped the gas turbines went into bypass mode, which is the normal response to allow sustained operation. For reasons presently unknown a high-pressure excursion occurred on GT1A, resulting in an automated trip of 210 MW [reported]. Given the prevailing conditions all systems functioned as expected.",
+      "topics": [
+        "GT1A trip",
+        "GT1A",
+        "first gas turbine"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "GT1B was manually tripped shortly after as a result of excessive steam pressure.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 20,
+          "printed_page": 21,
+          "quote": "The second gas turbine (GT1B) was manually tripped by the RWE operational staff in response to high steam pressures around 30 seconds later.",
+          "section": "4.2 Generation Performance – Little Barford",
+          "source_id": "ESO"
+        },
+        {
+          "pdf_page": 13,
+          "printed_page": 14,
+          "quote": "Little Barford GT1B tripped with 187MW generation lost instantaneously.",
+          "section": "3.3 Detailed Timeline, Table 1 – Timeline of Events",
+          "source_id": "ESO"
+        }
+      ],
+      "response_id": "S09-RWE-05",
+      "response_text": "GT1B was manually tripped shortly afterwards as a result of excessive steam pressure; the operating staff tripped it in response to the high steam pressures, around 30 seconds [reported] after GT1A, while it was generating 187 MW [reported].",
+      "topics": [
+        "GT1B",
+        "GT1B trip",
+        "second gas turbine"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "The investigation to date has found that all UPS’ at Site have functioned correctly to enable continuity of supply to plant equipment. Relevant OEM’s have been engaged and confirmed the units have functioned as expected. Therefore, we do not now believe the UPS’ were related to the subsequent trip.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 45,
+          "printed_page": null,
+          "quote": "RWE’s hypothesis is that the UPS’ have initiated a changeover to battery back-up supplies as a consequence of the system disturbance. The exact characteristic of the power supply to the UPS causing it to switch to battery operation is still to be determined and subject to further investigation.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-RWE-06",
+      "response_text": "All UPS units at site functioned correctly to keep supplies to plant equipment, and the OEMs confirmed this, so we do not now believe the UPS were related to the trip. Our hypothesis is that the UPS changed over to battery back-up as a consequence of the system disturbance; the exact characteristic of the supply that caused the switch is still to be determined.",
+      "topics": [
+        "UPS",
+        "uninterrupted power supply",
+        "station supplies"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 46,
+          "printed_page": null,
+          "quote": "A physical inspection of the bypass system is now planned during the forthcoming outage in September 2019 to help determine the root cause of the pressure excursions.",
+          "section": "Appendix E – RWE Preliminary Findings (dated 30 August 2019)",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-RWE-07",
+      "response_text": "The root cause of the pressure excursions has not been determined. A physical inspection of the bypass system is planned during the September 2019 outage to help determine it.",
+      "topics": [
+        "underlying cause",
+        "cause",
+        "investigation findings"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "quote": "The initial cause behind the discrepancy between speed readings is still unknown due to data limitations",
+          "section": "E3C final report (January 2020), section 1",
+          "source_id": "E3C"
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "quote": "Identifying measurement system tolerances and adjusting associated sensitivities to increase resilience and maintain safety;",
+          "section": "E3C final report (January 2020), section 1",
+          "source_id": "E3C"
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "quote": "Balancing steam flows between the two boilers that feed the steam turbine; and",
+          "section": "E3C final report (January 2020), section 1",
+          "source_id": "E3C"
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "quote": "Verifying the pressure capability overhead of the system and allowing use of this margin to achieve greater resilience.",
+          "section": "E3C final report (January 2020), section 1",
+          "source_id": "E3C"
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 11,
+          "quote": "RWE have confirmed to the E3C that these fixes have all been applied.",
+          "section": "E3C final report (January 2020), section 1",
+          "source_id": "E3C"
+        }
+      ],
+      "response_id": "S09-RWE-08",
+      "response_text": "The E3C records that the initial cause of the discrepancy between speed readings is still unknown due to data limitations. Since the outage we reviewed the sequence and identified areas for improvement: measurement system tolerances and associated sensitivities, balancing steam flows between the two boilers that feed the steam turbine, and verifying the pressure capability overhead of the system. We confirmed to the E3C that these fixes have all been applied.",
+      "topics": [
+        "improvements",
+        "fixes applied",
+        "review after the outage"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 20,
+          "printed_page": 21,
+          "quote": "In total this meant a total loss at Little Barford of 641MW.",
+          "section": "4.2 Generation Performance – Little Barford",
+          "source_id": "ESO"
+        }
+      ],
+      "response_id": "S09-RWE-09",
+      "response_text": "In total the station lost 641 MW [reported].",
+      "topics": [
+        "total loss",
+        "station output lost"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "RWE Generation",
+  "persona_id": "rwe-lb-shift-charge-engineer",
+  "role": "Shift charge engineer, Little Barford power station",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — the station records and findings I can speak to do not cover that."
+}

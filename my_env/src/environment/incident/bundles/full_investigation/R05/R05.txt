@@ -1,0 +1,130 @@
+DOCUMENT R05 — Hornsea One voltage and power traces digitised from published charts, 9 August 2019
+Owner/originator: National Grid ESO (published report charts; Appendix D charts supplied by Ørsted)
+Record type: digitised time series (four CSV files), a calibration file and this method note
+STATUS: DIGITISED FROM PUBLISHED CHARTS — NOT ORIGINAL MEASUREMENT DATA. Values were read from chart images in
+published reports; they are no more precise than the charts and every value carries an uncertainty.
+Clock reference: times are given as printed on each chart's time axis; no chart prints a time zone.
+The time_bst_iso column appends +01:00 (BST = UTC+01:00) to the printed time; see CLOCK BASIS.
+Value-status legend: [digitised] value read from a published chart by the method below; [reported]
+value stated in the text of a published report. Tick values, pixel sizes and fit residuals are
+calibration metadata and are not tagged.
+
+SOURCES AND LICENCE
+ESO: National Grid ESO, Technical Report on the events of 9 August 2019 (published 6 September 2019), PDF page
+19 (printed page 20): Figure 7 'Voltage and Active Power at Hornsea' and Figure 8 'Voltage and Reactive Power
+at Hornsea', section 4.2 Generation Performance.
+APP: Appendices to that report, Appendix D (Ørsted Technical Report for National Grid ESO, dated 5 September
+2019), PDF page 40 Figure 3 and PDF page 41 Figure 4.
+Licence: neither document states an open licence. The PDFs and chart images are not part of this record; only
+values read from the charts are given, with attribution.
+
+FILES (delivered with this document; after retrieval in $EVIDENCE_DIR/R05/)
+app_p40_fig3_onshore.csv: APP p40 Figure 3, 335 data rows, 5 series.
+app_p41_fig4_offshore_1b.csv: APP p41 Figure 4, 395 data rows, 5 series.
+eso_p19_fig7_voltage_active_power.csv: ESO p19 Figure 7, 594 data rows, 2 series.
+eso_p19_fig8_reactive_power.csv: ESO p19 Figure 8, 296 data rows, 1 series.
+calibration.json: per chart, the axis ticks used, fitted pixel-to-value maps and residuals,
+the series colours and stroke widths, and the uncertainty terms.
+
+CSV COLUMNS (UTF-8, comma-separated, LF line endings, one header row, long format)
+time_as_printed: the time on the chart's own time scale, in the chart's own format (see SERIES).
+time_bst_iso: time_as_printed as ISO-8601 with +01:00 appended; empty where the axis does not print
+  an absolute time for each sample (APP Figure 3).
+value, unit: the digitised value [digitised] and its unit (kV, MW or MVAr).
+uncertainty: half-width of the plausible range of value at that time, same unit (see UNCERTAINTY).
+series_id: <chart id>/<legend name as printed, spaces replaced by underscores>.
+sample_index: category index (APP charts: 0 = first plotted sample) or resampling index (ESO charts).
+time_uncertainty_s: uncertainty of the printed time scale itself, in seconds (see CLOCK BASIS).
+flags: empty, or ';'-separated: ambiguous_overlap (stroke overlaps others of similar colour; the
+  uncertainty includes this), at_axis_top / at_axis_bottom (stroke touches the plot edge, so the
+  plotted value may be clipped).
+
+SERIES
+APP p40 Figure 3 (Ørsted), title as printed 'Hornsea - 16:52, 9th August 2019', caption 'Figure 3 – Showing
+Voltage, Active power (MW) and Reactive power (MVAr) from Hornsea One at the time of the de-load'. The report
+text says it shows the NETS voltage in the 400kV substation [reported]. Five traces: HOW V1, HOW V2, HOW V3
+(voltage, left axis 'Voltage (kV)'; phase or line quantity not stated), HOW active MW and HOW reactive MVAr
+(right axis titled 'Reactive power (MVArs)', used for both). 70 plotted samples on a category axis labelled to
+0.1 s ('52:33.0' ... '52:34.3', five samples per label); file app_p40_fig3_onshore.csv.
+APP p41 Figure 4 (Ørsted), title as printed 'Hornsea 1B - De-load event, voltage vs MW vs MVAr', caption
+'Figure 4 – The de-load of Hornsea 1B due to overcurrent at the WTGs'. The report text says it depicts the
+offshore conditions at Hornsea 1B (circuit Z12) [reported]. Digitised: kV_PPM1_AVE ... kV_PPM4_AVE (34 kV
+collection-system voltage per PPM, left axis 'Voltage (kV)') and MW_OFS (right axis 'Active and Reactive Power
+(MW/MVAr)'; the abbreviation is not defined in the report). 79 plotted samples, each labelled with a time to
+the millisecond ('16:52:33.211' ... '16:52:33.999', spacing 9-11 ms); file app_p41_fig4_offshore_1b.csv.
+ESO p19 Figure 7 'Voltage and Active Power at Hornsea' and Figure 8 'Voltage and Reactive Power at Hornsea'.
+The ESO text describes the reaction 'as seen at the onshore connection point' [reported]. Figure 7: Hornsea
+Voltage (left axis 'Voltage (kV)') and Total Active Power (right axis 'Active Power (MW)'); Figure 8: Total
+Reactive Power (right axis printed 'Rective Power (MVAr)'). Continuous time axes with ticks every 0.25 s
+('16:52:33.25' ... '16:52:34.25'); the logger's sample interval is not visible. Resampled every 5 ms from
+16:52:33.005 to 16:52:34.485 (axis readings); files eso_p19_fig7_voltage_active_power.csv and
+eso_p19_fig8_reactive_power.csv.
+
+METHOD
+1. Each chart's embedded raster image was extracted losslessly from the PDF with PyMuPDF at its native
+resolution (APP Figure 3 about 196 dpi, Figure 4 about 223 dpi, ESO Figure 7 about 150 dpi, Figure 8 about 96
+dpi on the page). A MuPDF render of the same page region agrees with the raster apart from resampling at line
+edges, so nothing else on the page (clip paths, vector drawings) alters the chart. Rendering at a higher
+resolution only interpolates these pixels and adds no information.
+2. Axes were calibrated from their printed ticks: tick positions measured in the image (gridlines, or the
+centres of the tick labels where the axis has no gridlines), tick values as printed, and a least-squares
+straight line fitted per axis (at least five ticks per axis; residuals under CALIBRATION).
+3. Curves were extracted by colour. Each series' colour and stroke width were measured from its legend swatch.
+Call-out boxes, arrows and dashed lines (drawn on top of the charts) were masked; gridlines were modelled as
+background. The chart was then re-drawn from candidate vertex positions with every series in legend order
+(later series on top) and the positions chosen that best reproduce the image: dynamic programming over stroke
+positions found in the image, then refinement to 0.05 px. For the APP charts the vertices are the plotted
+samples; for the ESO charts one vertex per pixel column, resampled every 5 ms (about one stroke width).
+4. Checks: the digitised values were drawn back onto the source images and inspected; ESO Figure 7 and Figure
+8 voltages (the same quantity) were digitised independently and agree. No digitised value was adjusted to
+agree with any value stated in a report's text.
+
+CALIBRATION (rms residual of the straight-line fit through the printed ticks)
+APP p40 Figure 3: left 8 ticks, 0.1218 kV/px, rms 0.025 kV; right 22 ticks, 3.66 MW/MVAr/px, rms 1.2 MW/MVAr;
+x 70 labels, 15.10 px/sample, rms 0.09 px.
+APP p41 Figure 4: left 9 ticks, 0.06448 kV/px, rms 0.025 kV; right 12 ticks, 0.887 MW/MVAr/px, rms 0.38
+MW/MVAr; x 79 labels, 16.29 px/sample, rms 0.27 px.
+ESO p19 Figure 7: left 9 ticks, 0.2532 kV/px, rms 0.063 kV; right 10 ticks, 2.85 MW/px, rms 0.73 MW; time 5
+ticks, 1.87 ms/px, rms 0.46 ms.
+ESO p19 Figure 8: left 9 ticks, 0.3954 kV/px, rms 0.065 kV; right 10 ticks, 8.9 MVAr/px, rms 3.5 MVAr; time 5
+ticks, 2.94 ms/px, rms 0.03 ms.
+
+UNCERTAINTY
+The uncertainty column combines in quadrature, in pixels converted to the series' unit: the axis fit's rms
+residual; half the stroke width (the plotted value lies somewhere within the drawn line); colour ambiguity
+(the half-width of the range of positions that reproduce the image about as well as the chosen one: small for
+a clearly visible stroke, large where strokes of similar colour overlap or an annotation hides the line); and
+the local slope times the time-axis fit residual. It does not include the uncertainty of the time scale itself
+(time_uncertainty_s) or any error in the original measurement.
+APP p40 Figure 3: kV median 0.2, max 1.3; MW median 5.8, max 9.8; MVAr median 5.8, max 12.
+APP p41 Figure 4: kV median 0.17, max 0.43; MW median 1.6, max 3.8.
+ESO p19 Figure 7: kV median 0.41, max 1.5; MW median 4.6, max 42.
+ESO p19 Figure 8: MVAr median 10, max 32.
+
+CLOCK BASIS
+No chart prints a time zone, and no chart states which recorder or clock produced its time scale or how that
+clock was synchronised. APP Figure 3 prints only minutes, seconds and tenths ('52:33.0'); the hour comes from
+its title ('16:52'). Five consecutive samples share each label, so a sample's time is known only to about 0.1
+s from its label; the labels do not say whether they are truncated or rounded. The spacing of about 20 ms per
+sample is an inference from five samples per 0.1 s label, not printed. time_bst_iso is left empty for this
+chart.
+APP Figure 4 prints a time to the millisecond for every sample, with hour 16.
+ESO Figures 7 and 8 print tick labels to 0.01 s, with hour 16; times between ticks are read from the fitted
+scale. In time_bst_iso the printed hour is read as BST; this is an interpretation, not a statement on the
+charts.
+
+NOT DIGITISED
+APP Figure 3, HOW reactive MVAr samples 4-18: hidden behind the border of a call-out box drawn on the chart;
+omitted from the CSV.
+APP p41 Figure 4, MVAr_PPM1, MVAr_PPM2, MVAr_PPM3, MVAr_PPM4: The four per-PPM reactive-power traces lie
+within a few pixels of each other for most of the event, MVAr_PPM1 and MVAr_PPM4 are drawn in the same colour,
+and repeated fits did not assign the overlapping strokes to the same series consistently (QA overlays showed
+strokes swapped between series after the de-load). They are not digitised rather than guessed.
+ESO p19 Figure 8, Hornsea Voltage: Same quantity as the voltage in ESO p19 Figure 7, drawn at lower
+resolution; digitised only to cross-check the two charts' axes, not written out.
+
+CITING THIS RECORD
+This note: L<n> or L<a>-L<b> using the line numbers shown when the document is retrieved.
+Summary readings from these series are also available as HORNSEA-ONE asset-log rows (evidence R05),
+cited as event:<event_id>. CSV values: cite the line of this note that describes the series and give
+the file, series_id and time_as_printed in the finding.

@@ -1,0 +1,6086 @@
+{
+ "Incident Reason": [
+  {
+   "A": "Incident Category",
+   "B": "Incident Reason",
+   "C": "Incident Reason Name",
+   "D": "Incident Category Description",
+   "E": "Incident Reason Description",
+   "F": "Incident JPIP Category",
+   "G": "Incident Category Super Group Code"
+  },
+  {
+   "A": "506",
+   "B": "XK",
+   "C": "NATL GRID",
+   "D": "External other",
+   "E": "National Grid Power Failure - local area also affected (inc outage, surges, blips where working standby generator/UPS installed)",
+   "F": "External",
+   "G": "EFG"
+  },
+  {
+   "A": "701D",
+   "B": "M8",
+   "C": "ABOVE SBAR",
+   "D": "Technical Fleet delays",
+   "E": "Technical failures above the Solebar",
+   "F": "Fleet",
+   "G": "TO"
+  },
+  {
+   "A": "701D",
+   "B": "MD",
+   "C": "BELOW SBAR",
+   "D": "Technical Fleet delays",
+   "E": "Technical failures below the solebar",
+   "F": "Fleet",
+   "G": "TO"
+  }
+ ],
+ "Operator Name": [
+  {
+   "A": "Operator - Affected",
+   "B": "Operator Name - Affected"
+  },
+  {
+   "A": "D2",
+   "B": "Freightliner HH"
+  },
+  {
+   "A": "DB",
+   "B": "Freightliner Intermodal"
+  },
+  {
+   "A": "EA",
+   "B": "TPE"
+  },
+  {
+   "A": "EB",
+   "B": "Greater Anglia"
+  },
+  {
+   "A": "EC",
+   "B": "Grand Central"
+  },
+  {
+   "A": "ED",
+   "B": "Northern Trains"
+  },
+  {
+   "A": "EF",
+   "B": "GWR"
+  },
+  {
+   "A": "EH",
+   "B": "CrossCountry"
+  },
+  {
+   "A": "EJ",
+   "B": "West Midlands Trains"
+  },
+  {
+   "A": "EK",
+   "B": "London Overground"
+  },
+  {
+   "A": "EM",
+   "B": "EMR"
+  },
+  {
+   "A": "ET",
+   "B": "GTR"
+  },
+  {
+   "A": "EX",
+   "B": "TfL Rail"
+  },
+  {
+   "A": "HB",
+   "B": "LNER"
+  },
+  {
+   "A": "HE",
+   "B": "Merseyrail"
+  },
+  {
+   "A": "HL",
+   "B": "TfW Rail Limited"
+  },
+  {
+   "A": "HM",
+   "B": "HEx"
+  },
+  {
+   "A": "HO",
+   "B": "Chiltern"
+  },
+  {
+   "A": "HT",
+   "B": "c2c"
+  },
+  {
+   "A": "HU",
+   "B": "Southeastern"
+  },
+  {
+   "A": "HY",
+   "B": "South Western Railway"
+  },
+  {
+   "A": "P1",
+   "B": "GB Rail Eng"
+  },
+  {
+   "A": "PE",
+   "B": "GB Railfreight"
+  },
+  {
+   "A": "PF",
+   "B": "Hull Trains"
+  },
+  {
+   "A": "R2",
+   "B": "Colas Infrastucture"
+  },
+  {
+   "A": "RZ",
+   "B": "Balfour RP"
+  },
+  {
+   "A": "SJ",
+   "B": "South Yorkshire Supertram"
+  },
+  {
+   "A": "W1",
+   "B": "DBC Charters"
+  },
+  {
+   "A": "WA",
+   "B": "DB Cargo"
+  }
+ ],
+ "Performance Event Code": [
+  {
+   "A": "Performance Event Types.Performance Event Code",
+   "B": "Performance Event Group",
+   "C": "Performance Event Name"
+  },
+  {
+   "A": "A",
+   "B": "DELAY REPORT",
+   "C": "Automatic"
+  },
+  {
+   "A": "C",
+   "B": "CANCELLATION",
+   "C": "Cancelled At Origin"
+  },
+  {
+   "A": "D",
+   "B": "CANCELLATION",
+   "C": "Diverted"
+  },
+  {
+   "A": "F",
+   "B": "DELAY REPORT",
+   "C": "Failed to Stop"
+  },
+  {
+   "A": "M",
+   "B": "DELAY REPORT",
+   "C": "Manual"
+  },
+  {
+   "A": "O",
+   "B": "CHANGE ORIGIN",
+   "C": "Changed Origin"
+  },
+  {
+   "A": "P",
+   "B": "CANCELLATION",
+   "C": "Cancelled En Route"
+  },
+  {
+   "A": "S",
+   "B": "CANCELLATION",
+   "C": "Scheduled Cancellation"
+  },
+  {},
+  {
+   "C": "© Copyright Network Rail 2021"
+  }
+ ],
+ "Period Dates": [
+  {
+   "B": "Network Rail"
+  },
+  {
+   "B": "Period end dates"
+  },
+  {},
+  {
+   "AB": "YEAR 2021/22",
+   "AG": "YEAR 2022/23",
+   "AL": "YEAR 2023/24",
+   "AQ": "YEAR 2024/25",
+   "AV": "YEAR 2025/26",
+   "BA": "YEAR 2026/27",
+   "BF": "YEAR 2027/28",
+   "BK": "YEAR 2028/29",
+   "BP": "YEAR 2029/30",
+   "BU": "YEAR 2030/31",
+   "BZ": "YEAR 2031/32",
+   "C": "YEAR 2016/17",
+   "CE": "YEAR 2032/33",
+   "CJ": "YEAR 2033/34",
+   "CO": "YEAR 2034/35",
+   "H": "YEAR 2017/18",
+   "M": "YEAR 2018/19",
+   "R": "YEAR 2019/20",
+   "W": "YEAR 2020/21"
+  },
+  {
+   "AA": "No of Days.",
+   "AB": "Day Name",
+   "AD": "Date",
+   "AF": "No of Days.",
+   "AG": "Day Name",
+   "AI": "Date",
+   "AK": "No of Days.",
+   "AL": "Day Name",
+   "AN": "Date",
+   "AP": "No of Days.",
+   "AQ": "Day Name",
+   "AS": "Date",
+   "AU": "No of Days.",
+   "AV": "Day Name",
+   "AX": "Date",
+   "AZ": "No of Days.",
+   "BA": "Day Name",
+   "BC": "Date",
+   "BE": "No of Days.",
+   "BF": "Day Name",
+   "BH": "Date",
+   "BJ": "No of Days.",
+   "BK": "Day Name",
+   "BM": "Date",
+   "BO": "No of Days.",
+   "BP": "Day Name",
+   "BR": "Date",
+   "BT": "No of Days.",
+   "BU": "Day Name",
+   "BW": "Date",
+   "BY": "No of Days.",
+   "BZ": "Day Name",
+   "C": "Day Name",
+   "CB": "Date",
+   "CD": "No of Days.",
+   "CE": "Day Name",
+   "CG": "Date",
+   "CI": "No of Days.",
+   "CJ": "Day Name",
+   "CL": "Date",
+   "CN": "No of Days.",
+   "CO": "Day Name",
+   "CQ": "Date",
+   "CS": "No of Days.",
+   "E": "Date",
+   "G": "No of Days.",
+   "H": "Day Name",
+   "J": "Date",
+   "L": "No of Days.",
+   "M": "Day Name",
+   "O": "Date",
+   "Q": "No of Days.",
+   "R": "Day Name",
+   "T": "Date",
+   "V": "No of Days.",
+   "W": "Day Name",
+   "Y": "Date"
+  },
+  {
+   "A": "Period 1",
+   "AA": "32",
+   "AB": "Saturday",
+   "AD": "44317",
+   "AF": "31",
+   "AG": "Saturday",
+   "AI": "44681",
+   "AK": "30",
+   "AL": "Saturday",
+   "AN": "45045",
+   "AP": "29",
+   "AQ": "Saturday",
+   "AS": "45409",
+   "AU": "27",
+   "AV": "Saturday",
+   "AX": "45773",
+   "AZ": "26",
+   "BA": "Saturday",
+   "BC": "46144",
+   "BE": "32",
+   "BF": "Saturday",
+   "BH": "46508",
+   "BJ": "31",
+   "BK": "Saturday",
+   "BM": "46872",
+   "BO": "29",
+   "BP": "Saturday",
+   "BR": "47236",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47600",
+   "BY": "27",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "47964",
+   "CD": "26",
+   "CE": "Saturday",
+   "CG": "48335",
+   "CI": "31",
+   "CJ": "Saturday",
+   "CL": "48699",
+   "CN": "30",
+   "CO": "Saturday",
+   "CQ": "49063",
+   "CS": "29",
+   "E": "42490",
+   "G": "30",
+   "H": "Saturday",
+   "J": "42854",
+   "L": "29",
+   "M": "Saturday",
+   "O": "43218",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43582",
+   "V": "27",
+   "W": "Saturday",
+   "Y": "43953"
+  },
+  {
+   "A": "Period 2",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44345",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44709",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45073",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45437",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45801",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46172",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46536",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "46900",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47264",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47628",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "47992",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48363",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48727",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49091",
+   "CS": "28",
+   "E": "42518",
+   "G": "28",
+   "H": "Saturday",
+   "J": "42882",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43246",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43610",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "43981"
+  },
+  {
+   "A": "Period 3",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44373",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44737",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45101",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45465",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45829",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46200",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46564",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "46928",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47292",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47656",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48020",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48391",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48755",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49119",
+   "CS": "28",
+   "E": "42546",
+   "G": "28",
+   "H": "Saturday",
+   "J": "42910",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43274",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43638",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44009"
+  },
+  {
+   "A": "Period 4",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44401",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44765",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45129",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45493",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45857",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46228",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46592",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "46956",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47320",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47684",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48048",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48419",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48783",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49147",
+   "CS": "28",
+   "E": "42574",
+   "G": "28",
+   "H": "Saturday",
+   "J": "42938",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43302",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43666",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44037"
+  },
+  {
+   "A": "Period 5",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44429",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44793",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45157",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45521",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45885",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46256",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46620",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "46984",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47348",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47712",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48076",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48447",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48811",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49175",
+   "CS": "28",
+   "E": "42602",
+   "G": "28",
+   "H": "Saturday",
+   "J": "42966",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43330",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43694",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44065"
+  },
+  {
+   "A": "Period 6",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44457",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44821",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45185",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45549",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45913",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46284",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46648",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47012",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47376",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47740",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48104",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48475",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48839",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49203",
+   "CS": "28",
+   "E": "42630",
+   "G": "28",
+   "H": "Saturday",
+   "J": "42994",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43358",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43722",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44093"
+  },
+  {
+   "A": "Period 7",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44485",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44849",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45213",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45577",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45941",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46312",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46676",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47040",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47404",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47768",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48132",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48503",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48867",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49231",
+   "CS": "28",
+   "E": "42658",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43022",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43386",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43750",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44121"
+  },
+  {
+   "A": "Period 8",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44513",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44877",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45241",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45605",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45969",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46340",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46704",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47068",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47432",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47796",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48160",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48531",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48895",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49259",
+   "CS": "28",
+   "E": "42686",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43050",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43414",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43778",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44149"
+  },
+  {
+   "A": "Period 9",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44541",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44905",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45269",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45633",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "45997",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46368",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46732",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47096",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47460",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47824",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48188",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48559",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48923",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49287",
+   "CS": "28",
+   "E": "42714",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43078",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43442",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43806",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44177"
+  },
+  {
+   "A": "Period 10",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44569",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44933",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45297",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45661",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "46025",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46396",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46760",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47124",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47488",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47852",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48216",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48587",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48951",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49315",
+   "CS": "28",
+   "E": "42742",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43106",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43470",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43834",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44205"
+  },
+  {
+   "A": "Period 11",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44597",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44961",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45325",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45689",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "46053",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46424",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46788",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47152",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47516",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47880",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48244",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48615",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "48979",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49343",
+   "CS": "28",
+   "E": "42770",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43134",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43498",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43862",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44233"
+  },
+  {
+   "A": "Period 12",
+   "AA": "28",
+   "AB": "Saturday",
+   "AD": "44625",
+   "AF": "28",
+   "AG": "Saturday",
+   "AI": "44989",
+   "AK": "28",
+   "AL": "Saturday",
+   "AN": "45353",
+   "AP": "28",
+   "AQ": "Saturday",
+   "AS": "45717",
+   "AU": "28",
+   "AV": "Saturday",
+   "AX": "46081",
+   "AZ": "28",
+   "BA": "Saturday",
+   "BC": "46452",
+   "BE": "28",
+   "BF": "Saturday",
+   "BH": "46816",
+   "BJ": "28",
+   "BK": "Saturday",
+   "BM": "47180",
+   "BO": "28",
+   "BP": "Saturday",
+   "BR": "47544",
+   "BT": "28",
+   "BU": "Saturday",
+   "BW": "47908",
+   "BY": "28",
+   "BZ": "Saturday",
+   "C": "Saturday",
+   "CB": "48272",
+   "CD": "28",
+   "CE": "Saturday",
+   "CG": "48643",
+   "CI": "28",
+   "CJ": "Saturday",
+   "CL": "49007",
+   "CN": "28",
+   "CO": "Saturday",
+   "CQ": "49371",
+   "CS": "28",
+   "E": "42798",
+   "G": "28",
+   "H": "Saturday",
+   "J": "43162",
+   "L": "28",
+   "M": "Saturday",
+   "O": "43526",
+   "Q": "28",
+   "R": "Saturday",
+   "T": "43890",
+   "V": "28",
+   "W": "Saturday",
+   "Y": "44261"
+  },
+  {
+   "A": "Period 13",
+   "AA": "25",
+   "AB": "Thursday",
+   "AD": "44651",
+   "AF": "26",
+   "AG": "Friday",
+   "AI": "45016",
+   "AK": "27",
+   "AL": "Sunday",
+   "AN": "45382",
+   "AP": "29",
+   "AQ": "Monday",
+   "AS": "45747",
+   "AU": "30",
+   "AV": "Tuesday",
+   "AX": "46112",
+   "AZ": "31",
+   "BA": "Wednesday",
+   "BC": "46477",
+   "BE": "25",
+   "BF": "Friday",
+   "BH": "46843",
+   "BJ": "27",
+   "BK": "Saturday",
+   "BM": "47208",
+   "BO": "28",
+   "BP": "Sunday",
+   "BR": "47573",
+   "BT": "29",
+   "BU": "Monday",
+   "BW": "47938",
+   "BY": "30",
+   "BZ": "Wednesday",
+   "C": "Friday",
+   "CB": "48304",
+   "CD": "32",
+   "CE": "Thursday",
+   "CG": "48669",
+   "CI": "26",
+   "CJ": "Friday",
+   "CL": "49034",
+   "CN": "27",
+   "CO": "Saturday",
+   "CQ": "49399",
+   "CS": "28",
+   "E": "42825",
+   "G": "27",
+   "H": "Saturday",
+   "J": "43190",
+   "L": "28",
+   "M": "Sunday",
+   "O": "43555",
+   "Q": "29",
+   "R": "Tuesday",
+   "T": "43921",
+   "V": "31",
+   "W": "Wednesday",
+   "Y": "44286"
+  },
+  {
+   "AA": "365",
+   "AF": "365",
+   "AK": "365",
+   "AP": "366",
+   "AU": "365",
+   "AZ": "365",
+   "BE": "365",
+   "BJ": "366",
+   "BO": "365",
+   "BT": "365",
+   "BY": "365",
+   "CD": "366",
+   "CI": "365",
+   "CN": "365",
+   "CS": "365",
+   "G": "365",
+   "L": "365",
+   "Q": "365",
+   "V": "366"
+  },
+  {},
+  {}
+ ],
+ "Reactionary Reason Code": [
+  {
+   "A": "Reactionary Reasons.Reactionary Reason Code",
+   "B": "Reactionary Reason Description",
+   "C": "Reactionary Reason Name"
+  },
+  {
+   "A": "M8",
+   "B": "Technical failures above the Solebar",
+   "C": "ABOVE SBAR"
+  },
+  {
+   "A": "MD",
+   "B": "Technical failures below the solebar",
+   "C": "BELOW SBAR"
+  },
+  {
+   "A": "XK",
+   "B": "National Grid Power Failure - local area also affected (inc outage, surges, blips where working standby generator/UPS installed)",
+   "C": "NATL GRID"
+  },
+  {
+   "A": "YA",
+   "B": "Lost path - regulated for train running less late",
+   "C": "REG-ONTIME"
+  },
+  {
+   "A": "YB",
+   "B": "Lost path - regulated for another later running train",
+   "C": "REG-LATE"
+  },
+  {
+   "A": "YC",
+   "B": "Lost path - following train running less late",
+   "C": "FOL-ONTIME"
+  },
+  {
+   "A": "YD",
+   "B": "Lost path - following another later running train",
+   "C": "FOL-LATE"
+  },
+  {
+   "A": "YE",
+   "B": "Waiting path onto/from single line",
+   "C": "WTG S/LINE"
+  },
+  {
+   "A": "YG",
+   "B": "Regulated in accordance with Regulation Policy",
+   "C": "REG INSTRC"
+  },
+  {
+   "A": "YI",
+   "B": "Late arrival of booked inward stock (inward and outward trains are operated under the same Track Access Contract)",
+   "C": "INWD STOCK"
+  },
+  {
+   "A": "YJ",
+   "B": "Late arrival of booked inward train-crew where inward and outward are worked by that train-crew under same Track Access Contract",
+   "C": "INWD CREW"
+  },
+  {
+   "A": "YL",
+   "B": "Waiting passenger connections within Connection Policy, contingency plan or otherwise agreed by NR/TOC",
+   "C": "AUTHSD CON"
+  },
+  {
+   "A": "YM",
+   "B": "Special stop orders within the contingency plan or agreed by NR/TOC",
+   "C": "AUTHSD SSO"
+  },
+  {
+   "A": "YN",
+   "B": "Service Recovery-booked train crew, not available",
+   "C": "FIND CREW"
+  },
+  {
+   "A": "YO",
+   "B": "Waiting platform/station congestion/platform change",
+   "C": "PLATFORM"
+  },
+  {
+   "A": "YP",
+   "B": "Delays due to diversions from booked route or line",
+   "C": "DIVERSION"
+  },
+  {
+   "A": "YR",
+   "B": "Tactical cancellation for service recovery not caused by late running",
+   "C": "SR CNCL"
+  },
+  {
+   "A": "YU",
+   "B": "Service Recovery-booked rolling stock, not available",
+   "C": "UNIT SWAPS"
+  },
+  {
+   "A": "YX",
+   "B": "Passenger overcrowding caused by delay or cancellation of another train or its own late running",
+   "C": "OVER CRWD"
+  }
+ ],
+ "Responsible Manager": [
+  {
+   "A": "Responsible Managers.Responsible Manager",
+   "B": "Responsible Manager Name",
+   "C": "Responsible Organisation",
+   "D": "Responsible Organisation Full Name",
+   "E": "Responsible Organisation Name",
+   "F": "Responsible Org NR-TOC/FOC Others"
+  },
+  {
+   "A": "METR",
+   "B": "GTR Class 700 Unit",
+   "C": "ET",
+   "D": "Govia Thameslink Railway",
+   "E": "GTR",
+   "F": "TOC/FOC"
+  },
+  {
+   "A": "XQBV",
+   "B": "Sus Sussex External",
+   "C": "B",
+   "D": "Sussex",
+   "E": "RSUS",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQCW",
+   "B": "WSX Wessex External",
+   "C": "C",
+   "D": "Wessex",
+   "E": "RWEX",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQDZ",
+   "B": "WES External",
+   "C": "D",
+   "D": "Western",
+   "E": "RWES",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQEB",
+   "B": "CTL WEST MIDLANDS EXTERNAL",
+   "C": "E",
+   "D": "Central",
+   "E": "RCTL",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQFM",
+   "B": "NWE NTH CENTRAL EXTERNAL",
+   "C": "F",
+   "D": "North West",
+   "E": "RNWE",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQFO",
+   "B": "NWE NTH LANCS + CUMBRIA",
+   "C": "F",
+   "D": "North West",
+   "E": "RNWE",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQHM",
+   "B": "ANG East Anglia External",
+   "C": "H",
+   "D": "Anglia",
+   "E": "REAN",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQIA",
+   "B": "EAC EAST COAST EXTERNAL",
+   "C": "I",
+   "D": "East Coast",
+   "E": "REAC",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQMD",
+   "B": "KNT Kent External",
+   "C": "M",
+   "D": "Kent",
+   "E": "RKNT",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQWC",
+   "B": "CYM External Cardiff DU",
+   "C": "W",
+   "D": "Wales",
+   "E": "RCYM",
+   "F": "Network Rail"
+  },
+  {
+   "A": "XQWS",
+   "B": "CYM External Shrewsbury DU",
+   "C": "W",
+   "D": "Wales",
+   "E": "RCYM",
+   "F": "Network Rail"
+  }
+ ],
+ "Stanox Codes": [
+  {
+   "A": "STANOX NO.",
+   "B": "FULL NAME",
+   "C": "CRS CODE",
+   "D": "Route Description"
+  },
+  {
+   "A": "87915",
+   "B": "3BDGS DOWN THAMESLINK SDGS",
+   "D": "Sussex"
+  },
+  {
+   "A": "67371",
+   "B": "ABBOTSWOOD JN",
+   "C": "XAY",
+   "D": "Central"
+  },
+  {
+   "A": "76251",
+   "B": "ABERGAVENNY",
+   "C": "AGV",
+   "D": "Wales"
+  },
+  {
+   "A": "73250",
+   "B": "ACTON T.C.",
+   "C": "XAX",
+   "D": "Western"
+  },
+  {
+   "A": "72251",
+   "B": "ACTON WELLS JN",
+   "D": "Anglia"
+  },
+  {
+   "A": "73251",
+   "B": "ACTON WEST",
+   "D": "Western"
+  },
+  {
+   "A": "30321",
+   "B": "ADLINGTON (LANCASHIRE)",
+   "C": "ADL",
+   "D": "North West"
+  },
+  {
+   "A": "23118",
+   "B": "ADWICK",
+   "C": "AWK",
+   "D": "East Coast"
+  },
+  {
+   "A": "23120",
+   "B": "ADWICK JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "87031",
+   "B": "ALDERSHOT",
+   "C": "AHT",
+   "D": "Wessex"
+  },
+  {
+   "A": "54103",
+   "B": "ALEXANDRA PALACE",
+   "C": "AAP",
+   "D": "East Coast"
+  },
+  {
+   "A": "12112",
+   "B": "ALNMOUTH",
+   "C": "ALM",
+   "D": "East Coast"
+  },
+  {
+   "A": "87021",
+   "B": "ALTON",
+   "C": "AON",
+   "D": "Wessex"
+  },
+  {
+   "A": "57110",
+   "B": "AMBERGATE JN",
+   "C": "XAJ",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87644",
+   "B": "ANERLEY",
+   "C": "ANZ",
+   "D": "Sussex"
+  },
+  {
+   "A": "87998",
+   "B": "ANGMERING",
+   "C": "ANG",
+   "D": "Sussex"
+  },
+  {
+   "A": "17053",
+   "B": "APPERLEY JN",
+   "D": "North & East"
+  },
+  {
+   "A": "17136",
+   "B": "ARMLEY JUNCTION",
+   "D": "North & East"
+  },
+  {
+   "A": "87959",
+   "B": "ARUNDEL JN",
+   "C": "XXA",
+   "D": "Sussex"
+  },
+  {
+   "A": "87103",
+   "B": "ASCOT",
+   "C": "ACT",
+   "D": "Wessex"
+  },
+  {
+   "A": "87014",
+   "B": "ASH",
+   "C": "ASH",
+   "D": "Wessex"
+  },
+  {
+   "A": "32050",
+   "B": "ASHBURYS",
+   "C": "ABY",
+   "D": "North West"
+  },
+  {
+   "A": "68071",
+   "B": "ASHCHURCH FOR TEWKESBURY",
+   "C": "ASC",
+   "D": "Western"
+  },
+  {
+   "A": "89428",
+   "B": "ASHFORD INTERNATIONAL",
+   "C": "#MULTIVALUE",
+   "D": "Kent"
+  },
+  {
+   "A": "87683",
+   "B": "ASHTEAD",
+   "C": "AHD",
+   "D": "Wessex"
+  },
+  {
+   "A": "87041",
+   "B": "ASH VALE",
+   "C": "AHV",
+   "D": "Wessex"
+  },
+  {
+   "A": "65651",
+   "B": "ASTON",
+   "C": "AST",
+   "D": "Central"
+  },
+  {
+   "A": "82307",
+   "B": "ATHELNEY CROSSING",
+   "D": "Western"
+  },
+  {
+   "A": "48501",
+   "B": "ATTLEBOROUGH",
+   "C": "ATL",
+   "D": "Anglia"
+  },
+  {
+   "A": "47321",
+   "B": "AUDLEY END",
+   "C": "AUD",
+   "D": "Anglia"
+  },
+  {
+   "A": "76076",
+   "B": "AWRE",
+   "D": "Western"
+  },
+  {
+   "A": "69440",
+   "B": "AYNHO JN",
+   "C": "XAN",
+   "D": "Central"
+  },
+  {
+   "A": "87963",
+   "B": "BALCOMBE",
+   "C": "BAB",
+   "D": "Sussex"
+  },
+  {
+   "A": "87927",
+   "B": "BALCOMBE TUNNEL JN",
+   "D": "Sussex"
+  },
+  {
+   "A": "53015",
+   "B": "BALDOCK",
+   "C": "BDK",
+   "D": "East Coast"
+  },
+  {
+   "A": "87222",
+   "B": "BALHAM",
+   "C": "BAL",
+   "D": "Sussex"
+  },
+  {
+   "A": "69424",
+   "B": "BANBURY",
+   "C": "BAN",
+   "D": "Central"
+  },
+  {
+   "A": "40036",
+   "B": "BANGOR (GWYNEDD)",
+   "C": "BNG",
+   "D": "Wales"
+  },
+  {
+   "A": "51531",
+   "B": "BARKING",
+   "C": "BKG",
+   "D": "Anglia"
+  },
+  {
+   "A": "88422",
+   "B": "BARNEHURST",
+   "C": "BNH",
+   "D": "Kent"
+  },
+  {
+   "A": "87149",
+   "B": "BARNES",
+   "C": "BNS",
+   "D": "Wessex"
+  },
+  {
+   "A": "86451",
+   "B": "BARNHAM",
+   "C": "BAA",
+   "D": "Sussex"
+  },
+  {
+   "A": "24385",
+   "B": "BARNSLEY",
+   "C": "BNY",
+   "D": "North & East"
+  },
+  {
+   "A": "83222",
+   "B": "BARNSTAPLE",
+   "C": "BNP",
+   "D": "Western"
+  },
+  {
+   "A": "66525",
+   "B": "BARNT GREEN",
+   "C": "BTG",
+   "D": "Central"
+  },
+  {
+   "A": "68082",
+   "B": "BARNWOOD JN.",
+   "D": "Western"
+  },
+  {
+   "A": "78817",
+   "B": "BARRY ISLAND",
+   "C": "BYI",
+   "D": "Wales"
+  },
+  {
+   "A": "21001",
+   "B": "BARTON-ON-HUMBER",
+   "C": "BAU",
+   "D": "North & East"
+  },
+  {
+   "A": "86066",
+   "B": "BASINGSTOKE",
+   "C": "BSK",
+   "D": "Wessex"
+  },
+  {
+   "A": "81501",
+   "B": "BATH SPA",
+   "C": "BTH",
+   "D": "Western"
+  },
+  {
+   "A": "87239",
+   "B": "BATTERSEA LOOP",
+   "D": "Sussex"
+  },
+  {
+   "A": "87203",
+   "B": "BATTERSEA PARK",
+   "C": "BAK",
+   "D": "Sussex"
+  },
+  {
+   "A": "38208",
+   "B": "BEBINGTON",
+   "C": "BEB",
+   "D": "North West"
+  },
+  {
+   "A": "88315",
+   "B": "BECKENHAM JUNCTION",
+   "C": "BKJ",
+   "D": "Kent"
+  },
+  {
+   "A": "62011",
+   "B": "BEDFORD",
+   "C": "BDM",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62015",
+   "B": "BEDFORD CAULDWELL DEPOT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62014",
+   "B": "BEDFORD C S",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62022",
+   "B": "BEDFORD JOWETT SDGS",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62021",
+   "B": "BEDFORD WASH ROAD",
+   "D": "East Midlands"
+  },
+  {
+   "A": "81813",
+   "B": "BEDMINSTER",
+   "C": "BMT",
+   "D": "Western"
+  },
+  {
+   "A": "74816",
+   "B": "BEDWYN",
+   "C": "BDW",
+   "D": "Western"
+  },
+  {
+   "A": "12106",
+   "B": "BELFORD L.C.",
+   "D": "East Coast"
+  },
+  {
+   "A": "54304",
+   "B": "BELLE ISLE",
+   "C": "XKB",
+   "D": "East Coast"
+  },
+  {
+   "A": "88471",
+   "B": "BELLINGHAM",
+   "C": "BGM",
+   "D": "Kent"
+  },
+  {
+   "A": "12001",
+   "B": "BERWICK-UPON-TWEED",
+   "C": "BWK",
+   "D": "East Coast"
+  },
+  {
+   "A": "19023",
+   "B": "BEVERLEY",
+   "C": "BEV",
+   "D": "North & East"
+  },
+  {
+   "A": "88275",
+   "B": "BEXHILL",
+   "C": "BEX",
+   "D": "Sussex"
+  },
+  {
+   "A": "69502",
+   "B": "BICESTER NORTH",
+   "C": "BCS",
+   "D": "Central"
+  },
+  {
+   "A": "88478",
+   "B": "BICKLEY",
+   "C": "BKL",
+   "D": "Kent"
+  },
+  {
+   "A": "88479",
+   "B": "BICKLEY JN",
+   "C": "XLY",
+   "D": "Kent"
+  },
+  {
+   "A": "38012",
+   "B": "BIDSTON",
+   "C": "BID",
+   "D": "North West"
+  },
+  {
+   "A": "55625",
+   "B": "BINGHAM",
+   "C": "BIN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "66034",
+   "B": "BIRCH COPPICE FREIGHTLINER",
+   "D": "Central"
+  },
+  {
+   "A": "66036",
+   "B": "BIRCH COPPICE GBRF",
+   "D": "Central"
+  },
+  {
+   "A": "38200",
+   "B": "BIRKENHEAD CENTRAL",
+   "C": "BKC",
+   "D": "North West"
+  },
+  {
+   "A": "38151",
+   "B": "BIRKENHEAD NORTH",
+   "C": "BKN",
+   "D": "North West"
+  },
+  {
+   "A": "38153",
+   "B": "BIRKENHEAD PARK",
+   "C": "BKP",
+   "D": "North West"
+  },
+  {
+   "A": "69215",
+   "B": "BIRMINGHAM INTERNATIONAL",
+   "C": "BHI",
+   "D": "Central"
+  },
+  {
+   "A": "66411",
+   "B": "BIRMINGHAM MOOR STREET",
+   "C": "BMO",
+   "D": "Central"
+  },
+  {
+   "A": "65630",
+   "B": "BIRMINGHAM NEW STREET",
+   "C": "BHM",
+   "D": "Central"
+  },
+  {
+   "A": "66409",
+   "B": "BIRMINGHAM SNOW HILL",
+   "C": "BSW",
+   "D": "Central"
+  },
+  {
+   "A": "29150",
+   "B": "BLACKBURN",
+   "C": "BBN",
+   "D": "North West"
+  },
+  {
+   "A": "29154",
+   "B": "BLACKBURN KING STREET",
+   "D": "North West"
+  },
+  {
+   "A": "30021",
+   "B": "BLACKPOOL NORTH",
+   "C": "BPN",
+   "D": "North West"
+  },
+  {
+   "A": "30022",
+   "B": "BLACKPOOL NORTH CAR. M.D.",
+   "C": "XNS",
+   "D": "North West"
+  },
+  {
+   "A": "30033",
+   "B": "BLACKPOOL SOUTH",
+   "C": "BPS",
+   "D": "North West"
+  },
+  {
+   "A": "30221",
+   "B": "BLACKROD",
+   "C": "BLK",
+   "D": "North West"
+  },
+  {
+   "A": "40066",
+   "B": "BLAENAU FFESTINIOG",
+   "C": "BFF",
+   "D": "Wales"
+  },
+  {
+   "A": "86441",
+   "B": "BOGNOR REGIS",
+   "C": "#MULTIVALUE",
+   "D": "Sussex"
+  },
+  {
+   "A": "31620",
+   "B": "BOLTON",
+   "C": "BON",
+   "D": "North West"
+  },
+  {
+   "A": "36600",
+   "B": "BOOTLE BRANCH JN",
+   "D": "North West"
+  },
+  {
+   "A": "36074",
+   "B": "BOOTLE JN",
+   "D": "North West"
+  },
+  {
+   "A": "88284",
+   "B": "BOPEEP JN S.B.",
+   "C": "XOP",
+   "D": "Kent"
+  },
+  {
+   "A": "66324",
+   "B": "BORDESLEY JN",
+   "C": "XIR",
+   "D": "Central"
+  },
+  {
+   "A": "86202",
+   "B": "BOTLEY",
+   "C": "BOE",
+   "D": "Wessex"
+  },
+  {
+   "A": "54101",
+   "B": "BOUNDS GREEN T&R.S.M.D",
+   "C": "XGD",
+   "D": "East Coast"
+  },
+  {
+   "A": "74014",
+   "B": "BOURNE END",
+   "C": "BNE",
+   "D": "Western"
+  },
+  {
+   "A": "86921",
+   "B": "BOURNEMOUTH",
+   "C": "BMH",
+   "D": "Wessex"
+  },
+  {
+   "A": "86923",
+   "B": "BOURNEMOUTH T&R.S.M.D",
+   "C": "XBM",
+   "D": "Wessex"
+  },
+  {
+   "A": "87686",
+   "B": "BOX HILL & WESTHUMBLE",
+   "C": "BXW",
+   "D": "Wessex"
+  },
+  {
+   "A": "87101",
+   "B": "BRACKNELL",
+   "C": "BCE",
+   "D": "Wessex"
+  },
+  {
+   "A": "17019",
+   "B": "BRADFORD FORSTER SQUARE",
+   "C": "BDQ",
+   "D": "North & East"
+  },
+  {
+   "A": "18641",
+   "B": "BRADFORD INTERCHANGE",
+   "C": "BDI",
+   "D": "North & East"
+  },
+  {
+   "A": "75363",
+   "B": "BRADFORD JN",
+   "D": "Western"
+  },
+  {
+   "A": "82075",
+   "B": "BRADFORD-ON-AVON",
+   "C": "BOA",
+   "D": "Western"
+  },
+  {
+   "A": "18469",
+   "B": "BRADLEY WOOD JN",
+   "D": "North & East"
+  },
+  {
+   "A": "86061",
+   "B": "BRAMLEY (HANTS)",
+   "C": "BMY",
+   "D": "Wessex"
+  },
+  {
+   "A": "86927",
+   "B": "BRANKSOME",
+   "C": "BSM",
+   "D": "Wessex"
+  },
+  {
+   "A": "87144",
+   "B": "BRENTFORD",
+   "C": "BFD",
+   "D": "Wessex"
+  },
+  {
+   "A": "87602",
+   "B": "BRICKLAYERS ARMS JN",
+   "C": "XLJ",
+   "D": "Kent"
+  },
+  {
+   "A": "81924",
+   "B": "BRIDGWATER",
+   "C": "BWT",
+   "D": "Western"
+  },
+  {
+   "A": "19007",
+   "B": "BRIDLINGTON",
+   "C": "BDT",
+   "D": "North & East"
+  },
+  {
+   "A": "87980",
+   "B": "BRIGHTON",
+   "C": "BTN",
+   "D": "Sussex"
+  },
+  {
+   "A": "87981",
+   "B": "BRIGHTON DOWN SDG",
+   "C": "#MULTIVALUE",
+   "D": "Sussex"
+  },
+  {
+   "A": "51914",
+   "B": "BRIMSDOWN",
+   "C": "BMD",
+   "D": "Anglia"
+  },
+  {
+   "A": "81109",
+   "B": "BRISTOL PARKWAY",
+   "C": "BPW",
+   "D": "Western"
+  },
+  {
+   "A": "81700",
+   "B": "BRISTOL TEMPLE MEADS",
+   "C": "BRI",
+   "D": "Western"
+  },
+  {
+   "A": "87248",
+   "B": "BRIXTON",
+   "C": "BRX",
+   "D": "Kent"
+  },
+  {
+   "A": "86901",
+   "B": "BROCKENHURST",
+   "C": "BCU",
+   "D": "Wessex"
+  },
+  {
+   "A": "87629",
+   "B": "BROCKLEY",
+   "C": "BCY",
+   "D": "Sussex"
+  },
+  {
+   "A": "38218",
+   "B": "BROMBOROUGH",
+   "C": "BOM",
+   "D": "North West"
+  },
+  {
+   "A": "38216",
+   "B": "BROMBOROUGH RAKE",
+   "C": "BMR",
+   "D": "North West"
+  },
+  {
+   "A": "88477",
+   "B": "BROMLEY SOUTH",
+   "C": "BMS",
+   "D": "Kent"
+  },
+  {
+   "A": "67003",
+   "B": "BROMSGROVE",
+   "C": "BMV",
+   "D": "Central"
+  },
+  {
+   "A": "53995",
+   "B": "BROOKMANS PARK",
+   "C": "BPK",
+   "D": "East Coast"
+  },
+  {
+   "A": "51722",
+   "B": "BROXBOURNE",
+   "C": "BXB",
+   "D": "Anglia"
+  },
+  {
+   "A": "30201",
+   "B": "BUCKSHAW VILLAGE",
+   "C": "BSV",
+   "D": "North West"
+  },
+  {
+   "A": "46301",
+   "B": "BURY ST EDMUNDS",
+   "C": "BSE",
+   "D": "Anglia"
+  },
+  {
+   "A": "70331",
+   "B": "CALVERT",
+   "D": "Central"
+  },
+  {
+   "A": "47221",
+   "B": "CAMBRIDGE",
+   "C": "CBG",
+   "D": "Anglia"
+  },
+  {
+   "A": "47214",
+   "B": "CAMBRIDGE NORTH",
+   "C": "CMB",
+   "D": "Anglia"
+  },
+  {
+   "A": "47215",
+   "B": "CAMBRIDGE T.&R.S.M.D.",
+   "C": "XCA",
+   "D": "Anglia"
+  },
+  {
+   "A": "72421",
+   "B": "CAMDEN ROAD",
+   "C": "CMD",
+   "D": "Anglia"
+  },
+  {
+   "A": "68140",
+   "B": "CAM & DURSLEY",
+   "C": "CDU",
+   "D": "Western"
+  },
+  {
+   "A": "87568",
+   "B": "CANADA WATER (ELL)",
+   "C": "ZCW",
+   "D": "Private Railway"
+  },
+  {
+   "A": "89446",
+   "B": "CANTERBURY WEST",
+   "C": "CBW",
+   "D": "Kent"
+  },
+  {
+   "A": "78514",
+   "B": "CARDIFF CANTON SIDINGS",
+   "C": "XCC",
+   "D": "Wales"
+  },
+  {
+   "A": "77301",
+   "B": "CARDIFF CENTRAL",
+   "C": "CDF",
+   "D": "Wales"
+  },
+  {
+   "A": "63547",
+   "B": "CARLTON ROAD JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "80419",
+   "B": "CARMARTHEN",
+   "C": "CMN",
+   "D": "Wales"
+  },
+  {
+   "A": "80411",
+   "B": "CARMARTHEN JN",
+   "C": "XCI",
+   "D": "Wales"
+  },
+  {
+   "A": "87669",
+   "B": "CARSHALTON",
+   "C": "CSH",
+   "D": "Sussex"
+  },
+  {
+   "A": "82301",
+   "B": "CASTLE CARY",
+   "C": "CLC",
+   "D": "Western"
+  },
+  {
+   "A": "87706",
+   "B": "CATERHAM",
+   "C": "CAT",
+   "D": "Sussex"
+  },
+  {
+   "A": "51313",
+   "B": "CHAFFORD HUNDRED",
+   "C": "CFH",
+   "D": "Anglia"
+  },
+  {
+   "A": "74329",
+   "B": "CHALLOW",
+   "D": "Western"
+  },
+  {
+   "A": "83468",
+   "B": "CHARD JN. S.B",
+   "D": "Wessex"
+  },
+  {
+   "A": "68151",
+   "B": "CHARFIELD",
+   "D": "Western"
+  },
+  {
+   "A": "88515",
+   "B": "CHARLTON",
+   "C": "CTN",
+   "D": "Kent"
+  },
+  {
+   "A": "87678",
+   "B": "CHEAM",
+   "C": "CHE",
+   "D": "Sussex"
+  },
+  {
+   "A": "68076",
+   "B": "CHELTENHAM SPA",
+   "C": "CNM",
+   "D": "Western"
+  },
+  {
+   "A": "76079",
+   "B": "CHEPSTOW",
+   "C": "CPW",
+   "D": "Wales"
+  },
+  {
+   "A": "51815",
+   "B": "CHESHUNT",
+   "C": "CHN",
+   "D": "Anglia"
+  },
+  {
+   "A": "87411",
+   "B": "CHESSINGTON SOUTH",
+   "C": "CSS",
+   "D": "Wessex"
+  },
+  {
+   "A": "40320",
+   "B": "CHESTER",
+   "C": "#MULTIVALUE",
+   "D": "North West"
+  },
+  {
+   "A": "27263",
+   "B": "CHESTERFIELD",
+   "C": "CHD",
+   "D": "North & East"
+  },
+  {
+   "A": "86424",
+   "B": "CHICHESTER",
+   "C": "CCH",
+   "D": "Sussex"
+  },
+  {
+   "A": "52731",
+   "B": "CHINGFORD",
+   "C": "CHI",
+   "D": "Anglia"
+  },
+  {
+   "A": "34002",
+   "B": "CHINLEY NORTH JN",
+   "D": "North West"
+  },
+  {
+   "A": "88483",
+   "B": "CHISLEHURST",
+   "C": "CIT",
+   "D": "Kent"
+  },
+  {
+   "A": "30213",
+   "B": "CHORLEY",
+   "C": "CRL",
+   "D": "North West"
+  },
+  {
+   "A": "16495",
+   "B": "CHURCH FENTON",
+   "C": "CHF",
+   "D": "North & East"
+  },
+  {
+   "A": "63625",
+   "B": "CHURCHYARD SDGS TARMAC",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87244",
+   "B": "CITY THAMESLINK",
+   "C": "CTK",
+   "D": "Kent"
+  },
+  {
+   "A": "87219",
+   "B": "CLAPHAM JUNCTION",
+   "C": "#MULTIVALUE",
+   "D": "Wessex"
+  },
+  {
+   "A": "87228",
+   "B": "CLAPHAM YARD SDGS",
+   "D": "Wessex"
+  },
+  {
+   "A": "21141",
+   "B": "CLEETHORPES",
+   "C": "CLE",
+   "D": "North & East"
+  },
+  {
+   "A": "82200",
+   "B": "CLINK ROAD JN",
+   "D": "Western"
+  },
+  {
+   "A": "29143",
+   "B": "CLITHEROE",
+   "C": "CLH",
+   "D": "North West"
+  },
+  {
+   "A": "83010",
+   "B": "COGLOAD JN",
+   "D": "Western"
+  },
+  {
+   "A": "50049",
+   "B": "COLCHESTER",
+   "C": "COL",
+   "D": "Anglia"
+  },
+  {
+   "A": "88274",
+   "B": "COLLINGTON",
+   "C": "CLL",
+   "D": "Sussex"
+  },
+  {
+   "A": "73790",
+   "B": "COLNBROOK BAA LOGISTICS",
+   "D": "Western"
+  },
+  {
+   "A": "29030",
+   "B": "COLNE",
+   "C": "CNE",
+   "D": "North West"
+  },
+  {
+   "A": "16460",
+   "B": "COLTON JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "88269",
+   "B": "COODEN BEACH",
+   "C": "COB",
+   "D": "Sussex"
+  },
+  {
+   "A": "51937",
+   "B": "COPPERMILL JUNCTION",
+   "C": "XMI",
+   "D": "Anglia"
+  },
+  {
+   "A": "60011",
+   "B": "CORBY STATION",
+   "C": "COR",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87713",
+   "B": "COULSDON TOWN",
+   "C": "CDN",
+   "D": "Sussex"
+  },
+  {
+   "A": "69202",
+   "B": "COVENTRY",
+   "C": "COV",
+   "D": "Central"
+  },
+  {
+   "A": "83398",
+   "B": "COWLEY BRIDGE JN",
+   "D": "Western"
+  },
+  {
+   "A": "76379",
+   "B": "CRAVEN ARMS",
+   "C": "CRV",
+   "D": "Wales"
+  },
+  {
+   "A": "87931",
+   "B": "CRAWLEY",
+   "C": "CRW",
+   "D": "Sussex"
+  },
+  {
+   "A": "88464",
+   "B": "CRAYFORD",
+   "C": "CRY",
+   "D": "Kent"
+  },
+  {
+   "A": "83321",
+   "B": "CREDITON",
+   "C": "CDI",
+   "D": "Western"
+  },
+  {
+   "A": "42140",
+   "B": "CREWE",
+   "C": "CRE",
+   "D": "North West"
+  },
+  {
+   "A": "63400",
+   "B": "CRICKLEWOOD DEPOT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "63404",
+   "B": "CRICKLEWOOD R.T.S.",
+   "D": "East Midlands"
+  },
+  {
+   "A": "63415",
+   "B": "CRICKLEWOOD SOUTH SIDINGS",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87766",
+   "B": "CROWBOROUGH",
+   "C": "COH",
+   "D": "Sussex"
+  },
+  {
+   "A": "23003",
+   "B": "CROWLE",
+   "C": "CWE",
+   "D": "East Coast"
+  },
+  {
+   "A": "87625",
+   "B": "CRYSTAL PALACE",
+   "C": "CYP",
+   "D": "Sussex"
+  },
+  {
+   "A": "09419",
+   "B": "CULGAITH CROSSOVER",
+   "D": "North West"
+  },
+  {
+   "A": "76239",
+   "B": "CWMBRAN",
+   "C": "CWM",
+   "D": "Wales"
+  },
+  {
+   "A": "51402",
+   "B": "DAGENHAM DOCK",
+   "C": "DDK",
+   "D": "Anglia"
+  },
+  {
+   "A": "51406",
+   "B": "DAGENHAM DOCK A.R.C.",
+   "D": "Anglia"
+  },
+  {
+   "A": "52074",
+   "B": "DALSTON JUNCTION (ELL)",
+   "C": "DLJ",
+   "D": "Private Railway"
+  },
+  {
+   "A": "15866",
+   "B": "DARLINGTON",
+   "C": "DAR",
+   "D": "East Coast"
+  },
+  {
+   "A": "88466",
+   "B": "DARTFORD",
+   "C": "DFD",
+   "D": "Kent"
+  },
+  {
+   "A": "70081",
+   "B": "DAVENTRY INT RFT RECEP RFD",
+   "D": "West Coast South"
+  },
+  {
+   "A": "83603",
+   "B": "DAWLISH WARREN",
+   "C": "DWW",
+   "D": "Western"
+  },
+  {
+   "A": "89465",
+   "B": "DEAL",
+   "C": "DEA",
+   "D": "Kent"
+  },
+  {
+   "A": "33088",
+   "B": "DEANSGATE",
+   "C": "DGT",
+   "D": "North West"
+  },
+  {
+   "A": "39001",
+   "B": "DEE MARSH JN.",
+   "D": "Wales"
+  },
+  {
+   "A": "87606",
+   "B": "DENMARK HILL",
+   "C": "DMK",
+   "D": "Kent"
+  },
+  {
+   "A": "57403",
+   "B": "DERBY",
+   "C": "DBY",
+   "D": "East Midlands"
+  },
+  {
+   "A": "74322",
+   "B": "DIDCOT NORTH JN",
+   "D": "Western"
+  },
+  {
+   "A": "74313",
+   "B": "DIDCOT PARKWAY",
+   "C": "DID",
+   "D": "Western"
+  },
+  {
+   "A": "63624",
+   "B": "DOCK JN NORTH",
+   "D": "East Midlands"
+  },
+  {
+   "A": "89735",
+   "B": "DOLLANDS MOOR SDGS",
+   "C": "XLM",
+   "D": "Kent"
+  },
+  {
+   "A": "23421",
+   "B": "DONCASTER",
+   "C": "DON",
+   "D": "East Coast"
+  },
+  {
+   "A": "23464",
+   "B": "DONCASTER CARR IEP DEPOT",
+   "D": "East Coast"
+  },
+  {
+   "A": "23451",
+   "B": "DONCASTER DOWN DECOY GBRF",
+   "D": "East Coast"
+  },
+  {
+   "A": "23445",
+   "B": "DONCASTER EPT (F'LINERS)",
+   "D": "East Coast"
+  },
+  {
+   "A": "23430",
+   "B": "DONCASTER UP DECOY",
+   "D": "East Coast"
+  },
+  {
+   "A": "25705",
+   "B": "DORE STATION JN",
+   "D": "North & East"
+  },
+  {
+   "A": "87687",
+   "B": "DORKING",
+   "C": "DKG",
+   "D": "Sussex"
+  },
+  {
+   "A": "89611",
+   "B": "DOVER PRIORY",
+   "C": "DVP",
+   "D": "Kent"
+  },
+  {
+   "A": "34232",
+   "B": "DOWLOW BRIGGS SIDINGS",
+   "D": "North West"
+  },
+  {
+   "A": "46255",
+   "B": "DOWNHAM MARKET",
+   "C": "DOW",
+   "D": "Anglia"
+  },
+  {
+   "A": "17998",
+   "B": "DRAX AES (GBRF)",
+   "D": "North & East"
+  },
+  {
+   "A": "81431",
+   "B": "DR DAY'S JN",
+   "D": "Western"
+  },
+  {
+   "A": "13702",
+   "B": "DURHAM",
+   "C": "DHM",
+   "D": "East Coast"
+  },
+  {
+   "A": "87996",
+   "B": "DURRINGTON-ON-SEA",
+   "C": "DUR",
+   "D": "Sussex"
+  },
+  {
+   "A": "34009",
+   "B": "EARLES SDGS S.B.",
+   "D": "North West"
+  },
+  {
+   "A": "35325",
+   "B": "EARLESTOWN",
+   "C": "ERL",
+   "D": "North West"
+  },
+  {
+   "A": "87250",
+   "B": "EARLSFIELD",
+   "C": "EAD",
+   "D": "Wessex"
+  },
+  {
+   "A": "87903",
+   "B": "EARLSWOOD (SURREY)",
+   "C": "ELD",
+   "D": "Sussex"
+  },
+  {
+   "A": "88254",
+   "B": "EASTBOURNE",
+   "C": "EBN",
+   "D": "Sussex"
+  },
+  {
+   "A": "87701",
+   "B": "EAST CROYDON",
+   "C": "ECR",
+   "D": "Sussex"
+  },
+  {
+   "A": "87759",
+   "B": "EAST GRINSTEAD",
+   "C": "EGR",
+   "D": "Sussex"
+  },
+  {
+   "A": "51602",
+   "B": "EAST HAM E.M.U.D.",
+   "C": "XEM",
+   "D": "Anglia"
+  },
+  {
+   "A": "38220",
+   "B": "EASTHAM RAKE",
+   "C": "ERA",
+   "D": "North West"
+  },
+  {
+   "A": "86087",
+   "B": "EASTLEIGH",
+   "C": "ESL",
+   "D": "Wessex"
+  },
+  {
+   "A": "82241",
+   "B": "EAST SOMERSET JN",
+   "D": "Western"
+  },
+  {
+   "A": "76647",
+   "B": "EBBW VALE TOWN",
+   "C": "EBB",
+   "D": "Wales"
+  },
+  {
+   "A": "87071",
+   "B": "EFFINGHAM JUNCTION",
+   "C": "EFF",
+   "D": "Wessex"
+  },
+  {
+   "A": "87246",
+   "B": "ELEPHANT & CASTLE",
+   "C": "EPH",
+   "D": "Kent"
+  },
+  {
+   "A": "38317",
+   "B": "ELLESMERE PORT",
+   "C": "ELP",
+   "D": "North West"
+  },
+  {
+   "A": "62196",
+   "B": "ELSTOW REDLANDS GBRF",
+   "D": "East Midlands"
+  },
+  {
+   "A": "63212",
+   "B": "ELSTREE & BOREHAMWOOD",
+   "C": "ELS",
+   "D": "East Midlands"
+  },
+  {
+   "A": "46273",
+   "B": "ELY",
+   "C": "ELY",
+   "D": "Anglia"
+  },
+  {
+   "A": "46272",
+   "B": "ELY NORTH JN",
+   "C": "XYE",
+   "D": "Anglia"
+  },
+  {
+   "A": "87681",
+   "B": "EPSOM",
+   "C": "EPS",
+   "D": "Wessex"
+  },
+  {
+   "A": "87692",
+   "B": "EPSOM DOWNS",
+   "C": "EPD",
+   "D": "Sussex"
+  },
+  {
+   "A": "57412",
+   "B": "ETCHES PARK SDGS",
+   "C": "XEP",
+   "D": "East Midlands"
+  },
+  {
+   "A": "30164",
+   "B": "EUXTON JN",
+   "C": "XOU",
+   "D": "North West"
+  },
+  {
+   "A": "83431",
+   "B": "EXETER CENTRAL",
+   "C": "EXC",
+   "D": "Western"
+  },
+  {
+   "A": "83421",
+   "B": "EXETER ST DAVIDS",
+   "C": "EXD",
+   "D": "Western"
+  },
+  {
+   "A": "83475",
+   "B": "EXMOUTH",
+   "C": "EXM",
+   "D": "Western"
+  },
+  {
+   "A": "82118",
+   "B": "FAIRWOOD JN",
+   "D": "Western"
+  },
+  {
+   "A": "85521",
+   "B": "FALMOUTH DOCKS",
+   "C": "FAL",
+   "D": "Western"
+  },
+  {
+   "A": "86241",
+   "B": "FAREHAM",
+   "C": "FRM",
+   "D": "Wessex"
+  },
+  {
+   "A": "86334",
+   "B": "FARLINGTON JN",
+   "D": "Wessex"
+  },
+  {
+   "A": "86042",
+   "B": "FARNBOROUGH (MAIN)",
+   "C": "FNB",
+   "D": "Wessex"
+  },
+  {
+   "A": "87055",
+   "B": "FARNCOMBE",
+   "C": "FNC",
+   "D": "Wessex"
+  },
+  {
+   "A": "87026",
+   "B": "FARNHAM",
+   "C": "FNH",
+   "D": "Wessex"
+  },
+  {
+   "A": "63633",
+   "B": "FARRINGDON",
+   "C": "ZFD",
+   "D": "Kent"
+  },
+  {
+   "A": "89501",
+   "B": "FAVERSHAM",
+   "C": "FAV",
+   "D": "Kent"
+  },
+  {
+   "A": "49136",
+   "B": "FELIXSTOWE NORTH F.L.T.",
+   "D": "Anglia"
+  },
+  {
+   "A": "49139",
+   "B": "FELIXSTOWE NORTH GBRF",
+   "D": "Anglia"
+  },
+  {
+   "A": "49129",
+   "B": "FELIXSTOWE SOUTH GBRF",
+   "D": "Anglia"
+  },
+  {
+   "A": "87121",
+   "B": "FELTHAM",
+   "C": "FEL",
+   "D": "Wessex"
+  },
+  {
+   "A": "54213",
+   "B": "FERME PARK REC LN GBRF",
+   "D": "East Coast"
+  },
+  {
+   "A": "54209",
+   "B": "FERME PARK RECP.",
+   "C": "XFD",
+   "D": "East Coast"
+  },
+  {
+   "A": "15120",
+   "B": "FERRYHILL STH. JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "81305",
+   "B": "FILTON ABBEY WOOD",
+   "C": "FIT",
+   "D": "Western"
+  },
+  {
+   "A": "54238",
+   "B": "FINSBURY PARK",
+   "C": "FPK",
+   "D": "East Coast"
+  },
+  {
+   "A": "80011",
+   "B": "FISHGUARD HARBOUR",
+   "C": "FGH",
+   "D": "Wales"
+  },
+  {
+   "A": "62201",
+   "B": "FLITWICK",
+   "C": "FLT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "50434",
+   "B": "FOREST GATE JN",
+   "D": "Anglia"
+  },
+  {
+   "A": "87627",
+   "B": "FOREST HILL",
+   "C": "FOH",
+   "D": "Sussex"
+  },
+  {
+   "A": "65601",
+   "B": "FOUR OAKS",
+   "C": "FOK",
+   "D": "Central"
+  },
+  {
+   "A": "47245",
+   "B": "FOXTON EXHANGE SDGS GBRF",
+   "D": "Anglia"
+  },
+  {
+   "A": "86321",
+   "B": "FRATTON",
+   "C": "FTN",
+   "D": "Wessex"
+  },
+  {
+   "A": "82204",
+   "B": "FROME",
+   "C": "FRO",
+   "D": "Western"
+  },
+  {
+   "A": "87160",
+   "B": "FULWELL",
+   "C": "FLW",
+   "D": "Wessex"
+  },
+  {
+   "A": "65823",
+   "B": "GALTON JN",
+   "C": "XGJ",
+   "D": "Central"
+  },
+  {
+   "A": "87911",
+   "B": "GATWICK AIRPORT",
+   "C": "GTW",
+   "D": "Sussex"
+  },
+  {
+   "A": "87910",
+   "B": "GATWICK AIRPORT C.H.S.",
+   "C": "XGT",
+   "D": "Sussex"
+  },
+  {
+   "A": "50334",
+   "B": "GIDEA PARK",
+   "C": "GDP",
+   "D": "Anglia"
+  },
+  {
+   "A": "82332",
+   "B": "GILLINGHAM (DORSET)",
+   "C": "GIL",
+   "D": "Wessex"
+  },
+  {
+   "A": "89011",
+   "B": "GILLINGHAM (KENT)",
+   "C": "GLM",
+   "D": "Kent"
+  },
+  {
+   "A": "36720",
+   "B": "GLAZEBROOK EAST JN & SDGS",
+   "D": "North West"
+  },
+  {
+   "A": "68089",
+   "B": "GLOUCESTER",
+   "C": "GCR",
+   "D": "Western"
+  },
+  {
+   "A": "64111",
+   "B": "GOBOWEN",
+   "C": "GOB",
+   "D": "Wales"
+  },
+  {
+   "A": "87734",
+   "B": "GODSTONE",
+   "C": "GDN",
+   "D": "Kent"
+  },
+  {
+   "A": "20002",
+   "B": "GOOLE",
+   "C": "GOO",
+   "D": "North & East"
+  },
+  {
+   "A": "53248",
+   "B": "GORDON HILL",
+   "C": "GDH",
+   "D": "East Coast"
+  },
+  {
+   "A": "87997",
+   "B": "GORING-BY-SEA",
+   "C": "GBS",
+   "D": "Sussex"
+  },
+  {
+   "A": "72419",
+   "B": "GOSPEL OAK",
+   "C": "GPO",
+   "D": "Anglia"
+  },
+  {
+   "A": "88756",
+   "B": "GRAIN OIL TERMINAL (FLHH)",
+   "D": "Kent"
+  },
+  {
+   "A": "78705",
+   "B": "GRANGETOWN",
+   "C": "GTN",
+   "D": "Wales"
+  },
+  {
+   "A": "44421",
+   "B": "GRANTHAM",
+   "C": "GRA",
+   "D": "East Coast"
+  },
+  {
+   "A": "88721",
+   "B": "GRAVESEND",
+   "C": "GRV",
+   "D": "Kent"
+  },
+  {
+   "A": "51311",
+   "B": "GRAYS",
+   "C": "GRY",
+   "D": "Anglia"
+  },
+  {
+   "A": "67214",
+   "B": "GREAT MALVERN",
+   "C": "GMV",
+   "D": "Central"
+  },
+  {
+   "A": "88699",
+   "B": "GREENHITHE FOR BLUEWATER",
+   "C": "GNH",
+   "D": "Kent"
+  },
+  {
+   "A": "38202",
+   "B": "GREEN LANE",
+   "C": "GNL",
+   "D": "North West"
+  },
+  {
+   "A": "21122",
+   "B": "GRIMSBY TOWN",
+   "C": "GMB",
+   "D": "North & East"
+  },
+  {
+   "A": "87052",
+   "B": "GUILDFORD",
+   "C": "GLD",
+   "D": "Wessex"
+  },
+  {
+   "A": "52736",
+   "B": "HACKNEY DOWNS",
+   "C": "HAC",
+   "D": "Anglia"
+  },
+  {
+   "A": "18464",
+   "B": "HALIFAX",
+   "C": "HFX",
+   "D": "North & East"
+  },
+  {
+   "A": "36066",
+   "B": "HALL ROAD",
+   "C": "HLR",
+   "D": "North West"
+  },
+  {
+   "A": "29002",
+   "B": "HALL ROYD JN",
+   "D": "North West"
+  },
+  {
+   "A": "38185",
+   "B": "HAMILTON SQUARE",
+   "C": "BKQ",
+   "D": "North West"
+  },
+  {
+   "A": "88252",
+   "B": "HAMPDEN PARK",
+   "C": "HMD",
+   "D": "Sussex"
+  },
+  {
+   "A": "87181",
+   "B": "HAMPTON COURT",
+   "C": "HMC",
+   "D": "Wessex"
+  },
+  {
+   "A": "66219",
+   "B": "HAMS HALL GBRF",
+   "D": "Central"
+  },
+  {
+   "A": "86951",
+   "B": "HAMWORTHY",
+   "C": "HAM",
+   "D": "Wessex"
+  },
+  {
+   "A": "70201",
+   "B": "HANSLOPE JN",
+   "C": "XHN",
+   "D": "West Coast South"
+  },
+  {
+   "A": "18068",
+   "B": "HARE PARK JUNCTION",
+   "D": "North & East"
+  },
+  {
+   "A": "62203",
+   "B": "HARLINGTON",
+   "C": "HLN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "47611",
+   "B": "HARLOW TOWN",
+   "C": "HWN",
+   "D": "Anglia"
+  },
+  {
+   "A": "62423",
+   "B": "HARPENDEN JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "16102",
+   "B": "HARROGATE",
+   "C": "HGT",
+   "D": "North & East"
+  },
+  {
+   "A": "72007",
+   "B": "HARROW & WEALDSTONE",
+   "C": "HRW",
+   "D": "West Coast South"
+  },
+  {
+   "A": "87062",
+   "B": "HASLEMERE",
+   "C": "HSL",
+   "D": "Wessex"
+  },
+  {
+   "A": "88285",
+   "B": "HASTINGS",
+   "C": "HGS",
+   "D": "Kent"
+  },
+  {
+   "A": "53501",
+   "B": "HATFIELD",
+   "C": "HAT",
+   "D": "East Coast"
+  },
+  {
+   "A": "86341",
+   "B": "HAVANT",
+   "C": "HAV",
+   "D": "Wessex"
+  },
+  {
+   "A": "73770",
+   "B": "HAYES & HARLINGTON",
+   "C": "HAY",
+   "D": "Western"
+  },
+  {
+   "A": "88329",
+   "B": "HAYES (KENT)",
+   "C": "HYS",
+   "D": "Kent"
+  },
+  {
+   "A": "87967",
+   "B": "HAYWARDS HEATH",
+   "C": "HHE",
+   "D": "Sussex"
+  },
+  {
+   "A": "32541",
+   "B": "HAZEL GROVE",
+   "C": "HAZ",
+   "D": "North West"
+  },
+  {
+   "A": "89323",
+   "B": "HEADCORN",
+   "C": "HCN",
+   "D": "Kent"
+  },
+  {
+   "A": "73775",
+   "B": "HEATHROW AIRPORT JN",
+   "D": "Western"
+  },
+  {
+   "A": "12710",
+   "B": "HEATON STH. JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "12714",
+   "B": "HEATON T&R.S.M.D.",
+   "C": "XHT",
+   "D": "East Coast"
+  },
+  {
+   "A": "18449",
+   "B": "HEBDEN BRIDGE",
+   "C": "HBD",
+   "D": "North & East"
+  },
+  {
+   "A": "18450",
+   "B": "HEBDEN BRIDGE U R S",
+   "D": "North & East"
+  },
+  {
+   "A": "23150",
+   "B": "HECK PLASMOR P S",
+   "D": "East Coast"
+  },
+  {
+   "A": "45013",
+   "B": "HELPSTON JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "63252",
+   "B": "HENDON",
+   "C": "HEN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "74029",
+   "B": "HENLEY-ON-THAMES",
+   "C": "HOT",
+   "D": "Western"
+  },
+  {
+   "A": "76357",
+   "B": "HEREFORD",
+   "C": "HFD",
+   "D": "Wales"
+  },
+  {
+   "A": "87249",
+   "B": "HERNE HILL",
+   "C": "HNH",
+   "D": "Kent"
+  },
+  {
+   "A": "53241",
+   "B": "HERTFORD NORTH",
+   "C": "HFN",
+   "D": "East Coast"
+  },
+  {
+   "A": "53242",
+   "B": "HERTFORD NTH C.H.S.",
+   "C": "XHQ",
+   "D": "East Coast"
+  },
+  {
+   "A": "13316",
+   "B": "HEXHAM",
+   "C": "HEX",
+   "D": "North & East"
+  },
+  {
+   "A": "24219",
+   "B": "HEXTHORPE JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "82092",
+   "B": "HEYWOOD ROAD JN",
+   "D": "Western"
+  },
+  {
+   "A": "52051",
+   "B": "HIGHBURY AND ISLINGTON ELL",
+   "C": "XHZ",
+   "D": "Anglia"
+  },
+  {
+   "A": "53221",
+   "B": "HITCHIN",
+   "C": "HIT",
+   "D": "East Coast"
+  },
+  {
+   "A": "54245",
+   "B": "HOLLOWAY STH. JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "45150",
+   "B": "HOLME JN.",
+   "C": "XHO",
+   "D": "East Coast"
+  },
+  {
+   "A": "25016",
+   "B": "HOLMES JN",
+   "D": "North & East"
+  },
+  {
+   "A": "87937",
+   "B": "HOLMWOOD",
+   "C": "HLM",
+   "D": "Sussex"
+  },
+  {
+   "A": "40001",
+   "B": "HOLYHEAD",
+   "C": "HHD",
+   "D": "Wales"
+  },
+  {
+   "A": "83461",
+   "B": "HONITON",
+   "C": "HON",
+   "D": "Wessex"
+  },
+  {
+   "A": "87628",
+   "B": "HONOR OAK PARK",
+   "C": "HPA",
+   "D": "Sussex"
+  },
+  {
+   "A": "88730",
+   "B": "HOO JUNCTION UP YARD",
+   "C": "XHJ",
+   "D": "Kent"
+  },
+  {
+   "A": "38302",
+   "B": "HOOTON",
+   "C": "HOO",
+   "D": "North West"
+  },
+  {
+   "A": "34004",
+   "B": "HOPE (EARLES SIDINGS) FHH",
+   "D": "North West"
+  },
+  {
+   "A": "54208",
+   "B": "HORNSEY E.M.U.D.",
+   "C": "XHE",
+   "D": "East Coast"
+  },
+  {
+   "A": "87941",
+   "B": "HORSHAM",
+   "C": "HRH",
+   "D": "Sussex"
+  },
+  {
+   "A": "30225",
+   "B": "HORWICH PARKWAY",
+   "C": "HWI",
+   "D": "North West"
+  },
+  {
+   "A": "87141",
+   "B": "HOUNSLOW",
+   "C": "HOU",
+   "D": "Wessex"
+  },
+  {
+   "A": "88103",
+   "B": "HOVE",
+   "C": "HOV",
+   "D": "Sussex"
+  },
+  {
+   "A": "19105",
+   "B": "HULL",
+   "C": "HUL",
+   "D": "North & East"
+  },
+  {
+   "A": "81001",
+   "B": "HULLAVINGTON",
+   "D": "Western"
+  },
+  {
+   "A": "45201",
+   "B": "HUNTINGDON",
+   "C": "HUN",
+   "D": "East Coast"
+  },
+  {
+   "A": "36702",
+   "B": "HUNTS CROSS",
+   "C": "HNX",
+   "D": "North West"
+  },
+  {
+   "A": "87753",
+   "B": "HURST GREEN",
+   "C": "HUR",
+   "D": "Sussex"
+  },
+  {
+   "A": "36605",
+   "B": "HUYTON",
+   "C": "HUY",
+   "D": "North West"
+  },
+  {
+   "A": "32213",
+   "B": "HYDE JN",
+   "D": "North West"
+  },
+  {
+   "A": "50423",
+   "B": "ILFORD",
+   "C": "IFD",
+   "D": "Anglia"
+  },
+  {
+   "A": "49211",
+   "B": "IPSWICH",
+   "C": "IPS",
+   "D": "Anglia"
+  },
+  {
+   "A": "38184",
+   "B": "JAMES STREET",
+   "C": "LVJ",
+   "D": "North West"
+  },
+  {
+   "A": "17011",
+   "B": "KEIGHLEY",
+   "C": "KEI",
+   "D": "North & East"
+  },
+  {
+   "A": "75018",
+   "B": "KEMBLE",
+   "C": "KEM",
+   "D": "Western"
+  },
+  {
+   "A": "72241",
+   "B": "KENSINGTON OLYMPIA",
+   "C": "KPA",
+   "D": "Sussex"
+  },
+  {
+   "A": "63551",
+   "B": "KENTISH TOWN",
+   "C": "KTN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "61009",
+   "B": "KETTERING",
+   "C": "KET",
+   "D": "East Midlands"
+  },
+  {
+   "A": "45020",
+   "B": "KETTON WARD SDG GBRF",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87972",
+   "B": "KEYMER JN",
+   "C": "XKM",
+   "D": "Sussex"
+  },
+  {
+   "A": "65935",
+   "B": "KIDDERMINSTER",
+   "C": "KID",
+   "D": "Central"
+  },
+  {
+   "A": "12932",
+   "B": "KING EDWARD BRIDGE SOUTH JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "66031",
+   "B": "KINGSBURY JN",
+   "C": "XKI",
+   "D": "Central"
+  },
+  {
+   "A": "46220",
+   "B": "KINGS LYNN",
+   "C": "KLN",
+   "D": "Anglia"
+  },
+  {
+   "A": "66510",
+   "B": "KINGS NORTON",
+   "C": "KNN",
+   "D": "Central"
+  },
+  {
+   "A": "87161",
+   "B": "KINGSTON",
+   "C": "KNG",
+   "D": "Wessex"
+  },
+  {
+   "A": "36050",
+   "B": "KIRKBY",
+   "C": "KIR",
+   "D": "North West"
+  },
+  {
+   "A": "09436",
+   "B": "KIRKBY STEPHEN",
+   "C": "KSW",
+   "D": "North West"
+  },
+  {
+   "A": "36058",
+   "B": "KIRKDALE C.S.",
+   "C": "XKK",
+   "D": "North West"
+  },
+  {
+   "A": "30044",
+   "B": "KIRKHAM & WESHAM",
+   "C": "KKM",
+   "D": "North West"
+  },
+  {
+   "A": "18022",
+   "B": "KNOTTINGLEY",
+   "C": "KNO",
+   "D": "North & East"
+  },
+  {
+   "A": "73111",
+   "B": "LADBROKE GROVE",
+   "D": "Western"
+  },
+  {
+   "A": "51301",
+   "B": "LAINDON",
+   "C": "LAI",
+   "D": "Anglia"
+  },
+  {
+   "A": "66321",
+   "B": "LANDOR STREET JN",
+   "C": "XLX",
+   "D": "Central"
+  },
+  {
+   "A": "87205",
+   "B": "LATCHMERE JN",
+   "D": "Sussex"
+  },
+  {
+   "A": "74822",
+   "B": "LAVINGTON",
+   "D": "Western"
+  },
+  {
+   "A": "66402",
+   "B": "LAWLEY STREET F.L.T.",
+   "D": "Central"
+  },
+  {
+   "A": "62211",
+   "B": "LEAGRAVE",
+   "C": "LEA",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62209",
+   "B": "LEAGRAVE JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "69300",
+   "B": "LEAMINGTON SPA",
+   "C": "LMS",
+   "D": "Central"
+  },
+  {
+   "A": "87685",
+   "B": "LEATHERHEAD",
+   "C": "LHD",
+   "D": "Wessex"
+  },
+  {
+   "A": "67219",
+   "B": "LEDBURY",
+   "C": "LED",
+   "D": "Central"
+  },
+  {
+   "A": "17132",
+   "B": "LEEDS",
+   "C": "LDS",
+   "D": "North & East"
+  },
+  {
+   "A": "17184",
+   "B": "LEEDS F.L.T.",
+   "D": "North & East"
+  },
+  {
+   "A": "59241",
+   "B": "LEICESTER",
+   "C": "LEI",
+   "D": "East Midlands"
+  },
+  {
+   "A": "51013",
+   "B": "LEIGH-ON-SEA",
+   "C": "LES",
+   "D": "Anglia"
+  },
+  {
+   "A": "76373",
+   "B": "LEOMINSTER",
+   "C": "LEO",
+   "D": "Wales"
+  },
+  {
+   "A": "53102",
+   "B": "LETCHWORTH C.S.D",
+   "C": "XLE",
+   "D": "East Coast"
+  },
+  {
+   "A": "53104",
+   "B": "LETCHWORTH GARDEN CITY",
+   "C": "LET",
+   "D": "East Coast"
+  },
+  {
+   "A": "88221",
+   "B": "LEWES",
+   "C": "LWS",
+   "D": "Sussex"
+  },
+  {
+   "A": "88415",
+   "B": "LEWISHAM",
+   "C": "LEW",
+   "D": "Kent"
+  },
+  {
+   "A": "30162",
+   "B": "LEYLAND",
+   "C": "LEY",
+   "D": "North West"
+  },
+  {
+   "A": "65316",
+   "B": "LICHFIELD CITY",
+   "C": "LIC",
+   "D": "Central"
+  },
+  {
+   "A": "65315",
+   "B": "LICHFIELD TRENT VALLEY HL",
+   "C": "LIF",
+   "D": "Central"
+  },
+  {
+   "A": "52705",
+   "B": "LIMEHOUSE",
+   "C": "LHS",
+   "D": "Anglia"
+  },
+  {
+   "A": "44038",
+   "B": "LINCOLN",
+   "C": "LCN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "86471",
+   "B": "LITTLEHAMPTON",
+   "C": "LIT",
+   "D": "Sussex"
+  },
+  {
+   "A": "36108",
+   "B": "LIVERPOOL BIOMASS TML GBF",
+   "D": "North West"
+  },
+  {
+   "A": "36080",
+   "B": "LIVERPOOL CENTRAL",
+   "C": "LVC",
+   "D": "North West"
+  },
+  {
+   "A": "38183",
+   "B": "LIVERPOOL CENTRAL",
+   "C": "XLV",
+   "D": "North West"
+  },
+  {
+   "A": "36151",
+   "B": "LIVERPOOL LIME STREET",
+   "C": "LIV",
+   "D": "North West"
+  },
+  {
+   "A": "38182",
+   "B": "LIVERPOOL LIME STREET LL",
+   "C": "LVL",
+   "D": "North West"
+  },
+  {
+   "A": "40046",
+   "B": "LLANDUDNO",
+   "C": "LLD",
+   "D": "Wales"
+  },
+  {
+   "A": "40050",
+   "B": "LLANDUDNO JUNCTION",
+   "C": "LLJ",
+   "D": "Wales"
+  },
+  {
+   "A": "79040",
+   "B": "LLANELLI",
+   "C": "LLE",
+   "D": "Wales"
+  },
+  {
+   "A": "76110",
+   "B": "LLANWERN EXCHANGE SDGS",
+   "D": "Wales"
+  },
+  {
+   "A": "76099",
+   "B": "LLANWERN WEST JN",
+   "D": "Wales"
+  },
+  {
+   "A": "87245",
+   "B": "LONDON BLACKFRIARS",
+   "C": "BFR",
+   "D": "Kent"
+  },
+  {
+   "A": "87601",
+   "B": "LONDON BRIDGE",
+   "C": "LBG",
+   "D": "Kent"
+  },
+  {
+   "A": "88403",
+   "B": "LONDON CANNON STREET",
+   "C": "CST",
+   "D": "Kent"
+  },
+  {
+   "A": "88401",
+   "B": "LONDON CHARING CROSS",
+   "C": "CHX",
+   "D": "Kent"
+  },
+  {
+   "A": "72410",
+   "B": "LONDON EUSTON",
+   "C": "EUS",
+   "D": "West Coast South"
+  },
+  {
+   "A": "52711",
+   "B": "LONDON FENCHURCH STREET",
+   "C": "FST",
+   "D": "Anglia"
+  },
+  {
+   "A": "51126",
+   "B": "LONDON GATEWAY DBSCHENKER",
+   "D": "Anglia"
+  },
+  {
+   "A": "51127",
+   "B": "LONDON GATEWAY FRGHTLINER",
+   "D": "Anglia"
+  },
+  {
+   "A": "51120",
+   "B": "LONDON GATEWAY GBRF",
+   "D": "Anglia"
+  },
+  {
+   "A": "73767",
+   "B": "LONDON HEATHROW AIRPORT TML 5",
+   "C": "HWV",
+   "D": "Private Railway"
+  },
+  {
+   "A": "54311",
+   "B": "LONDON KINGS CROSS",
+   "C": "KGX",
+   "D": "East Coast"
+  },
+  {
+   "A": "52741",
+   "B": "LONDON LIVERPOOL STREET",
+   "C": "LST",
+   "D": "Anglia"
+  },
+  {
+   "A": "63021",
+   "B": "LONDON MARYLEBONE",
+   "C": "MYB",
+   "D": "Central"
+  },
+  {
+   "A": "73000",
+   "B": "LONDON PADDINGTON",
+   "C": "PAD",
+   "D": "Western"
+  },
+  {
+   "A": "87201",
+   "B": "LONDON VICTORIA",
+   "C": "#MULTIVALUE",
+   "D": "Sussex"
+  },
+  {
+   "A": "87212",
+   "B": "LONDON WATERLOO",
+   "C": "WAT",
+   "D": "Wessex"
+  },
+  {
+   "A": "66519",
+   "B": "LONGBRIDGE",
+   "C": "LOB",
+   "D": "Central"
+  },
+  {
+   "A": "30330",
+   "B": "LOSTOCK",
+   "C": "LOT",
+   "D": "North West"
+  },
+  {
+   "A": "30139",
+   "B": "LOSTOCK HALL JN",
+   "C": "XLS",
+   "D": "North West"
+  },
+  {
+   "A": "59002",
+   "B": "LOUGHBOROUGH",
+   "C": "LBO",
+   "D": "East Midlands"
+  },
+  {
+   "A": "87247",
+   "B": "LOUGHBOROUGH JN",
+   "C": "LGJ",
+   "D": "Kent"
+  },
+  {
+   "A": "23480",
+   "B": "LOVERSALL CARR JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "87979",
+   "B": "LOVERS WALK T&R.S.M.D",
+   "C": "XBI",
+   "D": "Sussex"
+  },
+  {
+   "A": "48104",
+   "B": "LOWESTOFT",
+   "C": "LWT",
+   "D": "Anglia"
+  },
+  {
+   "A": "13539",
+   "B": "LOW FELL ROYAL MAIL TMNL",
+   "D": "North & East"
+  },
+  {
+   "A": "36192",
+   "B": "L'POOL STH PW HL (ALLERTN)",
+   "C": "ALE",
+   "D": "North West"
+  },
+  {
+   "A": "62400",
+   "B": "LUTON",
+   "C": "LUT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "62410",
+   "B": "LUTON AIRPORT PARKWAY",
+   "C": "LTN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "76072",
+   "B": "LYDNEY",
+   "C": "LYD",
+   "D": "Wales"
+  },
+  {
+   "A": "79828",
+   "B": "MAESTEG",
+   "C": "MST",
+   "D": "Wales"
+  },
+  {
+   "A": "74005",
+   "B": "MAIDENHEAD",
+   "C": "MAI",
+   "D": "Western"
+  },
+  {
+   "A": "74003",
+   "B": "MAIDENHEAD CARRIAGE SDGS",
+   "D": "Western"
+  },
+  {
+   "A": "89403",
+   "B": "MAIDSTONE EAST",
+   "C": "MDE",
+   "D": "Kent"
+  },
+  {
+   "A": "89315",
+   "B": "MAIDSTONE WEST",
+   "C": "MDW",
+   "D": "Kent"
+  },
+  {
+   "A": "76400",
+   "B": "MAINDEE NORTH JN",
+   "D": "Wales"
+  },
+  {
+   "A": "32530",
+   "B": "MANCHESTER AIRPORT",
+   "C": "MIA",
+   "D": "North West"
+  },
+  {
+   "A": "33087",
+   "B": "MANCHESTER OXFORD ROAD",
+   "C": "MCO",
+   "D": "North West"
+  },
+  {
+   "A": "32000",
+   "B": "MANCHESTER PICCADILLY",
+   "C": "MAN",
+   "D": "North West"
+  },
+  {
+   "A": "31510",
+   "B": "MANCHESTER VICTORIA",
+   "C": "#MULTIVALUE",
+   "D": "North West"
+  },
+  {
+   "A": "49302",
+   "B": "MANNINGTREE",
+   "C": "MNG",
+   "D": "Anglia"
+  },
+  {
+   "A": "49303",
+   "B": "MANNINGTREE DOWN SIDING",
+   "D": "Anglia"
+  },
+  {
+   "A": "55221",
+   "B": "MANSFIELD JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "59139",
+   "B": "MANTON JN",
+   "C": "XMJ",
+   "D": "East Midlands"
+  },
+  {
+   "A": "46206",
+   "B": "MARCH",
+   "C": "MCH",
+   "D": "Anglia"
+  },
+  {
+   "A": "79780",
+   "B": "MARGAM T.C.",
+   "D": "Wales"
+  },
+  {
+   "A": "89475",
+   "B": "MARGATE",
+   "C": "MAR",
+   "D": "Kent"
+  },
+  {
+   "A": "59401",
+   "B": "MARKET HARBOROUGH",
+   "C": "MHR",
+   "D": "East Midlands"
+  },
+  {
+   "A": "50105",
+   "B": "MARKS TEY",
+   "C": "MKT",
+   "D": "Anglia"
+  },
+  {
+   "A": "76382",
+   "B": "MARSH BROOK LEVEL CROSSING",
+   "D": "Wales"
+  },
+  {
+   "A": "77086",
+   "B": "MARSHFIELD",
+   "D": "Wales"
+  },
+  {
+   "A": "25019",
+   "B": "MASBOROUGH N&W GBRF",
+   "D": "North & East"
+  },
+  {
+   "A": "57004",
+   "B": "MATLOCK",
+   "C": "MAT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "25316",
+   "B": "MEADOWHALL",
+   "C": "MHS",
+   "D": "North & East"
+  },
+  {
+   "A": "59125",
+   "B": "MELTON MOWBRAY",
+   "C": "MMO",
+   "D": "East Midlands"
+  },
+  {
+   "A": "82243",
+   "B": "MEREHEAD QUARRY",
+   "D": "Western"
+  },
+  {
+   "A": "13515",
+   "B": "METROCENTRE",
+   "C": "MCE",
+   "D": "North & East"
+  },
+  {
+   "A": "16602",
+   "B": "MICKLEFIELD",
+   "C": "MIK",
+   "D": "North & East"
+  },
+  {
+   "A": "15449",
+   "B": "MIDDLESBROUGH",
+   "C": "MBR",
+   "D": "North & East"
+  },
+  {
+   "A": "80102",
+   "B": "MILFORD HAVEN",
+   "C": "MFH",
+   "D": "Wales"
+  },
+  {
+   "A": "63214",
+   "B": "MILL HILL BROADWAY",
+   "C": "MIL",
+   "D": "East Midlands"
+  },
+  {
+   "A": "18445",
+   "B": "MILNER ROYD JN",
+   "D": "North & East"
+  },
+  {
+   "A": "70261",
+   "B": "MILTON KEYNES CENTRAL",
+   "C": "MKC",
+   "D": "West Coast South"
+  },
+  {
+   "A": "89451",
+   "B": "MINSTER",
+   "C": "MSR",
+   "D": "Kent"
+  },
+  {
+   "A": "87661",
+   "B": "MITCHAM JUNCTION",
+   "C": "MIJ",
+   "D": "Sussex"
+  },
+  {
+   "A": "72237",
+   "B": "MITRE BRIDGE JN",
+   "C": "XMB",
+   "D": "West Coast South"
+  },
+  {
+   "A": "38181",
+   "B": "MOORFIELDS (WIRRAL)",
+   "C": "MRF",
+   "D": "North West"
+  },
+  {
+   "A": "54299",
+   "B": "MOORGATE EAST",
+   "C": "MOG",
+   "D": "East Coast"
+  },
+  {
+   "A": "18305",
+   "B": "MOORTHORPE",
+   "C": "MRP",
+   "D": "North & East"
+  },
+  {
+   "A": "86975",
+   "B": "MORETON (DORSET)",
+   "C": "MTN",
+   "D": "Wessex"
+  },
+  {
+   "A": "38008",
+   "B": "MORETON (MERSEYSIDE)",
+   "C": "MRT",
+   "D": "North West"
+  },
+  {
+   "A": "12132",
+   "B": "MORPETH",
+   "C": "MPT",
+   "D": "East Coast"
+  },
+  {
+   "A": "74433",
+   "B": "MORRIS COWLEY M.A.T.",
+   "D": "Western"
+  },
+  {
+   "A": "87301",
+   "B": "MOTSPUR PARK",
+   "C": "MOT",
+   "D": "Wessex"
+  },
+  {
+   "A": "81903",
+   "B": "NAILSEA & BACKWELL",
+   "C": "NLS",
+   "D": "Western"
+  },
+  {
+   "A": "52045",
+   "B": "NAVARINO ROAD JN",
+   "D": "Anglia"
+  },
+  {
+   "A": "17115",
+   "B": "NEVILLE HILL T&R.S.M.D",
+   "C": "XNL",
+   "D": "North & East"
+  },
+  {
+   "A": "44302",
+   "B": "NEWARK CASTLE",
+   "C": "NCT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "44304",
+   "B": "NEWARK NORTH GATE",
+   "C": "NNG",
+   "D": "East Coast"
+  },
+  {
+   "A": "38010",
+   "B": "NEW BRIGHTON",
+   "C": "NBN",
+   "D": "North West"
+  },
+  {
+   "A": "74803",
+   "B": "NEWBURY",
+   "C": "NBY",
+   "D": "Western"
+  },
+  {
+   "A": "12931",
+   "B": "NEWCASTLE",
+   "C": "NCL",
+   "D": "East Coast"
+  },
+  {
+   "A": "88392",
+   "B": "NEW CROSS ELL STN",
+   "D": "Private Railway"
+  },
+  {
+   "A": "87603",
+   "B": "NEW CROSS GATE",
+   "C": "NXG",
+   "D": "Kent"
+  },
+  {
+   "A": "88231",
+   "B": "NEWHAVEN TOWN",
+   "C": "NVN",
+   "D": "Sussex"
+  },
+  {
+   "A": "87169",
+   "B": "NEW MALDEN",
+   "C": "NEM",
+   "D": "Wessex"
+  },
+  {
+   "A": "32555",
+   "B": "NEW MILLS CENTRAL",
+   "C": "NMC",
+   "D": "North West"
+  },
+  {
+   "A": "76401",
+   "B": "NEWPORT (SOUTH WALES)",
+   "C": "NWP",
+   "D": "Wales"
+  },
+  {
+   "A": "85261",
+   "B": "NEWQUAY",
+   "C": "NQY",
+   "D": "Western"
+  },
+  {
+   "A": "83624",
+   "B": "NEWTON ABBOT",
+   "C": "NTA",
+   "D": "Western"
+  },
+  {
+   "A": "87215",
+   "B": "NINE ELMS JN",
+   "D": "Wessex"
+  },
+  {
+   "A": "87163",
+   "B": "NORBITON",
+   "C": "NBT",
+   "D": "Wessex"
+  },
+  {
+   "A": "87633",
+   "B": "NORBURY",
+   "C": "NRB",
+   "D": "Sussex"
+  },
+  {
+   "A": "88272",
+   "B": "NORMANS BAY",
+   "C": "NSB",
+   "D": "Sussex"
+  },
+  {
+   "A": "15883",
+   "B": "NORTHALLERTON",
+   "C": "NTR",
+   "D": "East Coast"
+  },
+  {
+   "A": "70100",
+   "B": "NORTHAMPTON",
+   "C": "NMP",
+   "D": "West Coast South"
+  },
+  {
+   "A": "88409",
+   "B": "NORTH KENT EAST JN",
+   "C": "XKE",
+   "D": "Kent"
+  },
+  {
+   "A": "40060",
+   "B": "NORTH LLANRWST",
+   "C": "NLR",
+   "D": "Wales"
+  },
+  {
+   "A": "48231",
+   "B": "NORWICH",
+   "C": "NRW",
+   "D": "Anglia"
+  },
+  {
+   "A": "87643",
+   "B": "NORWOOD JUNCTION",
+   "C": "NWD",
+   "D": "Sussex"
+  },
+  {
+   "A": "55247",
+   "B": "NOTTINGHAM",
+   "C": "NOT",
+   "D": "East Midlands"
+  },
+  {
+   "A": "88413",
+   "B": "NUNHEAD",
+   "C": "NHD",
+   "D": "Kent"
+  },
+  {
+   "A": "15501",
+   "B": "NUNTHORPE",
+   "C": "NNT",
+   "D": "North & East"
+  },
+  {
+   "A": "54021",
+   "B": "OAKLEIGH PARK",
+   "C": "OKL",
+   "D": "East Coast"
+  },
+  {
+   "A": "51309",
+   "B": "OCKENDON",
+   "C": "OCK",
+   "D": "Anglia"
+  },
+  {
+   "A": "87938",
+   "B": "OCKLEY",
+   "C": "OLY",
+   "D": "Sussex"
+  },
+  {
+   "A": "54297",
+   "B": "OLD STREET",
+   "C": "OLD",
+   "D": "East Coast"
+  },
+  {
+   "A": "88288",
+   "B": "ORE",
+   "C": "ORE",
+   "D": "Kent"
+  },
+  {
+   "A": "88291",
+   "B": "ORE UP SDG",
+   "D": "Kent"
+  },
+  {
+   "A": "36001",
+   "B": "ORMSKIRK",
+   "C": "OMS",
+   "D": "North West"
+  },
+  {
+   "A": "88491",
+   "B": "ORPINGTON",
+   "C": "ORP",
+   "D": "Kent"
+  },
+  {
+   "A": "89347",
+   "B": "OTFORD JN",
+   "C": "XOT",
+   "D": "Kent"
+  },
+  {
+   "A": "74446",
+   "B": "OXFORD",
+   "C": "OXF",
+   "D": "Western"
+  },
+  {
+   "A": "74436",
+   "B": "OXFORD PARKWAY",
+   "C": "OXP",
+   "D": "Central"
+  },
+  {
+   "A": "74445",
+   "B": "OXFORD UP CARRIAGE SDGS",
+   "D": "Western"
+  },
+  {
+   "A": "87751",
+   "B": "OXTED",
+   "C": "OXT",
+   "D": "Sussex"
+  },
+  {
+   "A": "89331",
+   "B": "PADDOCK WOOD",
+   "C": "PDW",
+   "D": "Kent"
+  },
+  {
+   "A": "83631",
+   "B": "PAIGNTON",
+   "C": "PGN",
+   "D": "Western"
+  },
+  {
+   "A": "25210",
+   "B": "PARKGATE",
+   "C": "PAQ",
+   "D": "North & East"
+  },
+  {
+   "A": "76505",
+   "B": "PARK JN",
+   "D": "Wales"
+  },
+  {
+   "A": "88447",
+   "B": "PARKS BRIDGE JN",
+   "C": "XPY",
+   "D": "Kent"
+  },
+  {
+   "A": "86929",
+   "B": "PARKSTONE (DORSET)",
+   "C": "PKS",
+   "D": "Wessex"
+  },
+  {
+   "A": "81819",
+   "B": "PARSON STREET",
+   "C": "PSN",
+   "D": "Western"
+  },
+  {
+   "A": "81116",
+   "B": "PATCHWAY",
+   "C": "PWY",
+   "D": "Western"
+  },
+  {
+   "A": "34098",
+   "B": "PEAK FOREST S.B.",
+   "D": "North West"
+  },
+  {
+   "A": "87609",
+   "B": "PECKHAM RYE",
+   "C": "PMR",
+   "D": "Kent"
+  },
+  {
+   "A": "87645",
+   "B": "PENGE WEST",
+   "C": "PNW",
+   "D": "Sussex"
+  },
+  {
+   "A": "85734",
+   "B": "PENZANCE",
+   "C": "PNZ",
+   "D": "Western"
+  },
+  {
+   "A": "45112",
+   "B": "PETERBORO MAINT SHED GBRF",
+   "D": "East Coast"
+  },
+  {
+   "A": "45117",
+   "B": "PETERBORO NENE C.H.S",
+   "C": "XPN",
+   "D": "East Coast"
+  },
+  {
+   "A": "45106",
+   "B": "PETERBOROUGH",
+   "C": "PBO",
+   "D": "East Coast"
+  },
+  {
+   "A": "45107",
+   "B": "PETERBOROUGH L.I.P.",
+   "D": "East Coast"
+  },
+  {
+   "A": "45098",
+   "B": "PETERBOROUGH SPITAL SDGS",
+   "D": "East Coast"
+  },
+  {
+   "A": "45095",
+   "B": "PETERBOROUGH VIRTUAL GBRF",
+   "D": "East Coast"
+  },
+  {
+   "A": "45100",
+   "B": "PETERBOROUGH WEST YARD",
+   "C": "XPW",
+   "D": "East Coast"
+  },
+  {
+   "A": "87066",
+   "B": "PETERSFIELD",
+   "C": "PTR",
+   "D": "Wessex"
+  },
+  {
+   "A": "88490",
+   "B": "PETTS WOOD JN",
+   "C": "XPE",
+   "D": "Kent"
+  },
+  {
+   "A": "88271",
+   "B": "PEVENSEY & WESTHAM",
+   "C": "PEV",
+   "D": "Sussex"
+  },
+  {
+   "A": "81118",
+   "B": "PILNING",
+   "C": "PIL",
+   "D": "Wales"
+  },
+  {
+   "A": "83453",
+   "B": "PINHOE",
+   "C": "PIN",
+   "D": "Western"
+  },
+  {
+   "A": "51016",
+   "B": "PITSEA",
+   "C": "PSE",
+   "D": "Anglia"
+  },
+  {
+   "A": "51017",
+   "B": "PITSEA UP SIDING",
+   "D": "Anglia"
+  },
+  {
+   "A": "88522",
+   "B": "PLUMSTEAD",
+   "C": "PLU",
+   "D": "Kent"
+  },
+  {
+   "A": "84139",
+   "B": "PLYMOUTH",
+   "C": "PLY",
+   "D": "Western"
+  },
+  {
+   "A": "88248",
+   "B": "POLEGATE",
+   "C": "PLG",
+   "D": "Sussex"
+  },
+  {
+   "A": "78608",
+   "B": "PONTYCLUN",
+   "C": "PYC",
+   "D": "Wales"
+  },
+  {
+   "A": "86935",
+   "B": "POOLE",
+   "C": "#MULTIVALUE",
+   "D": "Wessex"
+  },
+  {
+   "A": "86936",
+   "B": "POOLE S. S.",
+   "C": "XFT",
+   "D": "Wessex"
+  },
+  {
+   "A": "86333",
+   "B": "PORTCREEK JN",
+   "D": "Wessex"
+  },
+  {
+   "A": "86311",
+   "B": "PORTSMOUTH HARBOUR",
+   "C": "PMH",
+   "D": "Wessex"
+  },
+  {
+   "A": "86313",
+   "B": "PORTSMOUTH & SOUTHSEA",
+   "C": "PMS",
+   "D": "Wessex"
+  },
+  {
+   "A": "38210",
+   "B": "PORT SUNLIGHT",
+   "C": "PSL",
+   "D": "North West"
+  },
+  {
+   "A": "54001",
+   "B": "POTTERS BAR",
+   "C": "PBR",
+   "D": "East Coast"
+  },
+  {
+   "A": "30041",
+   "B": "POULTON-LE-FYLDE",
+   "C": "PFY",
+   "D": "North West"
+  },
+  {
+   "A": "30120",
+   "B": "PRESTON",
+   "C": "#MULTIVALUE",
+   "D": "North West"
+  },
+  {
+   "A": "87975",
+   "B": "PRESTON PARK",
+   "C": "PRP",
+   "D": "Sussex"
+  },
+  {
+   "A": "87954",
+   "B": "PULBOROUGH",
+   "C": "PUL",
+   "D": "Sussex"
+  },
+  {
+   "A": "51344",
+   "B": "PURFLEET",
+   "C": "PFL",
+   "D": "Anglia"
+  },
+  {
+   "A": "51341",
+   "B": "PURFLEET DEEP WTR WF (EWS)",
+   "D": "Anglia"
+  },
+  {
+   "A": "87801",
+   "B": "PURLEY",
+   "C": "PUR",
+   "D": "Sussex"
+  },
+  {
+   "A": "87802",
+   "B": "PURLEY FOSTER YEOMAN",
+   "D": "Sussex"
+  },
+  {
+   "A": "51347",
+   "B": "RAINHAM",
+   "C": "RNM",
+   "D": "Anglia"
+  },
+  {
+   "A": "89018",
+   "B": "RAINHAM (KENT)",
+   "C": "RAI",
+   "D": "Kent"
+  },
+  {
+   "A": "89473",
+   "B": "RAMSGATE",
+   "C": "RAM",
+   "D": "Kent"
+  },
+  {
+   "A": "87271",
+   "B": "RAYNES PARK",
+   "C": "RAY",
+   "D": "Wessex"
+  },
+  {
+   "A": "74236",
+   "B": "READING",
+   "C": "RDZ",
+   "D": "Wessex"
+  },
+  {
+   "A": "74237",
+   "B": "READING",
+   "C": "RDG",
+   "D": "Western"
+  },
+  {
+   "A": "74247",
+   "B": "READING TRAINCARE DEPOT",
+   "D": "Western"
+  },
+  {
+   "A": "86703",
+   "B": "REDBRIDGE",
+   "C": "RDB",
+   "D": "Wessex"
+  },
+  {
+   "A": "66529",
+   "B": "REDDITCH",
+   "C": "RDC",
+   "D": "Central"
+  },
+  {
+   "A": "87722",
+   "B": "REDHILL",
+   "C": "RDH",
+   "D": "Sussex"
+  },
+  {
+   "A": "87089",
+   "B": "REIGATE",
+   "C": "REI",
+   "D": "Sussex"
+  },
+  {
+   "A": "23491",
+   "B": "RETFORD",
+   "C": "RET",
+   "D": "East Coast"
+  },
+  {
+   "A": "40076",
+   "B": "RHYL",
+   "C": "RHL",
+   "D": "Wales"
+  },
+  {
+   "A": "87135",
+   "B": "RICHMOND",
+   "C": "RMD",
+   "D": "Wessex"
+  },
+  {
+   "A": "87132",
+   "B": "RICHMOND NLL",
+   "D": "Anglia"
+  },
+  {
+   "A": "51509",
+   "B": "RIPPLE LANE WEST S.S.",
+   "D": "Anglia"
+  },
+  {
+   "A": "80105",
+   "B": "ROBESTON SDGS",
+   "D": "Wales"
+  },
+  {
+   "A": "31033",
+   "B": "ROCHDALE",
+   "C": "RCD",
+   "D": "North West"
+  },
+  {
+   "A": "89004",
+   "B": "ROCHESTER",
+   "C": "RTR",
+   "D": "Kent"
+  },
+  {
+   "A": "38201",
+   "B": "ROCK FERRY",
+   "C": "RFY",
+   "D": "North West"
+  },
+  {
+   "A": "32552",
+   "B": "ROMILEY",
+   "C": "RML",
+   "D": "North West"
+  },
+  {
+   "A": "24799",
+   "B": "ROTHERHAM CENTRAL",
+   "C": "RMC",
+   "D": "North & East"
+  },
+  {
+   "A": "53004",
+   "B": "ROYSTON",
+   "C": "RYS",
+   "D": "East Coast"
+  },
+  {
+   "A": "89439",
+   "B": "RYE",
+   "C": "RYE",
+   "D": "Kent"
+  },
+  {
+   "A": "31521",
+   "B": "SALFORD CRESCENT",
+   "C": "SLD",
+   "D": "North West"
+  },
+  {
+   "A": "86122",
+   "B": "SALISBURY",
+   "C": "SAL",
+   "D": "Wessex"
+  },
+  {
+   "A": "84301",
+   "B": "SALTASH",
+   "C": "STS",
+   "D": "Western"
+  },
+  {
+   "A": "87743",
+   "B": "SANDERSTEAD",
+   "C": "SNR",
+   "D": "Sussex"
+  },
+  {
+   "A": "36076",
+   "B": "SANDHILLS",
+   "C": "SDL",
+   "D": "North West"
+  },
+  {
+   "A": "45603",
+   "B": "SANDY",
+   "C": "SDY",
+   "D": "East Coast"
+  },
+  {
+   "A": "49118",
+   "B": "SAXMUNDHAM",
+   "C": "SAX",
+   "D": "Anglia"
+  },
+  {
+   "A": "16201",
+   "B": "SCARBOROUGH",
+   "C": "SCA",
+   "D": "North & East"
+  },
+  {
+   "A": "22061",
+   "B": "SCUNTHORPE",
+   "C": "SCU",
+   "D": "North & East"
+  },
+  {
+   "A": "22038",
+   "B": "SCUNTHORPE B.S.C.(ENT.C.)",
+   "D": "North & East"
+  },
+  {
+   "A": "88239",
+   "B": "SEAFORD",
+   "C": "SEF",
+   "D": "Sussex"
+  },
+  {
+   "A": "16523",
+   "B": "SELBY",
+   "C": "SBY",
+   "D": "North & East"
+  },
+  {
+   "A": "87637",
+   "B": "SELHURST",
+   "C": "SRS",
+   "D": "Sussex"
+  },
+  {
+   "A": "87639",
+   "B": "SELHURST T&R.S.M.D",
+   "C": "XSH",
+   "D": "Sussex"
+  },
+  {
+   "A": "89351",
+   "B": "SEVENOAKS",
+   "C": "SEV",
+   "D": "Kent"
+  },
+  {
+   "A": "76090",
+   "B": "SEVERN TUNNEL JN",
+   "C": "STJ",
+   "D": "Wales"
+  },
+  {
+   "A": "23221",
+   "B": "SHAFTHOLME JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "87081",
+   "B": "SHALFORD",
+   "C": "SFR",
+   "D": "Wessex"
+  },
+  {
+   "A": "87080",
+   "B": "SHALFORD JN",
+   "D": "Wessex"
+  },
+  {
+   "A": "62001",
+   "B": "SHARNBROOK JN.",
+   "D": "East Midlands"
+  },
+  {
+   "A": "56598",
+   "B": "SHEET STORES JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "25701",
+   "B": "SHEFFIELD",
+   "C": "SHF",
+   "D": "North & East"
+  },
+  {
+   "A": "25317",
+   "B": "SHEFFIELD CATHEDRAL",
+   "C": "SHQ",
+   "D": "North & East"
+  },
+  {
+   "A": "76370",
+   "B": "SHELWICK JN",
+   "D": "Wales"
+  },
+  {
+   "A": "50328",
+   "B": "SHENFIELD",
+   "C": "SNF",
+   "D": "Anglia"
+  },
+  {
+   "A": "72242",
+   "B": "SHEPHERDS BUSH",
+   "C": "SPB",
+   "D": "Sussex"
+  },
+  {
+   "A": "87155",
+   "B": "SHEPPERTON",
+   "C": "SHP",
+   "D": "Wessex"
+  },
+  {
+   "A": "47250",
+   "B": "SHEPRETH BRANCH JN",
+   "C": "XSP",
+   "D": "Anglia"
+  },
+  {
+   "A": "17033",
+   "B": "SHIPLEY",
+   "C": "SHY",
+   "D": "North & East"
+  },
+  {
+   "A": "51001",
+   "B": "SHOEBURYNESS",
+   "C": "SRY",
+   "D": "Anglia"
+  },
+  {
+   "A": "87991",
+   "B": "SHOREHAM-BY-SEA",
+   "C": "SSE",
+   "D": "Sussex"
+  },
+  {
+   "A": "88476",
+   "B": "SHORTLANDS JN",
+   "C": "XOR",
+   "D": "Kent"
+  },
+  {
+   "A": "41016",
+   "B": "SHOTTON HIGH LEVEL",
+   "D": "Wales"
+  },
+  {
+   "A": "64224",
+   "B": "SHREWSBURY",
+   "C": "SHR",
+   "D": "Wales"
+  },
+  {
+   "A": "88460",
+   "B": "SIDCUP SIDING",
+   "D": "Kent"
+  },
+  {
+   "A": "44231",
+   "B": "SKEGNESS",
+   "C": "SKG",
+   "D": "East Midlands"
+  },
+  {
+   "A": "16421",
+   "B": "SKELTON JN. (YORK)",
+   "D": "East Coast"
+  },
+  {
+   "A": "88424",
+   "B": "SLADE GREEN",
+   "C": "SGR",
+   "D": "Kent"
+  },
+  {
+   "A": "73822",
+   "B": "SLOUGH",
+   "C": "SLO",
+   "D": "Western"
+  },
+  {
+   "A": "82305",
+   "B": "SOMERTON GROUND FRAME",
+   "D": "Western"
+  },
+  {
+   "A": "86604",
+   "B": "SOTON W DOCKS SHED 107",
+   "D": "Wessex"
+  },
+  {
+   "A": "73663",
+   "B": "SOUTHALL",
+   "C": "STL",
+   "D": "Western"
+  },
+  {
+   "A": "86520",
+   "B": "SOUTHAMPTON CENTRAL",
+   "C": "SOU",
+   "D": "Wessex"
+  },
+  {
+   "A": "86531",
+   "B": "SOUTHAMPTON M.C.T.",
+   "D": "Wessex"
+  },
+  {
+   "A": "15631",
+   "B": "SOUTH BANK TEES DOCK (FLT)",
+   "D": "North & East"
+  },
+  {
+   "A": "88405",
+   "B": "SOUTH BERMONDSEY",
+   "C": "SBM",
+   "D": "Kent"
+  },
+  {
+   "A": "74265",
+   "B": "SOUTHCOTE JN",
+   "D": "Western"
+  },
+  {
+   "A": "51007",
+   "B": "SOUTHEND CENTRAL",
+   "C": "SOC",
+   "D": "Anglia"
+  },
+  {
+   "A": "18076",
+   "B": "SOUTH KIRKBY JN",
+   "D": "North & East"
+  },
+  {
+   "A": "35001",
+   "B": "SOUTHPORT",
+   "C": "SOP",
+   "D": "North West"
+  },
+  {
+   "A": "73420",
+   "B": "SOUTH RUISLIP",
+   "C": "SRU",
+   "D": "Central"
+  },
+  {
+   "A": "51558",
+   "B": "SOUTH TOTTENHAM",
+   "C": "STO",
+   "D": "Anglia"
+  },
+  {
+   "A": "38214",
+   "B": "SPITAL",
+   "C": "SPI",
+   "D": "North West"
+  },
+  {
+   "A": "88711",
+   "B": "SPRINGHEAD JN",
+   "C": "XSR",
+   "D": "Kent"
+  },
+  {
+   "A": "87114",
+   "B": "STAINES",
+   "C": "SNS",
+   "D": "Wessex"
+  },
+  {
+   "A": "63201",
+   "B": "ST ALBANS CITY",
+   "C": "SAC",
+   "D": "East Midlands"
+  },
+  {
+   "A": "68137",
+   "B": "STANDISH JN",
+   "D": "Western"
+  },
+  {
+   "A": "51023",
+   "B": "STANFORD-LE-HOPE",
+   "C": "SFO",
+   "D": "Anglia"
+  },
+  {
+   "A": "47344",
+   "B": "STANSTED AIRPORT",
+   "C": "SSD",
+   "D": "Anglia"
+  },
+  {
+   "A": "81403",
+   "B": "STAPLETON ROAD",
+   "C": "SRD",
+   "D": "Western"
+  },
+  {
+   "A": "86499",
+   "B": "ST DENYS",
+   "C": "SDN",
+   "D": "Wessex"
+  },
+  {
+   "A": "53223",
+   "B": "STEVENAGE",
+   "C": "SVG",
+   "D": "East Coast"
+  },
+  {
+   "A": "87238",
+   "B": "STEWARTS LANE T&R.S.M.D",
+   "C": "XSL",
+   "D": "Kent"
+  },
+  {
+   "A": "35405",
+   "B": "ST HELENS CENTRAL",
+   "C": "SNH",
+   "D": "North West"
+  },
+  {
+   "A": "88283",
+   "B": "ST LEONARDS WARRIOR SQ",
+   "C": "SLQ",
+   "D": "Kent"
+  },
+  {
+   "A": "45402",
+   "B": "ST NEOTS",
+   "C": "SNO",
+   "D": "East Coast"
+  },
+  {
+   "A": "87901",
+   "B": "STOATS NEST JN.",
+   "C": "XJS",
+   "D": "Sussex"
+  },
+  {
+   "A": "32534",
+   "B": "STOCKPORT",
+   "C": "SPT",
+   "D": "North West"
+  },
+  {
+   "A": "81119",
+   "B": "STOKE GIFFORD",
+   "D": "Western"
+  },
+  {
+   "A": "81110",
+   "B": "STOKE GIFFORD (FLHH)",
+   "D": "Western"
+  },
+  {
+   "A": "44999",
+   "B": "STOKE JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "49014",
+   "B": "STOWMARKET",
+   "C": "SMK",
+   "D": "Anglia"
+  },
+  {
+   "A": "63630",
+   "B": "ST PANCRAS INTERNATIONAL (MML)",
+   "C": "STP",
+   "D": "East Midlands"
+  },
+  {
+   "A": "63631",
+   "B": "ST PANCRAS INTL (DOMESTIC)",
+   "C": "SPX",
+   "D": "High Speed"
+  },
+  {
+   "A": "63629",
+   "B": "ST PANCRAS INT PLAT A&B (FCC)",
+   "C": "SPL",
+   "D": "East Midlands"
+  },
+  {
+   "A": "52226",
+   "B": "STRATFORD",
+   "C": "SRA",
+   "D": "Anglia"
+  },
+  {
+   "A": "66451",
+   "B": "STRATFORD-UPON-AVON",
+   "C": "SAV",
+   "D": "Central"
+  },
+  {
+   "A": "87134",
+   "B": "STRAWBERRY HILL",
+   "C": "STW",
+   "D": "Wessex"
+  },
+  {
+   "A": "87151",
+   "B": "STRAWBERRY HILL C.S.D.",
+   "C": "XSX",
+   "D": "Wessex"
+  },
+  {
+   "A": "87613",
+   "B": "STREATHAM",
+   "C": "STE",
+   "D": "Sussex"
+  },
+  {
+   "A": "87631",
+   "B": "STREATHAM COMMON",
+   "C": "SRC",
+   "D": "Sussex"
+  },
+  {
+   "A": "87621",
+   "B": "STREATHAM HILL",
+   "C": "SRH",
+   "D": "Sussex"
+  },
+  {
+   "A": "88801",
+   "B": "STROOD",
+   "C": "SOO",
+   "D": "Kent"
+  },
+  {
+   "A": "14031",
+   "B": "SUNDERLAND",
+   "C": "SUN",
+   "D": "East Coast"
+  },
+  {
+   "A": "87171",
+   "B": "SURBITON",
+   "C": "SUR",
+   "D": "Wessex"
+  },
+  {
+   "A": "64231",
+   "B": "SUTTON BRIDGE JN",
+   "D": "Wales"
+  },
+  {
+   "A": "87671",
+   "B": "SUTTON (SURREY)",
+   "C": "SUO",
+   "D": "Sussex"
+  },
+  {
+   "A": "88486",
+   "B": "SWANLEY",
+   "C": "#MULTIVALUE",
+   "D": "Kent"
+  },
+  {
+   "A": "79304",
+   "B": "SWANSEA",
+   "C": "SWA",
+   "D": "Wales"
+  },
+  {
+   "A": "79306",
+   "B": "SWANSEA LOOP WEST",
+   "D": "Wales"
+  },
+  {
+   "A": "75012",
+   "B": "SWINDON",
+   "C": "SWI",
+   "D": "Western"
+  },
+  {
+   "A": "75011",
+   "B": "SWINDON STORES",
+   "D": "Western"
+  },
+  {
+   "A": "24108",
+   "B": "SWINTON (S.YORKS)",
+   "C": "SWN",
+   "D": "North & East"
+  },
+  {
+   "A": "87626",
+   "B": "SYDENHAM",
+   "C": "SYD",
+   "D": "Sussex"
+  },
+  {
+   "A": "59021",
+   "B": "SYSTON EAST JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "59022",
+   "B": "SYSTON SOUTH JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "45002",
+   "B": "TALLINGTON JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "87707",
+   "B": "TATTENHAM CORNER",
+   "C": "TAT",
+   "D": "Sussex"
+  },
+  {
+   "A": "83009",
+   "B": "TAUNTON",
+   "C": "TAU",
+   "D": "Western"
+  },
+  {
+   "A": "87159",
+   "B": "TEDDINGTON",
+   "C": "TED",
+   "D": "Wessex"
+  },
+  {
+   "A": "15400",
+   "B": "TEES N.Y.",
+   "D": "North & East"
+  },
+  {
+   "A": "16480",
+   "B": "TEMPLE HIRST JN.",
+   "D": "East Coast"
+  },
+  {
+   "A": "74707",
+   "B": "THEALE LAFARGE FHH",
+   "D": "Western"
+  },
+  {
+   "A": "74703",
+   "B": "THEALE PUMA",
+   "D": "Western"
+  },
+  {
+   "A": "46261",
+   "B": "THETFORD",
+   "C": "TTF",
+   "D": "Anglia"
+  },
+  {
+   "A": "16001",
+   "B": "THIRSK",
+   "C": "THI",
+   "D": "East Coast"
+  },
+  {
+   "A": "23005",
+   "B": "THORNE JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "87635",
+   "B": "THORNTON HEATH",
+   "C": "TTH",
+   "D": "Sussex"
+  },
+  {
+   "A": "51004",
+   "B": "THORPE BAY",
+   "C": "TPB",
+   "D": "Anglia"
+  },
+  {
+   "A": "87920",
+   "B": "THREE BRIDGES",
+   "C": "TBD",
+   "D": "Sussex"
+  },
+  {
+   "A": "87908",
+   "B": "THREE BRIDGES TL UP DEPOT",
+   "D": "Sussex"
+  },
+  {
+   "A": "25209",
+   "B": "TINSLEY NORTH JN",
+   "D": "North & East"
+  },
+  {
+   "A": "83038",
+   "B": "TIVERTON PARKWAY",
+   "C": "TVP",
+   "D": "Western"
+  },
+  {
+   "A": "16005",
+   "B": "TOLLERTON JN",
+   "D": "East Coast"
+  },
+  {
+   "A": "89363",
+   "B": "TONBRIDGE",
+   "C": "TON",
+   "D": "Kent"
+  },
+  {
+   "A": "25710",
+   "B": "TOTLEY TUNNEL EAST",
+   "D": "North West"
+  },
+  {
+   "A": "83702",
+   "B": "TOTNES",
+   "C": "TOT",
+   "D": "Western"
+  },
+  {
+   "A": "56591",
+   "B": "TOTON NORTH YARD",
+   "D": "East Midlands"
+  },
+  {
+   "A": "33033",
+   "B": "TRAFFORD PARK EURO TERM",
+   "D": "North West"
+  },
+  {
+   "A": "33099",
+   "B": "TRAFFORD PARK EURO TML GBRF",
+   "D": "North West"
+  },
+  {
+   "A": "33083",
+   "B": "TRAFFORD PARK F.L.T.",
+   "D": "North West"
+  },
+  {
+   "A": "56601",
+   "B": "TRENT EAST JN",
+   "C": "XTR",
+   "D": "East Midlands"
+  },
+  {
+   "A": "82085",
+   "B": "TROWBRIDGE",
+   "C": "TRO",
+   "D": "Western"
+  },
+  {
+   "A": "56550",
+   "B": "TROWELL SOUTH JUNCTION",
+   "D": "East Midlands"
+  },
+  {
+   "A": "85501",
+   "B": "TRURO",
+   "C": "TRU",
+   "D": "Western"
+  },
+  {
+   "A": "87611",
+   "B": "TULSE HILL",
+   "C": "TUH",
+   "D": "Sussex"
+  },
+  {
+   "A": "89375",
+   "B": "TUNBRIDGE WELLS",
+   "C": "TBW",
+   "D": "Kent"
+  },
+  {
+   "A": "34111",
+   "B": "TUNSTEAD SDGS",
+   "D": "North West"
+  },
+  {
+   "A": "74023",
+   "B": "TWYFORD",
+   "C": "TWY",
+   "D": "Western"
+  },
+  {
+   "A": "66460",
+   "B": "TYSELEY",
+   "C": "TYS",
+   "D": "Central"
+  },
+  {
+   "A": "66424",
+   "B": "TYSELEY L.M.D.",
+   "C": "XTS",
+   "D": "Central"
+  },
+  {
+   "A": "87769",
+   "B": "UCKFIELD",
+   "C": "UCK",
+   "D": "Sussex"
+  },
+  {
+   "A": "81913",
+   "B": "UPHILL JUNCTION",
+   "D": "Western"
+  },
+  {
+   "A": "51351",
+   "B": "UPMINSTER",
+   "C": "UPM",
+   "D": "Anglia"
+  },
+  {
+   "A": "82124",
+   "B": "UPTON LOVELL",
+   "D": "Wessex"
+  },
+  {
+   "A": "86978",
+   "B": "UPWEY",
+   "C": "UPW",
+   "D": "Wessex"
+  },
+  {
+   "A": "87214",
+   "B": "VAUXHALL",
+   "C": "VXH",
+   "D": "Wessex"
+  },
+  {
+   "A": "87106",
+   "B": "VIRGINIA WATER",
+   "C": "VIR",
+   "D": "Wessex"
+  },
+  {
+   "A": "87208",
+   "B": "VOLTAIRE ROAD JN.",
+   "C": "XVJ",
+   "D": "Kent"
+  },
+  {
+   "A": "89392",
+   "B": "WADHURST",
+   "C": "WAD",
+   "D": "Kent"
+  },
+  {
+   "A": "17197",
+   "B": "WAKEFIELD EUROPORT",
+   "D": "North & East"
+  },
+  {
+   "A": "18057",
+   "B": "WAKEFIELD KIRKGATE S&TE",
+   "D": "North & East"
+  },
+  {
+   "A": "18067",
+   "B": "WAKEFIELD WESTGATE",
+   "C": "WKF",
+   "D": "North & East"
+  },
+  {
+   "A": "38018",
+   "B": "WALLASEY GROVE ROAD",
+   "C": "WLG",
+   "D": "North West"
+  },
+  {
+   "A": "38016",
+   "B": "WALLASEY VILLAGE",
+   "C": "WLV",
+   "D": "North West"
+  },
+  {
+   "A": "65555",
+   "B": "WALSALL FREIGHT TERMINAL",
+   "D": "Central"
+  },
+  {
+   "A": "52733",
+   "B": "WALTHAMSTOW CENTRAL",
+   "C": "WHC",
+   "D": "Anglia"
+  },
+  {
+   "A": "87220",
+   "B": "WANDSWORTH COMMON",
+   "C": "WSW",
+   "D": "Sussex"
+  },
+  {
+   "A": "82114",
+   "B": "WARMINSTER",
+   "C": "WMN",
+   "D": "Western"
+  },
+  {
+   "A": "87939",
+   "B": "WARNHAM",
+   "C": "WNH",
+   "D": "Sussex"
+  },
+  {
+   "A": "35531",
+   "B": "WARRINGTON BANK QUAY",
+   "C": "WBQ",
+   "D": "North West"
+  },
+  {
+   "A": "36711",
+   "B": "WARRINGTON CENTRAL",
+   "C": "WAC",
+   "D": "North West"
+  },
+  {
+   "A": "71040",
+   "B": "WATFORD JUNCTION",
+   "C": "WFJ",
+   "D": "West Coast South"
+  },
+  {
+   "A": "53230",
+   "B": "WATTON-AT-STONE",
+   "C": "WAS",
+   "D": "East Coast"
+  },
+  {
+   "A": "53801",
+   "B": "WELHAM GREEN",
+   "C": "WMG",
+   "D": "East Coast"
+  },
+  {
+   "A": "61100",
+   "B": "WELLINGBOROUGH",
+   "C": "WEL",
+   "D": "East Midlands"
+  },
+  {
+   "A": "64813",
+   "B": "WELLINGTON (SHROPSHIRE)",
+   "C": "WLN",
+   "D": "Central"
+  },
+  {
+   "A": "53401",
+   "B": "WELWYN GARDEN CITY",
+   "C": "WGC",
+   "D": "East Coast"
+  },
+  {
+   "A": "53403",
+   "B": "WELWYN G.C C.S.D.",
+   "C": "XYW",
+   "D": "East Coast"
+  },
+  {
+   "A": "53405",
+   "B": "WELWYN G.C. F.D.",
+   "D": "East Coast"
+  },
+  {
+   "A": "42231",
+   "B": "WEM",
+   "C": "WEM",
+   "D": "Wales"
+  },
+  {
+   "A": "72023",
+   "B": "WEMBLEY H.S.",
+   "D": "West Coast South"
+  },
+  {
+   "A": "45018",
+   "B": "WERRINGTON JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "82101",
+   "B": "WESTBURY",
+   "C": "WSB",
+   "D": "Western"
+  },
+  {
+   "A": "82100",
+   "B": "WESTBURY DOWN T.C.",
+   "D": "Western"
+  },
+  {
+   "A": "87651",
+   "B": "WEST CROYDON",
+   "C": "WCY",
+   "D": "Sussex"
+  },
+  {
+   "A": "87652",
+   "B": "WEST CROYDON TURNBACK",
+   "D": "Sussex"
+  },
+  {
+   "A": "73255",
+   "B": "WEST EALING",
+   "C": "WEA",
+   "D": "Western"
+  },
+  {
+   "A": "73259",
+   "B": "WEST EALING EMU SIDINGS",
+   "D": "Western"
+  },
+  {
+   "A": "81107",
+   "B": "WESTERLEIGH JN",
+   "D": "Western"
+  },
+  {
+   "A": "52702",
+   "B": "WEST HAM",
+   "C": "WEH",
+   "D": "Anglia"
+  },
+  {
+   "A": "63451",
+   "B": "WEST HAMPSTEAD THAMESLINK",
+   "C": "WHP",
+   "D": "East Midlands"
+  },
+  {
+   "A": "51305",
+   "B": "WEST HORNDON",
+   "C": "WHR",
+   "D": "Anglia"
+  },
+  {
+   "A": "38001",
+   "B": "WEST KIRBY",
+   "C": "WKI",
+   "D": "North West"
+  },
+  {
+   "A": "81911",
+   "B": "WESTON-SUPER-MARE",
+   "C": "WSM",
+   "D": "Western"
+  },
+  {
+   "A": "88111",
+   "B": "WEST WORTHING",
+   "C": "WWO",
+   "D": "Sussex"
+  },
+  {
+   "A": "86005",
+   "B": "WEYBRIDGE",
+   "C": "WYB",
+   "D": "Wessex"
+  },
+  {
+   "A": "86981",
+   "B": "WEYMOUTH",
+   "C": "#MULTIVALUE",
+   "D": "Wessex"
+  },
+  {
+   "A": "82202",
+   "B": "WHATLEY QUARRY",
+   "D": "Western"
+  },
+  {
+   "A": "66211",
+   "B": "WHITACRE JN",
+   "C": "XQW",
+   "D": "Central"
+  },
+  {
+   "A": "52084",
+   "B": "WHITECHAPEL (ELL)",
+   "C": "ZLW",
+   "D": "Private Railway"
+  },
+  {
+   "A": "17135",
+   "B": "WHITEHALL JN",
+   "D": "North & East"
+  },
+  {
+   "A": "46200",
+   "B": "WHITEMOOR YARD L.D.C GBRF",
+   "D": "Anglia"
+  },
+  {
+   "A": "35136",
+   "B": "WIGAN NORTH WESTERN",
+   "C": "WGN",
+   "D": "North West"
+  },
+  {
+   "A": "35111",
+   "B": "WIGAN WALLGATE",
+   "C": "WGW",
+   "D": "North West"
+  },
+  {
+   "A": "35107",
+   "B": "WIGAN WALLGATE UP C.S.",
+   "C": "XWG",
+   "D": "North West"
+  },
+  {
+   "A": "59321",
+   "B": "WIGSTON NORTH JN",
+   "D": "East Midlands"
+  },
+  {
+   "A": "72275",
+   "B": "WILLESDEN JN. HIGH LEVEL",
+   "C": "WJH",
+   "D": "Anglia"
+  },
+  {
+   "A": "72232",
+   "B": "WILLESDEN PRDC",
+   "C": "XRN",
+   "D": "West Coast South"
+  },
+  {
+   "A": "72225",
+   "B": "WILLESDEN S.W.S.",
+   "C": "XWS",
+   "D": "West Coast South"
+  },
+  {
+   "A": "72268",
+   "B": "WILLESDEN WEST LONDN JN",
+   "C": "XWI",
+   "D": "West Coast South"
+  },
+  {
+   "A": "88249",
+   "B": "WILLINGDON JN",
+   "C": "XIL",
+   "D": "Sussex"
+  },
+  {
+   "A": "87261",
+   "B": "WIMBLEDON",
+   "C": "#MULTIVALUE",
+   "D": "Wessex"
+  },
+  {
+   "A": "86083",
+   "B": "WINCHESTER",
+   "C": "WIN",
+   "D": "Wessex"
+  },
+  {
+   "A": "11001",
+   "B": "WINDERMERE",
+   "C": "WDM",
+   "D": "North West"
+  },
+  {
+   "A": "50211",
+   "B": "WITHAM",
+   "C": "WTM",
+   "D": "Anglia"
+  },
+  {
+   "A": "86031",
+   "B": "WOKING",
+   "C": "WOK",
+   "D": "Wessex"
+  },
+  {
+   "A": "86038",
+   "B": "WOKING EAST END SDG",
+   "C": "XGE",
+   "D": "Wessex"
+  },
+  {
+   "A": "87004",
+   "B": "WOKINGHAM",
+   "C": "WKM",
+   "D": "Wessex"
+  },
+  {
+   "A": "74821",
+   "B": "WOODBOROUGH",
+   "D": "Western"
+  },
+  {
+   "A": "51541",
+   "B": "WOODGRANGE PARK",
+   "C": "WGR",
+   "D": "Anglia"
+  },
+  {
+   "A": "76374",
+   "B": "WOOFFERTON",
+   "D": "Wales"
+  },
+  {
+   "A": "86971",
+   "B": "WOOL",
+   "C": "WOO",
+   "D": "Wessex"
+  },
+  {
+   "A": "53231",
+   "B": "WOOLMER GREEN JN.",
+   "C": "XGN",
+   "D": "East Coast"
+  },
+  {
+   "A": "75242",
+   "B": "WOOTTON BASSETT JN",
+   "D": "Western"
+  },
+  {
+   "A": "67195",
+   "B": "WORCESTER FOREGATE STREET",
+   "C": "WOF",
+   "D": "Central"
+  },
+  {
+   "A": "67116",
+   "B": "WORCESTER SHRUB HILL",
+   "C": "WOS",
+   "D": "Central"
+  },
+  {
+   "A": "81906",
+   "B": "WORLE",
+   "C": "WOR",
+   "D": "Western"
+  },
+  {
+   "A": "81907",
+   "B": "WORLE JN",
+   "D": "Western"
+  },
+  {
+   "A": "87995",
+   "B": "WORTHING",
+   "C": "WRH",
+   "D": "Sussex"
+  },
+  {
+   "A": "86069",
+   "B": "WORTING JN",
+   "D": "Wessex"
+  },
+  {
+   "A": "41111",
+   "B": "WREXHAM CENTRAL",
+   "C": "WXC",
+   "D": "Wales"
+  },
+  {
+   "A": "41130",
+   "B": "WREXHAM GENERAL",
+   "C": "WRX",
+   "D": "Wales"
+  },
+  {
+   "A": "81103",
+   "B": "YATE",
+   "C": "YAE",
+   "D": "Western"
+  },
+  {
+   "A": "81905",
+   "B": "YATTON",
+   "C": "YAT",
+   "D": "Western"
+  },
+  {
+   "A": "82341",
+   "B": "YEOVIL JUNCTION",
+   "C": "#MULTIVALUE",
+   "D": "Wessex"
+  },
+  {
+   "A": "82311",
+   "B": "YEOVIL PEN MILL",
+   "C": "YVP",
+   "D": "Wessex"
+  },
+  {
+   "A": "16416",
+   "B": "YORK",
+   "C": "YRK",
+   "D": "East Coast"
+  },
+  {
+   "A": "16443",
+   "B": "YORK GR SHED",
+   "D": "East Coast"
+  }
+ ]
+}

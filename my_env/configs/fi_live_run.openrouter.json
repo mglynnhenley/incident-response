@@ -1,0 +1,12 @@
+{
+  "run_id": "gb2019-fi-live-opus55-001",
+  "task_id": "gb-2019-full-investigation",
+  "model": "openrouter/anthropic/claude-opus-5.5",
+  "model_api_key": "$OPENROUTER_API_KEY",
+  "use_fake_model": false,
+  "transcript_file": "out/fi/live/transcript.json",
+  "step_context_window_limit": 200000,
+  "on_step_context_window_limit": "score",
+  "step_time_limit_seconds": 7200,
+  "on_step_time_limit": "score"
+}

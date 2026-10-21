@@ -1,0 +1,260 @@
+{
+  "blocks": [
+    {
+      "provenance": [
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "At 16:52 on the 9th August 2019 the electricity transmission system saw a lightning strike on the Eaton Socon – Wymondley Main Circuit, 4.5km from Wymondley substation. This caused the middle conductor (blue phase) to fault to the earthed transmission tower",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-01",
+      "response_text": "At 16:52 [reported] lightning struck the Eaton Socon – Wymondley Main circuit 4.5 km [reported] from Wymondley substation. The middle conductor (blue phase) faulted to the earthed transmission tower.",
+      "topics": [
+        "fault",
+        "fault type",
+        "faulted phase",
+        "fault location"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 20,
+          "printed_page": null,
+          "quote": "the blue conductor phase voltage was reduced by approximately 50% and currents of 21kA (21 thousand amps) were recorded at Wymondley Main and 7kA at Eaton Socon.",
+          "section": "Appendix C – NGET Technical Report, 1.1",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-02",
+      "response_text": "The fault currents were 21 kA [reported] at Wymondley Main and 7 kA [reported] at Eaton Socon, and the blue phase voltage was reduced by approximately 50% [reported].",
+      "topics": [
+        "fault current",
+        "fault level",
+        "voltage during the fault"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "The main protection at Wymondley Main operated in 70ms and the main protection at Eaton Socon operated in 74ms, therefore clearing the fault within the 80ms required in the Grid Code.",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 21,
+          "printed_page": null,
+          "quote": "One requirement of the Grid Code (Connection Condition CC.6.2.3.1.1) is that our 400kV primary main circuit breaker protection operates within 80ms to clear electrical faults.",
+          "section": "Appendix C – NGET Technical Report, 1.1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 27,
+          "printed_page": null,
+          "quote": "The operation of both circuit breakers at Wymondley Main and Eaton Socon was as expected, with both operating as designed",
+          "section": "Appendix C – NGET Technical Report, 3.2.3",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-03",
+      "response_text": "The main protection at Wymondley Main operated in 70 ms [reported] and at Eaton Socon in 74 ms [reported], clearing the fault within the 80 ms [reported] the Grid Code requires at 400 kV (Connection Condition CC.6.2.3.1.1). Both circuit breakers operated as designed.",
+      "topics": [
+        "protection operation",
+        "clearance time",
+        "circuit breakers",
+        "Grid Code clearance"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 21,
+          "printed_page": null,
+          "quote": "the DAR system was available and in service on the Eaton Socon - Wymondley Main circuit and it successfully returned the circuit to service within 20 seconds",
+          "section": "Appendix C – NGET Technical Report, 1.2",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 21,
+          "printed_page": null,
+          "quote": "This restored the network to the same configuration seen prior to the event. The DAR system in this case again operated exactly as expected and required no further operational intervention or immediate site attendance.",
+          "section": "Appendix C – NGET Technical Report, 1.2",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-04",
+      "response_text": "The Delayed Auto-Reclose system was available and in service on the circuit and returned it to service within 20 seconds [reported]. That restored the network to the configuration it had before the event and needed no further operational intervention or immediate site attendance.",
+      "topics": [
+        "return to service",
+        "reclose",
+        "circuit restoration"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 25,
+          "printed_page": null,
+          "quote": "The activity aligns with the protection data indicating the fault was 4.5km from Wymondley Main, just outside Letchworth Garden City.",
+          "section": "Appendix C – NGET Technical Report, 3.1.1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 25,
+          "printed_page": null,
+          "quote": "One of these strikes is timed at the same time as the fault. As such we can be confident that a lightning strike was the cause of the fault.",
+          "section": "Appendix C – NGET Technical Report, 3.1.1",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-05",
+      "response_text": "MeteoGroup's recorded lightning activity near the circuit aligns with our protection data placing the fault 4.5 km [reported] from Wymondley Main, just outside Letchworth Garden City. One of the strikes is timed at the same time as the fault, so we can be confident that a lightning strike was the cause of the fault.",
+      "topics": [
+        "lightning data",
+        "MeteoGroup",
+        "cause of the fault"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "A voltage depression of circa 50% was seen at the fault location on the blue phase which lasted for 100ms in the vicinity of the fault. Further from the fault, voltage dips of 20% were observed with 80ms duration.",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 28,
+          "printed_page": null,
+          "quote": "Figure 3.3.1 below shows the 44% voltage depression on the Blue phase of the circuit experienced at Ryhall.",
+          "section": "Appendix C – NGET Technical Report, 3.3.1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 30,
+          "printed_page": null,
+          "quote": "Killingholme – Keadby circuit which was out of service for planned maintenance on 9th August.",
+          "section": "Appendix C – NGET Technical Report, 3.3.2",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 30,
+          "printed_page": null,
+          "quote": "Figure 3.3.2 below shows voltage depression of 21% on the Blue phase of the circuit experienced at Necton 400kV.",
+          "section": "Appendix C – NGET Technical Report, 3.3.2",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-06",
+      "response_text": "A voltage depression of circa 50% [reported] at the fault location lasted 100 ms [reported]; further from the fault, dips of 20% [reported] lasting 80 ms [reported] were seen. Our monitor at Ryhall recorded a 44% [reported] depression on the blue phase and the one at Necton 21% [reported]. The monitor near Killingholme was unavailable because the Killingholme – Keadby circuit was out of service for planned maintenance.",
+      "topics": [
+        "power quality",
+        "voltage measurements",
+        "Ryhall",
+        "Necton"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 22,
+          "printed_page": null,
+          "quote": "Engineers went to both sites and confirmed all assets were operating as normal at each substation and no defects on our assets were identified.",
+          "section": "Appendix C – NGET Technical Report, 2.2",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 22,
+          "printed_page": null,
+          "quote": "Our overhead line engineers undertook a visual inspection of the Eaton Socon – Wymondley Main overhead line, on the morning Saturday 10th August. No identified defects were observed.",
+          "section": "Appendix C – NGET Technical Report, 2.2",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-07",
+      "response_text": "Engineers attended Wymondley Main and Eaton Socon substations to collect data, including protection operating data; all assets were operating as normal and no defects were identified. Our overhead line engineers inspected the line on the morning of Saturday 10 August and observed no defects.",
+      "topics": [
+        "site inspection",
+        "defects",
+        "overhead line inspection"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 22,
+          "printed_page": null,
+          "quote": "As is standard practice the ENCC led the response to the system fault on 9th August.",
+          "section": "Appendix C – NGET Technical Report, 2.1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 22,
+          "printed_page": null,
+          "quote": "This was confirmed by phone with the ENCC and DNOs over a period of 8mins following receipt of the initial alarm indications.",
+          "section": "Appendix C – NGET Technical Report, 2.1",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 22,
+          "printed_page": null,
+          "quote": "we redirected each call to the Electricity Networks Association (ENA) information “105” number.",
+          "section": "Appendix C – NGET Technical Report, 2.1",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-08",
+      "response_text": "As is standard practice, the ESO's control room led the response. Our TNCC received electronic alarm indications that the LFDD scheme had operated and confirmed this by phone with the ENCC and DNOs over a period of 8 minutes [reported] after the first indications. Members of the public who rang our safety number were redirected to the 105 number.",
+      "topics": [
+        "TNCC",
+        "LFDD alarms",
+        "transmission control room calls",
+        "public calls"
+      ]
+    },
+    {
+      "provenance": [
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "our key finding is that the electricity transmission network operated as designed and in line with standards",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "All pre-fault and post-fault steady state voltages were within limits required within industry standards",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        },
+        {
+          "pdf_page": 17,
+          "printed_page": null,
+          "quote": "Harmonic and Negative Phase Sequence currents were within limits set out within the relevant standards and codes.",
+          "section": "Appendix C – NGET Technical Report, Executive Summary",
+          "source_id": "APP"
+        }
+      ],
+      "response_id": "S09-NGET-09",
+      "response_text": "Our key finding is that the transmission network operated as designed and in line with standards. Pre-fault and post-fault steady state voltages were within the limits required by industry standards, and harmonic and negative phase sequence currents were within limits.",
+      "topics": [
+        "network performance",
+        "steady state voltages",
+        "standards"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "National Grid Electricity Transmission (NGET)",
+  "persona_id": "nget-protection-engineer",
+  "role": "Protection engineer, transmission owner",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — NGET's records that I can speak to do not cover that."
+}
