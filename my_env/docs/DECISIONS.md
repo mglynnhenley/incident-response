@@ -1216,3 +1216,13 @@ part 2). True positives are asserted on edited real sentences.
         and in the summary; `_severe_clause`; classification of the two mechanisms; labelling;
       - `tests/test_fi_grading_live_runs.py`: edited real sentences (F38 ×3, summary bullet ×5, F10, pilot F26).
     - **Viewer.** No change is needed: no schema, flag field or recorded output changed.
+
+## Saved grades refreshed (2026-10-21)
+
+81. **Judged runs re-merged under the current keys without new judge calls.** The five judged runs
+    (`out/panel_sr80k/*`, `out/fi_pilot`, `out/panel_fi/opus55-001`) had judge outputs bound to SR/FI key 0.1.0. Key
+    0.1.1 changed no judge-visible text (pinned by tests), so each output was re-bound to the installed key (the
+    original binding is recorded under `rebinding` in `judge/judge_output.rebound.json`; the original
+    `judge_output.json` is untouched) and re-merged; the previous merged grade is kept as `judge/grade.prev.json`.
+    Results (best-available, provisional): SR Opus 49/9/2, Sonnet 52/8/0, Haiku 29/10/21; FI Opus pilot 84/20/2,
+    panel 86/20/0; no severe flags or accounting traps remain on any of them.
