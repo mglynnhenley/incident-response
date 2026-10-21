@@ -1,0 +1,81 @@
+{
+ "assistant_turns": 23,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 80000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "I submitted the investigation and it was accepted and frozen, with 45 findings each labelled observed, reported, inferred, hypothesis or unknown. All times below are BST (UTC+01:00).\n\n**Initiating event.** At 16:52:33.490 lightning caused a single-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit, about 4.5 km from Wymondley. The protection cleared it in 70 ms and 74 ms, inside the 80 ms Grid Code limit. Auto-reclose put the circuit back in service at 16:52:53, and no defects were found afterwards.\n\n**Generation lost**\n\n| Loss | Size | Timing | Status |\n|---|---|---|---|\n| Hornsea One (de-load from 799 MW to 62 MW) | 737 MW | 16:52:33.728–.835 | reported |\n| Little Barford steam turbine | 244 MW | about 16:52:35 | reported |\n| Embedded generation, vector shift | about 150 MW | at the fault | ESO estimate |\n| Embedded generation, rate-of-change-of-frequency (RoCoF) relays | about 350 MW (modelled up to 430 MW) | about 16:52:34 | ESO estimate |\n| Little Barford gas turbine GT1A (automatic trip) | 210 MW | about 16:53:31.6 | reported |\n| Little Barford gas turbine GT1B (manual trip) | 187 MW | about 16:53:58.6 | reported |\n| Net loss at 49 Hz | 200 MW | about 16:53:40 | modelled |\n\nThe totals depend on the basis and stage:\n- **ESO cumulative:** 1,131 MW, then 1,481 MW within about a second, and 1,878 MW at the end.\n- **ESO secured-event basis:** 1,528 MW, compared with the 1,000 MW the system was secured for.\n- **Ofgem:** at least 1,990 MW.\n- **E3C:** at least 2,000 MW.\n\n**Frequency, from the 1-second record**\n- **First minimum:** 49.083 Hz at 16:52:59.\n- **Lowest sample:** 48.787 Hz at 16:53:49.\n- **Below 49 Hz:** about 33 s.\n- **Below 49.5 Hz:** about 142 s, against the 60 s the security standard (SQSS) allows.\n- **Back to 50 Hz:** 16:57:16.\n- **Fastest fall:** 0.151 Hz in one second, above the 0.125 Hz/s RoCoF relay setting.\n\nWith 1-second sampling, the true minimum and the crossing times are only known to about ±1 s.\n\n**Containment and recovery.",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 160959,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 47,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-047",
+  "invalid_submission_attempts": 0,
+  "python_calls": 5,
+  "retrieved": [
+   "R03",
+   "R02",
+   "R06",
+   "R07",
+   "R10",
+   "S12",
+   "S01",
+   "S03",
+   "S07",
+   "S04",
+   "R01",
+   "R08",
+   "R04",
+   "R05",
+   "S06",
+   "S05"
+  ],
+  "schema": 1,
+  "seq": 47,
+  "submission_sha256": "6c87cf05551b0a295850d39b1f5d5bb4048be5d6f482f05737bd502074912d72"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 47,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 47
+ },
+ "max_input_tokens": 160959,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 25812,
+ "output_tokens_total": 27588,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 23,
+ "tool_calls_by_tool": {
+  "interview_witness": 13,
+  "list_documents": 1,
+  "query_asset_log": 3,
+  "query_control_log": 1,
+  "query_frequency": 1,
+  "request_data_return": 8,
+  "request_document": 14,
+  "run_python": 5,
+  "submit_findings": 1
+ },
+ "tool_calls_episode_tools": 47,
+ "tool_calls_total": 47,
+ "transcript_available": true
+}

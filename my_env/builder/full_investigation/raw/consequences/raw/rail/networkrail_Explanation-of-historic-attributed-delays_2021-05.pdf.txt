@@ -1,0 +1,71 @@
+=== page 1 ===
+ 
+ 
+Explanation document: Historic attributed delays 
+ 
+The file attached is a standard data extract from our Performance System Strategy (PSS) database . The 
+information within the file contains all “attributed” delays to passenger train services in line with the 
+guidance in the Delay Attribution Guide.  The information is structured for industry systems and 
+understanding, the below provides a few key insights into the data contained.
+ 
+The data contains both delay and cancellation events (denoted by the performance event code) and a 
+user should be careful when summing delay minutes (pfpi minutes) to exclude cancellation events. 
+ 
+It is possible that the detailed reasons for some of the delays in this file are still being investigated and 
+until this is complete the responsibility for the delay is still not finalised (see attribution status).   
+ 
+Delay data is remapped to reflect the franchise mapping at the time of the data extraction (in this case 
+May 2021). 
+ 
+Financial Year and Period  - the “railway” period that the delay occurred in 
+Date – this is the date of the train within the system 
+TrainID – PSS doesn’t contain UID codes it contains trainid – trainids are unique within a railway period 
+but not within a year – the same train in the timetable should have the same 8 digit trainid the last two 
+digits are the day of the month 
+Location codes – these are stanox codes – PSS works on TRUST recording locations not timetable 
+locations (a lookup file is attached). 
+GBTT and WTT – the GBTT times are those which appear in the published timetable and delays are 
+calculated against 
+TSC – this is the train service code at the point where the delay occurred 
+Service Group code – this is the service group within the Schedule 8 performance regime (and on Real 
+Time PPM screens) 
+Operator – this is the operator code (ie TOC which ran the train) 
+English Day Type – weekday, Saturday, Sunday, bank holiday, Christmas 
+Applicable timetable flag – if N the train is not in official performance records as it is a short term 
+replacement of a train plan – normally a reinstatement of part of a cancelled service 
+Train schedule type / traction type/ trailing load / unit class – these aren’t mandated or validated fields 
+within PSS  
+Incident number – the TRUST DA incident number (not unique without the create date) 
+Incident create date – the date the incident was entered into the system 
+Incident start/end date – the date the system has the incident live (this is not the length of the incident 
+on the ground) 
+Section code – where the incident took  place  
+Network Rail location Manager – the area of the country 
+Responsible Manager – who within the industry is responsible for the delay – all delays have 
+responsibility for performance improvement purposes  
+Incident Reason – the Delay Attribution Guide cause code for the incident 
+Attribution Status – All delays go through an acceptance process only once they are agreed is the linkage
+ to the incident official …. Disputed delays normally mean further investigation is ongoing about either 
+the cause of the incident or the delay 
+Incident equipment – internal free form information 
+=== page 2 ===
+ 
+ 
+Incident description – short description of the incident for internal use 
+Reactionary reason code – again in the DAG …. If no code the delay is primary (ie the delay is at the site 
+of the incident) if reactionary the delay is a later consequence of that incident 
+Incident Responsible train – which train initially caused the incident (if any) 
+Performance Event Code – Whether the train has been delayed or cancelled … A and M denote delays, 
+C, D, O, P, S and F are cancellations … C – is a full cancelletion, D is a diversion, F is a failure to stop, S is a 
+scheduled cancellation and O/P are part cancellations 
+Start/end stanox – the location of the delay (not the incident) 
+Event Datetime – the time the train encountered the delay 
+Pfpi minutes – the size of the delay …. Note if the train is cancelled (performance event code) a deemed 
+delay minute is generated for internal usage in these circumstances the train hasn’t been delayed and 
+including this delay in any calculation of delay is misleading.   
+Train ID responsible – see incident responsible train 
+Train ID react – if the delay is a reactionary delay the system will try and capture the train which made 
+this train late 
+ 
+ 
+© Copyright Network Rail 2021

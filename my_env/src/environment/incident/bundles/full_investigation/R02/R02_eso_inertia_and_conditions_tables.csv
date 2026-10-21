@@ -1,0 +1,11 @@
+table,row_label,column_label,value_as_printed
+ESO technical report Table 4,Demand,01 July,28 GW
+ESO technical report Table 4,Inertia,01 July,201 GVAs
+ESO technical report Table 4,Largest planned loss,01 July,"1,000 MW"
+ESO technical report Table 4,Frequency Response Holding,01 July,"1,087 MW"
+ESO technical report Table 4,Demand,09 August,29 GW
+ESO technical report Table 4,Inertia,09 August,210GVAs
+ESO technical report Table 4,Largest planned loss,09 August,"1,000 MW"
+ESO technical report Table 4,Frequency Response Holding,09 August,"1,022 MW"
+Appendix M Q42 table,6 hours before the incident,11:00,201353 MVA.s
+Appendix M Q42 table,Immediately prior to the trip,16:52,219632 MVA.s

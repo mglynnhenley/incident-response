@@ -1,0 +1,207 @@
+DOCUMENT R02 — System conditions data, 9 August 2019
+Owner/originator: Elexon Limited (BMRS / Insights API data, much of it supplied by the system
+operator); National Energy System Operator (NESO) open data portal; National Grid ESO (technical
+report tables)
+Record type: real public dataset extracts (CSV files) with two published report tables and this
+metadata note
+STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES — dataset values are unchanged from the
+publishers' files (only rows and columns were selected); report tables, captions and quotations
+are reproduced as printed. Nothing in this record is synthesised.
+Clock reference: stated for each file and table below. Elexon timestamps are UTC (ISO-8601 with
+Z). Elexon and NESO settlement periods are numbered on the UK local clock: period 1 starts at
+00:00 local time and each period lasts 30 minutes. UK local time on 9 August 2019 was BST
+(UTC+01:00).
+Value-status legend: [measured] metered or observed value as published; [reported] value stated by
+its publisher or by a report; [estimated] value its source describes as an estimate; [modelled]
+value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — HOW TO USE THIS RECORD
+A1  The CSV files described in Part B are delivered with this note; after retrieval they are in
+    $EVIDENCE_DIR/R02/. Dataset values are copied without rounding, unit conversion, interpolation
+    or gap filling. CSV conventions for files built from the publishers' JSON: comma-separated,
+    UTF-8, LF line endings, one header row; numbers as published; true/false for JSON booleans; an
+    empty cell for JSON null. The two NESO files keep the publisher's own lines byte for byte
+    (CRLF line endings).
+A2  Unit-level metered volumes (B8) and Maximum Export Limit records (B9) are also available
+    through query_asset_log for assets HORNSEA-ONE and LITTLE-BARFORD; each row there has an event
+    ID and cites R02.
+A3  Cite this note with L<n> or L<a>-L<b> (line numbers shown on retrieval).
+
+PART B — PUBLIC DATASET EXTRACTS (one block per file)
+B1  File R02_elexon_fuelinst_5min_20190809.csv [measured] — generation outturn by fuel type,
+    5-minute values.
+    Source: Elexon BMRS dataset FUELINST, Elexon Insights API endpoint /datasets/FUELINST queried
+    with publishDateTimeFrom=2019-08-09T14:00:00Z and publishDateTimeTo=2019-08-09T19:00:00Z;
+    retrieved 2026-10-20. Publisher: Elexon Limited. Licence: Elexon BMRS open data licence.
+    Contains BMRS data (c) Elexon Limited copyright and database right 2026.
+    Rows: 61 (every row returned), one per startTime from 2019-08-09T13:55:00Z to
+    2019-08-09T18:55:00Z. The API returns one record per fuel type; the file has one column per
+    fuel type instead. No totals are added.
+    Columns: startTime, publishTime (UTC); settlementDate, settlementPeriod (UK local clock);
+    BIOMASS, CCGT, COAL, INTEW, INTFR, INTIRL, INTNED, INTNEM, NPSHYD, NUCLEAR, OCGT, OIL, OTHER,
+    PS, WIND (MW). INT* codes are interconnectors; PS is pumped storage; NPSHYD is
+    non-pumped-storage hydro (publisher's fuel-type codes).
+    Publisher's description: "average MW values over 5 minutes for each category". The data do not
+    say whether startTime is the start of the averaging interval, so treat the time of each
+    FUELINST value as uncertain by up to 5 minutes. Embedded (distribution-connected) generation
+    is not included.
+B2  File R02_elexon_fuelhh_halfhour_20190809.csv [measured] — generation outturn by fuel type,
+    half-hourly.
+    Source: Elexon BMRS dataset FUELHH, endpoint /datasets/FUELHH queried for settlementDate
+    2019-08-09; retrieved 2026-10-20. Licence as B1.
+    Rows: 48, settlement periods 1-48 of 2019-08-09, in period order. Columns as B1; startTime is
+    the UTC start of the settlement period, except that the publisher dates the period-48 row
+    2019-08-08T22:30:00Z (kept as published). Publisher's description: "average MW values over 30
+    minutes for each category".
+    Caveat: on this date the FUELHH value of some settlement periods equals the mean of only the
+    first five of the six FUELINST values in that period, not of all six. Do not use FUELHH to
+    time changes within a half hour or to check FUELINST.
+B3  File R02_elexon_indo_itsdo_20190809.csv [measured] — initial demand outturn, half-hourly.
+    Source: Elexon endpoint /demand/outturn queried for settlementDate 2019-08-09; retrieved
+    2026-10-20. Licence as B1.
+    Rows: 48, settlement periods 1-48. Columns: publishTime, startTime, settlementDate,
+    settlementPeriod, initialDemandOutturn, initialTransmissionSystemDemandOutturn. startTime is
+    the UTC start of the period and publishTime its end (UTC); values MW.
+    Publisher's description: INDO "measures the half-hour average MW demand metered by the
+    Transmission Company based on its operational metering"; INDO "takes into account transmission
+    losses but does not include station transformer load, pumped storage demand or interconnector
+    demand", while ITSDO includes them.
+B4  File R02_neso_historic_demand_20190808-10.csv [measured] — NESO historic demand data,
+    half-hourly, 8-10 August 2019; its embedded generation columns are [modelled].
+    Source: NESO open data portal, Historic Demand Data 2019 (demanddata_2019.csv); retrieved
+    2026-10-20. Licence: NESO Open Data Licence v1.0. Supported by National Energy SO Open Data.
+    Rows: 144 (48 per day for 08-AUG-2019, 09-AUG-2019 and 10-AUG-2019), copied from the
+    publisher's file byte for byte with its header line. Columns: SETTLEMENT_DATE,
+    SETTLEMENT_PERIOD, ND, TSD, ENGLAND_WALES_DEMAND, EMBEDDED_WIND_GENERATION,
+    EMBEDDED_WIND_CAPACITY, EMBEDDED_SOLAR_GENERATION, EMBEDDED_SOLAR_CAPACITY, NON_BM_STOR,
+    PUMP_STORAGE_PUMPING, IFA_FLOW, IFA2_FLOW, BRITNED_FLOW, MOYLE_FLOW, EAST_WEST_FLOW,
+    NEMO_FLOW, NSL_FLOW, ELECLINK_FLOW, VIKING_FLOW, GREENLINK_FLOW (MW).
+    Publisher's documentation: "All values are an average over the half hour." and "All times are
+    UK time and for the half hour beginning." SETTLEMENT_DATE is written DD-MON-YYYY.
+    EMBEDDED_WIND_GENERATION and EMBEDDED_SOLAR_GENERATION are model estimates [modelled]: "The
+    true output of these generators is not known so an estimate is provided based on NESO's best
+    model."
+    The publisher's resource record gives created 2020-05-04 and last modified 2025-04-08; the
+    copy used here was downloaded on 2026-10-20, and its values may differ from those available in
+    2019.
+B5  File R02_neso_inertia_20190808-10.csv [modelled] — NESO system inertia estimates, half-hourly,
+    8-10 August 2019.
+    Source: NESO open data portal, GB System Inertia 2019-2020 (inertia.csv); retrieved
+    2026-10-20. Licence as B4.
+    Rows: 144 (48 per day), copied byte for byte with the header line. Columns: Settlement Date
+    (YYYY-MM-DD), Settlement Period (UK local clock), Outturn Inertia, Market Provided Inertia.
+    The file does not state a unit.
+    Publisher's resource description: "Estimate of the market provided and outturn inertia for the
+    GB Transmission System per settlement period." The resource record gives created 2021-07-01.
+B6  File R02_elexon_lolpdrm_20190809.csv [modelled] — loss-of-load probability and de-rated margin
+    forecasts.
+    Source: Elexon endpoint /forecast/system/loss-of-load (LOLPDRM) for 9 August 2019; retrieved
+    2026-10-20. Licence as B1.
+    Rows: 240 (settlementDate 2019-08-09, forecast horizons 1, 2, 4, 8 and 12 hours for each of 48
+    periods). Columns: publishTime, publishingPeriodCommencingTime, startTime, settlementDate,
+    settlementPeriod, forecastHorizon, lossOfLoadProbability, deratedMargin. Times are UTC;
+    deratedMargin in MW. For horizons of 1-8 hours "the returned value is the forecast received
+    that number of hours before the start of the settlement period". These are forecasts made
+    before each period, not outturn.
+B7  File R02_elexon_bm_unit_reference.csv [reported] — Elexon BM unit reference data for five
+    units.
+    Source: Elexon endpoint /reference/bmunits/all; retrieved 2026-10-20. Licence as B1. Rows: 5
+    (all fields of the five units listed in C4).
+    Caveat: this is the publisher's registration data as served in 2026, not a copy of the
+    register in force in August 2019; names and capacities may have changed since.
+B8  File R02_elexon_b1610_selected_units_20190809.csv [measured] — metered generation per BM unit
+    per settlement period (B1610).
+    Source: Elexon endpoint /datasets/B1610/stream, one query per unit for 2019-08-08T23:00:00Z to
+    2019-08-09T23:00:00Z; retrieved 2026-10-20. Licence as B1.
+    Rows: 192 (units T_HOWAO-1, T_HOWAO-2, T_HOWAO-3, T_LBAR-1; settlementDate 2019-08-09, periods
+    1-48; the record for the next settlement date returned by the same query is not included).
+    Columns: dataset, psrType, bmUnit, nationalGridBmUnitId, settlementDate, settlementPeriod,
+    halfHourEndTime, settlementRunType, quantity.
+    quantity is energy in MWh over the settlement period. Publisher: "The generation output
+    returned by this endpoint is the metered volume and not the instantaneous power output".
+    halfHourEndTime is the UTC end of the period written without a zone designator. Every row has
+    settlementRunType DF.
+B9  File R02_elexon_mels_selected_units_20190809.csv [reported] — Maximum Export Limit (MEL)
+    records for five BM units.
+    Source: Elexon endpoint /balancing/physical, one query per unit for 2019-08-08T23:00:00Z to
+    2019-08-09T23:00:00Z; retrieved 2026-10-20. Licence as B1.
+    Rows: 267 MELS records with settlementDate 2019-08-09 for units T_HOWAO-1, T_HOWAO-2,
+    T_HOWAO-3, T_LBAR-1, T_LBAR-1G. Columns: dataset, settlementDate, settlementPeriod, timeFrom,
+    timeTo, levelFrom, levelTo, nationalGridBmUnit, bmUnit. Each record is a level from levelFrom
+    (MW) at timeFrom to levelTo (MW) at timeTo; times UTC, minute resolution. MELs are limits
+    declared by the unit's operator, not output.
+    The same queries returned physical notification (PN) records only for settlement periods 1-4
+    of 9 August and none for later periods; this record holds no PN data.
+
+PART C — FILE EXCERPTS (verbatim lines from the files in Part B)
+C1  R02_elexon_indo_itsdo_20190809.csv, rows for settlement periods 30-40 (header omitted; column
+    order as in B3) [measured]:
+    2019-08-09T14:00:00Z,2019-08-09T13:30:00Z,2019-08-09,30,26669,27343
+    2019-08-09T14:30:00Z,2019-08-09T14:00:00Z,2019-08-09,31,26839,27650
+    2019-08-09T15:00:00Z,2019-08-09T14:30:00Z,2019-08-09,32,27169,28075
+    2019-08-09T15:30:00Z,2019-08-09T15:00:00Z,2019-08-09,33,27660,28462
+    2019-08-09T16:00:00Z,2019-08-09T15:30:00Z,2019-08-09,34,28100,28819
+    2019-08-09T16:30:00Z,2019-08-09T16:00:00Z,2019-08-09,35,27984,28578
+    2019-08-09T17:00:00Z,2019-08-09T16:30:00Z,2019-08-09,36,28764,29412
+    2019-08-09T17:30:00Z,2019-08-09T17:00:00Z,2019-08-09,37,28634,29152
+    2019-08-09T18:00:00Z,2019-08-09T17:30:00Z,2019-08-09,38,28574,29090
+    2019-08-09T18:30:00Z,2019-08-09T18:00:00Z,2019-08-09,39,28605,29120
+    2019-08-09T19:00:00Z,2019-08-09T18:30:00Z,2019-08-09,40,28153,28669
+C2  R02_neso_historic_demand_20190808-10.csv, rows for 09-AUG-2019 settlement periods 30-40
+    (header omitted; column order as in B4; embedded generation columns [modelled], others
+    [measured]):
+    09-AUG-2019,30,26660,27330,24102,3272,6162,4724,12865,0,8,1054,0,815,-162,0,699,0,0,0,0
+    09-AUG-2019,31,26831,27650,24213,3207,6162,4465,12865,0,9,1297,0,645,-310,0,699,0,0,0,0
+    09-AUG-2019,32,27151,28054,24471,3134,6162,4293,12865,0,9,1308,0,638,-394,0,698,0,0,0,0
+    09-AUG-2019,33,27643,28450,24906,3104,6162,3501,12865,0,9,1017,0,812,-298,0,726,0,0,0,0
+    09-AUG-2019,34,28112,28826,25351,3057,6162,2605,12865,0,7,1009,0,821,-207,18,727,0,0,0,0
+    09-AUG-2019,35,27945,28538,25133,2817,6162,2131,12865,0,17,1008,0,942,-76,37,809,0,0,0,0
+    09-AUG-2019,36,28769,29401,25980,2618,6162,1862,12865,0,16,1008,0,948,-64,-52,812,0,0,0,0
+    09-AUG-2019,37,28634,29150,25873,2676,6162,1433,12865,0,16,1008,0,928,44,0,881,0,0,0,0
+    09-AUG-2019,38,28568,29076,25800,2779,6162,834,12865,0,8,1008,0,927,22,16,883,0,0,0,0
+    09-AUG-2019,39,28600,29114,25893,2626,6162,424,12865,0,14,1008,0,905,68,125,883,0,0,0,0
+    09-AUG-2019,40,28175,28691,25488,2491,6162,201,12865,0,16,1008,0,904,84,53,883,0,0,0,0
+C3  R02_neso_inertia_20190808-10.csv, header and the rows for 2019-08-09 periods 30-40 [modelled]:
+    "Settlement Date","Settlement Period","Outturn Inertia","Market Provided Inertia"
+    2019-08-09,30,202,191
+    2019-08-09,31,205,198
+    2019-08-09,32,209,199
+    2019-08-09,33,212,202
+    2019-08-09,34,215,204
+    2019-08-09,35,206,195
+    2019-08-09,36,206,197
+    2019-08-09,37,216,207
+    2019-08-09,38,218,211
+    2019-08-09,39,212,204
+    2019-08-09,40,209,203
+C4  Selected fields of the five BM units in B7 (elexonBmUnit | bmUnitName | fuelType | leadPartyName |
+    generationCapacity in MW) [reported]:
+    T_HOWAO-1 | HORNSEA_1A | WIND | Hornsea 1 Limited | 400.000 [reported]
+    T_HOWAO-2 | HORNSEA_1B | WIND | Hornsea 1 Limited | 400.000 [reported]
+    T_HOWAO-3 | HORNSEA_1C | WIND | Hornsea 1 Limited | 400.000 [reported]
+    T_LBAR-1 | Little Barford main unit 1 | CCGT | RWE Generation UK plc | 750.000 [reported]
+    T_LBAR-1G | Little Barford OCGT | OCGT | RWE Generation UK plc | 25.000 [reported]
+
+PART D — PUBLISHED REPORT TABLES (transcribed as printed)
+Times in these tables are printed without a zone; the reports give event times in local time (BST,
+UTC+01:00).
+D1  National Grid ESO, Technical Report on the events of 9 August 2019 (published 6 September
+    2019), section 4.4, "Table 4 – Comparison of system conditions between 1st July and 9th
+    August". Columns as printed: 01 July | 09 August.
+    Demand                     | 28 GW     | 29 GW     [reported]
+    Inertia                    | 201 GVAs  | 210GVAs   [reported]
+    Largest planned loss       | 1,000 MW  | 1,000 MW  [reported]
+    Frequency Response Holding | 1,087 MW  | 1,022 MW  [reported]
+    Context printed before the table (quoted):
+    "On 1st July at 08:27 the NEMO interconnector tripped while importing 1,000MW [reported]
+    from Belgium to GB resulting in an instantaneous loss of 1,000MW on the system." [reported]
+D2  Appendices to the ESO technical report, Appendix M (ESO answers to questions from the Energy
+    Emergencies Executive Committee), question 42 as printed: "What was the level of system
+    inertia (in VAs) six hour period prior to, during and after the event?"
+    Answer (quoted, first two sentences): "The ESO does not currently measure system inertia
+    directly but instead estimates it using a model. The inertia estimate is derived from the
+    forecasted demand level, embedded solar and wind to continuously estimate the system inertia
+    and the largest loss that needs to be secured in real-time operations."
+    First two of the eight table rows (Timestamp (hr:min:sec) | System Condition | Inertia (MVA.s)):
+    11:00 | 6 hours before the incident | 201353 [estimated]
+    16:52 | Immediately prior to the trip | 219632 [estimated]

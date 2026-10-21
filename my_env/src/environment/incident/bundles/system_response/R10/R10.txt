@@ -1,0 +1,133 @@
+DOCUMENT R10 — Operating requirements as described in the published reports (selection)
+Owner/originator: compiled from the National Grid ESO, Ofgem and E3C reports; no code administrator text
+Record type: reconstruction of requirements as the reports describe them, attributed item by item
+STATUS: RECONSTRUCTION OF REQUIREMENTS DESCRIBED IN PUBLISHED REPORTS — NOT CODE OR STANDARD TEXT.
+The editions of the Grid Code, SQSS and Distribution Code in force on 9 August 2019 have not been
+verified for this exercise. Each item restates what the named report says, not the code's own wording.
+Clock reference: no clock times are recorded; dates are calendar dates as printed (UK, BST = UTC+01:00).
+Value-status legend: [reported] value as stated in the named report; [measured], [estimated],
+[modelled], [digitised] and [illustrative] not used.
+Sources: ESO technical report dated 6 September 2019 (ESO), its Appendix H (ESO App. H) and answers to
+E3C questions (ESO answers; data available on 28 August 2019); Ofgem report dated 3 January 2020
+(Ofgem); E3C interim report, October 2019 (E3C interim); E3C final report, January 2020 (E3C final).
+
+SECTION A — SECURITY STANDARD (SQSS): SECURED EVENTS AND FREQUENCY LIMITS
+A1   ESO 2.2: the SQSS specifies the limits of frequency deviations for secured events, which include
+     loss of output from a single generating unit, CCGT module, boiler, nuclear reactor or DC bi-pole.
+     Normal Infeed Loss Risk: maximum frequency deviation should not exceed 0.5 Hz [reported].
+     Infrequent Infeed Loss Risk: frequency should not deviate outside the range 49.5 Hz [reported]
+     to 50.5 Hz [reported] for more than 60 seconds [reported].
+A2   ESO 2.2: the level of the normal infeed loss actually covered depends on the configuration of the
+     system at the time (printed as "typically it is c. 1,000W" [reported]); the current normal
+     infrequent infeed maximum loss risk is 1,260 MW [reported] for when Sizewell is at full load.
+A3   ESO App. H: 'Normal Infeed Loss' is the maximum loss the system should be able to manage without
+     the frequency going below 49.5 Hz [reported] (e.g. an interconnector at 1,000 MW [reported]);
+     'Infrequent Infeed Loss' is a higher level (e.g. Sizewell at 1,260 MW [reported]) for which the
+     frequency should not go below 49.2 Hz [reported] and should recover to 49.5 Hz [reported] within
+     one minute.
+A4   ESO App. H: the SQSS anticipates only one Secured Event at any one time and does not assume
+     multiple Secured Events occurring simultaneously (N-1). The Power Infeed Loss is the power infeed
+     that can be lost in one Secured Event: generally a single large generator, or two or more smaller
+     generators connected through an asset treated as a single Secured Event (for example a double
+     circuit overhead line or busbar).
+A5   ESO App. H: the system should be re-secured as soon as reasonably practicable after the occurrence
+     of a Secured Event.
+A6   ESO glossary: "The current maximum upper limit for an infrequent infeed loss risk is 1800MW." [reported]
+A7   Ofgem Box 4: the SQSS requires frequency to stay above or equal to 49.5 Hz [reported], or any fall
+     below that level to be recovered within 60 seconds [reported], for such events; the ESO is required
+     to secure the system by holding reserves so that the frequency limits are not breached.
+A8   E3C final, footnote 14: the SQSS allows a deviation below 49.5 Hz [reported] provided that the
+     frequency is returned to 49.5 Hz [reported] within 60 seconds [reported].
+A9   Ofgem 3.2 and 3.5: the ESO does not consider it is required to secure against distributed generation
+     losses under the SQSS; it follows an internal policy of securing against both transmission-connected
+     and vector shift distributed generation losses for credible transmission faults during periods of
+     increased risk (e.g. bad weather, lightning) or when it considers it economic to do so.
+
+SECTION B — LARGEST LOSS, RATE OF CHANGE OF FREQUENCY AND VECTOR SHIFT (as ESO describes its practice)
+B1   ESO App. H: in securing for the largest loss the ESO takes into account the protection setting
+     historically specified in the Distribution Code for RoCoF of 0.125 Hz/s [reported], and seeks to
+     ensure the system is configured in real time so that this limit is not breached for an infeed loss.
+B2   ESO answer 11: the ESO secures the system to within a RoCoF limit of 0.125 Hz/s [reported] for the
+     largest credible loss, and schedules frequency response so that the largest loss is contained to
+     49.5 Hz [reported] for a normal loss and 49.2 Hz [reported] for an abnormal loss.
+B3   ESO App. H: approximately 2 GW [reported] of small generators are connected to the distribution
+     networks via relays which disconnect them if the RoCoF is greater than 0.125 Hz/s [reported].
+B4   ESO App. H: approximately 8.5 GW [reported] of small generators are connected via relays which
+     disconnect them if the vector shift angle is greater than 6 degrees [reported].
+B5   ESO App. H: vector shift risks are divided into Type A (transmission faults with no coincident loss
+     of BMU infeed, e.g. an overhead line) and Type B (transmission faults with coincident loss of BMU
+     infeed, e.g. a generator busbar). The largest Type A risk is monitored for each half-hourly
+     settlement period; Type B faults are only secured where it is economic to do so.
+
+SECTION C — FREQUENCY RESPONSE AND RESERVE PRODUCTS (definitions as ESO describes them)
+C1   ESO App. H: primary response must be delivering its required output by 10 seconds [reported]
+     following the trip and continue for a further 20 seconds [reported] (30 seconds total).
+C2   ESO App. H: secondary response must be delivering its required output by 30 seconds [reported]
+     following the change in frequency and continue for a further 30 minutes [reported].
+C3   ESO App. H: dynamic response is a continuously provided service to manage normal fluctuations in the
+     frequency; static response is provided when the system frequency transgresses the low frequency
+     relay setting on site. Both can come from generation and demand, BM and non-BM units.
+C4   ESO App. H: Mandatory Frequency Response (MFR) can only be provided by synchronised BM units and is
+     an obligation of the Grid Code; commercial response is procured from generation or demand, BM or
+     non-BM units, whose providers are required to deliver the contracted amount.
+C5   ESO answer 13: Firm Frequency Response (FFR) is tendered for on a monthly basis; Mandatory Frequency
+     Response has similar characteristics but is an obligation in a generator's connection agreement;
+     Enhanced Frequency Response (EFR) is a faster form of FFR; static frequency response reduces demand
+     or increases generation when the frequency hits a trigger limit.
+C6   ESO answer 13: reserve services: Short Term Operating Reserve typically delivers energy
+     within 20 minutes [reported] or less; Rapid Start provides access to energy in less than
+     2 minutes [reported]; Balancing Mechanism actions.
+C7   ESO App. H: a minimum amount of dynamic response must be held for steady state frequency control;
+     the minimum dynamic response requirement at the time of the incident was set to 550 MW [reported].
+
+SECTION D — LOW FREQUENCY DEMAND DISCONNECTION (LFDD)
+D1   ESO 4.3: the Grid Code requires each DNO to make arrangements that will enable automatic
+     disconnection of demand if the frequency on the transmission system drops below
+     48.8 Hz [reported]; demand is disconnected in staged blocks (5%, 7.5% and 10%) [reported].
+D2   E3C final, Table 1 "Low Frequency Demand Disconnection settings for each frequency disconnection
+     stages" (% of demand disconnection in each transmission area; an area is listed only where the
+     table prints a value): E&W = England & Wales (NGET); SPT = Southern Scotland; SHET = Northern Scotland
+     Stage 1 | 48.80 Hz [reported] | E&W 5 [reported]
+     Stage 2 | 48.75 Hz [reported] | E&W 5 [reported]
+     Stage 3 | 48.70 Hz [reported] | E&W 10 [reported]
+     Stage 4 | 48.60 Hz [reported] | E&W 7.5 [reported] | SHET 10 [reported]
+     Stage 5 | 48.50 Hz [reported] | E&W 7.5 [reported] | SPT 10 [reported]
+     Stage 6 | 48.40 Hz [reported] | E&W 7.5 [reported] | SPT 10 [reported] | SHET 10 [reported]
+     Stage 7 | 48.20 Hz [reported] | E&W 7.5 [reported] | SPT 10 [reported] | SHET 10 [reported]
+     Stage 8 | 48.00 Hz [reported] | E&W 5 [reported] | SPT 10 [reported] | SHET 10 [reported]
+     Stage 9 | 47.80 Hz [reported] | E&W 5 [reported]
+     Total % demand | E&W 60 [reported] | SPT 40 [reported] | SHET 40 [reported]
+D3   Ofgem 3.38: Grid Code Operating Code 6 requires each DNO in England and Wales to have LFDD equipment
+     in place to disconnect a maximum of 60% [reported] of demand (measured at winter demand), operating
+     in stages; the requirements contain an accuracy tolerance for the frequency levels and a time delay
+     permitted for different LFDD equipment, depending on its installation date.
+D4   Ofgem 3.39: Stage 1 of the LFDD required 5% [reported] of winter peak demand to be disconnected.
+D5   E3C final, on the 5% [reported] figure: "The 5% demand figure is based on forecasted peak demand
+     during an average cold spell."
+D6   E3C interim: the scheme is designed to disconnect between 5 - 60% [reported] of total peak demand
+     through 9 [reported] stages as the system frequency reaches certain trigger levels.
+D7   ESO glossary: LFDD is set up in agreement with the ESO by DNOs to reduce their demand in
+     5% [reported] stages of total demand (printed as "up to 40% available") [reported].
+D8   Ofgem 3.44: SP Distribution, being part of the SP Transmission network area, is not required by the
+     Grid Code to disconnect demand until frequency reaches 48.5 Hz [reported].
+D9   ESO 2.5: Grid Code OC6.6 describes the automatic LFDD scheme and the arrangements the DNOs are
+     required to make in relation to it; following operation of the scheme, the DNOs must notify ESO of
+     its operation and are not permitted to restore automatically disconnected demand without
+     instruction from National Grid ESO.
+D10  Ofgem 3.40: the Grid Code does not currently regulate the disconnection of distributed generation
+     through LFDD.
+
+SECTION E — DISTRIBUTED GENERATION PROTECTION (Distribution Code, as the reports describe it)
+E1   E3C final: under the Distribution Code, embedded generators are required to install protection
+     which detects when the generator is islanded and safely shuts the plant down, predominantly by
+     monitoring the rate of change of frequency or the change in voltage phase angle (vector shift).
+E2   E3C final: requirements introduced in 2014 [reported] required all generators with a capacity
+     greater than 5 MW [reported] to install RoCoF protection with specific settings; this was
+     implemented across all relevant sites in 2018 [reported], and the Accelerated Loss of Mains
+     Protection programme was initiated in 2019 [reported] for embedded generators between
+     5 MW and 50 kW [reported].
+E3   Ofgem, footnote 18: vector shift protection is no longer permitted for distributed generators
+     connected after 1 February 2018 [reported].
+E4   Ofgem 3.32: Distribution Code changes reduced the frequency level triggering under frequency
+     protections to 47 Hz [reported], permitted for distributed generators with capacities greater
+     than 5 MW [reported] from August 2010 [reported].

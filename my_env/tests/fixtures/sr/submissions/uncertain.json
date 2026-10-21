@@ -1,0 +1,14 @@
+{
+  "findings": [],
+  "report": {
+    "executive_summary": "Explicitly inconclusive: I could not establish the sequence of events, the generation lost or the demand disconnected with enough confidence to report findings. No conclusions are offered.",
+    "sections": [
+      {
+        "body": "No findings are made.",
+        "heading": "Scope"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

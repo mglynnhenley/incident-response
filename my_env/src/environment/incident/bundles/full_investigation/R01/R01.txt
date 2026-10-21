@@ -1,0 +1,58 @@
+DOCUMENT R01 — System frequency record, 9 August 2019, 16:40-17:45 BST
+Owner/originator: National Grid ESO (NESO published dataset)
+Record type: measured time-series extract (CSV file) with this metadata note
+STATUS: REAL MEASURED DATA EXTRACT — frequency values are unchanged from the published dataset;
+only a time slice was selected and the columns were renamed and reformatted as described below.
+Clock reference: every timestamp in the CSV carries an explicit +01:00 offset (BST = UTC+01:00).
+Value-status legend: [measured] = value from the published measurement dataset. Every frequency value
+in the CSV is [measured]. This note adds no measured values of its own beyond the sample rows quoted.
+
+SOURCE DATASET
+Publisher: NESO data portal (api.neso.energy), monthly system frequency archive for August 2019.
+Archive file: f-2019-8.zip; member file "f 2019 8.csv"; columns "dtm" (date-time) and "f" (Hz).
+Published date-time format: "2019-08-09 16:40:00 +0100" (local time with an explicit +0100 offset).
+Publisher's correction note: the publisher's historical data page states that 2019 data was corrected
+on 14 February 2020. This extract comes from the archive as downloaded for this exercise (member file
+dated 14 February 2020); it is not a preserved copy of the data as originally published in 2019.
+
+EXTRACT
+Slice: 2019-08-09T16:40:00+01:00 (inclusive) to 2019-08-09T17:45:00+01:00 (exclusive).
+First sample: 2019-08-09T16:40:00+01:00. Last sample: 2019-08-09T17:44:59+01:00.
+Rows: 3900 data rows after one header row.
+Interval: 1 second between consecutive rows. Checked at extraction: no missing seconds, no duplicate
+timestamps, timestamps strictly increasing.
+Unit: hertz (Hz).
+Values: copied from column "f" without rounding, smoothing, resampling or interpolation.
+Number format: decimals are written without trailing zeros, so the number of decimal places varies
+(at most 3); for example a published value of 50 appears as 50.0.
+Resolution: one published value per second. The file carries no information about behaviour between
+consecutive samples and no description of the measurement method.
+
+TIME BASIS
+The published +0100 offsets were parsed as supplied (offset-aware), not treated as naive UTC, and are
+written in ISO-8601 form as +01:00. UTC = BST minus one hour, e.g. 2019-08-09T16:40:00+01:00 is
+2019-08-09T15:40:00Z. The publisher's general dataset description refers to UTC while the raw file
+carries +0100 offsets; no further publisher clarification was obtained. The offsets were used as given.
+
+FILE AND COLUMNS
+Artifact: frequency_2019-08-09_1640-1745_BST.csv, delivered with this document. After retrieval it is
+in this document's evidence folder: $EVIDENCE_DIR/R01/frequency_2019-08-09_1640-1745_BST.csv
+Format: comma-separated, ASCII text, CRLF line endings, one header row "timestamp,frequency_hz".
+Column timestamp: ISO-8601 date-time with explicit offset, e.g. 2019-08-09T16:40:00+01:00.
+Column frequency_hz: system frequency in Hz (decimal number).
+
+FIRST ROWS OF THE FILE (verbatim; header then data rows 1-5)
+timestamp,frequency_hz
+2019-08-09T16:40:00+01:00,49.989
+2019-08-09T16:40:01+01:00,49.991
+2019-08-09T16:40:02+01:00,49.992
+2019-08-09T16:40:03+01:00,49.989
+2019-08-09T16:40:04+01:00,49.986
+
+CITING THIS RECORD
+Data rows: row:<n> or rows:<a>-<b> (1-based data rows; the header is not counted). Row 1 is
+2019-08-09T16:40:00+01:00; row n is that time plus (n - 1) seconds; row 3900 is 17:44:59+01:00.
+Time: time:<ISO-8601> or time:<start>/<end>, each with an explicit offset (Z or +01:00) and within
+2019-08-09T16:40:00+01:00 to 2019-08-09T17:44:59+01:00 inclusive.
+Example: time:2019-08-09T16:40:00+01:00/2019-08-09T16:40:04+01:00 covers the same samples as rows:1-5.
+This note: L<n> or L<a>-L<b> using the line numbers shown when the document is retrieved.

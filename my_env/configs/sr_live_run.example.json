@@ -1,0 +1,12 @@
+{
+  "run_id": "gb2019-sr-live",
+  "task_id": "gb-2019-system-response",
+  "model": "anthropic/claude-opus-5-5",
+  "model_api_key": "$ANTHROPIC_API_KEY",
+  "use_fake_model": false,
+  "transcript_file": "out/sr/transcript.json",
+  "step_context_window_limit": 200000,
+  "on_step_context_window_limit": "score",
+  "step_time_limit_seconds": 5400,
+  "on_step_time_limit": "score"
+}

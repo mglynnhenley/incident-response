@@ -1,0 +1,108 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-NR-01",
+      "response_text": "The overhead line power supply operated continually, and the built-in resilience of our electrical power infrastructure maintained traction power to the vast majority of the railway throughout the incident. There were supply-related trips at two DC traction locations, which we are investigating further.",
+      "topics": [
+        "traction power",
+        "overhead line supply",
+        "electrical infrastructure"
+      ]
+    },
+    {
+      "response_id": "S09-NR-02",
+      "response_text": "ORR's report says the substations at Tattenham and Chipstead had power quality issues that operated the protective devices of the traction rectifiers, switching the power off temporarily; the rectifiers were quickly reinstated and traction supply was maintained. The E3C final report describes two railway traction substations in the South of England as automatically switching to back-up generation.",
+      "topics": [
+        "traction substations",
+        "rectifiers",
+        "Tattenham and Chipstead"
+      ]
+    },
+    {
+      "response_id": "S09-NR-03",
+      "response_text": "According to ORR, traction power was lost on the Wirral line of Merseyrail after rectifiers tripped when domestic supply was lost to LFDD, causing 428 minutes [reported] of delay; elsewhere no traction power outage was reported. Ofgem attributes the disconnection of the Wirral line traction supplies to SP Energy Networks' LFDD operations.",
+      "topics": [
+        "Wirral line",
+        "Merseyrail",
+        "traction outage"
+      ]
+    },
+    {
+      "response_id": "S09-NR-04",
+      "response_text": "Eight signalling power supplies in rural locations were lost: Wye, Southease, Norwood Fork, Trowbridge, Magor, Bangor, Croes Newydd and Kirby Thore, all fed by local DNO networks that may have been affected by LFDD; investigations into the cause are ongoing. The ESO's report describes them as minor outages with minimal passenger impact, and the E3C final report says 2 [reported] of the eight were disconnected by the LFDD scheme. We are reviewing resilience at these locations with the DNOs.",
+      "topics": [
+        "signalling supplies",
+        "signal power",
+        "rural signalling"
+      ]
+    },
+    {
+      "response_id": "S09-NR-05",
+      "response_text": "Our investigation stated that our supply disruption was likely to have been caused by supply interruption from the DNO networks, and we are to discuss this further with the DNOs. The DNOs, for their part, confirmed to the ESO that no track supplies were lost due to their LFDD protection operation.",
+      "topics": [
+        "cause of supply disruption",
+        "DNO supplies",
+        "supply interruption"
+      ]
+    },
+    {
+      "response_id": "S09-NR-06",
+      "response_text": "Two DNO supply points, at Chatham and Lewes, were lost during the disruption; ORR notes that this is still under investigation and may have been caused by LFDD.",
+      "topics": [
+        "DNO supply points",
+        "Chatham and Lewes"
+      ]
+    },
+    {
+      "response_id": "S09-NR-07",
+      "response_text": "Our National Daily Report for 9 August, as ORR tabulates it, totals 371 [reported] cancellations, 220 [reported] part-cancellations and 14428 [reported] delay minutes across eight routes: Sussex, Wessex, Kent, Western, LNE-York, LNE-EM, LNW-N and Wales. The ESO and E3C reports also give 873 [reported] trains delayed.",
+      "topics": [
+        "cancellations",
+        "delay minutes",
+        "service impact"
+      ]
+    },
+    {
+      "response_id": "S09-NR-08",
+      "response_text": "London St Pancras and King's Cross had to close for several hours because of overcrowding, and London Euston went exit only for a period, according to the ESO's report. The E3C interim report says St Pancras International, King's Cross and Euston had to limit passenger numbers entering the stations at various times.",
+      "topics": [
+        "stations",
+        "station closures",
+        "overcrowding"
+      ]
+    },
+    {
+      "response_id": "S09-NR-09",
+      "response_text": "ORR reports that full service was restored within 24 hours [reported]. The E3C interim report says some trains were not in their correct locations at the end of the day, disrupting some early services on Saturday 10 August, and that rail delays extended into Sunday 11 August.",
+      "topics": [
+        "service recovery",
+        "recovery of services",
+        "following days"
+      ]
+    },
+    {
+      "response_id": "S09-NR-10",
+      "response_text": "ORR reports that our electrical system reacted well although some resilience issues were identified, and that we have begun work to ensure adequate back-up supplies for non-traction essential supplies where necessary and are working with the DNO to improve resilience.",
+      "topics": [
+        "resilience work",
+        "back-up supplies",
+        "actions after the event"
+      ]
+    },
+    {
+      "response_id": "S09-NR-11",
+      "response_text": "Class 700 and 717 trains shut down north of Farringdon and Kings Cross because their own internal protection systems were triggered, and that delayed all the other trains behind them, according to the ESO's report.",
+      "topics": [
+        "train stoppages",
+        "stopped trains",
+        "Farringdon"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "Network Rail",
+  "persona_id": "network-rail-control-manager",
+  "role": "Control duty manager, Network Rail (railway infrastructure operator)",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not in the Network Rail records I can speak to."
+}

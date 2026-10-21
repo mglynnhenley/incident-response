@@ -1,0 +1,2 @@
+mRID,revisionNumber,publishTime,publishingPeriodCommencingTime,affectedDso,demandControlId,instructionSequence,demandControlEventFlag,timeFrom,timeTo,volume,systemManagementActionFlag,amendmentFlag
+DCI_201908140853_00000021,1,2019-08-14T08:53:30Z,2019-08-14T08:53:30Z,,00201,1,L,2019-08-09T15:54:00Z,2019-08-09T16:40:00Z,931.0,T,ORI

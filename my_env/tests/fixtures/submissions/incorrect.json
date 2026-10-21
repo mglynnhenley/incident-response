@@ -1,0 +1,230 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L73-L77"
+        }
+      ],
+      "event_time": "2019-08-09T16:50:44+01:00",
+      "finding_id": "I01",
+      "statement": "The disturbance was initiated at 16:50:44 BST by a lightning strike on the Blyth–Eccles–Stella West 400 kV circuit.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L50"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "I02",
+      "statement": "The Eaton Socon–Wymondley circuit suffered a second fault when it was re-energised at 16:52:53.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L105-L107"
+        }
+      ],
+      "finding_id": "I03",
+      "statement": "Protection cleared the faults in under 75 ms.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L33-L34"
+        }
+      ],
+      "event_time": "2019-08-09T15:52:33.728+01:00",
+      "finding_id": "I10",
+      "quantity": {
+        "basis": "read from the event log",
+        "unit": "MW",
+        "value": 400
+      },
+      "statement": "Hornsea One reduced its output by 400 MW at 15:52:33.728 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L6-L9"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L23-L25"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L34"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:35.185+01:00",
+      "finding_id": "I11",
+      "quantity": {
+        "basis": "reported output at trip",
+        "unit": "MW",
+        "value": 244
+      },
+      "statement": "Little Barford ST1C tripped with 244 MW at about 16:52:35.2 BST (T + 1.185 s, T = 16:52:34 ± 0.5 s).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L27"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L35"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:31.620+01:00",
+      "finding_id": "I12",
+      "quantity": {
+        "basis": "reported output at trip",
+        "unit": "MW",
+        "value": 210
+      },
+      "statement": "GT1A tripped with 210 MW at about 16:53:31.6 BST (T + 57.620 s, ± 0.5 s datum).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L36"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:58+01:00",
+      "finding_id": "I13",
+      "quantity": {
+        "basis": "reported output at trip",
+        "unit": "MW",
+        "value": 187
+      },
+      "statement": "GT1B tripped automatically on high steam pressure at 16:53:58 BST, losing 187 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:50+01:00/2019-08-09T16:53:05+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:58+01:00",
+      "finding_id": "I20",
+      "quantity": {
+        "basis": "frequency record",
+        "unit": "Hz",
+        "value": 49.1
+      },
+      "statement": "Frequency was arrested at 49.1 Hz at 16:52:58 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:40+01:00/2019-08-09T16:54:00+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:49.398+01:00",
+      "finding_id": "I21",
+      "quantity": {
+        "basis": "frequency record",
+        "unit": "Hz",
+        "value": 48.8
+      },
+      "statement": "The frequency fell to a minimum of 48.8 Hz at 16:53:49.398 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:56:00+01:00/2019-08-09T16:58:00+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:57:00+01:00",
+      "finding_id": "I22",
+      "quantity": {
+        "basis": "frequency record",
+        "unit": "Hz",
+        "value": 50.0
+      },
+      "statement": "The frequency returned to 50 Hz at 16:57 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:41+01:00/2019-08-09T16:53:56+01:00"
+        }
+      ],
+      "finding_id": "I23",
+      "quantity": {
+        "basis": "frequency record",
+        "unit": "s",
+        "value": 16
+      },
+      "statement": "The frequency was below 49 Hz for 16 seconds.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L42-L43"
+        }
+      ],
+      "finding_id": "I30",
+      "statement": "The root cause of the ST1C trip was a faulty speed sensor.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L50-L52"
+        }
+      ],
+      "finding_id": "I31",
+      "statement": "GT1A tripped because a steam bypass valve failed to operate correctly, which caused the high pressure.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L77-L78"
+        }
+      ],
+      "finding_id": "I32",
+      "statement": "The Hornsea de-load was caused by the Dynamic Reactive Compensator.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "The disturbance was initiated at 16:50:44 BST by lightning on the Blyth–Eccles–Stella West circuit [I01]; the Eaton Socon–Wymondley circuit then faulted again on re-energisation [I02]. Hornsea lost 400 MW and Little Barford's three units tripped [I10, I11, I12, I13]. The frequency was arrested at 49.1 Hz, fell to 48.8 Hz, returned to 50 Hz at 16:57 and was below 49 Hz for 16 seconds [I20, I21, I22, I23]. The ST1C trip was caused by a faulty speed sensor and GT1A by a failed bypass valve [I30, I31]; the Hornsea de-load was caused by its reactive compensator [I32].",
+    "sections": [
+      {
+        "body": "See [I01, I02, I03, I10, I11, I12, I13]. Frequency: [I20, I21, I22, I23]. Causes: [I30, I31, I32].",
+        "heading": "Account"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

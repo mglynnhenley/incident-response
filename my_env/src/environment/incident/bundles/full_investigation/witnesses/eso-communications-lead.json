@@ -1,0 +1,99 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-ESOC-01",
+      "response_text": "Our technical report's section 6.2 records the first communication between the ESO control room and BEIS at 17:41 [reported], when the event was generally understood, demand restoration was in progress and further disturbances were considered unlikely; further updates to BEIS followed at 18:09 [reported], 19:29 [reported] and 19:38 [reported]. The report's findings section gives 17:40 [reported] for contacting BEIS.",
+      "topics": [
+        "BEIS contact",
+        "government contact",
+        "first call to BEIS"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-02",
+      "response_text": "Our technical report's section 6.2 records the first communication with Ofgem at 17:51 [reported], with further communication at 18:17 [reported] and 18:45 [reported]. The report's findings section says we contacted Ofgem at 18:00 [reported], and our earlier answers to the E3C, based on the data available on 28 August 2019, say the first communication with Ofgem was made just after 18:00 [reported] with the ESO Director of Operations.",
+      "topics": [
+        "Ofgem contact",
+        "regulator contact",
+        "first call to Ofgem"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-03",
+      "response_text": "Our answers to the E3C record that at 17:10 [reported] the control room Power System Manager reported the incident to the ESO Head of National Control.",
+      "topics": [
+        "internal escalation",
+        "Head of National Control",
+        "control room escalation"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-04",
+      "response_text": "Our first external communication was issued at 18:27 [reported] on 9 August, once it was established that the DNOs had reconnected all customers; it was published on Twitter, sent to national energy correspondents and newsdesks, and shared with BEIS and Ofgem. A second statement followed at 20:06 [reported] and a video from the Head of National Control at 20:11 [reported]; on Saturday a third statement was issued at 08:33 [reported] and a fourth at 19:31 [reported].",
+      "topics": [
+        "public statements",
+        "media statements",
+        "statement timeline"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-05",
+      "response_text": "In the ~90 minutes [estimated] after the initial fault, starting at 17.09 [reported] (5.09pm in our answers to the E3C), some DNOs and rail companies issued statements saying that the loss of power and disruption were the result of a National Grid fault. They were issued ahead of any ESO communication and without coordination with our communications team. They did not affect the speed with which the incident was resolved, but they drove a large volume of media queries to us.",
+      "topics": [
+        "statements by others",
+        "DNO and rail statements",
+        "attribution of the cause"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-06",
+      "response_text": "Our Table 9 gives calls received by the six largest DNOs during the period 4pm to 7pm on 9 August: 5,482 [reported] in the 16:00 row, 33,266 [reported] in the 17:00 row and 820 [reported] in the 18:00 row, with calls dropping off dramatically after 6pm. The E3C interim report states, citing our report, that 39,568 [reported] calls were made to the 105 number between 16:00 and 18:00.",
+      "topics": [
+        "call volumes",
+        "helpline calls",
+        "customer calls"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-07",
+      "response_text": "ESO procedure says that after a loss of supply a clear communication to Ofgem and BEIS is essential and should be initiated as soon as possible, in line with Ofgem's 'Energy Incident Reporting' requirement dated December 2017; resolving the incident remains the primary objective. In the first hour the scale of the secondary impact on consumers, such as the travel disruption, was not clear to the control room even after demand restoration had begun.",
+      "topics": [
+        "incident reporting procedure",
+        "notification procedure",
+        "escalation procedure"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-08",
+      "response_text": "We spoke to the ENA early on Saturday 10 August and had a call with the ENA and the DNOs first thing on Monday 12 August, when we also shared our lines to take; through the week of 12 August we set out our preliminary technical findings to the ENA and its members.",
+      "topics": [
+        "ENA engagement",
+        "industry engagement",
+        "DNO communications"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-09",
+      "response_text": "Ofgem's report states that Hornsea 1 did not notify the ESO directly when the wind farm deloaded by 737 MW [reported], and that it then began starting up two of its modules temporarily without any coordination with the ESO while the ESO was responding to the generation losses it was aware of.",
+      "topics": [
+        "Hornsea notification",
+        "generator notification",
+        "restart coordination"
+      ]
+    },
+    {
+      "response_id": "S09-ESOC-10",
+      "response_text": "We did not experience issues with our communication systems and are not aware of any third-party communication system problems; there were no communication issues with our customers as a result of the disruption.",
+      "topics": [
+        "communication systems",
+        "communication issues"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "National Grid ESO",
+  "persona_id": "eso-communications-lead",
+  "role": "Communications lead, National Grid ESO (stakeholder and media communications)",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not covered by the ESO communications records I can speak to."
+}

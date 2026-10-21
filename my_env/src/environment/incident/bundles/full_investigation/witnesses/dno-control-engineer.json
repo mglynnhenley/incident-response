@@ -1,0 +1,91 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-DNO-01",
+      "response_text": "The ESO timeline row attributed to the DNOs reads: at 16:53:49.398 [reported] frequency breached the 48.8 Hz [reported] trigger level, resulting in LFDD, and 931 MW [reported] of demand was automatically disconnected. The DNOs indicated that this was 931 MW (3.2%) [reported] of demand.",
+      "topics": [
+        "LFDD operation",
+        "demand disconnected",
+        "LFDD relays"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-02",
+      "response_text": "Our returns as of 13 August 2019 at 12:00 [reported] total 931 MW [reported] and 1,152,878 [reported] customers, with the last area's final restoration at 17:37 [reported].",
+      "topics": [
+        "customers affected",
+        "returns",
+        "13 August data"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-03",
+      "response_text": "After the event, two DNOs reported that a number of stage 1 LFDD schemes did not trigger and so did not disconnect demand. The possible reasons given were that the frequency did not stay at 48.8 Hz [reported] long enough to trigger all schemes, or the +/-0.01 Hz [reported] tolerance setting, which meant that when frequency fell to 48.792 Hz [reported] not all schemes triggered.",
+      "topics": [
+        "relay performance",
+        "LFDD relay settings",
+        "relay behaviour"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-04",
+      "response_text": "SP Distribution disconnected 22 MW [reported] of demand in Scotland when frequency fell to 48.8 Hz [reported], although the Grid Code does not require DNOs there to disconnect until 48.5 Hz [reported]. It was due to an incorrect setting on its LFDD equipment, which has since been corrected.",
+      "topics": [
+        "Scotland",
+        "SP Distribution",
+        "Scottish networks"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-05",
+      "response_text": "According to the ESO, DNOs asked the ESO control room for specific permission before restoring demand, and some DNOs first called the NGET control room, which referred them to the ESO.",
+      "topics": [
+        "restoration permission",
+        "instruction to restore",
+        "calling NGET"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-06",
+      "response_text": "Ofgem reports that Eastern Power Networks and South Eastern Power Networks, both owned by UK Power Networks, reconnected sites without being told to do so by the ESO and acknowledge that they do not appear to have technically met the Grid Code requirements; Ofgem attributes this to the configuration of their operational systems.",
+      "topics": [
+        "reconnection",
+        "reconnection timing",
+        "reconnection process"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-07",
+      "response_text": "All DNOs responded to the ESO's request and together indicated 462 MW [reported] of embedded generation lost during the event. Some of us had trouble obtaining the data because of the way it is collected or stored, and without confirmation from the generators we could not tell whether a given generator tripped on RoCoF or on vector shift.",
+      "topics": [
+        "embedded generation return",
+        "generation lost",
+        "protection type"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-08",
+      "response_text": "Most DNOs record generation volumes on their networks only half-hourly, which obscures short events like this one, and DNOs do not monitor distributed generator output in real time.",
+      "topics": [
+        "generation monitoring",
+        "generation data",
+        "telemetry"
+      ]
+    },
+    {
+      "response_id": "S09-DNO-09",
+      "response_text": "To the E3C the DNOs indicated that 4.0% [reported] of demand was actually disconnected, equating to over 1 million [reported] customers.",
+      "topics": [
+        "percentage disconnected",
+        "share of demand",
+        "proportion of demand"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "Distribution Network Operators",
+  "persona_id": "dno-control-engineer",
+  "role": "Control engineer, distribution network operator (collective account of the DNO returns)",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not held in the DNO returns I can speak to."
+}

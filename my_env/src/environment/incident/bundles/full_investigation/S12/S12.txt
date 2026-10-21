@@ -1,0 +1,152 @@
+DOCUMENT S12 — Engineering analysis records, 9 August 2019
+Owner/originator: National Grid ESO (analysis and modelling), with Ofgem and E3C analysis as attributed
+Record type: reconstructed register of published analysis records, each attributed to its source and date
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: times are as printed by the sources, which label no clock; read as BST (UTC+01:00)
+because ESO dates the event at 4:52pm. Inertia values are written in the unit each source prints.
+Value-status legend: [reported] value as stated by the source; [estimated] value the source calls an
+estimate or approximation; [modelled] value the source derives from simulation or a model;
+[measured], [digitised] and [illustrative] not used.
+Sources: ESO technical report dated 6 September 2019 (with appendices); ESO answers to E3C questions
+(appendix M; ESO states these use the data available to it on 28 August 2019); Ofgem report dated
+3 January 2020; E3C interim report (October 2019); E3C final report (January 2020).
+
+SECTION A — ACCOUNTING OF GENERATION LOST (each total keeps its source's components and stage)
+A1   ESO technical report, Table 2 "Table of cumulative infeed losses" (unit: infeed loss | cumulative):
+     Little Barford ST1C 244 MW [reported] | 244 MW [reported]
+     Hornsea Offshore Windfarm 737 MW [reported] | 981 MW [reported]
+     Estimated, embedded generation infeed loss due to Vector Shift Loss of Mains Protection
+       150 MW [estimated] | 1,131 MW [reported]
+     Estimated, embedded generation infeed loss due to RoCoF Loss of Mains Protection
+       350 MW [estimated] | 1,481 MW [reported]
+     Little Barford GT1A 210 MW [reported] | 1,691 MW [reported]
+     Little Barford GT1B 187 MW [reported] | 1,878 MW [reported]
+A2   ESO technical report, section 3.2, footnote 1: the second gas turbine at Little Barford tripped from
+     187 MW [reported] after the initiation of LFDD, bringing total generation lost through the event to
+     1,878 MW [reported]; its effect was absorbed by the action of LFDD and additional plant dispatched
+     by the ENCC.
+A3   ESO technical report, Appendix H: the events are considered as three separate (albeit
+     simultaneous) Secured Events: the loss of Hornsea (737 MW [reported]), the loss of Little Barford
+     (641 MW [reported]) and the loss of vector shift generation (150 MW [estimated]); the total of
+     1528 MW [reported] was significantly in excess of the level secured for (1,000 MW [reported]).
+     In addition, approximately 350 MW [estimated] of embedded generation tripped on RoCoF protection.
+A4   Ofgem 2.4.5: the events resulted in a cumulative power loss of more than 1,130 MW [reported] within
+     around 1 second [reported] of the fault.
+A5   Ofgem 2.4.7: after the RoCoF trips described in 2.4.6, "The cumulative loss of generation at
+     this point was around 1,500MW" [estimated]; the ESO held sufficient frequency response and reserve
+     for a 1,000 MW [reported] generation loss.
+A6   Ofgem 2.4.10-2.4.11 and footnote 20: after one of the Little Barford gas turbines
+     (210 MW [reported]) and a further net reduction in generation of 200 MW [reported] at 49 Hz,
+     "The cumulative loss of generation at this point was at least 1,990MW" [reported]; the 200 MW
+     figure is net of demand disconnection, such as trains and large industrial customers.
+A7   E3C interim report: the total generation lost from the affected power stations, as part of the
+     initial event, was in the region of 2,100 MW [estimated], greater than the response held.
+A8   E3C final report: the total generation lost from the affected power stations and a number of
+     smaller generators, as part of the initial event, was at least 2,000 MW [reported].
+
+SECTION B — FREQUENCY SIMULATION OF THE EVENT (ESO technical report, Appendix I)
+B1   The Frequency Simulation Engine (FSE) was used to infer the imbalance between supply and demand that
+     would produce the actual frequency curve; the output of the frequency response services was then
+     removed, leaving the changes in underlying supply and demand required to obtain the trace.
+B2   ESO: "An event such as this is complex with many different things happening and so it is unlikely
+     that we can explain all of the movements in the imbalance."
+B3   Appendix I, Table 1 "Modelled Imbalance Time Series" (columns: event | time | imbalance change); every
+     row is an input of the simulation and is tagged as such:
+     Hornsea One | 16:52:33.728 | -737 MW [modelled]
+     Little Barford ST1C | 16:52:34 | -244 MW [modelled]
+     Loss of Mains – Vector Shift | 16:52:34 | -150 MW [modelled]
+     Loss of Mains - RoCoF | 16:52:34 | -430 MW [modelled]
+     Reduction in generator output over 30 seconds | 16:53:10 | -100 MW [modelled]
+     Little Barford GT1A | 16:53:30 | -210 MW [modelled]
+     Net Change due to protection at 49.0 Hz | 16:53:40* | -200 MW [modelled]
+     Net demand change at 48.8 Hz | 16:53:48* | +350 MW [modelled]
+     Little Barford GT1B | 16:53:58 | -187 MW [modelled]
+     The source marks two times with an asterisk and does not define the mark.
+B4   Appendix I: a 100 MW [modelled] variation in underlying imbalance, which can be attributed to a
+     slight reduction in generation output across the fleet lasting for 30 seconds [modelled], is
+     modelled during the return of the frequency.
+B5   ESO technical report, section 4.4 and Appendix I: the simulation maps closely to the actual
+     (smoothed) frequency trace; modelling inputs complete at 16:54 [reported], hence the deviation of
+     the trace from that point onwards.
+B6   ESO technical report, section 4.4: two simulations of a 1,000 MW [modelled] loss with the same
+     inertia and demand (full contracted response; actual delivered response) both keep frequency above
+     49.5 Hz [modelled].
+
+SECTION C — RECORDS OF A CHANGE OF ABOUT 100 MW, BY SOURCE (each as its source states it)
+C1   Ofgem 2.4.9: there was a reduction in frequency equivalent to a 100 MW [reported] reduction in
+     generation or increase in demand over 30 seconds [reported]. The ESO has stated that during this
+     time there were a number of movements in both demand and generation but it is unable to precisely
+     point to the source of change.
+C2   ESO Appendix I (see B4): modelled as a slight reduction in generation output across the fleet.
+C3   E3C final report: the ESO technical report identified that an unexpected increase in electricity
+     demand occurred in parallel with the loss of generation; this has been attributed to the de-loading
+     or tripping of 100 MW [reported] of embedded generation, but the cause for this loss is unknown at
+     present.
+
+SECTION D — RESPONSE PLANNING ASSUMPTIONS AND DELIVERY ASSESSMENTS
+D1   ESO Appendix H: the FSE adopts a pessimistic approach: the starting frequency is set as
+     49.9 Hz [reported] for low frequency response calculation (in real time it would generally be
+     kept higher), and response services are modelled at their minimum performance requirement.
+D2   ESO answer 18 (data available on 28 August 2019): when calculating the volume of frequency response
+     required to secure the largest loss, a 90% [reported] delivery rate is assumed.
+D3   ESO answer 17, table note: demand varies with frequency; for 29 GW [reported] demand this effect is
+     approximately 350 MW [estimated] at 49.5 Hz [reported], and it is unrelated to LFDD.
+D4   ESO technical report, section 4.4: conservative modelling assumptions are employed to ensure there
+     is contingency if not all contracted response delivers; overall response performance on 9 August
+     was broadly in line with these planning assumptions, with some under-performance being followed up.
+D5   ESO answer 27: in the days immediately after the event the ESO held 100 MW [reported] more frequency
+     response whilst it analysed the incident, and has since removed this extra holding.
+D6   Ofgem 3.6: there was only a narrow margin for error in securing the system against
+     transmission-connected generator losses alone, and a high level of sensitivity to small changes in
+     key assumptions; the ESO's processes for estimating the impact of distributed generation on
+     requirements do not appear sufficiently robust.
+D7   Ofgem 3.9: primary response providers under-delivered by 17% [reported] and secondary response
+     providers by 14% [reported]; mandatory response providers, and commercial Fast Frequency Response
+     providers of dynamic primary response (Ofgem's wording), under-delivered by approximately
+     25% [reported].
+D8   Ofgem 3.12: Ofgem does not believe that better response and reserve delivery would have been
+     sufficient to prevent demand from being disconnected for this event.
+
+SECTION E — INERTIA FIGURES AND ASSUMPTIONS
+E1   ESO technical report, Table 4 (comparison of system conditions, 1 July and 9 August): inertia
+     201 GVAs [reported] on 1 July and 210GVAs [reported] on 9 August.
+E2   ESO answer 42 (data available on 28 August 2019): the ESO does not currently measure system inertia
+     directly but estimates it using a model, derived from the forecasted demand level, embedded solar
+     and wind. Estimated inertia (MVA.s) by timestamp and system condition:
+     11:00 [reported], 6 hours before the incident: 201353 [estimated]
+     16:52 [reported], immediately prior to the trip: 219632 [estimated]
+     16:52:34 [reported], LBAR ST1 trip and 500MW embedded generation loss: 216885 [estimated]
+     16:52:58 [reported], LFGT service kicked in: 218013 [estimated]
+     16:53:31 [reported], LBAR GT1A trip: 216177 [estimated]
+     16:53:49 [reported], LFDD operated, 931MW drop reported from DNOs: 214222 [estimated]
+     16:53:58 [reported], LBAR GT1B trip: 212386 [estimated]
+     16:57 [reported], frequency restored with additional units on: 215356 [estimated]
+E3   ESO Appendix H: to increase the inertia of the system to allow 1 MW [reported] more of infeed loss
+     generally requires adding 20 MW [reported] of synchronous generation to the system.
+E4   Ofgem 3.8: the ESO used 8 [reported] sample events in 2016/17 (when demand and system inertia was
+     higher) to build its model of the contribution of demand response to system inertia, which it
+     validates against actual system events.
+
+SECTION F — ESO EARLIER ACCOUNT (ANSWERS TO E3C, DATA AT 28 AUGUST 2019) AND FINAL REPORT (6 SEPTEMBER)
+F1   Embedded generation. Earlier (answer 7): approximately 500 MW [estimated] lost, split between RoCoF
+     and vector shift not yet determined. Final report (section 4.2): approximately 150 MW [estimated]
+     on vector shift and approximately 350 MW [estimated] on RoCoF.
+F2   Loss of mains volume. Earlier (answers 2 and 3): "the loss was in line with our forecasts for such an
+     event". Final report (section 7): levels "were broadly in line with what was expected".
+F3   LFDD. Earlier (answer 31): "Initial analysis for the Interim Report suggests that the LFDD worked as
+     intended." Final report (section 4.3): "The LFDD process worked largely as expected", having provided
+     slightly lower than 5% [reported] of demand.
+F4   Restoration. Earlier (answers 2 and 3): system returned to a stable position in
+     c. 15 minutes [reported]; DNOs then restored supplies in c. 30 minutes [reported]. Final report
+     (section 3.2):
+     DNOs restored supplies within 40 minutes [reported] once the system was stable and secure.
+F5   Secondary response holding at the event time. Earlier (answer 16, table): 1338 MW [reported] total
+     low frequency secondary holding at 16:52 [reported]. Final report (Table 3): 1314 MW [reported].
+F6   Inertia before the event. Earlier (answer 42): 219632 MVA.s [estimated] immediately prior to the
+     trip. Final report (Table 4): 210GVAs [reported].
+F7   Little Barford GT1A. Final report, executive summary: the gas turbine trip at 210 MW [reported] was
+     "due to high pressure in the steam bypass system following the failure of a bypass valve to operate
+     correctly". Same report, section 4.2: RWE confirmed that "for reasons presently unknown", after
+     approximately 1 minute [reported], the first gas turbine tripped "due to a high-pressure excursion
+     in the steam bypass system".

@@ -1,0 +1,14 @@
+{
+  "run_id": "gb2019-sr-fake",
+  "task_id": "gb-2019-system-response",
+  "model": "fake",
+  "use_fake_model": true,
+  "transcript_file": "out/sr/transcript.json",
+  "step_context_window_limit": 200000,
+  "on_step_context_window_limit": "score",
+  "step_time_limit_seconds": 3600,
+  "on_step_time_limit": "score",
+  "extra_config": {
+    "fake_scenario": "reference"
+  }
+}

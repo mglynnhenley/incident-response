@@ -1,0 +1,92 @@
+DOCUMENT S01 — Hornsea One offshore wind farm event log, 9 August 2019
+Owner/originator: Ørsted (Hornsea One operator)
+Record type: plant configuration note, event log extract and separately dated post-event annotations
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: UTC, explicit Z suffix; BST = UTC+01:00 (the operator labels no clock; UTC is inferred).
+Value-status legend: [reported] value as stated in the operator's published material or in published
+accounts of it; [estimated] approximate value derived from a reported description; [measured] and
+[illustrative] not used. "~" marks a value the source gives as approximate.
+
+PART 1 — PLANT CONFIGURATION ON 9 AUGUST 2019
+P1  Hornsea One: offshore wind farm 120 km [reported] from the Yorkshire coast, under construction offshore;
+    1.2 GW [reported] installed capacity when complete (174 [reported] turbines rated 7 MW [reported]).
+P2  Three phases of 400 MW [reported] each: Hornsea 1A, Hornsea 1B and Hornsea 1C. Each phase connects to its
+    own HVAC collector substation, then an offshore HVAC reactive compensation station, an onshore HVAC
+    substation and the National Grid 400 kV [reported] substation at Killingholme.
+P3  Two modules fully installed and the third partially installed: declared export capability
+    800 MW [reported].
+P4  Internal network outage configuration: one SGT and one offshore transmission system user asset (OTSUA)
+    circuit on outage.
+P5  Hornsea 1B (circuit Z12) operating at 400 MW [reported] before the event (maximum for that unit).
+
+PART 2 — EVENT LOG (raw entries; times UTC, explicit Z)
+Time (UTC) and status           Entry
+~15:42Z [estimated]             Reactive power output response to a 2% [reported] voltage step change. See
+                                note (a) and annotation A5.
+15:52:33.000Z-.490Z [reported]  Voltage at the 400 kV [reported] substation steady at ~400 kV [reported].
+15:52:33.490Z [estimated]       Unbalanced voltage dip at the Transmission Interface Point (TIP); note (b).
+15:52:33.490Z-.700Z [reported]  Reactive compensation control initially injects reactive power (leading MVAr)
+                                to boost NETS voltage, then a significant oscillation: absorption
+                                >300 MVAr [reported] while NETS and Hornsea One system voltage falls to
+                                ~394 kV [reported]; then injection again.
+15:52:33.490Z-.700Z [reported]  Active power reduces from 799 MW [reported] to 400 MW [reported], then returns
+                                to 799 MW [reported].
+15:52:33.531Z [reported]        Status: generating 799 MW [reported]; absorbing 0.4 MVAr [reported].
+15:52:33.700Z [reported]        Reactive power passes ~0 MVAr [reported] as it switches rapidly from injection
+                                to absorption; Hornsea now absorbs ~560 MVAr [reported].
+15:52:33.700Z-.835Z [estimated] In the 34 kV [reported] collection cable system the voltage rapidly reduces
+                                to 20 kV [reported] (target voltage 34 kV [reported]); note (c).
+15:52:33.728Z [reported]        Hornsea 1B and Hornsea 1C begin de-loading turbines.
+15:52:33.835Z [reported]        De-load complete, 107 ms [reported] after it began: all WTGs on Hornsea 1B and
+                                1C at 0 MW [reported]. Hornsea 1A remains in operation at 62 MW [reported].
+                                Site: stabilised at 62 MW [reported], injecting 21 MVAr [reported].
+
+Compiler's notes on Part 2 (added for this reconstruction; not log content)
+(a) ~15:42Z [estimated]: the operator gives no exact time, only 10 minutes [reported] before the event.
+(b) The operator times the TIP voltage dip only to the minute; the log uses .490Z, where the
+    steady-voltage interval above ends.
+(c) The operator gives no separate time for the 20 kV [reported] voltage: it follows the .700Z switch to
+    absorption and is described with the de-load that ends at .835Z.
+
+PART 3 — POST-EVENT ANNOTATIONS (added after the event; not contemporaneous log content)
+Annotation A — operator investigation report, "Ørsted Technical Report for National Grid ESO on the
+events of 9 August 2019", dated 5 September 2019:
+A1  Section "Conclusion": "The de-load was caused by an unexpected wind farm control system response, due
+    to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was
+    triggered by the initial event."
+A2  Initially the wind farm responded as expected by injecting reactive power; in the following few hundred
+    milliseconds, as active power reduced and the reactive power balance changed, the majority of the turbines
+    were disconnected by automatic protection systems.
+A3  Hornsea 1B system voltage falls to ~20 kV [reported] while attempting to maintain full active power,
+    which leads to an overcurrent of each WTG on 1B and 1C; the WTGs de-load as part of the industry
+    standard protection system to avoid permanent damage to the generators.
+A4  Hornsea One's systems identified a weak grid and then detected an unusual voltage disturbance, later found
+    to have been caused by a circuit trip on the external 400 kV [reported] network, itself caused by a
+    lightning strike. The operator states it is unaware of the exact time of the lightning strike.
+A5  Identified after the event, as part of this investigation: electrical oscillations occurring before the
+    event, without causing any de-loading. About 10 minutes [reported] before the event (log entry
+    ~15:42Z [estimated]; exact time not published), the reactive power response to a 2% [reported] voltage
+    step change was a damped oscillatory response from the overall voltage control systems.
+A6  Before the event each stage had been modelled and physically tested in line with grid code requirements;
+    the potential for oscillations had been considered. To the operator's knowledge this is the first time
+    such oscillations have led to a de-load of a wind farm.
+A7  A control system software update performed on 10 August 2019 [reported], previously agreed with the
+    manufacturer, is stated to mitigate the observed behaviour.
+Annotation B — operator statements as reported in the ESO technical report dated 6 September 2019:
+B1  Initially the operator understood the Dynamic Reactive Compensator (DRC) to be responsible for the rapid
+    de-load; it has since concluded that the DRC worked as designed and was not the cause.
+B2  The configuration with one SGT and one OTSUA circuit on outage was a contributory factor as it created a
+    weak internal network environment; the operator has since reviewed and reconfigured it.
+B3  The wind turbine settings were standard settings from the manufacturer; the turbine controllers reacted
+    incorrectly due to an insufficiently damped electrical resonance in the sub-synchronous frequency range,
+    so that the local voltage dropped and the turbines shut themselves down.
+Annotation C — regulator findings, Ofgem report dated 3 January 2020:
+C1  The onshore control system operated as expected when the system voltage dipped; the offshore wind turbine
+    controllers reacted incorrectly to voltage fluctuations on the offshore network following the fault,
+    causing an instability that triggered two modules to automatically shut down.
+C2  The stability issue had occurred around ten minutes [reported] before the incident without causing
+    de-loading at that time.
+C3  Modelling with the equipment manufacturer before 9 August suggested voltage control performance issues at
+    the full planned 1,200 MW [reported]; these were not discussed with the ESO. The software update had been
+    planned for 13 August [reported] and was implemented on 10 August [reported].

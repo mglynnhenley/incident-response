@@ -1,0 +1,160 @@
+DOCUMENT S11 — Essential services and infrastructure supply impact records, 9 August 2019
+Owner/originator: compiled from the National Grid ESO, Ofgem, E3C and ORR published accounts (DNO, Network
+Rail and service-provider statements as those reports give them); roles only, no individuals
+Record type: reconstructed impact records by service, each item restating one published account
+STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Reconstructed from published investigation
+material for this exercise; wording, layout and record structure are reconstructions.
+Clock reference: clock times are hh:mm as printed, with no clock labelled; read as BST (UTC+01:00) because
+ESO dates the event at 4:52pm. Durations are as each source states them.
+Value-status legend: [reported] value as stated in the named source; [estimated] value the source gives as
+approximate ("approximately", "c.", "~"); [measured], [modelled], [digitised] and [illustrative] not used.
+The two index entries of Part 7 are written for this record; the statement and article they index are not
+reproduced.
+
+PART 1 — RAIL AND TRANSPORT POWER SUPPLIES
+P01  ESO technical report (dated 6 September 2019), section 5.2: the DNOs confirmed that no track supplies
+     were lost due to the DNOs' LFDD protection operation. Through its investigation, Network Rail stated that
+     its supply disruption was likely to have been caused by supply interruption from the DNO networks, and is
+     to undertake discussions with the DNOs to explore this further.
+P02  ESO section 5.2: the built-in resilience of Network Rail's electrical power infrastructure meant traction
+     power was maintained to the vast majority of the railway throughout the incident; supply-related trips
+     occurred at two DC traction locations, which Network Rail is investigating further. Eight signal power
+     supplies, principally in rural locations, suffered minor outages with minimal passenger impact; Network
+     Rail is reviewing resilience at these locations with the DNOs.
+P03  ESO section 5.2: London Underground confirmed impacts on the Victoria Line, which was suspended as a
+     result of the event; service was restored at 17:35 [reported]. UKPN confirmed that LFDD did not affect
+     the Victoria line; the UKPN control room contacted London Underground, which confirmed that it did not
+     lose power supplies at any stations but had an internal traction issue.
+P04  ORR report (dated 3 January 2020), sections 1.0 and 2.4: there was a traction power outage on the Wirral
+     line of Merseyrail after rectifiers tripped when domestic supply was lost to LFDD, resulting in
+     428 minutes [reported] of delay; in other areas no traction power outage was reported.
+P05  ORR section 2.4: the substations at Tattenham and Chipstead experienced power quality issues, which
+     caused the protective devices for the traction rectifiers to operate, temporarily switching the power
+     off; the rectifiers were quickly reinstated, and traction power supply was maintained during this time.
+P06  ORR section 2.4: two DNO supply points were lost, at Chatham and Lewes; ORR states this is still under
+     investigation and may have been caused by LFDD.
+P07  ORR section 2.4: eight signalling power supplies were lost in rural locations fed by local DNO networks
+     that may have been affected by LFDD: Wye (Kent), Southease (Sussex), Norwood Fork (London), Trowbridge
+     (Wiltshire), Magor (Wales), Bangor (Wales), Croes Newydd (Wales) and Kirby Thore (Cumbria).
+     Investigations are ongoing into whether the power disruption led to the loss of these supplies.
+P08  ORR section 4.0 (conclusion): Network Rail's electrical system reacted well although some resilience
+     issues were identified; Network Rail has begun work to ensure adequate back-up supplies for non-traction
+     essential supplies where necessary and is working with the DNO to improve resilience.
+P09  Ofgem report (dated 3 January 2020), 2.8: the traction supplies to the Wirral line on Merseyrail were
+     disconnected as a result of SP Energy Networks' LFDD operations. Three Transport for London stations and
+     eight signalling sites at rural locations across England and Wales were also thought to have been
+     affected by LFDD operations, although traction supplies were unaffected.
+P10  E3C final report (January 2020), section 4: power supplies to the local Wirral Line were interrupted by
+     the LFDD scheme, causing a 428 minute [reported] delay for passengers. Three Transport for London
+     stations were disconnected as a result of LFDD operations; traction supplies to these sites were
+     maintained, with minimal impact on passengers.
+P11  E3C final report, section 4: eight rail signalling assets were affected, principally in rural locations
+     across England and Wales, with minimal customer impact; 2 [reported] were disconnected by the LFDD
+     scheme, with investigations ongoing into the cause for the remaining six. Two railway traction
+     substations in the South of England were disrupted by the drop in frequency; they automatically switched
+     to back-up generation with no impact on customer services.
+
+PART 2 — HOSPITALS
+H01  ESO section 5.3: Ipswich Hospital internal protection operated coincident with the timeframe of the
+     lightning strike. Time-stamped data from UKPN shows that the hospital's load reduced by half in a period
+     of 14 seconds [reported].
+H02  ESO section 5.3: UKPN confirmed that the hospital was not part of its LFDD protection zone and that LFDD
+     did not affect the substations supplying the hospital.
+H03  ESO executive summary: impacts on other critical facilities included Ipswich hospital, which lost power
+     due to the operation of its own protection systems.
+H04  E3C interim report: a DNO confirmed that two hospitals were affected by LFDD, with their back-up
+     generation working as designed. Another hospital was affected by the frequency fall and voltage excursion
+     despite not being disconnected by LFDD; this was due to incorrect protection settings on the hospital's
+     own network, which switched the site over to back-up generation, and one of its 11 [reported] generators
+     failed to operate.
+H05  E3C final report, section 4: four hospitals were impacted by the power outage; two were disconnected by
+     the LFDD scheme and a further two by their internal safety systems. All hospitals automatically switched
+     to back-up power supplies to ensure continued operation.
+H06  Ofgem 2.11: two hospitals were disconnected as part of the LFDD and their back-up generators were
+     activated; the E3C has reported that two other hospitals were disconnected by their own safety systems
+     but switched to back-up generation.
+
+PART 3 — AIRPORTS
+A01  ESO section 5.3: Newcastle Airport is connected to the NPG network. NPG confirmed that the airport was
+     disconnected as a result of the LFDD operation and that the LFDD scheme operated by NPG worked as
+     planned; NPG is nonetheless reviewing all LFDD allocations. As far as NPG is aware, no Protected Sites
+     under the Electricity Supply Emergency Code (ESEC) were affected by the incident.
+A02  ESO section 5.3: Newcastle International Airport lost supplies from the network for 18 minutes [reported]
+     between 16:53 [reported] and 17:11 [reported]. NPG indicated that the airport's Uninterruptable Power
+     Supply (UPS) and standby generator resilience arrangements for its essential services operated smoothly.
+A03  ESO section 5.3: on 12 August 2019 Northern Powergrid (Northeast) Limited received a request from
+     Newcastle International Airport to be categorised as a Protected Site under ESEC, and it has now been
+     registered as such.
+A04  ESO executive summary: Newcastle airport was disconnected by the Low Frequency Demand Disconnection
+     scheme.
+A05  E3C interim report: DNOs confirmed that two airports, one in the Midlands and one in the north of
+     England, were impacted. One was impacted as a result of LFDD stage 1 being automatically triggered; it
+     had its own standby generation for its safety-critical systems, and power was restored via the
+     distribution network after 17 minutes [reported]. The second, unaffected by LFDD, switched to back-up
+     power supplies without issue and was restored within a few minutes; a fault with its on-site internal
+     network meant that power to some services (check-in hall, central security search, hold baggage
+     screening, and some telephony and comms systems) was delayed for up to 50 minutes [reported].
+A06  E3C final report, section 4: Newcastle airport was disconnected from the electricity network following
+     the LFDD and used back-up generation. The second airport was not impacted by the LFDD but switched to
+     back-up power supplies and was restored within a few minutes; a fault with the on-site internal network
+     disrupted some services, such as the check-in hall, for ~50 minutes [estimated].
+A07  Ofgem 2.10: Newcastle airport was disconnected as part of LFDD; the E3C has reported that standby
+     generation was in place and power was restored within minutes at Newcastle airport, and that a second
+     airport switched to its back-up power supplies without issue although it was not affected by LFDD.
+
+PART 4 — WATER
+W01  E3C interim report: approximately 3,000 [estimated] people experienced water supply disruptions because
+     booster water pumping stations failed to switch over automatically to back-up power supplies. Some would
+     have had a temporary loss of running water at home, while others were unaffected because storage in the
+     system allowed running water to continue; the majority of customers were restored within
+     30 minutes [reported].
+W02  E3C final report, section 4: the water sector experienced minimal impacts. Two water treatment works were
+     disconnected, one through the LFDD scheme and one as a result of the company's internal safety systems.
+     One water company reported a reduction in water pressure to 3000 [reported] customers because booster
+     water pumping stations failed to switch automatically to back-up power; this was reduced to
+     c.180 [estimated] customers within 30 minutes [reported].
+W03  Ofgem 2.11: some water pumping stations were disconnected as part of the LFDD; the E3C has reported that
+     their back-up supplies were not connected automatically and, as a result, several thousand customers
+     experienced some disruption to their running water supply.
+
+PART 5 — OIL REFINERY, CHEMICALS AND GAS
+F01  E3C interim report: an oil refinery confirmed that it was disconnected as a result of the site's system,
+     which detected a drop in frequency and disconnected the plant to protect on-site equipment. The refinery
+     operations team used the site's emergency procedures and automated systems to shut down portions of the
+     plant safely; because restarting large process units is complex, it took a few weeks to restore normal
+     operations.
+F02  E3C final report, section 4: wider industry reported the disconnection of an oil refinery and a chemicals
+     manufacturing plant due to internal safety systems detecting the drop in frequency; to protect the assets
+     both plants safely shut down operations, and it took several weeks for the refinery to resume full
+     operations.
+F03  E3C interim report: the gas networks and transmission operator reported that they implemented their
+     response mitigation plans in a timely way.
+
+PART 6 — ATTRIBUTED ANNOTATIONS ON ESSENTIAL SERVICES (statements made after the event)
+N01  E3C final report, section 4: there is currently no agreed definition of what constitutes an essential
+     service in this context; the report uses the term for organisations that rely on electricity to provide
+     important daily services as well as critical industries, for example hospitals, airports, oil refineries
+     and rail services.
+N02  E3C final report, section 4: some essential services were disrupted by being disconnected directly
+     through the LFDD mechanism; others by their automatic safety systems reacting unexpectedly to the
+     frequency and voltage fluctuations, or by insufficient business continuity measures. Several sectors did
+     not resume operations for several days.
+N03  Ofgem 2.5: some essential service providers were directly disconnected as part of Stage 1 of the LFDD and
+     disrupted because their back-up power supply arrangements were not effective; other services were
+     affected indirectly because the providers' own safety systems were configured to disconnect automatically
+     when system frequency fell.
+N04  Ofgem 3.41 to 3.42: several essential service providers (such as hospitals and airports) were
+     disconnected as part of LFDD; the LFDD equipment does not operate at an individual site level, so
+     isolating particular sites is generally unfeasible. Ofgem states that disruptions at the sites of
+     essential service providers directly affected were generally caused by failures in their back-up power
+     arrangements, and that DNOs have significantly different approaches to evaluating which areas to
+     disconnect during Stage 1 of the LFDD.
+
+PART 7 — INDEX ENTRIES (written for this record; the indexed texts are not reproduced)
+X01  Public statement on the website of East Suffolk and North Essex NHS Foundation Trust, which runs Ipswich
+     Hospital, dated 10 August 2019 [reported]: it describes a minor on-site power problem at the hospital;
+     every standby generator operated, but one breaker serving outpatient services failed to, briefly
+     interrupting electricity to outpatient and x-ray areas; business-continuity plans were invoked and the
+     problem was resolved quickly, with other areas unaffected. The statement gives no times.
+X02  Trade-press news item dated 12 September 2019 [reported] (Hydrocarbon Processing, credited to Reuters):
+     it reports flaring at the Stanlow refinery when its grid electricity supply failed.

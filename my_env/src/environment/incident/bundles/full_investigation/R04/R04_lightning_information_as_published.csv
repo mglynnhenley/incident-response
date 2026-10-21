@@ -1,0 +1,33 @@
+published_in,field,value_as_printed,detail
+"ESO appendices, Appendix A, lightning forecasts table",update received,05:49hrs,"North West England, North East England, Midlands / Lincs"
+"ESO appendices, Appendix A, lightning forecasts table",update received,08:02hrs,"North West England, North East England, Midlands / Lincs, Southern Scotland"
+"ESO appendices, Appendix A, lightning forecasts table",update received,12:34hrs,"North West England, North East England, Midlands / Lincs, Southern Scotland, North Wales, South Wales"
+"ESO appendices, Appendix A, lightning forecasts table",update received,16:44hrs,"North West England, North East England, Midlands / Lincs, Southern Scotland, North Wales, South Wales, Northern Scotland, East Anglia, Central South England, South East England"
+"ESO technical report, Figure 4, popup 1",time_of_impact_printed,2019/08/09 15:52:33 UTC,
+"ESO technical report, Figure 4, popup 1",latitude_deg_N,51.9565,
+"ESO technical report, Figure 4, popup 1",longitude_deg_W,0.2184,
+"ESO technical report, Figure 4, popup 1",amplitude_kA,-5.7,
+"ESO technical report, Figure 4, popup 1",location_accuracy_km,0.11,
+"ESO technical report, Figure 4, popup 1",type,Cloud to ground,
+"ESO technical report, Figure 4, popup 2",time_of_impact_printed,2019/08/09 15:52:33 UTC,
+"ESO technical report, Figure 4, popup 2",latitude_deg_N,51.9563,
+"ESO technical report, Figure 4, popup 2",longitude_deg_W,0.2174,
+"ESO technical report, Figure 4, popup 2",amplitude_kA,-33.7,
+"ESO technical report, Figure 4, popup 2",location_accuracy_km,0.08,
+"ESO technical report, Figure 4, popup 2",type,Cloud to ground,
+"ESO technical report, Figure 4, popup 3",time_of_impact_printed,2019/08/09 15:52:33 UTC,
+"ESO technical report, Figure 4, popup 3",latitude_deg_N,51.9557,
+"ESO technical report, Figure 4, popup 3",longitude_deg_W,0.2196,
+"ESO technical report, Figure 4, popup 3",amplitude_kA,-3.5,
+"ESO technical report, Figure 4, popup 3",location_accuracy_km,0.12,
+"ESO technical report, Figure 4, popup 3",type,Cloud to ground,
+"NGET report (Appendix C), Figure 3.1.1",data_source_selector,LINET,
+"NGET report (Appendix C), Figure 3.1.1",date_selector,2019-08-09,
+"NGET report (Appendix C), Figure 3.1.1",start_time_selector,06:00,
+"NGET report (Appendix C), Figure 3.1.1",end_time_selector,24:00,
+"NGET report (Appendix C), Figure 3.1.1",number_of_impacts_in_view,4,
+"NGET report (Appendix C), Figure 3.1.1",time_of_impact,2019/08/09 15:52:33 UTC,
+"NGET report (Appendix C), Figure 3.1.1",popup_coordinates,"51.9557° N , 0.2196° W",
+"NGET report (Appendix C), Figure 3.1.1",amplitude,-3.5 kA,
+"NGET report (Appendix C), Figure 3.1.1",accuracy,0.12 km,
+"NGET report (Appendix C), Figure 3.1.1",type,Cloud to ground,

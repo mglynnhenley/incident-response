@@ -1,0 +1,897 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L38"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L89-L90"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33+01:00",
+      "finding_id": "F01",
+      "statement": "A single blue-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit started at 16:52:33.490 BST, about 4.5 km from Wymondley Main. MeteoGroup recorded three almost simultaneous lightning strikes near the circuit at 16:52:33, the largest 33.7 kA, and NGET attributes the fault to lightning.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L48"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L105-L107"
+        }
+      ],
+      "finding_id": "F02",
+      "quantity": {
+        "basis": "reported slower-end clearance time",
+        "unit": "ms",
+        "value": 74
+      },
+      "statement": "Main protection cleared the fault in 70 ms at Wymondley Main and 74 ms at Eaton Socon, inside the 80 ms required at 400 kV under CC.6.2.3.1.1. NGET and Ofgem assess that the transmission assets performed as expected.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L53"
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L80-L83"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:53+01:00",
+      "finding_id": "F03",
+      "statement": "The circuit was re-energised by delayed auto-reclose at 16:52:53 BST, about 20 s after the fault. No defects were found at the substations or on the 10 August line inspection.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L68-L77"
+        },
+        {
+          "evidence_id": "S10",
+          "locator": "L176-L179"
+        }
+      ],
+      "finding_id": "F04",
+      "statement": "No compliance concern is raised against NGET: clearance times and post-fault voltages were within the cited limits. Two other lightning trips that day, Harker–Stella West and Blyth–Eccles–Stella West, reclosed with no losses, although the record gives two different times for the Blyth trip.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L34-L44"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L56-L64"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L17-L18"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:33+01:00",
+      "finding_id": "F05",
+      "quantity": {
+        "basis": "reported (ESO Table 2)",
+        "unit": "MW",
+        "value": 737
+      },
+      "statement": "Hornsea 1B and 1C de-loaded between 16:52:33.728 and 16:52:33.835 BST (the log shows 15:52Z), leaving 1A at 62 MW: a 737 MW loss as reported by the ESO and Ofgem. Ørsted attributes it to the wind farm control system responding to an insufficiently damped sub-synchronous resonance triggered by the fault, which led to overcurrent protection on the turbines.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L6-L9"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L21-L37"
+        }
+      ],
+      "finding_id": "F06",
+      "quantity": {
+        "basis": "reported sum of the three units",
+        "unit": "MW",
+        "value": 641
+      },
+      "statement": "At Little Barford, ST1C tripped about 1.16 s after datum T (T = 16:52:34 ± 0.5 s, clock not stated, read as BST), losing 244 MW. GT1A tripped automatically at T + 57.6 s (210 MW) and GT1B was tripped manually at T + 84.6 s (187 MW), a station total of 641 MW. All figures are reported.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L68-L76"
+        },
+        {
+          "evidence_id": "S10",
+          "locator": "L126-L142"
+        }
+      ],
+      "finding_id": "F07",
+      "statement": "Ørsted had identified voltage-control issues at 1,200 MW in modelling but did not discuss them with the ESO. A damped oscillation occurred about 10 minutes before the event. A software fix planned for 13 August was applied on 10 August. Hornsea acknowledges it did not meet the fault ride through requirement (CC.6.3.15.1) or the voltage-control oscillation requirement (CC.A.7.2.5.2).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S06",
+          "locator": "L20-L21"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L46-L49"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L86-L93"
+        }
+      ],
+      "finding_id": "F08",
+      "quantity": {
+        "basis": "estimated (ESO)",
+        "unit": "MW",
+        "value": 500
+      },
+      "statement": "The ESO estimates about 150 MW of embedded generation tripped on vector-shift protection at the fault and about 350 MW on RoCoF protection at about 16:52:34 (430 MW in its model). These figures are inferred from about 500 MW of increased transformer loadings, not measured. The DNOs' combined return was 462 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T16:52:36+01:00"
+        },
+        {
+          "evidence_id": "R10",
+          "locator": "L53-L54"
+        }
+      ],
+      "derivation": "49.921 - 49.770 Hz between rows 755 and 756",
+      "finding_id": "F09",
+      "quantity": {
+        "basis": "difference of consecutive 1 s samples",
+        "unit": "Hz/s",
+        "value": 0.151
+      },
+      "statement": "The 1-s frequency record shows a fall of 0.151 Hz between 16:52:34 and 16:52:35, which exceeds the 0.125 Hz/s RoCoF setting. This is consistent with RoCoF loss-of-mains trips, although 1-s differencing cannot resolve the instantaneous RoCoF.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L21"
+        },
+        {
+          "evidence_id": "R06",
+          "locator": "L20"
+        }
+      ],
+      "finding_id": "F10",
+      "quantity": {
+        "basis": "reported cumulative (ESO Table 2)",
+        "unit": "MW",
+        "value": 1481
+      },
+      "statement": "The losses in the first second, on the ESO's cumulative basis of Hornsea, ST1C, vector shift and RoCoF, totalled 1,481 MW, against a secured loss of 1,000 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L22-L33"
+        }
+      ],
+      "finding_id": "F11",
+      "quantity": {
+        "basis": "reported, ESO cumulative over the whole event",
+        "unit": "MW",
+        "value": 1878
+      },
+      "statement": "The ESO's cumulative total including GT1A and GT1B is 1,878 MW. ESO Appendix H counts the secured-event losses as 1,528 MW (737 + 641 + 150), plus about 350 MW of RoCoF trips.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L34-L46"
+        }
+      ],
+      "finding_id": "F12",
+      "quantity": {
+        "basis": "reported (Ofgem, net of some demand)",
+        "unit": "MW",
+        "value": 1990
+      },
+      "statement": "Other totals: Ofgem gives at least 1,990 MW cumulative, including a 200 MW net loss at 49 Hz. The E3C gives about 2,100 MW (interim) and at least 2,000 MW (final).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S06",
+          "locator": "L72-L74"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L98-L103"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L112-L120"
+        }
+      ],
+      "finding_id": "F13",
+      "quantity": {
+        "basis": "estimated lower bound (Ofgem/E3C)",
+        "unit": "MW",
+        "value": 1300
+      },
+      "statement": "Ofgem and the E3C estimate total embedded-generation loss across the event at 1,300–1,500 MW. This includes about 550 MW (Ofgem; 581 MW modelled by the ESO) lost when LFDD operated, leaving a net demand reduction of only about 350 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:33+01:00/2019-08-09T16:53:30+01:00"
+        }
+      ],
+      "derivation": "minimum of R01 samples 16:52:33-16:53:29",
+      "event_time": "2019-08-09T16:52:59+01:00",
+      "finding_id": "F14",
+      "quantity": {
+        "basis": "minimum 1 s sample, rows 754-811",
+        "unit": "Hz",
+        "value": 49.083
+      },
+      "statement": "The measured frequency was about 50.0 Hz before the event and fell to a first minimum of 49.083 Hz at 16:52:59 BST. It recovered to about 49.27 Hz by 16:53:17 and fell again after GT1A tripped.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "row:830"
+        }
+      ],
+      "derivation": "minimum of the R01 series after 16:52:33",
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F15",
+      "quantity": {
+        "basis": "minimum 1 s sample",
+        "unit": "Hz",
+        "value": 48.787
+      },
+      "statement": "The overall minimum in the measured record was 48.787 Hz at 16:53:49 BST (row 830). Reports round this to 48.8 Hz.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "rows:822-854"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L128-L130"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L15-L17"
+        }
+      ],
+      "derivation": "count of samples with f < 49.0 Hz; the run is contiguous",
+      "finding_id": "F16",
+      "quantity": {
+        "basis": "count of 1 s samples < 49.0 Hz",
+        "unit": "s",
+        "value": 33
+      },
+      "statement": "Frequency was below 49.0 Hz in 33 consecutive 1-s samples, from 16:53:41 to 16:54:13 BST, i.e. about 33 s (±1 s from the sampling). This matches ORR's approximately 33 s and contradicts GTR's 16 s. The minima between samples are not resolved.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "row:1037"
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "row:901"
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L34-L36"
+        }
+      ],
+      "derivation": "first sample >= 50.000 Hz after 16:53:49",
+      "event_time": "2019-08-09T16:57:16+01:00",
+      "finding_id": "F17",
+      "statement": "After the minimum, frequency first reached 50 Hz at 16:57:16 BST (50.001 Hz, row 1037), about 3 min 27 s after the minimum. The ESO gives 16:57:15. Frequency regained 49.5 Hz at 16:55:00 and later overshot to 50.248 Hz at 17:00:42.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L18-L31"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L144-L145"
+        }
+      ],
+      "finding_id": "F18",
+      "quantity": {
+        "basis": "reported primary holding",
+        "unit": "MW",
+        "value": 1022
+      },
+      "statement": "The ESO was securing for a 1,000 MW loss and held 1,022 MW of primary and 1,314 MW of secondary low-frequency response (Table 3). Its earlier answer gives 1,338 MW of secondary.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L34-L53"
+        },
+        {
+          "evidence_id": "R06",
+          "locator": "L92"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L104-L107"
+        }
+      ],
+      "finding_id": "F19",
+      "statement": "Of the validated holding, 89% of primary (841 MW) and 88% of secondary (1,055 MW) performed as expected. About 1,090 MW was delivered within 30 s, excluding the demand effect. Ofgem reports under-delivery of 17% (primary) and 14% (secondary), and about 25% for mandatory and FFR providers.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R02",
+          "locator": "L191-L207"
+        },
+        {
+          "evidence_id": "R02",
+          "locator": "L171"
+        }
+      ],
+      "finding_id": "F20",
+      "statement": "Inertia was not measured but estimated: 210 GVA.s in ESO Table 4 and 219,632 MVA.s immediately before the trip in ESO answer 42. The NESO dataset gives 206 for period 36 (no unit stated).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L100-L112"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L108-L109"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L24"
+        }
+      ],
+      "finding_id": "F21",
+      "statement": "The losses of about 1,481 MW in the first second, and 1,878 MW or more in total, exceeded the 1,000 MW secured and the response held. Recovery depended on LFDD and on 1,240 MW of control-room actions (STOR, Dinorwig/Ffestiniog, Coryton, Carrington). Ofgem judged that better response delivery would not have prevented demand disconnection.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L84-L90"
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L28-L40"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L122"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "F22",
+      "quantity": {
+        "basis": "reported DCI volume (unit not stated)",
+        "unit": "MW",
+        "value": 931
+      },
+      "statement": "Stage 1 LFDD (48.8 Hz trigger) operated as frequency reached its minimum at about 16:53:49 BST. The Elexon DCI record shows a 931 MW demand control event from 15:54Z to 16:40Z (16:54–17:40 BST).",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R07",
+          "locator": "L67-L85"
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L100-L113"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L137-L139"
+        }
+      ],
+      "finding_id": "F23",
+      "statement": "Demand disconnected by LFDD: 931 MW and 1,152,878 customers (ESO Table 6, DNO data as of 13 August; 3.2% of 29 GW). The E3C table totals 973 MW, with WPD West Midlands at 190 MW and WPD South West at 12 MW. Ofgem gives 892 MW of net demand. The ESO says LFDD provided slightly under the 5% stage-1 design.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L43-L47"
+        },
+        {
+          "evidence_id": "R08",
+          "locator": "L16-L19"
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L74-L77"
+        }
+      ],
+      "event_time": "2019-08-09T16:58:00+01:00",
+      "finding_id": "F24",
+      "statement": "The ESO received the first DNO report at 16:56 BST. It began instructing restoration at 16:58 (UKPN LPN) and had issued all instructions by 17:16. The earlier ESO account gives 17:00–17:19.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L39-L40"
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L118-L119"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L355-L360"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L451-L452"
+        }
+      ],
+      "event_time": "2019-08-09T17:37:00+01:00",
+      "finding_id": "F25",
+      "statement": "Disconnected demand was restored by 17:37 BST according to ESO Tables 6 and 7, with the earliest area at 17:07. Other ESO sources give about 17:40 and 'by 18:30' (statement of 9 August, 8pm), and GOV.UK says 'within 90 minutes'. This is the restoration of demand, separate from the recovery of other services.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L113-L116"
+        },
+        {
+          "evidence_id": "S10",
+          "locator": "L160-L175"
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L81"
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-UKPN-02"
+        }
+      ],
+      "finding_id": "F26",
+      "statement": "Under OC6.6 DNOs may not restore LFDD demand without ESO instruction. UKPN's EPN and SPN reconnected sites before instruction and acknowledge they did not technically meet OC6.6.4; ESO Table 6 shows UKPN Eastern fully restored at 16:56, before the EPN instruction at 17:14. SP Distribution disconnected 22 MW because of a wrong setting. This is a demonstrated, acknowledged non-conformity, but the feeder-level times are not held.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L19-L21"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L44-L55"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L86-L88"
+        }
+      ],
+      "finding_id": "F27",
+      "statement": "GTR's Class 700 and 717 trains shut down their 4QC converter protectively when supply frequency fell below 49 Hz (Siemens designed to EN 50163's 49 Hz note, although the specification claimed operation down to 48.5 Hz). Traction power was not lost.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L22-L39"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L62-L66"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L120-L127"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L222-L227"
+        }
+      ],
+      "finding_id": "F28",
+      "statement": "Units on TCMS software 3.27 went into a permanent lockout that a battery reset could not clear, so a technician with a laptop was needed. Counts differ: GTR says about 60 shut down, 27/28 were recovered by drivers and about 30 needed technicians; ORR and Ofgem say 29 locked out (22 permanent, 7 reset), with 31 trains stranded and 30 evacuated. GTR reports 23 evacuations.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L103-L106"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L155-L165"
+        },
+        {
+          "evidence_id": "R11",
+          "locator": "L27-L31"
+        }
+      ],
+      "finding_id": "F29",
+      "statement": "Reported scale of rail disruption: 371 trains cancelled, 220 part-cancelled and 873 delayed, with 14,428 delay minutes (ORR, from Network Rail's daily report). St Pancras and King's Cross closed for hours. Separately, my count of Network Rail TRUST records for 31 selected incidents gives 10,033 delay minutes on GTR Class 700 incidents and 8,248 on 'National Grid' incidents.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R09",
+          "locator": "L369-L382"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L152-L154"
+        },
+        {
+          "evidence_id": "S08",
+          "locator": "L239-L242"
+        }
+      ],
+      "finding_id": "F30",
+      "statement": "Rail recovery: Thameslink ran no service north of London for the rest of 9 August, disruption continued into 10 August because trains and crews were out of position, and ORR reports full service restored within 24 hours. The E3C says delays extended into 11 August.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L24-L30"
+        },
+        {
+          "evidence_id": "S11",
+          "locator": "L47-L55"
+        }
+      ],
+      "finding_id": "F31",
+      "statement": "Other rail and transport effects: Merseyrail Wirral line traction was lost through SP's LFDD (428 delay minutes); eight rural signalling supplies were lost (two through LFDD, six under investigation); the Victoria line was suspended by an internal traction issue and restored at 17:35.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L58-L75"
+        },
+        {
+          "evidence_id": "S11",
+          "locator": "L154-L158"
+        }
+      ],
+      "finding_id": "F32",
+      "statement": "Hospitals: two were disconnected by LFDD and two by their own protection, and all switched to back-up. At Ipswich Hospital (not in an LFDD zone) internal protection operated and one breaker or generator failed. Accounts differ (ESO, E3C, Trust) and no site electrical records are held.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L82-L100"
+        },
+        {
+          "evidence_id": "S11",
+          "locator": "L106-L129"
+        },
+        {
+          "evidence_id": "R10",
+          "locator": "L205-L211"
+        }
+      ],
+      "finding_id": "F33",
+      "statement": "Newcastle Airport was disconnected by LFDD from 16:53 to 17:11 (18 min, NPG/ESO) and registered as an ESEC Protected Site on 12 August. A second airport had a fault on its internal network lasting up to about 50 min. About 3,000 water customers were affected when booster pumps failed to switch to back-up. A refinery took weeks to restore operations. The Grid Code gives essential services no LFDD protection.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R09",
+          "locator": "L27-L35"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L43-L54"
+        }
+      ],
+      "finding_id": "F34",
+      "statement": "The ESO's first contact with BEIS was at 17:41 BST (section 6.2), or 17:40 (section 7). The first contact with Ofgem was at 17:51 (section 6.2), 18:00 (section 7) or 'just after 18:00' (answer 34). The ENCC reported to the Head of National Control at 17:10. ESO procedure calls for notification as soon as possible.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R09",
+          "locator": "L293-L295"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L325-L327"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L98-L114"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L134-L135"
+        }
+      ],
+      "event_time": "2019-08-09T18:27:46+01:00",
+      "finding_id": "F35",
+      "statement": "The ESO's first public statement was posted at 17:27:46Z (18:27 BST), once DNOs had reconnected customers. UKPN posted at 16:08:14Z (17:08 BST), attributing the cause to National Grid, before any ESO communication and without coordination. The E3C says generators received no communication about system conditions.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R09",
+          "locator": "L136-L140"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L197-L198"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L237-L238"
+        }
+      ],
+      "finding_id": "F36",
+      "statement": "Hornsea did not notify the ESO directly of its 737 MW de-load and restarted modules without coordinating with the ESO. Its REMIT unplanned-outage message was published at 16:18Z (17:18 BST). Little Barford's REMIT gives an event start of 15:57:40Z, which does not match the trip at about 15:52:34Z.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L43-L57"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L80-L81"
+        }
+      ],
+      "finding_id": "F37",
+      "statement": "Hornsea was operating under interim notifications with tests outstanding: the M1 frequency test was dated 9 August and 100% capacity tests were pending. Its internal configuration, with one SGT and one OTSUA circuit on outage, created a weak network that Ørsted calls a contributory factor.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L98-L119"
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L100-L103"
+        }
+      ],
+      "finding_id": "F38",
+      "statement": "Ofgem found no evidence that the ESO breached the Grid Code. However, its compliance checks relied on self-certification, it allowed reconnection before root causes were known, and its processes for distributed-generation impacts are not robust. These are process concerns, not demonstrated non-compliance.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L42-L54"
+        },
+        {
+          "evidence_id": "S10",
+          "locator": "L146-L154"
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-RWE-03"
+        }
+      ],
+      "finding_id": "F39",
+      "statement": "The root cause of the speed-signal discrepancy on the Little Barford steam turbine, and of the GT1A and GT1B bypass high-pressure excursions, is not established. RWE says 'for reasons presently unknown'. Ofgem's preliminary view links the steam turbine trip to the network fault. RWE acknowledges it contributed. No instrumentation and control records are held.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S06",
+          "locator": "L29-L41"
+        }
+      ],
+      "finding_id": "F40",
+      "statement": "Embedded-generation volumes and causes cannot be established with confidence: DNOs record mostly half-hourly data, there is no real-time telemetry, and ESO estimates could not be validated.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L76-L85"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L58-L61"
+        }
+      ],
+      "finding_id": "F41",
+      "statement": "The sources of the roughly 100 MW drift over 30 s and of the 200 MW net loss at 49 Hz are unresolved. The ESO models the drift as a fleet-wide reduction, while the E3C attributes it to embedded generation 'cause unknown'.",
+      "status": "unknown"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L109-L113"
+        }
+      ],
+      "finding_id": "F42",
+      "statement": "Recommendation (highest priority): Ørsted and RWE should close their root-cause investigations, with controller and instrumentation logs and revalidated models accepted by the ESO before FON and full-capacity export.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L100-L103"
+        },
+        {
+          "evidence_id": "R10",
+          "locator": "L41-L44"
+        }
+      ],
+      "finding_id": "F43",
+      "statement": "Recommendation: the ESO should review its security policy for coincident losses of embedded generation (vector shift and RoCoF) with transmission faults, given the thin margin and the sensitivity identified by Ofgem.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L180-L184"
+        },
+        {
+          "evidence_id": "R10",
+          "locator": "L124-L128"
+        }
+      ],
+      "finding_id": "F44",
+      "statement": "Recommendation: the DNOs should accelerate the loss-of-mains protection programme and the checks of 2014 RoCoF settings, given Ofgem's concern that some settings were not changed.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L74-L82"
+        },
+        {
+          "evidence_id": "R09",
+          "locator": "L101-L104"
+        }
+      ],
+      "finding_id": "F45",
+      "statement": "Recommendation: GTR and Siemens should deploy the patch that lets trains recover automatically once frequency is back above 49.5 Hz, and the industry should coordinate public communications with the ESO.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L217-L219"
+        }
+      ],
+      "finding_id": "F46",
+      "statement": "ORR found no non-compliance with the Railways (Interoperability) Regulations; the train behaviour is treated as lessons learned.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R09",
+          "locator": "L434-L435"
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L78-L79"
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L55-L60"
+        }
+      ],
+      "finding_id": "F47",
+      "statement": "Explanations ruled out by their owners: wind variability (ESO via BEIS), the Hornsea DRC (Ørsted concluded it worked as designed), and the Little Barford UPS alarms (RWE no longer believes they caused the trip, though the UPS changeover characteristic is still under investigation).",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "Times are BST (UTC+01:00) unless marked Z. At 16:52:33.490 lightning caused a blue-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit. It was cleared in 70–74 ms, inside the 80 ms Grid Code limit, and the circuit reclosed on DAR about 20 s later. NGET's records show the protection performed as required [F01, F02, F03].\n\nWithin about one second, Hornsea One de-loaded 737 MW and Little Barford's steam turbine tripped (244 MW). The ESO estimates about 150 MW of embedded generation tripped on vector-shift protection and about 350 MW on RoCoF (430 MW modelled). On the ESO's basis that is 1,481 MW, against 1,000 MW secured [F05, F06, F08, F09, F10]. GT1A (210 MW) and GT1B (187 MW) followed, giving the ESO's cumulative 1,878 MW. Other sources give other totals: ESO Appendix H 1,528 MW of secured-event losses; Ofgem at least 1,990 MW; E3C about 2,100 MW (interim) and at least 2,000 MW (final). Ofgem and E3C put embedded-generation loss at 1,300–1,500 MW [F11, F12, F13].\n\nIn the 1-s measured record, frequency first bottomed at 49.083 Hz (16:52:59), then reached 48.787 Hz at 16:53:49. It was below 49 Hz for about 33 s and first reached 50 Hz at 16:57:16 [F14, F15, F16, F17]. The ESO held 1,022 MW primary and 1,314 MW secondary response, delivered about 1,090 MW in 30 s, and took 1,240 MW of control-room actions. Ofgem judged that better response delivery would not have prevented demand disconnection [F18, F19, F20, F21].\n\nStage 1 of low-frequency demand disconnection (LFDD) operated at 48.8 Hz. The DNOs reported 931 MW and 1,152,878 customers (ESO). The E3C table totals 973 MW and Ofgem gives 892 MW net [F22, F23]. The ESO instructed restoration from 16:58 to 17:16. Demand was back by 17:37 by the ESO's account; other accounts give 17:40, 18:30 and 'within 90 minutes'. UKPN's EPN and SPN areas reconnected before instruction, which they acknowledge [F24, F25, F26].\n\nAbout 60 GTR Class 700/717 trains shut down below 49 Hz. Units on TCMS software 3.27 locked out permanently and needed a technician. Reported counts differ (GTR, ORR, Ofgem). Reported disruption was 371 cancelled, 220 part-cancelled and 873 delayed trains, with full service back within 24 h [F27, F28, F29, F30]. Hospitals, Newcastle Airport, water pumping, Merseyrail and a refinery were affected, some through LFDD and some through their own protection [F31, F32, F33]. The ESO contacted BEIS at 17:40/17:41 and made its first public statement at 18:27. DNO posts blaming National Grid appeared from 17:08. Hornsea did not notify the ESO of its de-load [F34, F35, F36].\n\nEstablished contributing factors: Hornsea's insufficiently damped control response (acknowledged non-compliance), coincident losses beyond the single-loss security basis, loss-of-mains protection settings, and the train software [F07, F37, F38]. Unknown: the root causes of the Little Barford trips, the 100 MW drift, the trips at 49 Hz, and the exact embedded-generation volumes [F39, F40, F41].\n\nRecommended actions, in priority order: (1) Ørsted and RWE to close root causes; (2) ESO to review its security policy and compliance checks; (3) DNOs to accelerate the loss-of-mains protection changes and improve monitoring; (4) UKPN to fix its reconnection systems; (5) GTR and Siemens to deploy the recovery patch; (6) parties to coordinate communications [F42, F43, F44, F45].",
+    "sections": [
+      {
+        "body": "Clock basis: BST (UTC+01:00) throughout. Times printed in reports without a zone are read as BST because the ESO dates the event 4:52pm. Elexon, REMIT and decoded social-post times are UTC (Z), and I added 1 h to convert them. R01 is native BST (+01:00).\n\n- 16:52:33.490: lightning fault on the Eaton Socon–Wymondley circuit. It was cleared at .560 and .564, and the circuit reclosed on DAR at 16:52:53 [F01, F02, F03].\n- 16:52:33.728–.835: Hornsea 1B/1C de-load 737 MW. The S01 log is in UTC, 15:52Z [F05].\n- About 16:52:34: Little Barford ST1C trips (244 MW). The station's datum T = 16:52:34 ± 0.5 s, on an unstated clock. Embedded-generation loss-of-mains trips occur at about the same time [F06, F08].\n- 16:52:59: first frequency minimum of 49.083 Hz (R01). The ESO prints 49.1 Hz at 16:52:58 [F14].\n- About 16:53:31: GT1A trips (T + 57.62 s) [F06].\n- 16:53:41–16:54:13: frequency below 49 Hz. 16:53:49: minimum of 48.787 Hz, and stage 1 LFDD operates [F15, F16, F22].\n- About 16:53:58: GT1B tripped manually (T + 84.6 s) [F06].\n- 16:57:16: frequency first reaches 50 Hz. The ESO gives 16:57:15 [F17].\n- 16:56: first DNO report to the ESO. 16:58–17:16: restoration instructions issued. 17:37: restoration complete (ESO) [F24, F25].\n- 17:40/17:41: ESO contacts BEIS. 17:51 or 18:00: ESO contacts Ofgem. 18:27: first ESO public statement [F34, F35].\n- 10 August: Hornsea software update. Rail services normal within 24 h [F07, F30].",
+        "heading": "Chronology"
+      },
+      {
+        "body": "- **Initiating event and protection:** [F01, F02, F03, F04].\n- **Generation losses and their mechanisms:** [F05, F06, F07, F08, F09, F10].\n- **Totals on each accounting basis:** [F11, F12, F13].\n- **Frequency:** [F14, F15, F16, F17].\n- **Containment and recovery:** [F18, F19, F20, F21].\n- **LFDD and restoration:** [F22, F23, F24, F25, F26].\n- **Compliance:** [F04, F07, F26, F37, F38, F46].\n- **Explanations ruled out or not ruled out:** wind variability was not a cause (BEIS/ESO statement); the Hornsea DRC was initially suspected and then cleared by Ørsted; RWE no longer believes the UPS alarms caused the trip [F47].",
+        "heading": "Findings"
+      },
+      {
+        "body": "- **Rail:** [F27, F28, F29, F30].\n- **Essential services:** [F31, F32, F33].\n- **Communications:** [F34, F35, F36]. These are coordination problems and are kept separate from the causes of the disturbance.",
+        "heading": "Consequences"
+      },
+      {
+        "body": "**Disagreements between sources:**\n- Generation totals: ESO, Ofgem and E3C [F11, F12, F13].\n- LFDD volume: 931 vs 973 vs 892 MW [F23].\n- Restoration time: 17:37, 17:40, 18:30 [F25].\n- Train counts and the time below 49 Hz: 16 s per GTR vs about 33 s per ORR and R01 [F28, F29].\n- Inertia: 210 GVA.s vs 219,632 MVA.s [F20].\n- BEIS and Ofgem contact times [F34].\n\n**Limits of measurement:** R01 is sampled at 1 s, so sub-second minima and RoCoF are not resolved [F14, F16]. No embedded generation is metered in real time [F40]. The Little Barford SOE clock is not aligned with the ESO's [F06].\n\n**Unresolved causes:** the Little Barford speed-signal discrepancy and bypass-pressure excursions [F39]; the 100 MW drift and the 49 Hz trips [F41]; the volume of embedded generation lost at the LFDD stage [F13].",
+        "heading": "Uncertainties"
+      },
+      {
+        "body": "1. **Ørsted** to provide controller logs and model revalidation to the ESO. Verify through ESO acceptance of the revalidated models and FON tests [F05, F07, F37].\n2. **RWE** to report the root causes found by the bypass inspection and ST speed-sensor investigation. Verify with the inspection report and OEM test results [F06, F39].\n3. **ESO** to review its security policy for coincident embedded-generation and transmission losses, and to strengthen compliance verification. Verify through a published policy change and audit [F11, F21, F38].\n4. **DNOs and the Distribution Code administrator** to complete the loss-of-mains protection changes and provide sub-half-hourly embedded-generation data. Verify through programme completion statistics [F08, F40].\n5. **UKPN** to correct the system configuration that allowed automatic reconnection. Verify through a test witnessed by the ESO [F26].\n6. **Siemens and GTR** to roll out the auto-recovery patch and consider ride-through to 48.5 Hz. Verify through fleet software records [F28].\n7. **Essential-service operators** to test their back-up supplies. Verify with test records [F31, F32, F33].\n8. **ESO, DNOs and rail operators** to agree joint communication protocols. Verify by exercise [F35, F36].",
+        "heading": "Recommendations"
+      },
+      {
+        "body": "**Requests:**\n- **Ørsted:** turbine-controller logs (not held) [F07].\n- **RWE:** plant instrumentation and control records (not held) [F39].\n- **DNOs:** feeder-level LFDD relay logs (not held) and reconnection switching records [F22, F26].\n- **DNOs:** real-time embedded-generation telemetry [F40].\n- **ESO:** PMU/WAMS traces to resolve sub-second frequency and RoCoF [F16].\n- **ESO:** control-room communications log, to confirm the BEIS and Ofgem contact times [F34].\n- **GTR:** on-board TCMS logs [F28].\n\n**Notification and coordination required by the evidence:**\n- Grid Code OC6.6: DNOs must notify the ESO of LFDD operation and must not restore without its instruction [F26].\n- ESO procedure: notify Ofgem and BEIS as soon as possible [F34].\n- Generators must notify the ESO of changes affecting compliance [F37].",
+        "heading": "Further evidence requests"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

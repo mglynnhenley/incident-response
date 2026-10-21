@@ -1,0 +1,110 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-GTR-01",
+      "response_text": "All our Desiro City Class 700 and 717 units operating on AC suffered a Protective Shutdown: the converter known as the 4QC (4 Quadrant Controller) shut down. In passenger service that was circa 60 [estimated] units, Class 700 FLU/RLUs and Class 717. None of our other AC trains, for example Class 387, Class 365 or Class 313, had power-related issues from the event.",
+      "topics": [
+        "units affected",
+        "protective shutdown",
+        "4QC",
+        "fleet affected"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-02",
+      "response_text": "With the 4QC shut down the train switches to battery power: no traction power, loss of HVAC apart from fan-only fresh air, reduced standby lighting, no at-seat power and no PIS displays, with audio only from the cab. The GSM-R radio stays active.",
+      "topics": [
+        "train condition after shutdown",
+        "battery power",
+        "onboard systems"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-03",
+      "response_text": "After failed attempts to repower the trains, the established first response is a driver reboot known as a Battery Reset, which takes approximately 10 minutes [estimated]. Fleet Control diagnosed the issue quickly and a global GSM-R call told drivers to carry out the Battery Reset. After this, 27 [reported] of the affected units were recovered.",
+      "topics": [
+        "battery reset",
+        "driver reset",
+        "recovery by drivers"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-04",
+      "response_text": "The remaining circa 30 [estimated] units needed a technician with a laptop to attend each one to unlock the Protective Shutdown; our review also states that 30 [reported] trains were not recoverable by Battery Reset. 17 [reported] technicians were available and were sent immediately, and a further 24 [reported] were mobilised within the next hour. The trains were widely spread and some were not easily accessible, so this took some time and resulted in 23 [reported] train evacuations.",
+      "topics": [
+        "technician resets",
+        "technicians",
+        "laptop recovery",
+        "evacuations"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-05",
+      "response_text": "The new TCMS software version 3.27 removed the driver's ability to recover from a Permanent Lockout by Battery Reset. On 9 August every unit that needed a technician to recover power was at software level 3.27 or above; the 28 [reported] units the drivers recovered by Battery Reset were at the previous level, 3.25 or below. The fleet was undergoing that software change at the time.",
+      "topics": [
+        "software versions",
+        "TCMS software",
+        "software change"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-06",
+      "response_text": "Siemens advised that the train's supply frequency response was designed to comply with EN 50163 Clause 4.2 Note 2, which permits the drives to disconnect at 49 Hz [reported], so the train shut its drives down when the supply fell below 49 Hz [reported]. The Siemens technical specification says the train will keep operating with drops down to 48.5 Hz [reported] for short periods, and NR/GN/ELP/27010 identifies that the supply can fall to 48.5 Hz [reported] in extreme conditions.",
+      "topics": [
+        "frequency threshold",
+        "design threshold",
+        "train specification"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-07",
+      "response_text": "Siemens clarified that a supply frequency drop should not have led to a Permanent Lockout; all trains should have been recoverable by Battery Reset. It was not how the train system had been specified to operate, and the risk was not known before the power event on Friday 9 August.",
+      "topics": [
+        "design intent",
+        "intended behaviour",
+        "why the lockout happened"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-08",
+      "response_text": "Our review records that, from information supplied by the National Grid at 1653, the frequency of the OLE AC supply dropped below 49 Hz [reported] for 16 seconds [reported], and below 48.89 Hz [reported] to a minimum of 48.8 Hz [reported] for milliseconds. There was no identified OLE AC supply interruption.",
+      "topics": [
+        "supply frequency information",
+        "information from National Grid",
+        "OLE supply"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-09",
+      "response_text": "Siemens are developing a patch so that units which shut down below 49 Hz [reported] recover by themselves, without a reboot or laptop, when the frequency rises above 49.5 Hz [reported], and will investigate how the train could operate for a short time with the supply falling to 48.5 Hz [reported]. Siemens and GTR do not propose reverting units to earlier software versions, because of concerns that this could severely affect unit availability.",
+      "topics": [
+        "mitigation",
+        "software patch",
+        "changes after the event"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-10",
+      "response_text": "ORR's report, which summarises its engagement with Ofgem, Network Rail, GTR and Siemens, states that 29 [reported] trains were locked out, of which 22 [reported] needed a technician and 7 [reported] were restored by driver reset; that two Class 387 trains were also trapped; and that 18 [reported] technicians were sent immediately. It describes the protection as operating within 200 ms [reported] of the frequency falling to 49.0 Hz [reported].",
+      "topics": [
+        "ORR figures",
+        "regulator's report",
+        "ORR published counts"
+      ]
+    },
+    {
+      "response_id": "S09-GTR-11",
+      "response_text": "ORR describes the units on software 3.25.x as going into a temporary lock-out that drivers could clear with a battery reset, and the units on 3.27.x as going into a permanent lock-out that needed a technician. Siemens brought in the permanent lock-out in 3.27.x so that a battery reset could not clear a lock-out imposed for a serious fault; detection of a low power supply frequency was among the trigger conditions selected.",
+      "topics": [
+        "lock-out types",
+        "lock-out recovery"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "Govia Thameslink Railway (GTR)",
+  "persona_id": "gtr-fleet-engineer",
+  "role": "Fleet engineer, Govia Thameslink Railway (GTR) fleet control",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — that is not covered by the GTR fleet records I can speak to."
+}

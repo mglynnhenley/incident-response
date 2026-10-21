@@ -1,0 +1,45 @@
+{
+  "blocks": [
+    {
+      "response_id": "S09-HOSP-01",
+      "response_text": "The ESO's report says Ipswich Hospital's internal protection operated coincident with the timeframe of the lightning strike, and that UKPN's time-stamped data show the hospital's load reducing by half in a period of 14 seconds [reported].",
+      "topics": [
+        "hospital power",
+        "what happened at the hospital",
+        "hospital supply"
+      ]
+    },
+    {
+      "response_id": "S09-HOSP-02",
+      "response_text": "UKPN confirmed to the ESO that the hospital was not part of its LFDD protection zone and that LFDD did not affect the substations supplying the hospital.",
+      "topics": [
+        "LFDD",
+        "demand disconnection",
+        "protection zone"
+      ]
+    },
+    {
+      "response_id": "S09-HOSP-03",
+      "response_text": "Our trust's public statement of 10 August 2019 [reported], summarised here rather than quoted, described a minor on-site power problem: every standby generator operated, but one breaker serving outpatient services failed to, briefly interrupting electricity to outpatient and x-ray areas; business-continuity plans were invoked, the problem was resolved quickly and other areas were unaffected. The statement gives no times.",
+      "topics": [
+        "standby generators",
+        "back-up power",
+        "circuit breaker"
+      ]
+    },
+    {
+      "response_id": "S09-HOSP-04",
+      "response_text": "The E3C final report says four hospitals were impacted, two disconnected by the LFDD scheme and two by their internal safety systems, all switching automatically to back-up supplies. The E3C interim report describes one hospital, not named, where incorrect protection settings on its own network switched the site to back-up generation and one of its 11 [reported] generators failed to operate.",
+      "topics": [
+        "other hospitals",
+        "hospitals affected"
+      ]
+    }
+  ],
+  "evidence_id": "S09",
+  "organisation": "East Suffolk and North Essex NHS Foundation Trust",
+  "persona_id": "hospital-estates-manager",
+  "role": "Estates manager, Ipswich Hospital",
+  "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE. Fact card reconstructed from published investigation material; the witness is a role, not a person, and every answer is attributed to a published source passage.",
+  "unknown_response": "Not known — the hospital's published statement and the reports I can speak to do not cover that."
+}

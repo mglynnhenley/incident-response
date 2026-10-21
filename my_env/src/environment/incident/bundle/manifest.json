@@ -1,0 +1,111 @@
+{
+  "bundle_id": "gb-2019-08-09-electrical-mvp",
+  "bundle_version": "1.1.0",
+  "documents": [
+    {
+      "doc_id": "R01",
+      "title": "System frequency record, 9 August 2019, 16:40-17:45 BST",
+      "owner": "National Grid ESO (NESO published dataset)",
+      "date": "2019-08-09",
+      "category": "measurement_data",
+      "text_file": "R01/R01.txt",
+      "artifacts": [
+        {
+          "file": "R01/R01.txt",
+          "media_type": "text/plain",
+          "description": "Metadata note for the frequency extract: source dataset, slice, units, sampling interval, time basis, file format and citation help."
+        },
+        {
+          "file": "R01/frequency_2019-08-09_1640-1745_BST.csv",
+          "media_type": "text/csv",
+          "description": "One-second system frequency samples; columns timestamp (ISO-8601 with explicit +01:00 offset) and frequency_hz (Hz).",
+          "timeseries": {
+            "time_column": "timestamp",
+            "value_column": "frequency_hz",
+            "unit": "Hz",
+            "first": "2019-08-09T16:40:00+01:00",
+            "last": "2019-08-09T17:44:59+01:00",
+            "rows": 3900,
+            "interval_s": 1
+          }
+        }
+      ],
+      "sha256": {
+        "R01/R01.txt": "81429a38502d81d9bf2aaa9f4b476342b1050fb1e0183076b46cbf04bbe48bad",
+        "R01/frequency_2019-08-09_1640-1745_BST.csv": "78ab22c42fe8c7442263c71b84178f72f2a631f172d56a276b08000704a539dd"
+      }
+    },
+    {
+      "doc_id": "R03",
+      "title": "Transmission fault and protection records, 9 August 2019",
+      "owner": "National Grid Electricity Transmission (NGET); lightning data MeteoGroup",
+      "date": "2019-08-09",
+      "category": "network_records",
+      "text_file": "R03/R03.txt",
+      "artifacts": [
+        {
+          "file": "R03/R03.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "R03/R03.txt": "6c95b41f130713ca119d53a16c64a9d41b845a27a684f05485f6b9268a7d4658"
+      }
+    },
+    {
+      "doc_id": "S01",
+      "title": "Hornsea One offshore wind farm event log, 9 August 2019",
+      "owner": "Ørsted (Hornsea One operator)",
+      "date": "2019-08-09",
+      "category": "generator_records",
+      "text_file": "S01/S01.txt",
+      "artifacts": [
+        {
+          "file": "S01/S01.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S01/S01.txt": "522153bc83b2b8b0d4ad18a1ef1ee87cc0c190b667074e8cb81b3ebb4cb29e8f"
+      }
+    },
+    {
+      "doc_id": "S03",
+      "title": "Little Barford power station alarm and sequence-of-events records, 9 August 2019",
+      "owner": "RWE Generation (Little Barford power station)",
+      "date": "2019-08-09",
+      "category": "generator_records",
+      "text_file": "S03/S03.txt",
+      "artifacts": [
+        {
+          "file": "S03/S03.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S03/S03.txt": "ffbe2dc0006a0ab19cdf8115f184c2d4c236ca0a4543451d2aa48400b4c9f88e"
+      }
+    },
+    {
+      "doc_id": "S04",
+      "title": "Little Barford power station shift account, 9 August 2019",
+      "owner": "RWE Generation (Little Barford station operating staff)",
+      "date": "2019-08-09",
+      "category": "personnel_accounts",
+      "text_file": "S04/S04.txt",
+      "artifacts": [
+        {
+          "file": "S04/S04.txt",
+          "media_type": "text/plain",
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators."
+        }
+      ],
+      "sha256": {
+        "S04/S04.txt": "ec3aa2a02d7ead742b83c74cd08af1e9e960e25c92ad9fe0ea85be96a931da4c"
+      }
+    }
+  ]
+}

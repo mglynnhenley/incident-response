@@ -1,0 +1,80 @@
+{
+ "assistant_turns": 26,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 80000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "d2dd4fa07f4bc78d9f9ade51f39ba5ed52cb3e014b13fcd3aa8291bd12a9e466",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "I've submitted the investigation and it was accepted: 46 findings, each labelled by status, under the six required report sections. The first attempt was rejected because the executive summary ran to 703 words (limit 600) and I'd put recommendation labels in square brackets, which are reserved for finding IDs. I fixed both and resubmitted. All times below are BST (UTC+01:00).\n\n**What happened**\n- **Trigger:** at 16:52:33.490 lightning caused a single-phase-to-earth fault on one Eaton Socon–Wymondley Main 400 kV circuit, about 4.5 km from Wymondley. The two ends cleared it in 70 ms and 74 ms, inside the 80 ms Grid Code limit. The circuit reclosed automatically about 20 s later, and no defects were found.\n- **First second of losses:**\n  - Hornsea One fell from 799 MW to 62 MW, a loss of 737 MW.\n  - Little Barford's steam turbine tripped at 244 MW.\n  - About 500 MW of embedded generation tripped on loss-of-mains protection: about 150 MW on vector shift and 350 MW on rate of change of frequency (RoCoF). These are ESO estimates, not measurements.\n- **Later losses:** Little Barford's gas turbines tripped at about 16:53:31 (210 MW) and 16:53:58 (187 MW). A further net 200 MW was modelled as lost when frequency reached 49 Hz.\n- **Frequency (from the measured 1-second record):**\n\n| Point | Value | Time |\n|---|---|---|\n| First minimum | 49.083 Hz | 16:52:59 |\n| Overall minimum | 48.787 Hz | 16:53:49 |\n| Below 49 Hz | 33 seconds | 16:53:41–16:54:13 |\n| Back above 49.5 Hz | – | from 16:55:00 |\n| Back at 50 Hz | – | 16:57:16 |\n\n  One-second sampling means the true minimum and crossing times are uncertain by about a second.\n- **Demand disconnection:** the first stage of automatic low-frequency disconnection cut about 1.15 million customers. The ESO instructed restoration from 16:58 to 17:16, and DNOs reported all demand back by 17:37.\n\n**Totals on each basis the records use**\n- **ESO:** 1,131 MW within about 1 s, 1,481 MW including RoCoF trips, and 1,878 MW over the whole event.\n",
+ "final_message_has_text": true,
+ "incomplete_reason": null,
+ "incomplete_reasons": [],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 172286,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 29,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-029",
+  "invalid_submission_attempts": 1,
+  "python_calls": 5,
+  "retrieved": [
+   "R03",
+   "R01",
+   "R02",
+   "S12",
+   "R07",
+   "R10",
+   "R06",
+   "S01",
+   "S03",
+   "S07",
+   "S08",
+   "S11",
+   "S10",
+   "R09",
+   "R11",
+   "S06"
+  ],
+  "schema": 1,
+  "seq": 29,
+  "submission_sha256": "f855f10db7785e23570287392f934e7993d71cc4d3e2f6f93bfa045027dd3966"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 29,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 29
+ },
+ "max_input_tokens": 172286,
+ "outcome": "complete",
+ "output_token_budget_exceeded": false,
+ "output_tokens_before_freeze": 38784,
+ "output_tokens_total": 40601,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 26,
+ "tool_calls_by_tool": {
+  "interview_witness": 2,
+  "list_documents": 1,
+  "query_control_log": 1,
+  "query_frequency": 1,
+  "request_data_return": 3,
+  "request_document": 14,
+  "run_python": 5,
+  "submit_findings": 2
+ },
+ "tool_calls_episode_tools": 29,
+ "tool_calls_total": 29,
+ "transcript_available": true
+}

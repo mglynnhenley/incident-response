@@ -1,0 +1,3679 @@
+{
+  "schema": "gb-2019-full-investigation/provenance-real/1",
+  "generated_by": "builder/full_investigation/real/fi_build_real.py",
+  "documents_covered": [
+    "R09",
+    "R11",
+    "R12"
+  ],
+  "evidence_id_choice": "R09 keeps its handoff number. R11 (rail performance records) and R12 (essential-service public statements) are new IDs for the real parts of the handoff's S08 and S11; no handoff R/S number is reused. Increment A's documents are copied unchanged by the integration step with their own provenance.",
+  "quote_normalisation": "NFKC; casefold; unify dashes, double quotes and apostrophes; drop soft hyphens; collapse whitespace (builder/verify_provenance.normalise). Report quotes are matched within the stated 1-based PDF page of GB_TEXT_DIR/<source>.txt; table cells on the page with whitespace removed (ESO Table 8 on PDF pages 30-31); web and API quotations in the page text with HTML tags removed; Network Rail explanation quotations in the committed text extract of the PDF.",
+  "gist_rule": "A gist written for this record shares no run of more than three consecutive words with its source text (tokens [a-z0-9%]+ after casefolding); checked whenever the source is held.",
+  "page_numbering": "pdf_page is the 1-based PDF page index; printed_page is the number printed on that page where known (ESO = pdf_page + 1; OFG = pdf_page; APP, E3C-I and E3C null).",
+  "value_statuses": "measured, reported, estimated, modelled, digitised, illustrative, framing",
+  "sources": {
+    "ESO": {
+      "kind": "pdf",
+      "title": "National Grid ESO, Technical Report on the events of 9 August 2019",
+      "published": "2019-09-06",
+      "licence": "National Grid ESO document hosted by Ofgem; not an open licence (builder-only)",
+      "file": "builder_only/sources/ESO_technical_report_2019.pdf",
+      "sha256": "4ceee8ac7f32fbd16c712e7eed4942880f0f0a477424ae026b757a85d76da81e",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_final.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/ESO.txt"
+    },
+    "APP": {
+      "kind": "pdf",
+      "title": "Appendices to the ESO Technical Report on the events of 9 August 2019",
+      "published": "2019-09-06 (Appendix M answers based on data available to the ESO on 28 August 2019)",
+      "licence": "National Grid ESO document hosted by Ofgem, includes third-party material; not an open licence (builder-only)",
+      "file": "builder_only/sources/ESO_appendices_2019.pdf",
+      "sha256": "33d5dab5fa9b8de42ec72d2453037aa897192ba58e1790f3f37ce57f480492a3",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_appendices_-_final.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/APP.txt"
+    },
+    "OFG": {
+      "kind": "pdf",
+      "title": "Ofgem, 9 August 2019 power outage report",
+      "published": "2020-01-03",
+      "licence": "Open Government Licence v3.0 with exclusions (builder-only copy)",
+      "file": "builder_only/sources/Ofgem_outage_report_2020.pdf",
+      "sha256": "4a6def3f7a80e9686742921270e626d745942491082729983de9407ec15af2cb",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2020/01/9_august_2019_power_outage_report.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/OFG.txt"
+    },
+    "E3C-I": {
+      "kind": "pdf",
+      "title": "Energy Emergencies Executive Committee, GB power system disruption - 9 August 2019, interim report",
+      "published": "cover dated September 2019; publisher file name dated 2019-10-03",
+      "licence": "Open Government Licence v3.0 with exclusions (builder-only copy)",
+      "file": "builder_only/sources/E3C_interim_report_2019.pdf",
+      "sha256": "5a857cb1437a31c0d3096fa89573ac1e92854c4b18b6c9f96b066033d52ca5f7",
+      "url": "https://assets.publishing.service.gov.uk/media/5d96100340f0b61743bd4cc3/20191003_E3C_Interim_Report_into_GB_Power_Disruption.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/E3C-I.txt"
+    },
+    "E3C": {
+      "kind": "pdf",
+      "title": "Energy Emergencies Executive Committee, GB power system disruption on 9 August 2019: Final report",
+      "published": "January 2020 (GOV.UK records publication on 2020-01-03)",
+      "licence": "Open Government Licence v3.0 with exclusions (builder-only copy)",
+      "file": "builder_only/sources/E3C_final_report_2020.pdf",
+      "sha256": "2b20c53b19df7c1d2c24654d3e08ad3e7118b9dcc5ef18341bb6c0e7fb4654c5",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/855767/e3c-gb-power-disruption-9-august-2019-final-report.pdf",
+      "retrieved_date_utc": "2026-10-20",
+      "root": "GB_HANDOFF_DIR",
+      "page_text": "GB_TEXT_DIR/E3C.txt"
+    },
+    "CATALOGUE": {
+      "kind": "catalogue",
+      "title": "Builder-only source artifact catalogue (tables extracted from the report PDFs)",
+      "file": "catalogue.json",
+      "sha256": "e63f47cdeceed60b8a233241f86c376015bca97a5719c2d709a1d106e74cad07",
+      "root": "GB_CATALOGUE_DIR"
+    },
+    "comms_posts_embedded": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+      "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+      "dataset_id": "archived_official_tweets_9_10_aug_2019",
+      "publisher": "Derived by the real-data pass from Internet Archive Wayback captures (members of the public anonymised as public_user_NN, their post IDs redacted)",
+      "title": "Posts embedded in archived captures (account, post ID, created time, text, capture file)",
+      "url": "https://web.archive.org/web/ (captures listed per row in found_in)",
+      "retrieved_utc": "2026-10-20T06:46:49Z to 07:10Z",
+      "licence": "not an open licence (post content (c) the account holders)",
+      "licence_text": "Post content (c) the account holders under the platform's terms; Internet Archive Wayback captures used for research access. Not an open licence: post text is neither reproduced nor closely paraphrased; only times, identifiers and short gists written for this record.",
+      "mirror": "none"
+    },
+    "comms_posts_index": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/derived/comms_archived_tweets_index.csv",
+      "sha256": "328827f5f1f41fdb0b9dbb374dfd049d483ad8983532bcf323bcf2fd9a24b728",
+      "dataset_id": "archived_official_tweets_9_10_aug_2019",
+      "publisher": "Derived by the real-data pass from Internet Archive Wayback captures and publish.twitter.com oEmbed responses",
+      "title": "Index of archived organisational posts (account, post ID, decoded time, capture, best available text, notes)",
+      "url": "https://web.archive.org/web/ (capture per row in wayback_capture)",
+      "retrieved_utc": "2026-10-20T06:46:49Z to 07:10Z",
+      "licence": "not an open licence (post content (c) the account holders)",
+      "licence_text": "Post content (c) the account holders under the platform's terms; Internet Archive Wayback captures used for research access. Not an open licence: post text is neither reproduced nor closely paraphrased; only times, identifiers and short gists written for this record.",
+      "mirror": "none"
+    },
+    "comms_timeline": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/derived/comms_timeline_uk_local.csv",
+      "sha256": "0cebef87387a5112e65a6f81e7ce6c35a457feb49ea0c892bdce1a032a7de8f4",
+      "dataset_id": "comms_timeline_uk_local",
+      "publisher": "Derived by the real-data pass from archived posts, Wayback pages, GOV.UK and Ofgem (members of the public anonymised)",
+      "title": "Merged communications timeline, 9 August 2019 - 3 January 2020 (UK local time; precision per row)",
+      "url": "see source_url per row",
+      "retrieved_utc": "2026-10-20 (derived file written by the real-data pass)",
+      "licence": "derived; inherits the licences of its rows (posts not openly licensed)",
+      "licence_text": "Post content (c) the account holders under the platform's terms; Internet Archive Wayback captures used for research access. Not an open licence: post text is neither reproduced nor closely paraphrased; only times, identifiers and short gists written for this record.",
+      "mirror": "none"
+    },
+    "elexon_remit_details_1": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "elexon/raw/REMIT_revision_details_selected.json",
+      "sha256": "4f6393bea04457742009ec0358b09e898dcb3958c0529d5e396dd65b13dbdbcb",
+      "dataset_id": "elexon_REMIT",
+      "publisher": "Elexon Limited (Insights REMIT platform); messages written by the market participants (Orsted DONG013, RWE INNOGY01, Drax)",
+      "title": "REMIT messages retrieved by message ID (batch 1 of 2)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/remit?messageId=273052&messageId=273766&messageId=273818&messageId=274030&messageId=274528&messageId=274996&messageId=275043&messageId=275065&messageId=275326&messageId=275457&messageId=275546&messageId=276129&messageId=276553&messageId=276740&messageId=276753&messageId=276792&messageId=276823&messageId=277291&messageId=277570&messageId=277837&messageId=277912&messageId=278234&messageId=278395&messageId=278557&messageId=278596&messageId=278786&messageId=329255&messageId=366818&format=json",
+      "retrieved_utc": "2026-10-20T06:46:31Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' Excludes 'third party rights that Elexon is not authorised to licence'; REMIT message content is written by the market participant. (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "mirror": "copy"
+    },
+    "elexon_remit_details_2": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "elexon/raw/REMIT_revision_details_selected_part2.json",
+      "sha256": "ec6abbe7a4111b410a38167ab496b61027d5f2c1c6696c3fc7bd8e759f1418b0",
+      "dataset_id": "elexon_REMIT",
+      "publisher": "Elexon Limited (Insights REMIT platform); messages written by the market participants (Orsted DONG013, RWE INNOGY01)",
+      "title": "REMIT messages retrieved by message ID (batch 2 of 2)",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/remit?messageId=273712&messageId=273765&messageId=274535&messageId=275521&messageId=275526&messageId=276167&messageId=276953&messageId=278099&messageId=278222&messageId=278262&messageId=280952&messageId=290135&messageId=292390&messageId=299372&messageId=301896&messageId=304647&messageId=306011&messageId=322975&messageId=323522&format=json",
+      "retrieved_utc": "2026-10-20T06:50:06Z",
+      "licence": "Elexon BMRS open data licence (attribution required)",
+      "licence_text": "Elexon BMRS open data licence: 'Elexon Limited hereby grants You a worldwide, royalty-free, perpetual, non-exclusive licence to Use the BMRS Data subject to the conditions below.' Required attribution: 'Contains BMRS data (c) Elexon Limited copyright and database right [year].' Excludes 'third party rights that Elexon is not authorised to licence'; REMIT message content is written by the market participant. (https://www.elexon.co.uk/bsc/data/balancing-mechanism-reporting-agent/copyright-licence-bmrs-data/, checked 2026-10-20)",
+      "attribution": "Contains BMRS data (c) Elexon Limited copyright and database right 2026.",
+      "mirror": "copy"
+    },
+    "esneft_statement": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/docs/esneft_p8309.html",
+      "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+      "dataset_id": "esneft_ipswich_hospital_statement",
+      "publisher": "East Suffolk and North Essex NHS Foundation Trust",
+      "title": "Major power cut across parts of England and Wales (press release page; schema.org datePublished 2019-08-10T10:09:37+00:00, dateModified 2024-10-15T08:22:50+00:00)",
+      "url": "https://www.esneft.nhs.uk/major-power-cut-across-parts-of-england-and-wales/",
+      "retrieved_utc": "2026-10-20T06:50:54Z",
+      "licence": "(c) ESNEFT website; no open licence stated",
+      "licence_text": "Website terms of the publisher; no open licence stated. Text is neither reproduced nor closely paraphrased; only titles, dates, displayed times and short gists written for this record.",
+      "mirror": "none"
+    },
+    "govuk_beis_20190814": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+      "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+      "dataset_id": "govuk_content_api_beis_e3c",
+      "publisher": "Department for Business, Energy and Industrial Strategy (BEIS) via the GOV.UK Content API",
+      "title": "Business Secretary sets out scope of investigation into power cuts (press release, first published 2019-08-14T11:15:35+01:00)",
+      "url": "https://www.gov.uk/api/content/government/news/business-secretary-sets-out-scope-of-investigation-into-power-cuts",
+      "retrieved_utc": "2026-10-20T06:37:42Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence v3.0 - GOV.UK: 'All content is available under the Open Government Licence v3.0, except where otherwise stated' (checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+      "mirror": "none",
+      "format": "GOV.UK Content API JSON; quotations are checked in details.body with HTML tags removed"
+    },
+    "govuk_review_collection": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/comms/govuk_content_great-britain-power-system-disruption-review.json",
+      "sha256": "2d22d443449aade265716312479135d5e3bc441933d4796213429294b14cef0e",
+      "dataset_id": "govuk_content_api_beis_e3c",
+      "publisher": "BEIS / Energy Emergencies Executive Committee via the GOV.UK Content API",
+      "title": "Great Britain power system disruption review (publication page; first published 2019-08-14T11:15:00+01:00, updated 2019-10-04 and 2020-01-03)",
+      "url": "https://www.gov.uk/api/content/government/publications/great-britain-power-system-disruption-review",
+      "retrieved_utc": "2026-10-20T06:37:42Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence v3.0 - GOV.UK: 'All content is available under the Open Government Licence v3.0, except where otherwise stated' (checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+      "mirror": "none",
+      "format": "GOV.UK Content API JSON; quotations are checked in details.body with HTML tags removed"
+    },
+    "neso_statement_0908_1830": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-9-august-630pm.txt",
+      "sha256": "1374f750248c8eb6b2818d045f224bb656aa64bc20904c51dfa04dade3b5b704",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Power Cut Statement - 9 August, 6.30pm",
+      "url": "https://www.neso.energy/news/power-cut-statement-9-august-630pm",
+      "retrieved_utc": "2026-10-20T06:45:39Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_0908_2000": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-9-august-8pm.txt",
+      "sha256": "77748af33fd4e7a876c9dfb23d765f0a9bed117a00245816c57c9af41bdec080",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Power Cut Statement - 9 August, 8pm",
+      "url": "https://www.neso.energy/news/power-cut-statement-9-august-8pm",
+      "retrieved_utc": "2026-10-20T06:45:41Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_1008_0830": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-10-august-830am.txt",
+      "sha256": "94e9e1787074eeebb0a07d1684031c497c9c5e58235a93fcd671aaa68f3db154",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Power Cut Statement - 10 August, 8.30am",
+      "url": "https://www.neso.energy/news/power-cut-statement-10-august-830am",
+      "retrieved_utc": "2026-10-20T06:45:43Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_1008_1930": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-10-august-730pm.txt",
+      "sha256": "652d74022f78b397fdcc612b5377841e98e035ecd43e26ce7abcb637880f4b4e",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Power Cut Statement - 10 August, 7.30pm",
+      "url": "https://www.neso.energy/news/power-cut-statement-10-august-730pm",
+      "retrieved_utc": "2026-10-20T06:45:44Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_1308": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-frequency-13-august.txt",
+      "sha256": "398b1b6e1e2c2c4b4ccfd7ca2467f7b67c2903dd46832a501bed3be75fe35cb3",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Power Cut Statement on Frequency - 13 August",
+      "url": "https://www.neso.energy/news/power-cut-statement-frequency-13-august",
+      "retrieved_utc": "2026-10-20T06:45:46Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_1608": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/national-grid-eso-confirms-submission-interim-technical-report-power-outages-9th-august-ofgem.txt",
+      "sha256": "23c48c087b56154a8c0d3010cb885a58bcd9c0f1c4c9f9bfc74bc86be4b359ae",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "National Grid ESO confirms submission of interim technical report into the power outages of 9th August, to Ofgem",
+      "url": "https://www.neso.energy/news/national-grid-eso-confirms-submission-interim-technical-report-power-outages-9th-august-ofgem",
+      "retrieved_utc": "2026-10-20T06:45:49Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "neso_statement_1908": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "neso/datasets/neso_news_statements_aug2019/raw_text/interim-technical-report-power-outages-friday-9-august.txt",
+      "sha256": "12e3d36c713dc050b83d4269d957a1c43820712f985ca0a9e7552c24d117dffb",
+      "dataset_id": "neso_news_statements_aug2019",
+      "publisher": "National Grid ESO (pages now hosted on neso.energy/news)",
+      "title": "Interim technical report into the power outages of Friday 9 August",
+      "url": "https://www.neso.energy/news/interim-technical-report-power-outages-friday-9-august",
+      "retrieved_utc": "2026-10-20T06:45:48Z",
+      "licence": "NESO website terms (not an open licence)",
+      "licence_text": "NESO website Terms and Conditions (not an open licence): 'NESO owns the intellectual property rights in the content published on the Website ... you may make a print copy of such parts of the Website ... as you may reasonably require for your own personal use'. Text is neither reproduced nor closely paraphrased; only page titles, dates and short gists written for this record.",
+      "mirror": "none",
+      "format": "plain-text extract of the HTML page written by the real-data pass (header lines SOURCE_URL, HTTP, HTML_SHA256, HTML_BYTES, RETRIEVED_UTC, META)"
+    },
+    "nr_delays_p05": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+      "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+      "dataset_id": "nr_historic_delay_attribution_201920_P05",
+      "publisher": "Network Rail Infrastructure Ltd",
+      "title": "All delays 2019-20 P5 (historic attributed delays, PSS extract; zip entry dated 2020-03-26), sliced by the real-data pass to rows whose origin_departure_date is 09-Aug-19 or whose incident_start_datetime falls on 09/08/2019 (24,734 rows, all 40 columns)",
+      "url": "https://www.networkrail.co.uk/wp-content/uploads/2020/04/All-delays-2019-20-P5.zip",
+      "landing_page": "https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/our-information-and-data/",
+      "original_file_sha256": "901a546d5203b7509209015b9ed960c6cbae11aba39b293e12ff91d8ae70c159",
+      "retrieved_utc": "2026-10-20T06:33:27Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence. Network Rail 'Our information and data' page: 'The information supplied to you through these pages and our Freedom of Information (FOI) and Environmental Information Regulation (EIR) responses is done so under the Open Government Licence.' (checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Network Rail).",
+      "mirror": "slice",
+      "slice_rule": "header plus the rows of the incidents selected for R11 (incident_reason XK, or resp_manager METR, with incident_start_datetime on 09/08/2019), lines copied unchanged in original order; gzip level 9, mtime 0"
+    },
+    "nr_explanation": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+      "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+      "dataset_id": "nr_historic_delay_attribution_201920_P05",
+      "publisher": "Network Rail Infrastructure Ltd",
+      "title": "Explanation document: Historic attributed delays (2 pages, May 2021)",
+      "url": "not recorded by the real-data pass; published by Network Rail with the historic delay files (landing page https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/our-information-and-data/)",
+      "landing_page": "https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/our-information-and-data/",
+      "retrieved_utc": "2026-10-20 (time not recorded)",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence. Network Rail 'Our information and data' page: 'The information supplied to you through these pages and our Freedom of Information (FOI) and Environmental Information Regulation (EIR) responses is done so under the Open Government Licence.' (checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Network Rail).",
+      "mirror": "extract",
+      "mirror_rel": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf.txt",
+      "extract_rule": "page text extracted with PyMuPDF 1.26.5 (fitz, page.get_text()), each page preceded by a '=== page <n> ===' line; used only to verify the quotations in R11 (the builder environment has no PDF reader, so quotations are always checked against this extract, whose sha256 the raw mirror manifest records)"
+    },
+    "nr_glossary": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.xlsx",
+      "sha256": "083eb7df58120c3f9ba9e28de9f0944f598a17d05c2efd5055a07ce8de6dcb6e",
+      "dataset_id": "nr_historic_delay_attribution_201920_P05",
+      "publisher": "Network Rail Infrastructure Ltd",
+      "title": "Historic Delay Attribution Glossary (workbook, August 2021 edition; sheets Stanox Codes, Period Dates, Incident Reason, Responsible Manager, Performance Event Code, Operator Name)",
+      "url": "not recorded by the real-data pass; published by Network Rail with the historic delay files (landing page https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/our-information-and-data/)",
+      "landing_page": "https://www.networkrail.co.uk/who-we-are/transparency-and-ethics/transparency/our-information-and-data/",
+      "retrieved_utc": "2026-10-20 (time not recorded)",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence. Network Rail 'Our information and data' page: 'The information supplied to you through these pages and our Freedom of Information (FOI) and Environmental Information Regulation (EIR) responses is done so under the Open Government Licence.' (checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Network Rail).",
+      "mirror": "extract",
+      "mirror_rel": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.extract.json",
+      "extract_rule": "JSON {sheet name: [row objects keyed by the sheet's header cells]} holding only the rows R11 uses: the Performance Event Code sheet in full, the period end-date rows of 2019/20, and the Incident Reason, Responsible Manager, Operator Name and Stanox Codes rows whose code occurs in the selected Network Rail rows; cell text unchanged"
+    },
+    "nre_incident_228430": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/comms/wayback_20190809175638_nre_228430.html",
+      "sha256": "a7a21796bc771b86255104a53594552ff9144cfd2cb827b4eb6779246fb1cd22",
+      "dataset_id": "thameslink_nre_disruption_pages_wayback",
+      "publisher": "National Rail Enquiries (Rail Delivery Group), via the Internet Archive",
+      "title": "National Rail Enquiries service disruption page 228430 (capture 2019-08-09T17:56:38Z)",
+      "url": "https://web.archive.org/web/20190809175638/https://www.nationalrail.co.uk/service_disruptions/228430.aspx",
+      "retrieved_utc": "2026-10-20T06:57:50Z",
+      "licence": "Rail Delivery Group website terms (not an open licence)",
+      "licence_text": "Website terms of the publisher; no open licence stated. Text is neither reproduced nor closely paraphrased; only titles, dates, displayed times and short gists written for this record.",
+      "mirror": "none"
+    },
+    "nre_today_20190810": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/comms/wayback_20190810190551_nre_today.html",
+      "sha256": "91e50247c48a31a416dec794b46722407d17dbdc33f6a18ddac2d1bfd36bb1a5",
+      "dataset_id": "thameslink_nre_disruption_pages_wayback",
+      "publisher": "National Rail Enquiries (Rail Delivery Group), via the Internet Archive",
+      "title": "National Rail Enquiries 'today' service disruption page (capture 2019-08-10T19:05:51Z)",
+      "url": "https://web.archive.org/web/20190810190551/https://www.nationalrail.co.uk/service_disruptions/today.aspx",
+      "retrieved_utc": "2026-10-20T06:57:50Z",
+      "licence": "Rail Delivery Group website terms (not an open licence)",
+      "licence_text": "Website terms of the publisher; no open licence stated. Text is neither reproduced nor closely paraphrased; only titles, dates, displayed times and short gists written for this record.",
+      "mirror": "none"
+    },
+    "ofgem_pr_20190812": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/docs/ofgem_pr_2019-08-12_timeline.html",
+      "sha256": "418eb57db591f4738a6b5063a099da8bd7e5842ceb1d37eea612a34d905a2e48",
+      "dataset_id": "ofgem_press_releases",
+      "publisher": "Ofgem",
+      "title": "Ofgem sets timeline for National Grid ESO report following UK power failures (press release, 12 August 2019)",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-sets-timeline-national-grid-eso-report-following-uk-power-failures",
+      "retrieved_utc": "2026-10-20T06:55:14Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Ofgem copyright page (https://www.ofgem.gov.uk/copyright, checked 2026-10-20): 'Material featured on this website is subject to Crown copyright protection unless otherwise indicated. You may use Crown copyright information (not including logos) free of charge in any format or medium, under the terms of the Open Government Licence.' Third-party material excluded.",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Ofgem).",
+      "mirror": "none",
+      "format": "HTML page; quotations are checked in the page text with tags removed"
+    },
+    "ofgem_pr_20190820": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/docs/ofgem_pr_2019-08-20_launches_investigation.html",
+      "sha256": "9e6f10313228c640d28c7742e1a93c6f4f17474ef7aff87e4019279403503818",
+      "dataset_id": "ofgem_press_releases",
+      "publisher": "Ofgem",
+      "title": "Ofgem launches investigation into power cuts (press release, 20 August 2019)",
+      "url": "https://www.ofgem.gov.uk/press-release/ofgem-launches-investigation-power-cuts",
+      "retrieved_utc": "2026-10-20T06:55:14Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Ofgem copyright page (https://www.ofgem.gov.uk/copyright, checked 2026-10-20): 'Material featured on this website is subject to Crown copyright protection unless otherwise indicated. You may use Crown copyright information (not including logos) free of charge in any format or medium, under the terms of the Open Government Licence.' Third-party material excluded.",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Ofgem).",
+      "mirror": "none",
+      "format": "HTML page; quotations are checked in the page text with tags removed"
+    },
+    "orr_3124": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/orr_3124_2019-20_P03-P07_slice.csv",
+      "sha256": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02",
+      "dataset_id": "orr_passenger_performance_periodic_tables",
+      "publisher": "Office of Rail and Road data portal (source: Network Rail)",
+      "title": "Table 3124 - Trains planned and cancellations by operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21",
+      "url": "https://dataportal.orr.gov.uk/statistics/performance/passenger-rail-performance/table-3124-trains-planned-and-cancellations-by-operator-periodic/",
+      "retrieved_utc": "2026-10-20T06:36:02Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence v3.0 - orr.gov.uk footer: 'All content is available under the Open Government Licence v3.0, except where otherwise stated' (the data-portal page itself carries no licence text; checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Office of Rail and Road).",
+      "mirror": "copy",
+      "format": "CSV written by the real-data pass from the table embedded in the data-portal page HTML"
+    },
+    "orr_3157a": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/orr_3157a_2019-20_P03-P07_slice.csv",
+      "sha256": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16",
+      "dataset_id": "orr_passenger_performance_periodic_tables",
+      "publisher": "Office of Rail and Road data portal (source: Network Rail)",
+      "title": "Table 3157a - Days of severe disruption, Great Britain (periodic), periods 04-07 of 2019-20 and period 05 of 2020-21",
+      "url": "https://dataportal.orr.gov.uk/statistics/performance/passenger-rail-performance/table-3157a-days-of-severe-disruption-great-britain-periodic/",
+      "retrieved_utc": "2026-10-20T06:36:02Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence v3.0 - orr.gov.uk footer: 'All content is available under the Open Government Licence v3.0, except where otherwise stated' (the data-portal page itself carries no licence text; checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Office of Rail and Road).",
+      "mirror": "copy"
+    },
+    "orr_3157b": {
+      "kind": "dataset",
+      "root": "GB_REAL_DATA_DIR",
+      "file": "consequences/raw/rail/orr_3157b_2019-20_P03-P07_slice.csv",
+      "sha256": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb",
+      "dataset_id": "orr_passenger_performance_periodic_tables",
+      "publisher": "Office of Rail and Road data portal (source: Network Rail)",
+      "title": "Table 3157b - Days of severe disruption by sub-operator (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21",
+      "url": "https://dataportal.orr.gov.uk/statistics/performance/passenger-rail-performance/table-3157b-days-of-severe-disruption-by-sub-operator-periodic/",
+      "retrieved_utc": "2026-10-20T06:36:02Z",
+      "licence": "Open Government Licence v3.0",
+      "licence_text": "Open Government Licence v3.0 - orr.gov.uk footer: 'All content is available under the Open Government Licence v3.0, except where otherwise stated' (the data-portal page itself carries no licence text; checked 2026-10-20)",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0 (Office of Rail and Road).",
+      "mirror": "copy"
+    }
+  },
+  "documents": {
+    "R09": {
+      "label": "REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES",
+      "text_file": "R09/R09.txt",
+      "text_sha256": "a3cacd7f29948bc2e04b313e4d1f5807e4e2d20dae2153fc07d6b59c3a549f3d",
+      "line_count": 469,
+      "construction": "Parts A-C quote and transcribe the ESO technical report (sections 6.2-6.4 and 7, Tables 8 and 9), Appendix M of its appendices, the E3C interim and final reports and Ofgem paragraph 3.23, every quotation and table cell checked on the stated PDF page (personal names in Table 8 replaced by roles). Part D indexes every held revision of the REMIT messages of T_HOWAO-1/2/3 and T_LBAR-1 (real Elexon data, unchanged; all fields in the CSV and the asset-log rows). Part E gives, for organisational posts and web statements, the decoded or displayed time and a gist written for this record (no gist shares more than three consecutive words with its source; not openly licensed). Part F quotes Ofgem and GOV.UK publications of 12-20 August 2019 (Open Government Licence). Ofgem's January 2020 enforcement settlements are excluded.",
+      "segments": [
+        {
+          "lines": "L1-L22",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L24-L24",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L25-L33",
+          "content": "A1 ESO technical report section 6.2",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.2 Engagement with government and the regulator",
+              "quote": "The first communication between the ESO control room and BEIS was at 17:41hrs."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.2 Engagement with government and the regulator",
+              "quote": "At this point the event was generally understood, demand restoration was in progress and further disturbances were considered unlikely."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.2 Engagement with government and the regulator",
+              "quote": "The first communication with Ofgem was made at 17:51hrs with further communication at 18:17hrs and 18:45hrs and then throughout the weekend."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.2 Engagement with government and the regulator",
+              "quote": "Further updates to BEIS from the ESO control room were made at 18:09hrs, 19:29hrs and 19:38hrs respectively."
+            }
+          ]
+        },
+        {
+          "lines": "L34-L37",
+          "content": "A2 ESO technical report section 7 (communications finding)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 33,
+              "printed_page": 34,
+              "section": "7. Report Findings",
+              "quote": "The ESO contacted BEIS at 17:40 and Ofgem at 18:00."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 33,
+              "printed_page": 34,
+              "section": "7. Report Findings",
+              "quote": "The initial media statement by the ESO issued at 18:27 with a subsequent statement at 20:06 and a video from the Head of National Control being posted at 20:11."
+            }
+          ]
+        },
+        {
+          "lines": "L38-L55",
+          "content": "A3 ESO appendices, Appendix M answers to E3C questions (Q34)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 70,
+              "printed_page": null,
+              "section": "Appendix M – ESO E3C Questions and Answers",
+              "quote": "These answers are all based on the data available to the ESO on 28 August 2019."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "There appeared to be delays in escalations to Ofgem & BEIS after LFDD was initiated? Are there any lessons to be learnt?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "At 17:10hrs, the ENCC Power System Manager (PSM) reported the incident to the Head of National Control, ESO."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "The 1st communication between ENCC PSM and BEIS was at 17:41hrs."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "The 1st communication with Ofgem was made just after 18:00hrs with the Director of Operations, ESO."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "Further updates to BEIS from the PSM were made at 18:09hrs, 19:29hrs and 19:38hrs respectively."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "Current ESO procedure outlines that following an event of loss of supply, a clear communication to Ofgem & BEIS is essential."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "The communication is recommended to be initiated as soon as possible, and this procedure is in line with the ‘Energy Incident Reporting’ requirement set by Ofgem dated in December 2017."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 34",
+              "quote": "It is important in all cases that resolution of the incident remains the primary objective."
+            }
+          ]
+        },
+        {
+          "lines": "L57-L57",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L58-L95",
+          "content": "B1 ESO section 6.3 and Table 8 (timeline of external communications)",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Table 8 rows as printed (day heading, time, event, distribution); personal names replaced by the role in square brackets.",
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.3 External Communications with Media and Wider Industry",
+              "quote": "The first ESO external communication was issued at 18:27hrs on 9 August."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.3 External Communications with Media and Wider Industry",
+              "quote": "Table 8 provides the timeline of external communication with media and wider industry."
+            },
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 30,
+              "printed_page": 31,
+              "section": "6.3 External Communications with Media and Wider Industry, Table 8 – Timeline of external communications (continues on PDF page 31)",
+              "quote": null,
+              "catalogue_artifact": "ESO-p30-tab8",
+              "catalogue_extract": "extracted/ESO-p30-tab8.csv",
+              "catalogue_extract_sha256": "db7c144dbc3bd845abb1a91b9f652d36ae4f8b75c054b10b2f9fdaf2624b2638",
+              "cells_checked_on_page": 37,
+              "cell_pages": [
+                30,
+                31
+              ],
+              "redaction": "personal names replaced by the role in square brackets: Minister of State [name omitted]; [the Head of National Control]"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.3 Table 8 caption",
+              "quote": "Table 8 – Timeline of external communications"
+            }
+          ]
+        },
+        {
+          "lines": "L96-L104",
+          "content": "B2 ESO section 6.4 (media statements by others)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.4 Communications by industry and consumers",
+              "quote": "In the ~90 minutes immediately following the initial fault on the network (starting at 17.09hrs) statements were issued by some DNOs and rail companies stating that the loss of power and subsequent disruption was the result of a National Grid fault."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.4 Communications by industry and consumers",
+              "quote": "These statements were issued ahead of any communication by the ESO and without engagement or coordination with the ESO communications team."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.4 Communications by industry and consumers",
+              "quote": "These public-facing communications did not impact the speed with which the incident was resolved but did drive a large volume of media queries to the ESO."
+            }
+          ]
+        },
+        {
+          "lines": "L105-L114",
+          "content": "B3 ESO appendices, Appendix M question 35",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 35",
+              "quote": "What issues did you encounter with the public-facing communications by industry, notably in terms of the content and timelines for the messaging?"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 35",
+              "quote": "The initial communications from some DNOs and rail companies said that the incident had been caused by a National Grid fault."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 35",
+              "quote": "These communications were issued very shortly after the event (from 5.09pm onwards)."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 35",
+              "quote": "The ESO prepared an external communication seeking to give reassurance to the public which was issued at 18:27 once it was established that the DNOs had reconnected all customers."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "APP",
+              "pdf_page": 88,
+              "printed_page": null,
+              "section": "Appendix M, question 35",
+              "quote": "The initial statements from some parts of the industry were issued before our statement and without any co-ordination with our comms team."
+            }
+          ]
+        },
+        {
+          "lines": "L115-L127",
+          "content": "B4 E3C interim report (communications, post-event announcement)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 14,
+              "printed_page": null,
+              "section": "communications",
+              "quote": "DNOs led local public communications during the event and the ESO did not publish public statements until after the disruption, meaning that energy partners (such as generators) were not directly informed."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 14,
+              "printed_page": null,
+              "section": "communications",
+              "quote": "In parallel with social media, DNOs reached out to customers via text message alert services and telephone services between 17:02 and 18:30."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 14,
+              "printed_page": null,
+              "section": "communications",
+              "quote": "Updates from the ESO followed the first set of restorations and were not publicly released until 18:27 via Twitter."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 15,
+              "printed_page": null,
+              "section": "Post-event",
+              "quote": "The Secretary of State for Business, Energy and Industrial Strategy later announced via Twitter (10th August) and GOV.UK (14th August) that the government was to commission the Energy Emergencies Executive Committee to provide an interim and extended report into the power disruptions."
+            }
+          ]
+        },
+        {
+          "lines": "L128-L135",
+          "content": "B5 E3C final report section 5 (communication channels)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "E3C",
+              "pdf_page": 20,
+              "printed_page": null,
+              "section": "5. Communication channels",
+              "quote": "The first public announcement from ESO was issued at 18:27, which was following the event and once the system had stabilised."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C",
+              "pdf_page": 20,
+              "printed_page": null,
+              "section": "5. Communication channels",
+              "quote": "By this time, many DNOs had used twitter to provide area updates that were widely circulated."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "E3C",
+              "pdf_page": 21,
+              "printed_page": null,
+              "section": "5. Communication channels",
+              "quote": "However, electricity generators received no communication during the events of 9 August that would have made them aware of the system condition."
+            }
+          ]
+        },
+        {
+          "lines": "L136-L140",
+          "content": "B6 Ofgem report paragraph 3.23 (Hornsea 1 communication with the ESO)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 29,
+              "printed_page": 29,
+              "section": "paragraph 3.23",
+              "quote": "We have also found issues with Hornsea 1’s communication with the ESO."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 29,
+              "printed_page": 29,
+              "section": "paragraph 3.23",
+              "quote": "Hornsea 1 did not notify the ESO directly when the wind farm deloaded by 737MW."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 29,
+              "printed_page": 29,
+              "section": "paragraph 3.23",
+              "quote": "The wind farm then began its process of starting up two of its modules (temporarily) without"
+            },
+            {
+              "kind": "report_page",
+              "source_id": "OFG",
+              "pdf_page": 30,
+              "printed_page": 30,
+              "section": "paragraph 3.23 (continued)",
+              "quote": "any coordination with the ESO whilst the ESO was attempting to respond to the generation losses it was aware of."
+            }
+          ]
+        },
+        {
+          "lines": "L142-L142",
+          "content": "Part C heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L143-L154",
+          "content": "C1 ESO section 6.4 call volumes and Table 9",
+          "value_status": "reported",
+          "extraction_method": "transcription",
+          "transformation": "Table 9 cells as printed (thousands separators kept).",
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.4 Call volumes to DNO's",
+              "quote": "Electricity customers across GB can dial the ‘105’ customer helpline to get emergency help and advice, free of charge on mobile and landline phones."
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 31,
+              "printed_page": 32,
+              "section": "6.4 Call volumes to DNO's",
+              "quote": "Analysis of the volume of calls to the 105 helpline provides a useful indicator of the scale of customer impact across the DNOs and the timeframe for disruption to power supplies with calls dropping off dramatically post 6pm."
+            },
+            {
+              "kind": "report_table",
+              "source_id": "ESO",
+              "pdf_page": 32,
+              "printed_page": 33,
+              "section": "6.4 Call volumes to DNO's, Table 9 - Calls received by the 6 largest DNOs, during the period 4pm to 7pm on 9th August",
+              "quote": null,
+              "catalogue_artifact": "ESO-p32-tab9",
+              "catalogue_extract": "extracted/ESO-p32-tab9.csv",
+              "catalogue_extract_sha256": "5296d2d4a735527cdeb46666260cf651d3fb2e104c07e4a5ae63f9baabea2cad",
+              "cells_checked_on_page": 33
+            },
+            {
+              "kind": "report_page",
+              "source_id": "ESO",
+              "pdf_page": 32,
+              "printed_page": 33,
+              "section": "Table 9 caption",
+              "quote": "Table 9 - Calls received by the 6 largest DNOs, during the period 4pm to 7pm on 9th August"
+            }
+          ]
+        },
+        {
+          "lines": "L155-L158",
+          "content": "C2 E3C interim report on 105 calls",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "report_page",
+              "source_id": "E3C-I",
+              "pdf_page": 14,
+              "printed_page": null,
+              "section": "communications",
+              "quote": "Between 16:00 and 18:00 on 9th August, the ESO Technical Report states that 39,568 calls were made to the 105 Single Emergency Number, a facility introduced since the Christmas 2013 event and managed by the ENA on behalf of members."
+            }
+          ]
+        },
+        {
+          "lines": "L160-L160",
+          "content": "Part D heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L161-L272",
+          "content": "D REMIT source description and index of revisions",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Index of revisions: event ID, publishTime, unavailability and event type, status, event window and available capacity, values unchanged; every other field is in the CSV and in the asset-log rows.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "elexon_remit_details_1",
+              "file": "elexon/raw/REMIT_revision_details_selected.json",
+              "sha256": "4f6393bea04457742009ec0358b09e898dcb3958c0529d5e396dd65b13dbdbcb",
+              "detail": "messages of the four units: message IDs 329255, 275326, 275065, 276553, 277291, 273818, 276129, 274528, 275043, 278596, 276740, 275546, 278395, 273766, 274996, 276823, 278786, 273052, 275457, 274030, 277912, 278234, 276792, 277570, 277837, 276753, 278557",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "elexon_remit_details_2",
+              "file": "elexon/raw/REMIT_revision_details_selected_part2.json",
+              "sha256": "ec6abbe7a4111b410a38167ab496b61027d5f2c1c6696c3fc7bd8e759f1418b0",
+              "detail": "messages of the four units: message IDs 274535, 275521, 278222, 322975, 304647, 301896, 306011, 299372, 323522, 292390, 290135, 280952, 275526, 273765, 276953, 273712, 278099, 278262, 276167",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L274-L284",
+          "content": "Part E heading and method",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L285-L292",
+          "content": "E1 National Rail Enquiries service disruption web page (incident 228430)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nre_incident_228430",
+              "file": "consequences/raw/comms/wayback_20190809175638_nre_228430.html",
+              "sha256": "a7a21796bc771b86255104a53594552ff9144cfd2cb827b4eb6779246fb1cd22",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "displayed": [
+                "Incident created 09/08/2019 16:50",
+                "Last updated 09/08/2019 18:49"
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L293-L295",
+          "content": "E2 UK Power Networks (UKPN) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159858936037748736"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:08:14.145Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190809171937/https://twitter.com/UKPowerNetworks/status/1159858936037748736",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159858936037748736",
+                  "uk_local_time_from_identifier": "2019-08-09 17:08:14",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L296-L298",
+          "content": "E3 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159859425559154688"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:10:10.856Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688?ref_src=twsrc%5Etfw",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159859425559154688",
+                  "uk_local_time_from_identifier": "2019-08-09 17:10:10",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L299-L300",
+          "content": "E4 Western Power Distribution (WPD) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159860575188508672"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:14:44.949Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20201104081128/https://twitter.com/wpduk/status/1159860575188508672?ref_src=twsrc%5Etfw",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159860575188508672",
+                  "uk_local_time_from_identifier": "2019-08-09 17:14:44",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L301-L303",
+          "content": "E5 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159863037517598720"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:24:32.014Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20240802190205/https://twitter.com/TLRailUK/status/1159863037517598720?ref_src=twsrc%5Etfw",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159863037517598720",
+                  "uk_local_time_from_identifier": "2019-08-09 17:24:32",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L304-L307",
+          "content": "E6 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159866619641892864"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:38:46.059Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20220728215944/https://twitter.com/TLRailUK/status/1159866619641892864",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159866619641892864",
+                  "uk_local_time_from_identifier": "2019-08-09 17:38:46",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L308-L310",
+          "content": "E7 Electricity North West (ENWL) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159868068614553600"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:44:31.521Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20220120093007/https://twitter.com/ElectricityNW/status/1159868068614553600",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159868068614553600",
+                  "uk_local_time_from_identifier": "2019-08-09 17:44:31",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L311-L313",
+          "content": "E8 Western Power Distribution (WPD) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159868588607639552"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:46:35.497Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20250825063922/https://twitter.com/wpduk/status/1159868588607639552",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159868588607639552",
+                  "uk_local_time_from_identifier": "2019-08-09 17:46:35",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L314-L316",
+          "content": "E9 National Rail Enquiries public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159869804980973569"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:51:25.503Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20221206020335/https://twitter.com/nationalrailenq/status/1159869804980973569",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159869804980973569",
+                  "uk_local_time_from_identifier": "2019-08-09 17:51:25",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L317-L319",
+          "content": "E10 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159871893962416128"
+              ],
+              "decoded_utc": [
+                "2019-08-09T16:59:43.555Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20220328205934/https://twitter.com/TLRailUK/status/1159871893962416128",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159871893962416128",
+                  "uk_local_time_from_identifier": "2019-08-09 17:59:43",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L320-L322",
+          "content": "E11 London North Eastern Railway (LNER) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159875966426124288"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:15:54.506Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810100619/https://twitter.com/LNER/status/1159875966426124288",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159875966426124288",
+                  "uk_local_time_from_identifier": "2019-08-09 18:15:54",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L323-L324",
+          "content": "E12 Western Power Distribution (WPD) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159877477533138945"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:21:54.782Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20210926182026/https://twitter.com/wpduk/status/1159877477533138945",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159877477533138945",
+                  "uk_local_time_from_identifier": "2019-08-09 18:21:54",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L325-L327",
+          "content": "E13 National Grid ESO public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159878953596792833"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:27:46.703Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20191011021532/https://twitter.com/ng_eso/status/1159878953596792833",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159878953596792833",
+                  "uk_local_time_from_identifier": "2019-08-09 18:27:46",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L328-L331",
+          "content": "E14 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_0908_1830",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-9-august-630pm.txt",
+              "sha256": "1374f750248c8eb6b2818d045f224bb656aa64bc20904c51dfa04dade3b5b704",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Power Cut Statement - 9 August, 6.30pm",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L332-L334",
+          "content": "E15 UK Power Networks (UKPN) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159882018148278274"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:39:57.349Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20220205235758/https://twitter.com/UKPowerNetworks/status/1159882018148278274",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159882018148278274",
+                  "uk_local_time_from_identifier": "2019-08-09 18:39:57",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L335-L337",
+          "content": "E16 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159884719284203520"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:50:41.350Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159884719284203520",
+                  "uk_local_time_from_identifier": "2019-08-09 18:50:41",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L338-L340",
+          "content": "E17 London North Eastern Railway (LNER) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159884743976083457"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:50:47.237Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810100619/https://twitter.com/LNER/status/1159875966426124288",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159884743976083457",
+                  "uk_local_time_from_identifier": "2019-08-09 18:50:47",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L341-L343",
+          "content": "E18 National Rail Enquiries public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159885729905938432"
+              ],
+              "decoded_utc": [
+                "2019-08-09T17:54:42.301Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20211204122828/https://twitter.com/nationalrailenq/status/1159885729905938432?s=20",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159885729905938432",
+                  "uk_local_time_from_identifier": "2019-08-09 18:54:42",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L344-L346",
+          "content": "E19 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159888608083488769"
+              ],
+              "decoded_utc": [
+                "2019-08-09T18:06:08.512Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159888608083488769",
+                  "uk_local_time_from_identifier": "2019-08-09 19:06:08",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L347-L349",
+          "content": "E20 National Rail Enquiries public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159891801370759174"
+              ],
+              "decoded_utc": [
+                "2019-08-09T18:18:49.851Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20250123140337/https://twitter.com/nationalrailenq/status/1159891801370759174",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159891801370759174",
+                  "uk_local_time_from_identifier": "2019-08-09 19:18:49",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L350-L354",
+          "content": "E21 National Grid ESO public social-media posts (thread of three)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159900904516136961",
+                "1159900906407845889",
+                "1159900908148449280"
+              ],
+              "decoded_utc": [
+                "2019-08-09T18:55:00.210Z",
+                "2019-08-09T18:55:00.661Z",
+                "2019-08-09T18:55:01.076Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810232631/https://twitter.com/ng_eso/status/1159900904516136961?ref_src=twsrc%5Etfw",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159900904516136961",
+                  "uk_local_time_from_identifier": "2019-08-09 19:55:00",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159900906407845889",
+                  "uk_local_time_from_identifier": "2019-08-09 19:55:00",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159900908148449280",
+                  "uk_local_time_from_identifier": "2019-08-09 19:55:01",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L355-L360",
+          "content": "E22 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_0908_2000",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-9-august-8pm.txt",
+              "sha256": "77748af33fd4e7a876c9dfb23d765f0a9bed117a00245816c57c9af41bdec080",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Power Cut Statement - 9 August, 8pm",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L361-L362",
+          "content": "E23 National Grid ESO public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159904985976594432"
+              ],
+              "decoded_utc": [
+                "2019-08-09T19:11:13.306Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810164428/https://twitter.com/ng_eso/status/1159904985976594432",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159904985976594432",
+                  "uk_local_time_from_identifier": "2019-08-09 20:11:13",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L363-L365",
+          "content": "E24 London North Eastern Railway (LNER) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159910960657772544"
+              ],
+              "decoded_utc": [
+                "2019-08-09T19:34:57.781Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810100619/https://twitter.com/LNER/status/1159875966426124288",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159910960657772544",
+                  "uk_local_time_from_identifier": "2019-08-09 20:34:57",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L366-L368",
+          "content": "E25 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159912641827082240"
+              ],
+              "decoded_utc": [
+                "2019-08-09T19:41:38.603Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159912641827082240",
+                  "uk_local_time_from_identifier": "2019-08-09 20:41:38",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L369-L371",
+          "content": "E26 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159921617604108290"
+              ],
+              "decoded_utc": [
+                "2019-08-09T20:17:18.595Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159921617604108290",
+                  "uk_local_time_from_identifier": "2019-08-09 21:17:18",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L372-L374",
+          "content": "E27 London North Eastern Railway (LNER) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159927293931864064"
+              ],
+              "decoded_utc": [
+                "2019-08-09T20:39:51.937Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810100619/https://twitter.com/LNER/status/1159875966426124288",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159927293931864064",
+                  "uk_local_time_from_identifier": "2019-08-09 21:39:51",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L375-L377",
+          "content": "E28 London North Eastern Railway (LNER) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159937290111717376"
+              ],
+              "decoded_utc": [
+                "2019-08-09T21:19:35.212Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190810100619/https://twitter.com/LNER/status/1159875966426124288",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159937290111717376",
+                  "uk_local_time_from_identifier": "2019-08-09 22:19:35",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L378-L379",
+          "content": "E29 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1159952501048844288"
+              ],
+              "decoded_utc": [
+                "2019-08-09T22:20:01.782Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1159952501048844288",
+                  "uk_local_time_from_identifier": "2019-08-09 23:20:01",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L380-L382",
+          "content": "E30 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1160047064480387077"
+              ],
+              "decoded_utc": [
+                "2019-08-10T04:35:47.461Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160047064480387077",
+                  "uk_local_time_from_identifier": "2019-08-10 05:35:47",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L383-L389",
+          "content": "E31 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_1008_0830",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-10-august-830am.txt",
+              "sha256": "94e9e1787074eeebb0a07d1684031c497c9c5e58235a93fcd671aaa68f3db154",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Power Cut Statement - 10 August, 8.30am",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L390-L396",
+          "content": "E32 National Grid ESO public social-media posts (thread of six)",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1160091702910246912",
+                "1160091704617263104",
+                "1160091706643111939",
+                "1160091707964370944",
+                "1160091709432311808",
+                "1160091711185571840"
+              ],
+              "decoded_utc": [
+                "2019-08-10T07:33:10.092Z",
+                "2019-08-10T07:33:10.499Z",
+                "2019-08-10T07:33:10.982Z",
+                "2019-08-10T07:33:11.297Z",
+                "2019-08-10T07:33:11.647Z",
+                "2019-08-10T07:33:12.065Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20190811085158/https://twitter.com/ng_eso/status/1160091711185571840?ref_src=twsrc%5Etfw",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091702910246912",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:10",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091704617263104",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:10",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091706643111939",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:10",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091707964370944",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:11",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091709432311808",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:11",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                },
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160091711185571840",
+                  "uk_local_time_from_identifier": "2019-08-10 08:33:12",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L397-L399",
+          "content": "E33 Thameslink (Govia Thameslink Railway) public social-media post",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_embedded",
+              "file": "consequences/derived/comms_tweets_embedded_in_captures.csv",
+              "sha256": "6173505dfe7df6dd1eff2489a8388d5805aaa4369eb86a08b6884d6bd448241a",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "post_ids": [
+                "1160101138043154432"
+              ],
+              "decoded_utc": [
+                "2019-08-10T08:10:39.603Z"
+              ],
+              "archive_url": "https://web.archive.org/web/20200829180220/https://twitter.com/TLRailUK/status/1159859425559154688",
+              "note": "time decoded from the post identifier; gist written for this record from the archived post text (not openly licensed; not reproduced)",
+              "timeline_cross_check": [
+                {
+                  "source_id": "comms_timeline",
+                  "post_id": "1160101138043154432",
+                  "uk_local_time_from_identifier": "2019-08-10 09:10:39",
+                  "rule": "when the post has its own row in the timeline, that row's time must equal the decoded time (checked when the timeline is held)"
+                }
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L400-L406",
+          "content": "E34 National Rail Enquiries service disruption web page ('today')",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nre_today_20190810",
+              "file": "consequences/raw/comms/wayback_20190810190551_nre_today.html",
+              "sha256": "91e50247c48a31a416dec794b46722407d17dbdc33f6a18ddac2d1bfd36bb1a5",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "displayed": [
+                "Incident created 09/08/2019 16:50",
+                "Last updated 10/08/2019 16:51"
+              ],
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L407-L412",
+          "content": "E35 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_1008_1930",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-10-august-730pm.txt",
+              "sha256": "652d74022f78b397fdcc612b5377841e98e035ecd43e26ce7abcb637880f4b4e",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Power Cut Statement - 10 August, 7.30pm",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L413-L417",
+          "content": "E36 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_1308",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/power-cut-statement-frequency-13-august.txt",
+              "sha256": "398b1b6e1e2c2c4b4ccfd7ca2467f7b67c2903dd46832a501bed3be75fe35cb3",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Power Cut Statement on Frequency - 13 August",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L418-L421",
+          "content": "E37 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_1608",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/national-grid-eso-confirms-submission-interim-technical-report-power-outages-9th-august-ofgem.txt",
+              "sha256": "23c48c087b56154a8c0d3010cb885a58bcd9c0f1c4c9f9bfc74bc86be4b359ae",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "National Grid ESO confirms submission of interim technical report into the power outages of 9th August, to Ofgem",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L422-L423",
+          "content": "E38 National Grid ESO website statement",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "neso_statement_1908",
+              "file": "neso/datasets/neso_news_statements_aug2019/raw_text/interim-technical-report-power-outages-friday-9-august.txt",
+              "sha256": "12e3d36c713dc050b83d4269d957a1c43820712f985ca0a9e7552c24d117dffb",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "title": "Interim technical report into the power outages of Friday 9 August",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L425-L425",
+          "content": "Part F heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L426-L431",
+          "content": "F1 Ofgem sets timeline for National Grid ESO report following UK power failures (press release, 12 August 2019)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190812",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-12_timeline.html",
+              "sha256": "418eb57db591f4738a6b5063a099da8bd7e5842ceb1d37eea612a34d905a2e48",
+              "detail": "quoted sentence",
+              "quote": "Ofgem has written to the National Grid Electricity System Operator requesting an urgent interim report into the incident on 9 August 2019 to be provided to Ofgem by Friday 16 August."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190812",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-12_timeline.html",
+              "sha256": "418eb57db591f4738a6b5063a099da8bd7e5842ceb1d37eea612a34d905a2e48",
+              "detail": "quoted sentence",
+              "quote": "A final, detailed technical report must be provided to Ofgem by Friday 6 September."
+            }
+          ]
+        },
+        {
+          "lines": "L432-L444",
+          "content": "F2 Business Secretary sets out scope of investigation into power cuts (press release, first published 2019-08-14T11:15:35+01:00)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "govuk_beis_20190814",
+              "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+              "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+              "detail": "quoted sentence",
+              "quote": "National Grid has said power cuts had “nothing to do with changes in wind speed or the variability of wind”"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "govuk_beis_20190814",
+              "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+              "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+              "detail": "quoted sentence",
+              "quote": "The government today (14 August 2019) set out the scope of its review into the actions of the National Grid Electricity System Operator after Friday’s power cuts."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "govuk_beis_20190814",
+              "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+              "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+              "detail": "quoted sentence",
+              "quote": "The committee met for the first time on Monday (12 August) and will provide a report on initial findings within 5 weeks to the Secretary of State for Business, Energy and Industrial Strategy."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "govuk_beis_20190814",
+              "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+              "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+              "detail": "quoted sentence",
+              "quote": "It will then submit a comprehensive report within 12 weeks."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "govuk_beis_20190814",
+              "file": "consequences/raw/comms/govuk_content_business-secretary-sets-out-scope-of-investigation-into-power-cuts.json",
+              "sha256": "f62b358c1f6aac26a24cf95264131db8b8716a34b74277f61fe842d7b7463503",
+              "detail": "quoted sentence",
+              "quote": "This review will complement the investigation being undertaken by energy regulator Ofgem into how the electricity operator responded in line with its licence conditions and system security standards."
+            }
+          ]
+        },
+        {
+          "lines": "L445-L452",
+          "content": "F3 Great Britain power system disruption review (publication page; first published 2019-08-14T11:15:00+01:00, updated 2019-10-04 and 2020-01-03)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "govuk_review_collection",
+              "file": "consequences/raw/comms/govuk_content_great-britain-power-system-disruption-review.json",
+              "sha256": "2d22d443449aade265716312479135d5e3bc441933d4796213429294b14cef0e",
+              "detail": "quoted sentence",
+              "quote": "On Friday 9 August 2019 a power disruption resulted from the operation of Low Frequency Demand Disconnection relays on the Great Britain power system at about 4:54 pm."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "govuk_review_collection",
+              "file": "consequences/raw/comms/govuk_content_great-britain-power-system-disruption-review.json",
+              "sha256": "2d22d443449aade265716312479135d5e3bc441933d4796213429294b14cef0e",
+              "detail": "quoted sentence",
+              "quote": "Though demand was fully restored within 90 minutes, the secondary impacts continued to be felt for much of the day."
+            }
+          ]
+        },
+        {
+          "lines": "L453-L465",
+          "content": "F4 Ofgem launches investigation into power cuts (press release, 20 August 2019)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190820",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-20_launches_investigation.html",
+              "sha256": "9e6f10313228c640d28c7742e1a93c6f4f17474ef7aff87e4019279403503818",
+              "detail": "quoted sentence",
+              "quote": "Ofgem has launched an investigation into the power cuts of Friday 9 August, following an initial report from National Grid Electricity System Operator (NGESO)."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190820",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-20_launches_investigation.html",
+              "sha256": "9e6f10313228c640d28c7742e1a93c6f4f17474ef7aff87e4019279403503818",
+              "detail": "quoted sentence",
+              "quote": "It will also seek to establish whether any of the parties involved – National Grid ESO, National Grid Electricity Transmission, 12* distribution network operators in England and Wales, as well as generators RWE Generation (Little Barford Power station) and Orsted (Hornsea) - breached their licence conditions."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190820",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-20_launches_investigation.html",
+              "sha256": "9e6f10313228c640d28c7742e1a93c6f4f17474ef7aff87e4019279403503818",
+              "detail": "quoted sentence",
+              "quote": "Ofgem is liaising with the rail regulator (Office of Rail and Road) and will be engaging with the rail authorities to understand better why the drop in frequency on the energy network led to disruption for passengers."
+            },
+            {
+              "kind": "dataset",
+              "source_id": "ofgem_pr_20190820",
+              "file": "consequences/raw/docs/ofgem_pr_2019-08-20_launches_investigation.html",
+              "sha256": "9e6f10313228c640d28c7742e1a93c6f4f17474ef7aff87e4019279403503818",
+              "detail": "quoted sentence",
+              "quote": "The opening of this investigation does not imply that Ofgem has made any findings about non-compliance for any of the companies mentioned at this early stage of the investigation."
+            }
+          ]
+        },
+        {
+          "lines": "L467-L469",
+          "content": "Part G: what the record does not contain",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        }
+      ],
+      "artifacts": {
+        "R09/R09_elexon_remit_messages_hornsea_one_little_barford.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "elexon_remit_details_1",
+              "file": "elexon/raw/REMIT_revision_details_selected.json",
+              "sha256": "4f6393bea04457742009ec0358b09e898dcb3958c0529d5e396dd65b13dbdbcb"
+            },
+            {
+              "source_id": "elexon_remit_details_2",
+              "file": "elexon/raw/REMIT_revision_details_selected_part2.json",
+              "sha256": "ec6abbe7a4111b410a38167ab496b61027d5f2c1c6696c3fc7bd8e759f1418b0"
+            }
+          ],
+          "transformation": "records of the four units, sorted by unit, publishTime, message and revision; values unchanged",
+          "sha256": "1792df465d5abbf7780cdccaf092bdc785a53659d3dee5615a3b5fffcddc35bc",
+          "bytes": 35439
+        },
+        "R09/R09_eso_table8_external_communications.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/ESO-p30-tab8.csv"
+            }
+          ],
+          "transformation": "cells as printed; personal names replaced by roles",
+          "sha256": "e1a908e3ef3fb73e5f0bc50b0e9dd68ac96531467ffbb2d714c37a90cc8623ec",
+          "bytes": 2259
+        },
+        "R09/R09_eso_table9_calls_to_dnos.csv": {
+          "extraction_method": "transcription",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "catalogue_extract": "extracted/ESO-p32-tab9.csv"
+            }
+          ],
+          "transformation": "cells as printed (thousands separators kept)",
+          "sha256": "e8784dc20ca9adb11ebcc65b2ffc324a715b7badd6193cc592a8cb22f3e7767a",
+          "bytes": 184
+        },
+        "R09/R09_public_posts_and_statements_gists.csv": {
+          "extraction_method": "paraphrase",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "comms_posts_embedded"
+            },
+            {
+              "source_id": "comms_posts_index"
+            },
+            {
+              "source_id": "nre_incident_228430"
+            },
+            {
+              "source_id": "neso_statement_0908_1830"
+            },
+            {
+              "source_id": "neso_statement_0908_2000"
+            },
+            {
+              "source_id": "neso_statement_1008_0830"
+            },
+            {
+              "source_id": "nre_today_20190810"
+            },
+            {
+              "source_id": "neso_statement_1008_1930"
+            },
+            {
+              "source_id": "neso_statement_1308"
+            },
+            {
+              "source_id": "neso_statement_1608"
+            },
+            {
+              "source_id": "neso_statement_1908"
+            }
+          ],
+          "transformation": "times decoded or as displayed; gists written for this record; no post or page text",
+          "sha256": "e491a3245a8e85f78db44879ed099313f066f4deda5c465fe5080d0c18ea2232",
+          "bytes": 13138
+        }
+      }
+    },
+    "R11": {
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R11/R11.txt",
+      "text_sha256": "d61ee361330115de1ccce98b0c99483406d4861f18b95fcf82f63d94234b14cd",
+      "line_count": 369,
+      "construction": "Part A copies, for every incident starting on 09/08/2019 with incident reason XK or responsible manager METR, all of its Network Rail records (18 of 40 columns per record; 13 incident-level columns per incident, checked constant within each incident) and quotes the publisher's explanation document (checked against the committed text extract). Part B copies the glossary rows of the codes used (event codes in full). Part C copies three ORR periodic tables. No totals or other derived values are computed.",
+      "segments": [
+        {
+          "lines": "L1-L16",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L18-L18",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L19-L43",
+          "content": "A1 Source, licence, selection rule and file description",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Records selected by rule; columns selected; values unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "header and selected records",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "opening paragraph",
+              "quote": "The file attached is a standard data extract from our Performance System Strategy (PSS) database",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "opening paragraph",
+              "quote": "The information within the file contains all “attributed” delays to passenger train services in line with the guidance in the Delay Attribution Guide.",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            }
+          ]
+        },
+        {
+          "lines": "L44-L77",
+          "content": "A2 Publisher's explanation of the columns (quotations)",
+          "value_status": "reported",
+          "extraction_method": "quotation",
+          "transformation": null,
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note summing",
+              "quote": "The data contains both delay and cancellation events (denoted by the performance event code) and a user should be careful when summing delay minutes (pfpi minutes) to exclude cancellation events.",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note investigated",
+              "quote": "It is possible that the detailed reasons for some of the delays in this file are still being investigated and until this is complete the responsibility for the delay is still not finalised (see attribution status).",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note remapped",
+              "quote": "Delay data is remapped to reflect the franchise mapping at the time of the data extraction (in this case May 2021).",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note trainid",
+              "quote": "trainids are unique within a railway period but not within a year",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note unvalidated",
+              "quote": "Train schedule type / traction type/ trailing load / unit class – these aren’t mandated or validated fields within PSS",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note incident_number",
+              "quote": "Incident number – the TRUST DA incident number (not unique without the create date)",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note create_date",
+              "quote": "Incident create date – the date the incident was entered into the system",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note start_end",
+              "quote": "Incident start/end date – the date the system has the incident live (this is not the length of the incident on the ground)",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note resp",
+              "quote": "Responsible Manager – who within the industry is responsible for the delay – all delays have responsibility for performance improvement purposes",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note reason",
+              "quote": "Incident Reason – the Delay Attribution Guide cause code for the incident",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note equipment",
+              "quote": "Incident equipment – internal free form information",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note description",
+              "quote": "Incident description – short description of the incident for internal use",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note react",
+              "quote": "If no code the delay is primary (ie the delay is at the site of the incident) if reactionary the delay is a later consequence of that incident",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note event_code",
+              "quote": "A and M denote delays, C, D, O, P, S and F are cancellations … C – is a full cancelletion, D is a diversion, F is a failure to stop, S is a scheduled cancellation and O/P are part cancellations",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note stanox",
+              "quote": "Start/end stanox – the location of the delay (not the incident)",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note event_time",
+              "quote": "Event Datetime – the time the train encountered the delay",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note pfpi",
+              "quote": "Pfpi minutes – the size of the delay …. Note if the train is cancelled (performance event code) a deemed delay minute is generated for internal usage in these circumstances the train hasn’t been delayed and including this delay in any calculation of delay is misleading.",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "nr_explanation",
+              "file": "consequences/raw/rail/networkrail_Explanation-of-historic-attributed-delays_2021-05.pdf",
+              "sha256": "d698e994cf67c6a41fdcb21ab7ec51ea11756f1a1040d876e0df73febd159f02",
+              "detail": "column note applicable",
+              "quote": "Applicable timetable flag – if N the train is not in official performance records as it is a short term replacement of a train plan – normally a reinstatement of part of a cancelled service",
+              "checked_against": "mirror extract (see the source's extract_rule)"
+            }
+          ]
+        },
+        {
+          "lines": "L79-L80",
+          "content": "A3 incident list heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L81-L84",
+          "content": "A3.1 incident 224906",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224906 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L85-L88",
+          "content": "A3.2 incident 222974",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 222974 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L89-L92",
+          "content": "A3.3 incident 223062",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 223062 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L93-L96",
+          "content": "A3.4 incident 224398",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224398 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L97-L100",
+          "content": "A3.5 incident 225022",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225022 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L101-L104",
+          "content": "A3.6 incident 224784",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224784 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L105-L108",
+          "content": "A3.7 incident 224833",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224833 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L109-L112",
+          "content": "A3.8 incident 224890",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224890 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L113-L116",
+          "content": "A3.9 incident 224902",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224902 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L117-L120",
+          "content": "A3.10 incident 225015",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225015 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L121-L124",
+          "content": "A3.11 incident 224861",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224861 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L125-L128",
+          "content": "A3.12 incident 224918",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224918 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L129-L132",
+          "content": "A3.13 incident 224915",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224915 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L133-L136",
+          "content": "A3.14 incident 224905",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224905 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L137-L140",
+          "content": "A3.15 incident 224961",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224961 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L141-L144",
+          "content": "A3.16 incident 224917",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224917 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L145-L148",
+          "content": "A3.17 incident 224920",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224920 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L149-L152",
+          "content": "A3.18 incident 224904",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224904 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L153-L156",
+          "content": "A3.19 incident 224923",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224923 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L157-L160",
+          "content": "A3.20 incident 224957",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224957 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L161-L164",
+          "content": "A3.21 incident 224891",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224891 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L165-L168",
+          "content": "A3.22 incident 224913",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224913 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L169-L172",
+          "content": "A3.23 incident 224916",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224916 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L173-L176",
+          "content": "A3.24 incident 224974",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224974 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L177-L180",
+          "content": "A3.25 incident 224942",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224942 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L181-L184",
+          "content": "A3.26 incident 224979",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224979 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L185-L188",
+          "content": "A3.27 incident 224990",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 224990 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L189-L192",
+          "content": "A3.28 incident 225278",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225278 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L193-L196",
+          "content": "A3.29 incident 225181",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225181 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L197-L200",
+          "content": "A3.30 incident 225310",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225310 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L201-L204",
+          "content": "A3.31 incident 225486",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Incident-level fields as recorded; code names looked up in the glossary.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79",
+              "detail": "incident 225486 fields",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L206-L206",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L207-L220",
+          "content": "B1 Glossary source and performance event codes",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Rows copied; cell text unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_glossary",
+              "file": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.xlsx",
+              "sha256": "083eb7df58120c3f9ba9e28de9f0944f598a17d05c2efd5055a07ce8de6dcb6e",
+              "detail": "sheet Performance Event Code (all rows)",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L221-L292",
+          "content": "B2 Incident reason, reactionary reason, responsible manager and operator codes",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Rows of the codes occurring in the selected records; cell text unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_glossary",
+              "file": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.xlsx",
+              "sha256": "083eb7df58120c3f9ba9e28de9f0944f598a17d05c2efd5055a07ce8de6dcb6e",
+              "detail": "sheets Incident Reason, Reactionary Reason Code, Responsible Manager, Operator Name (rows of the codes used)",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L293-L295",
+          "content": "B3 Railway period end dates 2019/20",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Spreadsheet date serials converted to calendar dates (1899-12-30 epoch).",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "nr_glossary",
+              "file": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.xlsx",
+              "sha256": "083eb7df58120c3f9ba9e28de9f0944f598a17d05c2efd5055a07ce8de6dcb6e",
+              "detail": "sheet Period Dates, YEAR 2019/20 Date column",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L297-L297",
+          "content": "Part C heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L298-L329",
+          "content": "C1 ORR Table 3124 description and Great Britain / GTR rows",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Rows copied; values unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "orr_3124",
+              "file": "consequences/raw/rail/orr_3124_2019-20_P03-P07_slice.csv",
+              "sha256": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02",
+              "detail": "all rows; Great Britain and Greater Thameslink Railway listed",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L330-L365",
+          "content": "C2 ORR Tables 3157a and 3157b",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Rows copied; values unchanged.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "orr_3157a",
+              "file": "consequences/raw/rail/orr_3157a_2019-20_P03-P07_slice.csv",
+              "sha256": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16",
+              "detail": "all rows",
+              "quote": null
+            },
+            {
+              "kind": "dataset",
+              "source_id": "orr_3157b",
+              "file": "consequences/raw/rail/orr_3157b_2019-20_P03-P07_slice.csv",
+              "sha256": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb",
+              "detail": "all rows; 2019-20 Period 05 rows listed",
+              "quote": null
+            }
+          ]
+        },
+        {
+          "lines": "L367-L369",
+          "content": "Part D: what the record does not contain",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        }
+      ],
+      "artifacts": {
+        "R11/R11_networkrail_delay_records_selected_incidents.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79"
+            }
+          ],
+          "transformation": "rows selected by rule (A1), 18 columns kept, file order kept, values unchanged",
+          "sha256": "9bd261332ebac0c9e7ed6ae602202a20c20b744b9f86445ec1e394ab597e8ef6",
+          "bytes": 386626
+        },
+        "R11/R11_networkrail_incidents_selected.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "nr_delays_p05",
+              "file": "consequences/raw/rail/networkrail_all_delays_201920_P05_slice_2019-08-09.csv.gz",
+              "sha256": "e21711596a6195647fcf8fe6ce9f1b91557bfa7ac60a83d4bc9645de6b973e79"
+            }
+          ],
+          "transformation": "incident-level columns of the selected records, one row per incident (checked identical on every record), sorted by start time then number",
+          "sha256": "bc89db6ab39d75767b46a9511b2f78e5541912ef77feb0590b915651d79d019b",
+          "bytes": 4245
+        },
+        "R11/R11_networkrail_glossary_codes_used.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "nr_glossary",
+              "file": "consequences/raw/rail/networkrail_Historic-Delay-Attribution-Glossary_2021-08.xlsx",
+              "sha256": "083eb7df58120c3f9ba9e28de9f0944f598a17d05c2efd5055a07ce8de6dcb6e"
+            }
+          ],
+          "transformation": "glossary rows of the codes used; cell text unchanged (responsible manager names stripped of trailing spaces)",
+          "sha256": "6724be4afcabba4ca38090955278f35d2d20e09e792c0fcdf9c7a73ad856c2c8",
+          "bytes": 48278
+        },
+        "R11/R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "orr_3124",
+              "file": "consequences/raw/rail/orr_3124_2019-20_P03-P07_slice.csv",
+              "sha256": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02"
+            }
+          ],
+          "transformation": "byte-identical copy",
+          "sha256": "f540e31992ad2c3fcdb6d5c3c3485f8694374d3b3d5ffbcd5c98f38a053d6c02",
+          "bytes": 14744
+        },
+        "R11/R11_orr_table3157a_severely_disrupted_days_great_britain.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "orr_3157a",
+              "file": "consequences/raw/rail/orr_3157a_2019-20_P03-P07_slice.csv",
+              "sha256": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16"
+            }
+          ],
+          "transformation": "byte-identical copy",
+          "sha256": "eb05d72e595175bf691e2e02fbf0bda2f7cbf10552f4da539aee7ba47e985c16",
+          "bytes": 300
+        },
+        "R11/R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv": {
+          "extraction_method": "script",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "orr_3157b",
+              "file": "consequences/raw/rail/orr_3157b_2019-20_P03-P07_slice.csv",
+              "sha256": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb"
+            }
+          ],
+          "transformation": "byte-identical copy",
+          "sha256": "b23ecca0ef3c74ceb210e5c5c5c504b97949c06b673ff479c37af5968d93dfbb",
+          "bytes": 7606
+        }
+      },
+      "notes": {
+        "selection": {
+          "rule": "incident_start_datetime on 09/08/2019 and (incident_reason == XK or resp_manager == METR)",
+          "incidents": 31,
+          "records": 3234
+        }
+      }
+    },
+    "R12": {
+      "label": "REAL DATA EXTRACTS",
+      "text_file": "R12/R12.txt",
+      "text_sha256": "8d23589e117ca2d4616a560c902f6838034946acacfb90084328d70eedaa71d6",
+      "line_count": 45,
+      "construction": "Part A gives the ESNEFT press release's title, displayed date and metadata times (each checked in the archived page) and a gist written for this record (the text is not openly licensed; the gist shares no run of more than three consecutive words with the statement; the speaker's name is omitted). Part B gives the identifiers and decoded times of two airport posts whose text is not recoverable. Nothing is synthesised.",
+      "segments": [
+        {
+          "lines": "L1-L16",
+          "content": "Header: title, originator, record type, STATUS label, clock basis, value legend",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L18-L18",
+          "content": "Part A heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L19-L32",
+          "content": "A1 ESNEFT press release: publication details and gist",
+          "value_status": "reported",
+          "extraction_method": "paraphrase",
+          "transformation": "Publication details copied; statement summarised in builder wording (no run of more than three consecutive words shared with the statement); personal name omitted.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "esneft_statement",
+              "file": "consequences/raw/docs/esneft_p8309.html",
+              "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+              "detail": "page title",
+              "quote": "Major power cut across parts of England and Wales"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "esneft_statement",
+              "file": "consequences/raw/docs/esneft_p8309.html",
+              "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+              "detail": "displayed page date",
+              "quote": "10/08/2019"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "esneft_statement",
+              "file": "consequences/raw/docs/esneft_p8309.html",
+              "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+              "detail": "schema.org metadata",
+              "quote": "\"datePublished\":\"2019-08-10T10:09:37+00:00\"",
+              "checked_against": "raw source text (no tag removal)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "esneft_statement",
+              "file": "consequences/raw/docs/esneft_p8309.html",
+              "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+              "detail": "schema.org metadata",
+              "quote": "\"dateModified\":\"2024-10-15T08:22:50+00:00\"",
+              "checked_against": "raw source text (no tag removal)"
+            },
+            {
+              "kind": "dataset",
+              "source_id": "esneft_statement",
+              "file": "consequences/raw/docs/esneft_p8309.html",
+              "sha256": "02701761f49099fd6f1fc124c61773d7bfc3204d6591f5ce51df1fc13fdccf0d",
+              "detail": "gist written for this record; source text not reproduced",
+              "quote": null,
+              "note": "statement paragraph of the press release; the speaker's name is omitted",
+              "gist_rule": "shares no run of more than 3 consecutive words with the source text (checked when the source is held)"
+            }
+          ]
+        },
+        {
+          "lines": "L34-L34",
+          "content": "Part B heading",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        },
+        {
+          "lines": "L35-L41",
+          "content": "B1 Newcastle International Airport posts: decoded times, text not recoverable",
+          "value_status": "reported",
+          "extraction_method": "script",
+          "transformation": "Times decoded from the post identifiers: milliseconds since the Unix epoch = (identifier >> 22) + 1288834974657; truncated to the second.",
+          "sources": [
+            {
+              "kind": "dataset",
+              "source_id": "comms_posts_index",
+              "file": "consequences/derived/comms_archived_tweets_index.csv",
+              "sha256": "328827f5f1f41fdb0b9dbb374dfd049d483ad8983532bcf323bcf2fd9a24b728",
+              "detail": "rows of the two airport posts (identifier, capture, empty text, note)",
+              "quote": null
+            },
+            {
+              "kind": "public_post",
+              "source_id": "comms_posts_index",
+              "post_id": "1159869406102425601",
+              "decoded_utc": "2019-08-09T16:49:50.403Z",
+              "archive_url": "https://web.archive.org/web/20190810033039/https://twitter.com/NCLairport/status/1159869406102425601?ref_src=twsrc%5Etfw",
+              "quote": null,
+              "note": "script-only page capture; the real-data pass recorded the text as not recoverable (embed request failed)"
+            },
+            {
+              "kind": "public_post",
+              "source_id": "comms_posts_index",
+              "post_id": "1159871147980328960",
+              "decoded_utc": "2019-08-09T16:56:45.699Z",
+              "archive_url": "https://web.archive.org/web/20220728215944/https://twitter.com/NCLairport/status/1159871147980328960?ref_src=twsrc%5Etfw",
+              "quote": null,
+              "note": "script-only page capture; the real-data pass recorded the text as not recoverable (embed request failed)"
+            }
+          ]
+        },
+        {
+          "lines": "L43-L45",
+          "content": "Part C: what the record does not contain",
+          "value_status": "framing",
+          "extraction_method": "framing",
+          "transformation": null,
+          "sources": []
+        }
+      ],
+      "artifacts": {
+        "R12/R12_essential_service_public_statements.csv": {
+          "extraction_method": "paraphrase",
+          "builder": "builder/full_investigation/real/fi_build_real.py",
+          "inputs": [
+            {
+              "source_id": "esneft_statement"
+            },
+            {
+              "source_id": "comms_posts_index",
+              "post_ids": [
+                "1159869406102425601",
+                "1159871147980328960"
+              ]
+            }
+          ],
+          "transformation": "publication details copied; gist written for this record; post times decoded from identifiers",
+          "sha256": "6da993cf2567ca7420d89ae58e7b377caeef0bbbd5f9915ba141992501a06811",
+          "bytes": 1097
+        }
+      }
+    }
+  },
+  "rows": {
+    "real_r09_asset.jsonl": {
+      "sha256": "077d4ed0f394d189486d29e8f4be59fe049b900c7fb3e275df199d945b6c4f38",
+      "count": 46,
+      "by_signal": {
+        "T_HOWAO-1 REMIT declared available capacity for event window MW": 4,
+        "T_HOWAO-2 REMIT declared available capacity for event window MW": 8,
+        "T_HOWAO-3 REMIT declared available capacity for event window MW": 13,
+        "T_LBAR-1 REMIT declared available capacity for event window MW": 21
+      }
+    },
+    "real_r09_control.jsonl": {
+      "sha256": "dd3206aedaa953202a74ac474d4fa3d7accacf4978befc2a51e941433ae12646",
+      "count": 42,
+      "by_room_id": {
+        "ESO-COMMS": 42
+      }
+    },
+    "real_r11_control.jsonl": {
+      "sha256": "0395ccfffe9d35b6da21c9feaeb1b0bb3751a954b3f12da317c78fc2a5f8eec2",
+      "count": 31,
+      "by_room_id": {
+        "NETWORK-RAIL-CONTROL": 31
+      }
+    }
+  },
+  "excluded": [
+    {
+      "item": "Ofgem press release of 3 January 2020 (payments by the companies involved) and the GOV.UK press release of 3 January 2020 that reports them",
+      "reason": "Decision 50: enforcement settlements are not agent-visible evidence (the handoff forbids requiring or supplying enforcement outcomes; asserting them is severe flag SF3). Kept here only as a leakage detector.",
+      "sources": [
+        {
+          "file": "consequences/raw/docs/ofgem_pr_2020-01-03_companies_pay_10.5m.html",
+          "sha256": "c9c2a16d817f3e789b8fcbc7349249deb043ff4e190b2bc7e64c8b324ee5e694",
+          "url": "https://www.ofgem.gov.uk/press-release/companies-pay-ps105-million-over-9-august-power-cut"
+        },
+        {
+          "file": "consequences/raw/comms/govuk_content_measures-to-make-britains-power-network-more-resilient-planned-after-august-power-outage.json",
+          "sha256": "a369ce1ec648bfb4a983acf07bb6df979a9f899c50161fb45d40bb18b649320a",
+          "url": "https://www.gov.uk/api/content/government/news/measures-to-make-britains-power-network-more-resilient-planned-after-august-power-outage"
+        }
+      ],
+      "leakage_markers": [
+        "4.5 million",
+        "£4.5m",
+        "£1.5m",
+        "£10.5 million",
+        "voluntary payments"
+      ]
+    },
+    {
+      "item": "NESO web pages 'National Grid ESO response to E3C and Ofgem reports' (2020) and '09 August 2019: one year on' (2020)",
+      "reason": "Published after the period R09 covers; the response page accompanies the January 2020 enforcement outcome (decision 50)."
+    },
+    {
+      "item": "Hydrocarbon Processing / Reuters article of 12 September 2019 on a power cut at the Stanlow refinery",
+      "reason": "A different event (12 September 2019), and the publisher states 'COPYING AND DISTRIBUTING ARE PROHIBITED WITHOUT PERMISSION OF THE PUBLISHER': not licensed, so not included even as a dated distractor.",
+      "sources": [
+        {
+          "file": "consequences/raw/docs/hydrocarbonprocessing_2019-09-12_stanlow_power_cut_DIFFERENT_EVENT.html",
+          "sha256": "b8fb9c1bd628b610a06db2096bc557d3ca37bea410c9083a9f51aff87c507803"
+        }
+      ]
+    },
+    {
+      "item": "Text of public posts, web statements and pages (ESO, DNOs, train operators, National Rail Enquiries, ESNEFT)",
+      "reason": "Not openly licensed. R09 Part E and R12 Part A give times, organisations and gists written for this record; no gist shares more than three consecutive words with its source."
+    },
+    {
+      "item": "Posts by personal accounts (including a minister's account), replies to members of the public, account handles and personal names",
+      "reason": "Decision 51: organisational public statements only; no personal handles. Personal names printed in ESO Table 8 are replaced by roles."
+    },
+    {
+      "item": "Thameslink service-updates page (capture 2019-08-09T17:53:53Z) and the Newcastle Airport post of 15 August 2019",
+      "reason": "Not used: the Thameslink page carries the same notice as the National Rail Enquiries page in R09 with ambiguous item times; the airport post is not about 9 August."
+    },
+    {
+      "item": "Network Rail records of other incidents in period 2019-20 P5",
+      "reason": "Outside R11's stated selection rule (incident start on 9 August 2019 and reason XK or responsible manager METR). Not judged for relevance."
+    },
+    {
+      "item": "Elexon REMIT message of T_DRAXX-4 (2016) held in the same retrieval batch",
+      "reason": "Outside R09's unit selection (Hornsea One and Little Barford)."
+    }
+  ]
+}

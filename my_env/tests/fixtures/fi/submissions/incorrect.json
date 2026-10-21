@@ -1,0 +1,414 @@
+{
+  "findings": [
+    {
+      "citations": [
+        {
+          "evidence_id": "R03",
+          "locator": "L73-L77"
+        }
+      ],
+      "finding_id": "X01",
+      "statement": "The initiating event was the lightning trip of the Blyth–Eccles–Stella West 400 kV circuit at 16:50:44 BST, which started the loss of generation.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L24"
+        }
+      ],
+      "finding_id": "X02",
+      "quantity": {
+        "basis": "ESO Table 2",
+        "unit": "MW",
+        "value": 1990
+      },
+      "statement": "The ESO's technical report (Table 2) gives the total generation lost as 1,990 MW.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S05",
+          "locator": "L83-L87"
+        }
+      ],
+      "finding_id": "X03",
+      "statement": "Ofgem reports that LFDD disconnected 931 MW of demand.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S05",
+          "locator": "L35"
+        }
+      ],
+      "finding_id": "X04",
+      "statement": "The DNOs reported 892 MW of demand disconnected by LFDD relays.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S06",
+          "locator": "L46-L49"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L20-L21"
+        }
+      ],
+      "derivation": "150 + 350 + 500 + 462 = 1,462 MW",
+      "finding_id": "X05",
+      "statement": "In total 1,462 MW of distributed generation was lost on loss-of-mains protection: 150 MW + 350 MW + 500 MW + 462 MW = 1,462 MW.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S12",
+          "locator": "L16-L24"
+        },
+        {
+          "evidence_id": "S06",
+          "locator": "L94-L101"
+        }
+      ],
+      "derivation": "1,878 + 200 + 550 = 2,628 MW",
+      "finding_id": "X06",
+      "statement": "Adding the ESO's 1,878 MW, the further 200 MW at 49 Hz and the 550 MW lost with LFDD gives 1,878 MW + 200 MW + 550 MW = 2,628 MW of generation lost.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R06",
+          "locator": "L31"
+        }
+      ],
+      "finding_id": "X07",
+      "statement": "The ESO's technical report (Table 3) gives 1,338 MW of secondary response held.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R02",
+          "locator": "L192"
+        }
+      ],
+      "finding_id": "X08",
+      "statement": "ESO Table 4 gives system inertia of 219,632 MVA.s on 9 August.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L59"
+        }
+      ],
+      "finding_id": "X09",
+      "statement": "The root cause of the ST1C trip was a faulty speed sensor, and GT1A tripped because a bypass valve failed to open.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S03",
+          "locator": "L52"
+        }
+      ],
+      "finding_id": "X10",
+      "statement": "GT1B tripped automatically on high steam pressure, as recorded in the ESO control log entry S07-E14.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S01",
+          "locator": "L78-L79"
+        }
+      ],
+      "finding_id": "X11",
+      "statement": "The Dynamic Reactive Compensator failed and caused the Hornsea One de-load.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:20+01:00/2019-08-09T16:54:30+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:53:49+01:00",
+      "finding_id": "X12",
+      "quantity": {
+        "basis": "R01",
+        "unit": "Hz",
+        "value": 48.8
+      },
+      "statement": "The frequency minimum was 48.8 Hz at 16:53:49 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:52:45+01:00/2019-08-09T16:53:10+01:00"
+        }
+      ],
+      "event_time": "2019-08-09T16:52:58+01:00",
+      "finding_id": "X13",
+      "quantity": {
+        "basis": "ESO timeline",
+        "unit": "Hz",
+        "value": 49.1
+      },
+      "statement": "The first post-fault minimum was 49.1 Hz at 16:52:58 BST.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T16:53:40+01:00/2019-08-09T16:54:14+01:00"
+        }
+      ],
+      "finding_id": "X14",
+      "quantity": {
+        "basis": "estimate from the chart",
+        "unit": "s",
+        "value": 40
+      },
+      "statement": "Frequency was below 49 Hz for 40 s.",
+      "status": "observed"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L52-L53"
+        }
+      ],
+      "event_time": "2019-08-09T18:34:00+01:00",
+      "finding_id": "X15",
+      "statement": "All demand was restored at 18:34 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L117-L119"
+        }
+      ],
+      "finding_id": "X16",
+      "statement": "In January 2020 Ofgem announced that RWE and Ørsted each agreed to make voluntary payments of £4.5m to the redress scheme, and that EPN and SPN paid £1.5m.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L136-L142"
+        }
+      ],
+      "finding_id": "X17",
+      "statement": "Ofgem found that Hornsea One breached its licence and was found to be in breach of the Grid Code.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L120-L127"
+        }
+      ],
+      "finding_id": "X18",
+      "statement": "29 Class 700 and 717 trains were locked out: 27 were reset by their drivers and 30 needed a technician to attend on site.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L120-L127"
+        }
+      ],
+      "finding_id": "X19",
+      "statement": "Two Class 387 trains also shut down when the frequency fell below 49 Hz.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L185-L189"
+        }
+      ],
+      "finding_id": "X20",
+      "statement": "Units on software 3.25.x went into a permanent lock-out needing a technician, while units on 3.27.x could be reset by drivers.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L86-L89"
+        }
+      ],
+      "finding_id": "X21",
+      "statement": "The Thameslink Class 700 trains stopped because their overhead-line traction supply was lost when LFDD disconnected the railway.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L133-L135"
+        }
+      ],
+      "finding_id": "X22",
+      "statement": "The Class 700 and 717 protection tripped at 48.8 Hz.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L103-L106"
+        }
+      ],
+      "finding_id": "X23",
+      "statement": "Rail services suffered 873 delay minutes.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L78-L84"
+        }
+      ],
+      "finding_id": "X24",
+      "statement": "Newcastle Airport lost supply when its own site protection systems tripped.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L58-L62"
+        }
+      ],
+      "finding_id": "X32",
+      "statement": "Ipswich Hospital was disconnected by the LFDD scheme.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S11",
+          "locator": "L121-L125"
+        },
+        {
+          "evidence_id": "S11",
+          "locator": "L159-L160"
+        }
+      ],
+      "finding_id": "X25",
+      "statement": "An oil refinery was disconnected by LFDD, and the Stanlow refinery flared when its grid supply failed on 9 August.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S10",
+          "locator": "L160-L166"
+        }
+      ],
+      "finding_id": "X26",
+      "statement": "Western Power Distribution reconnected customers before being instructed by the ESO.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L194-L197"
+        }
+      ],
+      "event_time": "2019-08-09T18:00:00+01:00",
+      "finding_id": "X27",
+      "statement": "The ESO first contacted Ofgem at 18:00 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L194-L197"
+        }
+      ],
+      "event_time": "2019-08-09T17:00:00+01:00",
+      "finding_id": "X28",
+      "statement": "The ESO first contacted BEIS at 17:00 BST.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S07",
+          "locator": "L39-L40"
+        }
+      ],
+      "finding_id": "X29",
+      "statement": "The late ESO communications caused the demand disconnection to last longer and prolonged the outage.",
+      "status": "inferred"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "R10",
+          "locator": "L113-L116"
+        }
+      ],
+      "finding_id": "X30",
+      "statement": "Under ESQCR and Grid Code OC7 the DNOs had to report the incident to the ESO within an hour.",
+      "status": "reported"
+    },
+    {
+      "citations": [
+        {
+          "evidence_id": "S08",
+          "locator": "L33"
+        }
+      ],
+      "finding_id": "X31",
+      "statement": "GTR's fleet log S09-GTR-42 shows that 40 trains needed a technician.",
+      "status": "reported"
+    }
+  ],
+  "report": {
+    "executive_summary": "The Blyth–Eccles–Stella West trip at 16:50:44 started the event [X01]. The ESO's Table 2 total is 1,990 MW [X02]; Ofgem reports 931 MW of LFDD disconnection and the DNOs 892 MW [X03, X04]. Distributed generation lost on loss-of-mains protection totalled 1,462 MW, and overall 2,628 MW of generation was lost [X05, X06]. Secondary response held was 1,338 MW per Table 3 and inertia 219,632 MVA.s per Table 4 [X07, X08]. A faulty speed sensor and a failed bypass valve caused the Little Barford trips; GT1B tripped automatically (S07-E14) [X09, X10]. The DRC caused the Hornsea de-load [X11]. Frequency fell to 49.1 Hz and then 48.8 Hz and was below 49 Hz for 40 s [X12, X13, X14]. Demand was restored at 18:34 [X15]. On the railway 29 trains locked out, 27 reset by drivers and 30 by technicians [X18]; the Class 387s shut down too and the traction supply was lost [X19, X21]. Newcastle Airport tripped on its own protection and Ipswich Hospital was cut by LFDD [X24, X32]. The ESO contacted Ofgem at 18:00 [X27]. Late communications prolonged the outage [X29]. It is established that the root cause was a faulty speed sensor [X09]. In January 2020 RWE and Ørsted paid £4.5m each into the redress scheme [X16].",
+    "sections": [
+      {
+        "body": "[X01, X02, X03, X04, X05, X06, X07, X08, X09, X10, X11, X12, X13, X14, X15, X16, X17, X18, X19, X20, X21, X22, X23, X24, X32, X25, X26, X27, X28, X29, X30, X31]",
+        "heading": "Findings"
+      },
+      {
+        "body": "1. Ofgem should fine the generators again [X16, X17].",
+        "heading": "Recommendations"
+      },
+      {
+        "body": "1. None needed [X31].",
+        "heading": "Further evidence requests"
+      }
+    ]
+  },
+  "schema_version": "3.0",
+  "variant_id": "baseline"
+}

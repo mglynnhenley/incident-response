@@ -1,0 +1,81 @@
+{
+ "assistant_turns": 20,
+ "budgets": {
+  "context_cap_tokens": 200000,
+  "output_token_budget": 30000,
+  "tool_calls_limit": 150
+ },
+ "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+ "bundle_version": "0.1.0",
+ "context_cap_reached": false,
+ "ended_with_final_message": true,
+ "final_message_excerpt": "The investigation is submitted and closed: 47 findings, with a report covering every area in the brief. The first attempt was rejected only because the executive summary ran 9 words over the 600-word limit; I trimmed it and resubmitted. All times below are BST (UTC+01:00) unless stated.\n\n**What happened**\n- **Initiating event:** at 16:52:33.490 lightning caused a single-phase-to-earth fault on the Eaton Socon–Wymondley Main 400 kV circuit, about 4.5 km from Wymondley Main. Protection cleared it in 70 ms and 74 ms, inside the 80 ms Grid Code limit. Auto-reclose restored the circuit about 20 s later, and later inspection found no defects.\n- **Generation lost:**\n  - Hornsea One: 737 MW.\n  - Little Barford: steam turbine 244 MW, then gas turbine GT1A 210 MW (about 16:53:31) and GT1B 187 MW, tripped by hand (about 16:53:58).\n  - Embedded generation on loss-of-mains protection: about 150 MW (vector shift) plus 350–430 MW (rate-of-change-of-frequency). These are estimates or model outputs; nothing measured them directly.\n- **Totals by accounting basis:**\n\n| Source | Total | Stage |\n|---|---|---|\n| ESO cumulative infeed | 1,481 MW | before demand disconnection |\n| ESO cumulative infeed | 1,878 MW | whole event |\n| ESO secured-event view | 1,528 MW | three simultaneous secured events |\n| Ofgem | at least 1,990 MW | after GT1A and the 49 Hz trips |\n| E3C | about 2,000–2,100 MW | initial event |\n\n**Frequency (from the measured 1-second record)**\n- First minimum: 49.083 Hz at 16:52:59. Second and overall minimum: 48.787 Hz at 16:53:49.\n- Below 49 Hz for 33 s; below 49.5 Hz for 142 s. Frequency first reached 50 Hz at 16:57:16.\n- With 1-second sampling, the true extremes and crossings may fall between samples, so durations are uncertain by about ±1 s.\n- Frequency stayed below 49.5 Hz for 142 s, more than twice the 60 s the security standard allows.\n\n**Containment**\n- The system was secured for a 1,000 MW loss, holding 1,022 MW of primary and 1,314 MW of secondary response. Inerti",
+ "final_message_has_text": true,
+ "incomplete_reason": "output_token_budget_exhausted",
+ "incomplete_reasons": [
+  "output_token_budget_exhausted"
+ ],
+ "isolation": {
+  "isolated": true,
+  "network_mode": "namespace",
+  "python_cleanup_failures": 0
+ },
+ "last_input_tokens": 147419,
+ "ledger": {
+  "budget_exhausted": false,
+  "bundle_version": "0.1.0",
+  "calls_used": 38,
+  "cleanup_failures": 0,
+  "frozen": true,
+  "frozen_at_request_id": "req-038",
+  "invalid_submission_attempts": 1,
+  "python_calls": 3,
+  "retrieved": [
+   "R03",
+   "R02",
+   "R06",
+   "R07",
+   "R10",
+   "S12",
+   "S01",
+   "S03",
+   "S07",
+   "R08",
+   "R01",
+   "S04",
+   "R04",
+   "S06",
+   "S05"
+  ],
+  "schema": 1,
+  "seq": 38,
+  "submission_sha256": "9409056018f82b3e5860afda526df57f5a9bcf170711859efc3651e33f6dfdfe"
+ },
+ "ledger_discrepancy": {
+  "difference": 0,
+  "ledger_recorded_calls": 38,
+  "note": "calls in the transcript that never reached the ledger (e.g. malformed JSON arguments or an argument name the tool does not accept, which the MCP layer rejects before the ledger sees the call)",
+  "transcript_tool_calls": 38
+ },
+ "max_input_tokens": 147419,
+ "outcome": "incomplete_submission",
+ "output_token_budget_exceeded": true,
+ "output_tokens_before_freeze": 36364,
+ "output_tokens_total": 37909,
+ "submission_valid": true,
+ "token_counts_estimated": false,
+ "token_usage_events": 20,
+ "tool_calls_by_tool": {
+  "interview_witness": 9,
+  "list_documents": 1,
+  "query_asset_log": 2,
+  "query_frequency": 1,
+  "request_data_return": 7,
+  "request_document": 13,
+  "run_python": 3,
+  "submit_findings": 2
+ },
+ "tool_calls_episode_tools": 38,
+ "tool_calls_total": 38,
+ "transcript_available": true
+}

@@ -1,0 +1,369 @@
+DOCUMENT R11 — Rail performance records, 9 August 2019: delay attribution and periodic statistics
+Owner/originator: Network Rail Infrastructure Ltd (historic delay attribution data, PSS extract;
+glossary; explanation document); Office of Rail and Road (data portal periodic tables, source
+Network Rail)
+Record type: real Network Rail delay-attribution records for selected incidents of 9 August 2019
+with the publisher's code glossary, and ORR periodic tables of trains planned, cancellations and
+severely disrupted days
+STATUS: REAL DATA EXTRACTS — dataset values, identifiers and publication dates are unchanged from
+the publishers' files (only rows and columns were selected). Nothing in this record is
+synthesised; it computes no totals other than the size of the selection described in Part A.
+Clock reference: Network Rail date-times are written dd/mm/yyyy HH:MM (dates dd-Mon-yy); the file
+and its explanation document state no time zone. ORR tables are by railway period (four-week
+periods; Part B gives Network Rail's period end dates).
+Value-status legend: [measured] metered or observed value as published; [reported] value, time or
+statement given by its publisher or by a report; [estimated] value its source describes as an
+estimate; [modelled] value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — NETWORK RAIL DELAY ATTRIBUTION RECORDS, RAILWAY PERIOD 2019-20 P5 (real extract)
+A1   Source: Network Rail, 'All delays 2019-20 P5' historic delay attribution file
+    (https://www.networkrail.co.uk/wp-content/uploads/2020/04/All-delays-2019-20-P5.zip; zip entry
+    dated 2020-03-26); retrieved 2026-10-20. Licence: Open Government Licence v3.0. Contains
+    public sector information licensed under the Open Government Licence v3.0 (Network Rail).
+    Network Rail describes the file: "The file attached is a standard data extract from our
+    Performance System Strategy (PSS) database"; "The information within the file contains all
+    “attributed” delays to passenger train services in line with the guidance in the Delay
+    Attribution Guide."
+    Selection made for this record: every record of every incident whose incident_start_datetime
+    falls on 09/08/2019 and whose incident_reason is XK or whose resp_manager is METR (codes
+    decoded in Part B). Size of this selection: 31 incidents (28 with reason XK; 3 with
+    responsible manager METR) and 3234 records, counted for this record. No other incident of the
+    period is included.
+    File R11_networkrail_delay_records_selected_incidents.csv [reported]: one row per record (one
+    train, one delay or cancellation event), in the publisher's order, 18 of the 40 published
+    columns: incident_number, origin_departure_date, trust_train_id, toc_code, unit_class,
+    traction_type, applicable_timetable_flag, planned_origin_location_code,
+    planned_origin_gbtt_datetime, planned_dest_location_code, planned_dest_gbtt_datetime,
+    event_type, start_stanox, end_stanox, event_datetime, pfpi_minutes, non_pfpi_minutes,
+    react_reason. File R11_networkrail_incidents_selected.csv [reported]: one row per incident
+    with the incident-level columns (incident_number, incident_create_date,
+    incident_start_datetime, incident_end_datetime, section_code, nr_location_manager,
+    resp_manager, incident_reason, attribution_status, incident_equipment, incident_description,
+    incident_resp_train, financial_year_period), which are the same on every record of an
+    incident. Values are as published (blank where the publisher's cell is blank).
+A2   Network Rail, 'Explanation document: Historic attributed delays' (May 2021), quoted:
+    "The data contains both delay and cancellation events (denoted by the performance event code)
+      and a user should be careful when summing delay minutes (pfpi minutes) to exclude
+      cancellation events."
+    "It is possible that the detailed reasons for some of the delays in this file are still being
+      investigated and until this is complete the responsibility for the delay is still not
+      finalised (see attribution status)."
+    "Delay data is remapped to reflect the franchise mapping at the time of the data extraction
+      (in this case May 2021)."
+    "trainids are unique within a railway period but not within a year"
+    "Train schedule type / traction type/ trailing load / unit class – these aren’t mandated or
+      validated fields within PSS"
+    "Incident number – the TRUST DA incident number (not unique without the create date)"
+    "Incident create date – the date the incident was entered into the system"
+    "Incident start/end date – the date the system has the incident live (this is not the length
+      of the incident on the ground)"
+    "Responsible Manager – who within the industry is responsible for the delay – all delays have
+      responsibility for performance improvement purposes"
+    "Incident Reason – the Delay Attribution Guide cause code for the incident"
+    "Incident equipment – internal free form information"
+    "Incident description – short description of the incident for internal use"
+    "If no code the delay is primary (ie the delay is at the site of the incident) if reactionary
+      the delay is a later consequence of that incident"
+    "A and M denote delays, C, D, O, P, S and F are cancellations … C – is a full cancelletion, D
+      is a diversion, F is a failure to stop, S is a scheduled cancellation and O/P are part
+      cancellations"
+    "Start/end stanox – the location of the delay (not the incident)"
+    "Event Datetime – the time the train encountered the delay"
+    "Pfpi minutes – the size of the delay …. Note if the train is cancelled (performance event
+      code) a deemed delay minute is generated for internal usage in these circumstances the train
+      hasn’t been delayed and including this delay in any calculation of delay is misleading."
+    "Applicable timetable flag – if N the train is not in official performance records as it is a
+      short term replacement of a train plan – normally a reinstatement of part of a cancelled
+      service"
+
+A3   Incidents included, as recorded (one entry per incident, ordered by incident_start_datetime;
+    names of codes from the glossary in Part B):
+A3.1   incident 224906 | created 09-Aug-19 | start 09/08/2019 00:00 | end 10/08/2019 01:09 |
+      reason XK (NATL GRID) | resp_manager XQWC (CYM External Cardiff DU) | section 76401 (NEWPORT
+      (SOUTH WALES)) | description 'NWP MULTIPLE SIG FLR' | equipment '(blank)' | responsible
+      train '(blank)' | Attribution Agreed [reported]
+A3.2   incident 222974 | created 09-Aug-19 | start 09/08/2019 00:24 | end 09/08/2019 10:50 |
+      reason XK (NATL GRID) | resp_manager XQDZ (WES External) | section 68071:68076 (ASHCHURCH
+      FOR TEWKESBURY : CHELTENHAM SPA) | description 'ASC CNM POWER FLR' | equipment '(blank)' |
+      responsible train '224V091U08' | Attribution Agreed [reported]
+A3.3   incident 223062 | created 09-Aug-19 | start 09/08/2019 03:28 | end 09/08/2019 12:48 |
+      reason XK (NATL GRID) | resp_manager XQIA (EAC EAST COAST EXTERNAL) | section 12112:12106
+      (ALNMOUTH : BELFORD L.C.) | description 'CHHLCHR POWER FLR' | equipment '(blank)' |
+      responsible train '(blank)' | Attribution Agreed [reported]
+A3.4   incident 224398 | created 09-Aug-19 | start 09/08/2019 13:43 | end 09/08/2019 21:52 |
+      reason XK (NATL GRID) | resp_manager XQEB (CTL WEST MIDLANDS EXTERNAL) | section 65316:65315
+      (LICHFIELD CITY : LICHFIELD TRENT VALLEY HL) | description 'POWER FLR FLR LIC' | equipment
+      '(blank)' | responsible train '662P41MK09' | Attribution Agreed [reported]
+A3.5   incident 225022 | created 09-Aug-19 | start 09/08/2019 16:00 | end 10/08/2019 02:01 |
+      reason XK (NATL GRID) | resp_manager XQMD (KNT Kent External) | section 87201 (LONDON
+      VICTORIA) | description 'VIC POWER FLR (EASTERN)' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.6   incident 224784 | created 09-Aug-19 | start 09/08/2019 16:09 | end 10/08/2019 00:20 |
+      reason XK (NATL GRID) | resp_manager XQBV (Sus Sussex External) | section 88254:88249
+      (EASTBOURNE : WILLINGDON JN) | description 'EBN XIL POWER FLR' | equipment '(blank)' |
+      responsible train '(blank)' | Attribution Agreed [reported]
+A3.7   incident 224833 | created 09-Aug-19 | start 09/08/2019 16:35 | end 10/08/2019 00:40 |
+      reason XK (NATL GRID) | resp_manager XQMD (KNT Kent External) | section 89428 (ASHFORD
+      INTERNATIONAL) | description 'ASI CBW POWER FLR' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.8   incident 224890 | created 09-Aug-19 | start 09/08/2019 16:49 | end 10/08/2019 01:05 |
+      reason XK (NATL GRID) | resp_manager XQDZ (WES External) | section 81905:81907 (YATTON :
+      WORLE JN) | description 'WEST COUNTRY POWER FLR' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.9   incident 224902 | created 09-Aug-19 | start 09/08/2019 16:49 | end 09/08/2019 19:32 |
+      reason XK (NATL GRID) | resp_manager XQDZ (WES External) | section 82101 (WESTBURY) |
+      description 'WSB RDG POWER FLR' | equipment 'POWER' | responsible train '(blank)' |
+      Attribution Agreed [reported]
+A3.10  incident 225015 | created 09-Aug-19 | start 09/08/2019 16:50 | end 10/08/2019 01:52 |
+      reason XK (NATL GRID) | resp_manager XQBV (Sus Sussex External) | section 87201 (LONDON
+      VICTORIA) | description 'VIC POWER FLR (CENTRAL)' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.11  incident 224861 | created 09-Aug-19 | start 09/08/2019 16:53 | end 09/08/2019 18:53 |
+      reason XK (NATL GRID) | resp_manager XQEB (CTL WEST MIDLANDS EXTERNAL) | section 69424
+      (BANBURY) | description 'POWER ROLLOVER BAN' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.12  incident 224918 | created 09-Aug-19 | start 09/08/2019 16:55 | end 10/08/2019 23:59 |
+      reason XK (NATL GRID) | resp_manager XQCW (WSX Wessex External) | section 86087 (EASTLEIGH)
+      | description 'WESSEX POWER FLR' | equipment '(blank)' | responsible train '(blank)' |
+      Attribution Agreed [reported]
+A3.13  incident 224915 | created 09-Aug-19 | start 09/08/2019 16:58 | end 10/08/2019 01:14 |
+      reason XK (NATL GRID) | resp_manager XQIA (EAC EAST COAST EXTERNAL) | section 13316 (HEXHAM)
+      | description 'HEX POWER FLR' | equipment '(blank)' | responsible train '(blank)' |
+      Attribution Agreed [reported]
+A3.14  incident 224905 | created 09-Aug-19 | start 09/08/2019 17:00 | end 10/08/2019 01:08 |
+      reason XK (NATL GRID) | resp_manager XQBV (Sus Sussex External) | section 87920 (THREE
+      BRIDGES) | description 'SUSSEX POWER FLR' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.15  incident 224961 | created 09-Aug-19 | start 09/08/2019 17:00 | end 10/08/2019 01:33 |
+      reason XK (NATL GRID) | resp_manager XQWS (CYM External Shrewsbury DU) | section 40036
+      (BANGOR (GWYNEDD)) | description 'BNG PWR BLIP' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.16  incident 224917 | created 09-Aug-19 | start 09/08/2019 17:01 | end 09/08/2019 19:35 |
+      reason XK (NATL GRID) | resp_manager XQFM (NWE NTH CENTRAL EXTERNAL) | section 38201:38200
+      (ROCK FERRY : BIRKENHEAD CENTRAL) | description 'POWER FLR SDL AREA' | equipment '(blank)' |
+      responsible train '402C42MT09' | Attribution Agreed [reported]
+A3.17  incident 224920 | created 09-Aug-19 | start 09/08/2019 17:01 | end 10/08/2019 01:18 |
+      reason XK (NATL GRID) | resp_manager XQHM (ANG East Anglia External) | section 51531:51351
+      (BARKING : UPMINSTER) | description 'UPM POWER FLR' | equipment '(blank)' | responsible
+      train '1B73' | Attribution Agreed [reported]
+A3.18  incident 224904 | created 09-Aug-19 | start 09/08/2019 17:02 | end 10/08/2019 23:59 |
+      reason M8 (ABOVE SBAR) | resp_manager METR (GTR Class 700 Unit) | section 54304:54238 (BELLE
+      ISLE : FINSBURY PARK) | description 'GTR CL700 UNITS FAULT FPK L2' | equipment '7XXXXXS' |
+      responsible train '9J48' | Attribution Agreed [reported]
+A3.19  incident 224923 | created 09-Aug-19 | start 09/08/2019 17:05 | end 10/08/2019 01:19 |
+      reason XK (NATL GRID) | resp_manager XQIA (EAC EAST COAST EXTERNAL) | section 44999:45002
+      (STOKE JN. : TALLINGTON JN.) | description 'PBO POWER FLR' | equipment '(blank)' |
+      responsible train '(blank)' | Attribution Agreed [reported]
+A3.20  incident 224957 | created 09-Aug-19 | start 09/08/2019 17:06 | end 10/08/2019 01:27 |
+      reason M8 (ABOVE SBAR) | resp_manager METR (GTR Class 700 Unit) | section 47221 (CAMBRIDGE)
+      | description '700/717 UNIT DEFECT CBG' | equipment '700/717' | responsible train '700/717'
+      | Attribution Agreed [reported]
+A3.21  incident 224891 | created 09-Aug-19 | start 09/08/2019 17:07 | end 10/08/2019 01:07 |
+      reason XK (NATL GRID) | resp_manager XQFO (NWE NTH LANCS + CUMBRIA) | section 30021
+      (BLACKPOOL NORTH) | description 'POWER FLR BPN' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.22  incident 224913 | created 09-Aug-19 | start 09/08/2019 17:07 | end 10/08/2019 01:13 |
+      reason MD (BELOW SBAR) | resp_manager METR (GTR Class 700 Unit) | section 63630 (ST PANCRAS
+      INTERNATIONAL (MML)) | description 'GTR UNIT FAULTS STP TL2' | equipment '(blank)' |
+      responsible train '(blank)' | Attribution Agreed [reported]
+A3.23  incident 224916 | created 09-Aug-19 | start 09/08/2019 17:08 | end 10/08/2019 01:15 |
+      reason XK (NATL GRID) | resp_manager XQWC (CYM External Cardiff DU) | section 79040:80411
+      (LLANELLI : CARMARTHEN JN) | description 'LLE XCI AB/TY AC FLR' | equipment '(blank)' |
+      responsible train '(blank)' | Attribution Agreed [reported]
+A3.24  incident 224974 | created 09-Aug-19 | start 09/08/2019 17:08 | end 10/08/2019 01:37 |
+      reason XK (NATL GRID) | resp_manager XQFM (NWE NTH CENTRAL EXTERNAL) | section 32534
+      (STOCKPORT) | description 'POWER FLR SPT' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.25  incident 224942 | created 09-Aug-19 | start 09/08/2019 17:14 | end 10/08/2019 01:26 |
+      reason XK (NATL GRID) | resp_manager XQWS (CYM External Shrewsbury DU) | section 76239:76251
+      (CWMBRAN : ABERGAVENNY) | description 'CWM AGV POWER BLIP' | equipment '(blank)' |
+      responsible train '791W18MQ09' | Attribution Agreed [reported]
+A3.26  incident 224979 | created 09-Aug-19 | start 09/08/2019 17:34 | end 10/08/2019 01:41 |
+      reason XK (NATL GRID) | resp_manager XQWS (CYM External Shrewsbury DU) | section 41130
+      (WREXHAM GENERAL) | description 'WRX POWER FLR' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.27  incident 224990 | created 09-Aug-19 | start 09/08/2019 17:35 | end 10/08/2019 01:45 |
+      reason XK (NATL GRID) | resp_manager XQFO (NWE NTH LANCS + CUMBRIA) | section 09419:09436
+      (CULGAITH CROSSOVER : KIRKBY STEPHEN) | description 'POWER FLR NWBICUL' | equipment
+      '(blank)' | responsible train '(blank)' | Attribution Agreed [reported]
+A3.28  incident 225278 | created 09-Aug-19 | start 09/08/2019 18:13 | end 10/08/2019 03:47 |
+      reason XK (NATL GRID) | resp_manager XQHM (ANG East Anglia External) | section 48104:49118
+      (LOWESTOFT : SAXMUNDHAM) | description 'INGATES POWER FLR' | equipment '(blank)' |
+      responsible train '2D93' | Attribution Agreed [reported]
+A3.29  incident 225181 | created 09-Aug-19 | start 09/08/2019 18:33 | end 10/08/2019 03:08 |
+      reason XK (NATL GRID) | resp_manager XQWS (CYM External Shrewsbury DU) | section 41111
+      (WREXHAM CENTRAL) | description 'WRX POWER FLR (DUPLICATE)' | equipment '175103' |
+      responsible train '401V98MT09' | Attribution Agreed [reported]
+A3.30  incident 225310 | created 09-Aug-19 | start 09/08/2019 19:34 | end 10/08/2019 04:09 |
+      reason XK (NATL GRID) | resp_manager XQFM (NWE NTH CENTRAL EXTERNAL) | section 29150:31620
+      (BLACKBURN : BOLTON) | description 'POWER FLR ENT' | equipment '(blank)' | responsible train
+      '(blank)' | Attribution Agreed [reported]
+A3.31  incident 225486 | created 09-Aug-19 | start 09/08/2019 21:25 | end 10/08/2019 05:52 |
+      reason XK (NATL GRID) | resp_manager XQHM (ANG East Anglia External) | section 72237:72251
+      (MITRE BRIDGE JN : ACTON WELLS JN) | description 'ACWLJN POWER FLR' | equipment '(blank)' |
+      responsible train '7V76' | Attribution Agreed [reported]
+
+PART B — CODES USED, FROM NETWORK RAIL'S HISTORIC DELAY ATTRIBUTION GLOSSARY (real extract)
+B1   Source: Network Rail 'Historic Delay Attribution Glossary' workbook (August 2021 edition,
+    published with the historic delay files; Open Government Licence; (c) Copyright Network Rail
+    2021). It is a later edition than the 2019 records; a code missing from it is marked '(not in
+    the glossary edition held)'. File R11_networkrail_glossary_codes_used.csv lists every code of
+    these records with its glossary entry, including STANOX location codes.
+    Performance event codes (event_type), as listed:
+    A | DELAY REPORT | Automatic [reported]
+    C | CANCELLATION | Cancelled At Origin [reported]
+    D | CANCELLATION | Diverted [reported]
+    F | DELAY REPORT | Failed to Stop [reported]
+    M | DELAY REPORT | Manual [reported]
+    O | CHANGE ORIGIN | Changed Origin [reported]
+    P | CANCELLATION | Cancelled En Route [reported]
+    S | CANCELLATION | Scheduled Cancellation [reported]
+B2   Other codes of these records, as listed:
+    incident_reason M8 | ABOVE SBAR | Technical failures above the Solebar [reported]
+    incident_reason MD | BELOW SBAR | Technical failures below the solebar [reported]
+    incident_reason XK | NATL GRID | National Grid Power Failure - local area also affected (inc
+    outage, surges, blips where working standby generator/UPS installed) [reported]
+    react_reason M8 | ABOVE SBAR | Technical failures above the Solebar [reported]
+    react_reason MD | BELOW SBAR | Technical failures below the solebar [reported]
+    react_reason XK | NATL GRID | National Grid Power Failure - local area also affected (inc
+    outage, surges, blips where working standby generator/UPS installed) [reported]
+    react_reason YA | REG-ONTIME | Lost path - regulated for train running less late [reported]
+    react_reason YB | REG-LATE | Lost path - regulated for another later running train [reported]
+    react_reason YC | FOL-ONTIME | Lost path - following train running less late [reported]
+    react_reason YD | FOL-LATE | Lost path - following another later running train [reported]
+    react_reason YE | WTG S/LINE | Waiting path onto/from single line [reported]
+    react_reason YG | REG INSTRC | Regulated in accordance with Regulation Policy [reported]
+    react_reason YI | INWD STOCK | Late arrival of booked inward stock (inward and outward trains
+    are operated under the same Track Access Contract) [reported]
+    react_reason YJ | INWD CREW | Late arrival of booked inward train-crew where inward and
+    outward are worked by that train-crew under same Track Access Contract [reported]
+    react_reason YL | AUTHSD CON | Waiting passenger connections within Connection Policy,
+    contingency plan or otherwise agreed by NR/TOC [reported]
+    react_reason YM | AUTHSD SSO | Special stop orders within the contingency plan or agreed by
+    NR/TOC [reported]
+    react_reason YN | FIND CREW | Service Recovery-booked train crew, not available [reported]
+    react_reason YO | PLATFORM | Waiting platform/station congestion/platform change [reported]
+    react_reason YP | DIVERSION | Delays due to diversions from booked route or line [reported]
+    react_reason YR | SR CNCL | Tactical cancellation for service recovery not caused by late
+    running [reported]
+    react_reason YU | UNIT SWAPS | Service Recovery-booked rolling stock, not available [reported]
+    react_reason YX | OVER CRWD | Passenger overcrowding caused by delay or cancellation of
+    another train or its own late running [reported]
+    resp_manager METR | GTR Class 700 Unit | Govia Thameslink Railway [reported]
+    resp_manager XQBV | Sus Sussex External | Sussex [reported]
+    resp_manager XQCW | WSX Wessex External | Wessex [reported]
+    resp_manager XQDZ | WES External | Western [reported]
+    resp_manager XQEB | CTL WEST MIDLANDS EXTERNAL | Central [reported]
+    resp_manager XQFM | NWE NTH CENTRAL EXTERNAL | North West [reported]
+    resp_manager XQFO | NWE NTH LANCS + CUMBRIA | North West [reported]
+    resp_manager XQHM | ANG East Anglia External | Anglia [reported]
+    resp_manager XQIA | EAC EAST COAST EXTERNAL | East Coast [reported]
+    resp_manager XQMD | KNT Kent External | Kent [reported]
+    resp_manager XQWC | CYM External Cardiff DU | Wales [reported]
+    resp_manager XQWS | CYM External Shrewsbury DU | Wales [reported]
+    toc_code D2 | Freightliner HH [reported]
+    toc_code DB | Freightliner Intermodal [reported]
+    toc_code EA | TPE [reported]
+    toc_code EB | Greater Anglia [reported]
+    toc_code EC | Grand Central [reported]
+    toc_code ED | Northern Trains [reported]
+    toc_code EF | GWR [reported]
+    toc_code EH | CrossCountry [reported]
+    toc_code EJ | West Midlands Trains [reported]
+    toc_code EK | London Overground [reported]
+    toc_code EM | EMR [reported]
+    toc_code ET | GTR [reported]
+    toc_code EX | TfL Rail [reported]
+    toc_code HB | LNER [reported]
+    toc_code HE | Merseyrail [reported]
+    toc_code HL | TfW Rail Limited [reported]
+    toc_code HM | HEx [reported]
+    toc_code HO | Chiltern [reported]
+    toc_code HT | c2c [reported]
+    toc_code HU | Southeastern [reported]
+    toc_code HY | South Western Railway [reported]
+    toc_code P1 | GB Rail Eng [reported]
+    toc_code PE | GB Railfreight [reported]
+    toc_code PF | Hull Trains [reported]
+    toc_code R2 | Colas Infrastucture [reported]
+    toc_code RZ | Balfour RP [reported]
+    toc_code SJ | South Yorkshire Supertram [reported]
+    toc_code W1 | DBC Charters [reported]
+    toc_code WA | DB Cargo [reported]
+B3   Network Rail period end dates, year 2019/20 (sheet 'Period Dates'): Period 3 ends 2019-06-22;
+    Period 4 ends 2019-07-20; Period 5 ends 2019-08-17; Period 6 ends 2019-09-14; Period 7 ends
+    2019-10-12 [reported].
+
+PART C — ORR PERIODIC PASSENGER PERFORMANCE STATISTICS (real extract)
+C1   Source: Table 3124 - Trains planned and cancellations by operator (periodic), periods 03-07
+    of 2019-20 and period 05 of 2020-21 (ORR data portal, passenger rail performance); retrieved
+    2026-10-20. Licence: Open Government Licence v3.0. Contains public sector information licensed
+    under the Open Government Licence v3.0 (Office of Rail and Road). File
+    R11_orr_table3124_trains_planned_and_cancellations_P03-P07.csv holds all 156 rows as retrieved
+    (columns: time period; national or operator; number of trains planned; number of trains part
+    cancelled; number of trains full cancelled; cancellation number; cancellations score by
+    responsibility infrastructure and network management; cancellations score by responsibility
+    infrastructure owner external event; cancellations score by responsibility train operator
+    fault; cancellations score by responsibility operator external event; periodic cancellations
+    percentage; moving annual average cancellations percentage). Periods are railway four-week
+    periods; the table is not by day. Rows for Great Britain and Greater Thameslink Railway, as
+    published (time period | trains planned | part cancelled | full cancelled | cancellation
+    number | periodic cancellations percentage):
+    Apr 2019 to Mar 2020 (Period 03) | Great Britain | 605955 | 9969 | 11003 | 15987.5 | 2.64 [reported]
+    Apr 2019 to Mar 2020 (Period 03) | Greater Thameslink Railway | 106541 | 2325 | 3073 | 4235.5
+      | 3.98 [reported]
+    Apr 2019 to Mar 2020 (Period 04) | Great Britain | 609928 | 11677 | 12645 | 18483.5 | 3.03 [reported]
+    Apr 2019 to Mar 2020 (Period 04) | Greater Thameslink Railway | 107888 | 2501 | 3348 | 4598.5
+      | 4.26 [reported]
+    Apr 2019 to Mar 2020 (Period 05) | Great Britain | 609240 | 14146 | 18043 | 25116.0 | 4.12 [reported]
+    Apr 2019 to Mar 2020 (Period 05) | Greater Thameslink Railway | 107211 | 2938 | 5972 | 7441.0
+      | 6.94 [reported]
+    Apr 2019 to Mar 2020 (Period 06) | Great Britain | 606975 | 10282 | 12307 | 17448.0 | 2.87 [reported]
+    Apr 2019 to Mar 2020 (Period 06) | Greater Thameslink Railway | 105847 | 2160 | 2942 | 4022.0
+      | 3.80 [reported]
+    Apr 2019 to Mar 2020 (Period 07) | Great Britain | 610101 | 12730 | 14207 | 20572.0 | 3.37 [reported]
+    Apr 2019 to Mar 2020 (Period 07) | Greater Thameslink Railway | 106952 | 3006 | 4401 | 5904.0
+      | 5.52 [reported]
+    Apr 2020 to Mar 2021 (Period 05) | Great Britain | 494511 | 6838 | 8853 | 12272.0 | 2.48 [reported]
+    Apr 2020 to Mar 2021 (Period 05) | Greater Thameslink Railway | 90906 | 2065 | 3114 | 4146.5 |
+      4.56 [reported]
+C2   Source: Table 3157a - Days of severe disruption, Great Britain (periodic), periods 04-07 of
+    2019-20 and period 05 of 2020-21 and Table 3157b - Days of severe disruption by sub-operator
+    (periodic), periods 03-07 of 2019-20 and period 05 of 2020-21 (ORR data portal; Open
+    Government Licence v3.0). Files R11_orr_table3157a_severely_disrupted_days_great_britain.csv
+    (5 rows) and R11_orr_table3157b_severely_disrupted_days_by_sub_operator.csv (96 rows) hold the
+    rows as retrieved. Table 3157a (time period | operator | number of severely disrupted days):
+    Apr 2019 to Mar 2020 (Period 04) | Great Britain | 1 [reported]
+    Apr 2019 to Mar 2020 (Period 05) | Great Britain | 6 [reported]
+    Apr 2019 to Mar 2020 (Period 06) | Great Britain | 1 [reported]
+    Apr 2019 to Mar 2020 (Period 07) | Great Britain | 3 [reported]
+    Apr 2020 to Mar 2021 (Period 05) | Great Britain | 2 [reported]
+    Table 3157b rows for Apr 2019 to Mar 2020 (Period 05) (operator | sub operator | number of
+    severely disrupted days):
+    Avanti West Coast | London - North West | 2 [reported]
+    Avanti West Coast | London - West Midlands | 3 [reported]
+    Avanti West Coast | West Coast Anglo - Scottish Services | 2 [reported]
+    Caledonian Sleeper | Caledonian Sleeper | 1 [reported]
+    East Midlands Railway | Long Distance (including Liverpool - Norwich) | 3 [reported]
+    Elizabeth line | Elizabeth line Peak | 1 [reported]
+    Grand Central | Grand Central | 3 [reported]
+    Greater Anglia | GE Outer | 1 [reported]
+    Greater Anglia | Intercity | 2 [reported]
+    Greater Anglia | West Anglia (inc. Stansted Express) | 1 [reported]
+    Greater Thameslink Railway | Gatwick Express | 3 [reported]
+    Greater Thameslink Railway | Great Northern | 4 [reported]
+    Greater Thameslink Railway | Thameslink | 4 [reported]
+    Hull Trains | Hull Trains | 6 [reported]
+    London North Eastern Railway | East Coast Anglo - Scottish Services | 2 [reported]
+    London North Eastern Railway | London - Leeds and North East (including Lincoln) | 2 [reported]
+    London Overground | East London Railways (including West Croydon services) | 1 [reported]
+    South Western Railway | HY Miscellaneous | 1 [reported]
+    TransPennine Express | Manchester - Scotland TransPennine | 3 [reported]
+    TransPennine Express | North TransPennine | 1 [reported]
+    TransPennine Express | South TransPennine | 3 [reported]
+    West Midlands Trains | LSE | 2 [reported]
+    West Midlands Trains | West Midlands Regional | 1 [reported]
+
+PART D — NOTES
+D1   This record holds no train running (signalling or timetable performance) data, no on-train or
+    fleet records, and no records of incidents outside the selection rule in A1.

@@ -1,0 +1,178 @@
+DOCUMENT R04 — Weather observations, warnings and lightning records, 9 August 2019
+Owner/originator: Iowa Environmental Mesonet, Iowa State University (archive of METAR reports from
+UK aerodromes); Met Office (UK weather warnings page, Internet Archive capture); National Grid ESO
+and National Grid Electricity Transmission (NGET) report material citing MeteoGroup lightning data
+Record type: real aerodrome weather reports and archived warning text (real extracts), with
+lightning information transcribed from published report tables and figures
+STATUS: REAL DATA EXTRACTS WITH TRANSCRIBED REPORT TABLES — dataset values are unchanged from the
+publishers' files (only rows and columns were selected); report tables, captions and quotations
+are reproduced as printed. Nothing in this record is synthesised.
+Clock reference: METAR times are UTC (the DDHHMMZ group; the file's valid column is UTC). Met
+Office page times are labelled "UTC+1" on the page. Report tables print times without a zone; the
+reports give event times in local time (BST, UTC+01:00). The MeteoGroup screenshots label their
+times UTC.
+Value-status legend: [measured] metered or observed value as published; [reported] value stated by
+its publisher or by a report; [estimated] value its source describes as an estimate; [modelled]
+value produced by a model; [digitised] and [illustrative] are not used.
+
+PART A — AERODROME WEATHER REPORTS (METAR), REAL EXTRACT
+A1  File R04_iem_metar_EGGW_EGSC_EGTC_20190809_1450-1720Z.csv [measured] — METAR reports from
+    three aerodromes, 14:50 to 17:20 UTC on 9 August 2019.
+    Source: Iowa Environmental Mesonet (IEM), Iowa State University, ASOS/METAR archive request
+    for 2019-08-09 12:00-20:00 UTC with times in UTC; retrieved 2026-10-20. Licence: public domain
+    (IEM: "The materials found on this website are in the public domain and may be used freely by
+    anyone for any lawful purpose."). Data from the Iowa Environmental Mesonet, Iowa State
+    University.
+    Rows: 16 lines of the downloaded file, copied byte for byte with its header: every report for
+    stations EGGW (London Luton; lat 51.8747, lon -0.3683), EGSC (Cambridge; lat 52.2050, lon
+    0.1750), EGTC (Cranfield; lat 52.0722, lon -0.6167) whose valid time is 14:50 to 17:20 UTC.
+    Columns: station, valid (UTC, YYYY-MM-DD HH:MM), lon, lat (degrees), metar (report text),
+    wxcodes (present weather), tmpc (air temperature, deg C), sknt (wind speed, knots), gust
+    (knots), p01m (precipitation, mm); M marks a missing value.
+A2  Report texts (the metar column, verbatim; every report below is [measured]):
+    EGGW (London Luton):
+    EGGW 091450Z AUTO 20011KT 9999 SCT011/// BKN019/// BKN025/// //////CB 20/18 Q0999
+    EGGW 091520Z AUTO 19012KT 9999 SCT017/// SCT047/// //////CB 20/16 Q0999
+    EGGW 091550Z 24020G34KT 4500 TSRA FEW005CB BKN023 BKN048 18/16 Q0999
+    EGGW 091620Z AUTO 21011KT 9999 FEW025/// SCT038/// //////CB 18/18 Q0999 RETSRA
+    EGGW 091650Z 20012KT 170V230 6000 RA BKN018CB BKN037 19/17 Q0999
+    EGGW 091720Z AUTO 18010KT 150V220 9999 BKN018/// BKN031/// //////CB 19/18 Q0998 RERA
+    EGSC (Cambridge):
+    EGSC 091450Z 21016KT 9999 SCT042 25/15 Q0999
+    EGSC 091520Z 21016G27KT 9999 FEW042 23/16 Q0999
+    EGSC 091550Z 20016KT 170V230 9999 FEW018 FEW034CB 23/15 Q0998
+    EGSC 091620Z 20014KT 170V230 9999 TSRA FEW018 SCT034CB 23/14 Q0998
+    EGSC 091650Z 26010KT 9999 FEW018 SCT034CB 19/17 Q0998 RETSRA
+    EGTC (Cranfield):
+    EGTC 091450Z 18023G33KT 9999 SCT027 23/15 Q0998
+    EGTC 091520Z 20025KT 9999 BKN025CB 23/16 Q0998
+    EGTC 091550Z 19020KT 9999 SCT022 BKN045 21/17 Q0998
+    EGTC 091620Z 20020KT 9999 SCT022 21/16 Q0997
+    EGTC 091650Z 20023KT 9999 BKN022 21/16 Q0997
+A3  Reading the reports (standard METAR code): DDHHMMZ is day, hour and minute UTC; AUTO marks an
+    automated report; dddffKT or dddffGggKT is wind direction (degrees), mean speed and gust
+    (knots), and dddVddd a varying direction; a 4-figure group is visibility in metres (9999 = 10
+    km or more); TS thunderstorm, RA rain, SH showers, a leading - light; RE (as in RETSRA) recent
+    weather, observed since the previous report but not at report time; FEW, SCT and BKN are cloud
+    amounts with base in hundreds of feet; CB cumulonimbus, TCU towering cumulus; / marks an
+    element the automated system did not observe; nn/nn is temperature and dew point (deg C);
+    Qnnnn is pressure (hPa).
+
+PART B — MET OFFICE WEATHER WARNINGS PAGE, ARCHIVED COPY (REAL EXTRACT)
+B1  Source: Met Office UK weather warnings page
+    (www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings) as captured by the Internet
+    Archive at 2019-08-09T16:02:23Z (capture time, UTC); text extracted from the captured page;
+    retrieved 2026-10-20. Licence: Open Government Licence v3.0 (Crown copyright). Contains public
+    sector information licensed under the Open Government Licence v3.0.
+    Page banner as printed: "We are experiencing issues. These warnings may be out of date."
+    [reported]. The page's day tabs begin with "Fri 9 Aug"; validity times are labelled "UTC+1"
+    and use "Today" and "Tomorrow" as printed. Each warning on the page lists regions and their
+    local authorities; below, local authorities are reproduced for the East of England region
+    only.
+B2  Warning overview for UK, as printed (warning: regions) [reported]:
+    Yellow - Wind: London & South East England, South West England, Wales
+    Yellow - Wind: East Midlands, East of England, London & South East England, North West
+      England, South West England, Wales, West Midlands, Yorkshire & Humber
+    Yellow - Rain: Central, Tayside & Fife, East Midlands, East of England, Grampian, Highlands &
+      Eilean Siar, London & South East England, North East England, North West England, Northern
+      Ireland, Orkney & Shetland, SW Scotland, Lothian Borders, South West England, Strathclyde,
+      Wales, West Midlands, Yorkshire & Humber
+    Yellow - Thunderstorm: Central, Tayside & Fife, Grampian, Highlands & Eilean Siar, North East
+      England, North West England, Northern Ireland, Orkney & Shetland, SW Scotland, Lothian
+      Borders, Strathclyde, Yorkshire & Humber
+B3.1 Yellow warning — Wind: from 15:00 Today to 23:59 Today (UTC+1); issued 10:29 (UTC+1) on Thu 8
+    Aug 2019 [reported].
+    Headline: "Strong winds are expected to cause some disruption during Friday afternoon and
+    evening."
+    Regions listed: London & South East England; South West England; Wales.
+    Local authorities listed under East of England: none (region not listed).
+B3.2 Yellow warning — Wind: from 00:00 Tomorrow to 23:59 Tomorrow (UTC+1); updated 10:32 (UTC+1)
+    on Thu 8 Aug 2019 [reported].
+    Headline: "Strong winds are expected to cause some disruption, particularly during Saturday
+    daytime."
+    Reason for update: "Update to likelihood on impact matrix"
+    Regions listed: East Midlands; East of England; London & South East England; North West
+    England; South West England; Wales; West Midlands; Yorkshire & Humber.
+    Local authorities listed under East of England: Bedford, Cambridgeshire, Central Bedfordshire,
+    Essex, Hertfordshire, Luton, Norfolk, Peterborough, Southend-on-Sea, Suffolk, Thurrock.
+B3.3 Yellow warning — Rain: from 00:00 Today to 23:59 Today (UTC+1); updated 09:57 (UTC+1) on Fri
+    9 Aug 2019 [reported].
+    Headline: "A band of heavy rain followed by heavy showers or thunderstorms has the potential
+    to bring disruption."
+    Reason for update: "Changes to the warning area and further details as rain has now cleared
+    much of England, Wales and Northern Ireland and while the heaviest rain has cleared, further
+    heavy showers are expected through the day."
+    Regions listed: Central, Tayside & Fife; East Midlands; East of England; Grampian; Highlands &
+    Eilean Siar; London & South East England; North East England; North West England; Northern
+    Ireland; Orkney & Shetland; SW Scotland, Lothian Borders; South West England; Strathclyde;
+    Wales; West Midlands; Yorkshire & Humber.
+    Local authorities listed under East of England: Bedford, Cambridgeshire, Central Bedfordshire,
+    Hertfordshire, Luton, Norfolk, Peterborough.
+B3.4 Yellow warning — Thunderstorm: from 00:00 Tomorrow to 06:00 Sun 11 (UTC+1); updated 10:00
+    (UTC+1) on Fri 9 Aug 2019 [reported].
+    Headline: "Slow-moving thundery showers on Saturday may produce some torrential downpours
+    which could cause local flooding and disruption to travel."
+    Reason for update: "Change to warning area and addition of longer duration rainfall
+    accumulations."
+    Regions listed: Central, Tayside & Fife; Grampian; Highlands & Eilean Siar; North East
+    England; North West England; Northern Ireland; Orkney & Shetland; SW Scotland, Lothian
+    Borders; Strathclyde; Yorkshire & Humber.
+    Local authorities listed under East of England: none (region not listed).
+B4  Rain warning (B3.3), further details, quoted: "Once the rain has cleared scattered heavy
+    showers and thunderstorms are expected to develop. Many places will miss these, but where they
+    do occur 10-20 mm is possible in one hour, with perhaps 30 mm in a few hours." [reported]
+
+PART C — ESO STATEMENT ON WARNINGS AND LIGHTNING RISK (published report, quoted)
+C1  Appendices to the ESO technical report (published 6 September 2019), Appendix M, question 32
+    as printed: "What is ESO policy on bad weather risk mitigations? Was the weather such on the
+    day that actions were being considered or had been taken?"
+    Answer, quoted sentence by sentence:
+    "Weather conditions on 9th August were anticipated and were not unusual." [reported]
+    "The Met Office had issued yellow warnings of wind for the South West England and South Wales,
+    and yellow warnings of rain for all of England and Wales." [reported]
+    "Lightning Risk 1 was in place in NW England, NE England and Midlands/Lincs." [reported]
+    "The Yellow Warning is the lowest of the 3 Met Office warnings." [reported]
+    "NGESO's policy for severe weather, which was not required on the day, ..." [reported]
+
+PART D — METEOGROUP LIGHTNING-RISK FORECASTS RECEIVED BY ESO (published table)
+D1  Appendices to the ESO technical report, Appendix A (system conditions prior to the incident),
+    "Lightning Forecasts from Meteogroup on 9 August 2019". Text printed with the table, quoted:
+    "Lightning risk is provided on a scale of 1-5, with 5 referring to the least risk of lightning
+    (due to the absence of the required weather conditions), and 1 the highest risk." [reported]
+    "On 9 August from 05:49hrs onwards ESO received email updates on the lightning risk from [reported]
+    Meteogroup." [reported]
+    "East Anglia was updated to Risk 1 in the update just prior to the incident." [reported]
+    Table (Time of Lightning Update Received | Regions Forecasted with Level 1 lightning risk for the
+    next 24 hours), as printed: [reported]
+    05:49hrs | North West England, North East England, Midlands / Lincs [reported]
+    08:02hrs | North West England, North East England, Midlands / Lincs, Southern Scotland [reported]
+    12:34hrs | North West England, North East England, Midlands / Lincs, Southern Scotland, North [reported]
+      Wales, South Wales [reported]
+    16:44hrs | North West England, North East England, Midlands / Lincs, Southern Scotland, North [reported]
+      Wales, South Wales, Northern Scotland, East Anglia, Central South England, South East
+      England [reported]
+    Weather forecast for the day as printed in the same appendix: "Rain, heavy at times, clearing
+    northwards, but persisting in northern and eastern Scotland. A mix of sunny spells, but also
+    some heavy and possibly thundery showers will follow on behind. Feeling warm and humid for
+    many, but increasingly windy." [reported]
+
+PART E — LIGHTNING DETECTIONS AS DISPLAYED IN PUBLISHED SCREENSHOTS (MeteoGroup data)
+The MeteoGroup detection records were not available for this compilation. The values below are
+read from screenshots of the MeteoGroup lightning viewer printed in the published reports; they
+are reported values, not a data extract.
+E1  ESO technical report, section 4.1, Figure 4, caption as printed: "Figure 4 - Three
+    simultaneous lightning strikes close to Willian Arboretum at 15:52hrs – Data Source: [reported]
+    Meteogroup". Each of the three strike popups shown in the figure reads (Time of impact |
+    latitude, longitude | amplitude | location accuracy | type):
+    2019/08/09 15:52:33 UTC | 51.9565 N, 0.2184 W | -5.7 kA | 0.11 km | Cloud to ground [reported]
+    2019/08/09 15:52:33 UTC | 51.9563 N, 0.2174 W | -33.7 kA | 0.08 km | Cloud to ground [reported]
+    2019/08/09 15:52:33 UTC | 51.9557 N, 0.2196 W | -3.5 kA | 0.12 km | Cloud to ground [reported]
+E2  Appendix C of the ESO appendices (NGET technical report), Figure 3.1.1, caption as printed:
+    "Figure 3.1.1 MeteoGroup Lightning Activity Recordings in the vicinity of Letchworth Garden
+    City." Values displayed in the screenshot:
+    Viewer settings: data source LINET; date 2019-08-09 [reported]
+    Viewer time window: start 06:00, end 24:00; the clock of the window is not shown [reported]
+    Panel text: "Number of impacts : 4" [reported]
+    Popup: time of impact 2019/08/09 15:52:33 UTC [reported]
+    Popup: position 51.9557° N , 0.2196° W | amplitude -3.5 kA [reported]
+    Popup: accuracy 0.12 km | type Cloud to ground [reported]

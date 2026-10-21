@@ -1,0 +1,110 @@
+DOCUMENT R03 — Transmission fault and protection records, 9 August 2019
+Owner/originator: National Grid Electricity Transmission (NGET); lightning detection data: MeteoGroup
+Record type: compiled circuit fault, protection, auto-reclose, power quality and lightning records
+STATUS: RECONSTRUCTED FOR EVALUATION FROM PUBLISHED RECORDS — NOT AN ORIGINAL SYSTEM EXPORT.
+Entries are compiled from published post-event investigation reports; layout and wording are reconstructions.
+Sections A-F are records (E3 is a marked compiler's note); section G holds later, attributed assessments.
+Clock reference: BST (UTC+01:00). The sources do not label the clock of the B3 and section C times; they are
+read as BST because the ESO report dates this event at 4:52pm, and are written with +01:00. Times with no
+such anchor (B2, section E) are marked "clock basis not stated" and are written without an offset.
+Value-status legend: [reported] value as stated by the record owner in published material;
+[estimated] value the record owner describes as an estimate; [measured] and [illustrative] not used.
+
+SECTION A — CIRCUIT AND NETWORK CONTEXT
+A1  Eaton Socon–Wymondley Main: 400 kV [reported] double-circuit overhead line of just over 35 km [reported],
+    from Eaton Socon substation (near St Neots, Cambridgeshire) to Wymondley Main substation (near Stevenage,
+    Hertfordshire). Lattice steel towers carry two circuits, each with 3 [reported] conductors (phases) on one
+    side of the tower, and an earth wire at the top of the tower.
+A2  Planned outage on 9 August 2019: the Killingholme–Keadby circuit was out of service for planned
+    maintenance; the NGET power quality monitor connected to it, close to Killingholme, was unavailable.
+
+SECTION B — LIGHTNING DETECTION RECORDS (MeteoGroup data, as reported by ESO and NGET)
+B1  9 August 2019, 24 hours [reported]: 12,370 [reported] lightning strikes across mainland UK.
+B2  2 hours [reported] preceding 17:00 [reported] (clock basis not stated): 2,106 [reported] strikes across
+    mainland UK.
+B3  2019-08-09T16:52:33+01:00 [reported]: three [reported] almost simultaneous lightning strikes recorded
+    adjacent to the Eaton Socon–Wymondley circuit, close to Willian Arboretum, at the Wymondley end of the
+    circuit.
+B4  Location uncertainty: each strike is plotted with a radius of uncertainty for the location of the direct
+    hit; any of the three strikes could have hit the circuit.
+B5  Largest of the three strikes: current amplitude 33.7 kA [reported].
+B6  NGET overlay of MeteoGroup activity near the circuit: a number of strikes close to NGET overhead line
+    circuits; one strike is timed at the same time as the fault; the activity aligns with protection data
+    indicating the fault was 4.5 km [reported] from Wymondley Main, just outside Letchworth Garden City.
+
+SECTION C — FAULT AND PROTECTION RECORD, EATON SOCON–WYMONDLEY MAIN CIRCUIT (times read as BST, +01:00)
+C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton
+    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.
+C2  Fault location: approximately 4.5 km [reported] along the circuit from the Wymondley Main end.
+C3  Fault infeed: approximately 21 kA (RMS) [reported] from Wymondley Main; approximately
+    7 kA (RMS) [reported] from Eaton Socon.
+C4  Blue-phase voltage during the fault: estimated 50% [estimated] depression (ESO timeline); NGET: circa
+    50% [reported] at the fault location, lasting 100 ms [reported] in the vicinity of the fault.
+C5  2019-08-09T16:52:33.560+01:00 [reported]: Wymondley Main end opens to clear the fault; main protection
+    operating time 70 ms [reported] after fault inception.
+C6  2019-08-09T16:52:33.564+01:00 [reported]: Eaton Socon end opens to clear the fault; main protection
+    operating time 74 ms [reported] after fault inception.
+C7  Requirement cited by NGET, Grid Code Connection Condition CC.6.2.3.1.1, primary protection fault clearance
+    times: 80 ms at 400 kV [reported]; 100 ms at 275 kV [reported]; 120 ms at 132 kV and below [reported].
+C8  2019-08-09T16:52:53+01:00 [reported]: Eaton Socon–Wymondley circuit energised on Delayed Auto-Reclose
+    (DAR), returning it to service about 20 seconds [reported] after the fault.
+C9  DAR was available and in service on the circuit. After the reclose the network was in the same
+    configuration as before the event; no further operational intervention or immediate site attendance was
+    required.
+
+SECTION D — POWER QUALITY AND VOLTAGE RECORDS (measured magnitudes as published; assessments are in G)
+D1  Ryhall 400 kV [reported] (the next substation along from Eaton Socon): blue-phase voltage depression
+    44% [reported]; duration of the event including voltage recovery 100 ms [reported].
+D2  Ryhall: a further small transient after the fault; NGET text: a minute [reported] after the fault;
+    figure annotation: 2 mins [reported] after the fault. It did not register at Necton.
+D3  Necton 400 kV [reported] (Norfolk; electrically further from the fault): blue-phase voltage depression
+    21% [reported]; duration including voltage recovery 80 ms [reported].
+D4  ESO system measurements: voltages recovered to normal less than 100 ms [reported] after the circuit was
+    de-energised; the dip was larger at locations near the short circuit, the largest at Wymondley.
+D5  Area of the event: harmonics less than 1% [reported]; negative phase sequence (NPS) currents did not
+    exceed 0.6% [reported].
+
+SECTION E — OTHER CIRCUIT TRIPS ON 9 AUGUST 2019 (times as printed; clock basis not stated in the sources)
+E1  Harker–Stella West 275 kV [reported] circuit. ESO report narrative: at 14:23 [reported] the circuit was
+    tripped and automatically returned to service; lightning was observed active in the vicinity; there
+    were no adverse effects to the transmission system following this fault. ESO answers to E3C questions
+    (Appendix M, Q30): tripped at 14:23:00 [reported]; returned to service via Delayed Auto Reclose (DAR)
+    at 14:23:32 [reported].
+E2  Blyth–Eccles–Stella West 400 kV [reported] circuit. ESO report narrative: at 16:50:44 [reported] lightning
+    struck the circuit near Longframlington, Northumberland; the circuit tripped and closed with no power
+    losses associated. ESO answers to E3C questions (Appendix M, Q30), for the Blyth–Eccles–Stella West 1
+    400 kV [reported] circuit: tripped at 16:43:25 [reported]; returned to service via DAR at
+    16:43:54 [reported]; lightning observed in the vicinity; fault cleared with no adverse effects.
+E3  Compiler's note (not a record): the two ESO publications give different times for the
+    Blyth–Eccles–Stella West trip, 16:50:44 [reported] and 16:43:25 [reported]; neither states a clock
+    basis, and these records do not resolve the difference.
+
+SECTION F — SITE FOLLOW-UP (NGET)
+F1  After the event: engineers attended Wymondley Main and Eaton Socon substations to collect data, including
+    protection operating data; all assets were operating as normal; no defects identified.
+F2  Saturday 10 August 2019, morning: visual inspection of the Eaton Socon–Wymondley Main overhead line; no
+    defects observed.
+
+SECTION G — POST-EVENT ASSESSMENTS (attributed later statements; not system records)
+G1  NGET report (Appendix C to the ESO technical report of 6 September 2019): the network "operated as
+    designed and in line with standards"; main protection cleared the fault within the 80 ms [reported]
+    required in the Grid Code; the DAR system operated as expected and designed.
+G2  NGET: one of the strikes is timed at the same time as the fault; "As such we can be confident that a
+    lightning strike was the cause of the fault."
+G3  NGET (power quality analysis and findings): the voltage depressions and durations were as expected for
+    this type of fault; electrically further from the fault, voltage dips of 20% [reported] with
+    80 ms [reported] duration were observed; the later small transient at Ryhall was most likely associated
+    with reactive compensation switching in response to the fault, and was too small to register at Necton.
+G4  NGET (steady state, harmonics and NPS): pre-fault and post-fault steady state voltages at Wymondley
+    Main, Eaton Socon, Keadby and Killingholme 400 kV [reported] were within the SQSS operational limits of
+    ±10% (420 kV to 380 kV) [reported]; harmonics were within the 3% [reported] limit of ER G5/4; NPS
+    currents were within the 1.5% [reported] Grid Code limit.
+G5  ESO technical report (6 September 2019): all measurements indicate that voltages stayed above the Fault
+    Ride Through profile specified in the Grid Code and returned to within steady state limits after the
+    event.
+G6  ESO technical report: NGET, by analysing its protection data, confirmed that these lightning strikes
+    were the cause of the circuit trip and reclose; the transmission system protection operated in line
+    with the design and in compliance with the Grid Code requirements on fault clearance.
+G7  Ofgem report (3 January 2020): NGET's evidence shows fault clearance times for the two circuit breakers
+    under 75 ms [reported] and voltage within a range of 390 kV to 410 kV [reported] following the fault; the
+    evidence suggests NGET's transmission assets performed as expected.

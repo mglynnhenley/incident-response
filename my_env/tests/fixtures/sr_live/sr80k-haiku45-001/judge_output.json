@@ -1,0 +1,3202 @@
+{
+  "assertions": {
+    "F01": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "unsupported",
+      "rationale": "C1 supports three nearby strikes at 16:52:33, and K9 supports the circuit voltage. However, F01 assigns all three strikes the precise fault-inception timestamp .490. C4 establishes that precision for the fault, not all strikes; K10 explicitly notes uncertainty in the strike's exact time. The finding mixes supported facts with unsupported timing precision.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L25-L27",
+          "quote": "B3  2019-08-09T16:52:33+01:00 [reported]: three [reported] almost simultaneous lightning strikes recorded\n    adjacent to the Eaton Socon–Wymondley circuit, close to Willian Arboretum, at the Wymondley end of the\n    circuit.",
+          "shown_in": [
+            "C1",
+            "K1",
+            "K4"
+          ]
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-ORS-10",
+          "quote": "We do not know the exact time of the lightning strike.",
+          "shown_in": [
+            "K10"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "unsupported"
+    },
+    "F02": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C2 supports the largest amplitude and NGET's alignment of lightning and protection data; C3 supports the causal conclusion. K8 also describes the three strikes as simultaneous. F02 does not claim identification of which individual strike caused the fault.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L30-L33",
+          "quote": "B5  Largest of the three strikes: current amplitude 33.7 kA [reported].\nB6  NGET overlay of MeteoGroup activity near the circuit: a number of strikes close to NGET overhead line\n    circuits; one strike is timed at the same time as the fault; the activity aligns with protection data\n    indicating the fault was 4.5 km [reported] from Wymondley Main, just outside Letchworth Garden City.",
+          "shown_in": [
+            "C1",
+            "C2"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L89-L90",
+          "quote": "G2  NGET: one of the strikes is timed at the same time as the fault; \"As such we can be confident that a\n    lightning strike was the cause of the fault.\"",
+          "shown_in": [
+            "C3"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F03": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C4 supports F03's fault type, location, inception time, estimated voltage depression and approximate duration.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L38",
+          "quote": "C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton\n    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.\nC2  Fault location: approximately 4.5 km [reported] along the circuit from the Wymondley Main end.",
+          "shown_in": [
+            "C4"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L41-L42",
+          "quote": "C4  Blue-phase voltage during the fault: estimated 50% [estimated] depression (ESO timeline); NGET: circa\n    50% [reported] at the fault location, lasting 100 ms [reported] in the vicinity of the fault.",
+          "shown_in": [
+            "C4"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F04": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "F04 reproduces both end-specific RMS fault infeeds in C5 with the correct units and approximate qualification.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L39-L40",
+          "quote": "C3  Fault infeed: approximately 21 kA (RMS) [reported] from Wymondley Main; approximately\n    7 kA (RMS) [reported] from Eaton Socon.",
+          "shown_in": [
+            "C4",
+            "C5"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F05": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C6 directly supports F05's Wymondley Main opening timestamp and 70 ms operating time.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L44",
+          "quote": "C5  2019-08-09T16:52:33.560+01:00 [reported]: Wymondley Main end opens to clear the fault; main protection\n    operating time 70 ms [reported] after fault inception.",
+          "shown_in": [
+            "C6",
+            "K15"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F06": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C7 supports F06's Eaton Socon opening time, 74 ms clearance and 80 ms requirement. C6 supplies the other end's 70 ms time, confirming that both were within the requirement.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L45-L48",
+          "quote": "C6  2019-08-09T16:52:33.564+01:00 [reported]: Eaton Socon end opens to clear the fault; main protection\n    operating time 74 ms [reported] after fault inception.\nC7  Requirement cited by NGET, Grid Code Connection Condition CC.6.2.3.1.1, primary protection fault clearance\n    times: 80 ms at 400 kV [reported]; 100 ms at 275 kV [reported]; 120 ms at 132 kV and below [reported].",
+          "shown_in": [
+            "C7"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L44",
+          "quote": "operating time 70 ms [reported] after fault inception.",
+          "shown_in": [
+            "C6",
+            "K15"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F07": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C8 directly supports F07's substation attendance, normal asset operation, lack of identified defects and next-day overhead-line inspection.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L80-L83",
+          "quote": "F1  After the event: engineers attended Wymondley Main and Eaton Socon substations to collect data, including\n    protection operating data; all assets were operating as normal; no defects identified.\nF2  Saturday 10 August 2019, morning: visual inspection of the Eaton Socon–Wymondley Main overhead line; no\n    defects observed.",
+          "shown_in": [
+            "C8"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F08": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C9 directly supports F08's DAR mechanism, re-energisation timestamp and approximately 20-second interval.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L50",
+          "quote": "C8  2019-08-09T16:52:53+01:00 [reported]: Eaton Socon–Wymondley circuit energised on Delayed Auto-Reclose\n    (DAR), returning it to service about 20 seconds [reported] after the fault.",
+          "shown_in": [
+            "C9",
+            "K19"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F09": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C10 directly supports F09's restored configuration and lack of further operational intervention or immediate attendance. C8 supports normal asset operation after the event, covering the remaining statement that the circuit performed normally.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L51-L53",
+          "quote": "C9  DAR was available and in service on the circuit. After the reclose the network was in the same\n    configuration as before the event; no further operational intervention or immediate site attendance was\n    required.",
+          "shown_in": [
+            "C10"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L81",
+          "quote": "protection operating data; all assets were operating as normal; no defects identified.",
+          "shown_in": [
+            "C8",
+            "K228"
+          ]
+        }
+      ],
+      "task": "T16",
+      "unit": "T16",
+      "verdict": "supported"
+    },
+    "F10": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "K35 supports 799 MW and C12 supports the outages. No shown span supports the claim that 1B and 1C each generated 400 MW at maximum before the event, or the expansion of SGT. The module figures also do not reconcile with the stated site total. Unshown records might clarify the module configuration.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L36",
+          "quote": "15:52:33.531Z [reported]        Status: generating 799 MW [reported]; absorbing 0.4 MVAr [reported].",
+          "shown_in": [
+            "K35",
+            "K37"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L20-L21",
+          "quote": "P4  Internal network outage configuration: one SGT and one offshore transmission system user asset (OTSUA)\n    circuit on outage.",
+          "shown_in": [
+            "C12"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": null
+    },
+    "F11": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C13 directly supports F11's timing, initial reactive injection, subsequent oscillation, absorption exceeding 300 MVAr and approximately 394 kV voltage. The UTC-to-BST conversion is consistent.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L30-L33",
+          "quote": "15:52:33.490Z-.700Z [reported]  Reactive compensation control initially injects reactive power (leading MVAr)\n                                to boost NETS voltage, then a significant oscillation: absorption\n                                >300 MVAr [reported] while NETS and Hornsea One system voltage falls to\n                                ~394 kV [reported]; then injection again.",
+          "shown_in": [
+            "C13"
+          ]
+        }
+      ],
+      "task": "T06",
+      "unit": "T06",
+      "verdict": "supported"
+    },
+    "F12": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C14 supports the nominal and depressed collection voltages; K100 confirms the Hornsea 1B identification. Together they support all factual parts of F12.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L39-L40",
+          "quote": "15:52:33.700Z-.835Z [estimated] In the 34 kV [reported] collection cable system the voltage rapidly reduces\n                                to 20 kV [reported] (target voltage 34 kV [reported]); note (c).",
+          "shown_in": [
+            "C14"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L62-L64",
+          "quote": "A3  Hornsea 1B system voltage falls to ~20 kV [reported] while attempting to maintain full active power,\n    which leads to an overcurrent of each WTG on 1B and 1C; the WTGs de-load as part of the industry\n    standard protection system to avoid permanent damage to the generators.",
+          "shown_in": [
+            "K100"
+          ]
+        }
+      ],
+      "task": "T06",
+      "unit": "T06",
+      "verdict": "supported"
+    },
+    "F13": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C15 supports the de-load timing, duration, zero output on 1B/1C and continued 62 MW on 1A. K35 supplies the initial 799 MW. Their difference is 737 MW, and the UTC-to-BST conversion is correct.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L41-L43",
+          "quote": "15:52:33.728Z [reported]        Hornsea 1B and Hornsea 1C begin de-loading turbines.\n15:52:33.835Z [reported]        De-load complete, 107 ms [reported] after it began: all WTGs on Hornsea 1B and\n                                1C at 0 MW [reported]. Hornsea 1A remains in operation at 62 MW [reported].",
+          "shown_in": [
+            "C15",
+            "K56"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L36",
+          "quote": "15:52:33.531Z [reported]        Status: generating 799 MW [reported]; absorbing 0.4 MVAr [reported].",
+          "shown_in": [
+            "K35",
+            "K37"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": "supported"
+    },
+    "F14": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "C16 supports incorrect offshore-controller reaction causing instability and shutdown. However, F14 additionally asserts that these controllers were designed to perform fault ride-through instead; the shown spans do not establish that specific design requirement. This mixed finding is therefore unsupported, rather than contradicted. Additional design records could resolve the unsupported part.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L86-L88",
+          "quote": "C1  The onshore control system operated as expected when the system voltage dipped; the offshore wind turbine\n    controllers reacted incorrectly to voltage fluctuations on the offshore network following the fault,\n    causing an instability that triggered two modules to automatically shut down.",
+          "shown_in": [
+            "C16"
+          ]
+        }
+      ],
+      "task": "T06",
+      "unit": "T06",
+      "verdict": null
+    },
+    "F15": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C17 supports the reported resonance explanation and fault trigger; C18 supports the earlier damped oscillation without de-loading. F15 is labelled reported, and the report attributes the explanation to the operator's investigation.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L56-L58",
+          "quote": "A1  Section \"Conclusion\": \"The de-load was caused by an unexpected wind farm control system response, due\n    to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was\n    triggered by the initial event.\"",
+          "shown_in": [
+            "C17",
+            "K107"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L68-L71",
+          "quote": "A5  Identified after the event, as part of this investigation: electrical oscillations occurring before the\n    event, without causing any de-loading. About 10 minutes [reported] before the event (log entry\n    ~15:42Z [estimated]; exact time not published), the reactive power response to a 2% [reported] voltage\n    step change was a damped oscillatory response from the overall voltage control systems.",
+          "shown_in": [
+            "C18"
+          ]
+        }
+      ],
+      "task": "T06",
+      "unit": "T06",
+      "verdict": "supported"
+    },
+    "F16": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F16 wrongly extends the DRC's clearance to the offshore control system generally. C20 says the DRC worked as designed, whereas C16 and C19 explicitly identify incorrect offshore turbine-controller response. The standard manufacturer settings are supported, but do not rescue the contradicted first clause.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L82-L84",
+          "quote": "B3  The wind turbine settings were standard settings from the manufacturer; the turbine controllers reacted\n    incorrectly due to an insufficiently damped electrical resonance in the sub-synchronous frequency range,\n    so that the local voltage dropped and the turbines shut themselves down.",
+          "shown_in": [
+            "C19"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L78-L79",
+          "quote": "B1  Initially the operator understood the Dynamic Reactive Compensator (DRC) to be responsible for the rapid\n    de-load; it has since concluded that the DRC worked as designed and was not the cause.",
+          "shown_in": [
+            "C20"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L86-L88",
+          "quote": "C1  The onshore control system operated as expected when the system voltage dipped; the offshore wind turbine\n    controllers reacted incorrectly to voltage fluctuations on the offshore network following the fault,\n    causing an instability that triggered two modules to automatically shut down.",
+          "shown_in": [
+            "C16"
+          ]
+        }
+      ],
+      "task": "T06",
+      "unit": "T06",
+      "verdict": "contradicted"
+    },
+    "F17": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C21 gives all three unit outputs and their 641 MW total. K43, K47 and K52 identify these as generating outputs associated with the trips, supporting F17's station breakdown.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "L34-L37",
+          "quote": "U1  ST1C steam turbine: 244 MW [reported]\nU2  GT1A gas turbine: 210 MW [reported]\nU3  GT1B gas turbine: 187 MW [reported]\nU4  Total loss at the station: 641 MW [reported]",
+          "shown_in": [
+            "C21"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L32-L33",
+          "quote": "N8  Around 30 seconds [reported] after the GT1A trip, GT1B (187 MW [reported]) was manually tripped by\n    the operating staff in response to high steam pressures. Total station loss: 641 MW [reported].",
+          "shown_in": [
+            "K52"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": "supported"
+    },
+    "F18": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F18 says shutdown began at datum T, but C22 explicitly places shutdown initiation at T+253 ms; T itself is the UPS-B alarm. The sensor-discrepancy mechanism and breaker feedback offset are supported, but the incorrect shutdown offset makes the finding contradicted.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "L21-L25",
+          "quote": "E1   110 V AC UPS -B- general fault alarm      T = 0 ms [reported]\nE2   110 V AC UPS -A- general fault alarm      +3 ms [reported]\nE3   Initiation of ST control system shutdown  +253 ms [reported]\nE4   ST generator breaker open command         +1.16 s [reported]\nE5   ST generator breaker open feedback        +1.185 s [reported]",
+          "shown_in": [
+            "C22"
+          ]
+        }
+      ],
+      "task": "T07",
+      "unit": "T07",
+      "verdict": "contradicted"
+    },
+    "F20": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C24 and K126 support the approximately 56.6-second shutdown-command offset and approximate clock time. K123 supports the 210 MW output and automatic steam-bypass-pressure trip. C25 explicitly supports the unknown pressure cause and systems functioning as expected.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "event:S03-SOE-E6",
+          "quote": "T +56.583 s | offset from the station SOE datum T; the operator gives T = 16:52:34 +/- 0.5 s without a clock basis (S03 reads it as BST) and states T is not yet aligned with the ESO datum | sequence-of-events entry | 56.583 s after T | E6 GT1A auto shutdown command +56.583 s [reported]",
+          "shown_in": [
+            "K126"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L27-L28",
+          "quote": "N6  Around a minute [reported] after the transmission system fault, gas turbine GT1A (generating\n    210 MW [reported]) tripped automatically due to a high-pressure excursion in the steam bypass system.",
+          "shown_in": [
+            "K123"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L50-L51",
+          "quote": "A5  Gas turbines: \"For reasons presently unknown a high-pressure excursion occurred on GT1A resulting in\n    an automated trip. Given the prevailing conditions all systems functioned as expected. GT1B was",
+          "shown_in": [
+            "C25",
+            "K124"
+          ]
+        }
+      ],
+      "task": "T07",
+      "unit": "T07",
+      "verdict": "supported"
+    },
+    "F21": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C26 and K130 support the approximately 83.9-second command offset and approximate clock time. K128 supports manual operator action, rising pressure, safety risks, the approximately 30-second interval, and 187 MW output. C27 explicitly leaves the pressure root cause unestablished.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "event:S03-SOE-E8",
+          "quote": "T +83.897 s | offset from the station SOE datum T; the operator gives T = 16:52:34 +/- 0.5 s without a clock basis (S03 reads it as BST) and states T is not yet aligned with the ESO datum | sequence-of-events entry | 83.897 s after T | E8 GT1B manual shutdown command +83.897 s [reported]",
+          "shown_in": [
+            "K130"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L30-L33",
+          "quote": "N7  The steam system pressure continued to rise after the GT1A trip, and the plant operators made the\n    decision to manually trip the other operational gas turbine due to safety risks.\nN8  Around 30 seconds [reported] after the GT1A trip, GT1B (187 MW [reported]) was manually tripped by\n    the operating staff in response to high steam pressures. Total station loss: 641 MW [reported].",
+          "shown_in": [
+            "K128"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L62-L63",
+          "quote": "rising, the plant operators manually tripped the other gas turbine due to safety risks. \"The root\n    cause of these high pressure conditions has not been established.\"",
+          "shown_in": [
+            "C27",
+            "K134"
+          ]
+        }
+      ],
+      "task": "T07",
+      "unit": "T07",
+      "verdict": "supported"
+    },
+    "F22": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C28 and K76 give the stated minimum sample and timestamp. C4 places fault inception approximately 75.5 seconds earlier, consistent with approximately 76 seconds. The difference from the stated 50.0 Hz reference is 1.213 Hz.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:49+00:00",
+          "quote": "2019-08-09T16:53:49+01:00,48.787",
+          "shown_in": [
+            "C28",
+            "C33",
+            "K76"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L37",
+          "quote": "C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton\n    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.",
+          "shown_in": [
+            "C4"
+          ]
+        }
+      ],
+      "task": "T03",
+      "unit": "T03",
+      "verdict": "supported"
+    },
+    "F23": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F23's cited C29 gives a decrease of 49.770 − 49.633 = 0.137 Hz, not 0.151 Hz, over its specified second. The numerical claim is directly contradicted regardless of whether a larger drop occurred elsewhere.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "rows:756-757",
+          "quote": "2019-08-09T16:52:35+01:00,49.77\n2019-08-09T16:52:36+01:00,49.633",
+          "shown_in": [
+            "C29"
+          ]
+        }
+      ],
+      "task": "T03",
+      "unit": "T03",
+      "verdict": "contradicted"
+    },
+    "F24": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C30 explicitly supports F24's delivery amount, delivery timestamp, reported arrest frequency and arrest timestamp. F24 labels these as reported rather than presenting the rounded 49.1 Hz as an exact R01 sample.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L19-L22",
+          "quote": "E03  16:52:44 [reported]  Frequency response has delivered at least 650 MW [reported] of power to\n     stabilise the frequency.\nE04  16:52:58 [reported]  Frequency drop is arrested at 49.1 Hz [reported] due to the delivery of\n     frequency response products.",
+          "shown_in": [
+            "C30"
+          ]
+        }
+      ],
+      "task": "T03",
+      "unit": "T03",
+      "verdict": "supported"
+    },
+    "F25": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C31 directly supports F25's delivery amount, time and purpose.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L24-L25",
+          "quote": "E06  16:53:04 [reported]  Frequency response has delivered 900 MW [reported] of power to stabilise the\n     frequency.",
+          "shown_in": [
+            "C31"
+          ]
+        }
+      ],
+      "task": null,
+      "unit": "UNASSIGNED",
+      "verdict": "supported"
+    },
+    "F26": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F26 asserts compliance with a minimum of 49.2 Hz, but C28 records 48.787 Hz. C32 supports the stated requirement, not the compliance conclusion. Breaching the minimum alone contradicts the claimed compliance.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R10",
+          "locator": "L25-L27",
+          "quote": "'Infrequent Infeed Loss' is a higher level (e.g. Sizewell at 1,260 MW [reported]) for which the\n     frequency should not go below 49.2 Hz [reported] and should recover to 49.5 Hz [reported] within\n     one minute.",
+          "shown_in": [
+            "C32"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:49+00:00",
+          "quote": "2019-08-09T16:53:49+01:00,48.787",
+          "shown_in": [
+            "C28",
+            "C33"
+          ]
+        }
+      ],
+      "task": null,
+      "unit": "UNASSIGNED",
+      "verdict": "contradicted"
+    },
+    "F27": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "C33 contradicts F27's derivation that frequency exceeded 49 Hz at 16:54:13: that sample remains below 49 Hz. C34 records 49.997 Hz rather than an exact 50.0 Hz sample. Independently, the interval from the minimum at 16:53:49 to 16:57:15 is 206 seconds, not 162 seconds.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:41+00:00/2019-08-09T15:54:13+00:00",
+          "quote": "2019-08-09T16:54:13+01:00,48.973",
+          "shown_in": [
+            "C33"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:57:15+00:00",
+          "quote": "2019-08-09T16:57:15+01:00,49.997",
+          "shown_in": [
+            "C34"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:49+00:00",
+          "quote": "2019-08-09T16:53:49+01:00,48.787",
+          "shown_in": [
+            "C28",
+            "C33",
+            "K76"
+          ]
+        }
+      ],
+      "task": "T03",
+      "unit": "T03",
+      "verdict": "contradicted"
+    },
+    "F28": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "K218 establishes the estimated pre-trip inertia as 219,632 MVA.s, equivalent to 219.632 GVA.s and approximately 219.6 GVA.s. C36 supports the 1,022 MW response holding. Both factual components of F28 are supported.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R02",
+          "locator": "L205-L207",
+          "quote": "First two of the eight table rows (Timestamp (hr:min:sec) | System Condition | Inertia (MVA.s)):\n    11:00 | 6 hours before the incident | 201353 [estimated]\n    16:52 | Immediately prior to the trip | 219632 [estimated]",
+          "shown_in": [
+            "K218"
+          ]
+        },
+        {
+          "evidence_id": "R02",
+          "locator": "L194",
+          "quote": "Frequency Response Holding | 1,087 MW  | 1,022 MW  [reported]",
+          "shown_in": [
+            "C36",
+            "K201"
+          ]
+        }
+      ],
+      "task": "T12",
+      "unit": "T12",
+      "verdict": "supported"
+    },
+    "F29": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C37 directly supports F29's reported recovery time and separate response/action amounts; C38 identifies the services used. The quantity's basis and derivation explicitly retain 'over 1,000 MW', so 2,240 MW is interpreted as the stated lower-bound sum, not an exact delivered total. The rounded recovery description is correctly attributed as reported.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L34-L36",
+          "quote": "E11  16:57:15 [reported]  Frequency returns to 50 Hz [reported] following over 1,000 MW [reported] of\n     response and a further 1240 MW [reported] of control room actions to restore frequency and\n     stabilise the situation.",
+          "shown_in": [
+            "C37"
+          ]
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L100-L102",
+          "quote": "Answer 20 (untimed): actions taken to restore frequency to operational limits\nR1   1,240 MW [reported] of actions taken by the ESO, using Short Term Operating Reserve, Rapid Start,\n     Balancing Mechanism actions and Fast Reserve (from BM and non-BM providers).",
+          "shown_in": [
+            "C38"
+          ]
+        }
+      ],
+      "task": "T03",
+      "unit": "T03",
+      "verdict": "supported"
+    },
+    "F30": {
+      "confidence": "medium",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C39 supports the threshold and staged-block requirement; K58 confirms actual LFDD activation at that threshold. F30 is read as a general description of Stage 1 operation, not an explicit assertion that every DNO or relay complied. The separate prose claim of universally correct performance is assessed below.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R10",
+          "locator": "L84-L86",
+          "quote": "D1   ESO 4.3: the Grid Code requires each DNO to make arrangements that will enable automatic\n     disconnection of demand if the frequency on the transmission system drops below\n     48.8 Hz [reported]; demand is disconnected in staged blocks (5%, 7.5% and 10%) [reported].",
+          "shown_in": [
+            "C39"
+          ]
+        },
+        {
+          "evidence_id": "S05",
+          "locator": "L61-L63",
+          "quote": "G1   ESO technical report, Table 1 (source column: DNOs): 16:53:49.398 [reported] Frequency breaches\n     48.8 Hz [reported] trigger level resulting in LFDD. 931 MW [reported] of demand is automatically\n     disconnected.",
+          "shown_in": [
+            "K58",
+            "K172"
+          ]
+        }
+      ],
+      "task": "T09",
+      "unit": "T09",
+      "verdict": "supported"
+    },
+    "F31": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "C40 supports the quantity, cutoff, percentage and demand denominator; K172 supports attribution to the ESO technical report. However, no shown span establishes the report's stated publication date of 6 September 2019. Under the every-factual-part rule, this makes F31 unsupported overall. That date could plausibly be established by unseen report metadata.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L66-L68",
+          "quote": "\"The information is based on DNO reported data as of 13 August 2019 at 12:00.\" [reported]\n    \"The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which [reported]\n    represents 3.2% of national transmission demand at the time of the event (29GW).\" [reported]",
+          "shown_in": [
+            "C40"
+          ]
+        }
+      ],
+      "task": "T09",
+      "unit": "T09",
+      "verdict": null
+    },
+    "F32": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "C41 contains the 973 total, but the supplied excerpt lacks headings identifying its unit, report or accounting basis. No other shown span verifies F32's attribution to the E3C interim report. That attribution could plausibly be established by omitted surrounding records.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L107",
+          "quote": "Total | (blank) | 973 | 1,152,878 | 17:37 [reported]",
+          "shown_in": [
+            "C41"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": null
+    },
+    "F33": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "C42 supports the net 892 MW, LFDD basis, percentage and customer count. K71 corroborates the corresponding paragraph numbering. However, the stated publication date of 3 January 2020 is not established by any shown span. The omitted report metadata could plausibly support it.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L111-L113",
+          "quote": "paragraph 2.5: \"In total, 892MW of net demand was disconnected from the local distribution [reported]\n    networks as a result of LFDD, representing approximately 4% of national demand and affecting [reported]\n    1.15 million customers.\" [reported]",
+          "shown_in": [
+            "C42"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": null
+    },
+    "F34": {
+      "confidence": "medium",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "C43 supports approximately 1.15 million customers. However, F34 says all DNO areas were affected, whereas C44 explicitly reports zero disconnected demand for SHEPD. The verdict treats 'all' literally rather than as a loose description of a national aggregate.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L67",
+          "quote": "\"The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which [reported]",
+          "shown_in": [
+            "C40",
+            "C43"
+          ]
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L71",
+          "quote": "Scottish Hydro Electric Power Distribution (SHEPD) | (blank) | 0 | (blank) | (blank) [reported]",
+          "shown_in": [
+            "C44"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": "contradicted"
+    },
+    "F35": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F35's cited table C44 gives WPD West Midlands as 160 MW, not 190 MW. Its largest explicitly printed area value is UKPN London's 174 MW. No shown alternative table supports the claimed 190 MW endpoint.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L78",
+          "quote": "Western Power Distribution (WPD) | West Midlands | 160 | 187,427 | 17:37 [reported]",
+          "shown_in": [
+            "C44"
+          ]
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L82",
+          "quote": "UK Power Networks (UKPN) | London | 174 | 239,861 | 17:37 [reported]",
+          "shown_in": [
+            "C44"
+          ]
+        }
+      ],
+      "task": "T02",
+      "unit": "T02",
+      "verdict": "contradicted"
+    },
+    "F36": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C45 supports F36's first DNO disconnection report at 16:56. The approximately four-minute interval is a reasonable coarse description of the roughly three-and-a-half minutes since fault inception.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L43-L45",
+          "quote": "K1   16:56 [reported]  First report of demand disconnection from a DNO received by the ESO control room.\n     Reports continued to arrive with number of customers and load lost; enquiries were received about\n     when demand restoration could begin.",
+          "shown_in": [
+            "C45"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F37": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C47 supports F37's times and progressive restoration instructions. K84 additionally supports permission-controlled restoration, rather than automatic reconnection.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L46-L47",
+          "quote": "K2   16:58 to 17:16 [reported]  Demand restoration instruction to DNOs initiated by the ESO control\n     room; the demand was instructed to restore in a progressive manner.",
+          "shown_in": [
+            "C47",
+            "K81"
+          ]
+        },
+        {
+          "evidence_id": "S09",
+          "locator": "response:S09-ESO-05",
+          "quote": "The DNOs did ask our specific permission to restore.",
+          "shown_in": [
+            "K84"
+          ]
+        }
+      ],
+      "task": "T05",
+      "unit": "T05",
+      "verdict": "supported"
+    },
+    "F38": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "rationale": "F38's own citations, C48 and C49, describe UKPN public updates, not these restoration times. C51 contains the claimed times alongside other times, but lacks column headings establishing that they denote restoration reports or restoration commencement. The claimed interpretation and earliest-report status are therefore unsupported by the shown excerpts; unseen table context could resolve this.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L65-L67",
+          "quote": "T08  UKPN LPN: 16:58 [reported] | 16:58 [reported] | shared cell (see T06)\nT09  WPD South West: 16:56 [reported] (shared cell: WPD South West, WPD South Wales) | 17:08 [reported]\n     (shared cell: WPD South West, WPD South Wales) | 17:30 [reported] (shared cell: all four WPD areas)",
+          "shown_in": [
+            "C51"
+          ]
+        }
+      ],
+      "task": null,
+      "unit": "UNASSIGNED",
+      "verdict": null
+    },
+    "F39": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "rationale": "F39 confuses earliest restoration completion with receipt of the first DNO completion report. C50 dates that report at 17:34, whereas K91 identifies 17:07 as the earliest restoration completion.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L51",
+          "quote": "K5   17:34 [reported]  First DNO report received that its demand had been fully restored.",
+          "shown_in": [
+            "C50"
+          ]
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L118-L119",
+          "quote": "A2   Post-event analysis indicated the earliest restoration was completed at 17:07 [reported] and the\n     last customers were reconnected at 17:37 [reported].",
+          "shown_in": [
+            "K91",
+            "K97"
+          ]
+        }
+      ],
+      "task": "T05",
+      "unit": "T05",
+      "verdict": "contradicted"
+    },
+    "F40": {
+      "confidence": "medium",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "K91 supports F40's overall completion range. C44 supports both UKPN and WPD areas finishing at 17:37. C51 instead gives a shared WPD completion time of 17:30, so the returns differ; nevertheless, F40's unattributed statement is supported by the other displayed return and post-event analysis.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L118-L119",
+          "quote": "A2   Post-event analysis indicated the earliest restoration was completed at 17:07 [reported] and the\n     last customers were reconnected at 17:37 [reported].",
+          "shown_in": [
+            "K91",
+            "K97"
+          ]
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L78",
+          "quote": "Western Power Distribution (WPD) | West Midlands | 160 | 187,427 | 17:37 [reported]",
+          "shown_in": [
+            "C44"
+          ]
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L82",
+          "quote": "UK Power Networks (UKPN) | London | 174 | 239,861 | 17:37 [reported]",
+          "shown_in": [
+            "C44"
+          ]
+        }
+      ],
+      "task": "T05",
+      "unit": "T05",
+      "verdict": "supported"
+    },
+    "F41": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C52 directly supports F41's statement that all DNOs had confirmed completion by 17:37. This is approximately 45 minutes after the initiating event.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L39-L40",
+          "quote": "E13  17:37 [reported]  All DNOs have confirmed that demand restoration has been completed (source\n     column: DNO's).",
+          "shown_in": [
+            "C52"
+          ]
+        }
+      ],
+      "task": "T01",
+      "unit": "T01",
+      "verdict": "supported"
+    },
+    "F42": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C53 directly supports F42's participants and timing. 'Established communication' is a reasonable equivalent of the source's 'commenced communication' here.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L116-L117",
+          "quote": "A1   ESO control room commenced communication with DNOs and NGET control room within\n     2 minutes [reported] of the initial fault.",
+          "shown_in": [
+            "C53"
+          ]
+        }
+      ],
+      "task": null,
+      "unit": "UNASSIGNED",
+      "verdict": "supported"
+    },
+    "F43": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "rationale": "C54 directly supports all parts of F43: generally effective communications, no communication-system issues, and clear instructions despite departure from agreed phraseology.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L120-L122",
+          "quote": "A3   Operational communications were generally efficient and effective during the demand restoration\n     process and in the demand loss and restoration reporting process; the ESO control room experienced\n     no communication issues with customers or with communication systems.",
+          "shown_in": [
+            "C54"
+          ]
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L126-L127",
+          "quote": "While verbal instructions to DNOs to restore demand did not follow agreed phraseology, they were\n     clear and understood.",
+          "shown_in": [
+            "C54"
+          ]
+        }
+      ],
+      "task": "T05",
+      "unit": "T05",
+      "verdict": "supported"
+    },
+    "J-T03-1": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "location": "report.sections[9].body",
+      "rationale": "This sampling limitation is additional to F22's minimum-value finding. K74 explicitly establishes one published value per second and the absence of information about intervening behaviour.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "L28-L29",
+          "quote": "Resolution: one published value per second. The file carries no information about behaviour between\nconsecutive samples and no description of the measurement method.",
+          "shown_in": [
+            "K74"
+          ]
+        }
+      ],
+      "task": "T03",
+      "text": "The measured frequency record has 1-second resolution; the actual frequency minimum between samples cannot be determined [F22].",
+      "unit": "T03",
+      "verdict": "supported"
+    },
+    "J-T04-1": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "supported",
+      "location": "report.sections[7].body",
+      "rationale": "K78 explicitly establishes the sampling limitation, and C28 records the stated minimum sample and timestamp. The crossing-time uncertainty is additional report content, not a restatement of F22.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "L28-L29",
+          "quote": "Resolution: one published value per second. The file carries no information about behaviour between\nconsecutive samples and no description of the measurement method.",
+          "shown_in": [
+            "K78"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:49+00:00",
+          "quote": "2019-08-09T16:53:49+01:00,48.787",
+          "shown_in": [
+            "C28",
+            "C33"
+          ]
+        }
+      ],
+      "task": "T04",
+      "text": "The exact time at which frequency crossed the 48.8 Hz LFDD threshold cannot be determined from the 1-second frequency samples, though the minimum of 48.787 Hz was reached at 16:53:49+01:00 [F22].",
+      "unit": "T04",
+      "verdict": "supported"
+    },
+    "J-T09-1": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "location": "report.sections[8].body",
+      "rationale": "This categorical correctness claim goes beyond F30's general trigger description. K189 expressly records erroneous Scottish disconnection at 48.8 Hz because of an incorrect setting, contradicting an unqualified claim that demand disconnection occurred at the correct threshold throughout.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S05",
+          "locator": "L102-L104",
+          "quote": "B7   3.44: SP Distribution erroneously disconnected 22 MW [reported] in Scotland when system frequency\n     fell below 48.8 Hz [reported] and reconnected customers without informing the ESO; the\n     disconnection occurred due to an incorrect setting in the DNO's LFDD equipment.",
+          "shown_in": [
+            "K189"
+          ]
+        }
+      ],
+      "task": "T09",
+      "text": "The demand disconnection occurred at the correct trigger threshold (48.8 Hz) and in the correct sequence of stages [F30].",
+      "unit": "T09",
+      "verdict": "contradicted"
+    },
+    "J-T09-2": {
+      "confidence": "low",
+      "issues": [
+        "low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "judge_verdict": "unsupported",
+      "location": "report.sections[4].body",
+      "rationale": "C40 establishes the ESO data cutoff, and C42 establishes Ofgem's net-demand definition. However, no shown span identifies the claimed E3C and Ofgem adjustments or establishes report timing as the explanation for all numerical differences. This causal reconciliation could plausibly be documented in material not shown.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "task": "T09",
+      "text": "These variations reflect different accounting bases and timing of reports (ESO data as of 13 August 2019 at 12:00; E3C and Ofgem including various adjustments).",
+      "unit": "T09",
+      "verdict": null
+    },
+    "J-T12-1": {
+      "confidence": "high",
+      "issues": [],
+      "judge_verdict": "contradicted",
+      "location": "report.executive_summary",
+      "rationale": "The executive summary's blanket claim includes frequency response services. K211 and K213 explicitly establish response under-delivery, contradicting the assertion that all performed according to requirements. This service-performance claim is distinct from F26's assertion about system frequency limits.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R06",
+          "locator": "L39-L41",
+          "quote": "\"Of the validated response holding the ESO can confirm that 89% of primary (841MW) and 88% of [reported]\n    secondary (1055MW) response performed as expected and in line with its contractual [reported]\n    obligations.\" [reported]",
+          "shown_in": [
+            "K211"
+          ]
+        },
+        {
+          "evidence_id": "S12",
+          "locator": "L104-L107",
+          "quote": "D7   Ofgem 3.9: primary response providers under-delivered by 17% [reported] and secondary response\n     providers by 14% [reported]; mandatory response providers, and commercial Fast Frequency Response\n     providers of dynamic primary response (Ofgem's wording), under-delivered by approximately\n     25% [reported].",
+          "shown_in": [
+            "K213"
+          ]
+        }
+      ],
+      "task": "T12",
+      "text": "The transmission protection, frequency response services, LFDD scheme and demand restoration all performed according to their design requirements",
+      "unit": "T12",
+      "verdict": "contradicted"
+    }
+  },
+  "binding": {
+    "bundle_sha256": "701128c280d0af080af6b27c13046ae20cadfd93cc85da5f1e768fa890370b52",
+    "key_sha256": "e1a1f824a8459717870ff20804b56abc63daeb97424eba6c887f5c7efd83a09b",
+    "key_version": "0.1.0",
+    "submission_sha256": "2b04f340184712708140e1558ad858315fc9e818c38c089c80c97b29b7c5a15e"
+  },
+  "blinding": {
+    "submission_redactions": 0,
+    "version": "blind-1"
+  },
+  "cache_key": "2c43adddae9a75f740dd57d940f5f8cdfb56090ff21761205110cbe643a2f641",
+  "complete": true,
+  "config": {
+    "judge_model": "openai/gpt-6.1-sol",
+    "max_attempts": 2,
+    "max_output_tokens": 24000,
+    "max_report_assertions": 8,
+    "max_span_chars": 6000,
+    "modes": [
+      "judge",
+      "auto_assisted_human"
+    ],
+    "provider": {
+      "require_parameters": true
+    },
+    "reasoning": null,
+    "report_assertions": true,
+    "temperature": 0.0
+  },
+  "criteria": {
+    "T01.01": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F01 identifies the circuit and voltage; F02 attributes its fault to lightning, and F03 identifies the circuit fault. C3 and C4 directly support the causal attribution and circuit identification. This meets the full expectation.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L89-L90",
+          "quote": "G2  NGET: one of the strikes is timed at the same time as the fault; \"As such we can be confident that a\n    lightning strike was the cause of the fault.\"",
+          "shown_in": [
+            "C3"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L37",
+          "quote": "C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton\n    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.",
+          "shown_in": [
+            "C4",
+            "K2",
+            "K5"
+          ]
+        }
+      ],
+      "unit": "T01"
+    },
+    "T01.02": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F03"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F03 gives fault inception as 16:52:33.490+01:00 in its event_time, exactly matching C4. The explicit offset supplies the clock basis. F01's excessive precision for all three strikes does not undermine this separately supported fault time.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L37",
+          "quote": "C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton\n    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.",
+          "shown_in": [
+            "C4",
+            "K2",
+            "K5"
+          ]
+        }
+      ],
+      "unit": "T01"
+    },
+    "T01.03a": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F03"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F03 explicitly states a single-phase-to-earth fault on the blue phase. C4 directly supports this fault type, satisfying the expectation and positive example.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L36-L37",
+          "quote": "C1  2019-08-09T16:52:33.490+01:00 [reported]: fault inception. Single (blue) phase to earth fault on one Eaton\n    Socon–Wymondley circuit: the middle conductor (blue phase) faulted to the earthed tower.",
+          "shown_in": [
+            "C4",
+            "K2",
+            "K5"
+          ]
+        }
+      ],
+      "unit": "T01"
+    },
+    "T01.03b": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F05",
+        "F06"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F05 and F06 give the correct end-specific clearance times and timestamps, and F06 gives the 80 ms requirement at 400 kV. C6 and C7 support all credited elements.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L43-L44",
+          "quote": "C5  2019-08-09T16:52:33.560+01:00 [reported]: Wymondley Main end opens to clear the fault; main protection\n    operating time 70 ms [reported] after fault inception.",
+          "shown_in": [
+            "C6",
+            "K15"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L45-L48",
+          "quote": "C6  2019-08-09T16:52:33.564+01:00 [reported]: Eaton Socon end opens to clear the fault; main protection\n    operating time 74 ms [reported] after fault inception.\nC7  Requirement cited by NGET, Grid Code Connection Condition CC.6.2.3.1.1, primary protection fault clearance\n    times: 80 ms at 400 kV [reported]; 100 ms at 275 kV [reported]; 120 ms at 132 kV and below [reported].",
+          "shown_in": [
+            "C7"
+          ]
+        }
+      ],
+      "unit": "T01"
+    },
+    "T01.04": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F08",
+        "F09"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F08 identifies DAR at 16:52:53+01:00, approximately 20 seconds after the fault; F09 states restoration of the pre-event configuration. C9 and C10 support these statements. The submission does not present the reclose as another initiating fault.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L50",
+          "quote": "C8  2019-08-09T16:52:53+01:00 [reported]: Eaton Socon–Wymondley circuit energised on Delayed Auto-Reclose\n    (DAR), returning it to service about 20 seconds [reported] after the fault.",
+          "shown_in": [
+            "C9",
+            "K19"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L51-L53",
+          "quote": "C9  DAR was available and in service on the circuit. After the reclose the network was in the same\n    configuration as before the event; no further operational intervention or immediate site attendance was\n    required.",
+          "shown_in": [
+            "C10"
+          ]
+        }
+      ],
+      "unit": "T01"
+    },
+    "T02.01a": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission omits the estimated 150 MW vector-shift embedded-generation loss identified in K22–K26.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T02"
+    },
+    "T02.01b": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "Neither the estimated 350 MW RoCoF loss nor an accepted alternative appears in the submission. K28–K32 establish the missing component.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T02"
+    },
+    "T02.02a": {
+      "confidence": "medium",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F10",
+        "F13"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F13 explicitly gives the correct 737 MW loss and 799−62 MW derivation. F10 and F13 cite the numerical inputs in C11 and C15; K35–K36 confirm their interpretation. The erroneous module breakdown elsewhere does not change the correctly identified site loss.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L35",
+          "quote": "to 799 MW [reported].",
+          "shown_in": [
+            "C11"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L43",
+          "quote": "1C at 0 MW [reported]. Hornsea 1A remains in operation at 62 MW [reported].",
+          "shown_in": [
+            "C15",
+            "K36",
+            "K38",
+            "K56"
+          ]
+        }
+      ],
+      "unit": "T02"
+    },
+    "T02.02b": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F17",
+        "F18"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F18 identifies the ST1C trip and gives 244 MW as output at trip; F17 supplies the matching unit output. Their citations C21–C22 support the credited content.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "L34",
+          "quote": "U1  ST1C steam turbine: 244 MW [reported]",
+          "shown_in": [
+            "C21",
+            "K42"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L25",
+          "quote": "E5   ST generator breaker open feedback        +1.185 s [reported]",
+          "shown_in": [
+            "C22",
+            "K54",
+            "K59"
+          ]
+        }
+      ],
+      "unit": "T02"
+    },
+    "T02.03a": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F17",
+        "F20"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F20 identifies GT1A's automatic trip and its 210 MW output at trip. F17 and C21 provide the matching output, while C24 supports the shutdown.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "L35",
+          "quote": "U2  GT1A gas turbine: 210 MW [reported]",
+          "shown_in": [
+            "C21",
+            "K46"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L26",
+          "quote": "E6   GT1A auto shutdown command                +56.583 s [reported]",
+          "shown_in": [
+            "C24",
+            "K54"
+          ]
+        }
+      ],
+      "unit": "T02"
+    },
+    "T02.03b": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F17",
+        "F21"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F21 gives GT1B's manual trip and 187 MW output at trip. C21, cited by F17, and C26, cited by F21, support the unit value and shutdown.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S03",
+          "locator": "L36",
+          "quote": "U3  GT1B gas turbine: 187 MW [reported]",
+          "shown_in": [
+            "C21",
+            "K51"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L28",
+          "quote": "E8   GT1B manual shutdown command              +83.897 s [reported]",
+          "shown_in": [
+            "C24",
+            "C26",
+            "K54"
+          ]
+        }
+      ],
+      "unit": "T02"
+    },
+    "T02.04": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F13",
+        "F18",
+        "F20",
+        "F21"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F13, F18, F20 and F21 place Hornsea, ST1C and the later gas-turbine trips, with clock uncertainty acknowledged. C15, C22 and C24–C26 support these offsets. However, vector-shift and RoCoF losses are entirely absent, and LFDD is not explicitly placed in the chronology at its operating time. The later-trip placement earns partial credit.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L41",
+          "quote": "15:52:33.728Z [reported]        Hornsea 1B and Hornsea 1C begin de-loading turbines.",
+          "shown_in": [
+            "C15",
+            "K56",
+            "K62"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L25",
+          "quote": "E5   ST generator breaker open feedback        +1.185 s [reported]",
+          "shown_in": [
+            "C22",
+            "K54",
+            "K59"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L28",
+          "quote": "E6   GT1A auto shutdown command                +56.583 s [reported]\nE7   GT1A breaker open feedback                +57.620 s [reported]\nE8   GT1B manual shutdown command              +83.897 s [reported]",
+          "shown_in": [
+            "C24",
+            "K54"
+          ]
+        }
+      ],
+      "unit": "T02"
+    },
+    "T02.05a": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission gives 1,378 MW for Hornsea and Little Barford but never gives or derives ESO's six-component 1,878 MW total. The two embedded-generation components in K64 are omitted.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T02"
+    },
+    "T02.05b": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "Neither the 1,878 MW figure nor its ESO cumulative-infeed, six-component accounting basis appears. The 1,378 MW two-station subtotal is not the basis described in K65.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T02"
+    },
+    "T02.06": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission does not discuss the ESO total, later generation-loss estimates, the 49 Hz net reduction, or the net LFDD effect. Its distinction between demand-disconnection reporting figures does not satisfy this generation-accounting criterion. K68–K72 describe the omitted distinctions.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T02"
+    },
+    "T03.04": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F22",
+        "F27"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F22 gives the R01 minimum to three decimals with its timestamp, supported by C28. The Uncertainty Register explicitly states 1-second resolution and limits inference between samples; F27's cited C33 demonstrates consecutive one-second samples. This meets the explicit full-credit rule. Errors in other landmarks do not change the correctly reported minimum or the stated sampling precision.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:49+00:00",
+          "quote": "2019-08-09T16:53:49+01:00,48.787",
+          "shown_in": [
+            "C28",
+            "C33",
+            "K76"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:41+00:00/2019-08-09T15:54:13+00:00",
+          "quote": "2019-08-09T16:53:41+01:00,48.983\n2019-08-09T16:53:42+01:00,48.943",
+          "shown_in": [
+            "C33"
+          ]
+        }
+      ],
+      "unit": "T03"
+    },
+    "T04.03": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F27"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F27 specifies a below-49-Hz threshold and an elapsed-timestamp subtraction method in its derivation. The report explicitly states one-second sampling and that the LFDD threshold crossing cannot be precisely resolved. C33 supplies consecutive one-second samples supporting the sampling basis. F27 misidentifies the ending sample as above 49 Hz, but that duration error does not negate stating a convention and sampling limitations under this criterion.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:41+00:00/2019-08-09T15:54:13+00:00",
+          "quote": "2019-08-09T16:53:41+01:00,48.983\n2019-08-09T16:53:42+01:00,48.943",
+          "shown_in": [
+            "C33"
+          ]
+        }
+      ],
+      "unit": "T04"
+    },
+    "T05.01a": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F37"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F37 explicitly gives the instruction window beginning at 16:58 BST. C46 directly supports that start time.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L37-L38",
+          "quote": "E12  16:58 – 17:16 [reported]  ESO progressively instructs the DNOs that they can commence demand\n     restoration.",
+          "shown_in": [
+            "C46",
+            "K80"
+          ]
+        }
+      ],
+      "unit": "T05"
+    },
+    "T05.01b": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F37"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F37 states that restoration instructions continued to 17:16 BST, correctly identifying the end of the instruction window. C46 supports this.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L37-L38",
+          "quote": "E12  16:58 – 17:16 [reported]  ESO progressively instructs the DNOs that they can commence demand\n     restoration.",
+          "shown_in": [
+            "C46",
+            "K80"
+          ]
+        }
+      ],
+      "unit": "T05"
+    },
+    "T05.02": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F41"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F41 correctly identifies confirmation of all DNO demand restoration at 17:37 BST, directly supported by C52. F39 incorrectly dates the first completion report, but does not substitute that date for completion of all restoration.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L39-L40",
+          "quote": "E13  17:37 [reported]  All DNOs have confirmed that demand restoration has been completed (source\n     column: DNO's).",
+          "shown_in": [
+            "C52",
+            "K94"
+          ]
+        }
+      ],
+      "unit": "T05"
+    },
+    "T05.03": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F29",
+        "F37",
+        "F41"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F29 separates frequency recovery at 16:57:15 from the later DNO instruction window in F37 and completion in F41. Restoration is explicitly scoped to disconnected DNO demand; no claim places transport or all affected services' recovery at 17:37. C37 and C52 support the distinct milestones.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L34-L36",
+          "quote": "E11  16:57:15 [reported]  Frequency returns to 50 Hz [reported] following over 1,000 MW [reported] of\n     response and a further 1240 MW [reported] of control room actions to restore frequency and\n     stabilise the situation.",
+          "shown_in": [
+            "C37"
+          ]
+        },
+        {
+          "evidence_id": "S07",
+          "locator": "L39-L40",
+          "quote": "E13  17:37 [reported]  All DNOs have confirmed that demand restoration has been completed (source\n     column: DNO's).",
+          "shown_in": [
+            "C52",
+            "K94"
+          ]
+        }
+      ],
+      "unit": "T05"
+    },
+    "T06.01": {
+      "confidence": "medium",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F12",
+        "F13",
+        "F14",
+        "F15"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F12–F15 and the Hornsea section describe incorrect controller reaction, sub-synchronous resonance, voltage collapse and automatic protective de-loading of 1B/1C with 1A remaining operational. This meets the stated full-credit components. C14–C17 support that account. The report does not identify overcurrent explicitly and misleadingly calls the protection actions inappropriate, but does explain controller instability and protective de-load.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L86-L88",
+          "quote": "C1  The onshore control system operated as expected when the system voltage dipped; the offshore wind turbine\n    controllers reacted incorrectly to voltage fluctuations on the offshore network following the fault,\n    causing an instability that triggered two modules to automatically shut down.",
+          "shown_in": [
+            "C16"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L39-L40",
+          "quote": "15:52:33.700Z-.835Z [estimated] In the 34 kV [reported] collection cable system the voltage rapidly reduces\n                                to 20 kV [reported] (target voltage 34 kV [reported]); note (c).",
+          "shown_in": [
+            "C14"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L41-L43",
+          "quote": "15:52:33.728Z [reported]        Hornsea 1B and Hornsea 1C begin de-loading turbines.\n15:52:33.835Z [reported]        De-load complete, 107 ms [reported] after it began: all WTGs on Hornsea 1B and\n                                1C at 0 MW [reported]. Hornsea 1A remains in operation at 62 MW [reported].",
+          "shown_in": [
+            "C15"
+          ]
+        }
+      ],
+      "unit": "T06"
+    },
+    "T06.02": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F11",
+        "F12",
+        "F14"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F11 describes reactive compensation injection and oscillation; F12/F14 describe offshore voltage collapse and incorrect controller response. However, the submission does not clearly identify the onshore system as operating as expected, and F16 instead says the offshore control system operated as designed. C13/C16 support the credited descriptions, but the required correct behavioural distinction is incomplete.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L30-L33",
+          "quote": "15:52:33.490Z-.700Z [reported]  Reactive compensation control initially injects reactive power (leading MVAr)\n                                to boost NETS voltage, then a significant oscillation: absorption\n                                >300 MVAr [reported] while NETS and Hornsea One system voltage falls to\n                                ~394 kV [reported]; then injection again.",
+          "shown_in": [
+            "C13"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L86-L88",
+          "quote": "C1  The onshore control system operated as expected when the system voltage dipped; the offshore wind turbine\n    controllers reacted incorrectly to voltage fluctuations on the offshore network following the fault,\n    causing an instability that triggered two modules to automatically shut down.",
+          "shown_in": [
+            "C16"
+          ]
+        }
+      ],
+      "unit": "T06"
+    },
+    "T06.03": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F15"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "The Hornsea section explicitly attributes F15's resonance explanation to the operator's investigation, supported by C17 and its source identification in K107. The weak internal network and outage configuration appear in the prose, but their contributory explanation is not attributed to the operator's account. Thus only one explanation receives the required attribution.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L56-L58",
+          "quote": "A1  Section \"Conclusion\": \"The de-load was caused by an unexpected wind farm control system response, due\n    to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was\n    triggered by the initial event.\"",
+          "shown_in": [
+            "C17",
+            "K107"
+          ]
+        }
+      ],
+      "unit": "T06"
+    },
+    "T06.04": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F15"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F15 and the report recognise damped oscillations about ten minutes earlier without de-loading, supported by C18. The prior manufacturer modelling concern at 1,200 MW, its non-disclosure to ESO, and the software update are absent. K113 establishes the missing second component.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L68-L71",
+          "quote": "A5  Identified after the event, as part of this investigation: electrical oscillations occurring before the\n    event, without causing any de-loading. About 10 minutes [reported] before the event (log entry\n    ~15:42Z [estimated]; exact time not published), the reactive power response to a 2% [reported] voltage\n    step change was a damped oscillatory response from the overall voltage control systems.",
+          "shown_in": [
+            "C18"
+          ]
+        }
+      ],
+      "unit": "T06"
+    },
+    "T06.05": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F15",
+        "F16"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F15/F16 provide a controller/resonance mechanism and never assert the DRC as the cause. This satisfies the negative criterion even without an explicit DRC clearance in the prose. C20, cited by F16, explicitly clears the DRC; C17 supports the alternative mechanism. F16's overbroad offshore-control statement is assessed separately.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L78-L79",
+          "quote": "B1  Initially the operator understood the Dynamic Reactive Compensator (DRC) to be responsible for the rapid\n    de-load; it has since concluded that the DRC worked as designed and was not the cause.",
+          "shown_in": [
+            "C20"
+          ]
+        },
+        {
+          "evidence_id": "S01",
+          "locator": "L56-L58",
+          "quote": "A1  Section \"Conclusion\": \"The de-load was caused by an unexpected wind farm control system response, due\n    to an insufficiently damped electrical resonance in the sub-synchronous frequency range, which was\n    triggered by the initial event.\"",
+          "shown_in": [
+            "C17",
+            "K107"
+          ]
+        }
+      ],
+      "unit": "T06"
+    },
+    "T07.01": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F18",
+        "F19"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F18 explicitly states the three-sensor discrepancy exceeded control-system tolerance and triggered shutdown. F19 identifies the same discrepancy while keeping its underlying cause open. C23, cited by F19, supports the automatic trip mechanism. F18's separate timing error does not negate the correctly identified mechanism.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S04",
+          "locator": "L56-L59",
+          "quote": "B1  3.28: \"We have established that the steam turbine tripped initially because of a discrepancy in the\n    three [reported] independent speed sensors on the turbine. This discrepancy exceeded the tolerance\n    of the control system, causing the generator to automatically shut down. The root cause of the\n    discrepancy in the speed sensors has not been established.\"",
+          "shown_in": [
+            "C23"
+          ]
+        }
+      ],
+      "unit": "T07"
+    },
+    "T07.02": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F20"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F20 states both an automatic GT1A trip and excessive steam-bypass pressure, about a minute after the fault. The Little Barford section also describes bypass operation following ST1C loss. C25 supports the automatic high-pressure trip.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S04",
+          "locator": "L50-L52",
+          "quote": "A5  Gas turbines: \"For reasons presently unknown a high-pressure excursion occurred on GT1A resulting in\n    an automated trip. Given the prevailing conditions all systems functioned as expected. GT1B was\n    manually tripped shortly after as a result of excessive steam pressure.\"",
+          "shown_in": [
+            "C25"
+          ]
+        }
+      ],
+      "unit": "T07"
+    },
+    "T07.03": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F21"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F21 identifies manual operator action, continued excessive pressure, safety risks, and approximately 30 seconds after GT1A. C27 directly supports manual intervention for rising pressure and safety.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S04",
+          "locator": "L60-L63",
+          "quote": "B2  3.29: following the steam turbine trip the steam system pressure rose; safety systems automatically\n    shut down one of the gas turbines due to excessive pressure in the steam bypass; as the pressure kept\n    rising, the plant operators manually tripped the other gas turbine due to safety risks. \"The root\n    cause of these high pressure conditions has not been established.\"",
+          "shown_in": [
+            "C27"
+          ]
+        }
+      ],
+      "unit": "T07"
+    },
+    "T07.04": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F19",
+        "F20",
+        "F21"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F19 keeps the speed-discrepancy root cause open under status unknown. F20 and F21 also explicitly keep the pressure root cause open, supported by C25 and C27, but both have status reported. Full credit requires both causes in appropriately labelled findings; the pressure findings therefore limit this to partial.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S04",
+          "locator": "L58-L59",
+          "quote": "of the control system, causing the generator to automatically shut down. The root cause of the\n    discrepancy in the speed sensors has not been established.\"",
+          "shown_in": [
+            "C23",
+            "K133"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L62-L63",
+          "quote": "rising, the plant operators manually tripped the other gas turbine due to safety risks. \"The root\n    cause of these high pressure conditions has not been established.\"",
+          "shown_in": [
+            "C27",
+            "K134"
+          ]
+        }
+      ],
+      "unit": "T07"
+    },
+    "T07.05": {
+      "confidence": "medium",
+      "content": 1,
+      "evidence_support": 0,
+      "finding_ids": [
+        "F19"
+      ],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "F19 offers the transmission disturbance explanation as an attributed view while explicitly saying the root cause remains unestablished and using status unknown. This meets the hypothesis/view requirement without asserting an established cause. However, its cited C23 supports only the mechanism and unknown root cause, not the transmission-fault attribution. K135 supports Ofgem's preliminary view but was not cited.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T07"
+    },
+    "T08.01": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission does not identify distributed-generation losses on vector-shift, RoCoF or 49 Hz underfrequency protection, or generation lost alongside LFDD. These stages are distinguished in K57, K145 and K71. F30 describes demand disconnection, not distributed-generation loss.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T08"
+    },
+    "T08.02": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "Neither the findings nor report prose gives the approximately 200 MW net generation reduction at 49 Hz described in K145 and K150–K151. F33's net demand disconnected by LFDD is a different quantity and stage.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T08"
+    },
+    "T08.03": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission omits Ofgem's estimated 1,300–1,500 MW total distributed-generation loss, stated in K72 and K153–K154. Its approximately 1,378 MW total concerns Hornsea One and Little Barford, not distributed generation.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T08"
+    },
+    "T08.04": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission identifies neither missing real-time distributed-generation telemetry nor uncertainty in attributing trips to RoCoF versus vector shift. K155–K158 establish these limitations. The uncertainty register addresses other measurements and demand disconnection accounting, not these distributed-generation evidence gaps.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T08"
+    },
+    "T08.05": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission does not discuss overlapping distributed-generation estimates or reconcile their stages and measurement bases, as illustrated by K164–K168. Its reconciliation of 892, 931 and 973 MW concerns disconnected demand, not distributed-generation losses. Avoiding an overlapping sum without addressing the required estimates does not satisfy this positive criterion.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T08"
+    },
+    "T09.01": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F30"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F30 and the LFDD section identify 48.8 Hz as the Stage 1 trigger and state that crossing it activated LFDD. The measured minimum is separately identified as 48.787 Hz. C39 supports the trigger requirement; K169 and K58 confirm the stage and actual activation.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R10",
+          "locator": "L84-L86",
+          "quote": "D1   ESO 4.3: the Grid Code requires each DNO to make arrangements that will enable automatic\n     disconnection of demand if the frequency on the transmission system drops below\n     48.8 Hz [reported]; demand is disconnected in staged blocks (5%, 7.5% and 10%) [reported].",
+          "shown_in": [
+            "C39"
+          ]
+        }
+      ],
+      "unit": "T09"
+    },
+    "T09.02a": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F31"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F31 correctly gives 931 MW on the ESO/DNO-reported LFDD basis, including the data cutoff and 3.2% of 29 GW. C40 supports the credited accounting content, and K172 confirms its ESO attribution.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L66-L68",
+          "quote": "\"The information is based on DNO reported data as of 13 August 2019 at 12:00.\" [reported]\n    \"The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which [reported]\n    represents 3.2% of national transmission demand at the time of the event (29GW).\" [reported]",
+          "shown_in": [
+            "C40"
+          ]
+        }
+      ],
+      "unit": "T09"
+    },
+    "T09.02b": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F33"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F33 explicitly attributes 892 MW to Ofgem and defines it as net demand disconnected by LFDD. C42 supports the quantity and definition; K176 confirms the source attribution.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L111-L113",
+          "quote": "paragraph 2.5: \"In total, 892MW of net demand was disconnected from the local distribution [reported]\n    networks as a result of LFDD, representing approximately 4% of national demand and affecting [reported]\n    1.15 million customers.\" [reported]",
+          "shown_in": [
+            "C42",
+            "K176"
+          ]
+        }
+      ],
+      "unit": "T09"
+    },
+    "T09.03": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "Neither the findings nor the prose explain that LFDD also disconnected distributed generation or that transmission-system net relief was only about 350 MW. F33's 892 MW net-demand figure is a different accounting quantity and cannot substitute for the relief described in K178 and K166.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T09"
+    },
+    "T09.04": {
+      "confidence": "medium",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "F31 and F33 provide event-demand percentages, but the submission never states the winter-peak basis of the 5% requirement or explains why the percentages are not directly comparable. Merely avoiding an erroneous comparison does not substantively explain either distinction required here. K170 and K183 supply the missing requirement basis.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T09"
+    },
+    "T09.05": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission explains neither permitted relay tolerance and delay nor Scotland's different thresholds and SP Distribution's incorrect setting. Its observation that the minimum was just below 48.8 Hz is not an explanation of non-operation. Both substantive components documented in K186–K190 are absent.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T09"
+    },
+    "T12.01a": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The Frequency Excursion and Containment section explicitly states that the ESO was securing for a 1,000 MW loss, matching K194 and K196. This content appears only in report prose; F28 states the response holding, not the secured loss. Consequently, no credited finding supplies citation support.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T12"
+    },
+    "T12.01b": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F28"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F28 reports the 1,022 MW response holding, supported by C36. Neither F28 nor the prose identifies its delivery-by-10-seconds band or further 20-second duration. This meets the criterion's partial-credit condition.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R02",
+          "locator": "L194",
+          "quote": "Frequency Response Holding | 1,087 MW  | 1,022 MW  [reported]",
+          "shown_in": [
+            "C36",
+            "K201"
+          ]
+        }
+      ],
+      "unit": "T12"
+    },
+    "T12.01c": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission gives neither the 1,314 MW final secondary holding nor the 1,338 MW earlier holding. The delivered response figures in F24, F25 and F29 are different quantities and cannot substitute for secondary response held.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T12"
+    },
+    "T12.02": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission does not report the initial 1,481 MW cumulative loss, either accepted alternative, or explain its exceedance of the secured loss. Its 1,378 MW total covers Hornsea and the entire Little Barford sequence, omitting embedded generation and using a different stage and basis from K28 and K67.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T12"
+    },
+    "T12.03": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F17",
+        "F20",
+        "F21",
+        "F24"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F17, F20, F21 and F24 describe the arrest at 49.1 Hz followed by the two gas-turbine losses, supported by C21, C24 and C30. However, the submission omits the exhausted-response explanation in K208, the further approximately 200 MW net loss, and the explanation that LFDD and control-room actions absorbed GT1B's loss.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S07",
+          "locator": "L21-L22",
+          "quote": "E04  16:52:58 [reported]  Frequency drop is arrested at 49.1 Hz [reported] due to the delivery of\n     frequency response products.",
+          "shown_in": [
+            "C30",
+            "K77"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L35-L36",
+          "quote": "U2  GT1A gas turbine: 210 MW [reported]\nU3  GT1B gas turbine: 187 MW [reported]",
+          "shown_in": [
+            "C21"
+          ]
+        },
+        {
+          "evidence_id": "S03",
+          "locator": "L26-L28",
+          "quote": "E6   GT1A auto shutdown command                +56.583 s [reported]\nE7   GT1A breaker open feedback                +57.620 s [reported]\nE8   GT1B manual shutdown command              +83.897 s [reported]",
+          "shown_in": [
+            "C24"
+          ]
+        }
+      ],
+      "unit": "T12"
+    },
+    "T12.04": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "No finding or prose identifies response under-delivery. Instead, the executive summary says frequency response services performed according to design requirements. The shortfalls documented in K211–K213 and the qualification in K214 are absent.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T12"
+    },
+    "T12.05": {
+      "confidence": "medium",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F28"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F28 attributes approximately 219.6 GVA.s to ESO's estimated inertia immediately before the trip at 16:52, matching C35 and the answer-42 account in K218. The uncertainty register also identifies it as model-estimated rather than measured. Although answer 42 is not named, the timing, estimate status and cited row distinguish this basis from Table 4.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R02",
+          "locator": "L207",
+          "quote": "16:52 | Immediately prior to the trip | 219632 [estimated]",
+          "shown_in": [
+            "C35",
+            "K218"
+          ]
+        }
+      ],
+      "unit": "T12"
+    },
+    "T16.01": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission identifies the Eaton Socon–Wymondley initiating fault but never names or rules out the Harker–Stella West and Blyth–Eccles–Stella West trips. It therefore does not supply the alternative-event assessment required by T16.01 and documented in K224–K225.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T16"
+    },
+    "T16.02": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F05–F09 and the report explicitly recognise compliant clearance, successful DAR and normal subsequent operation, without blaming transmission protection. C6–C9 support the operating times, requirement, reclose and absence of defects. This meets the full-performance expectation, consistent with K14 and K3.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R03",
+          "locator": "L44",
+          "quote": "operating time 70 ms [reported] after fault inception.",
+          "shown_in": [
+            "C6"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L46",
+          "quote": "operating time 74 ms [reported] after fault inception.",
+          "shown_in": [
+            "C7"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L48",
+          "quote": "times: 80 ms at 400 kV [reported]; 100 ms at 275 kV [reported]; 120 ms at 132 kV and below [reported].",
+          "shown_in": [
+            "C7"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L49-L50",
+          "quote": "C8  2019-08-09T16:52:53+01:00 [reported]: Eaton Socon–Wymondley circuit energised on Delayed Auto-Reclose\n    (DAR), returning it to service about 20 seconds [reported] after the fault.",
+          "shown_in": [
+            "C9"
+          ]
+        },
+        {
+          "evidence_id": "R03",
+          "locator": "L81",
+          "quote": "protection operating data; all assets were operating as normal; no defects identified.",
+          "shown_in": [
+            "C8",
+            "K228"
+          ]
+        }
+      ],
+      "unit": "T16"
+    },
+    "T16.03": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F10"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F10 identifies Hornsea's internal SGT and OTSUA outages, supported by C12; the report describes their weak internal-network effect, consistent with K108. However, it never identifies the Killingholme–Keadby maintenance outage or distinguishes its monitor-unavailability consequence from Hornsea's internal weakness. The expectation explicitly awards partial credit for internal weakness alone.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S01",
+          "locator": "L20-L21",
+          "quote": "P4  Internal network outage configuration: one SGT and one offshore transmission system user asset (OTSUA)\n    circuit on outage.",
+          "shown_in": [
+            "C12"
+          ]
+        }
+      ],
+      "unit": "T16"
+    },
+    "T17.01": {
+      "confidence": "high",
+      "content": 0.5,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F19",
+        "F20",
+        "F21"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "F19 labels the speed-discrepancy root cause unknown. F20 and F21 explicitly leave the pressure cause unresolved, supported by C25 and C27, but label it reported rather than unknown. The uncertainty prose also keeps both causes open. Under T17.01's explicit status-label requirement, this earns partial rather than full credit.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "S04",
+          "locator": "L58-L59",
+          "quote": "The root cause of the\n    discrepancy in the speed sensors has not been established.",
+          "shown_in": [
+            "C23",
+            "K133"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L62-L63",
+          "quote": "The root\n    cause of these high pressure conditions has not been established.",
+          "shown_in": [
+            "C27",
+            "K134"
+          ]
+        }
+      ],
+      "unit": "T17"
+    },
+    "T17.02": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The submission does not register uncertainty in distributed-generation loss volumes or their split between RoCoF, vector shift and other causes. Its discussion of differing demand-disconnection figures concerns LFDD demand, not distributed generation. Neither component described by K155, K232, K164 and K26 is addressed.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T17"
+    },
+    "T17.03": {
+      "confidence": "high",
+      "content": 0,
+      "evidence_support": 0,
+      "finding_ids": [],
+      "issues": [],
+      "judge_evidence_support": 0,
+      "rationale": "The unexplained movement equivalent to approximately 100 MW over 30 seconds is absent from both findings and report prose. The submission does not discuss the uncertainty or source-qualified explanations recorded in K234-K239.",
+      "rejected_spans": [],
+      "supporting_spans": [],
+      "unit": "T17"
+    },
+    "T17.04": {
+      "confidence": "high",
+      "content": 1,
+      "evidence_support": 1,
+      "finding_ids": [
+        "F19",
+        "F20",
+        "F21",
+        "F22",
+        "F27",
+        "F31",
+        "F32",
+        "F33"
+      ],
+      "issues": [],
+      "judge_evidence_support": 1,
+      "rationale": "The report separately identifies source-attributed LFDD figures (F31-F33; C40-C42), measurement limits including one-second sampling and clock alignment, and unresolved Little Barford causes (F19-F21; C23-C27). C33 illustrates the sampled frequency record; K78 and K55 explicitly confirm its sampling and clock limitations. All three uncertainty kinds are distinguished, although the register omits other examples.",
+      "rejected_spans": [],
+      "supporting_spans": [
+        {
+          "evidence_id": "R07",
+          "locator": "L67-L68",
+          "quote": "\"The total loss of demand, due to LFDD relay operation was 1,152,878 customers or 931MW, which [reported]\n    represents 3.2% of national transmission demand at the time of the event (29GW).\" [reported]",
+          "shown_in": [
+            "C40"
+          ]
+        },
+        {
+          "evidence_id": "R07",
+          "locator": "L109-L110",
+          "quote": "paragraph 2.4.12: \"892MW of net demand was disconnected in total from the local distribution [reported]\n    networks.\" [reported]",
+          "shown_in": [
+            "C42"
+          ]
+        },
+        {
+          "evidence_id": "R01",
+          "locator": "time:2019-08-09T15:53:41+00:00/2019-08-09T15:54:13+00:00",
+          "quote": "2019-08-09T16:53:41+01:00,48.983\n2019-08-09T16:53:42+01:00,48.943",
+          "shown_in": [
+            "C33"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L58-L59",
+          "quote": "The root cause of the\n    discrepancy in the speed sensors has not been established.",
+          "shown_in": [
+            "C23",
+            "K133"
+          ]
+        },
+        {
+          "evidence_id": "S04",
+          "locator": "L62-L63",
+          "quote": "The root\n    cause of these high pressure conditions has not been established.",
+          "shown_in": [
+            "C27",
+            "K134"
+          ]
+        }
+      ],
+      "unit": "T17"
+    }
+  },
+  "failed_units": [],
+  "family_check": {
+    "allow_same_family": false,
+    "judge_model_family": "openai",
+    "run_model_family": "anthropic",
+    "run_model_known": true,
+    "same_family": false
+  },
+  "judge_model": "openai/gpt-6.1-sol",
+  "judge_models_served": [
+    "openai/gpt-6.1-sol"
+  ],
+  "judge_schema": "gb2019-sr-judge-output/1",
+  "note": "LLM judge proposals for human sign-off: never final decisions, never values of auto_numeric criteria (not sent to the judge); auto_assisted_human proposals are recorded for the reviewer and ignored by the merge; severe flags are suggestions. Quotes were checked against the spans shown; hallucinated spans are listed and dropped. Withheld for a human (value null, judge value kept): evidence support 1 without a verified quote from a span the credited findings cite, 'supported' or 'contradicted' without a verified quote, 'unsupported' with low confidence, and 'not_factual'.",
+  "prompt_sha256": "dee336d465a9db17de377ffb8830bb1718cbd8cb25c5a413db4e7d41ad3207ac",
+  "prompt_template_sha256": "dee336d465a9db17de377ffb8830bb1718cbd8cb25c5a413db4e7d41ad3207ac",
+  "prompt_version": "gb2019-sr-judge-prompt/1",
+  "response_schema": "gb2019-sr-judge-response/1",
+  "rubric_id": "gb2019-sr-judge-rubric",
+  "rubric_sha256": "bdcefc56ce1c1ba2eb6df48b35c8cbd6a98414a2a2bd2dc5658d627bacc32d11",
+  "rubric_version": "1.0.0",
+  "severe_flags": [],
+  "span_checks": {
+    "rejected": 0,
+    "relocated": 0,
+    "returned": 141,
+    "verified": 141
+  },
+  "units": [
+    {
+      "attempts": 1,
+      "cache_key": "e8d11904e53c3ce8990b5dfbe0516729d831ee79ed3ef228790080fa0a4433c1",
+      "criteria": [
+        "T01.01",
+        "T01.02",
+        "T01.03a",
+        "T01.03b",
+        "T01.04"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F36",
+        "F41"
+      ],
+      "issues": [],
+      "messages_sha256": "e2bdb60ff8fab3e76e2677a27281f28ac56328e2acd031acfb37f823ad589bc2",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 22,
+        "verified": 22
+      },
+      "status": "ok",
+      "task": "T01",
+      "temperature_sent": false,
+      "unit_id": "T01",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 3553,
+        "cost_source": "provider",
+        "cost_usd": 0.099019,
+        "prompt_tokens": 27896,
+        "reasoning_tokens": 199
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "dfccca9b77a53b5e61586704b5f6215676501aaa7fe8ee9cd807595eec9a7493",
+      "criteria": [
+        "T02.01a",
+        "T02.01b",
+        "T02.02a",
+        "T02.02b",
+        "T02.03a",
+        "T02.03b",
+        "T02.04",
+        "T02.05a",
+        "T02.05b",
+        "T02.06"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F10",
+        "F13",
+        "F17",
+        "F32",
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "issues": [
+        "assertions.F10: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)",
+        "assertions.F32: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)",
+        "assertions.F33: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "messages_sha256": "c9bbb2a566b7c520bbc865903783ff93e2dab670420821bca7604883257ead88",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 23,
+        "verified": 23
+      },
+      "status": "ok",
+      "task": "T02",
+      "temperature_sent": false,
+      "unit_id": "T02",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 3851,
+        "cost_source": "provider",
+        "cost_usd": 0.123069,
+        "prompt_tokens": 36324,
+        "reasoning_tokens": 686
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "26de5a3d292c1566623b6d25a50f2ccc3dce1b276826685c1bca8f7e21f8f5e9",
+      "criteria": [
+        "T03.04"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F22",
+        "F23",
+        "F24",
+        "F27",
+        "F29"
+      ],
+      "issues": [],
+      "messages_sha256": "e3cbb03940bf827eaadf393cd0d1b228c42f3b1b45636b9e8a744e3c33cfa6d2",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 12,
+        "verified": 12
+      },
+      "status": "ok",
+      "task": "T03",
+      "temperature_sent": false,
+      "unit_id": "T03",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 1903,
+        "cost_source": "provider",
+        "cost_usd": 0.071571,
+        "prompt_tokens": 23517,
+        "reasoning_tokens": 283
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "8ea84496e97503f6eeaaf19c1e096efab761f6e04a3f46b25763af3eddca10ff",
+      "criteria": [
+        "T04.03"
+      ],
+      "error": null,
+      "findings_classified": [],
+      "issues": [],
+      "messages_sha256": "65339a64a1c879005f45c04f855edf1e8fd83d823cbca8cb04b82ec5b0ad24a1",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 3,
+        "verified": 3
+      },
+      "status": "ok",
+      "task": "T04",
+      "temperature_sent": false,
+      "unit_id": "T04",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 721,
+        "cost_source": "provider",
+        "cost_usd": 0.058796,
+        "prompt_tokens": 23135,
+        "reasoning_tokens": 224
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "ff8d9cd0395c5a02fde31470b563d3bb9a5e40b52f12a85ff4e0a901443d74d8",
+      "criteria": [
+        "T05.01a",
+        "T05.01b",
+        "T05.02",
+        "T05.03"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F37",
+        "F39",
+        "F40",
+        "F43"
+      ],
+      "issues": [],
+      "messages_sha256": "18d731c4655cb3d150ef6da7fbca3347217659ae6edf5189923373bd6da97856",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 14,
+        "verified": 14
+      },
+      "status": "ok",
+      "task": "T05",
+      "temperature_sent": false,
+      "unit_id": "T05",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 2051,
+        "cost_source": "provider",
+        "cost_usd": 0.079699,
+        "prompt_tokens": 26176,
+        "reasoning_tokens": 373
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "2f2f206910cac1897f18c3b099eb798c2caf5c18dc83c5577dbad80875352e71",
+      "criteria": [
+        "T06.01",
+        "T06.02",
+        "T06.03",
+        "T06.04",
+        "T06.05"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "issues": [
+        "assertions.F14: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "messages_sha256": "029091d9053fdb19bbe6e87ea2f0734e733aaf473f28b9cdbe7cb4f2617c011a",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 18,
+        "verified": 18
+      },
+      "status": "ok",
+      "task": "T06",
+      "temperature_sent": false,
+      "unit_id": "T06",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 3209,
+        "cost_source": "provider",
+        "cost_usd": 0.094361,
+        "prompt_tokens": 27409,
+        "reasoning_tokens": 392
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "c1fc4aeb0754f54ef428882c03c798d206f9eaf60832af672924276c2d0261f6",
+      "criteria": [
+        "T07.01",
+        "T07.02",
+        "T07.03",
+        "T07.04",
+        "T07.05"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F18",
+        "F20",
+        "F21"
+      ],
+      "issues": [],
+      "messages_sha256": "72d5a62e7ff849bbca6e12341bdbdeecdc4683bcbc5d4227e52fa1acb7295986",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 12,
+        "verified": 12
+      },
+      "status": "ok",
+      "task": "T07",
+      "temperature_sent": false,
+      "unit_id": "T07",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 2461,
+        "cost_source": "provider",
+        "cost_usd": 0.091036,
+        "prompt_tokens": 29071,
+        "reasoning_tokens": 391
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "965da8c14fe90b136c560ee03903642a8ae57a140550599b47bcf50db9dc59ca",
+      "criteria": [
+        "T08.01",
+        "T08.02",
+        "T08.03",
+        "T08.04",
+        "T08.05"
+      ],
+      "error": null,
+      "findings_classified": [],
+      "issues": [],
+      "messages_sha256": "04bb976e5a65b8d68462d5d3d228f8192cd66828740c586cd59e9f0b5ebeafb6",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 0,
+        "verified": 0
+      },
+      "status": "ok",
+      "task": "T08",
+      "temperature_sent": false,
+      "unit_id": "T08",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 644,
+        "cost_source": "provider",
+        "cost_usd": 0.071666,
+        "prompt_tokens": 28591,
+        "reasoning_tokens": 35
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "74363aa9c4857843ef2ea38e467ee403a188cdbc4188a5a968b1b4dbf9335cbc",
+      "criteria": [
+        "T09.01",
+        "T09.02a",
+        "T09.02b",
+        "T09.03",
+        "T09.04",
+        "T09.05"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F30",
+        "F31"
+      ],
+      "issues": [
+        "assertions.F31: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)",
+        "report_assertions[1]: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "messages_sha256": "136d51acbe9783c9db9b623e237ca65e545ced422b137e718887fe9a94a6d5b8",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 7,
+        "verified": 7
+      },
+      "status": "ok",
+      "task": "T09",
+      "temperature_sent": false,
+      "unit_id": "T09",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 2566,
+        "cost_source": "provider",
+        "cost_usd": 0.093074,
+        "prompt_tokens": 29466,
+        "reasoning_tokens": 671
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "f83ee53b40a21f0092935dee2d44ab9e11628e5528e3d705c6ff9d4830d3d257",
+      "criteria": [
+        "T12.01a",
+        "T12.01b",
+        "T12.01c",
+        "T12.02",
+        "T12.03",
+        "T12.04",
+        "T12.05"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F28"
+      ],
+      "issues": [],
+      "messages_sha256": "120e6121a430adcfb7aecac317e3aa2c38910244b157ce461d4eb8206dc8778e",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 9,
+        "verified": 9
+      },
+      "status": "ok",
+      "task": "T12",
+      "temperature_sent": false,
+      "unit_id": "T12",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 2583,
+        "cost_source": "provider",
+        "cost_usd": 0.098949,
+        "prompt_tokens": 31748,
+        "reasoning_tokens": 817
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "1baac16e9f6d637cccfd2d117cb9ffe014e60a14b2f9696bd83f2e0ded98d00a",
+      "criteria": [
+        "T16.01",
+        "T16.02",
+        "T16.03"
+      ],
+      "error": null,
+      "findings_classified": [
+        "F09"
+      ],
+      "issues": [],
+      "messages_sha256": "fbd4b65f83c6ec185133cbc9012639d12eb10ba4d4cef617f51851c16cd4aded",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 8,
+        "verified": 8
+      },
+      "status": "ok",
+      "task": "T16",
+      "temperature_sent": false,
+      "unit_id": "T16",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 1104,
+        "cost_source": "provider",
+        "cost_usd": 0.068859,
+        "prompt_tokens": 25628,
+        "reasoning_tokens": 115
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "1a1229b28d8b4c7ad547063ccdb4e42fd38d02ae3bf474bb1ec25a751249975c",
+      "criteria": [
+        "T17.01",
+        "T17.02",
+        "T17.03",
+        "T17.04"
+      ],
+      "error": null,
+      "findings_classified": [],
+      "issues": [],
+      "messages_sha256": "de446a9c1cdc16ccbd83fe3acbcfb08f81a159eb803d507c9f6fc45da58ea594",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 8,
+        "verified": 8
+      },
+      "status": "ok",
+      "task": "T17",
+      "temperature_sent": false,
+      "unit_id": "T17",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 1559,
+        "cost_source": "provider",
+        "cost_usd": 0.082021,
+        "prompt_tokens": 29073,
+        "reasoning_tokens": 433
+      }
+    },
+    {
+      "attempts": 1,
+      "cache_key": "64833b90a358733edef8c4d248f90ee835d745353a22256cd542dab88cd24868",
+      "criteria": [],
+      "error": null,
+      "findings_classified": [
+        "F25",
+        "F26",
+        "F38",
+        "F42"
+      ],
+      "issues": [
+        "assertions.F38: low-confidence 'unsupported' withheld: the judge saw only part of the evidence (a human decides)"
+      ],
+      "messages_sha256": "afe3ffd7cfd08827ce12ddb18c3ed149c423d6cc3691f61022aa785a1a86a481",
+      "served_models": [
+        "openai/gpt-6.1-sol"
+      ],
+      "span_checks": {
+        "rejected": 0,
+        "relocated": 0,
+        "returned": 5,
+        "verified": 5
+      },
+      "status": "ok",
+      "task": null,
+      "temperature_sent": false,
+      "unit_id": "UNASSIGNED",
+      "usage": {
+        "cached_prompt_tokens": 2604,
+        "calls": 1,
+        "completion_tokens": 912,
+        "cost_source": "provider",
+        "cost_usd": 0.057761,
+        "prompt_tokens": 21957,
+        "reasoning_tokens": 143
+      }
+    }
+  ],
+  "usage": {
+    "cached_prompt_tokens": 33852,
+    "calls": 13,
+    "completion_tokens": 27117,
+    "cost_source": "provider",
+    "cost_usd": 1.089881,
+    "prompt_tokens": 359991,
+    "reasoning_tokens": 4762
+  }
+}

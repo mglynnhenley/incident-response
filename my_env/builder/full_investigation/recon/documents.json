@@ -1,0 +1,181 @@
+{
+  "control_logs": [
+    {
+      "clock_note": {
+        "S08": "hhmm as printed in GTR's technical review (event summary); no clock labelled, read as BST (UTC+01:00)"
+      },
+      "evidence_ids": [
+        "S08"
+      ],
+      "owner": "Govia Thameslink Railway (technical review dated 3 September 2019)",
+      "room_id": "GTR-FLEET-CONTROL",
+      "source_note": {
+        "S08": "rows restate entries of the reconstructed rail fleet record S08."
+      },
+      "status": "STATUS: SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE (rows of S08).",
+      "title": "GTR fleet control: technical-review entries with a printed clock time"
+    }
+  ],
+  "data_returns": {
+    "file": "builder/full_investigation/rows/data_returns.json",
+    "mode": "additions to the system-response registry (no overlap of party/data_type)",
+    "parties": {
+      "ESO": "National Grid ESO (runs the Grid Code compliance process)",
+      "GTR": "Govia Thameslink Railway (train operator of the Class 700/717 fleet)",
+      "HOSPITAL_TRUST": "East Suffolk and North Essex NHS Foundation Trust (Ipswich Hospital)",
+      "NETWORK_RAIL": "Network Rail (railway infrastructure operator)",
+      "NEWCASTLE_AIRPORT": "Newcastle International Airport",
+      "ORSTED": "Ørsted (Hornsea One operator)",
+      "REFINERY_OPERATOR": "Oil refinery operator (not named in the published reports)",
+      "RWE": "RWE Generation (Little Barford operator)",
+      "UKPN": "UK Power Networks (Eastern, London and South Eastern licence areas)",
+      "WATER_COMPANY": "Water companies (not named in the published reports)"
+    }
+  },
+  "documents": [
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "R10/R10.txt",
+          "media_type": "text/plain",
+          "sha256": "6900e401778bb605e45d7f0ddd07c28807e20991e3b0d398c9eb41dd3d786a8d"
+        }
+      ],
+      "category": "requirements",
+      "date": "2019-08-09",
+      "doc_id": "R10",
+      "label": "RECONSTRUCTION OF REQUIREMENTS DESCRIBED IN PUBLISHED REPORTS — NOT CODE OR STANDARD TEXT",
+      "owner": "Compiled from National Grid ESO, Ofgem, E3C and ORR reports",
+      "party_aliases": [
+        "system operator",
+        "regulator"
+      ],
+      "replaces": "system-response R10 in this bundle only (lines 1-133 identical; Sections F-K appended)",
+      "text_file": "R10/R10.txt",
+      "title": "Operating requirements as described in the published reports (selection)"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S08/S08.txt",
+          "media_type": "text/plain",
+          "sha256": "b5a8753ff27a2abf5d00f9a0f7a4eb0d9ab0a5e4fbfb5065092bbbf8b462a123"
+        }
+      ],
+      "category": "rail_records",
+      "date": "2019-08-09",
+      "doc_id": "S08",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "Govia Thameslink Railway (fleet technical review); rail accounts published by ORR, National Grid ESO, Ofgem and the E3C",
+      "party_aliases": [
+        "train operator",
+        "GTR",
+        "rail regulator"
+      ],
+      "text_file": "S08/S08.txt",
+      "title": "Rail fleet and service records, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S10/S10.txt",
+          "media_type": "text/plain",
+          "sha256": "8aaa8984dc67801b2d20c307ea0f6100a129071639bc6c9132302bb3dad72460"
+        }
+      ],
+      "category": "compliance_records",
+      "date": "2019-08-09",
+      "doc_id": "S10",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "National Grid ESO (compliance process records); Ofgem and E3C statements",
+      "party_aliases": [
+        "system operator",
+        "regulator"
+      ],
+      "text_file": "S10/S10.txt",
+      "title": "Generator and network compliance-process records, 9 August 2019"
+    },
+    {
+      "artifacts": [
+        {
+          "description": "Readable record text; line numbers shown on retrieval are the citation locators.",
+          "file": "S11/S11.txt",
+          "media_type": "text/plain",
+          "sha256": "ebe4e01353192cea6122f8ba8c609498384d922a4a7d1d3040b75a45532dcd70"
+        }
+      ],
+      "category": "essential_services_records",
+      "date": "2019-08-09",
+      "doc_id": "S11",
+      "label": "SYNTHESISED FOR EVALUATION — NOT REAL EVIDENCE",
+      "owner": "Compiled from National Grid ESO, Ofgem, E3C and ORR published accounts",
+      "party_aliases": [
+        "system operator",
+        "regulator",
+        "E3C"
+      ],
+      "text_file": "S11/S11.txt",
+      "title": "Essential services and infrastructure supply impact records, 9 August 2019"
+    }
+  ],
+  "generated_by": "builder/full_investigation/recon/build_fi_recon.py",
+  "note": "Proposed manifest-v2 entries for this track's additions to the full-investigation bundle. Everything else (increment A's documents, logs, five witness cards and 17 data returns) is copied unchanged from the system-response bundle by the integration step. Categories are proposals. Witness cards are written agent-visible (provenance stripped; block provenance is in private/full_investigation/provenance_recon.json). rows/data_returns.json holds the registry additions only. The control room GTR-FLEET-CONTROL is new and needs log metadata (proposed below) and a viewer station.",
+  "row_fragments": {
+    "recon_s08.jsonl": {
+      "rows": 1,
+      "sha256": "ea72af9120229828225bb0f8a55f6bbe6960c15d57ec7242114468e7e258fc00"
+    }
+  },
+  "track": "recon",
+  "witness_evidence_id": "S09",
+  "witnesses": [
+    {
+      "blocks": 10,
+      "evidence_id": "S09",
+      "file": "witnesses/eso-communications-lead.json",
+      "organisation": "National Grid ESO",
+      "persona_id": "eso-communications-lead",
+      "role": "Communications lead, National Grid ESO (stakeholder and media communications)",
+      "sha256": "a0a3c12aa4d6c292d911c083693cf5cfb64adf8a35169a4ce810085d2431ffbb"
+    },
+    {
+      "blocks": 11,
+      "evidence_id": "S09",
+      "file": "witnesses/gtr-fleet-engineer.json",
+      "organisation": "Govia Thameslink Railway (GTR)",
+      "persona_id": "gtr-fleet-engineer",
+      "role": "Fleet engineer, Govia Thameslink Railway (GTR) fleet control",
+      "sha256": "5ba453b6174208e89238099b1b92b07118d01966ea195f47fd1770c997f62100"
+    },
+    {
+      "blocks": 4,
+      "evidence_id": "S09",
+      "file": "witnesses/hospital-estates-manager.json",
+      "organisation": "East Suffolk and North Essex NHS Foundation Trust",
+      "persona_id": "hospital-estates-manager",
+      "role": "Estates manager, Ipswich Hospital",
+      "sha256": "9511d93db88504a45b13bb6fe8e7024cc1079c11a0e3666dd45ec4870effc9ff"
+    },
+    {
+      "blocks": 11,
+      "evidence_id": "S09",
+      "file": "witnesses/network-rail-control-manager.json",
+      "organisation": "Network Rail",
+      "persona_id": "network-rail-control-manager",
+      "role": "Control duty manager, Network Rail (railway infrastructure operator)",
+      "sha256": "69e404d56033a02f085d96768e77c88616d0fca2f946ad4866beab508f1279e2"
+    },
+    {
+      "blocks": 6,
+      "evidence_id": "S09",
+      "file": "witnesses/ukpn-epn-spn-control-engineer.json",
+      "organisation": "UK Power Networks",
+      "persona_id": "ukpn-epn-spn-control-engineer",
+      "role": "Control engineer, UK Power Networks (Eastern Power Networks and South Eastern Power Networks licence areas)",
+      "sha256": "818e7d56cff5492cd39e64343598e31940169dbe60ca901cda2ac35fb6f6e75f"
+    }
+  ]
+}

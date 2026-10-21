@@ -1,0 +1,10 @@
+event,time_as_printed,imbalance_change_mw_as_printed
+Hornsea One,16:52:33.728,-737
+Little Barford ST1C,16:52:34,-244
+Loss of Mains – Vector Shift,16:52:34,-150
+Loss of Mains - RoCoF,16:52:34,-430
+Reduction in generator output over 30 seconds,16:53:10,-100
+Little Barford GT1A,16:53:30,-210
+Net Change due to protection at 49.0 Hz,16:53:40*,-200
+Net demand change at 48.8 Hz,16:53:48*,+350
+Little Barford GT1B,16:53:58,-187

@@ -1,0 +1,6 @@
+nationalGridBmUnit,elexonBmUnit,eic,fuelType,leadPartyName,bmUnitType,fpnFlag,bmUnitName,leadPartyId,demandCapacity,generationCapacity,productionOrConsumptionFlag,transmissionLossFactor,workingDayCreditAssessmentImportCapability,nonWorkingDayCreditAssessmentImportCapability,workingDayCreditAssessmentExportCapability,nonWorkingDayCreditAssessmentExportCapability,creditQualifyingStatus,demandInProductionFlag,gspGroupId,gspGroupName,interconnectorId
+HOWAO-1,T_HOWAO-1,48W00000HOWAO-1M,WIND,Hornsea 1 Limited,T,true,HORNSEA_1A,DONG013,-6.220,400.000,P,-0.0042872,-2.488,-2.488,160.000,160.000,true,false,,,
+HOWAO-2,T_HOWAO-2,48W00000HOWAO-2K,WIND,Hornsea 1 Limited,T,true,HORNSEA_1B,DONG013,-7.260,400.000,P,-0.0042872,-2.904,-2.904,160.000,160.000,true,false,,,
+HOWAO-3,T_HOWAO-3,48W00000HOWAO-3I,WIND,Hornsea 1 Limited,T,true,HORNSEA_1C,DONG013,-7.300,400.000,P,-0.0042872,-2.920,-2.920,160.000,160.000,true,false,,,
+LBAR-1,T_LBAR-1,48W000000LBAR-1Y,CCGT,RWE Generation UK plc,T,true,Little Barford main unit 1,INNOGY01,-20.000,750.000,P,0.0083094,-8.000,-8.000,300.000,300.000,true,false,,,
+LBAR-1G,T_LBAR-1G,48W00000LBAR-1G7,OCGT,RWE Generation UK plc,T,true,Little Barford OCGT,INNOGY01,0.000,25.000,P,0.0083094,0.000,0.000,10.000,10.000,true,false,,,

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "ESO",
+    "file": "builder_only/sources/ESO_technical_report_2019.pdf",
+    "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_final.pdf",
+    "bytes": 1568522,
+    "sha256": "4ceee8ac7f32fbd16c712e7eed4942880f0f0a477424ae026b757a85d76da81e",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "APP",
+    "file": "builder_only/sources/ESO_appendices_2019.pdf",
+    "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2019/09/eso_technical_report_-_appendices_-_final.pdf",
+    "bytes": 4224189,
+    "sha256": "33d5dab5fa9b8de42ec72d2453037aa897192ba58e1790f3f37ce57f480492a3",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "OFG",
+    "file": "builder_only/sources/Ofgem_outage_report_2020.pdf",
+    "url": "https://www.ofgem.gov.uk/sites/default/files/docs/2020/01/9_august_2019_power_outage_report.pdf",
+    "bytes": 689189,
+    "sha256": "4a6def3f7a80e9686742921270e626d745942491082729983de9407ec15af2cb",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "ORR",
+    "file": "builder_only/sources/ORR_rail_report_2020.pdf",
+    "url": "https://www.orr.gov.uk/media/10752/download",
+    "bytes": 447800,
+    "sha256": "2f4511e97ba8c727e62c92d971fef8e0e3d6920e3af370cb3b435499608786f5",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "E3C",
+    "file": "builder_only/sources/E3C_final_report_2020.pdf",
+    "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/855767/e3c-gb-power-disruption-9-august-2019-final-report.pdf",
+    "bytes": 435898,
+    "sha256": "2b20c53b19df7c1d2c24654d3e08ad3e7118b9dcc5ef18341bb6c0e7fb4654c5",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "E3C-I",
+    "file": "builder_only/sources/E3C_interim_report_2019.pdf",
+    "url": "https://assets.publishing.service.gov.uk/media/5d96100340f0b61743bd4cc3/20191003_E3C_Interim_Report_into_GB_Power_Disruption.pdf",
+    "bytes": 708035,
+    "sha256": "5a857cb1437a31c0d3096fa89573ac1e92854c4b18b6c9f96b066033d52ca5f7",
+    "status": "downloaded",
+    "access": "builder_only",
+    "retrieved_date_utc": "2026-10-20"
+  },
+  {
+    "id": "NESO-F",
+    "file": "builder_only/sources/NESO_frequency_august_2019.zip",
+    "url": "https://api.neso.energy/dataset/cb1cc925-ecd8-4406-b021-3a3f368196e1/resource/819a0821-cc6d-4909-a1ea-7dba5cab0c33/download/f-2019-8.zip",
+    "status": "downloaded",
+    "bytes": 10756994,
+    "sha256": "bce1b0d8bbbbbbaa1d8574a43b0352559e0290102bc6787eff0af53d02811d86",
+    "access": "builder_only",
+    "note": "Original legacy endpoint returned 403; official API download succeeded.",
+    "retrieved_date_utc": "2026-10-20"
+  }
+]
